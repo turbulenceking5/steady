@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story: the new-boyfriend scenes are rewritten. You go up to him to say you want her back, and you're so meek and so obviously gay about it that he doesn't take you seriously, he gives you butterflies, and she thinks you're adorable. At Mia's flat you have to take your shoes and socks off at the door, in front of Lachlan, with glitter toes.
 - Story: confronting her new boyfriend now falls apart because you can't stop being camp, not because you're weaker than him. You go to threaten him and end up popping a hip, calling him babe, flicking your hair, asking about his shirt fabric or giving him a skincare routine.
 - Fixed: the Story tab could show the intro but no girls to pick, when the phone had an old copy of the story cached. The app now always checks for the latest files, and shows a Reload button if they're ever out of step.
 - Story is now a list of girls to choose from. Each one's story goes slowly over four dates: you get a bit gayer every time, in how you dress and how you talk, and she fancies you a bit less, until she leaves you for a straight guy. 30 new chapters.
