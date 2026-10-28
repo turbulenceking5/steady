@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story Part 1: three in-person chapters, with what she says and does, and lots of ways for you to react. Dinner with Olivia, who talks about your painted toes and tells you to date guys. Zoe breaking up with you in the car after a barbecue. Sophie breaking up with you after her friend sees you dancing with a guy in the Valley.
 - Story Part 1: new chapter "Painted toes". A picnic date with Jade in women's strappy sandals and painted toenails.
 - Story Part 2: new chapter "Summer feet". Women's flip-flops and painted toes at the markets with {bf}.
 - Style: two new daily dares with painted toes and sandals.

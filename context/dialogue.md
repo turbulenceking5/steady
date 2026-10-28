@@ -16,6 +16,11 @@ Rules for how people text in the Story, Messages and Practice, and above all for
 - People don't answer everything. They dodge, repeat themselves, get the last word, or stop replying.
 - Specific details beat general ones: $18 parking, the lady with the pram, the waiter's arms, "your pics are literally you in a polo shirt at a wedding".
 
+## In-person scenes
+- Chapters with `irl: true` are spoken, not texted. People talk in full sentences and can say a few lines at a time, but it's still plain speech: "I'm not angry. I'm just tired of pretending I can't see it."
+- Use `{ note }` lines for what she does (puts her coffee down, looks at his toes, goes quiet). Keep them short and physical, never what she's thinking.
+- Break-ups give him lots of different reactions: denial, crying, begging for another chance, getting angry, joking, going quiet, admitting it, asking to stay friends. Each girl answers each one in her own way, and she doesn't change her mind.
+
 ## His replies
 - Keep his options human too: awkward, defensive, a bit snarky, apologetic, or honest. They aren't speeches and they don't fix the situation.
 - Every reply is still a fine reply. No scoring.

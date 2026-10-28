@@ -358,7 +358,13 @@ details summary { cursor: pointer; color: var(--muted); }
       if (node !== convo && node.after) endNote = node.after;
       for (const m of node.them || []) {
         const msg = typeof m === "string" ? { text: m } : m;
-        const t = document.createElement("div"); t.className = "typing"; t.textContent = (msg.from || convo.contact || convo.who) + " is typing…";
+        if (msg.note) { // narration in in-person scenes: what she does, not what she says
+          await wait(600);
+          if (view._run !== run) return;
+          add("note", fill(msg.note)).scrollIntoView?.({ block: "nearest" });
+          continue;
+        }
+        const t = document.createElement("div"); t.className = "typing"; t.textContent = convo.irl ? "…" : (msg.from || convo.contact || convo.who) + " is typing…";
         thread.appendChild(t);
         await wait(Math.min(1400, 450 + msg.text.length * 12));
         if (view._run !== run) return; // user left mid-conversation
@@ -474,7 +480,7 @@ details summary { cursor: pointer; color: var(--muted); }
     const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}") });
     $("#storyList").hidden = true;
     const view = $("#storyView"); view.hidden = false;
-    runConversation(view, c, "story", `<button class="btn ghost back">← Story</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">Chapter ${i + 1}: ${esc(c.title)}</span></div>`);
+    runConversation(view, c, "story", `<button class="btn ghost back">← Story</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">Chapter ${i + 1}: ${esc(c.title)}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
     view.querySelector(".back").addEventListener("click", renderStoryList);
   }
 

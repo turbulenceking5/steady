@@ -885,6 +885,531 @@ window.CONTENT = {
       debrief: "Painted toes and women's sandals are small details, but you wore them on a date in broad daylight. People notice small things, and they talk. You still got to wear them."
     },
     {
+      id: "c6g", title: "Across the table", contact: "Olivia", part: "Part 1: Before", irl: true,
+      intro: "Olivia from Bumble. First date, dinner at a little Italian place on James St. You wore a black wrap top, wide-leg linen pants and flat gold sandals from the women's section, toes painted cherry red. Mascara, a bit of bronzer, gloss. She's already at the table when you walk in.",
+      them: [
+        { note: "She stands up to hug you, then glances down. Then at your face. Then down again." },
+        "Hi! Sorry. Hi. You look... wow. Okay. Sit, sit.",
+        "I'm just going to say it, because otherwise I'll be thinking about it all night. Your toes are painted. Red. Like, properly done. Did you get them done at a salon?"
+      ],
+      replies: [
+        { you: "Yeah, at the nail place on Brunswick St.",
+          them: [
+            "Oh my god, the one next to the dumpling place? I go there!",
+            "So we've possibly sat next to each other getting pedicures and not known it. That's such a weird thought.",
+            { note: "She laughs, but her eyes keep drifting under the table." },
+            "Sorry, I'm being weird. It's just I've never been on a date with a guy whose feet look nicer than mine. I genuinely don't know what to do with that."
+          ],
+          replies: [
+            { you: "Is that a problem?",
+              them: [
+                "No! No. I don't think so. I don't know.",
+                "It's not that it's a problem. It's that my brain keeps trying to put you in a box and you won't go in it.",
+                "You've got the mascara and the gloss and the sandals, and you walked in here like you were meeting the girls for a wine. And I'm sitting here in the dress I bought for tonight, thinking, is he even looking at me?"
+              ],
+              replies: [
+                { you: "I am looking at you.",
+                  them: [
+                    { note: "She tilts her head and watches you for a second." },
+                    "You're looking at me the way my friends look at me when I've got a new top on. Like, cute dress babe. Which is nice! It's just not a date look.",
+                    "And when the waiter came over you sat up straighter. I saw it."
+                  ],
+                  replies: [
+                    { you: "I didn't.",
+                      them: [
+                        "You did. It's fine, he's very good-looking. I'd sit up straighter too.",
+                        "I just don't want to be the girl who pretends she didn't notice. I've been that girl. It took me two years to stop being her."
+                      ] },
+                    { you: "...okay. I did.",
+                      them: [
+                        "Ha. Thank you.",
+                        "Look, I'm going to finish my pasta because it's the best carbonara in Brisbane, and then I think we call it. Not in a horrible way. You're fun. You're just not into me, and I think we both know why."
+                      ] },
+                    { you: "Can we just start again? Pretend I walked in normal?",
+                      them: [
+                        "Walked in normal? {name}, this is normal for you. You're more comfortable in those sandals than I am in mine.",
+                        "I don't want to pretend. I'd rather have a nice dinner with you as whatever this is than a fake date."
+                      ] }
+                  ] },
+                { you: "Honestly? I'm not sure if I am.",
+                  them: [
+                    "Okay. That's actually a really honest answer.",
+                    "Can I ask you something? You don't have to answer. Have you ever been on a date with a guy?"
+                  ],
+                  replies: [
+                    { you: "No.",
+                      them: [
+                        "Maybe you should. I'm serious. Not to get rid of you.",
+                        "I just think you'd have a better night than this one. You'd be sitting there in your red toes and he'd think they were the best thing about you, instead of me spending the whole entree trying not to look at them."
+                      ] },
+                    { you: "Once. Sort of.",
+                      them: [
+                        "Sort of! Okay. And how did that feel, compared to this?",
+                        { note: "You don't answer. You don't really need to. She nods slowly." },
+                        "Yeah. That's what I thought."
+                      ] }
+                  ] }
+              ] },
+            { you: "I like having them done. It makes me feel good.",
+              them: [
+                "That's fair. It's the best hour of my month, honestly.",
+                "I guess I just don't know any straight guys who do it. My brother wouldn't let someone touch his feet if you paid him. He wears socks to the beach.",
+                "Are you straight? Sorry. That is such a rude question for a first date. Ignore me. Eat a breadstick."
+              ],
+              replies: [
+                { you: "Yeah, I'm straight.",
+                  them: [
+                    { note: "She says \"okay\" in the voice people use when they don't believe you." },
+                    "Okay. Then I'm sorry, that was rude of me.",
+                    "But can I be honest? Even if you are, I don't think I'm the right person for you. I want someone who'd feel a bit awkward walking into a nail salon. That's just my thing. It's not a dig."
+                  ],
+                  replies: [
+                    { you: "So that's it? Because of my toes?",
+                      them: [
+                        "It's not the toes. The toes are cute.",
+                        "It's that you came here dressed for yourself and not for me, and you haven't asked me one question about myself yet. You asked the waiter where he got his watch.",
+                        "I'm not angry. I'm just not going to sit here and pretend this is going somewhere."
+                      ] },
+                    { you: "Fair enough.", them: ["Yeah.", "Want to split a tiramisu anyway? It'd be a waste not to."] }
+                  ] },
+                { you: "No. I'm not.",
+                  them: [
+                    "Oh. Okay.",
+                    { note: "She breathes out, and laughs a little." },
+                    "Thank god. Not thank god you're gay. Thank god I'm not crazy. I've been sitting here for twenty minutes going, Olivia, you've got this wrong, stop it.",
+                    "So why are you here? With me? I'm not being nasty. I actually want to know."
+                  ],
+                  replies: [
+                    { you: "I thought I should try.",
+                      them: [
+                        "Try what, being straight?",
+                        "Babe. You turned up in red toenails and gold sandals. I think part of you knew exactly how tonight was going to go."
+                      ] },
+                    { you: "I'm scared to date guys.",
+                      them: [
+                        "Yeah. I'd be scared too.",
+                        "But you're clearly not scared of being looked at. Half this restaurant has looked at your feet tonight and you haven't flinched once. You can do a coffee with a guy.",
+                        "And if you need someone to tell you what to wear to it, I'm free on weekends."
+                      ] }
+                  ] },
+                { you: "I don't know yet.",
+                  them: [
+                    "Okay. That's allowed.",
+                    "I just don't want to be the date you work it out on. I've done that before, I was with a guy for two years and he worked it out on me the whole time. I'm not doing it again.",
+                    "So I think we just have dinner, yeah? As friends. And you text me when you know."
+                  ] }
+              ] }
+          ] },
+        { you: "Thanks. I wanted to look nice tonight.",
+          them: [
+            "You do look nice. That's kind of the problem.",
+            "You look nicer than me. Your makeup's better than mine. Your toes are better than mine.",
+            "And I keep thinking, if a girl walked in like this I'd think, love her, she's gorgeous. But you're a guy, and I'm on a date with you, and I can't work out what I'm supposed to feel."
+          ],
+          replies: [
+            { you: "What do you want to feel?",
+              them: [
+                "Like you're into me. Like you made the effort for me.",
+                "And I don't think you did. I think you made the effort for you. Which is great! It's just not a date with me then, is it."
+              ] },
+            { you: "Should I have dressed differently?",
+              them: [
+                "No. God, no. Please don't do that for anyone.",
+                "If you'd turned up in a polo and chinos I'd have had a nice boring night and gone on three more dates with you, and then found out anyway, and been way more upset. This is better. This is quicker."
+              ],
+              replies: [
+                { you: "Found out what?",
+                  them: [
+                    "Come on, {name}.",
+                    { note: "She reaches across and taps the table near your hand. Gently." },
+                    "That you're gay. You don't have to say it. I'm not going to make you say it."
+                  ] },
+                { you: "Yeah. That's probably true.",
+                  them: ["I know it is. I've been out with a guy who was hiding it. I'm not doing that again, not even for someone with toes this good."] }
+              ] },
+            { you: "(Your eyes go hot. You look at your plate.)",
+              them: [
+                { note: "She goes quiet." },
+                "Oh no. Hey. I'm not trying to upset you.",
+                "I'm not saying you look bad. You look amazing. I'm saying this isn't a date, it's dinner with someone who looks really good, and I think that's what you'd rather it be too.",
+                "Do you want to just get dessert and not talk about it?"
+              ],
+              replies: [
+                { you: "Yeah. Dessert.", them: ["Tiramisu. My shout. Don't argue with me."] },
+                { you: "Sorry. I'm fine.", them: ["You're allowed to not be fine. I'm not going to tell anyone you cried into your carbonara."] }
+              ] }
+          ] },
+        { you: "You noticed? I was worried you'd think it was weird.",
+          them: [
+            "I mean... a little bit? I'm not going to lie to you.",
+            "It's not weird. It's just a lot for a first date. And I can't tell if you're trying to tell me something.",
+            "Are you?"
+          ],
+          replies: [
+            { you: "Maybe I am.",
+              them: ["Okay. I'm listening.", "Take your time. The pasta's not going anywhere."],
+              replies: [
+                { you: "I think I like guys.",
+                  them: [
+                    { note: "She doesn't look surprised at all." },
+                    "Okay. That's a big thing to say to a girl across a table on a first date. You did good.",
+                    "New plan. We eat, we split the bill, and you tell me about the guy you actually want to be sitting across from."
+                  ] },
+                { you: "I don't know how to say it.",
+                  them: ["Then don't. I think I already know.", "It's fine, {name}. I'm not upset. I'm a bit sad about the dress, but I'll wear it again."] }
+              ] },
+            { you: "No. I just like it.",
+              them: [
+                "Okay. Then I'll be honest back. It's not for me.",
+                "I want a guy who looks like he borrowed my jeans, not my sandals. That's my problem, not yours. But I don't think we should do this again."
+              ] }
+          ] }
+      ],
+      after: "Olivia, on the phone to her sister on the drive home: \"No, he was lovely. He was so lovely. He just had his toes done better than mine and spent the whole night looking at the waiter.\" \"So he's gay.\" \"So he's gay. I told him he should date guys.\" \"You did NOT.\" \"I did. He sort of smiled.\"",
+      debrief: "Someone saying \"I think you'd be happier with guys\" can sting and feel like relief at the same time. Both are allowed."
+    },
+    {
+      id: "c6h", title: "In the driveway", contact: "Zoe", part: "Part 1: Before", irl: true,
+      intro: "You've been going out with Zoe for six weeks. Today was her friend Brooke's barbecue in Ashgrove. You wore little floral shorts, a pastel cropped tee, white platform sandals, toes painted lilac, and a bit of gloss. Brooke's boyfriend asked Zoe, in front of everyone, if you were her gay best friend. She laughed. She hasn't said much since. Now she's parked in your driveway with the engine off.",
+      them: [
+        { note: "She doesn't take her hands off the steering wheel." },
+        "Can we talk before you go in?",
+        "I've been thinking about it the whole drive home. What Jayden said. And the way everyone went quiet after, like they were all waiting to see what I'd say.",
+        "I'm going to say something and I need you to just let me say it. I don't think this is working. And I think the reason it's not working is that you don't actually want to be with a girl."
+      ],
+      replies: [
+        { you: "That's not true. I'm not gay.",
+          them: [
+            "Okay. Then tell me why you spent half an hour talking to Brooke about her nail colour and two minutes talking to me.",
+            "Tell me why you painted your toes lilac for a barbecue. Why you wore platforms. Why every time we're at mine you'd rather go through my wardrobe than kiss me.",
+            "I'm not trying to be mean. I just need you to tell me something that makes sense, because I feel like I'm going crazy."
+          ],
+          replies: [
+            { you: "I just like clothes. Lots of straight guys do.",
+              them: [
+                "Name one. Name one straight guy we know who'd wear my sandals.",
+                { note: "You can't." },
+                "Yeah.",
+                "I'm not saying you have to say it. I'm saying I can't be the girl you're dating while you work it out. It's humiliating, {name}. I'm sorry, but it is. Tash asked me in the kitchen if you'd come out yet. Like it was already a thing everyone knew except me."
+              ],
+              replies: [
+                { you: "Please don't do this.",
+                  them: [
+                    "I have to.",
+                    "If I don't do it now I'll do it in three months and it'll be so much worse. For both of us."
+                  ] },
+                { you: "Tash should mind her own business.",
+                  them: ["Probably. But she wasn't wrong, was she.", { note: "You don't answer. She nods at the windscreen." }] }
+              ] },
+            { you: "You're overthinking it.",
+              them: [
+                "Am I? Everyone at that barbecue was thinking it. Jayden just said it out loud.",
+                "I'm not overthinking it. I'm the last one to say it."
+              ] },
+            { you: "(Say nothing.)",
+              them: [
+                { note: "The silence goes on long enough that a car goes past and its headlights slide across the dash." },
+                "Yeah. I thought so.",
+                "I'm not angry. I'm just tired of pretending I can't see it."
+              ] }
+          ] },
+        { you: "Please. Give me another chance. I'll tone it down.",
+          them: [
+            "Tone what down? The toes? The platforms?",
+            "{name}, I don't want you to tone it down. That's the worst thing you could say to me.",
+            "If you tone it down for me, you'll be miserable and I'll be going out with someone who's pretending. And then one day you'll meet some guy at a bar in the Valley and that'll be it. I'd rather it hurt now."
+          ],
+          replies: [
+            { you: "I wouldn't do that to you.",
+              them: [
+                "You wouldn't mean to.",
+                "I'm not saying you're a bad person. You're a really nice person. You're just not my person. And I think you know whose person you are."
+              ] },
+            { you: "I can change. I can be what you want.",
+              them: [
+                { note: "She finally looks at you. Her eyes are wet." },
+                "That's what's breaking my heart. You shouldn't have to change. Not for me. Not for anyone.",
+                "I want you to go out and be exactly as camp as you were today, and I want you to do it on a date with a guy who thinks it's the best thing about you."
+              ],
+              replies: [
+                { you: "(Start crying.)",
+                  them: [
+                    { note: "She reaches over the gearstick and holds your hand. For a while neither of you says anything." },
+                    "I know. Me too."
+                  ] },
+                { you: "Okay.", them: ["Okay.", "Go inside. Text Jess. Don't sit on your own all night."] }
+              ] },
+            { you: "Just one more date. Somewhere just us.",
+              them: [
+                "And what, you wear jeans and a hoodie and we both pretend?",
+                "I don't want one more date where I'm watching you watch the waiter. I want to remember you how you were today: annoying, and loud, and in my sandals, and happy. You were so happy today. Just not with me."
+              ] }
+          ] },
+        { you: "(Start crying.)",
+          them: [
+            { note: "She reaches over the gearstick and puts a hand on your arm." },
+            "Oh, {name}. Don't. You'll set me off.",
+            { note: "Too late. She wipes her face with the back of her hand." },
+            "I really liked you. I still like you, that's the stupid part. You're funny, and you're kind, and you're the only person who's ever told me my eyeliner was uneven before I left the house.",
+            "But I want someone who wants me. Not my eyeliner. Me."
+          ],
+          replies: [
+            { you: "I'm sorry. I'm so sorry.",
+              them: [
+                "I know you are. I'm not angry. Well, I'm a bit angry. Mostly I'm sad.",
+                "Go inside, have a shower. Take the polish off or don't. Text Jess, she'll come over."
+              ] },
+            { you: "I don't know what's wrong with me.",
+              them: [
+                "Nothing's wrong with you. Hey. Look at me.",
+                "Nothing is wrong with you. You're gay, and you've been trying really hard not to be, and that's exhausting. That's what's wrong. Not you."
+              ],
+              replies: [
+                { you: "...yeah.", them: ["Yeah.", { note: "She squeezes your arm once, then lets go." }] },
+                { you: "Don't say that word.",
+                  them: ["Okay. I won't.", "But I think you should say it to someone eventually. Even if it's just to yourself in the mirror."] }
+              ] }
+          ] },
+        { you: "You're right. I think I'm gay.",
+          them: [
+            { note: "She lets go of the wheel and laughs, the kind of laugh that's half crying." },
+            "Oh my god. Okay. Okay.",
+            "I knew. I think I knew from the second date, when you asked if my top was from Glassons. But hearing you say it is different.",
+            "Are you okay? Have you said that to anyone before?"
+          ],
+          replies: [
+            { you: "No. You're the first.",
+              them: [
+                "Me? Your girlfriend? In my car, in your driveway?",
+                "That's honestly so you.",
+                "I'm glad it was me. I think. Ask me again in a month."
+              ] },
+            { you: "Nicole knows.",
+              them: [
+                "Nicole knew before me? Great. Love that for me.",
+                "No, that's fine. That's good. I'm glad someone knew.",
+                "I'm not your girlfriend anymore, but I'm not going to be weird about this, I promise. Just maybe skip Brooke's next barbecue for a bit."
+              ] },
+            { you: "Are you going to tell everyone?",
+              them: [
+                "No. God. It's not mine to tell.",
+                "Although, {name}. You wore lilac toenails and platforms to a barbecue. I don't think anyone's waiting for an announcement."
+              ] }
+          ] },
+        { you: "So because I painted my toes, I'm gay now?",
+          them: [
+            "No. Not because you painted your toes.",
+            "Because of everything. The toes are just the bit everyone could see.",
+            "And don't make this about me being judgy. I stood up for you all afternoon. Jayden made his comment and I laughed it off. Tash asked me in the kitchen if you'd come out yet and I said he's not gay, and she looked at me like I was an idiot. I've been defending you all day and I'm sick of it."
+          ],
+          replies: [
+            { you: "I didn't ask you to defend me.",
+              them: [
+                "No. You didn't. That's kind of the problem.",
+                "You didn't seem to care what anyone thought, and I cared enough for both of us. I can't do it anymore."
+              ] },
+            { you: "...Tash asked if I'd come out?",
+              them: [
+                "Yeah. That's where everyone's at.",
+                "Everyone except you. Or maybe you're there too, and you just haven't said it."
+              ] }
+          ] },
+        { you: "Is this because I looked better than you today?",
+          them: [
+            { note: "She snorts, despite herself." },
+            "Honestly? A bit. Those platforms were a choice.",
+            "But no. It's because you looked better than me and you were happier about it than you've ever been about anything we've done together. Brooke took a photo of you by the pool and you looked at it for ten minutes. You've never looked at a photo of us like that."
+          ],
+          replies: [
+            { you: "That's not fair.", them: ["Isn't it?", "Go and look at your camera roll. Then tell me it's not fair."] },
+            { you: "...yeah. That's fair.", them: ["Yeah.", "I'm going to miss you doing my eyeliner, you know."] }
+          ] },
+        { you: "Can we still be friends?",
+          them: [
+            "Not yet. I need a bit.",
+            "But yeah. Probably. Eventually. You're going to need someone to tell you when your gloss is on your teeth, and it's not going to be Jayden."
+          ] }
+      ],
+      after: "Zoe, to Brooke, at midnight: \"ok we broke up.\" Brooke: \"oh babe. because of the gay thing?\" Zoe: \"because of the gay thing.\" Brooke: \"are you ok\" Zoe: \"i told him he should be dating guys.\" Brooke: \"honestly he'll be so much happier\" Zoe: \"yeah. that's what makes it worse\"",
+      debrief: "Being broken up with because you're gay is a strange kind of hurt: you lose someone, and they say the thing you couldn't. Denial, tears, begging, saying it out loud: all of those are normal reactions in that car."
+    },
+    {
+      id: "c6i", title: "Saturday morning", contact: "Sophie", part: "Part 1: Before", irl: true,
+      intro: "Sophie, three months. Last night you told her you were having a quiet one. You weren't. You went to the Valley with Dani in a crop top, a mini skirt and heeled sandals, toes painted hot pink, and you danced with a guy at the Wickham until 1am. Now it's Saturday morning, Sophie's on your doorstep with two coffees, and she hasn't smiled once.",
+      them: [
+        { note: "She hands you a coffee and sits on the arm of the couch instead of next to you." },
+        "So my friend Kirra was in the Valley last night.",
+        "She sent me a video at about midnight. It's dark and it's shaky, but it's you, {name}. In a skirt. Dancing with a guy. With your arms around his neck.",
+        { note: "She looks at your feet. Your toes are still hot pink." },
+        "I'm not going to scream at you. I just want you to tell me the truth, for once."
+      ],
+      replies: [
+        { you: "That wasn't me.",
+          them: [
+            { note: "She looks at your toes again, then back at you, and waits." },
+            "{name}. Your toes are the exact same pink as the girl in the video. Except it isn't a girl. It's you.",
+            "Please don't do this. I can handle a lot of things. I can't handle you lying to my face while you're still wearing the nail polish."
+          ],
+          replies: [
+            { you: "...okay. It was me.",
+              them: [
+                "Thank you.",
+                "Was it the first time? Going out like that?",
+              ],
+              replies: [
+                { you: "No.",
+                  them: [
+                    { note: "She nods. She doesn't look surprised, just tired." },
+                    "The 'quiet ones'. All the quiet ones.",
+                    "I'm not even angry about the skirt, {name}. I'd have helped you pick it. I'm angry that you lied, and I'm angry I'm the last to know."
+                  ] },
+                { you: "Yeah. Last night was the first time.",
+                  them: [
+                    "And you went straight from my place on Thursday to a gay bar on Friday in a skirt.",
+                    "I'm not having a go. I'm just trying to work out how long you've wanted to, and how long you've been pretending with me."
+                  ] }
+              ] },
+            { you: "It's a costume. Dani dared me.",
+              them: [
+                "A costume. With matching toes. And a guy.",
+                "Do you want to know what Kirra said? She said, 'Soph, I don't think he's straight, babe.' And I sat in bed at 12am and thought, yeah. I don't think he is either.",
+                "So you can keep saying it was a dare, but I'm not going to stand here and pretend I believe you."
+              ] }
+          ] },
+        { you: "I'm sorry. I should have told you where I was.",
+          them: [
+            "Yeah. You should have.",
+            "But that's not the part I care about, really. I don't care that you went to the Valley. I care that you went as the person in that video, and that person is someone I've never met.",
+            "Three months, {name}. I've never seen you look that happy. Not once. Not with me."
+          ],
+          replies: [
+            { you: "That's not true. I'm happy with you.",
+              them: [
+                "You're comfortable with me. That's different.",
+                "You were laughing in that video. Like, head back, eyes closed laughing. You don't laugh like that with me. You laugh like that with Dani, and apparently with some guy with a moustache at the Wickham."
+              ] },
+            { you: "I know. I'm sorry.",
+              them: [
+                "Don't be sorry for being happy. Be sorry for lying.",
+                "I think we both know where this goes, yeah?"
+              ],
+              replies: [
+                { you: "Are you breaking up with me?",
+                  them: [
+                    "Yeah. I am.",
+                    "And it's not because you wore a skirt. It's because you want to be dancing with guys, and I'd rather you do that honestly than do it behind my back for another three months."
+                  ] },
+                { you: "(Nod.)", them: [{ note: "She nods back. Neither of you says it. You both know." }] }
+              ] }
+          ] },
+        { you: "Did you kiss him? Is that what you want to know? I didn't.",
+          them: [
+            "I didn't ask if you kissed him.",
+            "Did you want to?",
+            { note: "You don't answer fast enough." },
+            "Okay. Yeah."
+          ],
+          replies: [
+            { you: "I don't know what I want.",
+              them: [
+                "I think you do. I think you've known for a while.",
+                "I'm not going to stand here and be the thing standing between you and finding out properly. That's not fair on me and it's not fair on you."
+              ] },
+            { you: "Yes. I wanted to.",
+              them: [
+                { note: "She breathes out slowly." },
+                "Thank you for being honest. Finally.",
+                "Then I think you should. Not while you're with me. But you should."
+              ] }
+          ] },
+        { you: "(Start crying.)",
+          them: [
+            { note: "She puts her coffee down on the side table, very carefully, like she's trying to do something with her hands." },
+            "Please don't. I'm the one who's supposed to be upset here.",
+            { note: "Her voice cracks on 'upset'. She sits down next to you after all." },
+            "I'm not trying to make you feel bad. I'm trying to work out what's real. Was any of it real? Us?"
+          ],
+          replies: [
+            { you: "Yes. I really care about you.",
+              them: [
+                "I believe you. I do.",
+                "But caring about me isn't the same as wanting me. And I think you want something I can't be. I can't be a guy with a moustache at the Wickham, {name}. No matter how much you like me."
+              ] },
+            { you: "I wanted it to be.",
+              them: [
+                "Yeah.",
+                "That's the saddest thing you could've said. And also the most honest.",
+                "Come here.",
+                { note: "She hugs you. It's a goodbye hug, and you both know it." }
+              ] }
+          ] },
+        { you: "Please don't break up with me. I'll stop going out like that.",
+          them: [
+            "I don't want you to stop going out like that.",
+            "Seriously. You looked amazing. I watched the video three times and the third time I wasn't even angry, I was just like, oh. Oh, that's him. That's who he actually is.",
+            "If you stop, you'll just be sad and pretending again, and I'll be the reason. I don't want to be the reason."
+          ],
+          replies: [
+            { you: "But I love you.",
+              them: [
+                { note: "She closes her eyes for a second." },
+                "You've never said that before. Don't say it now just because I'm leaving.",
+                "Maybe you love me like you love Dani. Like a person you feel safe with. That counts for something. It's just not enough for me."
+              ] },
+            { you: "Then what do I do?",
+              them: [
+                "Honestly? Go back to the Valley. Download one of the apps. Go on a date with a guy who'd watch that video and think 'I hope he messages me'.",
+                "And when you do, tell him the truth from the start. Don't do to him what you did to me."
+              ] }
+          ] },
+        { you: "I think I'm gay, Soph.",
+          them: [
+            { note: "She doesn't move for a moment. Then she lets out a breath that sounds a bit like a laugh." },
+            "Yeah. I think you are too.",
+            "I've thought it for a while. The way you are with my makeup. The way you went quiet when we walked past those two guys holding hands on Boundary St. I just kept telling myself I was imagining it.",
+            "I'm really glad you said it. I'm also really sad. Is that okay? Can I be both?"
+          ],
+          replies: [
+            { you: "Of course you can.",
+              them: [
+                "Okay. Good. Because I'm going to be both for a while.",
+                "And you're going to go and be happy, and I'm going to be annoyed about how good you look in a skirt. Deal?"
+              ] },
+            { you: "Are you angry?",
+              them: [
+                "About you being gay? No. Never.",
+                "About the lying? Yeah, a bit. Give me a few weeks. Then I want to hear everything about the moustache guy."
+              ] },
+            { you: "Can I still see you?",
+              them: [
+                "Not for a while. I need to stop being your girlfriend in my head first.",
+                "But yeah. One day. You'll owe me a pedicure. Hot pink. Matching."
+              ] }
+          ] },
+        { you: "You went through a video of me? That's a bit much.",
+          them: [
+            "I didn't go through anything. Kirra sent it to me. At midnight. While I was home on my own because my boyfriend said he was tired.",
+            "Don't make this about me watching a video. You lied. You put on a skirt and heels and went out and danced with a guy and lied to me about it.",
+            "And honestly, the skirt isn't even the bit that hurts."
+          ],
+          replies: [
+            { you: "Then what is?",
+              them: [
+                "That you looked happier in that video than you have in three months with me.",
+                "I'm not going to compete with that. I can't. I don't think anyone can, except maybe a guy."
+              ] },
+            { you: "Fine. Then go.",
+              them: [
+                { note: "She stands up and puts your coffee on the bench." },
+                "Okay. I will.",
+                "I hope you work it out, {name}. I really do. Just stop doing it with girls who actually like you."
+              ] }
+          ] }
+      ],
+      after: "Sophie sits in her car outside for ten minutes before she drives off. That night Kirra texts her: \"you ok?\" Sophie: \"yeah. its done. i told him to go on a date with a guy.\" Kirra: \"you're a better person than me.\" Sophie: \"i know.\" Kirra: \"the skirt was cute tho\" Sophie: \"KIRRA\"",
+      debrief: "Getting caught before you're ready is one of the worst ways for it to come out. Being angry, lying, begging or saying it straight are all things people do in that moment. What matters is what you do next, and who you're honest with after."
+    },
+    {
       id: "c7", title: "The group chat", contact: "Jess", part: "Part 1: Before",
       them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "i'm not saying anything. i'm just asking. are you ok?"],
       replies: [
