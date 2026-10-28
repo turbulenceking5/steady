@@ -1103,6 +1103,73 @@ window.CONTENT = {
       debrief: "Getting knocked back on a date is normal. Getting knocked back because someone read you right can feel worse, because it's true. It still isn't anything to be ashamed of."
     },
     {
+      id: "hannah-feet", route: "hannah", gaydar: 92, gaydarSays: "Dylan said your feet are nicer than mine. He's not wrong. That's the problem.", title: "White carpet", contact: "Hannah", irl: true,
+      intro: "Kate's housewarming in Paddington. Kate's Hannah's best friend from uni and she's got a brand new white carpet. There's a sign taped to the door: SHOES OFF. YES YOU. On Sunday Dani painted your toes a pale pink called Ballet Slippers, and you left it on because nobody was going to see.",
+      them: [
+        { note: "There's a pile of shoes in the hallway. Hannah kicks off her sneakers and waits for you." },
+        "Come on. Kate will actually kill you.",
+        { note: "You undo your laces as slowly as you can. Then your socks. Hannah looks down." },
+        "Oh. Okay. They're pink.",
+        { note: "A big guy in the hallway looks down too. Barefoot, stubby in hand, tradie tan, Kate's eyes. He grins." },
+        "\"Dylan,\" he says, and shakes your hand. \"Kate's brother. You're Han's date?\" He looks at your toes again. \"Nice colour, mate.\"",
+        "Dylan's a chippy. He's been asking me out since I was nineteen. Ignore him.",
+        "\"Eleven times,\" Dylan says. \"I'm a patient bloke.\""
+      ],
+      replies: [
+        { you: "(Curl your toes into the carpet.) Thanks. It was a bet. I lost a bet.",
+          them: [
+            "\"Yeah? Who with?\" Dylan says.",
+            { note: "You don't have an answer. Hannah looks at you." },
+            "It wasn't a bet. Dani put it on her story. 'Pedi day with my bestie.'",
+            "\"Ha,\" Dylan says. Not mean. He puts a hand on Hannah's back and steers her towards the kitchen. \"Come get a drink, Han. Your bestie can come too.\""
+          ],
+          replies: [
+            { you: "(Follow them to the kitchen.)",
+              them: [
+                { note: "Dylan opens Hannah's cider on the edge of the bench. Then he opens yours too and hands it to you, like you might not manage the cap." },
+                { note: "Every time you move, your pink toes are right there on Kate's white tiles. Kate's housemate looks at them, then at you, then at Hannah." },
+                "\"Han,\" the housemate says, very quietly. \"Is he...\"",
+                "I don't know.",
+                { note: "Hannah's watching Dylan cut limes." }
+              ] },
+            { you: "(Stay in the hallway and look at your feet.)",
+              them: [
+                { note: "You stand on the cold floorboards by the shoe pile for a whole song. Through the doorway you can see Dylan making Hannah laugh. She's got her hand on his arm." },
+                { note: "Kate walks past and says \"oh my god, cute toes\" without stopping." }
+              ] }
+          ] },
+        { you: "It's Ballet Slippers. Essie. Dani did them.",
+          gaydar: 96,
+          them: [
+            "\"Essie,\" Dylan says, nodding, like you've told him what brand of drill you use.",
+            "Kate, from the lounge: \"Wait, is that Ballet Slippers? Show me!\"",
+            { note: "A minute later you're on the white couch with three of Kate's friends, comparing feet. Someone's got her foot on your knee. Out on the balcony Dylan's got Hannah laughing." },
+            "Hannah, when she finally comes back in: \"You've been talking about cuticles for half an hour.\"",
+            "\"Dylan's nice,\" you say. You don't know why you said it.",
+            "\"Yeah,\" she says. \"He is.\""
+          ] },
+        { you: "(Stand up straight.) She's here with me, mate.",
+          them: [
+            "\"Course she is,\" Dylan says, friendly. He looks down at you. Then at your toes. Then back up. He doesn't say anything. He doesn't need to.",
+            { note: "Hannah bites her lip." },
+            "\"Good on ya,\" Dylan says, and pats your shoulder like you're his little cousin. \"Go grab a drink, mate.\""
+          ],
+          replies: [
+            { you: "(Go and grab a drink.)",
+              them: [{ note: "When you get back Dylan's in your spot on the couch next to Hannah, with his big bare feet up on the coffee table. She hasn't moved over." }] },
+            { you: "...Your feet are huge.",
+              gaydar: 98,
+              them: [
+                "\"Size thirteen,\" Dylan says, pleased.",
+                "{name}. Why are you looking at his feet?",
+                { note: "You go red. Dylan laughs, properly, and puts his arm round Hannah. She lets him." }
+              ] }
+          ] }
+      ],
+      after: "Hannah, to Kate, at 1am: \"did you see his toes\" Kate: \"babe everyone saw his toes. dylan's been on about them all night\" Hannah: \"what did he say\" Kate: \"'han's date has nicer feet than han'. then he asked if you're free friday\"",
+      debrief: "Having something about yourself on show before you're ready is a big feeling. They were still your toes, and you were the one who chose to paint them."
+    },
+    {
       id: "hannah-end", route: "hannah", gaydar: 99, spark: 0, gaydarSays: "Brodie owns four pairs of steel caps and zero lip products. I've never been happier.", title: "Hannah and Brodie", contact: "Hannah", irl: true,
       outfits: [
         { label: "Jeans, a nice top and just lip oil. Keep it low-key.", gaydar: -2, intro: "Six weeks later. Jess's birthday drinks at a pub in Newstead. You went low-key: jeans, a black top, lip oil. Then Hannah walks in. With a guy." },
@@ -1546,6 +1613,48 @@ window.CONTENT = {
       debrief: "Wearing the thing you've been too scared to wear out is a big step, whatever the date thinks. You didn't go home and change. That's the bit to keep."
     },
     {
+      id: "ella-beach", route: "ella", gaydar: 93, gaydarSays: "Coral gel toes on a beach full of lifesavers. Hayden hasn't stopped grinning.", title: "Kings Beach", contact: "Ella", irl: true,
+      intro: "Ella's uni friends do a beach day at Kings Beach in Caloundra every summer. You wore boardies and a linen shirt, and you kept your sneakers on for the whole drive up, because last night you painted your toes coral and then panicked about it.",
+      them: [
+        { note: "On the sand everyone kicks their thongs off. You keep your sneakers on until Ella looks at them." },
+        "Babe. It's the beach. Shoes off.",
+        { note: "You take them off. Then your socks. Coral toes, in the sand, in front of nine people." },
+        "Oh my god. When did you do that?",
+        { note: "A tall guy in red and yellow boardies comes up from the water, shaking it out of his hair. Shoulders like a door." },
+        "\"Ha! Love it,\" he says. \"I'm Hayden.\"",
+        "Hayden's a lifesaver. He's been trying to take me out since second year.",
+        "\"Still am,\" Hayden says, and grins at her. Then down at your feet. \"You coming in, mate? Or are you worried about the polish?\""
+      ],
+      replies: [
+        { you: "I'm fine in the water. I'm a strong swimmer.",
+          them: [
+            { note: "You go in. The first wave knocks you flat and you come up coughing with your shirt over your face." },
+            "\"Gotcha,\" Hayden says, and pulls you up by one arm. He keeps hold of you until the next set's gone through, like you're a kid at nippers.",
+            { note: "Back on the sand, Ella's taking photos. Of Hayden." },
+            "You did so well, babe. Hayden saved you.",
+            "\"I didn't need saving.\"",
+            "\"Mate,\" Hayden says, kindly. \"You did a bit.\""
+          ] },
+        { you: "(Sit on the towel.) I'll mind the bags.",
+          them: [
+            "\"Legend,\" Hayden says. He holds his hand out to Ella. \"Come on, Ells. I'll take you out past the break.\"",
+            { note: "She goes. You sit on her towel with her sunnies on your head and your coral toes in the sand. Her friend Maddy sits down and puts her foot next to yours." },
+            "\"Same colour as mine,\" Maddy says. \"Yours are neater.\"",
+            { note: "Out past the break Hayden lifts Ella onto his shoulders. She screams and laughs and doesn't look back at the beach once." }
+          ] },
+        { you: "(Wiggle your toes.) The polish is fine, thanks. It's gel.",
+          gaydar: 97,
+          them: [
+            "\"Gel,\" Hayden says. \"Course it is.\" He looks at Ella. Ella looks at the sand.",
+            "I can't believe you know the difference.",
+            { note: "Hayden picks up the cricket bat. \"Beach cricket, boys,\" he says to the other guys. Then, to you: \"You can keep score, mate.\"" },
+            { note: "You keep score on the back of Ella's sunscreen with her eyeliner. Hayden hits a six into the water. Ella cheers so loud a seagull takes off." }
+          ] }
+      ],
+      after: "Ella, to her sister, on the drive home: \"he took his shoes off and his toes were CORAL\" \"stop\" \"and hayden saw\" \"what did hayden say\" \"nothing. he just kept looking at me like. you sure about this one?\" \"are you\" \"no\"",
+      debrief: "Being the most polished person on a beach full of lifesavers is a lot. You still took your shoes off. That counts."
+    },
+    {
       id: "ella-end", route: "ella", gaydar: 99, spark: 0, gaydarSays: "Connor plays rugby and thinks a cat eye is an actual cat's eye. Perfect man.", title: "Ella and Connor", contact: "Ella",
       intro: "A month later, Ella's Instagram story pops up: her and a guy in a Reds jersey at Suncorp, his arm round her, both holding pies. His name's Connor. You reply to the story with a heart-eyes emoji before you can stop yourself. Ten minutes later she replies.",
       them: [
@@ -1874,6 +1983,44 @@ window.CONTENT = {
       debrief: "When someone asks you straight out, you can answer straight out, or not at all. Notice which answer felt lighter to say."
     },
     {
+      id: "georgie-feet", route: "georgie", gaydar: 96, gaydarSays: "Lilac. Self-done. Cleaner edges than mine. Corey noticed. Corey notices everything.", title: "Climbing shoes", contact: "Georgie", irl: true,
+      intro: "Thursday at the gym. You and Georgie have been seeing each other three weeks. Corey's here tonight. He sets the routes, he's got forearms like a man who sets routes, and he asks Georgie to come climbing outside with him every single week.",
+      them: [
+        { note: "After the session you sit on the bench and pull your climbing shoes off. Your toes come out. Lilac. You forgot." },
+        "Huh. Lilac.",
+        { note: "Corey drops his chalk bag next to you. His feet are bare, enormous and covered in chalk." },
+        "\"No way,\" he says. \"You get your toes done, mate?\"",
+        "He did them himself. Look at the edges. They're perfect.",
+        "\"Ha. Fair enough.\" Corey's grinning. He turns to Georgie. \"Kangaroo Point Saturday? Proper rock. Just us.\""
+      ],
+      replies: [
+        { you: "Can I come too?",
+          them: [
+            "\"Yeah, course, mate,\" Corey says, way too easily. \"Bring thongs for the walk down. Don't want you chipping anything.\"",
+            { note: "Georgie snorts. She doesn't say no to Saturday." },
+            "Bring snacks. You can belay. You're good at belaying.",
+            { note: "She means you'll be at the bottom holding the rope while Corey climbs next to her." }
+          ] },
+        { you: "(Shove your feet back into your socks.)",
+          them: [
+            { note: "One sock goes on inside out. Nobody says anything. Corey's still grinning." },
+            "Don't hide them. They look good. That's the problem.",
+            "\"What problem?\"",
+            "Doesn't matter. Saturday, Corey. Seven."
+          ] },
+        { you: "They won't chip, actually. That's a top coat.",
+          gaydar: 98,
+          them: [
+            "\"Top coat,\" Corey says. \"Learn something new.\"",
+            "Three weeks and you've never said 'top coat' in front of me.",
+            "\"You never asked,\" you say. You nod at Corey. \"He did.\"",
+            { note: "Corey laughs and holds out a fist. You bump it. Then he goes and helps Georgie coil her rope, standing very close to her." }
+          ] }
+      ],
+      after: "Georgie, to her housemate: \"corey asked me out again.\" \"and?\" \"i said yes. for climbing.\" \"what about {name}\" \"{name} has lilac toes. did them himself. better than i could.\" \"so?\" \"so i'm going climbing with corey.\"",
+      debrief: "Getting caught out in front of the guy who wants your girl stings. It isn't a contest you have to win. You can just be the guy with the top coat."
+    },
+    {
       id: "georgie-end", route: "georgie", gaydar: 99, spark: 0, gaydarSays: "Ben does rope access on skyscrapers. He's never worn a slip dress. I checked.", title: "Georgie and Ben", contact: "Georgie", irl: true,
       outfits: [
         { label: "Old gym gear. Pretend nothing happened.", gaydar: -2, intro: "Six weeks later, Tuesday night at the climbing gym. You wore your oldest gym gear and no makeup, hoping to be invisible. Georgie's on the overhang wall. Belaying her is a guy you've never seen: massive, bearded, ropes slung over his shoulder like he does this for a living. He does. That's Ben." },
@@ -2032,6 +2179,47 @@ window.CONTENT = {
       ],
       after: "Lucy's group chat that night. Kayla: \"so??\" Lucy: \"dont\" Ruby: \"thats a yes then\" Lucy: \"im not saying anything\" Kayla: \"thats DEFINITELY a yes\" Kayla: \"ask him where he gets his lashes done\"",
       debrief: "Changing how you look bit by bit is a real way to come out. People notice, and they talk. Nobody gets to decide when you say it, even when they've already guessed."
+    },
+    {
+      id: "lucy-feet", route: "lucy", gaydar: 92, gaydarSays: "Red toes at the low table. Fraser drove me home. It's nothing. Probably.", title: "Low tables", contact: "Lucy", irl: true,
+      intro: "Kayla's birthday dinner at a Japanese place in Sunnybank. The private room has tatami mats, low tables and a sign at the step: please remove your shoes. You're in loafers with no socks, and you painted your toes red on Tuesday because Lucy said red would suit you. Also here: Fraser. He's a paramedic who works nights with Lucy, and Kayla told you in the car he's \"obsessed with her\".",
+      them: [
+        { note: "Everyone lines their shoes up at the step. You slip your loafers off. Red toes, on the tatami, under the bright light." },
+        "Oh! You did them! They look so good.",
+        { note: "Fraser sits down cross-legged right next to Lucy. Big guy, grey hoodie, thick work socks. He looks at your feet." },
+        "\"Red,\" he says. \"Bold, mate.\"",
+        { note: "There's nowhere to put your feet. Under the low table they end up right next to his knee." },
+        "Fraser's a paramedic. Don't let him tell you about his worst callout. He'll do it with the gyoza on the table.",
+        "\"Wasn't gonna,\" Fraser says, leaning back on his hands, closer to her. \"Gonna tell him about the nurse who saved my life at 3am with a Mars bar.\" Lucy goes pink."
+      ],
+      replies: [
+        { you: "(Kneel and tuck your feet under you.)",
+          them: [
+            { note: "You sit on your feet. After ten minutes you can't feel them." },
+            { note: "Fraser pours Lucy's sake, then everyone else's, then yours. He says \"say when\" and you say \"when\" and your voice goes up on it." },
+            "Kayla, from across the table: \"{name} sits like my ballet teacher.\"",
+            "He does! Sorry. He does.",
+            { note: "She's laughing, but she isn't looking at you. She's waiting for the Mars bar story." }
+          ] },
+        { you: "It's called Big Apple Red. Lucy picked it.",
+          gaydar: 96,
+          them: [
+            "Kayla: \"LUCY picked it?\"",
+            "I said it would suit him. And it does.",
+            "\"Did you paint them for him too?\" Fraser asks her, grinning.",
+            "No! He does his own. He's better at it than me.",
+            { note: "Fraser laughs, says \"course he is\" and pinches a gyoza off her plate. She slaps his hand. Then she lets him have it." }
+          ] },
+        { you: "Bold's kind of my thing.",
+          them: [
+            "\"Yeah? Good on ya,\" Fraser says. He doesn't look worried about anything.",
+            { note: "When the karaage comes he gives Lucy the biggest piece. Then he puts the little crumbly one on your plate, the way you'd serve a kid." },
+            "Ruby, quietly, next to you: \"You know he's been after her for a year, yeah?\"",
+            "\"I know now,\" you say."
+          ] }
+      ],
+      after: "Kayla, in the group chat after: \"{name} sat through dinner with red toes and fraser did not stop grinning\" Ruby: \"fraser drove lucy home\" Kayla: \"FRASER DROVE LUCY HOME?\" Lucy: \"he lives near me. it's nothing\" Ruby: \"it's not nothing\"",
+      debrief: "Being on show when you didn't plan to be is hard, especially next to someone who's sure of himself. You stayed at the table."
     },
     {
       id: "lucy-end", route: "lucy", gaydar: 99, spark: 0, gaydarSays: "Hamish wears RM Williams and has never said the word 'Bordeaux' in his life. He drinks it though.", title: "Lucy and Hamish", contact: "Lucy", irl: true,
