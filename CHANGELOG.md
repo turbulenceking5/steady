@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- How to use: covers boy clothes, Continue, Skip typing and the bars.
 - Story: boy clothes. On each girl's first date you can pick "Boy clothes", and her story goes a different way: two new dates where she's into you, your choices decide whether you keep it up or slip, and she either asks you to be her boyfriend or moves on and tells you to date guys. Pick a different outfit on date one to get her usual story back.
 - Story: twelve new dates, one more for every girl: shopping for Archie's work party dress, Hannah's run club in a lilac set, styling Mia over text, Ella's plus-one, Bec's 30th mood board, women's climbing shoes with Georgie, 3am sheet masks with Lucy, a pedicure date with Jade, Olivia's sister on FaceTime, trivia with Zoe, Kirra stealing Sophie's phone and the beauty store with Bianca.
 - Story: in every barefoot scene the girls tease you about your tiny feet.

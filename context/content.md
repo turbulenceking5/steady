@@ -34,21 +34,9 @@ Mostly women, and no family members. Men appear only as dates, crushes or partne
 Story is split into **routes** (`routes: [{ id, name, blurb, part, lock? }]`), and every chapter has a `route`. Chapters in a route open one after another as soon as the previous one is finished. Routes with `lock` (Jess, {bf}) open once any other route is finished.
 - **Archie** (c1, c1b, archie-feet, c3, c4): three years together. She works out he's gay, leaves him for Josh from logistics (pickup soccer, three polo shirts), then tries to set him up with Josh's friend Ryan (reformer pilates, a dog called Margot). He never comes out to her.
 - **Nicole** (c2, nicole-2, nicole-3): she never asks and he never tells her; she just starts treating him as one of the girls (girls' night, Sephora, rating her Hinge guys). `friend: true` hides the attraction bar.
-- **The girls** (Hannah, Mia, Ella, Tayla, Georgie, Lucy, Jade, Olivia, Zoe, Sophie, Bianca): five to seven chapters each, in this order:
+- **The girls** (Hannah, Mia, Ella, Tayla, Georgie, Lucy, Jade, Olivia, Zoe, Sophie, Bianca): seven to ten chapters each.
 
-  | Route | Chapters |
-  |---|---|
-  | Hannah | hannah-1, hannah-2, c5, hannah-feet, hannah-tickle, hannah-end |
-  | Mia | mia-1, mia-2, mia-feet, c6, mia-end |
-  | Ella | ella-1, ella-2, c6b, ella-beach, ella-tickle, ella-end |
-  | Tayla | tayla-1, tayla-2, c6c, tayla-feet, tayla-ambush, tayla-end |
-  | Georgie | georgie-1, georgie-2, c6d, georgie-feet, georgie-tickle, georgie-end |
-  | Lucy | lucy-1, lucy-2, c6e, lucy-feet, lucy-tickle, lucy-end |
-  | Jade | jade-1, jade-2, jade-feet, c6f, jade-end |
-  | Olivia | olivia-1, olivia-2, olivia-feet, c6g, olivia-end |
-  | Zoe | zoe-1, zoe-2, zoe-feet, zoe-ambush, c6h, zoe-end |
-  | Sophie | sophie-1, sophie-2, sophie-feet, sophie-ambush, c6i, sophie-end |
-  | Bianca | c6j, c6k, c6l, c6m, bianca-feet, bianca-ambush, bianca-end |
+  See [routes.md](routes.md) for every route's chapters in order, including the extra dates and the boy-clothes path.
 
   Date one is low-key; each date he's a bit gayer and more femme in how he dresses and how he talks; the big chapter (the older c5–c6m ids) is where she says it or breaks up with him; the last (`<name>-end`) is her with a straight guy who doesn't crossdress (Brodie the electrician, Lachlan the accountant, Connor the rugby player, Mitch who plays football, Ben who does rope access, Hamish the ag consultant, Riley the plumber, James in finance, Kyle the mechanic, Nathan the physio, Liam the carpenter).
 - **Trying to win her back:** every end chapter has a branch where he goes up to the new guy to say he wants her back. He comes across very meek and obviously gay (says sorry, talks in a small voice, holds his drink with both hands), the guy gives him butterflies (he loses his words, goes red, compliments his arms or his shirt), and the guy knows he's no threat and teases him for it: cocky, laughing, calling him "champ", "princess" or "sweetheart", offering him something pink with a little straw, announcing it to his friends. She says no but thinks he's adorable. In `mia-end` he turns up at her flat and she makes him take his shoes and socks off at the door (new floors), which shows his glittery lilac toes in front of Lachlan. Nobody is cruel to him.

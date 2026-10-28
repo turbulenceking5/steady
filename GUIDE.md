@@ -7,8 +7,13 @@
 ## Story
 - The app is the Story. It goes from being in the closet with Archie, through coming out, to six months with your boyfriend.
 - Pick a girl to date. Each one's story goes date by date until she works out you're gay and goes off with a straight guy. Finish a chapter and the next one opens straight away.
-- Jess and your boyfriend's story open once you've finished any other girl's story.
+- **Continue** at the top of the list opens the next unread chapter of the girl you last played. Each girl shows how many of her chapters you've read.
+- Before most dates you pick what you're wearing. It changes how the date opens and both bars at the end: how gay she thinks you are, and how much she fancies you.
+- **Boy clothes:** on a girl's first date, pick "Boy clothes" and her story goes a different way. She keeps dating you if you keep it up, and moves on if you slip. Replay the first date in another outfit to get her usual story back.
+- Messages type out one by one. Tap the conversation, or "Skip typing", to show the rest straight away. With Reduce Motion on (phone settings) they appear at once.
 - Pick any reply; there are no wrong answers. "Try different replies" replays a chapter.
+- Jess and your boyfriend's story open once you've finished any other girl's story.
+- Your phone's back button steps back to the girl's chapters, then the list.
 
 ## Privacy
 - Everything stays on your device. Nothing is sent anywhere.

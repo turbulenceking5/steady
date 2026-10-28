@@ -7,6 +7,8 @@ Read the relevant file before changing that part of the project:
 - [GUIDE.md](GUIDE.md): user guide.
 - [context/architecture.md](context/architecture.md): file map, helpers, storage keys, conversation engine, service worker.
 - [context/content.md](context/content.md): `content.js` schema (routes, story), placeholders, cast, voice and tone.
+- [context/routes.md](context/routes.md): every route's chapters in order, the boy-clothes fork, rivals and end boyfriends.
+- [context/testing.md](context/testing.md): `test/validate-content.cjs` and `test/play.cjs`, what they check, and the by-hand checks.
 - [context/dialogue.md](context/dialogue.md): how characters text. Realistic and blunt, not AI-sounding or always nice. Follow it for every conversation.
 - [CHANGELOG.md](CHANGELOG.md): add an entry for every user-visible change.
 
@@ -20,7 +22,7 @@ Read the relevant file before changing that part of the project:
 - Storage only through `store` in index.html (keys get the `st_` prefix, which export, import and erase rely on). Wrap risky code in try/catch.
 - Dates are Australia/Brisbane (UTC+10, no daylight saving).
 - Must work at 390px with no horizontal scroll, in light and dark mode, and respect `prefers-reduced-motion`.
-- Test in headless Chromium (Playwright is pre-installed) before pushing: walk every conversation path and check for console errors.
+- Before pushing, run `node test/validate-content.cjs` and `node test/play.cjs` (see context/testing.md).
 
 ## Content boundaries
 - Affirming and warm. This app exists to make being gay feel normal and safe.

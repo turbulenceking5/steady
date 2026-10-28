@@ -34,9 +34,16 @@ Rules for how people text in the Story, above all for the dates in Part 1. The a
 - Keep his options human too: awkward, defensive, a bit snarky, apologetic, or honest. They aren't speeches and they don't fix the situation.
 - Every reply is still a fine reply. No scoring.
 
+## Letting him down
+- Once a girl stops fancying him she says so the way people really do: offhand, a bit mocking, not a speech. "you'd have more luck with the waiter lol", "like youd be a great boyfriend honestly. for a guy".
+- Teasing him towards guys is fine and usually lands in the break-up or end chapter: she points out who he was looking at, says he should be on the guy apps, or has a friend lined up for him.
+- Each girl does it her own way (Hannah blunt, Mia apologising, Georgie counting things, Lucy in her nurse voice, Zoe through Brooke). Don't give two girls the same line, and don't lean on stock beats (head pats, "one of the girls", "puppy cute", fixing-things comparisons) more than once a route.
+- In the barefoot chapters she teases him about his small feet (smaller than hers, a size six, "princess feet"). One line per chapter, different every time.
+- On the boy-clothes path the same girls are into him while he keeps it up; when he slips they notice and say it in the same teasing voice.
+
 ## Where the line is
 These rules sit inside the content boundaries in CLAUDE.md:
-- Annoyed, blunt and disappointed is fine. Slurs, cruelty for its own sake, or a scene built around humiliating him for being gay or feminine are not.
+- Annoyed, blunt, teasing and disappointed is fine. Slurs, cruelty for its own sake, or a scene built around humiliating him for being gay or feminine are not.
 - Embarrassing moments are fine when they're gentle and the people around him stay warm (his painted toes showing when Mia makes him take his socks off, going red at the new boyfriend). Nobody laughs at him to hurt him.
 - The guys who want the girls (and the new boyfriends when he tries to win her back) tease him and make it obvious they don't see him as a threat. Ribbing, smirks and pet names are fine. No slurs, no threats, nothing physical beyond a hair ruffle, a pat on the cheek, or (in the barefoot chapters) grabbing his ankle to tickle his feet, and in the ambush chapters pulling his shoes and socks off while he protests, with the girls holding him down and joining in. Tickling is playful and non-sexual, and it stops the moment he says stop. When he can't say it, she (or the guy) calls it.
 - The focus stays on him and how he handles it. The narrator `after` note and the `debrief` carry the warmth, so the dialogue doesn't have to.

@@ -35,4 +35,4 @@ Opening a route or chapter pushes one history entry, so the phone's back button 
 Nothing leaves the device. Settings has export, import and erase (all `st_` keys). **Hide** shows a grocery-list cover, and a double tap (detected manually, since iOS doesn't reliably fire `dblclick`) dismisses it.
 
 ## Testing
-`node test/play.cjs` (Playwright, serves the folder itself) runs at 390px: every route, chapter, reply path and outfit in light mode with reduced motion (checking message counts, outcomes, "Next chapter", unfilled placeholders and horizontal scroll), one path per chapter in dark mode with real clicks and the browser back button, then typing delays, Skip, leaving mid-typing, double clicks, keyboard focus, Continue, reload and Settings with normal motion. Any console or page error fails it. `node test/validate-content.cjs` checks `content.js` itself.
+See [testing.md](testing.md).
