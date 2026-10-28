@@ -70,6 +70,8 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 @media (prefers-reduced-motion: reduce) { .bubble { animation: none; } }
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 .choices button { text-align: left; background: var(--card); color: var(--ink); border: 1px solid var(--accent); border-radius: 14px; padding: 10px 13px; font: inherit; cursor: pointer; }
+.thinks { font-size: 17px; line-height: 1.45; margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; border-left: 4px solid var(--accent); }
+.thinks p { margin: 6px 0 0; font-style: italic; }
 .debrief { font-size: 17px; line-height: 1.45; margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .gaydar { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .gaydar .muted, .choices > p.muted { font-size: 16px; }
@@ -263,6 +265,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     if (convo.intro) add("note", fill(convo.intro));
 
     let endNote = convo.after; // a branch can carry its own closing note
+    let thinks = convo.thinks; // dates: what she was really thinking; the deepest branch that sets it wins
     let outcome = convo.outcome; // deepest branch that sets it wins
     let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
     let spark = convo.spark; // how into you she is; defaults to 100 - gaydar
@@ -271,6 +274,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       skip = false;
       choices.innerHTML = "";
       if (node !== convo && node.after) endNote = node.after;
+      if (node !== convo && node.thinks) thinks = node.thinks;
       if (node !== convo && node.outcome) outcome = node.outcome;
       if (node !== convo && node.gaydar != null) gaydar = node.gaydar;
       if (node !== convo && node.spark != null) spark = node.spark;
@@ -308,6 +312,9 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
         if (convo.outfits || masc) setMasc(convo.id, masc);
         const endAt = thread.children.length;
         if (endNote) add("note", fill(endNote));
+        // Her inner thoughts: her first look at the outfit you picked, then how the date went for her.
+        const thoughts = [].concat((convo.fit && convo.fit.thinks) || [], thinks || []);
+        if (thoughts.length) choices.insertAdjacentHTML("beforeend", `<div class="thinks"><b>In ${esc(fill(convo.gaydarWho || convo.contact))}'s head</b>${thoughts.map((t) => `<p>${esc(fill(t))}</p>`).join("")}</div>`);
         if (gaydar != null) {
           const delta = (convo.fit && convo.fit.gaydar) || 0;
           if (gaydar < 100) gaydar = Math.max(0, Math.min(99, gaydar + delta));

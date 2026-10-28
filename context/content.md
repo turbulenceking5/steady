@@ -12,7 +12,7 @@ window.CONTENT = {
 Route    = { id, name, blurb, part?, lock?, avatar?, intro? }
 Chapter  = { id, route, title, contact?, intro?, irl?, friend?, gaydarSays?, gaydarWho?,
              outfits?, outfitPrompt?, ...Node }   // contact defaults to {bf}
-Node     = { them: [Msg], replies?: [{ you, ...Node }], after?, debrief?, gaydar?, spark?, outcome? }
+Node     = { them: [Msg], replies?: [{ you, ...Node }], after?, thinks?, debrief?, gaydar?, spark?, outcome? }
 Msg      = string | { from, text } | { note } | { text, if } | { note, if }   // from = sender in group chats; note = narration (what she does), mainly for irl scenes
 ```
 - IDs must be unique and never change: progress is stored by id.
@@ -21,6 +21,7 @@ Msg      = string | { from, text } | { note } | { text, if } | { note, if }   //
 - `irl: true` marks an in-person scene (spoken, with `{ note }` narration). `friend: true` hides the attraction bar.
 - `after` is a narrator note shown when the conversation ends (the deepest branch's own takes priority). A chapter-level `after` shows on every branch that doesn't have its own, so it must be true whichever way the chat went: put branch-specific notes (he tried to win her back, he gave Riley a pedicure) on that branch. `debrief` is a short "worth remembering" note.
 - `outcome` on a branch records how the chapter ended (deepest branch wins; replaying overwrites it). A later message with `if: "chapterId=a|b"` only shows when that chapter last ended with one of those outcomes. The tickle chapters use `held`, `cracked`, `begged` and `kept` (let him keep going).
+- `thinks` (array of short paragraphs) is what the girl was really thinking on an in-person date, shown at the end in an "In {girl}'s head" card above the bars. Like `after`, the deepest branch's own wins, so the chapter's must be true on every branch and outfit; put what only fits one branch on that branch. An outfit's `thinks` (one string) is her first look at what he wore, shown before the rest. First person, past tense, her own voice: honest and a bit unfiltered (what she noticed, what she didn't say, who she's going to tell), not cruel, no therapy-speak. It shouldn't repeat `after` or `gaydarSays`.
 - `gaydar` (0–100) on a date chapter shows a "How gay {girl} thinks you are" bar when it ends. Set a base on the chapter and raise it on the branches where he says it (100 = he told her). The deepest branch that sets it wins. A second bar, "How into you {girl} is", shows `spark` (deepest branch wins) or, by default, 100 minus the gaydar: the more she suspects, the less she fancies him. `gaydarSays` is her teasing one-liner under the bars; it shows for every branch, so in the tickle chapters it mustn't assume he laughed (he can hold it in). `gaydarWho` names the girl when `contact` is a group chat (c6c: Tayla). Labels come from `gaydarLabel()` in index.html.
 
 ## Cast

@@ -110,7 +110,9 @@ async function walkChapter(ci) {
     if (!!view.querySelector(".choices .next") === isLast) errs.push(`${where}: "Next chapter" ${isLast ? "shown on the last chapter" : "missing"}`);
     if (view.querySelectorAll(".bubble.you").length !== p.length) errs.push(`${where}: ${view.querySelectorAll(".bubble.you").length} of your bubbles, expected ${p.length}`);
     // Messages: them bubbles + narration notes (minus the outfit, intro and closing notes).
-    let after = c.after; node = c; for (const idx of p) { node = node.replies[idx]; if (node.after) after = node.after; }
+    let after = c.after, thinks = c.thinks; node = c; for (const idx of p) { node = node.replies[idx]; if (node.after) after = node.after; if (node.thinks) thinks = node.thinks; }
+    const wantThinks = (f >= 0 && c.outfits[f].thinks ? 1 : 0) + (thinks ? thinks.length : 0);
+    if (view.querySelectorAll(".choices .thinks p").length !== wantThinks) errs.push(`${where}: ${view.querySelectorAll(".choices .thinks p").length} lines in her head, expected ${wantThinks}`);
     const fixedNotes = (f >= 0 ? 1 : 0) + ((f >= 0 ? c.outfits[f].intro || c.intro : c.intro) ? 1 : 0) + (after ? 1 : 0);
     const msgCount = view.querySelectorAll(".bubble.them").length + endNotes - fixedNotes;
     if (msgCount !== want) errs.push(`${where}: ${msgCount} messages shown, expected ${want}`);

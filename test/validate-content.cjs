@@ -113,7 +113,13 @@ function checkMsgs(where, list) {
   });
 }
 
-const NODE_KEYS = ["them", "replies", "after", "debrief", "gaydar", "spark", "outcome"];
+// `thinks`: her inner thoughts, a list of short paragraphs.
+function checkThinks(where, t) {
+  if (!Array.isArray(t) || !t.length) return err(where, "`thinks` must be a non-empty array of strings");
+  t.forEach((x, i) => checkText(`${where}[${i}]`, x));
+}
+
+const NODE_KEYS = ["them", "replies", "after", "thinks", "debrief", "gaydar", "spark", "outcome"];
 const CHAPTER_KEYS = ["id", "route", "title", "contact", "intro", "irl", "friend", "gaydarSays", "gaydarWho", "outfits", "outfitPrompt", "path", ...NODE_KEYS];
 const ifRefs = [];
 const outcomesByChapter = {};
@@ -134,6 +140,7 @@ function checkNode(where, n, chapter, isChapter) {
   } else if (isChapter) err(where, "chapter has no `them`");
   else if (hasReplies) warn(where, "branch has replies but no `them` (he answers his own message)");
   for (const k of ["after", "debrief"]) if (k in n) checkText(`${where}.${k}`, n[k]);
+  if ("thinks" in n) checkThinks(`${where}.thinks`, n.thinks);
   inRange(where, "gaydar", n.gaydar);
   inRange(where, "spark", n.spark);
   if ("outcome" in n) {
@@ -192,9 +199,10 @@ C.story.forEach((c, i) => {
     else c.outfits.forEach((o, j) => {
       const ow = `${w}.outfits[${j}]`;
       if (!o || typeof o !== "object") return err(ow, "outfit must be an object");
-      for (const k of Object.keys(o)) if (!["label", "intro", "gaydar", "them", "at", "masc", "spark"].includes(k)) err(ow, `unknown outfit key "${k}"`);
+      for (const k of Object.keys(o)) if (!["label", "intro", "gaydar", "them", "at", "masc", "spark", "thinks"].includes(k)) err(ow, `unknown outfit key "${k}"`);
       checkText(ow + ".label", o.label);
       if ("intro" in o) checkText(ow + ".intro", o.intro);
+      if ("thinks" in o) checkText(ow + ".thinks", o.thinks);
       if ("gaydar" in o && (typeof o.gaydar !== "number" || o.gaydar < -100 || o.gaydar > 100)) err(ow, "outfit `gaydar` is a delta between -100 and 100");
       if ("gaydar" in o && c.gaydar == null) warn(ow, "outfit `gaydar` but the chapter has no base `gaydar`");
       if ("them" in o) { checkMsgs(ow + ".them", o.them); if (Array.isArray(o.them) && !o.them.length) err(ow, "empty `them`"); }
