@@ -1,6 +1,14 @@
 # Changelog
 
 ## 2026-10-28
+- Story: "Skip typing". Tap it, or tap the conversation, and the rest of that turn's messages appear at once.
+- Story: a Continue card at the top picks up the next unread chapter in the route you last played, and each route shows how many chapters you've read.
+- Fixed: new messages scroll into view again (only if you were already near the bottom, so rereading isn't interrupted).
+- Fixed: a double tap, or tapping an old reply button, can no longer play a branch twice.
+- Fixed: back returns you to where you were in the list; opening a chapter starts at the top; after a reload the first back press works.
+- Fixed: name changes in Settings show in the Story straight away, and group-chat names and "Worth remembering" notes fill in your names.
+- Dark mode: your own message bubbles are easier to read. Long words wrap instead of scrolling sideways.
+- Screen readers hear new messages as they arrive, and keyboard focus follows the new buttons.
 - Story: four ambush chapters. You keep your shoes on to hide your toes, say no, and they take them off anyway: Jordan, Steph and Bec after Tayla's netball training, Tyler, Brooke and Tash at a picnic in New Farm Park, Ethan and Kirra's rematch with Sophie, and Jake unzipping your new boots at Bianca's. Then the girls join in, and sometimes she's the one who finds your spot. Giving in costs you with her, and her new boyfriend has seen the video by the end.
 - Story: four new, much longer tickling chapters. Dylan at Kate's movie night (Hannah), Hayden at the surf club (Ella), Corey on the crash mats (Georgie) and Fraser after Lucy's night shift. You choose whether to resist or give in, then whether to hold it or crack, beg him to stop or let him keep going, and what happens after. Giggling costs you: she pays his bet, swims with him, leans on him or leaves with him, the video gets around, and her new boyfriend brings it up when you meet him at the end.
 - Steady is now just the Story. Today, Messages, Practice, Style and Progress (XP, quests, badges) are gone, along with the tab bar; the app opens straight to the list of girls.

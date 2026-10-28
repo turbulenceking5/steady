@@ -18,15 +18,16 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --line: #2e2b3d;
-    --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #6d6de3; --you-ink: #fff;
+    --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff;
   }
 }
 :root[data-theme="dark"] {
   --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --line: #2e2b3d;
-  --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #6d6de3; --you-ink: #fff;
+  --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--ink); }
+html { scroll-padding-top: 72px; }
 body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
 header { position: sticky; top: 0; z-index: 5; background: var(--bg); display: flex; align-items: center; gap: 8px; padding: 12px 16px; padding-top: calc(12px + env(safe-area-inset-top)); border-bottom: 1px solid var(--line); }
 header h1 { font-size: 20px; margin: 0; flex: 1; }
@@ -52,13 +53,19 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 .tag.new { background: var(--accent); color: var(--accent-ink); }
 .tag.done { background: transparent; border: 1px solid var(--line); }
 .thread { display: flex; flex-direction: column; gap: 6px; min-height: 40vh; }
-.bubble { max-width: 82%; padding: 9px 13px; border-radius: 18px; white-space: pre-wrap; animation: pop .18s ease-out; }
+.bubble { max-width: 82%; padding: 9px 13px; border-radius: 18px; white-space: pre-wrap; overflow-wrap: anywhere; animation: pop .18s ease-out; }
 .bubble.them { align-self: flex-start; background: var(--them); border-bottom-left-radius: 6px; }
 .bubble.you { align-self: flex-end; background: var(--you); color: var(--you-ink); border-bottom-right-radius: 6px; }
 .bubble.note { align-self: center; max-width: 100%; background: none; color: var(--muted); font-size: 14px; text-align: center; }
 .bubble .from { display: block; font-size: 12px; font-weight: 700; color: var(--accent); }
 .item[disabled] { opacity: .55; cursor: default; }
 .typing { align-self: flex-start; color: var(--muted); font-size: 14px; padding: 4px 6px; }
+.thread { cursor: default; }
+.choices .skip { align-self: flex-start; border: 0; background: none; color: var(--muted); font-size: 14px; padding: 6px 2px; text-decoration: underline; }
+.chead .tag { white-space: normal; }
+.continue { margin-bottom: 6px; }
+.continue .avatar { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @keyframes pop { from { opacity: 0; transform: translateY(4px); } }
 @media (prefers-reduced-motion: reduce) { .bubble { animation: none; } }
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
@@ -147,7 +154,6 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
 
   // Dates are Australia/Brisbane (UTC+10, no daylight saving).
   const bneDate = (d = new Date()) => new Date(d.getTime() + 10 * 3600e3).toISOString().slice(0, 10);
-  const today = bneDate();
 
   const name = () => store.get("name", "") || "Calum";
   const bf = () => store.get("bf", "") || "Matt";
@@ -178,15 +184,24 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     const f = backFn; backFn = null; if (f) f();
   });
 
+  // Keyboard or touch? Focus only follows the content when he's using a keyboard, so taps
+  // don't leave focus rings around and screen readers land on the new view.
+  let usingKeys = false;
+  addEventListener("keydown", (e) => { if (e.key === "Tab" || e.key === "Enter" || e.key === " ") usingKeys = true; }, true);
+  addEventListener("pointerdown", () => { usingKeys = false; }, true);
+  const focusIn = (el) => { if (!usingKeys || !el) return; const b = el.querySelector("button:not([disabled])"); if (b) b.focus({ preventScroll: true }); };
+
   // ---------- Conversation engine ----------
-  function markDone(id) { const s = storyDone(); if (!s[id]) { s[id] = today; store.set("story", s); } }
+  function markDone(id) { const s = storyDone(); if (!s[id]) { s[id] = bneDate(); store.set("story", s); } }
   // How a chapter ended (a branch's `outcome`), so a later chapter can bring it up: { if: "chapterId=a|b" }.
   // The latest play-through wins, so "Try different replies" can change it.
   function setOutcome(id, v) { const o = store.get("outcomes", {}); if (v) o[id] = v; else delete o[id]; store.set("outcomes", o); }
-  function outcomeIs(cond) { const [id, vals] = cond.split("="); return vals.split("|").includes(store.get("outcomes", {})[id]); }
+  function outcomeIs(cond) { const [id, vals = ""] = String(cond).split("="); return vals.split("|").includes(store.get("outcomes", {})[id]); }
 
+  // Reduced motion also means no typing delays: messages arrive at once.
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const wait = (ms) => new Promise((r) => setTimeout(r, reduceMotion ? 0 : ms));
+  // Keep the newest message in view, unless he's scrolled up to reread something.
+  const nearBottom = () => innerHeight + scrollY >= document.documentElement.scrollHeight - 160;
 
   // Teasing, never nasty: it's her read on you, and the joke's on how obvious it is.
   const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
@@ -194,28 +209,49 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   const sparkLabel = (v) => v >= 80 ? "Fancies you. Hasn't looked at your nails yet." : v >= 60 ? "Still keen, but she's clocked the gloss" : v >= 40 ? "Fancies your skincare more than you" : v >= 20 ? "Wants to borrow your lip oil, not kiss you" : v > 0 ? "Sees you as one of the girls now, babe" : "Already trying to set you up with a guy";
   function runConversation(view, convo, header) {
     const run = Symbol(); view._run = run;
-    view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
+    view.innerHTML = header + '<div class="thread" role="log" aria-live="polite" aria-label="Conversation"></div><div class="choices"></div>';
     // The header is rebuilt on every re-run (outfit pick, "Try different replies"), so bind back here.
     const backBtn = view.querySelector(".back");
     if (backBtn) backBtn.addEventListener("click", goBack);
     const thread = view.querySelector(".thread");
     const choices = view.querySelector(".choices");
-    const add = (cls, text) => { const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; thread.appendChild(b); return b; };
+    const add = (cls, text) => {
+      const stick = nearBottom();
+      const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; thread.appendChild(b);
+      if (stick) b.scrollIntoView({ block: "nearest" });
+      return b;
+    };
+    // A button that only works while it's on screen and this run is current, so a stray
+    // second tap or a stale handler can't play a branch twice.
+    const button = (cls, text, fn) => {
+      const b = document.createElement("button"); b.type = "button"; b.className = cls; b.textContent = text;
+      b.addEventListener("click", () => { if (b.isConnected && view._run === run) fn(); });
+      return b;
+    };
+
+    // Typing delays can be skipped: tap the conversation or "Skip typing" and the rest of
+    // this turn's messages arrive at once.
+    let skip = false, skipNow = null;
+    const wait = (ms) => new Promise((r) => {
+      if (reduceMotion || skip) { r(); return; }
+      const done = () => { clearTimeout(t); skipNow = null; r(); };
+      const t = setTimeout(done, ms); skipNow = done;
+    });
+    const skipTyping = () => { if (skipNow) { skip = true; skipNow(); } };
+    thread.addEventListener("click", skipTyping);
 
     // Dates can start with "what are you wearing?". The pick swaps the intro, adds her
     // reaction after her first line, and nudges the gaydar.
     if (convo.outfits && !convo.fit) {
       choices.innerHTML = `<p class="muted" style="margin:0">${esc(fill(convo.outfitPrompt || "What are you wearing?"))}</p>`;
       convo.outfits.forEach((o) => {
-        const b = document.createElement("button");
-        b.className = "fit"; b.textContent = fill(o.label);
-        b.addEventListener("click", () => {
+        choices.appendChild(button("fit", fill(o.label), () => {
           const at = o.at != null ? o.at : 1; // where her reaction goes: after her first line by default
           const them = convo.them.slice(0, at).concat(o.them || [], convo.them.slice(at));
           runConversation(view, Object.assign({}, convo, { fit: o, base: convo, intro: o.intro || convo.intro, them }), header);
-        });
-        choices.appendChild(b);
+        }));
       });
+      focusIn(choices);
       return;
     }
     if (convo.fit) add("note", "You wore: " + fill(convo.fit.label));
@@ -226,39 +262,44 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
     let spark = convo.spark; // how into you she is; defaults to 100 - gaydar
     async function play(node) {
+      skip = false;
       choices.innerHTML = "";
       if (node !== convo && node.after) endNote = node.after;
       if (node !== convo && node.outcome) outcome = node.outcome;
       if (node !== convo && node.gaydar != null) gaydar = node.gaydar;
       if (node !== convo && node.spark != null) spark = node.spark;
-      for (const m of node.them || []) {
-        const msg = typeof m === "string" ? { text: m } : m;
-        if (msg.if && !outcomeIs(msg.if)) continue; // only if an earlier chapter ended that way
+      const msgs = (node.them || []).map((m) => typeof m === "string" ? { text: m } : m).filter((m) => !m.if || outcomeIs(m.if)); // `if`: only if an earlier chapter ended that way
+      if (msgs.length && !reduceMotion) { choices.appendChild(button("skip", "Skip typing", skipTyping)); focusIn(choices); }
+      for (const msg of msgs) {
         if (msg.note) { // narration in in-person scenes: what she does, not what she says
           await wait(600);
           if (view._run !== run) return;
-          add("note", fill(msg.note)).scrollIntoView?.({ block: "nearest" });
+          add("note", fill(msg.note));
           continue;
         }
-        const t = document.createElement("div"); t.className = "typing"; t.textContent = convo.irl ? "…" : (msg.from || convo.contact || convo.who) + " is typing…";
+        const stick = nearBottom();
+        const t = document.createElement("div"); t.className = "typing"; t.setAttribute("aria-hidden", "true");
+        t.textContent = convo.irl ? "…" : (msg.from || convo.contact || convo.who) + " is typing…";
         thread.appendChild(t);
+        if (stick) t.scrollIntoView({ block: "nearest" });
         await wait(Math.min(1400, 450 + msg.text.length * 12));
         if (view._run !== run) return; // user left mid-conversation
         t.remove();
         const b = add("them", fill(msg.text));
-        if (msg.from) b.insertAdjacentHTML("afterbegin", `<span class="from">${esc(msg.from)}</span>`);
-        t.scrollIntoView?.({ block: "nearest" });
+        if (msg.from) b.insertAdjacentHTML("afterbegin", `<span class="from">${esc(fill(msg.from))}</span>`);
       }
+      const stick = nearBottom();
+      choices.innerHTML = "";
       if (node.replies && node.replies.length) {
         node.replies.forEach((r) => {
-          const b = document.createElement("button");
-          b.textContent = fill(r.you);
-          b.addEventListener("click", () => { add("you", fill(r.you)); play(r); });
-          choices.appendChild(b);
+          choices.appendChild(button("reply", fill(r.you), () => { add("you", fill(r.you)); play(r); }));
         });
+        if (stick) choices.lastElementChild.scrollIntoView({ block: "nearest" });
+        focusIn(choices);
       } else {
         markDone(convo.id);
         setOutcome(convo.id, outcome);
+        const endAt = thread.children.length;
         if (endNote) add("note", fill(endNote));
         if (gaydar != null) {
           const delta = (convo.fit && convo.fit.gaydar) || 0;
@@ -270,18 +311,22 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
           const fills = choices.querySelectorAll(".gaydar .fill");
           requestAnimationFrame(() => requestAnimationFrame(() => fills.forEach((f) => { f.style.width = f.dataset.v + "%"; })));
         }
-        if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(convo.debrief)}</div>`);
-        choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button>' + (convo.next ? '<button class="btn next">Next chapter →</button>' : "") + "</div>");
-        if (convo.next) choices.querySelector(".next").addEventListener("click", convo.next);
-        choices.querySelector(".again").addEventListener("click", () => runConversation(view, convo.base || convo, header));
+        if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(fill(convo.debrief))}</div>`);
+        const row = document.createElement("div"); row.className = "row";
+        row.appendChild(button("btn ghost again", "Try different replies", () => { scrollTo(0, 0); runConversation(view, convo.base || convo, header); }));
+        if (convo.next) row.appendChild(button("btn next", "Next chapter →", convo.next));
+        choices.appendChild(row);
+        // Show the ending from its first line (the closing note, or the bars).
+        if (stick) (thread.children[endAt] || choices.firstElementChild).scrollIntoView({ block: "start" });
+        focusIn(choices);
       }
     }
     play(convo);
   }
 
   function itemHtml(avatar, title, sub, status, extra = "") {
-    const tag = status === "new" ? '<span class="tag new">new</span>' : status === "done" ? '<span class="tag done">✓</span>' : "";
-    return `<button class="item"><span class="avatar">${esc(avatar)}</span><span class="meta"><b>${esc(title)}</b><span>${esc(sub)}</span></span>${extra}${tag}</button>`;
+    const tag = status === "new" ? '<span class="tag new">new</span>' : status === "done" ? '<span class="tag done" aria-label="finished">✓</span>' : "";
+    return `<button class="item"><span class="avatar" aria-hidden="true">${esc(avatar)}</span><span class="meta"><b>${esc(title)}</b><span>${esc(sub)}</span></span>${extra}${tag}</button>`;
   }
 
   // ---------- Story ----------
@@ -301,9 +346,20 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     const ch = routeChapters(c.route); const k = ch.indexOf(i);
     return k <= 0 || storyDone()[C.story[ch[k - 1]].id] ? "open" : "locked";
   }
+  // Where "Continue" picks up: the first unread open chapter in the route he last played.
+  function continueAt() {
+    const r = ROUTES.find((x) => x.id === store.get("last", ""));
+    if (!r || !routeOpen(r)) return -1;
+    const i = routeChapters(r.id).find((j) => !storyDone()[C.story[j].id] && chapterState(j) === "open");
+    return i == null ? -1 : i;
+  }
+  // What's on screen, so Settings can redraw a list when a name changes.
+  let showing = { kind: "list" };
+  // Coming back up a level: scroll to the item he came from, otherwise start at the top.
+  const scrollToItem = (sel) => { const el = sel && $("#storyList").querySelector(sel); if (el) el.scrollIntoView({ block: "center" }); else scrollTo(0, 0); };
   const PART_HEAD = (t) => `<li><h2 class="muted" style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px">${esc(fill(t))}</h2></li>`;
-  function renderStoryList() {
-    clearBack();
+  function renderStoryList(from) {
+    clearBack(); showing = { kind: "list" };
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
     const d = storyDone();
@@ -314,46 +370,64 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       list.querySelector(".btn").addEventListener("click", () => location.reload());
       return;
     }
-    list.innerHTML = `<p class="muted" style="margin-top:0">Pick who you want to try dating. Each story takes it slowly, one date at a time, and every girl's ends the same way: she works out you're gay before you do and goes off with a guy who isn't. Then there's ${esc(bf())}.</p><ul class="list">` +
+    const ci = continueAt();
+    let cont = "";
+    if (ci >= 0) {
+      const c = C.story[ci]; const r = ROUTES.find((x) => x.id === c.route); const ch = routeChapters(c.route);
+      cont = `<div class="continue">${itemHtml("▶", "Continue: " + fill(c.title), `${fill(r.name)} · chapter ${ch.indexOf(ci) + 1} of ${ch.length}`, "")}</div>`;
+    }
+    list.innerHTML = cont + `<p class="muted" style="margin-top:0">Pick who you want to try dating. Each story takes it slowly, one date at a time, and every girl's ends the same way: she works out you're gay before you do and goes off with a guy who isn't. Then there's ${esc(bf())}.</p><ul class="list">` +
       ROUTES.map((r) => {
         const ch = routeChapters(r.id); const read = ch.filter((i) => d[C.story[i].id]).length;
         const open = routeOpen(r);
-        const sub = open ? `${read}/${ch.length} · ${fill(r.blurb)}` : "Finish one girl's story to unlock";
+        const sub = open ? `${read}/${ch.length} read · ${fill(r.blurb)}` : "Finish one girl's story to unlock";
         const head = r.part && r.part !== part ? PART_HEAD((part = r.part)) : "";
         return `${head}<li data-r="${esc(r.id)}">${itemHtml(fill(r.avatar || r.name[0]), fill(r.name), sub, read === ch.length ? "done" : open && read === 0 ? "new" : "")}</li>`;
       }).join("") + "</ul>";
+    if (ci >= 0) list.querySelector(".continue .item").addEventListener("click", () => openChapter(ci));
     list.querySelectorAll("li[data-r]").forEach((li) => {
       const r = ROUTES.find((x) => x.id === li.dataset.r);
       if (!routeOpen(r)) li.querySelector(".item").disabled = true;
-      else li.addEventListener("click", () => renderRoute(r.id));
+      else li.querySelector(".item").addEventListener("click", () => renderRoute(r.id));
     });
+    if (from === false) return; // redrawn in place (Settings closed): keep scroll and focus
+    scrollToItem(from && `li[data-r="${CSS.escape(from)}"]`);
+    focusIn(from ? list.querySelector(`li[data-r="${CSS.escape(from)}"]`) : list);
   }
-  function renderRoute(rid) {
+  function renderRoute(rid, from) {
+    showing = { kind: "route", rid };
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
     const r = ROUTES.find((x) => x.id === rid); const d = storyDone();
-    list.innerHTML = `<button class="btn ghost back">← Story</button><h2 style="margin:10px 0 4px;font-size:20px">${esc(fill(r.name))}</h2><p class="muted" style="margin:0 0 6px">${esc(fill(r.intro || r.blurb))}</p><ul class="list">` +
-      routeChapters(rid).map((i, k) => {
+    const ch = routeChapters(rid); const read = ch.filter((i) => d[C.story[i].id]).length;
+    list.innerHTML = `<button class="btn ghost back">← Story</button><h2 style="margin:10px 0 4px;font-size:20px">${esc(fill(r.name))}</h2><p class="muted" style="margin:0 0 6px">${esc(fill(r.intro || r.blurb))} <span style="white-space:nowrap">${read} of ${ch.length} read.</span></p><ul class="list">` +
+      ch.map((i, k) => {
         const c = C.story[i]; const st = chapterState(i);
         const sub = st === "open" ? `${fill(c.contact || "{bf}")}${c.irl ? " · in person" : ""} · ${d[c.id] ? "read" : "new"}` : "Locked";
         return `<li data-i="${i}">${itemHtml(String(k + 1), fill(c.title), sub, d[c.id] ? "done" : st === "open" ? "new" : "")}</li>`;
       }).join("") + "</ul>";
-    setBack(renderStoryList);
+    setBack(() => renderStoryList(rid));
     list.querySelector(".back").addEventListener("click", goBack);
     list.querySelectorAll("li[data-i]").forEach((li) => {
       const i = +li.dataset.i;
       if (chapterState(i) !== "open") li.querySelector(".item").disabled = true;
-      else li.addEventListener("click", () => openChapter(i));
+      else li.querySelector(".item").addEventListener("click", () => openChapter(i));
     });
+    if (from === false) return;
+    scrollToItem(from != null && `li[data-i="${from}"]`);
+    focusIn(from != null ? list.querySelector(`li[data-i="${from}"]`) : list);
   }
   function openChapter(i) {
+    showing = { kind: "chapter" };
     const ch = routeChapters(C.story[i].route); const k = ch.indexOf(i);
     const nextI = k >= 0 && k + 1 < ch.length ? ch[k + 1] : -1;
     const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}"), next: nextI >= 0 ? () => openChapter(nextI) : null });
+    if (c.route) store.set("last", c.route);
     $("#storyList").hidden = true;
     const view = $("#storyView"); view.hidden = false;
-    setBack(() => (c.route ? renderRoute(c.route) : renderStoryList()));
-    runConversation(view, c, `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
+    setBack(() => (c.route ? renderRoute(c.route, i) : renderStoryList()));
+    scrollTo(0, 0);
+    runConversation(view, c, `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row chead" style="margin-bottom:10px"><span class="avatar" aria-hidden="true">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
   }
 
   // ---------- Settings ----------
@@ -366,13 +440,19 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   $("#nameInput").addEventListener("input", (e) => { store.set("name", e.target.value.trim()); });
   $("#bfInput").addEventListener("input", (e) => { store.set("bf", e.target.value.trim()); });
   $("#themeSel").addEventListener("change", (e) => { store.set("theme", e.target.value); applyTheme(); });
+  // Names show up in the lists, so redraw whichever list is open (a chapter in progress keeps going).
+  $("#settings").addEventListener("close", () => {
+    const y = scrollY;
+    if (showing.kind === "list") renderStoryList(false); else if (showing.kind === "route") renderRoute(showing.rid, false);
+    scrollTo(0, y);
+  });
 
   function allKeys() { const ks = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("st_")) ks.push(k); } } catch {} return ks; }
   $("#exportBtn").addEventListener("click", () => {
     const data = {}; allKeys().forEach((k) => { try { data[k] = localStorage.getItem(k); } catch {} });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }));
-    a.download = `notes-backup-${today}.json`; a.click();
+    a.download = `notes-backup-${bneDate()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   });
   $("#importFile").addEventListener("change", async (e) => {
     const f = e.target.files[0]; if (!f) return;
@@ -398,6 +478,11 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     lastTap = now;
   });
 
+  // A reload while a route or chapter was open leaves our history entry on top. Step off it,
+  // or the first back press would do nothing.
+  try { if (history.state && history.state.steadySub) history.back(); } catch {}
+  // The app scrolls each view itself; the browser's restore on reload would hide the Continue card.
+  try { history.scrollRestoration = "manual"; } catch {}
   renderStoryList();
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
