@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story: four new chapters where the date carries on and you're stuck barefoot. Your sneakers get soaked at Hayley's (Mia), Mel's dog eats your slide (Jade), your shoes go in the river after the boat (Olivia) and the tide takes them at Kings Beach (Ella). You curl your toes, sit on your feet and beg for socks while Theo, Sean, Marcus and Hayden get a bit closer to her.
 - Story: fixed details that contradicted each other within a route (Hannah's earrings, Mia's and Zoe's tops, Sophie's toe colour, when Lucy met you, Olivia's cocktail), and Nicole's Hinge guys no longer share names with other characters.
 - Story: end-of-chat notes and the girls' one-liners now match the branch and outfit you picked (no more laughing when you held it in, or lashes you didn't wear).
 - Story: swapped local brands, teams and slang for neutral ones, and rewrote lines that sounded like a counsellor or a narrator punchline.

@@ -1403,6 +1403,150 @@ window.CONTENT = {
       "debrief": "Laughing till you can't breathe in front of a room isn't you failing at something. It's just a body being a body. Nobody there will remember it the way you do."
     },
     {
+      "id": "mia-barefoot",
+      "route": "mia",
+      "gaydar": 72,
+      "spark": 34,
+      "gaydarSays": "He sat on his feet for an hour so nobody could see his toes. Everyone could see his toes.",
+      "title": "No shoes home",
+      "contact": "Mia",
+      "irl": true,
+      "intro": "Still Hayley's birthday. Around eleven it pours, and the shoe pile by the door was under the gutter. Your sneakers are full of water. Mia's are too, but she's got a spare pair of Hayley's flats. Nobody has a spare pair in your size. The plan is dumplings on Boundary Street, two blocks away, and everyone's going.",
+      "them": [
+        {
+          "note": "Mia holds up one of your sneakers. Water runs out of it onto the mat."
+        },
+        "Oh no. Sorry. That's so bad.",
+        "Do you want to just... come barefoot? It's not far. Sorry.",
+        {
+          "note": "Theo's already out the door in his own dry boots. \"Come on, pink toes,\" he calls back up the stairs."
+        }
+      ],
+      "replies": [
+        {
+          "you": "It's fine. It's a footpath. People walk on footpaths.",
+          "them": [
+            {
+              "note": "You walk the two blocks barefoot. The footpath's wet and cold and you walk on the sides of your feet, toes curled under, like that makes them less pink."
+            },
+            "Are you ok? You're walking funny.",
+            "\"I'm walking normally.\"",
+            {
+              "note": "At the dumpling place you sit down and pull both feet up under you on the chair. Mia notices."
+            },
+            "You can put your feet down. Nobody's looking."
+          ],
+          "replies": [
+            {
+              "you": "(Keep them tucked under.) I'm comfy like this.",
+              "spark": 36,
+              "them": [
+                {
+                  "note": "You eat a whole plate of dumplings sitting on your feet. Your legs go numb. You don't move."
+                },
+                "You're very stubborn. Sorry. That's not bad.",
+                {
+                  "note": "She nudges the soy sauce towards you and her fingers touch yours for a second."
+                }
+              ],
+              "after": "Mia, to Sam, the next day: \"he sat on his feet the whole time so no one would see his toes\" Sam: \"did it work\" Mia: \"no. but he tried really hard. it was a bit cute.\""
+            },
+            {
+              "you": "(Put them down. Go red.) They're so pink under these lights.",
+              "spark": 24,
+              "them": [
+                {
+                  "note": "You put your feet flat on the cold tiles. Under the fluorescent lights the pink on your big toes is very pink."
+                },
+                "They're nice though. Sorry. I keep saying that.",
+                "\"Theo's going to bring it up forever.\"",
+                {
+                  "note": "Theo, from the next table, without looking up: \"Forever.\""
+                }
+              ],
+              "after": "Mia, to Sam, the next day: \"he went so red about his toes. like the whole meal\" Sam: \"was it bad\" Mia: \"no. i just kept thinking theo wouldn't go red about anything\""
+            }
+          ]
+        },
+        {
+          "you": "Can I borrow socks? Any socks. Anyone's socks.",
+          "them": [
+            "\"I've got socks,\" Theo says, coming back up the stairs. He holds up a pair. They're Hayley's. They've got little cats on them.",
+            "Oh. They're cute. Sorry.",
+            {
+              "note": "You put on the cat socks. They come up to your ankles and they're far too small, and now you're walking to dumplings in tiny cat socks."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Pretend this is a choice.) I actually like cats.",
+              "spark": 30,
+              "them": [
+                "\"You look great,\" Theo says. \"Really committing.\"",
+                {
+                  "note": "Mia walks next to you the whole way. She keeps looking at your feet and then pressing her lips together."
+                },
+                "I'm not laughing. Sorry. I'm not."
+              ],
+              "after": "Mia, to Sam: \"he walked to dumplings in hayley's cat socks\" Sam: \"stop\" Mia: \"they were so small on him. theo took a photo. i asked him to delete it\" Sam: \"did he\" Mia: \"no\""
+            },
+            {
+              "you": "(Take them off again halfway.) These are worse. These are so much worse.",
+              "spark": 26,
+              "them": [
+                {
+                  "note": "Halfway down the block you stop, peel the cat socks off and stuff them in your pocket. Now you're barefoot and holding wet cat socks."
+                },
+                "\"Lasted a whole block,\" Theo says.",
+                "It's ok. Sorry. You look fine. You look... yeah."
+              ],
+              "after": "Mia, to Sam: \"he gave up on the socks after one block\" Sam: \"so barefoot\" Mia: \"barefoot with pink toes at the dumpling place. theo walked me to my bus after.\""
+            }
+          ]
+        },
+        {
+          "you": "I'll just go home. It's fine. You go.",
+          "them": [
+            "No, come. Please. Sorry. It's Hayley's birthday.",
+            {
+              "note": "Hayley yells from the kitchen: \"If you leave because of your feet I'll never forgive you.\""
+            },
+            {
+              "note": "So you go. Barefoot. At the restaurant the waiter looks at your feet, then at you, then gives you the table by the window."
+            }
+          ],
+          "replies": [
+            {
+              "you": "Of course it's the window table.",
+              "spark": 32,
+              "them": [
+                "It's a good table though.",
+                {
+                  "note": "You sit with your feet hooked behind the chair legs, out of sight. Mia sits next to you instead of across from you, which means she can see them anyway."
+                },
+                "I won't look. Sorry. I already looked."
+              ],
+              "after": "Mia, to Sam: \"he was so embarrassed about his feet but he still came\" Sam: \"aww\" Mia: \"yeah. he's sweet. i don't know.\""
+            },
+            {
+              "you": "(Say nothing. Order very fast. Stare at the menu.)",
+              "spark": 28,
+              "them": [
+                {
+                  "note": "You order eight dumplings in about two seconds and stare at the menu until they come. Theo spends the whole meal telling the table about your toes."
+                },
+                "He's just joking. Sorry. He does that.",
+                "\"He does,\" Theo says, and pours her tea."
+              ],
+              "after": "Mia, to Sam: \"theo told everyone about the pink toes\" Sam: \"was {name} ok\" Mia: \"he went quiet. theo poured my tea. i don't know why i noticed that\""
+            }
+          ]
+        }
+      ],
+      "after": "You get home at one with wet sneakers in a plastic bag and black soles on both feet.",
+      "debrief": "Being stuck barefoot isn't something you did wrong. Your feet are just feet, even pink ones, and the night kept going whether you hid them or not."
+    },
+    {
       id: "c6", route: "mia", gaydar: 85, gaydarSays: "Asked if my top was from Zara. Mid-putt. MID. PUTT.", title: "Mini golf", contact: "Mia",
       intro: "Third date. Mini golf at South Bank. You went further this time: wide-leg trousers, a cropped cardigan, the gold hoops from Eat Street, a proper rosy lipstick. You felt good walking out the door. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes.",
       outfits: [
@@ -1724,6 +1868,146 @@ window.CONTENT = {
       ],
       after: "Ella, to her sister, on the drive home: \"he took his shoes off and his toes were CORAL\" \"stop\" \"and hayden saw\" \"what did hayden say\" \"nothing. he just kept looking at me like. you sure about this one?\" \"are you\" \"no\"",
       debrief: "Being the most polished person on a beach full of lifesavers is a lot. You still took your shoes off. That counts."
+    },
+    {
+      "id": "ella-barefoot",
+      "route": "ella",
+      "gaydar": 94,
+      "spark": 24,
+      "gaydarSays": "His sneakers got washed out to sea. Two hours of barefoot in the car with Hayden. He sat on his feet the whole way.",
+      "title": "The drive home",
+      "contact": "Ella",
+      "irl": true,
+      "intro": "Later at Kings Beach. You left your sneakers and socks on the towel, and when the tide came in, so did the water. Your socks are gone. One sneaker's in the shallows; the other one's nowhere. Ella's car is full, so you're in the back seat of Hayden's, with Ella in the front. Fish and chips on the way home, then the drive back to Brisbane.",
+      "them": [
+        {
+          "note": "Hayden holds up your one wet sneaker like a trophy."
+        },
+        "\"Found half of it, man.\"",
+        "Babe, it's fine. Just come barefoot. It's a car.",
+        {
+          "note": "You get in the back. Your feet are sandy and your coral toes are very bright against his black floor mats."
+        },
+        "\"Don't get sand in my car,\" Hayden says, and then, looking in the mirror: \"Nice colour though.\""
+      ],
+      "replies": [
+        {
+          "you": "(Sit on your feet. All the way to Brisbane.)",
+          "them": [
+            {
+              "note": "You fold your legs up under you on the back seat. Hayden watches in the mirror."
+            },
+            "\"You good back there? You look like you're meditating.\"",
+            "He's hiding his toes, Hay. Leave him alone.",
+            {
+              "note": "She says it nicely. She's laughing."
+            }
+          ],
+          "replies": [
+            {
+              "you": "I'm not hiding them. I'm comfortable.",
+              "spark": 26,
+              "them": [
+                "\"Sure.\"",
+                {
+                  "note": "Twenty minutes later your legs have gone completely dead. You shift and both feet flop out onto the seat, toes up."
+                },
+                "\"There they are,\" Hayden says. Ella turns round to look and laughs into her hand."
+              ],
+              "after": "Ella, to her friend: \"he sat on his feet in hayden's car for half an hour so we wouldn't see his toes\" Friend: \"and then?\" Ella: \"his legs went to sleep and they flopped out. hayden lost it. i couldn't stop laughing either\""
+            },
+            {
+              "you": "Yes. I'm hiding them. Is that ok with everyone?",
+              "spark": 22,
+              "them": [
+                "\"Totally fine, little guy,\" Hayden says.",
+                "It's ok. They're so cute though.",
+                {
+                  "note": "She turns back round to the front. She and Hayden talk about surf club stuff for the rest of the drive."
+                }
+              ],
+              "after": "Ella, to her friend: \"he admitted he was hiding his toes lol\" Friend: \"aww\" Ella: \"yeah. hayden and i talked the whole way home. he's actually really easy to talk to\""
+            }
+          ]
+        },
+        {
+          "you": "Can we stop somewhere? I'll buy flip-flops. Anything.",
+          "them": [
+            "\"Gas station's got flip-flops,\" Hayden says, and pulls in.",
+            {
+              "note": "You walk across the hot forecourt barefoot. Inside, the only flip-flops in your size are pink with daisies on them."
+            },
+            "Oh my god. Get them. You have to get them."
+          ],
+          "replies": [
+            {
+              "you": "(Buy the daisies.) Fine. Fine!",
+              "spark": 22,
+              "them": [
+                {
+                  "note": "You walk back out in pink daisy flip-flops with coral toes. Hayden's leaning on the car."
+                },
+                "\"Man. They're perfect.\"",
+                {
+                  "note": "Ella takes a photo of your feet for the group chat."
+                }
+              ],
+              "after": "Ella, to her friend: \"he bought pink daisy flip flops at the gas station\" Friend: \"with the coral toes??\" Ella: \"with the coral toes. hayden bought me an ice cream while he was paying\""
+            },
+            {
+              "you": "(Put them back.) No. Barefoot's better than daisies.",
+              "spark": 26,
+              "them": [
+                {
+                  "note": "You put them back and walk out barefoot, empty-handed. Hayden's eating a pie on the bonnet."
+                },
+                "\"Nothing in your size?\"",
+                "There was. He chose barefoot.",
+                "\"Respect,\" Hayden says, and doesn't sound like he means it."
+              ],
+              "after": "Ella, to her friend: \"he went into the gas station barefoot and came out still barefoot\" Friend: \"why\" Ella: \"the only ones were pink daisies. i would've bought them for him honestly\""
+            }
+          ]
+        },
+        {
+          "you": "Ella, can I sit in the front? Please? Nobody looks at the front footwell.",
+          "them": [
+            "\"Ella's in the front,\" Hayden says. \"Ella's always in the front.\"",
+            {
+              "note": "Ella stays in the front. She puts her own feet up on the dash, bare, sandy, unpainted."
+            },
+            "See? Feet. Nobody cares, babe."
+          ],
+          "replies": [
+            {
+              "you": "Yours aren't coral.",
+              "spark": 24,
+              "them": [
+                "Mine aren't anything. Yours are nicer than mine.",
+                "\"They are,\" Hayden says. \"He does a better job than you, Ells.\"",
+                {
+                  "note": "She hits his arm. He laughs. She leaves her hand there for a second."
+                }
+              ],
+              "after": "Ella, to her friend: \"hayden said his toes were nicer than mine\" Friend: \"rude\" Ella: \"it was true though. i hit him. we were laughing the whole way home\""
+            },
+            {
+              "you": "(Put your feet up too. Try to be normal about it.)",
+              "spark": 28,
+              "them": [
+                {
+                  "note": "You put your feet up on the back of the centre console, coral toes in full view. Your whole face is hot."
+                },
+                "Look at you!",
+                "\"Ten out of ten for effort,\" Hayden says."
+              ],
+              "after": "Ella, to her friend: \"he put his feet up in hayden's car and went bright red the whole time\" Friend: \"did hayden say anything\" Ella: \"he gave him ten out of ten. i don't know. it was nice of him\""
+            }
+          ]
+        }
+      ],
+      "after": "Hayden drops you home first. In the window, you watch him and Ella drive off together.",
+      "debrief": "Feeling exposed with bare feet is real, and so is getting through it. You can be shy about your toes and still be fine."
     },
     {
       "id": "ella-tickle",
@@ -3874,6 +4158,150 @@ window.CONTENT = {
       "debrief": "You can be ticklish and still be someone worth fancying. Who fancies who after a night like that was never really about your feet."
     },
     {
+      "id": "jade-barefoot",
+      "route": "jade",
+      "gaydar": 74,
+      "spark": 30,
+      "gaydarSays": "Mel's dog ate his slide. He walked to the car on his tiptoes. I notice feet. I noticed.",
+      "title": "One slide",
+      "contact": "Jade",
+      "irl": true,
+      "intro": "Mel's birthday is winding down. You get out of the hot tub and go to the deck for your slides. There's one slide. Mel's dog, Biscuit, is under the table with the other one, and it's not a slide anymore. Jade offered to drive you home, but she wants gelato first, and the gelato place is on James Street, and it's Saturday night.",
+      "them": [
+        {
+          "note": "Jade looks at the chewed slide. Then at your bare feet. Coral toes, still wrinkly from the water."
+        },
+        "ok so you're barefoot",
+        "\"I could wear one slide.\"",
+        "you could not wear one slide",
+        {
+          "note": "Sean, drying off by the door: \"Give him one of yours, Jade. You're the same size.\""
+        }
+      ],
+      "replies": [
+        {
+          "you": "We are not the same size.",
+          "them": [
+            "we're like the same size",
+            {
+              "note": "She holds her sandal up next to your foot. They're the same size."
+            },
+            "\"I'll go barefoot,\" you say quickly.",
+            {
+              "note": "On James Street you walk next to her with your toes curled up off the warm footpath, every step. A girl at the next table outside the gelato place looks at your feet and nudges her friend."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Stand behind Jade so your feet are out of sight.)",
+              "spark": 30,
+              "them": [
+                {
+                  "note": "You stand behind her in the queue, close, so the coral is mostly hidden by her heels."
+                },
+                "why are you standing so close",
+                "\"No reason.\"",
+                "is it the toes",
+                "\"It's the toes.\""
+              ],
+              "after": "Jade, to Mel: \"he hid behind me in the gelato line so no one would see his feet\" Mel: \"cute or no\" Jade: \"cute. i think. i was looking at his toes the whole time so i can't really talk\""
+            },
+            {
+              "you": "(Say it out loud.) She's looking at my feet.",
+              "spark": 22,
+              "them": [
+                "everyone's looking at your feet",
+                "theyre coral. on james st. at 10pm. with no shoes",
+                {
+                  "note": "You go red down to your neck. She buys you a cup of mango and doesn't say anything else, which is worse."
+                }
+              ],
+              "after": "Jade, to Mel: \"he said out loud that people were looking at his feet\" Mel: \"were they\" Jade: \"yes. he went so red. i bought him gelato. it felt like buying a kid gelato\""
+            }
+          ]
+        },
+        {
+          "you": "Can we skip the gelato?",
+          "them": [
+            "no",
+            "i've been thinking about pistachio for two hours",
+            {
+              "note": "So you sit in her car outside the gelato place while she goes in, with your feet tucked up on the seat. Sean pulls up next to you in his car on the way home, sees you, and winds the window down."
+            },
+            "\"You hiding, man?\""
+          ],
+          "replies": [
+            {
+              "you": "\"I'm waiting.\" (Pull your feet in further.)",
+              "spark": 32,
+              "them": [
+                "\"With your feet on her seat. She'll love that.\"",
+                {
+                  "note": "Jade comes back with two cups. She sees your feet on her seat."
+                },
+                "feet. off. my seat",
+                {
+                  "note": "You put them on the floor mat. She hands you your gelato without looking at you."
+                }
+              ],
+              "after": "Jade, to Mel: \"he waited in the car so no one would see his feet. then put them on my seat\" Mel: \"no\" Jade: \"sean drove past and saw him. sean texted me 'your boyfriend's hiding' lol\""
+            },
+            {
+              "you": "(Wave. Say nothing. Die a bit.)",
+              "spark": 26,
+              "them": [
+                "\"Classic,\" Sean says, and laughs, and drives off.",
+                {
+                  "note": "When Jade gets back you tell her Sean saw you. She laughs, and then she checks her phone. He's already texted her."
+                },
+                "he says you looked very comfy"
+              ],
+              "after": "Jade, to Mel: \"sean drove past and caught him hiding in my car with no shoes\" Mel: \"omg\" Jade: \"he texted me straight away. we talked for like an hour after\""
+            }
+          ]
+        },
+        {
+          "you": "Fine. One of your sandals. Just to the car.",
+          "them": [
+            {
+              "note": "She hands you one sandal. You put it on. It fits perfectly, and it's tan with a little gold buckle."
+            },
+            "omg",
+            "\"Don't.\"",
+            "it fits you better than me"
+          ],
+          "replies": [
+            {
+              "you": "(Hop to the car.) I'm giving it straight back.",
+              "spark": 28,
+              "them": [
+                {
+                  "note": "You go down Mel's driveway in one gold sandal and one bare foot. Everyone on the deck watches. Sean films."
+                },
+                "\"Cinderella,\" he calls.",
+                "sean stop. ok actually that's funny"
+              ],
+              "after": "Jade, to Mel: \"the video of him hopping down your driveway in one of my sandals\" Mel: \"sean's sent it to everyone\" Jade: \"he looked so embarrassed. i kind of liked that he did it though\""
+            },
+            {
+              "you": "(Take it off again.) No. Barefoot is more dignified.",
+              "spark": 30,
+              "them": [
+                "it is not more dignified",
+                {
+                  "note": "You hand it back and walk down the driveway barefoot, on the sides of your feet, with your coral toes curled under."
+                },
+                "you look like you're walking on lego"
+              ],
+              "after": "Jade, to Mel: \"he gave my sandal back and walked to the car barefoot like it was hot coals\" Mel: \"was it\" Jade: \"it was a concrete driveway. at night\""
+            }
+          ]
+        }
+      ],
+      "after": "Biscuit gets a new chew toy. You get home with grey soles and gelato on your shirt.",
+      "debrief": "Feeling shy about your feet is allowed. You still went out, still got in the car, still let her see you. That counts."
+    },
+    {
       id: "c6f", route: "jade", gaydar: 92, gaydarSays: "Same sandals as me. Neater toes. Next.", title: "Painted toes", contact: "Jade",
       intro: "Third date with Jade. A picnic at New Farm Park on a 33-degree Saturday. You painted your toenails the night before, a glossy coral, and bought tan strappy sandals from the women's section at the department store, the ones with the little gold buckle and a bit of a heel. You checked your feet about forty times on the bus. Jade looked down at them before she looked at your face.",
       outfits: [{"label": "Plain shorts and a tee, with the strappy sandals and coral toes", "gaydar": -5, "intro": "Third date with Jade. A picnic at New Farm Park on a 33-degree Saturday. Plain shorts and a tee, so the rest of you is normal. But you painted your toenails glossy coral the night before and wore the tan strappy sandals from the women's section at the department store, the ones with the little gold buckle and a bit of a heel. Jade looked down at them before she looked at your face."}, {"label": "Linen shorts, the strappy women's sandals and coral toes"}, {"label": "A floral sundress, the strappy sandals, coral toes and a straw bag", "gaydar": 4, "intro": "Third date with Jade. A picnic at New Farm Park on a 33-degree Saturday. A floral sundress, a straw bag, toes painted glossy coral, and the tan strappy sandals from the women's section at the department store with the little gold buckle and a bit of a heel. You checked your feet about forty times on the bus. Jade looked at the dress, then down at your feet, before she looked at your face.", "them": ["and a sundress. to a picnic. with me"]}],
@@ -4132,6 +4560,150 @@ window.CONTENT = {
       ],
       "after": "Olivia's sister, on the drive home: \"marcus held your boyfriend's foot for five whole minutes\" Olivia: \"i know\" Sister: \"and you sat with marcus the whole way back\" Olivia: \"i know\" Sister: \"so which one of them are you dating\" Olivia: \"i don't know\"",
       "debrief": "Some people tease to get closer to someone else, and you happen to be in the way. That's about them, not you. You still had a good day on a boat."
+    },
+    {
+      "id": "olivia-barefoot",
+      "route": "olivia",
+      "gaydar": 76,
+      "spark": 28,
+      "gaydarSays": "His sneakers went in the river. He did dinner barefoot with pink toes. Marcus paid. Hmm.",
+      "title": "Dinner after the boat",
+      "contact": "Olivia",
+      "irl": true,
+      "intro": "The boat's back at the jetty in Bulimba. You reach into the shoe bucket for your sneakers and they're not there. Marcus checks. They went over the side when the bucket tipped coming in, and they're somewhere at the bottom of the river. Dinner is booked at the restaurant on the water, right now, and Olivia's sister is already walking up the jetty.",
+      "them": [
+        {
+          "note": "Olivia looks at your bare feet on the jetty boards. The pink she painted is still perfect."
+        },
+        "Ok. That's actually so funny.",
+        "\"It's not funny.\"",
+        "It's a bit funny. Come on, they won't care. It's by the water.",
+        "\"They'll care,\" Marcus says, putting his own shoes on. \"There's a sign.\""
+      ],
+      "replies": [
+        {
+          "you": "There's a sign?",
+          "them": [
+            {
+              "note": "There's a sign. NO BARE FEET. The manager looks at you, then at Marcus, who goes to the bar and comes back with a pair of white restaurant slides from lost property."
+            },
+            "\"Saved you again, buddy.\"",
+            {
+              "note": "They're two sizes too big. Every step goes slap. Slap. Slap. All the way to the table."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Slap to the table with your head down.)",
+              "spark": 26,
+              "them": [
+                {
+                  "note": "You sit down and kick the slides off under the table and keep your feet tucked behind the chair legs."
+                },
+                "You can't take them off, the sign.",
+                "\"Nobody can see under the table.\"",
+                "\"I can,\" Marcus says. He's sitting next to you. \"Very pink down there.\""
+              ],
+              "after": "Olivia, to her sister: \"he took the slides off under the table\" Sister: \"marcus saw\" Olivia: \"marcus sees everything apparently. he was so nice to me all night.\""
+            },
+            {
+              "you": "Thanks, Marcus. Really. Thank you.",
+              "spark": 22,
+              "them": [
+                "\"Anything for Liv's boyfriend.\" He says it like a joke and pulls her chair out for her.",
+                {
+                  "note": "Olivia sits down. She looks at him for a second longer than she needs to."
+                },
+                "That was nice of him."
+              ],
+              "after": "Olivia, to her sister: \"marcus got him slides from lost property\" Sister: \"he's so sweet\" Olivia: \"i know. it's annoying\""
+            }
+          ]
+        },
+        {
+          "you": "I'll sit outside. On the deck. Where nobody looks at feet.",
+          "them": [
+            {
+              "note": "The deck has no sign. It also has the whole restaurant looking out at it through glass."
+            },
+            "You're sitting in a shop window, babe.",
+            {
+              "note": "You sit with your feet tucked up on the chair, arms round your knees, like that hides ten pink toes."
+            }
+          ],
+          "replies": [
+            {
+              "you": "Does anyone have socks? Anyone at all?",
+              "spark": 30,
+              "them": [
+                "Who brings socks on a boat?",
+                {
+                  "note": "Her sister does. They're bright yellow, with \"BIRTHDAY GIRL\" on the soles."
+                },
+                "Put them on. Put them on right now.",
+                {
+                  "note": "You put them on. Olivia takes about forty photos."
+                }
+              ],
+              "after": "Olivia, to her sister: \"he wore your birthday socks to dinner\" Sister: \"they suit him\" Olivia: \"they really do. that's the problem\""
+            },
+            {
+              "you": "(Stay curled up. Order without looking at anyone.)",
+              "spark": 26,
+              "them": [
+                {
+                  "note": "You order the fish and stay folded up on the chair the whole meal."
+                },
+                "You look so uncomfortable.",
+                "\"I'm fine.\"",
+                {
+                  "note": "Marcus comes out to the deck with a beer and stands between your table and the glass. \"Blocking the view for you, champ.\""
+                }
+              ],
+              "after": "Olivia, to her sister: \"he sat curled up on his chair all dinner\" Sister: \"marcus stood there blocking the window like a bouncer lol\" Olivia: \"yeah. i noticed\""
+            }
+          ]
+        },
+        {
+          "you": "I'll get an Uber home and meet you after.",
+          "them": [
+            "No. It's my sister's birthday. You're coming.",
+            "\"Barefoot.\"",
+            "Barefoot. You've got nice feet, I made sure of it."
+          ],
+          "replies": [
+            {
+              "you": "(Go in. Walk fast. Look at nobody.)",
+              "spark": 30,
+              "them": [
+                {
+                  "note": "You walk through the restaurant fast, barefoot on the polished concrete, toes pink, everyone looking. Nobody stops you."
+                },
+                {
+                  "note": "At the table you hide your feet under the tablecloth. Olivia slides one foot over and taps yours."
+                },
+                "Told you. Nobody cares."
+              ],
+              "after": "Olivia, to her sister: \"he walked in barefoot and nobody said anything\" Sister: \"he looked like he was going to cry\" Olivia: \"he was fine. he was cute. i tapped his foot under the table and he went bright red\""
+            },
+            {
+              "you": "Nice feet is not the point, Olivia.",
+              "spark": 24,
+              "them": [
+                "What is the point then?",
+                "\"The point is they're PINK.\"",
+                "Babe. You let me paint them.",
+                {
+                  "note": "Marcus walks past. \"She's got you there, buddy.\""
+                }
+              ],
+              "after": "Olivia, to her sister: \"he said 'the point is they're pink' really loudly at the jetty\" Sister: \"everyone heard\" Olivia: \"marcus heard. he laughed all the way up\""
+            }
+          ]
+        }
+      ],
+      "after": "Marcus offers to dive for the sneakers next weekend. Olivia says that would be so sweet of him.",
+      "debrief": "Being caught out barefoot, with polish, in front of people, is just a moment. You got through dinner. Nobody will remember your feet the way you do."
     },
     {
       id: "c6g", route: "olivia", gaydar: 90, gaydarSays: "Red toes, gold sandals, eyes on the waiter. Babe.", title: "Across the table", contact: "Olivia", irl: true,
