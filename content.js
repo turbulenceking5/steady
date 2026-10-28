@@ -268,9 +268,20 @@ window.CONTENT = {
           ] },
         { you: "I don't think I can keep being your boyfriend. I think I'm into guys.",
           them: ["Wow. Okay.", "I kind of knew something was wrong. I didn't know it was this.", "Can I have a few days before we talk more?"],
-          replies: [{ you: "Of course. I'm here when you're ready.", them: ["Okay. Thank you for being honest."] }] }
+          replies: [{ you: "Of course. I'm here when you're ready.", them: ["Okay. Thank you for being honest."] }] },
+        { you: "I've been lying to you, and to myself. I'm gay.",
+          them: ["Are you serious right now?", "Three years. I wasted three years on someone who didn't even want me.", "Was any of it real, or was I just your cover story? Did all your mates know before me?"],
+          replies: [
+            { you: "It was real. I loved you, just not the way you deserved.",
+              them: ["Don't. I can't hear that right now.", "Just go."] },
+            { you: "Nobody knew. I'm not going to argue with you.",
+              them: ["Oh great, very brave of you.", "Get out. I mean it."] },
+            { you: "You're allowed to be angry. I'm still not sorry for being gay.",
+              them: ["I don't care that you're gay. I care that you lied to me.", "I need you to leave."] }
+          ],
+          after: "You walk home shaking. Then, slowly, something else arrives: you said it, out loud, to the hardest person. And you're still standing." }
       ],
-      debrief: "Ending a relationship honestly is hard and kind at the same time. Her feelings are real, and so are yours. Both can be true."
+      debrief: "Ending a relationship honestly is hard and kind at the same time. Her feelings are real, and so are yours. If she's angry or cruel, that's her hurt talking. It still doesn't make you wrong for telling the truth, and you can leave a conversation that's turned on you."
     },
     {
       id: "c4", title: "A few weeks later", contact: "Archie", part: "Part 1: Before",

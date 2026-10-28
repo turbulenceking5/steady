@@ -306,8 +306,10 @@ details summary { cursor: pointer; color: var(--muted); }
     const add = (cls, text) => { const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; thread.appendChild(b); return b; };
     if (convo.intro) add("note", convo.intro);
 
+    let endNote = convo.after; // a branch can carry its own closing note
     async function play(node) {
       choices.innerHTML = "";
+      if (node !== convo && node.after) endNote = node.after;
       for (const m of node.them || []) {
         const msg = typeof m === "string" ? { text: m } : m;
         const t = document.createElement("div"); t.className = "typing"; t.textContent = (msg.from || convo.contact || convo.who) + " is typing…";
@@ -328,7 +330,7 @@ details summary { cursor: pointer; color: var(--muted); }
         });
       } else {
         markDone(kind, convo.id);
-        if (convo.after) add("note", fill(convo.after));
+        if (endNote) add("note", fill(endNote));
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(convo.debrief)}</div>`);
         choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button></div>');
         choices.querySelector(".again").addEventListener("click", () => runConversation(view, convo, kind, header));
