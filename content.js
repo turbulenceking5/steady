@@ -2300,6 +2300,310 @@ window.CONTENT = {
       "debrief": "Being laughed with in front of people can feel a lot like being laughed at. You got to say stop, and it stopped. That's the part that counts."
     },
     {
+      "id": "tayla-ambush",
+      "route": "tayla",
+      "gaydar": 95,
+      "irl": true,
+      "title": "After training",
+      "contact": "Tayla",
+      "gaydarSays": "My coach and my two best friends pinned my boyfriend to the grass and tickled his feet. Then I joined in. I'm not proud. Okay I'm a bit proud.",
+      "intro": "A week after the pool day. You came to watch Tayla's Thursday training at the courts in Windsor, in white sneakers and socks, on purpose. Nobody's seeing the glitter this time. Training's finished. Everyone's lying on the grass by the courts. Jordan's sitting on the bench with his whistle still round his neck.",
+      "them": [
+        {
+          "note": "You sit on the grass next to Tayla, knees up, sneakers firmly on. Steph looks at them. Then at Bec. Then at Jordan."
+        },
+        "\"Socks,\" Steph says. \"Look. He's wearing socks. In this heat.\"",
+        "\"He's hiding them,\" Bec says.",
+        "\"Is the glitter still on?\" Jordan says, getting up off the bench. \"Only one way to find out.\"",
+        "\"No,\" you say. \"No. It's off. I took it off. Leave my shoes alone.\"",
+        "\"He's lying,\" Steph says. \"He's definitely lying.\"",
+        {
+          "note": "Jordan drops onto the grass, grabs your ankle and pulls your foot into his lap. You kick. He doesn't even notice. He's undoing your laces."
+        },
+        "\"No! Jordan! I said no, I'm keeping them on!\"",
+        "\"Steph, get the other one.\"",
+        {
+          "note": "Steph sits on your other leg. Bec holds your shoulders down on the grass, laughing. You twist and kick, and it doesn't matter. Jordan pulls the sneaker off and throws it over his shoulder. Then the sock, slowly, from the heel, like he's unwrapping something."
+        },
+        {
+          "note": "Glittery pink. Still on. Of course it's still on."
+        },
+        "\"LIAR!\" Steph yells. \"Tay! It's still on!\"",
+        "oh my god. you said you took it off",
+        {
+          "note": "Steph's got your other shoe and sock off now too. Both feet out on the grass, held down, glitter catching the court lights. Jordan wiggles his fingers above your sole."
+        },
+        "\"Right. Penalty for lying to your coach.\"",
+        "\"I'm not your...\"",
+        {
+          "note": "He starts. And Steph, on the other foot, starts too."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Lock up. Stare at the court lights. Not a sound.)",
+          "them": [
+            {
+              "note": "You stare at the lights. Two sets of fingers, one on each foot. Jordan goes slow up the arch. Steph goes fast under the toes. Your legs go stiff as poles."
+            },
+            "\"He's fighting it,\" Bec says from above your head. \"Oh, his face.\"",
+            "\"Bec, do his ribs.\"",
+            "\"No, feet only, it's the rules,\" Jordan says. \"Bec, take a foot off Steph.\"",
+            {
+              "note": "Now it's Bec and Steph on one foot and Jordan on the other. Three people. The rest of the team has wandered over to watch. Tayla's sitting cross-legged next to your head with her chin in her hands."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. Hold it. Hold it.)",
+              "them": [
+                {
+                  "note": "You hold it. Somehow. Your eyes are streaming. Your jaw hurts. The glittery toes curl and uncurl, but your mouth stays shut."
+                },
+                "\"How is he doing this,\" Steph says. \"I'd be dead.\"",
+                "\"Tay,\" Jordan says. \"You want a go? Bet you know a spot.\"",
+                {
+                  "note": "Tayla looks at your foot. Then at you. You can see her thinking about it."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Look her in the eye.) Don't you dare, Tay.",
+                  "outcome": "held",
+                  "spark": 20,
+                  "them": [
+                    {
+                      "note": "She holds your eye for a second. Then she pushes Jordan's hands off your foot."
+                    },
+                    "Okay. Enough. He won. Give him his shoes.",
+                    "\"He didn't win, he just didn't lose,\" Jordan says. But he lets go. They all let go.",
+                    {
+                      "note": "Steph goes and gets your sneaker off the court. Tayla brushes the grass off your feet herself before you put your socks back on. She doesn't say anything. She takes a while doing it."
+                    },
+                    "\"Whatever,\" Jordan says, and goes to pack the balls away. Nobody helps him."
+                  ],
+                  "after": "Tayla, to the team chat: \"he didn't laugh. three of you and he didn't laugh\" Steph: \"it was unnatural\" Tayla: \"it was kind of hot\" Bec: \"TAY\" Jordan: \"rematch next week\" Tayla: \"no\""
+                },
+                {
+                  "you": "(Say nothing. Keep holding.)",
+                  "outcome": "cracked",
+                  "spark": 9,
+                  "them": [
+                    {
+                      "note": "Tayla shuffles down the grass. She doesn't go for the sole. She goes for the little spot under your ankle bone, the one she found once on the couch at her place."
+                    },
+                    {
+                      "note": "You last half a second. Then a squeal comes out of you so high the team on the next court looks over, and you're giggling, kicking, helpless, all four of them going at once."
+                    },
+                    "\"TAY!\" Steph screams. \"You BROKE him!\"",
+                    "I know where it is. I've always known where it is.",
+                    {
+                      "note": "They stop when you finally get out \"stop\". You lie on the grass with your feet in the air. Tayla's high-fiving Jordan."
+                    }
+                  ],
+                  "after": "Steph, to the team chat: \"[video] tay finds the spot\" Bec: \"the SQUEAL\" Jordan: \"tay's a natural\" Tayla: \"i've known about that spot for weeks\" Steph: \"and you never used it??\" Tayla: \"i was saving it\""
+                }
+              ]
+            },
+            {
+              "you": "(It's too much. You squeal.)",
+              "them": [
+                {
+                  "note": "You break. It comes out as a squeal, then giggles, high and helpless, and then you're bucking on the grass trying to get your feet back. Six hands. You're not getting your feet back."
+                },
+                "\"THERE HE GOES!\" Steph yells.",
+                "\"Penalty accepted,\" Jordan says, not stopping.",
+                {
+                  "note": "Bec's filming with one hand and tickling with the other. Tayla's laughing so hard she has to lie down on the grass next to you."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! Okay! It's still on! I lied! I lied!",
+                  "outcome": "cracked",
+                  "spark": 9,
+                  "them": [
+                    {
+                      "note": "They all stop and let go. Jordan holds both hands up like a ref."
+                    },
+                    "\"Confession accepted.\"",
+                    {
+                      "note": "You curl up on the grass with your glittery toes tucked under you. You're red to your hairline. Steph throws your sneaker at you."
+                    },
+                    "You lied about your nail polish. To my coach.",
+                    {
+                      "note": "She's still laughing. Jordan offers her a hand up off the grass. She takes it, and he doesn't let go of it straight away."
+                    }
+                  ],
+                  "after": "Bec, to the team chat: \"[video] 'I LIED I LIED'\" Steph: \"best training of the season\" Jordan: \"best training ever\" Tayla: \"jordan you only coach on thursdays\" Jordan: \"every thursday from now on he's welcome\""
+                },
+                {
+                  "you": "(Giggling, red) Stop! Stop it! All of you!",
+                  "outcome": "cracked",
+                  "spark": 7,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "\"Stopped! Hands off!\" Jordan says.",
+                    {
+                      "note": "You sit up and pull your feet in under you. There's grass in your hair and glitter on Jordan's fingers."
+                    },
+                    "Are you okay? You went SO high.",
+                    {
+                      "note": "She's trying to be nice. Then Steph does an impression of the noise you made, and Tayla loses it, and she has to hold on to Jordan's arm to stay up."
+                    }
+                  ],
+                  "after": "Tayla, to Bec: \"i feel bad\" Bec: \"you laughed the hardest\" Tayla: \"i KNOW. i feel bad about that\" Bec: \"you held jordan's arm for ages\" Tayla: \"i was falling over\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're giggling before they've even started.)",
+          "them": [
+            {
+              "note": "You're gone the second their fingers move. Squealing, giggling, twisting on the grass, glittery toes going everywhere."
+            },
+            "\"Oh my GOD,\" Steph says. \"He's worse than last time!\"",
+            "\"Bec, Tay, get in here,\" Jordan says. \"Everyone gets a foot.\"",
+            {
+              "note": "Bec takes a share of one foot. Then Tayla, laughing, crawls over and takes the toes on the other. Four people. Two feet. You've never laughed so hard in your life."
+            },
+            "You told me you weren't ticklish! On our first date! You said that!",
+            {
+              "note": "Half the team's standing round in a circle now. Someone's playing music from their phone."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Please! Please, please stop!",
+              "them": [
+                {
+                  "note": "They all stop and let go straight away. You lie on the grass panting, arms over your face."
+                },
+                "\"He said please,\" Jordan says. \"Three times. Did everyone count?\"",
+                "\"Three,\" says the whole team.",
+                {
+                  "note": "Then Tayla picks your foot up again, gently. Not tickling. Just holding it, looking at you over it, grinning."
+                },
+                "One more? Just me this time. Ten seconds."
+              ],
+              "replies": [
+                {
+                  "you": "(Pull it back.) No! No more! Not even you.",
+                  "outcome": "begged",
+                  "spark": 5,
+                  "them": [
+                    "Fine. Fine!",
+                    {
+                      "note": "She lets go. You sit with your feet tucked right under you on the grass, and you don't put your socks back on, because Jordan's sitting on them."
+                    },
+                    "\"Give him his socks, Jordan.\"",
+                    "\"Come and get them, Tay.\"",
+                    {
+                      "note": "She goes and gets them. It turns into a wrestle on the grass between her and Jordan. She's laughing the whole time. You hold your sneakers in your lap and wait."
+                    }
+                  ],
+                  "after": "Steph, to the team chat: \"he begged. three pleases\" Bec: \"and then tay wrestled jordan for his socks for like five minutes\" Steph: \"who won\" Bec: \"i think tay won\" Steph: \"did she though\""
+                },
+                {
+                  "you": "(Still giggling) ...Okay. Ten seconds. Just you.",
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 97,
+                  "them": [
+                    {
+                      "note": "The team counts down from ten. Tayla goes for the spot under your ankle bone. You scream laughing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one', Steph and Bec and Jordan all pile back in for a bonus round. You're laughing too hard to complain. They stop when you finally squeak \"stop\"."
+                    },
+                    "\"He asked for it,\" Jordan says. \"Literally asked.\"",
+                    "He did. He actually asked.",
+                    {
+                      "note": "She's sitting back on her heels, looking at you lying there with glitter toes in the air. Jordan sits down next to her. Close."
+                    },
+                    "\"Dinner after this?\" he says to her. \"Team's going to the pub.\" She says yes. She doesn't look at you while she says it."
+                  ],
+                  "after": "Bec, to the team chat: \"[video] he ASKED for more\" Steph: \"jordan sat with tay all night at the pub\" Bec: \"and {name}?\" Steph: \"did steph's eyeliner in the bathroom\" Bec: \"iconic honestly\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Lie back on the grass and let them.)",
+              "them": [
+                {
+                  "note": "You stop struggling. You lie flat on the grass with your arms out, laughing at the sky, and let four people tickle your feet."
+                },
+                "\"He's given up!\" someone says. \"He's just lying there!\"",
+                "\"He loves it,\" Jordan says. \"Look at him. Best day of his life.\"",
+                {
+                  "note": "It goes on and on. They take turns: one does the arches while one does the toes, then swap. Somebody brings a netball bib and tickles you with the corner of it."
+                },
+                {
+                  "note": "After a while Tayla stops. She sits back and just watches you laughing."
+                },
+                "{name}. You can tell them to stop, you know."
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop! Stop. Okay. Okay, stop.",
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 97,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "\"Three minutes,\" Bec says. \"Three whole minutes. I've got it all.\"",
+                    {
+                      "note": "Jordan pats your bare foot twice, like he's subbing you off. \"Good effort, champ.\""
+                    },
+                    {
+                      "note": "Then he stands up and holds his hand out to Tayla. \"Walk you to your car?\""
+                    },
+                    {
+                      "note": "She takes it. Steph throws your sneakers at you, one at a time."
+                    }
+                  ],
+                  "after": "Tayla, to Bec, from Jordan's car: \"i watched him let four people tickle his feet for three minutes\" \"and he LOVED it\" \"and i just thought. ok.\" Bec: \"ok what\" Tayla: \"ok. i get it now.\""
+                },
+                {
+                  "you": "(Can't speak. Just keep laughing.)",
+                  "outcome": "kept",
+                  "spark": 0,
+                  "gaydar": 98,
+                  "them": [
+                    {
+                      "note": "You can't say anything. You're laughing too hard. They keep going."
+                    },
+                    "Okay. Everyone stop. Stop. He can't breathe.",
+                    {
+                      "note": "She says it in her goal attack voice. Everyone stops and lets go at once."
+                    },
+                    "\"He didn't say stop,\" Jordan says.",
+                    "He couldn't. Look at him.",
+                    {
+                      "note": "You're lying on the grass in a mess of socks and netball bibs, still giggling at nothing, glitter toes curling. Half the team's filming."
+                    },
+                    {
+                      "note": "Tayla looks at you for a long time. Then she picks up her bag."
+                    },
+                    "Jordan. Lift?",
+                    "\"Yeah. Course.\""
+                  ],
+                  "after": "Steph, to the team chat: \"[video] the full four minutes\" Tayla: \"please stop sending it\" Steph: \"tay you left with jordan\" Tayla: \"he gave me a lift\" Bec: \"the lift took two hours\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Getting ambushed and laughing your head off isn't losing. It's just a body being ticklish in front of people. What she did after was her call, not a verdict on you."
+    },
+    {
       id: "tayla-end", route: "tayla", gaydar: 99, spark: 0, gaydarSays: "Mitch plays football and can't name one Kylie song. Steph approved him in four seconds.", title: "Tayla and Mitch", contact: "Tayla", irl: true,
       outfits: [
         { label: "Jeans and a tee. Keep your head down.", gaydar: -2, intro: "Two months later. Sam drags you to the netball grand final. Jeans, a tee, just lip oil. In the stands, next to Tayla's water bottle, is a guy: tall, sunburnt, in a football jersey, shouting \"GO TAY\" like he's at a stadium. That's Mitch." },
@@ -2310,7 +2614,10 @@ window.CONTENT = {
         { note: "After the game, Tayla walks over, sweaty and grinning, holding Mitch's hand." },
         "Oh! Hi! {name}! Sam said you might come. This is Mitch. Mitch, this is {name}. We, um. We went out. For a bit.",
         "\"Hey,\" Mitch says. \"Tay's told me about you. You did Bec's makeup, yeah? Legend.\" He means it.",
-        "He plays AFL. Like, for Morningside. He doesn't know a single Kylie song. I played him Padam Padam and he said 'is this the one from the car ad'. I'm in love with him."
+        "He plays AFL. Like, for Morningside. He doesn't know a single Kylie song. I played him Padam Padam and he said 'is this the one from the car ad'. I'm in love with him.",
+        {"if":"tayla-ambush=held","text":"\"Hang on, are you the guy from training?\" Mitch says. \"Steph's coach couldn't make you laugh? Jordan's still filthy about it. Legend.\""},
+        {"if":"tayla-ambush=cracked|begged|kept","text":"\"Hang on,\" Mitch says, grinning. \"You're the guy from the training video. The squealing one. Tay's team sent it to everyone.\""},
+        {"if":"tayla-ambush=cracked|begged|kept","note":"Tayla says \"Mitch\" and elbows him. She's laughing too."}
       ],
       replies: [
         { you: "Oh my god, hi Mitch! Love the guernsey, very... orange. Tay, babe, he's gorgeous. I'm obsessed. I'm so happy for you.",
@@ -4200,6 +4507,306 @@ window.CONTENT = {
       "debrief": "Getting caught out in front of a group is one of the worst feelings, and it passes. Asking someone to stop, and having them stop, is you being in charge of your own body."
     },
     {
+      "id": "zoe-ambush",
+      "route": "zoe",
+      "gaydar": 78,
+      "irl": true,
+      "title": "Tash's picnic",
+      "contact": "Zoe",
+      "gaydarSays": "Tyler took his shoes off him like a tyre change. Then Brooke and Tash joined in. Then I did. In New Farm Park. On a Saturday.",
+      "intro": "A week after trivia at Brooke's. Tash's birthday picnic in New Farm Park, on a big rug under the fig trees. You wore white sneakers and ankle socks and you're keeping them on. It's a park. It's not a shoes-off park. Tyler's here, lying on the rug in a singlet. He's been looking at your sneakers since you sat down.",
+      "them": [
+        {
+          "note": "Zoe's next to you, leaning on your shoulder. Brooke's cutting the cake. Tash is opening presents."
+        },
+        "\"Zo,\" Tyler says. \"He's wearing shoes on the rug.\"",
+        "It's a picnic rug, Tyler. You're allowed shoes on a picnic rug.",
+        "\"Brooke's rug. Brooke's rules. Right, Brooke?\"",
+        "\"Shoes off on my rug,\" Brooke says, not looking up from the cake. \"Always.\"",
+        "\"I'm fine,\" you say. \"They're clean. I'm keeping them on.\"",
+        "\"Is it still lilac under there?\"",
+        "\"No.\"",
+        "\"Liar.\"",
+        {
+          "note": "He rolls over and grabs your ankle. You try to tuck your foot under you. He's already got it in his lap and he's pulling the laces like he does this every day."
+        },
+        "\"Tyler! No! I said I'm keeping them on!\"",
+        "\"Brooke, grab the other one.\"",
+        {
+          "note": "Brooke puts the cake knife down, sits on your other ankle and starts on the laces. You kick. Tash grabs your shoulders from behind and holds you back on the rug, laughing into your hair. Zoe's moved out of the way. She's watching with her hand over her mouth."
+        },
+        {
+          "note": "Both sneakers come off. Then Tyler peels your sock off from the toe end, slowly. Lilac. Then the other one. Lilac."
+        },
+        "\"LIAR!\" Brooke says. \"Zo, he lied on my rug.\"",
+        "\"Penalty,\" Tyler says. \"Brooke, you take that one.\"",
+        {
+          "note": "They both start at once."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Lock up. Stare at the fig tree. Do not laugh in a public park.)",
+          "them": [
+            {
+              "note": "You stare up into the fig tree. Tyler's thumbs go up the arch. Brooke goes straight under the toes, quick and light. Your legs go rigid."
+            },
+            "\"He's doing the face,\" Tash says above you. \"He's doing the trying face.\"",
+            "\"Tash, get in on it,\" Tyler says.",
+            {
+              "note": "Tash lets go of your shoulders and takes half of Brooke's foot. Three people. A family on the next rug has stopped eating to watch. A dog walks over to sniff your toes and Tyler says \"not you, buddy\"."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. Hold it. Hold it.)",
+              "them": [
+                {
+                  "note": "You hold it. You don't know how. Your eyes water and the lilac toes curl so hard they cramp, but nothing comes out of your mouth."
+                },
+                "\"This is insane,\" Brooke says. \"Last week he screamed.\"",
+                "\"Zo,\" Tyler says. \"Your turn. You know him best. Find a spot.\"",
+                {
+                  "note": "Zoe looks at your foot. She looks at you. She's biting her lip."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Look at her.) Zo. Don't. Please.",
+                  "outcome": "held",
+                  "spark": 30,
+                  "them": [
+                    {
+                      "note": "She looks at you for a second. Then she reaches over and pushes Tyler's hands off."
+                    },
+                    "Okay, that's enough. He won. Give him his shoes.",
+                    "\"He didn't win, Zo, he just...\"",
+                    "Tyler. Shoes.",
+                    {
+                      "note": "He gives them back. Zoe brushes the grass off your feet and helps you put your socks on, one then the other. Brooke watches her do it with her eyebrows right up."
+                    },
+                    "\"Whatever,\" Tyler says, and goes to get a beer. He sits on the other side of the rug for the rest of the afternoon."
+                  ],
+                  "after": "Brooke, to Tash: \"zoe put his SOCKS on for him\" Tash: \"so cute\" Brooke: \"he didn't even laugh. tyler's sulking\" Tash: \"tyler never sulks\" Brooke: \"he's sulking so hard\""
+                },
+                {
+                  "you": "(Don't say anything. Keep holding.)",
+                  "outcome": "cracked",
+                  "spark": 18,
+                  "them": [
+                    {
+                      "note": "Zoe crawls round. She doesn't go for the sole. She goes for the back of your heel, right where it meets the ankle. You didn't even know that was a spot. She did."
+                    },
+                    {
+                      "note": "You last one second. Then you shriek, loud enough that the dog barks, and you're giggling, helpless, all four of them going at once."
+                    },
+                    "\"ZO!\" Brooke screams. \"You killed him!\"",
+                    "I found it in the car once. When he had his feet on the dash.",
+                    {
+                      "note": "They stop when you finally get \"stop\" out. Zoe high-fives Tyler. She doesn't seem to think about it. She just does it."
+                    }
+                  ],
+                  "after": "Tash, to the group chat: \"[video] zoe finds the heel\" Brooke: \"the SHRIEK\" Tyler: \"zo's got skills\" Zoe: \"i've known about the heel for weeks\" Brooke: \"you high fived tyler\" Zoe: \"it was a reflex\""
+                }
+              ]
+            },
+            {
+              "you": "(It's too much. You shriek.)",
+              "them": [
+                {
+                  "note": "You break. A shriek, then giggles, high and helpless, and you're rolling on the rug trying to get your feet back. Three people. Two feet. No chance."
+                },
+                "\"THERE it is!\" Tyler says. \"Lilac AND loud!\"",
+                {
+                  "note": "The family on the next rug is laughing now too. Their little girl is copying the noise you're making. Brooke's filming with one hand."
+                },
+                "I can't. I can't watch. I'm watching."
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! Okay, I lied! It's lilac! It's lilac!",
+                  "outcome": "cracked",
+                  "spark": 18,
+                  "them": [
+                    {
+                      "note": "They stop and let go. Tyler holds his hands up."
+                    },
+                    "\"Confession accepted. Penalty served.\"",
+                    {
+                      "note": "You curl up with your feet under Zoe's cardigan. You're red to your ears. The little girl on the next rug waves at you."
+                    },
+                    "You lied to Brooke about your toenails on her rug. That's a big deal for Brooke.",
+                    {
+                      "note": "She's still giggling. Tyler passes her a beer without asking what she wants. It's the one she likes."
+                    }
+                  ],
+                  "after": "Brooke, to Tash: \"'IT'S LILAC IT'S LILAC'\" Tash: \"the little girl\" Brooke: \"the little girl did the noise for an hour\" Tash: \"tyler got zoe's beer right\" Brooke: \"i noticed that\""
+                },
+                {
+                  "you": "(Red, giggling) Stop! Stop it! All of you!",
+                  "outcome": "cracked",
+                  "spark": 16,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "\"Okay! Hands off!\" Tyler says.",
+                    {
+                      "note": "You pull your feet under you and hug your knees. There's grass in your hair. There's cake on your foot somehow."
+                    },
+                    "Are you okay? You went really, really high.",
+                    {
+                      "note": "She means it. Then Brooke does the noise, and Zoe laughs so hard she has to put her head on Tyler's shoulder for a second. She takes it off again quickly."
+                    }
+                  ],
+                  "after": "Zoe, to Brooke, that night: \"i feel bad\" Brooke: \"you laughed into tyler\" Zoe: \"for ONE SECOND\" Brooke: \"for like five\" Zoe: \"i feel bad, ok\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're giggling before they've even started.)",
+          "them": [
+            {
+              "note": "You're gone straight away. You squeal, you kick, you giggle into Tash's knees while she holds your shoulders down."
+            },
+            "\"Oh, he's SO bad!\" Brooke says. \"I barely touched him!\"",
+            "\"Everyone in,\" Tyler says. \"Tash. Zo. Come on.\"",
+            {
+              "note": "Tash takes a foot. Then Zoe, laughing, kneels down and takes the toes on the other one. Four of them. The family next door has given up on their lunch entirely."
+            },
+            "You're so ticklish! How did I not know you were this ticklish?",
+            {
+              "note": "Someone's playing music off their phone. Tyler's tickling in time to it."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Please! Please stop! Please!",
+              "them": [
+                {
+                  "note": "They stop and let go straight away. You lie on the rug panting, arms over your face."
+                },
+                "\"He said please,\" Tyler says. \"Three times. Brooke, did you get that?\"",
+                "\"I got all three.\"",
+                {
+                  "note": "Then Zoe picks your foot up again, gently. Just holding it. Grinning at you over it."
+                },
+                "One more? Just me. Ten seconds."
+              ],
+              "replies": [
+                {
+                  "you": "(Pull it back.) No! No more. Not even you.",
+                  "outcome": "begged",
+                  "spark": 12,
+                  "them": [
+                    "Okay! Okay. Fine.",
+                    {
+                      "note": "You sit cross-legged with both feet tucked under you for the rest of the picnic. Tyler's sitting on your socks."
+                    },
+                    "\"Want them back? Come and get them, princess.\"",
+                    {
+                      "note": "You don't go and get them. Zoe goes and gets them. It turns into a whole thing with Tyler, rolling on the rug. She's laughing the whole time. You hold your sneakers and wait."
+                    }
+                  ],
+                  "after": "Tash, to Brooke: \"he begged three times\" Brooke: \"and then zoe wrestled tyler for the socks\" Tash: \"for ages\" Brooke: \"who won\" Tash: \"zoe was on top at the end\" Brooke: \"TASH\""
+                },
+                {
+                  "you": "(Still giggling) ...Okay. Ten seconds. Just you.",
+                  "outcome": "kept",
+                  "spark": 6,
+                  "gaydar": 82,
+                  "them": [
+                    {
+                      "note": "The whole rug counts down from ten. Zoe goes for the back of your heel. You scream laughing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one' Tyler and Brooke and Tash all pile back in for a bonus round. You're laughing too hard to complain. They stop when you finally squeak \"stop\"."
+                    },
+                    "\"He asked for it!\" Tyler says. \"Literally asked!\"",
+                    "You asked for it. You actually asked.",
+                    {
+                      "note": "She's sitting back on her heels, looking at you lying there with lilac toes in the air. Tyler sits down next to her and offers her the last bit of cake. She eats it off his fork."
+                    }
+                  ],
+                  "after": "Brooke, to Tash: \"[video] HE ASKED FOR MORE\" Tash: \"zoe ate cake off tyler's fork\" Brooke: \"i saw\" Tash: \"he's her boyfriend\" Brooke: \"which one\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Lie back and let them.)",
+              "them": [
+                {
+                  "note": "You stop struggling. You lie flat on the rug, laughing up into the fig tree, lilac toes wriggling in four people's hands."
+                },
+                "\"He's given up!\" Tash says. \"He's just lying there!\"",
+                "\"He loves it,\" Tyler says. \"Zo. He loves this.\"",
+                {
+                  "note": "It goes on. They take turns. Tyler gets a blade of grass and does it between your toes. Brooke uses a plastic fork. You're crying with laughter."
+                },
+                {
+                  "note": "After a while Zoe stops. She sits back on her heels and just watches you."
+                },
+                "Babe. You can say stop. You know that?"
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop! Stop. Okay. Stop.",
+                  "outcome": "kept",
+                  "spark": 6,
+                  "gaydar": 82,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "\"Three minutes,\" Brooke says. \"I timed it for the group chat.\"",
+                    {
+                      "note": "Tyler pats your bare foot twice. \"Good effort, champ.\""
+                    },
+                    {
+                      "note": "Then he gets up and stretches. \"Zo, ice cream? Van's over there.\""
+                    },
+                    {
+                      "note": "She looks at you, lying there. Then she goes with him. They're gone for a long time for one ice cream."
+                    }
+                  ],
+                  "after": "Zoe, to Brooke, that night: \"i watched him let four people tickle his feet for three minutes and he was so happy\" \"like the happiest i've seen him\" \"and it wasn't with me\" Brooke: \"and tyler?\" Zoe: \"we got ice cream\""
+                },
+                {
+                  "you": "(Can't speak. Just keep laughing.)",
+                  "outcome": "kept",
+                  "spark": 4,
+                  "gaydar": 84,
+                  "them": [
+                    {
+                      "note": "You can't get a word out. You're laughing too hard. They keep going."
+                    },
+                    "Okay. Stop. Everyone stop. He can't breathe.",
+                    {
+                      "note": "Everyone stops and lets go at once."
+                    },
+                    "\"He didn't say stop,\" Tyler says.",
+                    "He couldn't. Look at him.",
+                    {
+                      "note": "You're lying half off the rug in the grass, socks gone, cake on your foot, still giggling at nothing. The little girl from the next rug has come over to look at your toes."
+                    },
+                    {
+                      "note": "Zoe looks at you for a long time. Then she gets up and brushes off her dress."
+                    },
+                    "Tyler, you driving? Can you drop me home?",
+                    "\"Yeah. Course.\""
+                  ],
+                  "after": "Tash, to the group chat: \"[video] four minutes\" Zoe: \"please stop\" Brooke: \"zo left with tyler\" Zoe: \"he dropped me home\" Tash: \"he dropped you home at 11pm\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Laughing that hard in front of people can feel like losing something. It isn't. Being ticklish is just being ticklish. What she felt watching was hers to work out."
+    },
+    {
       id: "c6h", route: "zoe", gaydar: 97, gaydarSays: "Lilac toes and platforms to a barbecue. I rest my case.", title: "In the driveway", contact: "Zoe", irl: true,
       intro: "You've been going out with Zoe for six weeks. Today was her friend Brooke's barbecue in Ashgrove. You wore little floral shorts, a pastel cropped tee, her white platform sandals, toes painted lilac, and a bit of gloss. Brooke's boyfriend asked Zoe, in front of everyone, if you were her gay best friend. She laughed. She hasn't said much since. Now she's parked in your driveway with the engine off.",
       outfitPrompt: "What did you wear to Brooke's barbecue?",
@@ -4376,7 +4983,10 @@ window.CONTENT = {
         "Hi. Oh my god, hi. You came.",
         "This is Kyle. Kyle, this is {name}. We... you know. Before.",
         "\"Hey man,\" Kyle says, flipping a hot dog. \"Hot dog?\" He hasn't looked at your outfit once. He's looking at the sausages.",
-        "He's a mechanic. He's got a Commodore he talks to. He's never once been in my wardrobe. It's so relaxing, {name}. You have no idea."
+        "He's a mechanic. He's got a Commodore he talks to. He's never once been in my wardrobe. It's so relaxing, {name}. You have no idea.",
+        {"if":"zoe-ambush=held","text":"Brooke still talks about the picnic, by the way. How Tyler couldn't make you laugh. It's her favourite story."},
+        {"if":"zoe-ambush=cracked|begged|kept","text":"\"Oh, wait,\" Kyle says, looking up from the hot dogs. \"Are you the guy from the park video? Brooke showed me. With the little girl doing the noise.\""},
+        {"if":"zoe-ambush=cracked|begged|kept","note":"Zoe goes red and says \"Kyle\". Kyle says \"what? it was funny\" and goes back to the sausages."}
       ],
       replies: [
         { you: "Hi Kyle! I'll have a hot dog, thanks babe. Zoe, he's lovely. Very... automotive. I'm happy for you.",
@@ -4572,6 +5182,303 @@ window.CONTENT = {
       "debrief": "Something embarrassing ending up online can feel huge in the moment. Most people who see it forget by lunchtime. You said red and it stopped, every time."
     },
     {
+      "id": "sophie-ambush",
+      "route": "sophie",
+      "gaydar": 79,
+      "irl": true,
+      "title": "The rematch",
+      "contact": "Sophie",
+      "gaydarSays": "Ethan took his sneakers off him like a personal training session. Kirra filmed AND tickled. I joined in. The rug will never be the same.",
+      "intro": "Two weeks after game night. Kirra invited you back, \"for a rematch\", and you know what that means. So you've kept your sneakers on. Double-knotted. Socks pulled up. Kirra's rug rule can go to hell. Ethan's on the couch in his gym gear. Kirra's phone is already out.",
+      "them": [
+        {
+          "note": "You sit down on the rug with your knees up and your sneakers firmly on. Kirra looks at your feet. Then at Ethan."
+        },
+        "\"Socks off at the door, {name}. House rule.\"",
+        "\"Not tonight,\" you say. \"I'm keeping them on. I know what you two are doing.\"",
+        "\"We're not doing anything,\" Ethan says. \"Are we, Kirra?\"",
+        "\"Nothing at all,\" Kirra says, and hits record.",
+        {
+          "note": "Ethan gets off the couch, sits on the rug and gets hold of your ankle like he's about to stretch out a client's hamstring."
+        },
+        "\"No. Ethan. No! I said they're staying on!\"",
+        "\"Double knots,\" he says, working on them anyway. \"Cute.\"",
+        {
+          "note": "You kick. He just holds the ankle tighter. Kirra puts her phone in her teeth and grabs your other foot. Sophie, laughing, sits behind you and holds your arms. \"Sorry,\" she says. She doesn't sound sorry."
+        },
+        {
+          "note": "Both sneakers off. Then the socks, pulled off by the toe, slowly. Coral. Still coral. Sophie painted them. Everyone on the rug knows Sophie painted them."
+        },
+        "\"Coral!\" Kirra says round the phone. \"Soph, your coral!\"",
+        "I know. I did a good job.",
+        "\"Right,\" Ethan says. \"Rematch. Three, two...\"",
+        {
+          "note": "He starts. Kirra starts too, phone in one hand, tickling with the other."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Lock up. Stare at the ceiling fan. Do not give Kirra the video.)",
+          "them": [
+            {
+              "note": "You stare at the ceiling fan. Ethan's knuckles go up the arch, slow and firm. Kirra's nails go fast under the toes. Your whole body goes rigid."
+            },
+            "\"He's resisting!\" Kirra says. \"He's been training!\"",
+            "\"Soph,\" Ethan says. \"Let go of his arms. Take a foot.\"",
+            {
+              "note": "Sophie lets go of your arms and takes over the other foot from Kirra, who sits back to film properly. Now it's Ethan and Sophie. Your girlfriend is tickling your feet. You hold on."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. Hold it. Hold it.)",
+              "them": [
+                {
+                  "note": "You hold it. Nothing comes out. Your eyes stream. The coral toes curl and cramp."
+                },
+                "\"This is not the same man as last time,\" Kirra says. \"This is not the same man.\"",
+                "\"Soph,\" Ethan says, \"you must know a spot.\"",
+                {
+                  "note": "Sophie looks at your foot, then at you. She's got a little smile."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Look at her.) Soph. You wouldn't.",
+                  "outcome": "held",
+                  "spark": 30,
+                  "them": [
+                    {
+                      "note": "She holds your eye for a second. Then she lets go of your foot and pushes Ethan's hands off the other one."
+                    },
+                    "Okay. Enough. He won fair. Kirra, stop filming.",
+                    "\"He didn't win, he just...\"",
+                    "Ethan. He won.",
+                    {
+                      "note": "Ethan lets go. Sophie puts your socks back on for you herself, one then the other. Kirra films that instead."
+                    },
+                    "\"Okay,\" Ethan says, a bit flat, and goes to the kitchen. He's in there a while."
+                  ],
+                  "after": "Kirra, to Sophie: \"[video] he didn't laugh\" \"and then you put his socks on for him\" Sophie: \"don't post that\" Kirra: \"it's my most romantic video\" Sophie: \"don't\" Kirra: \"ethan's sulking\""
+                },
+                {
+                  "you": "(Say nothing. Keep holding.)",
+                  "outcome": "cracked",
+                  "spark": 18,
+                  "them": [
+                    {
+                      "note": "Sophie shuffles down. She doesn't go for the sole. She goes for the little toe, the one she was painting when you squirmed at movie night."
+                    },
+                    {
+                      "note": "You last half a second. Then you shriek, loud, and you're giggling helplessly, and Ethan and Kirra pile back in."
+                    },
+                    "\"SOPHIE!\" Kirra screams. \"Soph broke him!\"",
+                    "I had to paint around that toe. Of course I know.",
+                    {
+                      "note": "They stop when you finally gasp \"stop\". Sophie fist-bumps Ethan. Kirra gets that on video too."
+                    }
+                  ],
+                  "after": "Kirra, to Sophie: \"[video] the little toe\" Sophie: \"i'm a bit proud\" Kirra: \"you fist bumped ethan\" Sophie: \"he's very fist bumpable\" Kirra: \"soph\""
+                }
+              ]
+            },
+            {
+              "you": "(It's too much. You shriek.)",
+              "them": [
+                {
+                  "note": "You break. You shriek, then giggle, high and helpless, and then you're twisting all over the rug trying to get your feet back. Not a chance."
+                },
+                "\"YES!\" Kirra says. \"Rematch to us!\"",
+                "\"Same as last time,\" Ethan says, not stopping. \"Ticklish and a pushover.\"",
+                {
+                  "note": "Sophie's laughing so hard she's lying on the rug with you. Kirra's phone is right up close to your face."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! You win! You win, you win!",
+                  "outcome": "cracked",
+                  "spark": 18,
+                  "them": [
+                    {
+                      "note": "They stop and let go. Ethan holds his hands up like he's racked a bar."
+                    },
+                    "\"Two nil.\"",
+                    {
+                      "note": "You curl up with your coral toes tucked under Sophie's leg. You're red to your ears. Kirra's already typing a caption."
+                    },
+                    "That was very loud, babe.",
+                    {
+                      "note": "She's still giggling. Ethan gets her a drink from the kitchen without asking what she wants. He gets it right."
+                    }
+                  ],
+                  "after": "Kirra, to Sophie: \"posting it\" Sophie: \"don't\" Kirra: \"caption: 'rematch: still ticklish, still a pushover'\" Sophie: \"KIRRA\" Kirra: \"ethan already liked it\""
+                },
+                {
+                  "you": "(Red, giggling) Stop! Stop it! All of you!",
+                  "outcome": "cracked",
+                  "spark": 16,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "\"Stopped! Hands off!\" Ethan says.",
+                    {
+                      "note": "You hug your knees with your feet hidden under you. Your hair's everywhere. Kirra's still filming your face."
+                    },
+                    "Are you okay? You did a full scream.",
+                    {
+                      "note": "She means it. Then Kirra plays the scream back on her phone and Sophie loses it, and leans on Ethan's arm to stay upright, and then takes a second to let go."
+                    }
+                  ],
+                  "after": "Sophie, to Kirra: \"i feel bad\" Kirra: \"you laughed the hardest\" Sophie: \"i KNOW\" Kirra: \"you leaned on ethan\" Sophie: \"i was falling over\" Kirra: \"you're always falling over near ethan\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're giggling before they even start.)",
+          "them": [
+            {
+              "note": "You're gone straight away. Giggling, squealing, kicking at nothing, before Ethan's even properly started."
+            },
+            "\"Oh, he's WORSE!\" Kirra says. \"He's worse than last time!\"",
+            "\"Soph, get in,\" Ethan says. \"Everyone on a foot.\"",
+            {
+              "note": "Sophie, laughing, lets go of your arms and takes the toes on one foot. Kirra props her phone against the couch so she can use both hands. Three of them. You've never laughed so hard."
+            },
+            "You told me you weren't ticklish! At movie night! You said that!",
+            {
+              "note": "The neighbour bangs on the wall. Nobody stops."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Please! Please, please stop!",
+              "them": [
+                {
+                  "note": "They stop and let go straight away. You lie on the rug panting, arm over your eyes."
+                },
+                "\"He said please,\" Ethan says. \"Three times. Kirra, did you get it?\"",
+                "\"I got everything.\"",
+                {
+                  "note": "Then Sophie picks your foot up again. Just holding it. Smiling at you over it."
+                },
+                "One more? Just me. Ten seconds."
+              ],
+              "replies": [
+                {
+                  "you": "(Pull it back.) No! No more! Not even you!",
+                  "outcome": "begged",
+                  "spark": 12,
+                  "them": [
+                    "Okay! Okay, fine.",
+                    {
+                      "note": "You sit with your feet tucked under a cushion for the rest of the night. Ethan's sitting on your socks."
+                    },
+                    "\"Want them, sweetheart? Come and get them.\"",
+                    {
+                      "note": "You don't. Sophie does. It turns into a wrestle on the rug between her and Ethan, and Kirra films all of it, and Sophie's laughing the whole time."
+                    }
+                  ],
+                  "after": "Kirra, to Sophie: \"he begged three times\" \"and then you wrestled ethan for ten minutes\" Sophie: \"for his SOCKS\" Kirra: \"who won\" Sophie: \"...ethan\" Kirra: \"you didn't seem upset\""
+                },
+                {
+                  "you": "(Still giggling) ...Okay. Ten seconds. Just you.",
+                  "outcome": "kept",
+                  "spark": 6,
+                  "gaydar": 83,
+                  "them": [
+                    {
+                      "note": "Kirra counts down from ten. Sophie goes straight for the little toe. You scream laughing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one' Ethan and Kirra pile back in. You're laughing too hard to protest. They stop when you finally squeak \"stop\"."
+                    },
+                    "\"He asked!\" Kirra says. \"On camera! He asked for it!\"",
+                    "You asked for it. Babe. You asked.",
+                    {
+                      "note": "She's sitting back on her heels, looking at you. Ethan sits down beside her and bumps her shoulder. She bumps it back."
+                    }
+                  ],
+                  "after": "Kirra, to Sophie: \"[video] he ASKED\" \"4000 views\" Sophie: \"you bumped shoulders with ethan for an hour\" Kirra: \"that's not in the video\" Sophie: \"i know. i'm saying i know\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Lie back on the rug and let them.)",
+              "them": [
+                {
+                  "note": "You stop fighting. You lie flat on Kirra's rug, laughing at the ceiling fan, coral toes wriggling in three people's hands."
+                },
+                "\"He's given up!\" Kirra says. \"He's just letting us!\"",
+                "\"He loves it,\" Ethan says. \"Soph, look at him. He's loving this.\"",
+                {
+                  "note": "It goes on. They take turns. Kirra uses a feather off a cushion. Ethan does each toe one at a time, counting reps out loud. You're crying from laughing."
+                },
+                {
+                  "note": "After a while Sophie stops. She sits back and watches your face."
+                },
+                "Babe. You can tell them to stop. You know that."
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop! Stop. Okay. Stop.",
+                  "outcome": "kept",
+                  "spark": 6,
+                  "gaydar": 83,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "\"Three minutes ten,\" Kirra says. \"New record. Posting.\"",
+                    {
+                      "note": "Ethan pats your bare foot twice. \"Good set, champ.\""
+                    },
+                    {
+                      "note": "Then he gets up and stretches. \"Soph, want to walk down to get gelato?\""
+                    },
+                    {
+                      "note": "She looks at you on the rug. Then she gets her bag. They're gone for over an hour. Kirra keeps filming you in case you do anything else."
+                    }
+                  ],
+                  "after": "Sophie, to Kirra, from the gelato place: \"i watched him let us tickle him for three minutes and he was so happy\" \"happier than he's ever been on a date with me\" Kirra: \"and ethan?\" Sophie: \"we're getting a second gelato\""
+                },
+                {
+                  "you": "(Can't speak. Just keep laughing.)",
+                  "outcome": "kept",
+                  "spark": 4,
+                  "gaydar": 85,
+                  "them": [
+                    {
+                      "note": "You can't get a word out. You're laughing too hard. They keep going."
+                    },
+                    "Okay. Stop. Everyone. He can't breathe.",
+                    {
+                      "note": "Everyone stops and lets go at once."
+                    },
+                    "\"He didn't say stop,\" Ethan says.",
+                    "He couldn't. He's bright red. Look at him.",
+                    {
+                      "note": "You're lying across Kirra's rug with a cushion feather stuck to your foot, still giggling at nothing. Kirra's phone is still going."
+                    },
+                    {
+                      "note": "Sophie looks at you for a long time. Then she picks up her keys."
+                    },
+                    "Ethan, can you walk me to my car?",
+                    "\"Yeah. Course.\""
+                  ],
+                  "after": "Kirra, to Sophie: \"you've been walking to your car for 40 minutes\" Sophie: \"we're talking\" Kirra: \"about {name}?\" Sophie: \"at first\" Kirra: \"SOPH\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "You tried to keep your shoes on and it didn't work. That's fine. Laughing that hard in front of people isn't a failure, and what she did after was hers to own."
+    },
+    {
       id: "c6i", route: "sophie", gaydar: 98, gaydarSays: "There's literally video evidence, {name}.", title: "Saturday morning", contact: "Sophie", irl: true,
       intro: "Sophie, three months. Last night you told her you were having a quiet one. You weren't. You went to the Valley with Dani in a crop top, a mini skirt and heeled sandals, toes painted hot pink, and you danced with a guy at the Wickham until 1am. Now it's Saturday morning, Sophie's on your doorstep with two coffees, and she hasn't smiled once.",
       outfitPrompt: "What did you wear to the Valley last night?",
@@ -4760,7 +5667,10 @@ window.CONTENT = {
         "Hi. Kirra's birthday. She wanted to come here. Of course she did.",
         "This is Nathan. Nathan, this is {name}. We used to see each other.",
         "\"Hey man,\" Nathan says, and shakes your hand. \"Love this bar. First time in a gay bar. The drinks are really pink.\"",
-        "He's a physio. He wears the same three polos. He's never heard of the cerulean speech. Kirra says he's so straight it's restful."
+        "He's a physio. He wears the same three polos. He's never heard of the cerulean speech. Kirra says he's so straight it's restful.",
+        {"if":"sophie-ambush=held","text":"Kirra still has the video of you not laughing. She calls it her most romantic video. Ethan's never forgiven you."},
+        {"if":"sophie-ambush=cracked|begged|kept","text":"\"Wait,\" Nathan says. \"Kirra's video. The rematch. That's you?\" He laughs. \"Kirra shows it to everyone. Good set, man.\""},
+        {"if":"sophie-ambush=cracked|begged|kept","note":"Sophie puts her hand over her face. Kirra, somewhere behind you, is already filming."}
       ],
       replies: [
         { you: "Hi Nathan! Welcome to the Wickham, babe. The drinks are supposed to be pink. Soph, he's adorable. I'm so happy for you.",
@@ -5066,6 +5976,283 @@ window.CONTENT = {
       "debrief": "Being fussed over and teased by someone you like, in front of your friends, is embarrassing in the best way. It's allowed to feel nice."
     },
     {
+      "id": "bianca-ambush",
+      "route": "bianca",
+      "gaydar": 98,
+      "friend": true,
+      "irl": true,
+      "title": "The new boots",
+      "contact": "Bianca",
+      "gaydarSays": "Jake unzipped his boots like it was a first date. Then all three of us got a foot each. Best wingwoman work of my life.",
+      "intro": "Two weeks after pedi night. Bianca made you buy heeled ankle boots, and tonight's the first time you've worn them out: drinks at hers before Shay's thing. You're keeping them on all night. You've decided. Then Jake turns up again. \"In the area,\" again.",
+      "them": [
+        {
+          "note": "You're on the couch between Shay and Imogen, boots on, legs crossed, very aware of the boots. Jake sits on the floor in front of you with his drink."
+        },
+        "\"Nice boots,\" he says. \"Bet your toes are still pink under there.\"",
+        "Obviously they are. I did a top coat.",
+        "\"They're not,\" you say. \"And I'm not taking these off. I just got them on. There's a zip and a whole system.\"",
+        "\"I know how a zip works,\" Jake says.",
+        {
+          "note": "He puts his drink down, takes hold of your ankle, and finds the zip on the inside of the boot."
+        },
+        "\"Jake. No! Jake, I said no! They're staying on!\"",
+        "Shay, Imogen. Arms.",
+        {
+          "note": "Shay and Imogen each grab an arm and pull you back into the couch, shrieking with laughter. You kick. Jake catches the kicking foot and unzips that one too. Both boots off. Then the socks, slowly, toe end first."
+        },
+        {
+          "note": "Pink. Glossy. Perfect. Bianca's top coat."
+        },
+        "Told you. Look at that shine. That's my work.",
+        "\"Pretty,\" Jake says. He's still holding your foot. He looks up at you. \"Remember pedi night?\"",
+        {
+          "note": "He starts. Bianca, cackling, gets down on the floor and takes the other foot."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Lock up. Stare at Bianca's fairy lights. Not a sound.)",
+          "them": [
+            {
+              "note": "You stare at the fairy lights. Jake's thumbs go up your arch, slow. Bianca goes for your toes, fast, with her long nails. You go rigid all over."
+            },
+            "Oh, he's FIGHTING it. Babe. You're fighting it?",
+            "\"Shay, Imogen, you want in?\" Jake says.",
+            {
+              "note": "They let go of your arms and each take a bit of a foot. Four people. Two feet. Bianca's playing Kylie off her phone."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. All the way.)",
+              "them": [
+                {
+                  "note": "You hold it. Somehow. Your eyes water and your pink toes curl right up, but nothing comes out of you. Not one sound."
+                },
+                "\"Okay, that's impressive,\" Jake says, and lets go first. \"Respect.\"",
+                "Who ARE you? On pedi night you screamed the house down.",
+                {
+                  "note": "Jake's looking at you differently. Like he's interested in a new way."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Hold your foot out to Jake.) Can I have my socks back, please?",
+                  "outcome": "held",
+                  "them": [
+                    {
+                      "note": "He picks up your sock and, without asking, puts it back on your foot for you. Then the other one. Then he zips your boots back up, slowly, one after the other."
+                    },
+                    {
+                      "note": "Shay makes a noise like a kettle. Imogen grabs Bianca's arm."
+                    },
+                    "Oh my god. Oh my GOD. He did your boots up. Jake did your boots up.",
+                    "\"He asked nicely,\" Jake says, and doesn't move away from your feet."
+                  ],
+                  "after": "Bianca, to Shay and Imogen: \"jake did his BOOTS UP\" Shay: \"he texted me 'is he always that calm'\" Imogen: \"jake's obsessed\" Bianca: \"i'm the best wingwoman in queensland\""
+                },
+                {
+                  "you": "(Wiggle your toes at Bianca.) Go on then. You know where.",
+                  "outcome": "cracked",
+                  "them": [
+                    "Oh, you're asking for it.",
+                    {
+                      "note": "She goes straight for the gap between your second and third toe, the one she always has to put the separator in carefully. You last a second. Then you shriek and fold in half, giggling, and all four of them pile back in."
+                    },
+                    "I KNEW it. I've had my hands on these feet every week for a month.",
+                    {
+                      "note": "They stop when you get \"stop\" out. Jake's laughing harder than anyone. He hasn't let go of your ankle."
+                    }
+                  ],
+                  "after": "Imogen, to the girls: \"[video] bianca finds the spot\" Shay: \"jake's laugh tho\" Bianca: \"jake didn't let go of his ankle for 20 minutes after\" Imogen: \"20?\" Bianca: \"i timed it. i'm a professional\""
+                }
+              ]
+            },
+            {
+              "you": "(It's too much. You shriek.)",
+              "them": [
+                {
+                  "note": "You break. Shriek, giggle, kick, all at once. Four of them, two feet, and you're laughing so hard you slide off the couch onto the rug."
+                },
+                "THERE she is! There's my baby!",
+                "\"Same as pedi night,\" Jake says, grinning, not stopping. \"Even louder.\"",
+                {
+                  "note": "Imogen's filming. Shay's crying with laughter."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! Okay, I'm ticklish! I'm SO ticklish!",
+                  "outcome": "cracked",
+                  "them": [
+                    {
+                      "note": "They stop and let go. You lie on the rug with your pink toes in the air, panting."
+                    },
+                    "\"I know you are,\" Jake says. \"I've known since pedi night.\"",
+                    {
+                      "note": "He lies down on the rug next to you, propped on an elbow, and looks at your face. Bianca turns the music up and pulls Shay and Imogen into the kitchen. Very obviously."
+                    },
+                    {
+                      "note": "From the kitchen: \"LEAVE THEM ALONE, Imogen.\""
+                    }
+                  ],
+                  "after": "Bianca, to Shay and Imogen, from the kitchen: \"DON'T go back in there\" Shay: \"what are they doing\" Bianca: \"talking. lying on my rug. talking.\" Imogen: \"jake's holding his foot again\" Bianca: \"of course he is\""
+                },
+                {
+                  "you": "(Red, giggling) Stop! Stop it, all of you!",
+                  "outcome": "cracked",
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "Okay! Okay, hands off, everyone.",
+                    {
+                      "note": "You curl up on the rug, red to your ears, feet tucked under you. Jake picks up your boot and holds it out to you."
+                    },
+                    "\"Sorry,\" he says. He actually sounds a bit sorry. \"Got carried away. Your laugh's good.\"",
+                    {
+                      "note": "You take the boot. Your hand touches his. You both look at it for slightly too long. Bianca makes a sound like she's been stabbed."
+                    }
+                  ],
+                  "after": "Bianca, to Shay and Imogen: \"'your laugh's good'\" \"he said YOUR LAUGH'S GOOD\" Shay: \"he's never said that to anyone\" Imogen: \"he said it to me once\" Shay: \"he did not\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're giggling before they've even started.)",
+          "them": [
+            {
+              "note": "You're gone instantly. Squealing, giggling, wriggling into the couch cushions, before Jake's even properly started."
+            },
+            "Oh, BABE. You're hopeless!",
+            "\"Everyone in,\" Jake says. \"Bee, Shay, Imogen.\"",
+            {
+              "note": "Four of them. Jake and Bianca on one foot, Shay and Imogen on the other. Somebody's using a makeup brush. You've never laughed so hard in your life."
+            },
+            "This is the best night of my LIFE.",
+            {
+              "note": "Kylie's still playing. Bianca's tickling in time to it."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Please! Please, please stop!",
+              "them": [
+                {
+                  "note": "They stop and let go straight away. You lie back on the couch, panting, arm over your eyes."
+                },
+                "\"He said please,\" Jake says. \"Three times.\"",
+                "He's very polite. I raised him right.",
+                {
+                  "note": "Then Jake picks your foot up again. Not tickling. Just holding it. Thumb resting on your arch. Looking at you."
+                },
+                "\"One more? Just me. Ten seconds.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Pull it back.) No! No more. Not even you.",
+                  "outcome": "begged",
+                  "them": [
+                    "\"Fair enough,\" he says, and lets go. \"Not even me. Noted.\"",
+                    {
+                      "note": "He gives you your socks back. Then he picks up your boots and holds them, and doesn't give those back."
+                    },
+                    "\"You can have these back when you come to dinner with me.\"",
+                    {
+                      "note": "Bianca screams. Actually screams. Shay drops her drink."
+                    }
+                  ],
+                  "after": "Bianca, to Shay and Imogen: \"HE HELD HIS BOOTS HOSTAGE FOR A DATE\" Shay: \"jake did that??\" Imogen: \"did {name} say yes\" Bianca: \"he said 'they're new boots'\" Bianca: \"which is a yes\""
+                },
+                {
+                  "you": "(Still giggling) ...Okay. Ten seconds. Just you.",
+                  "outcome": "kept",
+                  "gaydar": 99,
+                  "them": [
+                    {
+                      "note": "The girls count down from ten. Jake goes slow, then fast, then slow again. You're squealing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one' he stops. Right on one. Exactly ten seconds. He lets go."
+                    },
+                    "\"I keep my word,\" he says.",
+                    {
+                      "note": "You lie there giggling with your pink toes in the air. He's still sitting at your feet. He doesn't move."
+                    },
+                    "Oh my god. Oh my god, look at them. Shay. LOOK AT THEM."
+                  ],
+                  "after": "Bianca, to the girls: \"he asked for more\" \"from JAKE\" \"and jake stopped at exactly ten\" Shay: \"jake's never stopped at anything\" Imogen: \"he's going to marry him\" Bianca: \"i'm doing the speech\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Lie back and let them.)",
+              "them": [
+                {
+                  "note": "You stop struggling. You flop back across the couch, laughing at the ceiling, pink toes wriggling in four people's hands."
+                },
+                "He's given UP! Babe, you've given up!",
+                "\"He loves it,\" Jake says. \"Look at his face.\"",
+                {
+                  "note": "It goes on and on. They take turns. Imogen with the makeup brush. Shay with a fluffy pen. Jake just with his thumbs. You're crying with laughter."
+                },
+                {
+                  "note": "After a while Jake stops and just watches you."
+                },
+                "\"You can say stop, you know,\" he says."
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop! Stop. Okay. Stop.",
+                  "outcome": "kept",
+                  "gaydar": 99,
+                  "them": [
+                    {
+                      "note": "They stop as soon as you say it and let go."
+                    },
+                    "Three minutes! THREE minutes!",
+                    {
+                      "note": "Jake rests your foot on his knee and leaves it there. He pats it twice."
+                    },
+                    "\"Good effort,\" he says. \"Shay's thing starts in an hour. You coming? I'll carry your boots.\"",
+                    {
+                      "note": "Bianca grabs Imogen's arm so hard Imogen yelps."
+                    }
+                  ],
+                  "after": "Bianca, to the group: \"three minutes and then jake said 'i'll carry your boots'\" Shay: \"did he carry them\" Bianca: \"the whole way to the bar\" Imogen: \"on his shoulder\" Bianca: \"like a groom\""
+                },
+                {
+                  "you": "(Can't speak. Just keep laughing.)",
+                  "outcome": "kept",
+                  "gaydar": 99,
+                  "them": [
+                    {
+                      "note": "You can't get a word out. You're laughing too hard. Shay and Imogen keep going. Bianca keeps going."
+                    },
+                    "\"Okay,\" Jake says. \"Stop. Everyone. He can't breathe.\"",
+                    {
+                      "note": "Everyone stops and lets go at once."
+                    },
+                    "He was having fun!",
+                    "\"He was purple, Bee.\"",
+                    {
+                      "note": "You're half off the couch, makeup-brush marks on your soles, still giggling. Jake sits down next to you and waits until you've got your breath back. He doesn't say anything. He just waits."
+                    },
+                    "Okay. Okay, I'm in love with this. I'm in love with the two of you."
+                  ],
+                  "after": "Bianca, to the girls: \"jake made us stop because he was worried\" Imogen: \"and then he just sat with him\" Shay: \"for twenty minutes\" Bianca: \"i have never been more right about anything in my life\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Getting your boots taken off and losing it in front of your friends isn't humiliating. It's being with people who like you enough to be silly with you."
+    },
+    {
       id: "bianca-end", route: "bianca", gaydar: 100, spark: 0, gaydarSays: "Liam's a carpenter who thinks contour is a word from maths. He's perfect and I'm keeping him.", title: "Bianca and Liam", contact: "Bianca", irl: true,
       outfits: [
         { label: "Jeans and a tee, just lip oil", gaydar: 0, intro: "A month later. Bianca's birthday drinks at a rooftop in the Valley, the same one where you had your first date. You wore jeans and a tee and lip oil. She's brought a guy. Carpenter. Work boots under his jeans. Has sawdust on him at a rooftop bar. Liam." },
@@ -5075,7 +6262,9 @@ window.CONTENT = {
         "Babe!! You came! Okay, this is Liam. Liam, this is {name}, my best friend. He's the one who did my contour.",
         "\"Hey,\" Liam says. \"The contour guy. Good work, man. I can't even tell what it is, but it looks good.\"",
         "He's a carpenter. He made me a bedside table for my birthday. He thinks contour is a maths word. I'm so in love I could scream.",
-        { note: "She leans in and whispers: \"Be nice. Be nice! He's straight. He's so straight. Like, actually.\"" }
+        { note: "She leans in and whispers: \"Be nice. Be nice! He's straight. He's so straight. Like, actually.\"" },
+        {"if":"bianca-ambush=held","note":"Over by the bar, Jake raises his glass at you. He's still never seen you laugh when he wants you to. Bianca says it's driving him mad."},
+        {"if":"bianca-ambush=cracked|begged|kept","note":"Over by the bar, Jake catches your eye and wiggles his fingers at you. You go red. Bianca nearly drops her drink."}
       ],
       replies: [
         { you: "Liam! Hi! A bedside table? Babe, that's so romantic I could die. B, he's perfect. I'm so happy for you.",
