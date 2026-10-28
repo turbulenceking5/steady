@@ -27,7 +27,7 @@
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--ink); }
-body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
 header { position: sticky; top: 0; z-index: 5; background: var(--bg); display: flex; align-items: center; gap: 8px; padding: 12px 16px; padding-top: calc(12px + env(safe-area-inset-top)); border-bottom: 1px solid var(--line); }
 header h1 { font-size: 20px; margin: 0; flex: 1; }
 header h1::after { content: ""; display: block; height: 3px; width: 44px; border-radius: 2px; background: var(--rainbow); margin-top: 2px; }
@@ -36,16 +36,11 @@ main { max-width: 640px; margin: 0 auto; padding: 16px; }
 section[hidden] { display: none; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-bottom: 14px; }
 .card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
-.affirm { font-size: 19px; line-height: 1.45; margin: 0; }
 .muted { color: var(--muted); font-size: 14px; }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-.mood button { font-size: 26px; background: var(--soft); border: 2px solid transparent; border-radius: 12px; padding: 4px 10px; cursor: pointer; }
-.mood button[aria-pressed="true"] { border-color: var(--accent); }
-textarea, input[type=text] { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
-textarea { min-height: 130px; resize: vertical; }
+input[type=text] { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
 .btn { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 12px; padding: 10px 14px; font: inherit; font-weight: 600; cursor: pointer; }
 .btn.ghost { background: var(--soft); color: var(--ink); }
-.streak { font-weight: 700; }
 .list { list-style: none; margin: 0; padding: 0; }
 .list li { margin-bottom: 10px; }
 .item { width: 100%; text-align: left; display: flex; gap: 12px; align-items: center; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 14px; padding: 12px; font: inherit; cursor: pointer; }
@@ -68,8 +63,6 @@ textarea { min-height: 130px; resize: vertical; }
 @media (prefers-reduced-motion: reduce) { .bubble { animation: none; } }
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 .choices button { text-align: left; background: var(--card); color: var(--ink); border: 1px solid var(--accent); border-radius: 14px; padding: 10px 13px; font: inherit; cursor: pointer; }
-.write textarea { min-height: 64px; }
-.write + button { margin-top: 4px; }
 .debrief { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .gaydar { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .gaydar .meter + .meter { margin-top: 12px; }
@@ -80,10 +73,6 @@ textarea { min-height: 130px; resize: vertical; }
 .gaydar .fill { height: 100%; width: 0; border-radius: 6px; background: var(--rainbow); background-size: 100vw 100%; transition: width 1.2s cubic-bezier(.2,.8,.2,1); }
 @media (prefers-reduced-motion: reduce) { .gaydar .fill { transition: none; } }
 .back { margin-bottom: 12px; }
-nav.tabs { position: fixed; bottom: 0; left: 0; right: 0; z-index: 5; display: flex; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
-nav.tabs button { flex: 1; background: none; border: 0; color: var(--muted); font: inherit; font-size: 13px; padding: 10px 0 12px; cursor: pointer; }
-nav.tabs button span { display: block; font-size: 20px; }
-nav.tabs button[aria-selected="true"] { color: var(--accent); font-weight: 600; }
 dialog { border: 1px solid var(--line); border-radius: 18px; background: var(--card); color: var(--ink); width: min(520px, calc(100vw - 32px)); padding: 18px; }
 dialog::backdrop { background: rgba(0,0,0,.45); }
 dialog label { display: block; margin: 12px 0 4px; font-weight: 600; }
@@ -93,11 +82,6 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
 #cover[hidden] { display: none; }
 #cover h2 { margin: 0 0 12px; font-weight: 500; }
 #cover li { margin-bottom: 6px; }
-details summary { cursor: pointer; color: var(--muted); }
-.entry { border-top: 1px solid var(--line); padding: 8px 0; }
-.entry b { font-size: 14px; }
-#toasts { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 40; display: flex; flex-direction: column; gap: 6px; align-items: center; pointer-events: none; width: min(420px, calc(100vw - 32px)); }
-.toast { background: var(--ink); color: var(--bg); border-radius: 12px; padding: 9px 14px; font-size: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.2); animation: pop .2s ease-out; }
 </style>
 </head>
 <body>
@@ -108,55 +92,12 @@ details summary { cursor: pointer; color: var(--muted); }
 </header>
 
 <main>
-  <section id="tab-today">
-    <p id="greeting" class="muted"></p>
-    <div class="card">
-      <h2>Today's reminder</h2>
-      <p class="affirm" id="affirm"></p>
-    </div>
-    <div class="card">
-      <h2>How are you feeling about it today?</h2>
-      <div class="row mood" id="mood"></div>
-    </div>
-    <div class="card">
-      <h2>Journal</h2>
-      <p id="prompt" style="margin-top:0"></p>
-      <textarea id="journal" placeholder="Write as much or as little as you like. This stays on this device."></textarea>
-      <div class="row" style="margin-top:8px; justify-content:space-between">
-        <span class="muted" id="saved"></span>
-        <span class="streak" id="streak"></span>
-      </div>
-      <details style="margin-top:10px"><summary>Past entries</summary><div id="history"></div></details>
-    </div>
-    <div class="card">
-      <h2>Today's messages</h2>
-      <div id="todayStory" style="margin-bottom:10px"></div>
-      <div id="todayChat"></div>
-    </div>
-  </section>
-
-  <section id="tab-chats" hidden>
-    <div id="chatList"></div>
-    <div id="chatView" hidden></div>
-  </section>
-
-  <section id="tab-story" hidden>
+  <section id="tab-story">
     <div id="storyList"></div>
     <div id="storyView" hidden></div>
   </section>
 
-  <section id="tab-practice" hidden>
-    <div id="practiceList"></div>
-    <div id="practiceView" hidden></div>
-  </section>
 </main>
-
-<nav class="tabs" role="tablist">
-  <button role="tab" data-tab="today" aria-selected="true"><span>☀︎</span>Today</button>
-  <button role="tab" data-tab="chats" aria-selected="false"><span>💬</span>Messages</button>
-  <button role="tab" data-tab="story" aria-selected="false"><span>💙</span>Story</button>
-  <button role="tab" data-tab="practice" aria-selected="false"><span>🎭</span>Practice</button>
-</nav>
 
 <dialog id="settings">
   <form method="dialog">
@@ -170,7 +111,7 @@ details summary { cursor: pointer; color: var(--muted); }
   <select id="themeSel" class="icon-btn"><option value="">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select>
 
   <h3>Your privacy</h3>
-  <p class="muted" style="margin:0">Everything you write stays in this browser on this device. Nothing is sent anywhere. Clearing your browser data erases it, so export a backup now and then. <b>Hide</b> covers the screen with a shopping list; double-tap it to come back.</p>
+  <p class="muted" style="margin:0">Your progress stays in this browser on this device. Nothing is sent anywhere. Clearing your browser data erases it, so export a backup now and then. <b>Hide</b> covers the screen with a shopping list; double-tap it to come back.</p>
   <div class="row" style="margin-top:10px">
     <button class="btn ghost" id="exportBtn">Export backup</button>
     <label class="btn ghost" style="margin:0;font-weight:600">Import<input type="file" id="importFile" accept="application/json" hidden></label>
@@ -184,9 +125,7 @@ details summary { cursor: pointer; color: var(--muted); }
     <li><b>Lifeline</b> (24/7): 13 11 14</li>
     <li>In an emergency, call <b>000</b></li>
   </ul>
-  <div id="settingsExtra"></div>
 </dialog>
-<div id="toasts" aria-live="polite"></div>
 
 <div id="cover" hidden>
   <h2>Groceries</h2>
@@ -206,25 +145,12 @@ details summary { cursor: pointer; color: var(--muted); }
     set(k, v) { try { localStorage.setItem("st_" + k, JSON.stringify(v)); } catch {} },
   };
 
-  // Tiny event bus so add-on modules (wardrobe.js, game.js) can react to what happens here.
-  const handlers = {};
-  const on = (ev, fn) => (handlers[ev] = handlers[ev] || []).push(fn);
-  const emit = (ev, data) => (handlers[ev] || []).concat(handlers["*"] || []).forEach((fn) => { try { fn(data, ev); } catch (e) { console.error(e); } });
-  function toast(msg, ms = 2600) {
-    const t = document.createElement("div"); t.className = "toast"; t.textContent = msg;
-    $("#toasts").appendChild(t); setTimeout(() => t.remove(), ms);
-  }
-
   // Dates are Australia/Brisbane (UTC+10, no daylight saving).
   const bneDate = (d = new Date()) => new Date(d.getTime() + 10 * 3600e3).toISOString().slice(0, 10);
-  const ordinal = (iso) => Math.floor(Date.parse(iso + "T00:00:00Z") / 86400e3);
   const today = bneDate();
-  const day = ordinal(today);
 
   const name = () => store.get("name", "") || "Calum";
   const bf = () => store.get("bf", "") || "Matt";
-  // Last message of a chat's opener, for list previews ("Name: text" in group chats).
-  const preview = (c) => { const m = c.them[c.them.length - 1]; return fill(typeof m === "string" ? m : `${m.from}: ${m.text}`); };
   const fill = (s) => s.replace(/\{name\}/g, name()).replace(/\{bf\}/g, bf());
 
   // ---------- Theme ----------
@@ -234,9 +160,8 @@ details summary { cursor: pointer; color: var(--muted); }
   }
   applyTheme();
 
-  // ---------- Tabs ----------
   // ---------- Back ----------
-  // Opening a route, chat, chapter or scenario pushes one history entry, so the phone's back
+  // Opening a route or chapter pushes one history entry, so the phone's back
   // button (and the in-app ← button, which goes through history too) steps up a level instead of leaving.
   let backFn = null, pushed = false;
   function setBack(fn) {
@@ -253,93 +178,8 @@ details summary { cursor: pointer; color: var(--muted); }
     const f = backFn; backFn = null; if (f) f();
   });
 
-  function showTab(tab) {
-    document.querySelectorAll("nav.tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
-    document.querySelectorAll("main > section").forEach((s) => (s.hidden = s.id !== "tab-" + tab));
-    if (tab === "chats") renderChatList();
-    if (tab === "practice") renderPracticeList();
-    if (tab === "story") renderStoryList();
-    emit("tab", tab);
-    window.scrollTo(0, 0);
-  }
-  // Delegated so tabs added by modules work too.
-  $("nav.tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button[data-tab]"); if (b) showTab(b.dataset.tab); });
-
-  // ---------- Today ----------
-  const MOODS = [["😣", "Rough"], ["😕", "Uneasy"], ["😐", "Okay"], ["🙂", "Good"], ["😊", "Great"]];
-
-  function entries() { return store.get("journal", {}); }
-  function saveEntry(patch) {
-    const all = entries();
-    all[today] = Object.assign({ prompt: C.prompts[day % C.prompts.length] }, all[today], patch);
-    store.set("journal", all);
-    emit(patch.mood != null ? "mood-set" : "journal-saved", { date: today, ...patch });
-    renderStreak();
-    renderHistory();
-  }
-
-  function renderStreak() {
-    const all = entries();
-    const has = (iso) => all[iso] && (all[iso].text || all[iso].mood != null);
-    let n = 0;
-    let d = has(today) ? day : day - 1; // today not done yet doesn't break the streak
-    while (has(new Date(d * 86400e3).toISOString().slice(0, 10))) { n++; d--; }
-    $("#streak").textContent = n ? `🔥 ${n} day${n === 1 ? "" : "s"}` : "";
-  }
-
-  function renderHistory() {
-    const all = entries();
-    const days = Object.keys(all).filter((k) => k !== today && (all[k].text || all[k].mood != null)).sort().reverse();
-    $("#history").innerHTML = days.length ? days.map((k) => {
-      const e = all[k];
-      const mood = e.mood != null ? MOODS[e.mood][0] + " " : "";
-      return `<div class="entry"><b>${mood}${esc(k)}</b><div class="muted">${esc(e.prompt || "")}</div><div>${esc(e.text || "")}</div></div>`;
-    }).join("") : '<p class="muted">Nothing yet. Your entries will show up here.</p>';
-  }
-
-  function renderToday() {
-    const hour = new Date(Date.now() + 10 * 3600e3).getUTCHours();
-    const part = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening";
-    $("#greeting").textContent = `${part}, ${name()}.`;
-    $("#affirm").textContent = C.affirmations[day % C.affirmations.length];
-    $("#prompt").textContent = C.prompts[day % C.prompts.length];
-    const e = entries()[today] || {};
-    $("#journal").value = e.text || "";
-    $("#mood").innerHTML = MOODS.map(([emo, label], i) =>
-      `<button aria-label="${label}" title="${label}" aria-pressed="${e.mood === i}" data-i="${i}">${emo}</button>`).join("");
-    const open = unlockedChats();
-    const chat = open[(day * 3) % open.length];
-    $("#todayChat").innerHTML = itemHtml(chat.avatar, chat.contact, preview(chat), isDone("chat", chat.id) ? "done" : "new");
-    $("#todayChat .item").addEventListener("click", () => { showTab("chats"); openChat(chat); });
-    const next = C.story.findIndex((c, i) => chapterState(i) === "open" && !storyDone()[c.id]);
-    const who = next < 0 ? "" : fill(C.story[next].contact || "{bf}");
-    $("#todayStory").innerHTML = next < 0 ? "" : itemHtml(who[0].toUpperCase(), who, `Story: ${fill(C.story[next].title)}`, "new");
-    if (next >= 0) $("#todayStory .item").addEventListener("click", () => { showTab("story"); openChapter(next); });
-    renderStreak();
-    renderHistory();
-  }
-
-  $("#mood").addEventListener("click", (ev) => {
-    const b = ev.target.closest("button"); if (!b) return;
-    saveEntry({ mood: +b.dataset.i });
-    document.querySelectorAll("#mood button").forEach((x) => x.setAttribute("aria-pressed", x === b));
-  });
-  let saveTimer;
-  $("#journal").addEventListener("input", () => {
-    clearTimeout(saveTimer);
-    $("#saved").textContent = "…";
-    saveTimer = setTimeout(() => { saveEntry({ text: $("#journal").value }); $("#saved").textContent = "Saved on this device"; }, 500);
-  });
-
-  // ---------- Conversation engine (shared by Messages and Practice) ----------
-  function isDone(kind, id) { return (store.get("done", {})[kind] || []).includes(id); }
-  function markDone(kind, id) {
-    emit(kind + "-done", { id, first: !isDone(kind, id) });
-    if (kind === "story") { const s = storyDone(); if (!s[id]) { s[id] = today; store.set("story", s); } }
-    const d = store.get("done", {});
-    d[kind] = Array.from(new Set([...(d[kind] || []), id]));
-    store.set("done", d);
-  }
+  // ---------- Conversation engine ----------
+  function markDone(id) { const s = storyDone(); if (!s[id]) { s[id] = today; store.set("story", s); } }
 
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const wait = (ms) => new Promise((r) => setTimeout(r, reduceMotion ? 0 : ms));
@@ -348,7 +188,7 @@ details summary { cursor: pointer; color: var(--muted); }
   const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
   // Teasing: the lower it goes, the more she sees you as one of the girls.
   const sparkLabel = (v) => v >= 80 ? "Fancies you. Hasn't looked at your nails yet." : v >= 60 ? "Still keen, but she's clocked the gloss" : v >= 40 ? "Fancies your skincare more than you" : v >= 20 ? "Wants to borrow your lip oil, not kiss you" : v > 0 ? "Sees you as one of the girls now, babe" : "Already trying to set you up with a guy";
-  function runConversation(view, convo, kind, header) {
+  function runConversation(view, convo, header) {
     const run = Symbol(); view._run = run;
     view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
     // The header is rebuilt on every re-run (outfit pick, "Try different replies"), so bind back here.
@@ -368,7 +208,7 @@ details summary { cursor: pointer; color: var(--muted); }
         b.addEventListener("click", () => {
           const at = o.at != null ? o.at : 1; // where her reaction goes: after her first line by default
           const them = convo.them.slice(0, at).concat(o.them || [], convo.them.slice(at));
-          runConversation(view, Object.assign({}, convo, { fit: o, base: convo, intro: o.intro || convo.intro, them }), kind, header);
+          runConversation(view, Object.assign({}, convo, { fit: o, base: convo, intro: o.intro || convo.intro, them }), header);
         });
         choices.appendChild(b);
       });
@@ -376,32 +216,6 @@ details summary { cursor: pointer; color: var(--muted); }
     }
     if (convo.fit) add("note", "You wore: " + fill(convo.fit.label));
     if (convo.intro) add("note", fill(convo.intro));
-
-    // Practice: write your own reply. It goes on whichever branch shares the most words with it.
-    function closest(text, replies) {
-      const words = (t) => new Set(fill(t).toLowerCase().match(/[a-z']{3,}/g) || []);
-      const mine = words(text);
-      let best = replies[0], top = -1;
-      replies.forEach((r) => { const n = [...words(r.you)].filter((w) => mine.has(w)).length; if (n > top) { top = n; best = r; } });
-      return best;
-    }
-    function writeBox(node) {
-      const form = document.createElement("form");
-      form.className = "write";
-      form.innerHTML = '<label class="muted" style="display:block;margin-bottom:4px">Write it in your own words</label><textarea rows="2" placeholder="Type what you\'d say…"></textarea><div class="row" style="margin-top:6px;justify-content:space-between"><button class="btn" type="submit">Send</button><span class="muted">or pick one below</span></div>';
-      const ta = form.querySelector("textarea");
-      ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const text = ta.value.trim(); if (!text) { ta.focus(); return; }
-        add("you", text);
-        const said = store.get("said", []); said.push({ date: today, scenario: convo.id, text }); store.set("said", said.slice(-200));
-        emit("practice-written", { id: convo.id, text });
-        play(closest(text, node.replies));
-      });
-      choices.appendChild(form);
-      setTimeout(() => ta.focus({ preventScroll: true }), 0);
-    }
 
     let endNote = convo.after; // a branch can carry its own closing note
     let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
@@ -429,7 +243,6 @@ details summary { cursor: pointer; color: var(--muted); }
         t.scrollIntoView?.({ block: "nearest" });
       }
       if (node.replies && node.replies.length) {
-        if (kind === "practice") writeBox(node);
         node.replies.forEach((r) => {
           const b = document.createElement("button");
           b.textContent = fill(r.you);
@@ -437,7 +250,7 @@ details summary { cursor: pointer; color: var(--muted); }
           choices.appendChild(b);
         });
       } else {
-        markDone(kind, convo.id);
+        markDone(convo.id);
         if (endNote) add("note", fill(endNote));
         if (gaydar != null) {
           const delta = (convo.fit && convo.fit.gaydar) || 0;
@@ -452,7 +265,7 @@ details summary { cursor: pointer; color: var(--muted); }
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(convo.debrief)}</div>`);
         choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button>' + (convo.next ? '<button class="btn next">Next chapter →</button>' : "") + "</div>");
         if (convo.next) choices.querySelector(".next").addEventListener("click", convo.next);
-        choices.querySelector(".again").addEventListener("click", () => runConversation(view, convo.base || convo, kind, header));
+        choices.querySelector(".again").addEventListener("click", () => runConversation(view, convo.base || convo, header));
       }
     }
     play(convo);
@@ -461,58 +274,6 @@ details summary { cursor: pointer; color: var(--muted); }
   function itemHtml(avatar, title, sub, status, extra = "") {
     const tag = status === "new" ? '<span class="tag new">new</span>' : status === "done" ? '<span class="tag done">✓</span>' : "";
     return `<button class="item"><span class="avatar">${esc(avatar)}</span><span class="meta"><b>${esc(title)}</b><span>${esc(sub)}</span></span>${extra}${tag}</button>`;
-  }
-
-  // ---------- Voice tiers ----------
-  // As he levels up (game.js), camper chats unlock and the girls treat him more like their gay best friend.
-  const TIERS = ["Just out", "Finding your voice", "Out & proud", "Full flamboyance"];
-  function voiceTier() {
-    let lvl = 1;
-    try { lvl = (window.SteadyAPI.game && SteadyAPI.game.level()) || 1; } catch {}
-    return lvl >= 7 ? 3 : lvl >= 5 ? 2 : lvl >= 3 ? 1 : 0;
-  }
-  const unlockedChats = () => C.chats.filter((c) => (c.tier || 0) <= voiceTier());
-  // game.js announces tier unlocks in its level-up overlay; just refresh what depends on the tier.
-  on("level-up", () => renderToday());
-
-  // ---------- Messages ----------
-  function renderChatList() {
-    clearBack();
-    $("#chatView").hidden = true; $("#chatView")._run = null;
-    const list = $("#chatList"); list.hidden = false;
-    const tier = voiceTier();
-    const locked = C.chats.length - unlockedChats().length;
-    const voice = `<div class="card" style="padding:12px 16px"><h2 style="margin-bottom:6px">Your voice · ${esc(TIERS[tier])}</h2><div style="height:6px;border-radius:3px;background:var(--soft)"><div style="height:100%;width:${(tier / 3) * 100}%;border-radius:3px;background:var(--rainbow)"></div></div>` +
-      (locked ? `<p class="muted" style="margin:6px 0 0">${locked} more chat${locked === 1 ? "" : "s"} unlock as you level up. The more out you get, the more fabulous it gets 💅</p>` : `<p class="muted" style="margin:6px 0 0">Everything's unlocked. Full fabulous 🏳️‍🌈</p>`) + "</div>";
-    list.innerHTML = '<p class="muted" style="margin-top:0">Everyday messages from people who know you\'re gay and don\'t make a thing of it. Pick any reply you like.</p>' + voice + '<ul class="list">' +
-      C.chats.map((c, i) => (c.tier || 0) > tier ? "" : `<li data-i="${i}">${itemHtml(c.avatar, `${c.contact} · ${c.role}`, preview(c), isDone("chat", c.id) ? "done" : "new")}</li>`).join("") + "</ul>";
-    list.querySelectorAll("li").forEach((li) => li.addEventListener("click", () => openChat(C.chats[+li.dataset.i])));
-  }
-  function openChat(c) {
-    $("#chatList").hidden = true;
-    const view = $("#chatView"); view.hidden = false;
-    setBack(renderChatList);
-    runConversation(view, c, "chat", `<button class="btn ghost back">← Messages</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.avatar)}</span><b>${esc(c.contact)}</b><span class="tag">${esc(c.role)}</span></div>`);
-  }
-
-  // ---------- Practice ----------
-  function renderPracticeList() {
-    clearBack();
-    $("#practiceView").hidden = true; $("#practiceView")._run = null;
-    const list = $("#practiceList"); list.hidden = false;
-    const said = store.get("said", []);
-    const words = said.length ? `<div class="card"><h2>Your words · said ${said.length} time${said.length === 1 ? "" : "s"}</h2>` +
-      said.slice(-3).reverse().map((x) => `<div class="bubble you" style="margin:0 0 6px auto;width:fit-content">${esc(x.text)}</div>`).join("") +
-      (said.length > 3 ? `<details><summary>All of them</summary>${said.slice(0, -3).reverse().map((x) => `<div class="entry"><b>${esc(x.date)}</b><div>${esc(x.text)}</div></div>`).join("")}</details>` : "") + "</div>" : "";
-    list.innerHTML = '<p class="muted" style="margin-top:0">Rehearse saying it in a safe place. Write it in your own words, or pick a line. You never have to tell anyone, and you choose who, when and how.</p>' + words + '<ul class="list">' +
-      C.practice.map((p, i) => `<li data-i="${i}">${itemHtml(String(i + 1), p.title, p.who, isDone("practice", p.id) ? "done" : "", `<span class="tag">${esc(p.tone)}</span>`)}</li>`).join("") + "</ul>";
-    list.querySelectorAll("li").forEach((li) => li.addEventListener("click", () => openPractice(C.practice[+li.dataset.i])));
-  }
-  function openPractice(p) {
-    $("#practiceList").hidden = true;
-    const view = $("#practiceView"); view.hidden = false;
-    setBack(renderPracticeList);
-    runConversation(view, p, "practice", `<button class="btn ghost back">← Practice</button><h2 style="margin:0 0 4px;font-size:20px">${esc(p.title)}</h2><p class="muted" style="margin:0 0 10px">${esc(p.who)}</p>`);
   }
 
   // ---------- Story ----------
@@ -584,7 +345,7 @@ details summary { cursor: pointer; color: var(--muted); }
     $("#storyList").hidden = true;
     const view = $("#storyView"); view.hidden = false;
     setBack(() => (c.route ? renderRoute(c.route) : renderStoryList()));
-    runConversation(view, c, "story", `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
+    runConversation(view, c, `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
   }
 
   // ---------- Settings ----------
@@ -594,8 +355,8 @@ details summary { cursor: pointer; color: var(--muted); }
     $("#themeSel").value = store.get("theme", "");
     $("#settings").showModal();
   });
-  $("#nameInput").addEventListener("input", (e) => { store.set("name", e.target.value.trim()); renderToday(); });
-  $("#bfInput").addEventListener("input", (e) => { store.set("bf", e.target.value.trim()); renderToday(); });
+  $("#nameInput").addEventListener("input", (e) => { store.set("name", e.target.value.trim()); });
+  $("#bfInput").addEventListener("input", (e) => { store.set("bf", e.target.value.trim()); });
   $("#themeSel").addEventListener("change", (e) => { store.set("theme", e.target.value); applyTheme(); });
 
   function allKeys() { const ks = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("st_")) ks.push(k); } } catch {} return ks; }
@@ -614,7 +375,7 @@ details summary { cursor: pointer; color: var(--muted); }
     } catch { alert("That file couldn't be read."); }
   });
   $("#resetBtn").addEventListener("click", () => {
-    if (!confirm("Erase your journal, moods and progress from this device? This can't be undone.")) return;
+    if (!confirm("Erase your Story progress and settings from this device? This can't be undone.")) return;
     allKeys().forEach((k) => { try { localStorage.removeItem(k); } catch {} });
     location.reload();
   });
@@ -629,16 +390,9 @@ details summary { cursor: pointer; color: var(--muted); }
     lastTap = now;
   });
 
-  // Public API for add-on modules. Keys they store go through store, so they get the st_ prefix
-  // and are covered by export/import/erase.
-  window.SteadyAPI = { store, today, day, ordinal, bneDate, fill, name, esc, on, emit, toast, showTab, $ };
-
-  renderToday();
-  emit("ready");
+  renderStoryList();
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
 </script>
-<script src="wardrobe.js"></script>
-<script src="game.js"></script>
 </body>
 </html>

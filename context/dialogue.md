@@ -1,6 +1,6 @@
 # Writing realistic dialogue
 
-Rules for how people text in the Story, Messages and Practice, and above all for the dates in Story Part 1. The aim is texts that read like a real person sent them, not like an AI wrote them. Not everyone is supportive, and not every chat ends well.
+Rules for how people text in the Story, above all for the dates in Part 1. The aim is texts that read like a real person sent them, not like an AI wrote them. Not everyone is supportive, and not every chat ends well.
 
 ## Reactions
 - People react the way they would in real life. A date who works out he's gay can be annoyed, embarrassed, put off, feel misled or feel she wasted her night, and she can say so.
@@ -40,7 +40,7 @@ These rules sit inside the content boundaries in CLAUDE.md:
 - Embarrassing moments are fine when they're gentle and the people around him stay warm (his painted toes showing when Mia makes him take his socks off, going red at the new boyfriend). Nobody laughs at him to hurt him.
 - The guys who want the girls (and the new boyfriends when he tries to win her back) tease him and make it obvious they don't see him as a threat. Ribbing, smirks and pet names are fine. No slurs, no threats, nothing physical beyond a hair ruffle, a pat on the cheek, or (in the barefoot chapters) grabbing his ankle to tickle his feet. Tickling is playful and non-sexual, and it stops the moment he says stop.
 - The focus stays on him and how he handles it. The narrator `after` note and the `debrief` carry the warmth, so the dialogue doesn't have to.
-- The girls' chats in Messages (Jess, Nicole, the uni girls, Rachel) are allowed to be warm. Warm still means real people talking: specific memories and normal texting, not polished paragraphs.
+- Jess, Nicole and {bf} are allowed to be warm. Warm still means real people talking: specific memories and normal texting, not polished paragraphs.
 
 ## Check before pushing
 Read each line aloud and ask: would someone actually send this? If it sounds like a greeting card, a counsellor or a sitcom, rewrite it.
