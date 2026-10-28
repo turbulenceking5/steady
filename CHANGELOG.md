@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-28
+- Story: fixed details that contradicted each other within a route (Hannah's earrings, Mia's and Zoe's tops, Sophie's toe colour, when Lucy met you, Olivia's cocktail), and Nicole's Hinge guys no longer share names with other characters.
+- Story: end-of-chat notes and the girls' one-liners now match the branch and outfit you picked (no more laughing when you held it in, or lashes you didn't wear).
+- Story: swapped local brands, teams and slang for neutral ones, and rewrote lines that sounded like a counsellor or a narrator punchline.
 - Story: "Skip typing". Tap it, or tap the conversation, and the rest of that turn's messages appear at once.
 - Story: a Continue card at the top picks up the next unread chapter in the route you last played, and each route shows how many chapters you've read.
 - Fixed: new messages scroll into view again (only if you were already near the bottom, so rereading isn't interrupted).
