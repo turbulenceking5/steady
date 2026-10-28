@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-10-28
+- Story: every chapter rewritten to sound like real people texting and talking: shorter, messier messages, fewer punchlines, no speeches, and plain "worth remembering" notes. Each girl now lets you down in her own way (Zoe compares you to Brooke, Lucy kisses you on the cheek like she does Kayla, Olivia sips your drink like you're Dani, Georgie says it's like hanging out with her housemate). {name} and {bf} text like an actual couple.
+- Fixed: lines that mentioned polish, mascara or outfits you didn't pick, and end notes that only made sense on one branch.
 - Story: more reply options across every girl's route (awkward, defensive, snarky, camp and honest), with new branches where choices were thin, and tighter, more natural texting.
 - Story: the girls are blunter that you're not boyfriend material any more. You're "one of the girls", you get a cheek kiss or a pat on the head instead of a kiss, and they compare you with the guy they end up with (he fixes the car door, carries the cooler, thinks a cuticle is a bone).
 - Story: Bianca treats you like one of her girlfriends: brunch duty, fixing her eyeliner, "You're my girlfriend, babe. Not my boyfriend."
