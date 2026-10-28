@@ -494,17 +494,55 @@ window.CONTENT = {
   // A chapter's contact defaults to {bf}.
   story: [
     {
-      id: "c1", gaydar: 10, title: "Date night", contact: "Archie", part: "Part 1: Before",
-      them: ["{name}, dinner at that Italian place Friday? I booked us a table 🍝", "My sister keeps asking when we're getting engaged 😂"],
+      id: "c1", gaydar: 10, gaydarSays: "He's just sensitive. Right? ...Right?", title: "Date night", contact: "Archie", part: "Part 1: Before",
+      intro: "You and Archie have been together three years. Her sister has a Pinterest board for your wedding. You've never told anyone that the board makes your chest go tight.",
+      them: ["{name}, dinner at that Italian place on Friday? I booked us a table 🍝", "My sister keeps asking when we're getting engaged 😂", "She asked me at lunch today. In front of the whole café. I nearly died"],
       replies: [
-        { you: "Sounds good! Haha tell her to relax.", them: ["Already did. She never listens 🙄 Love you x"] },
-        { you: "Ha. Yeah. Friday's good.", them: ["You okay? You've seemed a bit far away lately.", "I'm here if something's up x"],
-          replies: [{ you: "Just tired. Work stuff.", them: ["Okay. Get some sleep xx"] }] }
+        { you: "Sounds good! Haha tell her to relax.",
+          them: ["Already did. She never listens 🙄", "She's also decided you're wearing the navy suit to her wedding so. Good luck with that", "Love you x"],
+          replies: [
+            { you: "Love you too x",
+              them: ["😘", "Oh and wear something nice Friday. Not the footy polo. I'm begging"],
+              replies: [
+                { you: "I was thinking of trying something a bit different actually.", gaydar: 15, them: ["Ooh different how?", "Like a nice shirt? Yes please. You've got that cream one with the tags still on"] },
+                { you: "No promises.", them: ["{name} 😐", "Fine. But if you wear the polo I'm ordering the most expensive thing on the menu"] }
+              ] },
+            { you: "Do we have to talk about weddings?",
+              them: ["Haha ok calm down, it's my sister's wedding not ours", "...unless you're trying to tell me something lol", "You're not are you"],
+              replies: [
+                { you: "No, no. Just a long day.", them: ["Ok. You've had a lot of long days lately", "Friday. Carbs. Wine. You'll be fine x"] },
+                { you: "I don't know.", gaydar: 20, them: ["You don't know what?", "{name}?", "Ok you're being weird. We'll talk Friday"] }
+              ] }
+          ] },
+        { you: "Ha. Yeah. Friday's good.",
+          them: ["You okay? You've seemed a bit far away lately.", "Like you're here but you're not. I don't know how else to say it", "I'm here if something's up x"],
+          replies: [
+            { you: "Just tired. Work stuff.",
+              them: ["Okay. You've said that a lot", "I'm not having a go. I just miss you, even when you're sitting next to me", "Get some sleep xx"] },
+            { you: "Can I ask you something weird?",
+              them: ["Always", "Is it about the wedding? Because I promise I'm not expecting a ring"],
+              replies: [
+                { you: "Do you ever feel like you're playing a part?", gaydar: 20,
+                  them: ["Like at work? All the time", "Like with us? No. Never.", "Do you?"],
+                  replies: [
+                    { you: "Sometimes.", them: ["Oh", "Ok", "That's kind of a big thing to say over text {name}", "Let's talk properly Friday. Ok? I love you"] },
+                    { you: "No. Forget it. I'm being dramatic.", them: ["You're allowed to be dramatic with me", "But ok. Friday x"] }
+                  ] },
+                { you: "Never mind. It's nothing.", them: ["It's never nothing when you say it's nothing", "But ok. Friday x"] }
+              ] }
+          ] },
+        { you: "Can we go somewhere else this time?",
+          them: ["Why? You love that place", "You literally said their tiramisu was a religious experience"],
+          replies: [
+            { you: "The waiter there keeps staring at me.", gaydar: 15, them: ["The cute one? Lol he's probably just bored", "Or he thinks you're cute. Should I be worried 😂", "Kidding. We're going. Wear something nice"] },
+            { you: "Fine, Italian.", them: ["Yay. Friday 7. Love you x"] }
+          ] }
       ],
-      after: "You put the phone down and feel like you're playing a part. You've felt that for a while."
+      after: "You put the phone down and feel like you're playing a part. You've felt that for a while. On Friday you open your wardrobe and look at the cream shirt with the tags on, and the little bottle of lilac nail polish you bought \"for a friend\".",
+      debrief: "That far-away feeling is common before people come out. It's not you being a bad partner. It's a part of you asking to be seen."
     },
     {
-      id: "c1b", gaydar: 40, title: "The Italian place", contact: "Archie", part: "Part 1: Before",
+      id: "c1b", gaydar: 40, gaydarSays: "Since when does my boyfriend own lip gloss??", title: "The Italian place", contact: "Archie", part: "Part 1: Before",
       intro: "Friday. You wore clear gloss, a bit of mascara, the cream silky shirt that's been in your wardrobe with the tags on, and your nails painted lilac. Archie looked at you for a second too long when you picked her up and didn't say anything all the way there.",
       them: ["home", "what was that tonight", "the lip gloss {name}. and your nails"],
       replies: [
@@ -557,47 +595,151 @@ window.CONTENT = {
     },
     {
       id: "c2", title: "Saying it to someone", contact: "Nicole", part: "Part 1: Before",
-      them: ["Hey {name}, you were quiet at drinks. Everything okay with you?", "No pressure. Just checking."],
+      intro: "Friday drinks at the Regatta with the uni girls. You said about nine words all night and left before the second round. Nicole noticed. Nicole always notices.",
+      them: ["Hey {name}, you were quiet at drinks. Everything okay with you?", "You left your schooner half full. Which is how I know something's actually wrong lol", "No pressure. Just checking."],
       replies: [
         { you: "Can I tell you something and you won't tell anyone?",
-          them: ["Of course. Always."],
+          them: ["Of course. Always.", "Not even Ailisha. And you know how hard that is for me", "Take your time, I'm just on the couch"],
           replies: [
             { you: "I think I'm gay.",
-              them: ["Oh, {name}. Thank you for trusting me with that.", "That doesn't change a single thing about how I see you. How long have you been carrying it?"],
+              them: [
+                "Oh, {name}.",
+                "Okay. First thing: I love you, and that doesn't change a single thing about how I see you. Not one thing.",
+                "Second thing: how long have you been carrying this around on your own? Because you've been quiet for months and I kept putting it down to work."
+              ],
               replies: [
-                { you: "Years, kind of. But it's been getting louder.", them: ["That sounds exhausting. You don't have to work it all out tonight.", "I'm here. And I won't say a word to anyone."] },
-                { you: "I don't know what to do about Archie.", them: ["That's a hard one. You care about her, that's obvious.", "Whatever you decide, you don't have to do it alone."] }
+                { you: "Years, kind of. But it's been getting louder.",
+                  them: [
+                    "That sounds exhausting. Like, genuinely, I don't know how you've been getting through dinners with Archie.",
+                    "You don't have to work it all out tonight. You've said it to one person. That's huge.",
+                    "Can I ask, is it a 'think' or is it a 'know'? You can say think. Think is allowed."
+                  ],
+                  replies: [
+                    { you: "It's a know. I just haven't said it out loud.",
+                      them: ["Then say it to me. Right now. Type it.", "No pressure. But it might feel good."],
+                      replies: [
+                        { you: "I'm gay.", them: ["There it is 🥹", "How does that feel?", "And before you answer: I'm so proud of you I could cry. I might be crying. Don't tell anyone that either"] },
+                        { you: "I can't yet.", them: ["That's okay. You already did, sort of. I'll take 'I think' for now 💛"] }
+                      ] },
+                    { you: "It's a think. A really big think.", them: ["Big thinks count", "You don't need a certificate. You get to figure it out as you go"] }
+                  ] },
+                { you: "I don't know what to do about Archie.",
+                  them: [
+                    "Yeah. That's the hard bit, isn't it.",
+                    "You care about her. That's obvious. Everyone can see you care about her. But caring about someone and wanting to marry them are different things, and I think you know that.",
+                    "Whatever you decide, you don't have to do it alone. I'll be on the other end of the phone, or on your couch with Tim Tams."
+                  ],
+                  replies: [
+                    { you: "Do you think I have to tell her?",
+                      them: ["Eventually, yeah. I think you'd want to.", "Not tonight. Not because I said so. When you're ready, and when it's fair on both of you", "She deserves the truth. And honestly so do you"] },
+                    { you: "I feel like such a bad person.",
+                      them: ["You're not. A bad person wouldn't be lying awake about it.", "You're a scared person. That's different. Scared people get to be gentle with themselves"] }
+                  ] },
+                { you: "Please don't make it a big thing.",
+                  them: ["Okay. Small thing. Tiny thing.", "Well. It's a big thing for you, and I'll treat it like that. But I won't make a fuss or tell the girls or cry at you. Much.", "Gelato tomorrow? We don't have to talk about it unless you want to"] }
               ] },
-            { you: "Actually, never mind. I'm just tired.", them: ["Okay. Offer stands, any time, about anything 💛"] }
+            { you: "I think I'm bi. Maybe. I don't know.",
+              them: ["Okay. That's okay too.", "You don't need to have the label sorted right now, {name}. Lots of people take ages.", "Can I ask what made you start thinking about it?"],
+              replies: [
+                { you: "There's a guy at the gym. I can't stop thinking about him.", them: ["Ohhh. Okay. The gym. Classic", "And how do you feel about Archie, if you're being really honest?"],
+                  replies: [
+                    { you: "Like she's my best mate.", them: ["Yeah", "That's a lot to sit with. I'm here while you sit with it"] },
+                    { you: "I don't want to answer that.", them: ["That's an answer too, babe. But okay. No more questions tonight 💛"] }
+                  ] },
+                { you: "I don't know. It's just been building.", them: ["That makes sense. Stuff like this usually builds", "You can take as long as you need. I'm not going anywhere"] }
+              ] },
+            { you: "Actually, never mind. I'm just tired.",
+              them: ["Okay.", "Offer stands, any time, about anything 💛", "And {name}? Whatever it is, I'm not going to think differently of you. I promise."],
+              after: "You type \"I think I'm gay\" four times and delete it four times. The next week you send it at 11pm. She calls you before you can put the phone down." }
           ] },
-        { you: "Yeah all good, just a long week.", them: ["Fair. Gelato soon? My shout"] }
+        { you: "Yeah all good, just a long week.",
+          them: ["Fair.", "Gelato soon? My shout", "Also you looked at the bartender like he owed you money. Just saying 👀"],
+          replies: [
+            { you: "I did not.", them: ["You did lol. It's fine. He was cute"] },
+            { you: "...okay, can I talk to you about something?", them: ["Yes. Calling you now. Pick up"],
+              after: "You pick up. You don't say it on the phone. But you say enough that Nicole goes quiet, then says, \"okay, babe. Okay. I'm here.\"" }
+          ] }
       ],
       debrief: "Telling one safe person first is how a lot of people start. It makes the next step feel less lonely."
     },
     {
-      id: "c3", title: "The honest talk", contact: "Archie", part: "Part 1: Before",
-      them: ["{name}, you said you wanted to talk tonight?", "You've got me a bit worried, not going to lie."],
+      id: "c3", title: "The honest talk", contact: "Archie", part: "Part 1: Before", irl: true,
+      intro: "Archie's place in Paddington. You asked if you could come over to talk, and she's put the kettle on twice without making anything. She sits on the other end of the couch with her knees pulled up.",
+      them: [
+        "You said you wanted to talk.",
+        "You've got me a bit worried, not going to lie. You never want to talk. You want to watch MasterChef and fall asleep at nine.",
+        { note: "She laughs, but it doesn't really come out." },
+        "Just say it. Whatever it is. I'd rather know."
+      ],
       replies: [
         { you: "I care about you a lot, and you deserve the truth. I'm gay.",
-          them: ["Oh.", "...okay. I need a minute."],
+          them: [
+            { note: "She doesn't move for a long moment." },
+            "Oh.",
+            "...okay. I need a minute."
+          ],
           replies: [
             { you: "Take all the time you need. I'm so sorry.",
-              them: ["I'm sad. I'm not angry.", "Thank you for telling me instead of letting it drag on. That's actually kind, even though it hurts."] },
+              them: [
+                { note: "She wipes her eyes with her sleeve. She's not sobbing. She's just leaking." },
+                "I'm sad. I'm not angry. I don't think I'm angry. Ask me tomorrow.",
+                "Thank you for telling me instead of letting it drag on. That's actually kind, even though it really, really hurts.",
+                "Can I ask you stuff? Is that allowed?"
+              ],
+              replies: [
+                { you: "Ask me anything.",
+                  them: ["When did you know?", "Like, properly know. Was it before me?"],
+                  replies: [
+                    { you: "I think part of me always knew. I didn't want to.", them: ["Yeah.", "Yeah, I think part of me knew too. The lip gloss night. The way you went quiet when my sister talked about the wedding.", "I just didn't want to either."] },
+                    { you: "Not before you. It got louder while we were together.", them: ["That's almost worse. Like I wasn't enough to keep it quiet.", { note: "She shakes her head before you can answer." }, "No. That's not fair. That's not how it works. I know that's not how it works."] }
+                  ] },
+                { you: "Maybe not tonight.", them: ["Yeah. Okay.", "Can you just stay till the kettle boils? Then you can go."] }
+              ] },
             { you: "None of this is because of you.",
-              them: ["I think I need to hear that a few more times. But I believe you.", "I want you to be happy. Even if it's not with me."] }
+              them: [
+                "I think I need to hear that a few more times.",
+                "But I believe you. I do.",
+                "I want you to be happy. Even if it's not with me. I'm going to be really annoyed about that for a while, but I do."
+              ],
+              replies: [
+                { you: "You were the best part of the last three years.", them: [{ note: "She laughs and cries at the same time." }, "Don't. You'll make me want to keep you.", "Go home, {name}. Text me when you're there."] },
+                { you: "Can we still be friends one day?", them: ["One day. Not yet.", "Ask me in a few weeks. And don't bring a boyfriend to my sister's wedding, I'm not that evolved."] }
+              ] }
           ] },
         { you: "I don't think I can keep being your boyfriend. I think I'm into guys.",
-          them: ["Wow. Okay.", "I kind of knew something was wrong. I didn't know it was this.", "Can I have a few days before we talk more?"],
-          replies: [{ you: "Of course. I'm here when you're ready.", them: ["Okay. Thank you for being honest."] }] },
+          them: [
+            "Wow. Okay.",
+            "I kind of knew something was wrong. I thought you were going to tell me you'd met someone. Or that you were moving to Melbourne.",
+            "I didn't know it was this.",
+            { note: "She puts her mug down on the carpet very carefully." },
+            "Can I have a few days before we talk more?"
+          ],
+          replies: [
+            { you: "Of course. I'm here when you're ready.", them: ["Okay.", "Thank you for being honest. Even if your timing is terrible. It's a Tuesday, {name}. Who breaks up on a Tuesday."] },
+            { you: "Please don't hate me.", them: ["I don't hate you.", "I'm just really, really sad. And I don't know what to do with my hands. Can you go so I can cry properly?"] }
+          ] },
         { you: "I've been lying to you, and to myself. I'm gay.",
-          them: ["Are you serious right now?", "Three years. I wasted three years on someone who didn't even want me.", "Was any of it real, or was I just your cover story? Did all your mates know before me?"],
+          them: [
+            "Are you serious right now?",
+            { note: "She stands up. The blanket falls on the floor." },
+            "Three years. I wasted three years on someone who didn't even want me.",
+            "Was any of it real, or was I just your cover story? Did all your mates know before me? Is that why Nicole looks at me like that?"
+          ],
           replies: [
             { you: "It was real. I loved you, just not the way you deserved.",
               them: ["Don't. I can't hear that right now.", "Just go."] },
-            { you: "Nobody knew. I'm not going to argue with you.",
-              them: ["Oh great, very brave of you.", "Get out. I mean it."] },
+            { you: "Nobody knew. Nicole worked it out. I'm not going to argue with you.",
+              them: ["Oh great, very brave of you.", "So Nicole knew. Before me. Your girlfriend.", "Get out. I mean it."] },
             { you: "You're allowed to be angry. I'm still not sorry for being gay.",
-              them: ["I don't care that you're gay. I care that you lied to me.", "I need you to leave."] }
+              them: ["I don't care that you're gay. I care that you lied to me.", "I need you to leave."] },
+            { you: "(Start crying.)",
+              them: [
+                { note: "She watches you cry for a second, arms folded. Then she sits back down, further away than before." },
+                "You don't get to cry first. That's not fair.",
+                "...God. Okay. Fine. Here.",
+                { note: "She hands you the tissue box without looking at you." },
+                "I'm still angry. I'm just also not a monster."
+              ] }
           ],
           after: "You walk home shaking. Then, slowly, something else arrives: you said it, out loud, to the hardest person. And you're still standing." }
       ],
@@ -605,15 +747,31 @@ window.CONTENT = {
     },
     {
       id: "c4", title: "A few weeks later", contact: "Archie", part: "Part 1: Before",
-      them: ["Hey {name}. Just wanted to say I'm doing okay.", "I hope you are too. I mean that."],
+      them: ["Hey {name}. Just wanted to say I'm doing okay.", "I kept starting this message and deleting it. Then my sister said 'just send it' and took my phone off me. So she's sending it. Hi.", "I hope you're okay too. I mean that."],
       replies: [
-        { you: "Thank you. I'm doing better than I have in years.", them: ["I can hear it. I'm glad.", "Maybe one day we can be proper friends. When it stings less."] },
-        { you: "I'm okay. I miss you as a friend.", them: ["Me too, a bit. Give it time. I'm not going anywhere for good."] }
+        { you: "Thank you. I'm doing better than I have in years.",
+          them: ["I can hear it. I'm glad.", "That stings a tiny bit, ngl. But I'm glad.", "Maybe one day we can be proper friends. When it stings less."],
+          replies: [
+            { you: "I'd really like that.", them: ["Me too", "Also I found your lilac nail polish in my bathroom. Do you want it back or should I keep it as a trophy"],
+              replies: [
+                { you: "Keep it. It suits you more.", them: ["It really doesn't but thank you 😂"] },
+                { you: "I want it back, please.", them: ["Ha. Of course you do", "I'll leave it with Nicole"] }
+              ] },
+            { you: "How are you actually doing?", them: ["Honestly? Up and down", "I went on a date last week. He talked about crypto for an hour. I missed you a bit. As a person, not a boyfriend. Is that weird", "Anyway. I'm getting there"] }
+          ] },
+        { you: "I'm okay. I miss you as a friend.",
+          them: ["Me too, a bit.", "Give it time. I'm not going anywhere for good.", "Have you told anyone else yet? You don't have to tell me. I'm just nosy"],
+          replies: [
+            { you: "Just Nicole.", them: ["Thought so. She sent me a really nice message actually. Don't tell her I told you"] },
+            { you: "Not yet. I'm still scared.", them: ["You told me. I was the scariest one. Everyone else is easy mode", "That's not me being nice. That's just true"] }
+          ] },
+        { you: "I'm sorry. Again.",
+          them: ["Stop saying sorry", "You told me the truth. It hurt. I'm allowed to be sad and you're allowed to be gay. Both things", "Go live your life, {name}. Properly this time"] }
       ],
       after: "Jess has a friend she wants you to meet. 'Just a drink, no pressure.' You say yes, half to prove something to yourself. You still haven't said the word to anyone but Archie and Nicole."
     },
     {
-      id: "c5", gaydar: 80, title: "Jess's friend", contact: "Hannah", part: "Part 1: Before",
+      id: "c5", gaydar: 80, gaydarSays: "Lip tint and eyes on the bartender all night. Do the maths.", title: "Jess's friend", contact: "Hannah", part: "Part 1: Before",
       intro: "Drinks with Hannah at a wine bar in New Farm. You wore a pink knit, a berry lip tint, mascara, your rings and fresh nail polish. She clocked it the second she sat down. The conversation was fine. Polite. She checked her phone a lot. You spent more time than you meant to talking to the bartender about his jacket.",
       them: ["hey", "can i ask you something"],
       replies: [
@@ -657,7 +815,7 @@ window.CONTENT = {
       debrief: "Getting knocked back on a date is normal. Getting knocked back because someone read you right can feel worse, because it's true. It still isn't anything to be ashamed of."
     },
     {
-      id: "c6", gaydar: 85, title: "Mini golf", contact: "Mia", part: "Part 1: Before",
+      id: "c6", gaydar: 85, gaydarSays: "Asked if my top was from Sportsgirl. Mid-putt.", title: "Mini golf", contact: "Mia", part: "Part 1: Before",
       intro: "Sam from work set you up with her cousin Mia. Mini golf at South Bank. You went further this time: wide-leg trousers, a cropped cardigan, gold hoops, a proper rosy lipstick. You felt good walking out the door. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes.",
       them: ["hey", "sorry i left early. early start"],
       replies: [
@@ -699,7 +857,7 @@ window.CONTENT = {
       debrief: "Some people won't get it, and some will talk about it. That's about them. You got dressed as yourself and walked out the door, and that part was yours."
     },
     {
-      id: "c6b", gaydar: 90, title: "Brunch", contact: "Ella", part: "Part 1: Before",
+      id: "c6b", gaydar: 90, gaydarSays: "His lashes were better than mine. At BRUNCH.", title: "Brunch", contact: "Ella", part: "Part 1: Before",
       intro: "You matched with Ella on Hinge. Brunch in Paddington. You'd bought the dress weeks ago and never worn it out of the flat: pale blue, floral, little buttons down the front. Nails done, foundation, blush, lashes, a pink lip. You nearly changed three times. You didn't. When you walked up she looked at you, then at her phone, then back at you. \"Sorry. I thought I had the wrong guy.\"",
       them: ["hey", "ok i have to ask. why did you wear a dress"],
       replies: [
@@ -739,7 +897,7 @@ window.CONTENT = {
       debrief: "Wearing the thing you've been too scared to wear out is a big step, whatever the date thinks. You didn't go home and change. That's the bit to keep."
     },
     {
-      id: "c6c", gaydar: 90, gaydarWho: "Tayla", title: "Wrong chat", contact: "Bec's 30th 🎂", part: "Part 1: Before",
+      id: "c6c", gaydar: 90, gaydarSays: "Did Bec's eyeliner better than Bec does.", gaydarWho: "Tayla", title: "Wrong chat", contact: "Bec's 30th 🎂", part: "Part 1: Before",
       intro: "Tayla from Sam's netball team asked you to her friend Bec's 30th in the Valley, as a sort-of date. You wore a satin top, a skirt, eyeliner and a bit of glitter. Bec added you to the group chat to sort out Ubers. The next morning:",
       them: [{ from: "Bec", text: "thanks for coming everyone!! 🥳 still hungover" }, { from: "Steph", text: "ok be honest is tayla's guy gay or" }, { from: "Steph", text: "WRONG CHAT" }, { from: "Steph", text: "omg sorry {name} that was meant for bec" }, { from: "Tayla", text: "steph 😐" }],
       replies: [
@@ -764,7 +922,7 @@ window.CONTENT = {
       debrief: "Finding out people are talking about you is awful, especially when it happens right in front of you. You can laugh it off, say it straight, or step out. All three are fine."
     },
     {
-      id: "c6d", gaydar: 95, title: "Straight up", contact: "Georgie", part: "Part 1: Before",
+      id: "c6d", gaydar: 95, gaydarSays: "Looked at the waiter's arms eight times. I counted.", title: "Straight up", contact: "Georgie", part: "Part 1: Before",
       intro: "Georgie from the climbing gym. Thai in West End. You wore a lilac slip dress with a cardigan over it, your nails painted, gloss and lashes. She didn't say one word about it the whole dinner, which was somehow worse.",
       them: ["hey", "im just going to ask bc i hate games", "are you gay"],
       replies: [
@@ -792,7 +950,7 @@ window.CONTENT = {
       debrief: "When someone asks you straight out, you can answer straight out, or not at all. Notice which answer felt lighter to say."
     },
     {
-      id: "c6e", gaydar: 90, title: "Getting gayer", contact: "Lucy", part: "Part 1: Before",
+      id: "c6e", gaydar: 90, gaydarSays: "Gayer every date. By date five he'll be borrowing my dress.", title: "Getting gayer", contact: "Lucy", part: "Part 1: Before",
       intro: "You've been seeing Lucy for three weeks. Date one you wore a polo. Date two your nails were painted. Date three: little silver hoops and a bit of gloss. Today, coffee in Teneriffe, you wore a cropped knit, lashes and blush. Her friend Kayla happened to be at the next table. Lucy kept looking over at her.",
       them: ["hey so", "dont take this the wrong way", "but you get gayer every single time i see you lol"],
       replies: [
@@ -838,7 +996,7 @@ window.CONTENT = {
       debrief: "Changing how you look bit by bit is a real way to come out. People notice, and they talk. Nobody gets to decide when you say it, even when they've already guessed."
     },
     {
-      id: "c6f", gaydar: 92, title: "Painted toes", contact: "Jade", part: "Part 1: Before",
+      id: "c6f", gaydar: 92, gaydarSays: "Same sandals as me. Neater toes. Next.", title: "Painted toes", contact: "Jade", part: "Part 1: Before",
       intro: "Jade from Hinge. A picnic at New Farm Park on a 33-degree Saturday. You painted your toenails the night before, a glossy coral, and bought tan strappy sandals from the women's section at Myer, the ones with the little gold buckle and a bit of a heel. You checked your feet about forty times on the bus. Jade looked down at them before she looked at your face.",
       them: ["hey thanks for today", "random q", "were those womens sandals"],
       replies: [
@@ -885,7 +1043,7 @@ window.CONTENT = {
       debrief: "Painted toes and women's sandals are small details, but you wore them on a date in broad daylight. People notice small things, and they talk. You still got to wear them."
     },
     {
-      id: "c6g", gaydar: 90, title: "Across the table", contact: "Olivia", part: "Part 1: Before", irl: true,
+      id: "c6g", gaydar: 90, gaydarSays: "Red toes, gold sandals, eyes on the waiter. Babe.", title: "Across the table", contact: "Olivia", part: "Part 1: Before", irl: true,
       intro: "Olivia from Bumble. First date, dinner at a little Italian place on James St. You wore a black wrap top, wide-leg linen pants and flat gold sandals from the women's section, toes painted cherry red. Mascara, a bit of bronzer, gloss. She's already at the table when you walk in.",
       them: [
         { note: "She stands up to hug you, then glances down. Then at your face. Then down again." },
@@ -1069,7 +1227,7 @@ window.CONTENT = {
       debrief: "Someone saying \"I think you'd be happier with guys\" can sting and feel like relief at the same time. Both are allowed."
     },
     {
-      id: "c6h", gaydar: 97, title: "In the driveway", contact: "Zoe", part: "Part 1: Before", irl: true,
+      id: "c6h", gaydar: 97, gaydarSays: "Lilac toes and platforms to a barbecue. I rest my case.", title: "In the driveway", contact: "Zoe", part: "Part 1: Before", irl: true,
       intro: "You've been going out with Zoe for six weeks. Today was her friend Brooke's barbecue in Ashgrove. You wore little floral shorts, a pastel cropped tee, white platform sandals, toes painted lilac, and a bit of gloss. Brooke's boyfriend asked Zoe, in front of everyone, if you were her gay best friend. She laughed. She hasn't said much since. Now she's parked in your driveway with the engine off.",
       them: [
         { note: "She doesn't take her hands off the steering wheel." },
@@ -1234,7 +1392,7 @@ window.CONTENT = {
       debrief: "Being broken up with because you're gay is a strange kind of hurt: you lose someone, and they say the thing you couldn't. Denial, tears, begging, saying it out loud: all of those are normal reactions in that car."
     },
     {
-      id: "c6i", gaydar: 98, title: "Saturday morning", contact: "Sophie", part: "Part 1: Before", irl: true,
+      id: "c6i", gaydar: 98, gaydarSays: "There's literally video evidence, {name}.", title: "Saturday morning", contact: "Sophie", part: "Part 1: Before", irl: true,
       intro: "Sophie, three months. Last night you told her you were having a quiet one. You weren't. You went to the Valley with Dani in a crop top, a mini skirt and heeled sandals, toes painted hot pink, and you danced with a guy at the Wickham until 1am. Now it's Saturday morning, Sophie's on your doorstep with two coffees, and she hasn't smiled once.",
       them: [
         { note: "She hands you a coffee and sits on the arm of the couch instead of next to you." },
@@ -1411,82 +1569,235 @@ window.CONTENT = {
     },
     {
       id: "c7", title: "The group chat", contact: "Jess", part: "Part 1: Before",
-      them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "i'm not saying anything. i'm just asking. are you ok?"],
+      them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "also someone called lucy follows me now?? and zoe's friend brooke liked my post from 2019. it's giving investigation", "i'm not saying anything. i'm just asking. are you ok?"],
       replies: [
         { you: "Great. So everyone's talking about me.",
-          them: ["two people are talking about you and they're being dicks about it", "i told kate to drop it", "but {name}. are they wrong?"],
+          them: ["two people are talking about you and they're being dicks about it", "ok more than two. but the point stands", "i told kate to drop it", "but {name}. are they wrong?"],
           replies: [
-            { you: "No. I'm gay.", them: ["ok", "ok. thank you for telling me", "i'm sorry i set you up with them lol. i'd have set you up with literally anyone else if you'd told me"] },
+            { you: "No. I'm gay.",
+              them: ["ok", "ok. thank you for telling me", "i'm sorry i set you up with them lol. i'd have set you up with literally anyone else if you'd told me", "like i have a guy from work in mind RIGHT NOW"],
+              replies: [
+                { you: "Not yet. I need a minute.", them: ["fair. take a minute. take ten", "but he has nice arms and he can cook. just putting that out there"] },
+                { you: "...what's his name?", them: ["oh we're DOING this", "his name's Tom. hes lovely. hes also slightly too into running but nobody's perfect"] },
+                { you: "Are you upset I didn't tell you?", them: ["a tiny bit. like 5%", "the other 95% is just glad you're ok. and that i dont have to pretend i didnt notice the lip tint anymore"] }
+              ] },
             { you: "I don't want to talk about it.", them: ["ok. i'm not going anywhere. text me whenever"],
-              after: "You don't text her that night. You text her three days later: \"they weren't wrong.\" She replies in under a minute. A month after that, Dani sets you up on a dating app. This time you tick 'men'." }
+              after: "You don't text her that night. You text her three days later: \"they weren't wrong.\" She replies in under a minute. A month after that, Dani sets you up on a dating app. This time you tick 'men'." },
+            { you: "What exactly are they saying?",
+              them: ["you don't want to know", "ok fine. mostly 'why is he dating girls'. some 'his makeup was better than mine'. one 'he's so obviously gay i feel stupid'", "honestly the makeup one is a compliment", "the rest is them being embarrassed and taking it out on you"],
+              replies: [
+                { you: "They're not wrong though.", them: ["yeah. i figured", "and that's fine. that's more than fine", "you ok?"] },
+                { you: "I feel sick.", them: ["coming over", "don't argue. i'm bringing chips and the bad wine"] }
+              ] }
           ] },
         { you: "They're not wrong.",
           them: ["yeah i kind of figured", "i'm sorry it came out like that. that's shit", "you ok?"],
-          replies: [{ you: "Not really. But kind of relieved?", them: ["that makes sense", "drinks friday. my shout. wear whatever you want"] }] },
+          replies: [
+            { you: "Not really. But kind of relieved?", them: ["that makes sense", "drinks friday. my shout. wear whatever you want", "and i mean WHATEVER. if you want to wear the dress ella was talking about, wear the dress"] },
+            { you: "I feel like an idiot for dating all of them.", them: ["you're not an idiot", "you were trying to be what you thought you were meant to be. heaps of people do that", "although maybe stop accepting setups from me for a bit lol"] }
+          ] },
         { you: "It was just makeup, Jess.",
-          them: ["ok. that's fine", "but you know you can tell me stuff right"],
-          replies: [{ you: "I know.", them: ["ok good"] }],
-          after: "It takes you another two weeks to tell her. She says \"I know, babe\" and orders you a drink. A month after that, Dani sets you up on a dating app. This time you tick 'men'." }
+          them: ["ok. that's fine", "but you know you can tell me stuff right", "like actual stuff. not just makeup stuff"],
+          replies: [{ you: "I know.", them: ["ok good"] }, { you: "Okay. It's not just makeup.", them: ["i know babe", "i've known since you asked if my eyeliner was wing or kitten. i'm just glad you said it"] }],
+          after: "It takes you another two weeks to tell her. She says \"I know, babe\" and orders you a drink. A month after that, Dani sets you up on a dating app. This time you tick 'men'." },
+        { you: "Who's Lucy?? Why is she following you?",
+          them: ["THAT'S your question??", "idk she found me through sam or something. she liked three of my photos and one of them was of you", "ok i'm asking again. are you ok"],
+          replies: [{ you: "Yeah. And yeah, they're right. I'm gay.", them: ["ok", "ok. i love you", "and i'm blocking lucy"] }] }
       ],
       after: "A month later, Dani sets you up on a dating app. This time you tick 'men'. You've never felt this nervous about pressing 'like'.",
       debrief: "Being talked about behind your back is horrible, and it says more about them than you. You get to decide when and how you say it, even if other people got there first."
     },
     {
       id: "s1", title: "Hey there", part: "Part 2: {bf}",
-      them: ["Hey! Your profile made me smile. Is that your dog or are you just very good at borrowing dogs?"],
+      them: ["Hey! Your profile made me smile.", "Is that your dog or are you just very good at borrowing dogs?"],
       replies: [
-        { you: "All mine. Her name's Biscuit.", them: ["Biscuit 😍 Okay I'm already invested", "I'm {bf}, by the way. Coffee sometime?"],
-          replies: [{ you: "I'd like that.", them: ["Great. Saturday morning? I know a good spot in Paddington"] }, { you: "Maybe chat a bit more first?", them: ["Of course! No rush. Tell me about Biscuit's greatest crimes"] }] },
-        { you: "Borrowed. I have a whole dog-borrowing operation.", them: ["Haha I knew it 😂 I'm {bf}. Coffee sometime? You can bring a borrowed dog"] }
+        { you: "All mine. Her name's Biscuit.",
+          them: ["Biscuit 😍 Okay I'm already invested", "What is she? She looks like a kelpie that got into a bag of flour", "I'm {bf}, by the way"],
+          replies: [
+            { you: "Kelpie cross something. The vet just shrugged.",
+              them: ["The vet shrugged 😂 That's the best answer", "Okay I have to ask. Is this your first time on here? You've got very 'just downloaded it' energy. In a good way"],
+              replies: [
+                { you: "Is it that obvious?",
+                  them: ["A bit. Your bio says 'new to this, be nice' which is either very honest or a trap", "I'll be nice. I promise"],
+                  replies: [
+                    { you: "It's not a trap. I only came out a couple of months ago.",
+                      them: ["Oh, that's huge. Congrats 🏳️‍🌈", "No rush on anything. We can just talk about Biscuit's crimes for a week if you want", "Or coffee, whenever you're ready. I know a good spot in Paddington"],
+                      replies: [
+                        { you: "Coffee sounds good. Saturday?", them: ["Saturday 😊 I'll send you the place", "Fair warning, I'm taller than my photos suggest and I'll probably knock something over"] },
+                        { you: "Can we talk a bit more first?", them: ["Of course. Tell me about Biscuit's greatest crimes", "I need the full rap sheet"] }
+                      ] },
+                    { you: "It's a trap. Biscuit runs the account.", them: ["Then Biscuit has excellent taste", "Tell Biscuit I'd like to take her owner for coffee"] }
+                  ] },
+                { you: "I've been on here a while, thanks very much.", them: ["Sure you have 😏", "Okay, seasoned pro. What's your go-to first date?"],
+                  replies: [{ you: "Coffee. Easy to leave if it's bad.", them: ["Smart. Brutal. I respect it", "Coffee Saturday? I'll try not to be bad"] }] }
+              ] },
+            { you: "She ate a whole birthday cake once. Candles and all.",
+              them: ["CANDLES?", "Okay she's a legend", "I'm going to need to meet her. And you, I suppose 😏"] }
+          ] },
+        { you: "Borrowed. I have a whole dog-borrowing operation.",
+          them: ["Haha I knew it 😂", "Do you rent them by the hour? Asking for me", "I'm {bf}. Coffee sometime? You can bring a borrowed dog"],
+          replies: [
+            { you: "Only if you bring a borrowed dog too.", them: ["I'll see what I can do. My housemate has a very fat sausage dog called Kevin", "Kevin and Biscuit. It's a double date"] },
+            { you: "Okay, she's mine. I panicked.", them: ["You panicked over a dog question 😂", "That's adorable. Coffee. Saturday. Bring the real dog"] }
+          ] },
+        { you: "Hi. Sorry, I'm really nervous. I've never messaged a guy before.",
+          them: ["Hey, no need to be sorry", "Never messaged a guy, or never messaged a guy on here?"],
+          replies: [
+            { you: "Ever. I've only ever dated girls.",
+              them: ["Okay. Well, you're doing great so far", "Can I tell you something? My first message to a guy was 'hello there'. Like Obi-Wan. He didn't reply. Rightly", "So you're already ahead"],
+              replies: [
+                { you: "That's genuinely terrible.", them: ["I know 😂 I think about it at 3am", "Coffee sometime? No pressure. I'll keep the Star Wars to a minimum"] },
+                { you: "That actually helps. Thanks.", them: ["Anytime. Take it at your speed", "I'm {bf}, by the way. Tell me about the dog"] }
+              ] },
+            { you: "On here. I'm a bit new.", them: ["We've all been new. You're doing fine", "I'm {bf}. What's the dog's name?"] }
+          ] }
       ]
     },
     {
       id: "s2", title: "After the first date",
-      them: ["Home safe 🙂", "I had a really nice time today. You're easy to be around."],
+      them: ["Home safe 🙂", "I had a really nice time today. You're easy to be around.", "Also I'm sorry I knocked your flat white over. I did warn you"],
       replies: [
-        { you: "Me too. I was nervous but it felt easy.", them: ["You hid it well! I was nervous too 😅", "Can I see you again?"],
-          replies: [{ you: "Yes, definitely.", them: ["😊 Good. I'll think of something better than coffee"] }] },
-        { you: "I had fun. Same time next week?", them: ["Already in the calendar 📅"] }
+        { you: "Me too. I was nervous but it felt easy.",
+          them: ["You hid it well! I was nervous too 😅", "I changed my shirt three times. Then went back to the first one", "Can I see you again?"],
+          replies: [
+            { you: "Yes, definitely.", them: ["😊 Good", "I'll think of something better than coffee. Something with fewer spillable things"],
+              replies: [
+                { you: "Can I pick? I want to go somewhere I've never been with a guy.", them: ["Ooh. Yes. Anywhere you want", "Where are you thinking?"],
+                  replies: [
+                    { you: "The Valley. Somewhere gay.", them: ["Yes. Absolutely. I'll take you to my favourite bar", "Warning: they play a lot of Kylie. Like, a lot"] },
+                    { you: "Honestly? Just a walk. Somewhere quiet.", them: ["I love that. New Farm Park, Sunday arvo?", "We can hold hands or not. Whatever feels right"] }
+                  ] },
+                { you: "Surprise me.", them: ["Oh no. Pressure", "Okay I've got an idea. Wear comfy shoes"] }
+              ] },
+            { you: "Can I be honest? I didn't know if I'd like it. But I did.",
+              them: ["That's really nice to hear", "Can I ask what you thought you wouldn't like?"],
+              replies: [
+                { you: "Being out in public with a guy. Like, on a date.", them: ["Yeah. That makes total sense", "For what it's worth, nobody in that café cared. The barista only cared that I spilled your coffee", "Next time we'll go somewhere even more casual. Baby steps"] },
+                { you: "I don't know. Liking a guy, I guess. It's still new.", them: ["Of course it is", "You don't have to have it all worked out. You just have to show up and spill your coffee. Well. Watch me spill it"] }
+              ] }
+          ] },
+        { you: "I had fun. Same time next week?",
+          them: ["Already in the calendar 📅", "I literally put 'coffee with the Biscuit guy' in my work calendar. My manager saw it", "So now I have to see you again. For HR reasons"],
+          replies: [
+            { you: "For HR reasons 😂 Fair enough.", them: ["Glad you understand", "Next Saturday. I'll bring a towel this time"] },
+            { you: "Your manager knows about me already?", them: ["She knows I had a coffee with a cute guy with a dog", "She's very invested. She asked if you were 'the one' and I said it was one coffee, Linda"] }
+          ] },
+        { you: "Was it okay that I didn't kiss you goodbye?",
+          them: ["Totally okay", "I didn't want to rush anything. You told me it was your first date with a guy. I wasn't going to make it weird", "Was it okay that I hugged you? I'm a hugger, sorry"],
+          replies: [
+            { you: "The hug was nice.", them: ["Good 😊 More hugs then", "Can I see you again?"] },
+            { you: "Next time maybe you can kiss me.", them: ["Oh", "Okay yes. Noted. Very noted", "Next Saturday?"] }
+          ] }
       ]
     },
     {
       id: "s3", title: "Good morning",
-      them: ["Morning ☀️", "This is the coffee I'm having instead of being at brunch with you. It's sad.", "Hope work's kind to you today"],
+      them: ["Morning ☀️", "This is the coffee I'm having instead of being at brunch with you. It's sad.", "It's from the work machine. It tastes like a coin", "Hope work's kind to you today"],
       replies: [
-        { you: "Morning! That is a tragic coffee.", them: ["I know. Pray for me 😔", "Dinner tonight to make up for it?"] },
-        { you: "Good morning to you too 😊", them: ["I like getting a good morning back. Have a great day"] }
+        { you: "Morning! That is a tragic coffee.",
+          them: ["I know. Pray for me 😔", "Dinner tonight to make up for it?"],
+          replies: [
+            { you: "Yes. Where?", them: ["There's a Thai place in West End that does the best pad see ew in Brisbane", "Also it has very dim lighting. Very romantic. Very good for hiding how much I eat"] },
+            { you: "Can't tonight. Tomorrow?", them: ["Tomorrow works. I'll survive on coin coffee until then"] }
+          ] },
+        { you: "Good morning to you too 😊",
+          them: ["I like getting a good morning back", "Is this a thing now? Good morning texts?", "Because I'm into it"],
+          replies: [
+            { you: "It's a thing now.", them: ["Great. Excellent. I'm going to be insufferable about it", "Have a great day x"] },
+            { you: "I've never had someone text me good morning before.", them: ["Never?", "Well, now you do. Every day. Sorry in advance"] }
+          ] },
+        { you: "I told someone at work about you.",
+          them: ["Wait really??", "Who? What did you say?"],
+          replies: [
+            { you: "Sam. I said I'm seeing a guy.", them: ["{name} that's huge", "How did she take it?"],
+              replies: [
+                { you: "She said 'finally' and asked to see a photo.", them: ["Finally 😂 I like Sam already", "Which photo did you show her? Please say not the one where I'm squinting"] },
+                { you: "She was really nice about it.", them: ["Good. That's how it should be", "I'm proud of you. Seriously. Good morning just got a lot better"] }
+              ] },
+            { you: "Just that I had a good weekend. Baby steps.", them: ["Baby steps count", "One day you'll tell them about me and my coin coffee"] }
+          ] }
       ]
     },
     {
       id: "s4", title: "So... are we?",
-      them: ["Can I ask something that might be a bit forward?", "I don't really want to see anyone else. Would you want to be my boyfriend?"],
+      them: ["Can I ask something that might be a bit forward?", "I deleted the app last night. I don't really want to see anyone else.", "Would you want to be my boyfriend?"],
       replies: [
-        { you: "Yes. I'd really like that.", them: ["😊😊😊", "Okay I'm grinning at my phone like an idiot"] },
+        { you: "Yes. I'd really like that.",
+          them: ["😊😊😊", "Okay I'm grinning at my phone like an idiot", "My housemate just asked who died. Nobody. I have a boyfriend"],
+          replies: [
+            { you: "I have a boyfriend. That's so weird to say.", them: ["Good weird or bad weird?"],
+              replies: [
+                { you: "Good weird. Really good weird.", them: ["Say it again", "Not to me. Out loud. In your kitchen"] },
+                { you: "Scary weird. But I want it.", them: ["Scary is allowed. I'm here for the scary bits too"] }
+              ] },
+            { you: "Did you just tell your housemate?", them: ["I told my housemate, my group chat, and Kevin the sausage dog", "Kevin is thrilled. Kevin wants to meet Biscuit"] }
+          ] },
         { you: "I want to, I'm just nervous about the word.",
-          them: ["That's okay. It's a big word, especially if it's new.", "We can just be us for now and use the word whenever you're ready. I'm not going anywhere."],
-          replies: [{ you: "Thank you. Boyfriend. Okay. Yes.", them: ["Boyfriend 💙"] }] }
+          them: ["That's okay. It's a big word, especially if it's new.", "We can just be us for now and use the word whenever you're ready.", "I'm not going anywhere."],
+          replies: [
+            { you: "Thank you. Boyfriend. Okay. Yes.", them: ["Boyfriend 💙", "You did it. You said the word"] },
+            { you: "Can I tell people I'm seeing someone first?", them: ["Of course", "Seeing someone. Dating. Hanging out with a tall man who spills things. Whatever you want to call it", "I know what it is"] }
+          ] },
+        { you: "Wait, you deleted the app before asking me?",
+          them: ["...yes", "Bold strategy, I know", "If you say no I'm redownloading it and pretending this never happened"],
+          replies: [
+            { you: "Don't redownload it. Yes.", them: ["😭 Okay good. My heart can't take that", "Boyfriend"] },
+            { you: "I deleted mine last week.", them: ["LAST WEEK??", "And you let me sweat it out like this", "Okay. Boyfriends. Both of us. Officially"] }
+          ] }
       ]
     },
     {
       id: "s5", title: "Meeting your mates",
-      them: ["Trivia with Jess and Priya tonight! Be honest, should I be scared?"],
+      them: ["Trivia with Jess and Priya tonight! Be honest, should I be scared?", "What do I wear? Is there a dress code for meeting the friends?"],
       replies: [
-        { you: "Jess will grill you. Priya will love you.", them: ["Noted. I'll answer every sport question to win Jess over"] },
+        { you: "Jess will grill you. Priya will love you.",
+          them: ["Noted. I'll answer every sport question to win Jess over", "What does Jess grill people about?"],
+          replies: [
+            { you: "Your intentions.", them: ["My intentions are trivia and you", "In that order? No. You first. Then trivia. Then chips"] },
+            { you: "Whether you're good enough for me.", them: ["Fair. I'm probably not", "But I'll bring my A game. And my B game. I know a lot about 2000s pop"] }
+          ] },
         { you: "I'm a bit nervous introducing you.",
-          them: ["That's fair, it's a new thing for you.", "If it gets too much just squeeze my hand and we'll get some air. Deal?"],
-          replies: [{ you: "Deal.", them: ["See you at 7 💙"] }] }
+          them: ["That's fair, it's a new thing for you.", "Is it the friends knowing, or just me being there?"],
+          replies: [
+            { you: "The friends seeing me with a guy. For real.", them: ["Yeah. That's a big one", "If it gets too much just squeeze my hand and we'll get some air. Deal?"],
+              replies: [{ you: "Deal.", them: ["See you at 7 💙"] }, { you: "Can we not hold hands in front of them yet?", them: ["Of course. No hands. Just two guys being very good at trivia"] }] },
+            { you: "What if they don't like you?", them: ["Then I'll win them over with trivia", "And if they still don't like me, I'll still like you. That's what matters"] }
+          ] },
+        { you: "Wear something cute. They'll judge.",
+          them: ["Cute like how cute", "Like nice shirt cute or like 'your outfit' cute? Because I can't do what you do. I'd look like a lampshade"],
+          replies: [
+            { you: "Nice shirt. I'll do enough cute for both of us.", them: ["Perfect division of labour", "What are you wearing?"],
+              replies: [{ you: "The pink shirt. And gloss.", them: ["Oh I love that shirt", "Okay now I'm the nervous one. You're going to look way better than me"] }] },
+            { you: "Lampshade could work.", them: ["Rude", "Accurate. But rude"] }
+          ] }
       ],
-      after: "Jess texts you at 10pm: 'Okay I LIKE him.'"
+      after: "Jess texts you at 10pm: \"Okay I LIKE him.\" Priya texts at 10:02: \"he knew every Spice Girls answer. marry him.\""
     },
     {
       id: "s6", title: "Holding hands",
-      them: ["Can I hold your hand on the walk along South Bank tomorrow?", "Totally okay if you're not there yet."],
+      them: ["Can I hold your hand on the walk along South Bank tomorrow?", "Totally okay if you're not there yet.", "I just figured I'd ask instead of doing the awkward hand-brush thing"],
       replies: [
-        { you: "Yes. I'd like that.", them: ["Then it's a date 🙂"] },
+        { you: "Yes. I'd like that.",
+          them: ["Then it's a date 🙂", "Can I ask something? Have you held a guy's hand in public before?"],
+          replies: [
+            { you: "No. Never.", them: ["Then tomorrow's a big one", "If you want to let go at any point, let go. I won't be hurt. I promise"],
+              replies: [
+                { you: "What if someone says something?", them: ["Then we keep walking", "And I'll probably say something back, which you'll find embarrassing, which will be funny", "But honestly, it's South Bank on a Sunday. Most people will be looking at the ibises"] },
+                { you: "Okay. I'm excited.", them: ["Me too. More than a normal person should be about a walk"] }
+              ] },
+            { you: "Once, at Pride. But that doesn't count.", them: ["It totally counts", "But tomorrow is a normal Sunday. That's a different kind of brave"] }
+          ] },
         { you: "Maybe not in public yet. Is that okay?",
-          them: ["Of course it's okay. There's no rush.", "Your pace is the right pace."] },
-        { you: "I'll try. I might let go if I get nervous.", them: ["That's completely fine. I'll be there either way"] }
-      ]
+          them: ["Of course it's okay. There's no rush.", "Your pace is the right pace.", "Can I hold your hand in the car, though? Nobody sees that"],
+          replies: [
+            { you: "Yeah. The car's fine.", them: ["Car hand-holding. Very romantic. Very private", "One day we'll do it on South Bank. No rush"] },
+            { you: "Sorry. I feel like I'm letting you down.", them: ["You're not. At all", "I came out at 19 and didn't hold hands in public till I was 23. I get it more than you think"] }
+          ] },
+        { you: "I'll try. I might let go if I get nervous.",
+          them: ["That's completely fine.", "I'll be there either way", "And if you let go I'll just walk really close to you. Like an annoying golden retriever"],
+          replies: [{ you: "Deal.", them: ["Deal 💙"] }] }
+      ],
+      after: "Halfway along the Arbour you notice you've been holding his hand for ten minutes and haven't once checked who was looking."
     },
     {
       id: "s6b", title: "Summer feet",
@@ -1538,35 +1849,74 @@ window.CONTENT = {
     },
     {
       id: "s8", title: "A wobble",
-      them: ["Hey. Can we talk about the work drinks?", "When your boss came over you introduced me as your friend. It stung a bit."],
+      them: ["Hey. Can we talk about the work drinks?", "When your boss came over you introduced me as your friend.", "It stung a bit. I've been sitting with it all night and I'd rather say it than be weird about it"],
       replies: [
         { you: "I'm sorry. I panicked.",
           them: ["I get it. I really do. I've been there.", "I just want you to know I'm proud to be with you, and I hope one day you feel the same out loud."],
           replies: [
             { you: "I am proud of you. I'll get there.", them: ["I know you will. We're okay 💙"] },
-            { you: "Can we work out together how I tell work?", them: ["I'd really like that. Pancakes and a plan on Saturday?"] }
+            { you: "Can we work out together how I tell work?", them: ["I'd really like that. Pancakes and a plan on Saturday?", "We can write it on a napkin. Very professional"] },
+            { you: "I don't know why I did it.",
+              them: ["I think you do", "You're not out at work. Your boss came over. Your brain went 'danger'", "That's not a bad thing about you. It's just where you're at"],
+              replies: [{ you: "Thanks for getting it.", them: ["Always. But I'm still going to bring it up again in a month 😏"] }] }
           ] },
         { you: "I'm not out at work yet. I should have told you that.",
-          them: ["Ah, okay. That makes sense. Thanks for telling me.", "I'll follow your lead at work stuff. Just talk to me, yeah?"] }
+          them: ["Ah, okay. That makes sense. Thanks for telling me.", "I'll follow your lead at work stuff. Just talk to me, yeah?", "I'd rather know where the lines are than walk into them"],
+          replies: [
+            { you: "Sam knows. Nobody else.", them: ["Okay. So Sam's safe", "Should I stop holding your hand under the table at work drinks then 😂"] },
+            { you: "I want to be out at work. I'm just scared.", them: ["Scared is fair. People can be weird", "When you're ready, I'll be at the next work drinks being very obviously your boyfriend"] }
+          ] },
+        { you: "It's not a big deal. You're overreacting.",
+          them: ["Okay. Maybe it's not a big deal to you", "But I spent a long time being someone's 'friend' when I wasn't. I'm not doing that again, not for anyone", "I'm not saying you have to come out at work tomorrow. I'm saying don't tell me it's nothing"],
+          replies: [
+            { you: "You're right. I'm sorry.", them: ["Thank you", "We're okay. I just needed to say it"] },
+            { you: "I didn't know that about you.", them: ["Yeah. My first boyfriend kept me secret for a year", "So it's a bit of a sore spot. That's on me to tell you, not on you to guess"] }
+          ] }
       ],
       debrief: "Couples have wobbles. Saying sorry and explaining where you're at is what makes it okay."
     },
     {
       id: "s9", title: "Three words",
-      them: ["Can't sleep. Been thinking.", "I love you. I don't need you to say it back, I just wanted you to know."],
+      them: ["Can't sleep. Been thinking.", "About you mostly. And Biscuit a bit.", "I love you. I don't need you to say it back, I just wanted you to know."],
       replies: [
-        { you: "I love you too.", them: ["💙💙💙", "Okay now I'm definitely not sleeping"] },
+        { you: "I love you too.",
+          them: ["💙💙💙", "Okay now I'm definitely not sleeping", "Have you said that to a guy before?"],
+          replies: [
+            { you: "No. You're the first.", them: ["Oh", "That's a lot. In a good way. I'm going to remember this text forever", "Screenshotting it. Sorry. Not sorry"] },
+            { you: "Come over. I don't want to say it over text.", them: ["It's 1am", "...I'm putting my shoes on"] }
+          ] },
         { you: "I'm not quite there yet, but I'm really happy with you.",
-          them: ["That's a lovely thing to hear. Honestly.", "No rush. I meant it either way."] }
+          them: ["That's a lovely thing to hear.", "No rush. I meant it either way.", "Seriously. I'm not counting"],
+          replies: [
+            { you: "I think I'm close.", them: ["I'll take close", "Go to sleep. Close is good"] },
+            { you: "Thank you for not making it weird.", them: ["Hey, I'm the one texting I love you at 1am", "If anyone's making it weird, it's me"] }
+          ] },
+        { you: "Did you mean to send that?",
+          them: ["Yes", "Okay I was going to say it on Saturday at dinner and I couldn't wait", "Do you want me to unsend it? I won't. But do you want me to"],
+          replies: [
+            { you: "Don't you dare unsend it.", them: ["Okay 😊", "I love you"] },
+            { you: "Say it again on Saturday. Out loud.", them: ["Deal. Out loud. Over dumplings"] }
+          ] }
       ]
     },
     {
       id: "s10", title: "Six months",
-      them: ["Happy six months 🥂", "Remember when you were nervous about the word 'boyfriend'? Look at you now."],
+      them: ["Happy six months 🥂", "Remember when you were nervous about the word 'boyfriend'? Look at you now.", "You introduced me to your boss last week. Without me even asking"],
       replies: [
-        { you: "Look at us now.", them: ["Here's to the next six. And Biscuit, obviously"] },
+        { you: "Look at us now.",
+          them: ["Here's to the next six. And Biscuit, obviously", "What was your favourite bit? Of the six months"],
+          replies: [
+            { you: "The first time we held hands at South Bank.", them: ["You let go after 30 seconds the first time", "Then grabbed it back. I'll never forget that"] },
+            { you: "When you spilt my coffee.", them: ["Of course you'd pick that", "Mine's when you told your boss 'this is my boyfriend'. You went bright red. I nearly cried"] },
+            { you: "Lazy Sundays on the couch.", them: ["Even when I steal your socks?", "Especially then. Don't answer that"] }
+          ] },
         { you: "Thank you for being so patient with me.",
-          them: ["You never needed patience. You just needed a bit of time.", "Proud of you. Love you."] }
+          them: ["You never needed patience. You just needed a bit of time.", "And you did all the hard bits. I just held your hand. Literally", "Proud of you. Love you."],
+          replies: [
+            { you: "I love you too.", them: ["💙", "Dinner. The Thai place. Then we go dancing in the Valley. Wear the gold sandals"] },
+            { you: "Six months ago I couldn't say the word gay.", them: ["And now?"],
+              replies: [{ you: "Now I'm gay and I've got a boyfriend and a very spoiled dog.", them: ["Best sentence I've ever read", "Happy six months, gorgeous"] }] }
+          ] }
       ],
       debrief: "This is the end of the story for now. Replay any chapter whenever you like."
     }

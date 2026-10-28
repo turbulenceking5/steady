@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-28
+- Story: no more waiting a day. Finish a chapter and the next one opens straight away, with a "Next chapter" button.
+- Story: the gaydar bar is cheekier, with teasing labels and a line from each girl ("Same sandals as me. Neater toes. Next.").
+- Story: much longer chapters with Archie (date night, the honest talk in person, a few weeks later), Nicole, Jess's group chat, and every Part 2 chapter with {bf}.
 - Story: every date with a girl now ends with a bar showing how gay she thinks you are. It depends on what you said, and admitting it takes it to 100%.
 - Story Part 1: three in-person chapters, with what she says and does, and lots of ways for you to react. Dinner with Olivia, who talks about your painted toes and tells you to date guys. Zoe breaking up with you in the car after a barbecue. Sophie breaking up with you after her friend sees you dancing with a guy in the Valley.
 - Story Part 1: new chapter "Painted toes". A picnic date with Jade in women's strappy sandals and painted toenails.

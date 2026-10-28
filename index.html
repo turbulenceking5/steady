@@ -324,7 +324,8 @@ details summary { cursor: pointer; color: var(--muted); }
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const wait = (ms) => new Promise((r) => setTimeout(r, reduceMotion ? 0 : ms));
 
-  const gaydarLabel = (v) => v >= 100 ? "Knows for sure. You said it." : v >= 95 ? "No doubt at all" : v >= 85 ? "Basically certain" : v >= 65 ? "Pretty sure" : v >= 35 ? "Starting to wonder" : "Hasn't clocked it";
+  // Teasing, never nasty: it's her read on you, and the joke's on how obvious it is.
+  const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
   function runConversation(view, convo, kind, header) {
     const run = Symbol(); view._run = run;
     view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
@@ -395,12 +396,13 @@ details summary { cursor: pointer; color: var(--muted); }
         if (endNote) add("note", fill(endNote));
         if (gaydar != null) {
           const who = fill(convo.gaydarWho || convo.contact);
-          choices.insertAdjacentHTML("beforeend", `<div class="gaydar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${gaydar}" aria-label="How gay ${esc(who)} thinks you are"><div class="top"><b>How gay ${esc(who)} thinks you are</b><span class="pct">${gaydar}%</span></div><div class="track"><div class="fill"></div></div><span class="muted">${esc(gaydarLabel(gaydar))}</span></div>`);
+          choices.insertAdjacentHTML("beforeend", `<div class="gaydar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${gaydar}" aria-label="How gay ${esc(who)} thinks you are"><div class="top"><b>How gay ${esc(who)} thinks you are</b><span class="pct">${gaydar}%</span></div><div class="track"><div class="fill"></div></div><span class="muted">${esc(gaydarLabel(gaydar))}</span>${convo.gaydarSays ? `<div style="margin-top:6px"><i>"${esc(fill(convo.gaydarSays))}"</i> <span class="muted">· ${esc(who)}</span></div>` : ""}</div>`);
           const f = choices.querySelector(".gaydar .fill");
           requestAnimationFrame(() => requestAnimationFrame(() => { f.style.width = gaydar + "%"; }));
         }
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(convo.debrief)}</div>`);
-        choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button></div>');
+        choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button>' + (convo.next ? '<button class="btn next">Next chapter →</button>' : "") + "</div>");
+        if (convo.next) choices.querySelector(".next").addEventListener("click", convo.next);
         choices.querySelector(".again").addEventListener("click", () => runConversation(view, convo, kind, header));
       }
     }
@@ -463,25 +465,22 @@ details summary { cursor: pointer; color: var(--muted); }
   }
 
   // ---------- Story ----------
-  // Chapter n opens once chapter n-1 was first finished on an earlier (Brisbane) day.
+  // Chapter n opens as soon as chapter n-1 has been finished once. No waiting a day.
   const storyDone = () => store.get("story", {});
   function chapterState(i) {
-    if (i === 0) return "open";
-    const prev = storyDone()[C.story[i - 1].id];
-    if (storyDone()[C.story[i].id]) return "open";
-    if (!prev) return "locked";
-    return prev < today ? "open" : "tomorrow";
+    if (i === 0 || storyDone()[C.story[i].id]) return "open";
+    return storyDone()[C.story[i - 1].id] ? "open" : "locked";
   }
   function renderStoryList() {
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
     const done = storyDone();
     let part = "";
-    list.innerHTML = `<p class="muted" style="margin-top:0">From still being in the closet to six months with ${esc(bf())}. A new chapter opens the day after you finish the last one.</p><ul class="list">` +
+    list.innerHTML = `<p class="muted" style="margin-top:0">From still being in the closet to six months with ${esc(bf())}. Finish a chapter and the next one opens straight away.</p><ul class="list">` +
       C.story.map((c, i) => {
         const st = chapterState(i);
         const who = fill(c.contact || "{bf}");
-        const sub = st === "open" ? `${who} · ${done[c.id] ? "read" : "new"}` : st === "tomorrow" ? "Opens tomorrow" : "Locked";
+        const sub = st === "open" ? `${who} · ${done[c.id] ? "read" : "new"}` : "Locked";
         const head = c.part && c.part !== part ? `<li><h2 class="muted" style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px">${esc(fill((part = c.part)))}</h2></li>` : "";
         return `${head}<li data-i="${i}">${itemHtml(String(i + 1), c.title, sub, done[c.id] ? "done" : st === "open" ? "new" : "")}</li>`;
       }).join("") + "</ul>";
@@ -492,7 +491,7 @@ details summary { cursor: pointer; color: var(--muted); }
     });
   }
   function openChapter(i) {
-    const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}") });
+    const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}"), next: i + 1 < C.story.length ? () => openChapter(i + 1) : null });
     $("#storyList").hidden = true;
     const view = $("#storyView"); view.hidden = false;
     runConversation(view, c, "story", `<button class="btn ghost back">← Story</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">Chapter ${i + 1}: ${esc(c.title)}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);

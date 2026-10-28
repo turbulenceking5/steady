@@ -21,7 +21,7 @@ Msg      = string | { from, text } | { note }        // from = sender in group c
 - IDs must be unique and never change: progress is stored by id.
 - Every reply is a fine reply. There's no wrong answer and no scoring.
 - `after` is a narrator note shown when the conversation ends (a branch's own takes priority). `debrief` is a short "worth remembering" note.
-- `gaydar` (0–100) on a date chapter shows a "How gay {girl} thinks you are" bar when it ends. Set a base on the chapter and raise it on the branches where he says it (100 = he told her). The deepest branch that sets it wins. `gaydarWho` names the girl when `contact` is a group chat (c6c: Tayla). Labels come from `gaydarLabel()` in index.html.
+- `gaydar` (0–100) on a date chapter shows a "How gay {girl} thinks you are" bar when it ends. Set a base on the chapter and raise it on the branches where he says it (100 = he told her). The deepest branch that sets it wins. `gaydarSays` is her teasing one-liner under the bar. `gaydarWho` names the girl when `contact` is a group chat (c6c: Tayla). Labels come from `gaydarLabel()` in index.html.
 
 ## Voice tiers
 Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice (game level 3+), 2 Out & proud (5+), 3 Full flamboyance (7+). At each tier his reply options get camper and the girls treat him more as their gay best friend. Tier 1 holds the crush confessions (Jemima, Nicole, Priya, Ailisha): long, heartfelt chats about how they felt back then and how they see him now. Each girl has her own way of saying it's better this way, so don't repeat a stock phrase across them. It's affectionate teasing, never a put-down.
