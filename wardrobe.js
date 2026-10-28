@@ -513,6 +513,8 @@
     "Paint just one nail today. Pinky counts.",
     "Wear your shortest shorts for a coffee run.",
     "Swap sneakers for sandals on a quick trip to the shops.",
+    "Paint your toenails and wear flip-flops to get a coffee.",
+    "Wear women's sandals with painted toes on your next date.",
     "Try a crop top at home and take a mirror selfie. You don't have to post it.",
     "Put a rainbow pin on your bag or hat for one errand.",
     "Wear a bracelet stack all day, even if it's just around the house.",

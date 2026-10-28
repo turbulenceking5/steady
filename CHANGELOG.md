@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-28
+- Story Part 1: new chapter "Painted toes". A picnic date with Jade in women's strappy sandals and painted toenails.
+- Story Part 2: new chapter "Summer feet". Women's flip-flops and painted toes at the markets with {bf}.
+- Style: two new daily dares with painted toes and sandals.
 - Story Part 1: new chapter "Getting gayer" with Lucy. You look a bit gayer every date, her friends keep asking her if you're gay, and then she asks you.
 - Story Part 2: new chapter "Lazy Sunday". {bf} pulls your socks off on the couch and tickles your feet.
 - Messages: new chat with Alex after a beach date where he took your sandals off and tickled your feet (unlocks at level 3).

@@ -838,6 +838,53 @@ window.CONTENT = {
       debrief: "Changing how you look bit by bit is a real way to come out. People notice, and they talk. Nobody gets to decide when you say it, even when they've already guessed."
     },
     {
+      id: "c6f", title: "Painted toes", contact: "Jade", part: "Part 1: Before",
+      intro: "Jade from Hinge. A picnic at New Farm Park on a 33-degree Saturday. You painted your toenails the night before, a glossy coral, and bought tan strappy sandals from the women's section at Myer, the ones with the little gold buckle and a bit of a heel. You checked your feet about forty times on the bus. Jade looked down at them before she looked at your face.",
+      them: ["hey thanks for today", "random q", "were those womens sandals"],
+      replies: [
+        { you: "Yeah. From Myer.",
+          them: ["lol ok", "i have the exact same ones", "like the exact same. same colour", "it was so weird looking down and seeing my feet on you"],
+          replies: [
+            { you: "Great minds?",
+              them: ["haha", "ok and the toes. did you do those yourself"],
+              replies: [
+                { you: "Yeah, last night.", them: ["they were neater than mine tbh", "ngl i spent half the picnic looking at your feet instead of at you", "i dont think im what youre looking for"] },
+                { you: "A friend did them.", them: ["which friend", "actually dont answer that", "i just dont think this is a date thing for you"] }
+              ] },
+            { you: "Do you want me to not wear them?",
+              them: ["no?? wear what you want", "just maybe not on dates with girls", "you know what i mean"],
+              replies: [
+                { you: "Not really.", them: ["ok well", "i do", "good luck"] },
+                { you: "Yeah. I do.", them: ["yeah"] }
+              ] }
+          ] },
+        { you: "Is that a problem?",
+          them: ["not a problem", "just surprising", "mel asked me to send her a pic of you and i accidentally sent one of your feet", "she replied 'jade hes gay'"],
+          replies: [
+            { you: "Did you agree with her?",
+              them: ["kind of", "the coral was a dead giveaway lol", "are you?"],
+              replies: [
+                { you: "Yeah.", them: ["ok", "fair enough", "your pedicure was better than half my friends' tbh"] },
+                { you: "I don't know.", them: ["ok", "you might want to work that out before the next picnic"] }
+              ] },
+            { you: "You sent her a photo of my feet??",
+              them: ["it was an accident!!", "i was trying to get your face and you moved", "anyway she thinks youre gay"],
+              replies: [
+                { you: "She's probably right.", them: ["yeah", "ok well. thanks for the picnic i guess"] },
+                { you: "Tell Mel to mind her business.", them: ["lol good luck with that", "shes already told our whole group chat"] }
+              ] }
+          ] },
+        { you: "No, they're men's.",
+          them: ["they had a gold buckle", "and a heel", "come on {name}"],
+          replies: [
+            { you: "Okay fine. They're women's.", them: ["lol yeah", "its fine. they looked good", "just not really a first date thing for me"] },
+            { you: "(Leave it on read)", after: "You leave it on read. Your feet look great in the photo you take of them that night. You don't send it to anyone." }
+          ] }
+      ],
+      after: "Jade, to Mel: \"ok you were right.\" Mel: \"the toes told me everything\" Jade: \"they were neater than mine\" Mel: \"jade.\" Jade: \"I KNOW\"",
+      debrief: "Painted toes and women's sandals are small details, but you wore them on a date in broad daylight. People notice small things, and they talk. You still got to wear them."
+    },
+    {
       id: "c7", title: "The group chat", contact: "Jess", part: "Part 1: Before",
       them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "i'm not saying anything. i'm just asking. are you ok?"],
       replies: [
@@ -915,6 +962,28 @@ window.CONTENT = {
           them: ["Of course it's okay. There's no rush.", "Your pace is the right pace."] },
         { you: "I'll try. I might let go if I get nervous.", them: ["That's completely fine. I'll be there either way"] }
       ]
+    },
+    {
+      id: "s6b", title: "Summer feet",
+      them: ["Davies Park markets tomorrow?", "It's meant to be 33. Wear something cool"],
+      replies: [
+        { you: "I was thinking the flip-flops. And painted toes.",
+          them: ["The pink ones from the women's section? Yes please", "What colour toes?"],
+          replies: [
+            { you: "Pink, to match.", them: ["Obviously", "You'll look great. I'm buying you a mango smoothie as a reward"] },
+            { you: "Rainbow. A different colour each toe.", them: ["Okay that's amazing", "I'm going to hold your hand and be very smug all morning"] }
+          ] },
+        { you: "My toes are painted but I'll wear sneakers.",
+          them: ["You can, totally", "But you painted them for a reason, right?", "Nobody at the markets is looking at your feet. And if they are, they're thinking 'nice colour'"],
+          replies: [
+            { you: "Okay. Sandals it is.", them: ["😊 See you at 8"] },
+            { you: "Sneakers this time. Sandals next time.", them: ["Deal. Next time"],
+              after: "You wear the sneakers. The next Saturday you wear the sandals, and he notices before you say anything." }
+          ] },
+        { you: "Can I borrow your thongs? Mine are too blokey.", them: ["Mine are worse, they're from a servo", "Kmart after brekkie? We'll find you some cute ones"] }
+      ],
+      after: "At the markets the lady at the plant stall looks down and says \"ooh, love that colour on you, love.\" You say thanks. You barely even go red.",
+      debrief: "Some of the biggest steps are small ones. Painted toes in public count."
     },
     {
       id: "s7b", title: "Lazy Sunday",
