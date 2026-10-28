@@ -71,6 +71,12 @@ textarea { min-height: 130px; resize: vertical; }
 .write textarea { min-height: 64px; }
 .write + button { margin-top: 4px; }
 .debrief { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
+.gaydar { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
+.gaydar .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.gaydar .pct { font-size: 22px; font-weight: 800; color: var(--accent); }
+.gaydar .track { height: 12px; border-radius: 6px; background: var(--card); overflow: hidden; margin: 8px 0 4px; }
+.gaydar .fill { height: 100%; width: 0; border-radius: 6px; background: var(--rainbow); background-size: 100vw 100%; transition: width 1.2s cubic-bezier(.2,.8,.2,1); }
+@media (prefers-reduced-motion: reduce) { .gaydar .fill { transition: none; } }
 .back { margin-bottom: 12px; }
 nav.tabs { position: fixed; bottom: 0; left: 0; right: 0; z-index: 5; display: flex; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
 nav.tabs button { flex: 1; background: none; border: 0; color: var(--muted); font: inherit; font-size: 13px; padding: 10px 0 12px; cursor: pointer; }
@@ -318,6 +324,7 @@ details summary { cursor: pointer; color: var(--muted); }
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const wait = (ms) => new Promise((r) => setTimeout(r, reduceMotion ? 0 : ms));
 
+  const gaydarLabel = (v) => v >= 100 ? "Knows for sure. You said it." : v >= 95 ? "No doubt at all" : v >= 85 ? "Basically certain" : v >= 65 ? "Pretty sure" : v >= 35 ? "Starting to wonder" : "Hasn't clocked it";
   function runConversation(view, convo, kind, header) {
     const run = Symbol(); view._run = run;
     view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
@@ -353,9 +360,11 @@ details summary { cursor: pointer; color: var(--muted); }
     }
 
     let endNote = convo.after; // a branch can carry its own closing note
+    let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
     async function play(node) {
       choices.innerHTML = "";
       if (node !== convo && node.after) endNote = node.after;
+      if (node !== convo && node.gaydar != null) gaydar = node.gaydar;
       for (const m of node.them || []) {
         const msg = typeof m === "string" ? { text: m } : m;
         if (msg.note) { // narration in in-person scenes: what she does, not what she says
@@ -384,6 +393,12 @@ details summary { cursor: pointer; color: var(--muted); }
       } else {
         markDone(kind, convo.id);
         if (endNote) add("note", fill(endNote));
+        if (gaydar != null) {
+          const who = fill(convo.gaydarWho || convo.contact);
+          choices.insertAdjacentHTML("beforeend", `<div class="gaydar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${gaydar}" aria-label="How gay ${esc(who)} thinks you are"><div class="top"><b>How gay ${esc(who)} thinks you are</b><span class="pct">${gaydar}%</span></div><div class="track"><div class="fill"></div></div><span class="muted">${esc(gaydarLabel(gaydar))}</span></div>`);
+          const f = choices.querySelector(".gaydar .fill");
+          requestAnimationFrame(() => requestAnimationFrame(() => { f.style.width = gaydar + "%"; }));
+        }
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(convo.debrief)}</div>`);
         choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button></div>');
         choices.querySelector(".again").addEventListener("click", () => runConversation(view, convo, kind, header));
