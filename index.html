@@ -514,6 +514,12 @@ details summary { cursor: pointer; color: var(--muted); }
     const list = $("#storyList"); list.hidden = false;
     const d = storyDone();
     let part = "";
+    if (!ROUTES.length) {
+      // index.html and content.js out of step (an old content.js from cache). Reload fetches both fresh.
+      list.innerHTML = `<p class="muted" style="margin-top:0">The story didn't load properly. Reload to get the latest version.</p><button class="btn">Reload</button>`;
+      list.querySelector(".btn").addEventListener("click", () => location.reload());
+      return;
+    }
     list.innerHTML = `<p class="muted" style="margin-top:0">Pick who you want to try dating. Each story takes it slowly, one date at a time, and every girl's ends the same way: she works out you're gay before you do and goes off with a guy who isn't. Then there's ${esc(bf())}.</p><ul class="list">` +
       ROUTES.map((r) => {
         const ch = routeChapters(r.id); const read = ch.filter((i) => d[C.story[i].id]).length;

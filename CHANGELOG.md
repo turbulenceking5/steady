@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-10-28
+- Story: confronting her new boyfriend now falls apart because you can't stop being camp, not because you're weaker than him. You go to threaten him and end up popping a hip, calling him babe, flicking your hair, asking about his shirt fabric or giving him a skincare routine.
+- Fixed: the Story tab could show the intro but no girls to pick, when the phone had an old copy of the story cached. The app now always checks for the latest files, and shows a Reload button if they're ever out of step.
 - Story is now a list of girls to choose from. Each one's story goes slowly over four dates: you get a bit gayer every time, in how you dress and how you talk, and she fancies you a bit less, until she leaves you for a straight guy. 30 new chapters.
 - Story: in every girl's last chapter you can try to confront her new boyfriend. It does not go well for you.
 - Story: Archie works it out herself and leaves you for Josh. Nicole never asks, she just makes you one of the girls. You don't come out to either of them.
