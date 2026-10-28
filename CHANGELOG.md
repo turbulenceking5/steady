@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story: the break-ups and end chapters tease you more. The girls laugh about not fancying you any more and tell you to date guys: Hannah says to get on the guy apps, Mia's boyfriend has a work friend for you, Tayla says Mitch would give you his number before he'd give her back, Georgie says to ask the waiter out, Lucy's friend has already picked out a doctor, and Kirra goes to get the name of the guy at the bar.
 - Story: every chapter rewritten to sound like real people texting and talking: shorter, messier messages, fewer punchlines, no speeches, and plain "worth remembering" notes. Each girl now lets you down in her own way (Zoe compares you to Brooke, Lucy kisses you on the cheek like she does Kayla, Olivia sips your drink like you're Dani, Georgie says it's like hanging out with her housemate). {name} and {bf} text like an actual couple.
 - Fixed: lines that mentioned polish, mascara or outfits you didn't pick, and end notes that only made sense on one branch.
 - Story: more reply options across every girl's route (awkward, defensive, snarky, camp and honest), with new branches where choices were thin, and tighter, more natural texting.

@@ -327,7 +327,7 @@ window.CONTENT = {
               them: [
                 "Exactly. I'm your best friend.",
                 "You want me to do your eyebrows and tell you if your shirt's see-through. Which I love. But I want someone who wants to kiss me.",
-                "When you kiss me it's like kissing Priyanka. It's nice. That's it, it's just nice."
+                "When you kiss me it's like kissing Priyanka. It's nice. That's it, it's just nice.", "And don't think I didn't see you checking out Josh's arms at the party. You were worse than me. Maybe go find your own Josh, {name}. I'm serious."
               ] },
             { you: "Is he better than me? Just tell me what he's got that I don't.",
               them: [
@@ -775,7 +775,7 @@ window.CONTENT = {
             "its not how it looks. it looked fine. better than mine tbh",
             "its that you've had more on every time and you've been less into me every time",
             "tonight felt like drinks with jess",
-            "i dont want to be swapping lip tints with my boyfriend",
+            "i dont want to be swapping lip tints with my boyfriend", "like youd be a great boyfriend honestly. for a guy", "lol sorry. but you know i'm right",
             "and ive done this before. not doing it again"
           ],
           replies: [
@@ -1210,7 +1210,7 @@ window.CONTENT = {
             { note: "Hannah stares at you for a second." },
             "Thanks. He is.",
             "Don't take this the wrong way but I'm glad we stopped at three dates.",
-            "You're just not my type. I don't know what I was doing. Like. Brodie's my type.",
+            "You're just not my type. I don't know what I was doing. Like. Brodie's my type.", "Pretty sure he's your type too. You've looked at his arms twice since you got here.", "Get on the apps, {name}. The guy ones. You'd clean up.",
             "Anyway you look good.",
             { note: "Brodie has wandered off to watch the game on the TV above the bar." }
           ],
@@ -1665,7 +1665,7 @@ window.CONTENT = {
           them: [
             "you didn't beat me lol. you stopped to take a photo of the windmill",
             "it was the lipstick. sorry",
-            "you looked really pretty. like actually pretty. i dont want my boyfriend to be pretty",
+            "you looked really pretty. like actually pretty. i dont want my boyfriend to be pretty", "some guy is going to be so into that though", "not me. a guy. sorry lol",
             "and you made that guy from the kids party get your ball out of the water"
           ],
           replies: [
@@ -1766,7 +1766,7 @@ window.CONTENT = {
                     "{name} thats so sweet",
                     "but you said it so quietly lol. and youre holding your socks",
                     "i cant. sorry. i just dont think of you like that anymore. at all",
-                    "like if you tried to kiss me i think id laugh. not in a mean way. sorry",
+                    "like if you tried to kiss me i think id laugh. not in a mean way. sorry", "lachlan says you should come to his work drinks. theres a guy called nico who'd love you", "sorry. im just saying. he really would",
                     { note: "She gives your arm a little rub." }
                   ],
                   replies: [
@@ -1924,7 +1924,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
           ],
           replies: [
             { you: "Okay but which one did she think was the date?", them: ["you. obviously", "she said you looked like my bridesmaid", "night {name}"] },
-            { you: "Sorry. That's really embarrassing for you.", them: ["it was", "i dont know. i just dont fancy you anymore {name}", "sorry. you asked"] }
+            { you: "Sorry. That's really embarrassing for you.", them: ["it was", "i dont know. i just dont fancy you anymore {name}", "you'd have had more luck with the waiter lol", "he was looking back btw. maddy saw", "sorry. you asked"] }
           ] },
         { you: "Did you hate it? Be honest. You can say it. I'd rather know.",
           them: [
@@ -3125,7 +3125,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
                 "\"Here.\" He holds out his Gatorade. \"You look like you need this more than me.\"",
                 { note: "You have a sip. Your hand shakes when you give it back, and he sees." },
                 { note: "Tayla's come over. She heard." },
-                "Did you just ask Mitch if you could have me back?",
+                "Did you just ask Mitch if you could have me back?", "Oh my god. He's not giving me back, {name}. If anything he'd give you his number.", "Honestly you two would be cute. Don't tell him I said that.",
                 "{name}. No. Oh my god.",
                 "That's actually really cute though.",
                 { note: "She fixes your sunglasses on top of your head for you, then goes back to Mitch." }
@@ -3450,7 +3450,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
               them: [
                 "ok",
                 "thank you",
-                "the last three dates felt like hanging out with my housemate tbh. i dont want to kiss my housemate",
+                "the last three dates felt like hanging out with my housemate tbh. i dont want to kiss my housemate", "you'd kiss the waiter though", "8 times. i counted. ask him out",
                 "still belay me tuesday?"
               ]
             },
@@ -4024,7 +4024,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
                         "can you work it out before date five",
                         "bc im not doing another coffee with kayla watching",
                         "and honestly even if youre straight. idk",
-                        "i dont really want to kiss you anymore. sorry. thats awful"
+                        "i dont really want to kiss you anymore. sorry. thats awful", "kayla says you need to be on the guy apps", "she's already picked out a doctor for you lol. hes on my ward"
                       ]
                     }
                   ]
@@ -4897,7 +4897,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
                   them: [
                     "they were neater than mine tbh",
                     "ngl i looked at your feet more than i looked at you today",
-                    "and youre fun. but youre not really my type anymore",
+                    "and youre fun. but youre not really my type anymore", "mel says she's found you a boyfriend already", "her cousin. he does his toes too. you'd match lol",
                     "youre more like who id bring to get my nails done with"
                   ]
                 },
@@ -5107,7 +5107,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
                 "Did you just tell Riley you're going to win me back?",
                 "You said sorry to him. He said good luck to you.",
                 "No. I'm not leaving him.",
-                "And you're not really my type anymore. I like that he's a bit feral. You moisturise more than me."
+                "And you're not really my type anymore. I like that he's a bit feral. You moisturise more than me.", "Riley's got a friend who moisturises. I'll set you up. I'm only half joking."
               ],
               after: "Jade, to Mel: \"{name} told riley he wants me back\" Mel: \"WHAT\" Jade: \"riley wished him luck\" Mel: \"of course he did\""
             },
@@ -5698,7 +5698,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
               you: "Is that so bad? Girls' night is fun.",
               them: [
                 "Girls' night is the best.",
-                "I just already have girls. I wanted a boyfriend.",
+                "I just already have girls. I wanted a boyfriend.", "You should get one too. A boyfriend. Don't look at me like that, you'd be so cute with one.",
                 "Split a tiramisu?"
               ]
             },
@@ -5813,7 +5813,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
                 "You said man to man in that voice. You're holding your drink with both hands.",
                 "No. Oh my god. No.",
                 { note: "She takes your drink off you and has a sip, the way she'd take one off Dani, and gives it back." },
-                "Sorry. You're just not my type anymore. You'd come to brunch with me and my sister and have a better time than me."
+                "Sorry. You're just not my type anymore. You'd come to brunch with me and my sister and have a better time than me.", "Bring a guy next time. My sister's already got a list for you."
               ],
               after: "Olivia, to her sister, from the Uber: \"saw carbonara guy\" Sister: \"and??\" Olivia: \"he asked james if he could take me out again. man to man\" Sister: \"what did james say\" Olivia: \"love that for you. then he laughed for a whole block\""
             },
@@ -6464,7 +6464,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
             "You hug me and pat my back. Like twice. That's how Brooke hugs me."
           ],
           replies: [
-            { you: "I hug you fine!", them: ["You hug me like Brooke does. And you kiss me on the forehead, {name}. Every time."] },
+            { you: "I hug you fine!", them: ["You hug me like Brooke does. And you kiss me on the forehead, {name}. Every time.", "Brooke says you need a boyfriend, not a girlfriend. She's said it like four times. She's not wrong."] },
             { you: "(Laugh.) He's not wrong, is he.", gaydar: 98, them: ["No. He's not.", { note: "She laughs too. It's a wet laugh." }, "Six weeks. Oh my god. Brooke's going to be unbearable."] }
           ] },
         { you: "Can we still be friends?",
@@ -7234,7 +7234,7 @@ after: "Ella, to her sister: \"i asked if he wears dresses. like as a joke\" \"h
                 "\"You went outside to win me back and he's offering you a water.\"",
                 "\"You said it so quietly, {name}. You looked like you were about to cry. It was very cute.\"",
                 { note: "She fixes your fringe for you, the way she does Kirra's before photos." },
-                "\"No, {name}. Come inside. Kirra's buying shots and she wants you in the photo.\""
+                "\"No, {name}. Come inside. Kirra's buying shots and she wants you in the photo.\"", "\"And the guy at the bar in the white shirt has looked at you three times. Kirra's already gone to get his name.\""
               ] },
             { you: "Your hands are very... professional. Sorry. Never mind. Bye.", gaydar: 100, them: ["\"Thanks, I'm a physio,\" he says, smirking. \"You're not the first guy to notice.\"", { note: "You go red so fast you feel it in your ears. Dani appears, takes your arm and walks you back inside without a word. She's shaking with silent laughter." }] }
           ] },
