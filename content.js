@@ -74,7 +74,7 @@ window.CONTENT = {
     },
     {
       id: "sam-work",
-      contact: "Sam", role: "coworker", avatar: "S",
+      contact: "Sam", role: "coworker", avatar: "S", // she
       them: ["Hey, for the end-of-year thing, partners are invited", "Are you bringing your boyfriend or flying solo? Need numbers for catering"],
       replies: [
         { you: "Solo this year!", them: ["No worries, put you down as one 👍"] },
@@ -84,8 +84,8 @@ window.CONTENT = {
     },
     {
       id: "dan-gym",
-      contact: "Dan", role: "mate", avatar: "D",
-      them: ["Mate, the new guy at the gym asked if you were single 👀", "Said he thought you were cute"],
+      contact: "Dani", role: "gym friend", avatar: "D",
+      them: ["Babe, the new guy at the gym asked if you were single 👀", "Said he thought you were cute"],
       replies: [
         { you: "Wait what 😳",
           them: ["Hahaha yep. Tall one, does the 6am classes", "Want me to tell him you said hi?"],
@@ -119,12 +119,12 @@ window.CONTENT = {
     },
     {
       id: "chris-flat",
-      contact: "Chris", role: "flatmate", avatar: "C",
+      contact: "Chloe", role: "flatmate", avatar: "C",
       them: ["Heads up, I'm having a few people over Friday", "Feel free to invite whoever, your guy included if you like"],
       replies: [
         { you: "Cheers, I'll ask him.", them: ["Sweet. I'll grab extra chips"] },
         { you: "Not sure there's a 'guy' yet haha", them: ["Ha fair. Well, the offer's there whenever"] },
-        { you: "Thanks for being chill about it.", them: ["Mate, of course. It's your home too"] }
+        { you: "Thanks for being chill about it.", them: ["Hun, of course. It's your home too"] }
       ]
     },
     {
@@ -144,18 +144,19 @@ window.CONTENT = {
     {
       id: "rachel-ex",
       contact: "Rachel", role: "ex", avatar: "R",
-      them: ["Hey stranger! Long time 😊", "Saw your news. I just wanted to say I'm really happy for you. Genuinely."],
+      // Korean, English is her second language: keep it natural and warm, never a caricature.
+      them: ["Hi {name}! Long time no see 😊", "I hear your news from Jess. I want to say I am really happy for you. Really really."],
       replies: [
         { you: "Thanks Rach, that means a lot coming from you.",
-          them: ["Of course. You were always good to me, and you deserve to be happy too 💛"] },
+          them: ["Of course! You always so kind to me. You deserve happy too 💛"] },
         { you: "I'm sorry if things were confusing back then.",
-          them: ["Don't be. We were young, and you were never unkind to me.", "I'm just glad you get to be you now."],
+          them: ["Aigoo, don't say sorry. We were young, and you never was unkind to me.", "I am just glad now you can be yourself."],
           replies: [
-            { you: "Thank you. Seriously.", them: ["Anytime. Coffee next time you're on the northside?"] },
-            { you: "Did you ever guess?", them: ["Maybe a little 😅 But that was yours to say, not mine to guess."] }
+            { you: "Thank you. Seriously.", them: ["Anytime! Next time you come northside we get coffee ok?"] },
+            { you: "Did you ever guess?", them: ["Maybe little bit 😅 But it is your story to tell, not mine to guess."] }
           ] },
         { you: "Haha yeah, surprise 😅",
-          them: ["Honestly? Not a massive surprise 😂", "Love you heaps. Go be happy."] }
+          them: ["Honestly? Not so big surprise 😂", "대박, I'm so proud of you. Go be happy!"] }
       ]
     },
     {
@@ -290,7 +291,7 @@ window.CONTENT = {
         { you: "Thank you. I'm doing better than I have in years.", them: ["I can hear it. I'm glad.", "Maybe one day we can be proper friends. When it stings less."] },
         { you: "I'm okay. I miss you as a friend.", them: ["Me too, a bit. Give it time. I'm not going anywhere for good."] }
       ],
-      after: "A month later, Dan sets you up on a dating app. You've never felt this nervous about pressing 'like'."
+      after: "A month later, Dani sets you up on a dating app. You've never felt this nervous about pressing 'like'."
     },
     {
       id: "s1", title: "Hey there", part: "Part 2: {bf}",
