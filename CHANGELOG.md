@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-28
+- Story: three new tickling chapters with a choice. Josh at Archie's work pool party, Theo at Hayley's birthday (Mia) and Sean in Mel's hot tub (Jade) grab your foot, and you choose to resist or give in to the giggles. Keeping a straight face keeps her interested; giggling, begging him to stop or just letting him keep going makes her fancy you less. The tickle chapters with Tayla, Olivia, Zoe and Sophie now work the same way.
+- Story: a drag-show ending for every girl, Archie included. Months later she's at a drag night with her new boyfriend and her friends, and the queen on stage is you, Lola Lilac.
+- Fixed: Jess and {bf} no longer lock again when a route you'd finished gets new chapters.
 - Fixed: the back button in a Story chapter did nothing after you picked an outfit or tapped "Try different replies". It works again, and your phone's back button now steps back to the list of chapters and then the list of girls instead of closing the app.
 - Story: people talk less Australian. No more "g'day mate", arvo, thongs, footy, snags or sunnies; the guys say "man" and "buddy". It's still set in Brisbane.
 - Story: five new barefoot chapters, where a guy who wants her tickles your feet in front of the girls: a pool day at Steph's (Tayla), a boat day with no shoes allowed (Olivia), trivia at Brooke's shoes-off house (Zoe), game night at Kirra's, who films it and posts it (Sophie), and pedicure night at Bianca's, where the guy is Jake, the one she's setting you up with.

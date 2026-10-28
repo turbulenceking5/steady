@@ -522,7 +522,8 @@ details summary { cursor: pointer; color: var(--muted); }
   const ROUTES = C.routes || [];
   const routeChapters = (rid) => C.story.map((c, i) => i).filter((i) => C.story[i].route === rid);
   const routeFinished = (rid) => { const d = storyDone(); const ch = routeChapters(rid); return ch.length > 0 && ch.every((i) => d[C.story[i].id]); };
-  const routeOpen = (r) => !r.lock || ROUTES.some((o) => !o.lock && routeFinished(o.id));
+  // Already started stays open, so adding chapters to a finished route never re-locks Jess or {bf}.
+  const routeOpen = (r) => !r.lock || routeChapters(r.id).some((i) => storyDone()[C.story[i].id]) || ROUTES.some((o) => !o.lock && routeFinished(o.id));
   function chapterState(i) {
     const c = C.story[i];
     if (storyDone()[c.id]) return "open";

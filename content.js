@@ -612,6 +612,132 @@ window.CONTENT = {
       after: "You take the gloss off with toilet paper in the bathroom. Your nails you leave. You look at them a lot over the weekend.",
       debrief: "Wanting to look a certain way before you can explain why is really common. Someone being uncomfortable with it doesn't make it wrong, and you don't owe anyone a reason yet."
     },
+{
+      "id": "archie-feet",
+      "route": "archie",
+      "gaydar": 65,
+      "spark": 40,
+      "gaydarSays": "Josh from logistics had my boyfriend giggling like a schoolgirl in front of my whole office. My BOSS was there.",
+      "title": "Pool party",
+      "contact": "Archie",
+      "irl": true,
+      "intro": "Archie's work summer party at her boss's house. Shoes off by the pool, the boss's rule. You took your sneakers off at the gate and remembered too late that your toes are still lilac from last weekend. Josh from logistics is here. Archie talks about him a lot for someone she says is boring.",
+      "them": [
+        {
+          "note": "Archie looks at your feet on the pool tiles. She doesn't say anything. She takes your hand, then lets it go when her boss walks past."
+        },
+        {
+          "note": "Josh comes over with two beers. Polo shirt, board shorts, big bare feet. He hands one to Archie and one to you."
+        },
+        "\"So you're the famous {name}.\" He looks down. \"Nice colour, buddy. Arch, you never said he gets pedicures.\"",
+        "It's not a pedicure. He just...",
+        {
+          "note": "You sit on the edge of a sun lounger. Josh drops onto the end of it and grabs your foot before you can move it."
+        },
+        "\"Hold still, I want to see if it's a gel.\" His thumb goes right down the middle of your sole."
+      ],
+      "replies": [
+        {
+          "you": "(Bite the inside of your cheek. Do not laugh. Do not laugh.)",
+          "them": [
+            {
+              "note": "You stare at the pool. Your face is doing something weird. Josh looks up at you and grins."
+            },
+            "\"Oh, he's fighting it. Arch, look, he's fighting it.\"",
+            {
+              "note": "He wiggles his fingers under your toes. Your whole leg shakes. Two of Archie's coworkers have stopped talking to watch."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it in. Pull your foot back calmly.) It's a gel. Can I have my foot back?",
+              "spark": 42,
+              "them": [
+                "\"Ha. Yeah, alright,\" Josh says, and lets go. \"Tough guy.\"",
+                {
+                  "note": "Archie laughs, a bit relieved, and sits down next to you. She puts her hand on your knee. It stays there for a whole minute."
+                },
+                "Okay, that was impressive. I'd have screamed.",
+                {
+                  "note": "Josh goes to get another beer. Archie watches him go."
+                }
+              ],
+              "after": "Archie, to her work friend Priyanka, in the bathroom: \"he didn't even flinch\" Priyanka: \"his toes were purple arch\" Archie: \"lilac\" Priyanka: \"you know what i mean\" Archie: \"...josh is funny though\""
+            },
+            {
+              "you": "(Crack. A giggle comes out of your nose.)",
+              "spark": 28,
+              "them": [
+                {
+                  "note": "It comes out as a snort, then a high little giggle, then you can't stop. You're curled up on the lounger, laughing into your knees, while Josh keeps going."
+                },
+                "\"There it is!\" Josh says. \"Arch, he giggles. Your boyfriend giggles.\"",
+                "\"Stop,\" you squeak. \"Stop, stop, okay!\"",
+                {
+                  "note": "He stops. Archie's laughing, but she's not looking at you. She's looking at Josh, shaking her head, like he's the one who did something cute."
+                },
+                {
+                  "note": "Her boss says \"oh, to be young\" and walks off."
+                }
+              ],
+              "after": "Archie, in the car: \"you giggled in front of my boss\" \"you GIGGLED, {name}\" Then she goes quiet and looks out the window the rest of the way home."
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're already giggling.)",
+          "them": [
+            {
+              "note": "You don't even try. The second his thumb moves you're giggling, high and helpless, grabbing the cushion, kicking your free foot."
+            },
+            "\"Oh my god,\" Josh says. \"That was barely anything!\"",
+            {
+              "note": "Everyone near the pool turns round. Archie's boss is holding a plate of prawns, staring."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Josh! Please! Please stop!",
+              "spark": 22,
+              "them": [
+                {
+                  "note": "He stops and lets go and holds his hands up."
+                },
+                "\"Begging already. Arch, he's begging.\"",
+                {
+                  "note": "You're red to your ears, hugging your knees, toes curled tight against the cushion. Archie laughs once and then sort of stops."
+                },
+                "Can you sit up properly. Everyone's looking.",
+                {
+                  "note": "She moves to the lounger next to Josh's."
+                }
+              ],
+              "after": "Archie, texting Priyanka that night: \"he giggled like a little girl in front of my whole work\" \"josh made him beg\" \"i don't know why i'm annoyed. i'm annoyed\""
+            },
+            {
+              "you": "(Let him keep going. You can't stop laughing anyway.)",
+              "spark": 12,
+              "gaydar": 72,
+              "them": [
+                {
+                  "note": "You don't pull away. You're flat on your back on the lounger, shrieking with laughter, tears in your eyes, toes wriggling in his hand. It goes on for ages."
+                },
+                "\"He's not even trying to get away,\" someone says.",
+                "\"Arch,\" Josh says, still going, \"is he always this ticklish, or just for me?\"",
+                {
+                  "note": "You manage \"stop\" eventually. He stops right away. You lie there gasping, hair stuck to your forehead."
+                },
+                {
+                  "note": "Archie isn't laughing. She's holding Josh's beer while he does it. She keeps holding it after."
+                }
+              ],
+              "after": "Archie, to Priyanka, the next morning: \"he just lay there and let josh tickle him. for like five minutes\" Priyanka: \"he looked like he was having the time of his life tbh\" Archie: \"yeah. that's the problem\""
+            }
+          ]
+        }
+      ],
+      "debrief": "Being ticklish isn't a character flaw, and neither is laughing hard in front of people. Whatever she felt watching it was about her and Josh, not about you."
+    },
     {
       id: "c3", route: "archie", gaydar: 99, spark: 0, gaydarSays: "Left him for Josh. He asked where Josh got his jacket.", title: "The other guy", contact: "Archie", irl: true,
       intro: "Archie texted you this morning: \"can you come over tonight. we need to talk.\" Her place in Paddington. There's a men's denim jacket on the back of her kitchen chair. It isn't yours. She's put the kettle on twice without making anything.",
@@ -1335,6 +1461,119 @@ window.CONTENT = {
       ],
       after: "Mia, to Sam, from the Uber home: \"had fun. he bought earrings. for himself. gold hoops.\" Sam: \"ok?\" Mia: \"they looked really good for him\" Sam: \"ok good?\" Mia: \"i don't know how i feel about it\" Sam: \"he's my coworker not my problem lol\""
     },
+{
+      "id": "mia-feet",
+      "route": "mia",
+      "gaydar": 65,
+      "spark": 40,
+      "gaydarSays": "Theo found his feet and he made a noise like a kettle. In front of everyone. Sorry. It was cute. It was too cute.",
+      "title": "Socks off",
+      "contact": "Mia",
+      "irl": true,
+      "intro": "Mia's friend Hayley's birthday at her flat in West End. Socks off at the door, new floorboards. You've got clear polish on your toes and a pale pink on the big ones, because you were trying something. Hayley's flatmate Theo is here. Mia told you, very quietly, that he asked her out last year and she said maybe.",
+      "them": [
+        {
+          "note": "You line your shoes up at the door with everyone else's. Mia looks at your big toes and says \"oh\" in her small voice. Then \"sorry. they're nice.\""
+        },
+        {
+          "note": "Everyone sits on the floor round the coffee table for cards. Theo sits across from you, stretches his legs out, and finds your foot under the table with his hand."
+        },
+        "\"Who's got the pink toes?\" He holds your ankle up so everyone can see. \"Mia, is this yours?\"",
+        "No. Sorry. That's... that's {name}.",
+        "\"Oh, it's his.\" He grins and doesn't let go. \"Let's see how tough he is.\" He drags his nails down your sole."
+      ],
+      "replies": [
+        {
+          "you": "(Keep your face completely still. Look at your cards.)",
+          "them": [
+            {
+              "note": "You stare very hard at a seven of hearts. Your foot twitches. Theo leans in and goes for the spot right under your toes."
+            },
+            "\"He's shaking,\" Hayley says. \"Look at his face.\"",
+            {
+              "note": "Mia's peeking at you over her cards, biting her lip."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. Swallow it.) Your go, Theo.",
+              "spark": 45,
+              "them": [
+                "\"Huh,\" Theo says, and lets go. \"Not ticklish. Boring.\"",
+                {
+                  "note": "Mia lets out a breath and shuffles a little closer to you. Her knee's touching yours."
+                },
+                "Sorry. I thought you were going to lose it.",
+                "\"I don't lose it,\" you say. Your foot's still tingling."
+              ],
+              "after": "Mia, to Sam, that night: \"theo tried to tickle him\" Sam: \"and?\" Mia: \"he didn't even laugh. he just said 'your go'\" Mia: \"sorry. that was kind of hot\""
+            },
+            {
+              "you": "(You can't. You squeak.)",
+              "spark": 30,
+              "them": [
+                {
+                  "note": "A noise comes out of you like a kettle. Then the giggles. Cards go everywhere."
+                },
+                "\"There we go!\" Theo says, delighted, and keeps going. \"Mia, he squeaks!\"",
+                "\"Stop! Stop, okay, okay!\"",
+                {
+                  "note": "He stops. You're on your back on the floorboards. Hayley's crying laughing. Mia's laughing too, with her hand over her mouth, and she's laughing at something Theo whispers to her."
+                }
+              ],
+              "after": "Mia, to Sam: \"he made a noise like a kettle\" Sam: \"lol\" Mia: \"sorry i shouldn't laugh\" Mia: \"theo walked me to my car after\""
+            }
+          ]
+        },
+        {
+          "you": "(Give up straight away. Giggle.)",
+          "them": [
+            {
+              "note": "You don't stand a chance. You're giggling before he's even properly started, trying to wriggle away across the floorboards, and he just pulls you back by the ankle."
+            },
+            "\"Oh, he's SO ticklish,\" Hayley says.",
+            {
+              "note": "Theo grabs your other foot too. Now he's got both."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Mia! Help! Tell him to stop!",
+              "spark": 20,
+              "them": [
+                "Um. Theo. Sorry. You should... stop?",
+                {
+                  "note": "Theo stops, because Mia asked. He winks at her. \"Anything for you.\""
+                },
+                {
+                  "note": "You sit up, pink in the face, tucking both feet under you. Mia goes back to her cards. She doesn't sit closer to you this time."
+                }
+              ],
+              "after": "Mia, to Sam: \"he yelled for me to save him\" Mia: \"from being tickled\" Mia: \"sorry. i don't know how to feel\""
+            },
+            {
+              "you": "(Lie back and laugh. Let him.)",
+              "spark": 10,
+              "gaydar": 72,
+              "them": [
+                {
+                  "note": "You just lie there on Hayley's floorboards and giggle and squeal while Theo tickles both your feet. Your toes curl and uncurl. Someone puts on music like it's a show."
+                },
+                "\"He's not even fighting,\" Hayley says.",
+                {
+                  "note": "You say \"okay stop\" at last, and he stops straight away. You lie there, out of breath, grinning at the ceiling."
+                },
+                {
+                  "note": "When you sit up, Mia's moved. She's sitting next to Theo now, laughing at something on his phone."
+                }
+              ],
+              "after": "Mia, to Sam: \"he just let theo do it. for ages. he was LOVING it\" Sam: \"ha\" Mia: \"sorry. i think he likes theo more than i do\""
+            }
+          ]
+        }
+      ],
+      "debrief": "Laughing till you can't breathe in front of a room isn't you failing at something. It's just a body being a body. Nobody there will remember it the way you do."
+    },
     {
       id: "c6", route: "mia", gaydar: 85, gaydarSays: "Asked if my top was from Zara. Mid-putt. MID. PUTT.", title: "Mini golf", contact: "Mia",
       intro: "Third date. Mini golf at South Bank. You went further this time: wide-leg trousers, a cropped cardigan, the gold hoops from Eat Street, a proper rosy lipstick. You felt good walking out the door. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes.",
@@ -1633,7 +1872,7 @@ window.CONTENT = {
         { you: "I'm fine in the water. I'm a strong swimmer.",
           them: [
             { note: "You go in. The first wave knocks you flat and you come up coughing with your shirt over your face." },
-            "\"Gotcha,\" Hayden says, and pulls you up by one arm. He keeps hold of you until the next set's gone through, like you're a kid at nippers. \"Steady, little fella.\"",
+            "\"Gotcha,\" Hayden says, and pulls you up by one arm. He keeps hold of you until the next set's gone through, like you're a kid at swim lessons. \"Steady, little guy.\"",
             { note: "Back on the sand, Ella's taking photos. Of Hayden." },
             "You did so well, babe. Hayden saved you.",
             "\"I didn't need saving.\"",
@@ -1858,7 +2097,7 @@ window.CONTENT = {
           ],
           "replies": [
             {
-              "you": "Stop! Stop stop stop. Jordan. STOP.",
+              "you": "Stop! Stop stop stop. Jordan. STOP.", "spark": 7,
               "them": [
                 {
                   "note": "He lets go straight away and holds both hands up."
@@ -1875,7 +2114,7 @@ window.CONTENT = {
               ]
             },
             {
-              "you": "(Laughing) Okay, okay, I give up, you win!",
+              "you": "(Laughing) Okay, okay, I give up, you win!", "spark": 2,
               "gaydar": 95,
               "them": [
                 "\"I win,\" Jordan says, and lets go. \"Didn't even have to try.\"",
@@ -1890,7 +2129,7 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "I'm not ticklish. Go for it.",
+          "you": "I'm not ticklish. Go for it.", "spark": 5,
           "them": [
             "\"Yeah?\" Jordan says. He holds your ankle in one hand and wiggles his fingers in front of your toes.",
             {
@@ -1909,7 +2148,7 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "(Tuck both feet under your towel.) They're not for touching.",
+          "you": "(Tuck both feet under your towel.) They're not for touching.", "spark": 12,
           "gaydar": 92,
           "them": [
             "\"Not for touching,\" Jordan says. \"Did you hear that, Tay? His feet have rules.\"",
@@ -2448,6 +2687,121 @@ window.CONTENT = {
       ],
       after: "Jade, to Mel: \"he has a nail lady.\" Mel: \"what\" Jade: \"for his TOES. he does a clear coat. he's thinking about coral.\" Mel: \"jade.\" Jade: \"don't.\""
     },
+{
+      "id": "jade-feet",
+      "route": "jade",
+      "gaydar": 70,
+      "spark": 35,
+      "gaydarSays": "I notice feet. Sean noticed your feet. Then Sean TICKLED your feet and you laughed like a squeaky toy.",
+      "title": "Hot tub",
+      "contact": "Jade",
+      "irl": true,
+      "intro": "Mel's birthday. Mel has a hot tub, and that's the whole party. You came in slides with your toes painted a soft coral, your first real colour, and you had to take the slides off at the deck. Mel's brother Sean is here. He's been trying with Jade for years, according to Mel, who tells everyone everything.",
+      "them": [
+        {
+          "note": "You sit on the edge of the hot tub with your feet in the water. Jade looks at your toes under the water for a long time."
+        },
+        "coral. ok. that's new",
+        {
+          "note": "Sean's sitting on the edge across from you. He pulls your foot out of the water and props it on his knee."
+        },
+        "\"Coral,\" he says. \"Jade, he's matching you.\"",
+        "he is not matching me",
+        "\"He kind of is.\" He runs one finger right down the arch of your wet foot."
+      ],
+      "replies": [
+        {
+          "you": "(Tense up. Don't give him anything.)",
+          "them": [
+            {
+              "note": "You grip the edge of the tub. Your jaw's tight. Sean grins and goes for under your toes, slowly."
+            },
+            "\"Ooh, he's trying so hard,\" Mel says.",
+            {
+              "note": "Jade's watching your face, half smiling."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it.) You done?",
+              "spark": 40,
+              "them": [
+                "\"Huh,\" Sean says, and drops your foot back in the water. \"Thought you'd be a screamer.\"",
+                {
+                  "note": "Jade slides along the edge until she's right next to you, shoulder to shoulder."
+                },
+                "ok i'm a bit impressed",
+                "\"Don't be,\" you say. \"I nearly died.\""
+              ],
+              "after": "Jade, to Mel, after: \"he didn't even laugh\" Mel: \"sean's devastated\" Jade: \"good\" Jade: \"the coral though\" Mel: \"jade.\" Jade: \"i know\""
+            },
+            {
+              "you": "(Lose it. Laugh so hard you slip into the water.)",
+              "spark": 22,
+              "them": [
+                {
+                  "note": "You burst out laughing, try to pull away, and slide right off the edge into the hot tub with a splash. Sean's still holding your ankle."
+                },
+                "\"Man overboard!\" Sean says, and keeps tickling your foot above the water.",
+                "\"OKAY. Stop! I give up!\"",
+                {
+                  "note": "He lets go. You come up spluttering, hair flat, giggling. Mel's filming. Jade's laughing so hard she's holding onto Sean's arm."
+                }
+              ],
+              "after": "Mel, to the group chat: \"[video] sean made jade's date laugh so hard he fell in the hot tub\" Jade: \"stop posting it\" Mel: \"you held sean's arm\" Jade: \"i was SLIPPING\""
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're laughing already.)",
+          "them": [
+            {
+              "note": "You burst into giggles straight away, high and squeaky, kicking water everywhere. Sean holds on with both hands."
+            },
+            "\"Jade, he's so ticklish it's not even fair,\" Sean says.",
+            {
+              "note": "Jade wipes water off her face. She's laughing, and then she isn't really."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Sean! Please! Pleeease stop!",
+              "spark": 18,
+              "them": [
+                {
+                  "note": "He stops and lets your foot slide back into the water."
+                },
+                "\"Pleeease,\" Sean says, doing your voice. Mel snorts into her drink.",
+                "that was a very long please",
+                {
+                  "note": "Jade moves to the other side of the hot tub, next to Sean, to get the drinks. She stays there."
+                }
+              ],
+              "after": "Jade, to Mel: \"pleeeeease\" Mel: \"i KNOW\" Jade: \"my date said pleeeease to your brother\" Mel: \"sean's very pleased with himself\""
+            },
+            {
+              "you": "(Lie back on the deck and let him keep going.)",
+              "spark": 8,
+              "gaydar": 78,
+              "them": [
+                {
+                  "note": "You lean all the way back on the warm deck and just laugh. Sean tickles under your coral toes and you squeal and wriggle and don't try to stop him at all."
+                },
+                "\"He's loving this,\" Mel says. \"Jade, your date is loving this.\"",
+                {
+                  "note": "You finally gasp \"stop\". He stops right away and pats your foot. \"Good sport.\""
+                },
+                {
+                  "note": "When you sit up, Jade's out of the tub, wrapped in a towel, scrolling her phone. \"cute,\" she says, without looking up."
+                }
+              ],
+              "after": "Jade, to Mel: \"he just LAY THERE\" Mel: \"he was having the best night of anyone\" Jade: \"i'm aware\" Jade: \"sean's actually kind of funny\" Mel: \"oh my god\""
+            }
+          ]
+        }
+      ],
+      "debrief": "You can be ticklish and still be someone worth fancying. Who fancies who after a night like that was never really about your feet."
+    },
     {
       id: "c6f", route: "jade", gaydar: 92, gaydarSays: "Same sandals as me. Neater toes. Next.", title: "Painted toes", contact: "Jade",
       intro: "Third date with Jade. A picnic at New Farm Park on a 33-degree Saturday. You painted your toenails the night before, a glossy coral, and bought tan strappy sandals from the women's section at the department store, the ones with the little gold buckle and a bit of a heel. You checked your feet about forty times on the bus. Jade looked down at them before she looked at your face.",
@@ -2649,7 +3003,7 @@ window.CONTENT = {
           ],
           "replies": [
             {
-              "you": "Marcus! Marcus. Please. Stop!",
+              "you": "Marcus! Marcus. Please. Stop!", "spark": 26,
               "them": [
                 {
                   "note": "He stops and lets go of your ankle."
@@ -2666,7 +3020,7 @@ window.CONTENT = {
               ]
             },
             {
-              "you": "(Laughing too hard to talk, just kick.)",
+              "you": "(Laughing too hard to talk, just kick.)", "spark": 14,
               "gaydar": 75,
               "them": [
                 {
@@ -2683,7 +3037,7 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "(Sit with Olivia and keep your feet flat on the deck.)",
+          "you": "(Sit with Olivia and keep your feet flat on the deck.)", "spark": 28,
           "them": [
             {
               "note": "You sit on the cushions with Olivia and keep your pink toes tucked right in. Marcus drives the boat. Every time you look up, he's looking at Olivia in the mirror."
@@ -3023,7 +3377,7 @@ window.CONTENT = {
       ],
       "replies": [
         {
-          "you": "(Try to answer the question anyway.) It's... it's Dua... Lipa... HA. Stop it!",
+          "you": "(Try to answer the question anyway.) It's... it's Dua... Lipa... HA. Stop it!", "spark": 20,
           "them": [
             {
               "note": "He's running his thumb up and down your sole. You can't get the name out. You're laughing and trying to pull your foot back and he just holds on."
@@ -3043,7 +3397,7 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "(Yank your foot back and sit on it.)",
+          "you": "(Yank your foot back and sit on it.)", "spark": 26,
           "gaydar": 72,
           "them": [
             {
@@ -3063,7 +3417,7 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "Tyler. If you tickle me, I'll scream. I mean it.",
+          "you": "Tyler. If you tickle me, I'll scream. I mean it.", "spark": 14,
           "gaydar": 78,
           "them": [
             "\"Deal,\" Tyler says.",
@@ -3397,7 +3751,7 @@ window.CONTENT = {
           ],
           "replies": [
             {
-              "you": "Okay! Stop! Red! Red!",
+              "you": "Okay! Stop! Red! Red!", "spark": 22,
               "them": [
                 {
                   "note": "He stops and lets go and puts his hands up."
@@ -3412,7 +3766,7 @@ window.CONTENT = {
               ]
             },
             {
-              "you": "(Laughing) Sophie! Help me! Get him off!",
+              "you": "(Laughing) Sophie! Help me! Get him off!", "spark": 12,
               "gaydar": 80,
               "them": [
                 "\"Ethan, stop,\" Sophie says. She's laughing too hard for it to work.",
@@ -3429,7 +3783,7 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "(Keep your feet under the coffee table the whole night.)",
+          "you": "(Keep your feet under the coffee table the whole night.)", "spark": 24,
           "gaydar": 74,
           "them": [
             {
@@ -3993,6 +4347,730 @@ window.CONTENT = {
       ],
       after: "Bianca, in the group chat at 2am: \"best birthday ever. liam made me a table. {name} wore the lilac skirt. jake asked for his number.\" Shay: \"DID HE GIVE IT\" Bianca: \"he said he'd 'think about it'\" Imogen: \"he's thinking about it in heels\" Bianca: \"he's thinking about it SO hard\"",
       debrief: "Some girls you date become the friend who knows you best. That's not losing. That's just finding out where you fit."
+    },
+    {
+      "id": "archie-drag",
+      "route": "archie",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Three years. Three YEARS I dated Lola Lilac and never once saw her death drop.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Archie",
+      "irl": true,
+      "intro": "Six months after Archie and Josh. Josh's friend Ryan drags them to a drag night in the Valley for his birthday. You've been performing for two months as Lola Lilac: a lilac wig down to your waist, a sequin bodysuit, eight-inch heels, lashes like awnings. You're backstage when Ryan's table gets seated right at the front. Archie's in the middle seat.",
+      "them": [
+        {
+          "note": "The host grabs the mic. \"Give it up for the lilac lady herself, MISS LOLA LILAC!\" The curtain opens. You strut out to Kylie."
+        },
+        {
+          "note": "Halfway down the runway you see her. Archie. Front row, a vodka soda halfway to her mouth. She hasn't recognised you yet."
+        },
+        {
+          "note": "Then you do the little hand flick you always did when you were nervous, and her mouth falls open."
+        },
+        "{name}?? Oh my god. OH MY GOD. Josh. Josh, that's {name}.",
+        "\"No way,\" Josh says, squinting up at you. Then he starts laughing so hard he has to put his beer down. \"Dude. Arch, your ex is a woman made of sequins.\"",
+        {
+          "note": "Ryan is screaming. Archie has both hands over her face and is watching through her fingers."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Freeze for one whole bar. Then keep going, cheeks burning.)",
+          "them": [
+            {
+              "note": "Your face goes so hot under the foundation you can feel it. You miss a lyric. The whole room notices you miss a lyric."
+            },
+            "\"Keep going, Lola!\" Ryan yells.",
+            {
+              "note": "You keep going. Every time you turn, Archie's there, staring, and Josh is filming."
+            },
+            "I'm going to need you to explain this. Not now. Never mind. Never explain this."
+          ],
+          "after": "Archie, to Priyanka at 1am: \"i saw {name} tonight\" \"he's a drag queen\" \"his name is LOLA\" \"he did the splits in front of josh\" \"i dated him for three years and never knew he could do the splits\""
+        },
+        {
+          "you": "(Commit. Walk right up to her and lip sync to her face.)",
+          "them": [
+            {
+              "note": "You strut straight to the front row, kneel down in your heels, and sing the whole chorus to Archie, nose to nose."
+            },
+            {
+              "note": "She's bright red. She doesn't know where to look. Josh is wheezing."
+            },
+            "\"Arch, she's serenading you!\" Josh says. \"Your ex is serenading you!\"",
+            {
+              "note": "You finish with a death drop right in front of her table. Her drink tips over. The room goes wild."
+            },
+            "I hate you. I genuinely hate you. That was amazing."
+          ],
+          "after": "Archie, to Priyanka: \"he sang the whole chorus AT me\" \"josh tipped him twenty dollars\" \"my ex. my boyfriend tipped my ex twenty dollars to dance\""
+        },
+        {
+          "you": "(Wave. Small. Mortified.) ...Hi, Arch.",
+          "them": [
+            {
+              "note": "You say it into the mic by accident. The whole bar hears it."
+            },
+            "\"Do we KNOW each other, Lola?\" the host says, delighted.",
+            "\"That's my girlfriend's ex!\" Josh yells. The room screams.",
+            {
+              "note": "Archie sinks so low in her chair she's practically under the table. You do the rest of the number with your whole body blushing."
+            }
+          ],
+          "after": "Archie, to Priyanka: \"he said hi arch into the MICROPHONE\" \"everyone turned and looked at me\" \"i've never been so embarrassed and he was the one in a wig\""
+        }
+      ],
+      "debrief": "The scariest audience is the one that knew you before. You got up there anyway, in front of her, and finished the number."
+    },
+    {
+      "id": "hannah-drag",
+      "route": "hannah",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Brodie put five dollars in your garter and called you ma'am. I've never seen him so polite.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Hannah",
+      "irl": true,
+      "intro": "Four months after Hannah and Brodie. It's Jess's birthday and she's booked the front table at drag bingo in the Valley. She didn't tell anyone who the queen was. You're the queen. Lola Lilac: lilac wig, a corset, thigh-high boots and lashes out to here. Hannah and Brodie are at the front table.",
+      "them": [
+        {
+          "note": "You stalk out with the bingo cage on your hip. \"Good evening, you filthy lot.\" Everyone screams. Then you look down."
+        },
+        {
+          "note": "Hannah's at the front table in her work polo. She looks at your face. Then your boots. Then your face again."
+        },
+        "Are you kidding me. Jess. JESS.",
+        "\"Surprise!\" Jess says. \"Isn't she gorgeous?\"",
+        "\"Hang on,\" Brodie says. \"Is that... the nail guy?\" He grins up at you. \"Evening, ma'am.\""
+      ],
+      "replies": [
+        {
+          "you": "(Stay in character.) Brodie, darling. Number seven. Legs eleven. Look at mine.",
+          "them": [
+            {
+              "note": "You put one boot up on their table. The room loses it."
+            },
+            "\"Very nice legs,\" Brodie says, very seriously, and tucks five dollars in your boot.",
+            "Brodie, oh my god, don't TIP him.",
+            "\"She's working, Han. You tip the working girls.\""
+          ],
+          "after": "Hannah, to Kate: \"{name} is a drag queen. he called bingo with his boot on our table\" Kate: \"WHAT\" Hannah: \"brodie tipped him. twice. and called him ma'am all night\""
+        },
+        {
+          "you": "(Break character. Whisper.) Han. Please don't tell anyone.",
+          "them": [
+            "You're on a stage. In a corset. With a microphone. Everyone knows.",
+            {
+              "note": "The mic's still on. The whole room heard you whisper. Jess is screaming into a napkin."
+            },
+            "\"Don't worry, Lola,\" Brodie says, loud. \"Your secret's safe with the hundred people here.\""
+          ],
+          "after": "Hannah, to Kate: \"he begged me not to tell anyone. into a microphone. in a corset\" Kate: \"so you're telling everyone\" Hannah: \"obviously\""
+        },
+        {
+          "you": "(Call her up to pull the numbers. Make her wear the tiara.)",
+          "them": [
+            {
+              "note": "You drag Hannah up on stage and put a tiara on her head. She looks like she wants to die."
+            },
+            "I'm going to kill you. I'm going to kill you after this.",
+            {
+              "note": "Brodie's on his feet cheering. \"That's my girl! And that's... her ex! Go Lola!\""
+            }
+          ],
+          "after": "Hannah, to Kate: \"he made me wear a tiara on stage\" \"brodie's got it as his lock screen\" \"which one of us, you ask. both.\""
+        }
+      ],
+      "debrief": "Being seen by someone who used to see you differently can feel like being caught. It's also a chance to show them who you actually are."
+    },
+    {
+      "id": "mia-drag",
+      "route": "mia",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Sorry. I cried. Not sad crying. Lola did a cartwheel. In HEELS. Sorry.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Mia",
+      "irl": true,
+      "intro": "Three months after Mia and Lachlan. Sam books a drag brunch on James St for her birthday and invites everyone, including Mia, including Lachlan in a quarter-zip. Sam knows. Nobody else does. You're the brunch queen: Lola Lilac, big lilac curls, a gingham dress, glitter heels.",
+      "them": [
+        {
+          "note": "You burst through the kitchen doors with a tray of mimosas. \"Good MORNING, my sweet little hungover babies!\""
+        },
+        {
+          "note": "Mia looks up from her eggs benedict. Her fork stops in mid-air."
+        },
+        "Oh. Oh no. Sorry. Sam. Is that...",
+        "\"Happy birthday to me,\" Sam says.",
+        "\"Is that the guy from the door?\" Lachlan says. \"With the glitter toes?\" He looks at your heels. \"Still glittery.\""
+      ],
+      "replies": [
+        {
+          "you": "(Plonk yourself in Lachlan's lap.) Hi, handsome. Remember me?",
+          "them": [
+            {
+              "note": "You sit right on his knee, legs crossed, and adjust his quarter-zip collar."
+            },
+            "\"I do,\" Lachlan says, going pink. \"Hi, Lola.\"",
+            "Sorry. Sorry. I can't watch this. I'm watching. Sorry.",
+            {
+              "note": "Mia's laughing so hard she's crying into her napkin."
+            }
+          ],
+          "after": "Mia, to Sam: \"sorry\" \"he sat on lachlan\" \"lachlan went SO red\" \"sorry i'm still laughing\" Sam: \"best birthday ever\""
+        },
+        {
+          "you": "(Hide behind the mimosa tray.) Hi, Mia. Sorry. Hi.",
+          "them": [
+            "Don't say sorry, that's my thing.",
+            {
+              "note": "You do the whole number with the tray in front of your face whenever you pass her table. Everyone notices. The host makes you do a spin right in front of her."
+            },
+            "\"She's shy!\" Sam yells. \"Lola's shy around her ex!\""
+          ],
+          "after": "Mia, to Sam: \"he hid behind a TRAY\" \"sorry. i feel bad\" \"no i don't. lachlan tipped him\""
+        },
+        {
+          "you": "(Pull Mia up to dance.)",
+          "them": [
+            {
+              "note": "You pull her up in front of the whole brunch. She dances like she's apologising to the music."
+            },
+            "Sorry. I can't dance. Sorry.",
+            {
+              "note": "You spin her. She laughs. Lachlan films it, beaming."
+            }
+          ],
+          "after": "Mia, to Sam: \"i danced with lola\" \"sorry\" \"it was the most fun i've had all year\" \"don't tell lachlan\""
+        }
+      ],
+      "debrief": "There's something brave about being loud in front of someone who knew you when you were quiet."
+    },
+    {
+      "id": "ella-drag",
+      "route": "ella",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "His cat eye was better than mine. On STAGE. Under LIGHTS. In front of CONNOR.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Ella",
+      "irl": true,
+      "intro": "Two months after Ella and Connor. Ella's teacher friends book a drag show at a bar in Fortitude Valley for end of term. Connor comes straight from rugby. You're on second: Lola Lilac, a lilac bob, a sequin mini, and the sharpest cat eye of your life.",
+      "them": [
+        {
+          "note": "You come out to Lady Gaga, all hair flips. Front table, left: a group of primary teachers screaming already."
+        },
+        {
+          "note": "And Ella. In the middle of them. Her mouth is open."
+        },
+        "no. NO. that's {name}. that's {name}'s CAT EYE.",
+        "\"Who?\" Connor says, and then looks properly. \"Oh. Oh, that's your ex! He's fully a lady!\" He starts clapping. \"Go on, man!\""
+      ],
+      "replies": [
+        {
+          "you": "(Point at Ella during 'Bad Romance'. Every time.)",
+          "them": [
+            {
+              "note": "Every time the chorus comes round, you point straight at her. The whole bar turns to look at her every time."
+            },
+            "stop pointing at me. STOP POINTING AT ME.",
+            {
+              "note": "Her teacher friends are dying. One of them is already posting it."
+            }
+          ],
+          "after": "Ella, to her teacher friend Meg: \"he pointed at me eleven times\" Meg: \"twelve\" Ella: \"connor wants to go every week now\""
+        },
+        {
+          "you": "(Lose your place. Your face is on fire.)",
+          "them": [
+            {
+              "note": "You see her and you forget every word. You stand there mouthing nothing while the music goes on."
+            },
+            "\"Come on, Lola!\" Connor shouts. \"You got this!\"",
+            {
+              "note": "Her rugby boyfriend is cheering you on. You get it back for the last chorus. Your face stays red the whole time."
+            }
+          ],
+          "after": "Ella, to Meg: \"he froze when he saw me\" \"connor yelled you got this\" \"i don't know how i feel. i feel like i've been blindsided TWICE\""
+        },
+        {
+          "you": "(Sit on Connor's knee and fix his eyebrows.)",
+          "them": [
+            {
+              "note": "You perch on his knee, lick your thumb, and smooth his eyebrows down. The bar screams."
+            },
+            "\"Do they look good?\" Connor asks Ella, completely seriously.",
+            "they look AMAZING actually. ugh."
+          ],
+          "after": "Ella, to Meg: \"he did connor's eyebrows on stage\" \"connor won't stop touching them\" \"they do look good. that's the worst part\""
+        }
+      ],
+      "debrief": "Your ex seeing you at your most fabulous can feel like the worst thing in the world, right up until the applause."
+    },
+    {
+      "id": "tayla-drag",
+      "route": "tayla",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Steph screamed so loud the queen stopped the music. The queen was {name}. I need to move cities.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Tayla",
+      "irl": true,
+      "intro": "Three months after Tayla and Mitch. The netball team goes to a drag show to celebrate the grand final win. Steph picked the venue. You're the headliner: Lola Lilac, a big lilac ponytail, a netball skirt covered in rhinestones, and a bib that says 'GA' (goal attack, obviously).",
+      "them": [
+        {
+          "note": "You come out in the netball skirt. The netball table goes quiet, which is a first."
+        },
+        "\"Is that...\" Steph says. \"Tay. TAY. That's your ex. In a NETBALL SKIRT.\"",
+        "oh my god. oh my GOD. bec do not film this.",
+        {
+          "note": "Bec is filming this."
+        },
+        "\"Hang on, that's the guy from the grand final?\" Mitch says. \"Legend!\" He stands up and whistles."
+      ],
+      "replies": [
+        {
+          "you": "(Steal Tayla's goal shooter bib and wear it on stage.)",
+          "them": [
+            {
+              "note": "You grab the bib right off her chair and pull it over your head. The whole team screams."
+            },
+            "give it BACK. that's my GAME bib.",
+            "\"Lola's the goal shooter now!\" Steph yells."
+          ],
+          "after": "Steph, to the team chat: \"[video]\" \"[video]\" \"[video]\" Tayla: \"i'm leaving the team\" Mitch: \"lola's welcome at training\""
+        },
+        {
+          "you": "(Spot Steph filming. Hide your face. Keep dancing.)",
+          "them": [
+            {
+              "note": "You do the whole song with one hand over your face. It sort of becomes the routine."
+            },
+            "\"She's shy!\" Mitch yells. \"Lola, don't be shy!\"",
+            "that's not shy, that's mortified. i know that face"
+          ],
+          "after": "Tayla, to Bec: \"he hid his face the whole time\" Bec: \"he still did the splits though\" Tayla: \"mitch tried to do the splits after. he's at the physio\""
+        },
+        {
+          "you": "(Get Mitch up for a dance-off.)",
+          "them": [
+            {
+              "note": "Mitch dances like a fridge falling down stairs. You do a death drop next to him. The crowd chooses you, loudly."
+            },
+            "\"Fair,\" Mitch says, out of breath. \"She's got moves, Tay.\"",
+            "i know she does. i dated her"
+          ],
+          "after": "Tayla, to Steph: \"my boyfriend lost a dance-off to my ex\" Steph: \"in heels\" Tayla: \"in HEELS\""
+        }
+      ],
+      "debrief": "Being recognised when you're not ready is a gut punch. You kept dancing, which is what performers do."
+    },
+    {
+      "id": "georgie-drag",
+      "route": "georgie",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Eleven costume changes. ELEVEN. I counted. Then I counted again. Ben cheered for all of them.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Georgie",
+      "irl": true,
+      "intro": "Three months after Georgie and Ben. The climbing gym's end of year party is at a drag bar. Corey booked it. You're in the show: Lola Lilac, a lilac wig, a harness (a sparkly one) and eleven costume changes.",
+      "them": [
+        {
+          "note": "You walk out in a rhinestone climbing harness and chalk bag. The climbing gym crowd goes feral."
+        },
+        {
+          "note": "Georgie's at the bar with Ben. She puts her drink down very slowly."
+        },
+        "That's {name}. That's 100% {name}. Those are the lilac toes.",
+        "\"Who?\" Ben says, in his deep voice. Then he gets it. \"Oh! He's good! Look at that hip thing!\""
+      ],
+      "replies": [
+        {
+          "you": "(Do the whole number at Corey, who booked this.)",
+          "them": [
+            {
+              "note": "You lip sync the whole song to Corey, who sets routes and has never looked more confused."
+            },
+            "\"Georgie, help,\" Corey says. \"She's coming at me.\"",
+            "You booked it, Corey. Live with it."
+          ],
+          "after": "Georgie, to the gym chat: \"corey got lip synced at for four minutes\" Corey: \"i'm fine\" Georgie: \"he's not fine\""
+        },
+        {
+          "you": "(See her. Panic. Fumble the reveal.)",
+          "them": [
+            {
+              "note": "Your tearaway skirt doesn't tear away. You tug it three times. The crowd starts chanting 'PULL'."
+            },
+            "Pull it! Pull it!",
+            {
+              "note": "Georgie's chanting too. It finally rips off. You're red right down to your harness."
+            }
+          ],
+          "after": "Georgie, to Ben: \"he took four tries on the skirt\" Ben: \"still got there\" Georgie: \"yeah. still got there\""
+        },
+        {
+          "you": "(Get Ben up to belay you while you dance on a chair.)",
+          "them": [
+            {
+              "note": "Ben holds your hand while you dance on a chair in heels, like a belay. He's very careful."
+            },
+            "\"Got you,\" Ben says. \"On belay.\"",
+            "That's the safest drag routine I've ever seen."
+          ],
+          "after": "Georgie, to the gym chat: \"ben belayed lola\" \"he says it was a lead climb\" \"it was a chair\""
+        }
+      ],
+      "debrief": "Everyone you used to try to impress turned up on the one night you were most yourself. That's terrifying and a bit perfect."
+    },
+    {
+      "id": "lucy-drag",
+      "route": "lucy",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Bordeaux nails, Bordeaux gown, Bordeaux wig. He's committed to the colour. Hamish tipped him in Bordeaux.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Lucy",
+      "irl": true,
+      "intro": "Four months after Lucy and Hamish. Kayla's bachelorette ends at a drag show in the Valley. Kayla organised it. Ruby planned the seating. You're the closing number: Lola Lilac, in a deep Bordeaux gown, Bordeaux nails, and a Bordeaux wig to match.",
+      "them": [
+        {
+          "note": "You glide out in the gown. Ruby screams before anyone else does."
+        },
+        "THAT'S HIM. LUCY. THAT'S YOUR BORDEAUX BOY.",
+        "Oh. My. God. I need to sit down. I am sitting down. I need to sit down more.",
+        "\"That's the red toes guy,\" Hamish says, delighted. \"He looks a million bucks, Luce.\""
+      ],
+      "replies": [
+        {
+          "you": "(Sing 'I Will Survive' to Lucy. Every word.)",
+          "them": [
+            {
+              "note": "You sing every word of it at her, with a hand on your heart."
+            },
+            "Are you singing a break-up song AT me? At a BACHELORETTE?",
+            {
+              "note": "Kayla's crying laughing. Hamish is singing along."
+            }
+          ],
+          "after": "Lucy, to Kayla: \"he sang i will survive at me\" Kayla: \"best bachelorette ever\" Lucy: \"hamish knows all the words. why does hamish know all the words\""
+        },
+        {
+          "you": "(Trip on the hem. Recover with a twirl. Die inside.)",
+          "them": [
+            {
+              "note": "You stand on the gown and stagger. You turn it into a twirl, but everyone saw."
+            },
+            "Oh, babe. Careful. I'm a nurse. I'll be honest, I was ready.",
+            {
+              "note": "Ruby is filming. The video catches your face right as you trip."
+            }
+          ],
+          "after": "Ruby, to the bachelorette chat: \"[video] slow motion\" Lucy: \"delete it\" Hamish: \"what a recovery though\""
+        },
+        {
+          "you": "(Put the bride's veil on Hamish.)",
+          "them": [
+            {
+              "note": "You take Kayla's veil and put it on Hamish. He doesn't take it off for the rest of the night."
+            },
+            "\"Do I look good, Luce?\"",
+            "You look stunning, babe. Lola's got a good eye."
+          ],
+          "after": "Lucy, to Kayla: \"hamish is asleep in the veil\" \"he says lola's his favourite person now\" \"i'm not jealous. i'm a bit jealous\""
+        }
+      ],
+      "debrief": "Going big in front of people who knew a quieter you is a kind of coming out too. You did it in Bordeaux."
+    },
+    {
+      "id": "jade-drag",
+      "route": "jade",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "I notice feet. Size eleven platform heels, coral toes, rhinestones. I noticed. Everyone noticed.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Jade",
+      "irl": true,
+      "intro": "Three months after Jade and Riley. Mel books a drag show for her birthday and won't say who's performing. You are. Lola Lilac, a lilac wig, a rhinestone bikini top, and size eleven clear platform heels showing off fresh coral toes.",
+      "them": [
+        {
+          "note": "You walk out. Jade's eyes go straight to your feet, like always."
+        },
+        "coral. clear platforms. oh my god. mel. MEL.",
+        "\"Happy birthday to me,\" Mel says, delighted.",
+        "\"That's the lemon blanket guy!\" Riley says. \"Look at him go! Look at his feet, Jade!\"",
+        "i AM looking at his feet riley"
+      ],
+      "replies": [
+        {
+          "you": "(Put your heel right up on their table, coral toes first.)",
+          "them": [
+            {
+              "note": "You prop your platform right on their table, toes wiggling an inch from Jade's drink."
+            },
+            "ok i'm not looking. i'm looking. the pedicure is perfect. i hate you",
+            {
+              "note": "Riley tucks ten dollars in your ankle strap."
+            }
+          ],
+          "after": "Jade, to Mel: \"he put his FOOT on our TABLE\" Mel: \"riley tipped him\" Jade: \"i know. it was my ten dollars\""
+        },
+        {
+          "you": "(Spot her. Go stiff. Walk like you've forgotten how heels work.)",
+          "them": [
+            {
+              "note": "You see her and your ankles forget everything. You wobble down the whole runway like a baby deer."
+            },
+            "\"Go on, Lola!\" Riley yells.",
+            "you were walking FINE before you saw me"
+          ],
+          "after": "Jade, to Mel: \"he forgot how to walk when he saw me\" Mel: \"that's love\" Jade: \"that's embarrassment\" Mel: \"same thing\""
+        },
+        {
+          "you": "(Do a dance-off with Riley. Barefoot.)",
+          "them": [
+            {
+              "note": "You kick the platforms off. Riley kicks his flip-flops off too. Two bare-footed men dance-off in front of a screaming crowd. Your feet are definitely nicer."
+            },
+            "\"Fair,\" Riley says. \"She wins.\"",
+            "she always wins. look at her feet."
+          ],
+          "after": "Jade, to Mel: \"riley's feet on that stage. next to his.\" Mel: \"a crime\" Jade: \"i'm still with riley. i'm just saying\""
+        }
+      ],
+      "debrief": "Your feet used to be the thing you hid. Now they're on a stage in clear platforms. That's a long way to come."
+    },
+    {
+      "id": "olivia-drag",
+      "route": "olivia",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "I told my sister. She told everyone. James wants Lola to come to F45.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Olivia",
+      "irl": true,
+      "intro": "Two months after Olivia and James. Olivia's sister's 30th is at a drag bar on James St. You're performing. Lola Lilac, in a red slip dress, red heeled sandals, and cherry red toes, just like that dinner.",
+      "them": [
+        {
+          "note": "You walk out. Olivia's sister grabs her arm before Olivia even sees."
+        },
+        "\"LIV. Liv. LOOK. That's HIM.\"",
+        "No. No no no. The red toes. It's the red toes. I'm going to die.",
+        "\"That's the man to man guy!\" James says, delighted. \"Man to man! Woman to man! Whatever! Go on!\""
+      ],
+      "replies": [
+        {
+          "you": "(Dedicate the song to 'my ex and her very large boyfriend'.)",
+          "them": [
+            {
+              "note": "You say it into the mic. The whole room turns to look at them."
+            },
+            "\"That's me!\" James stands up and flexes. The crowd goes wild.",
+            "Sit DOWN. Oh my god. Sit down."
+          ],
+          "after": "Olivia, to her sister: \"he dedicated it to us\" Sister: \"to you and your very large boyfriend\" Olivia: \"james has it printed on a shirt now\""
+        },
+        {
+          "you": "(Lock eyes with her. Blush through your contour.)",
+          "them": [
+            {
+              "note": "You see her and go red right through your foundation. The spotlight makes it worse."
+            },
+            "\"She's blushing!\" her sister yells. \"Lola's blushing!\"",
+            "Don't. Leave her alone. Him. Her."
+          ],
+          "after": "Olivia, to her sister: \"he went so red\" Sister: \"so did you\" Olivia: \"i did not\" Sister: \"i have a photo\""
+        },
+        {
+          "you": "(Teach James a death drop.)",
+          "them": [
+            {
+              "note": "James tries. He drops like a building. Lands fine. Gets up, beaming."
+            },
+            "\"Again!\" James says.",
+            "He's never been happier. I hate that you made him this happy."
+          ],
+          "after": "Olivia, to her sister: \"james did a death drop at f45 this morning\" Sister: \"lola's influence\" Olivia: \"lola's ruining my life\""
+        }
+      ],
+      "debrief": "Facing the people who told you who you were before you knew it yourself takes nerve. You did it in cherry red."
+    },
+    {
+      "id": "zoe-drag",
+      "route": "zoe",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Brooke's boyfriend asked me if you were my gay best friend. Now you're Lola Lilac. He has no idea how right he was.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Zoe",
+      "irl": true,
+      "intro": "Three months after Zoe and Kyle. Brooke's birthday is drag trivia, because Brooke's still very serious about trivia. The host is you. Lola Lilac, in white platform sandals, lilac toes, a floral mini and a lilac beehive.",
+      "them": [
+        {
+          "note": "You walk out with the question cards. Brooke's team is at the front, as always. Zoe looks at your feet first."
+        },
+        "Those are my platforms. Those are MY platforms.",
+        "\"Is that {name}?\" Brooke says. \"Is our HOST {name}?\"",
+        "\"The guy from the barbecue,\" Kyle says, grinning. \"Hot dog queen. Love it.\""
+      ],
+      "replies": [
+        {
+          "you": "(Ask a question about Zoe. To the whole room.)",
+          "them": [
+            {
+              "note": "\"Question four: what colour were my toenails at Brooke's barbecue?\""
+            },
+            "Lilac. LILAC. I'm not writing that down. Brooke, don't write that down.",
+            {
+              "note": "Brooke writes it down. They get the point."
+            }
+          ],
+          "after": "Brooke, to Tash: \"we won by one point\" Tash: \"the toenails question\" Brooke: \"the TOENAILS question\""
+        },
+        {
+          "you": "(Hand Zoe her platforms back. On stage. In front of everyone.)",
+          "them": [
+            {
+              "note": "You step out of them and hand them down to her, barefoot under the spotlight."
+            },
+            "Keep them. Oh my god, keep them. They look better on you anyway.",
+            {
+              "note": "The room cheers. You finish the round barefoot, toes curled, bright red."
+            }
+          ],
+          "after": "Zoe, to Brooke: \"he tried to give me my shoes back ON STAGE\" Brooke: \"you said keep them\" Zoe: \"they DO look better on him\""
+        },
+        {
+          "you": "(Read the questions in Kyle's voice.)",
+          "them": [
+            {
+              "note": "\"Hey man. Question five. Hot dog?\""
+            },
+            "\"That's me!\" Kyle yells. \"That's a good impression!\"",
+            "It's a perfect impression. Ugh."
+          ],
+          "after": "Zoe, to Tash: \"he did kyle's voice all night\" Tash: \"kyle loved it\" Zoe: \"kyle wants a signed photo\""
+        }
+      ],
+      "debrief": "The people who whispered about you got to see you own it out loud."
+    },
+    {
+      "id": "sophie-drag",
+      "route": "sophie",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "Kirra posted it. 41,000 views. My boss commented 'Lola for president'.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Sophie",
+      "irl": true,
+      "intro": "Three months after Sophie and Nathan. Kirra books a drag show at the Wickham for her birthday. She's filming from the front row, obviously. You're performing: Lola Lilac, in a sparkly crop, a mini skirt, heels, and hot pink toes. The same outfit from the video.",
+      "them": [
+        {
+          "note": "You walk out. Kirra's phone goes up so fast it hits Nathan in the face."
+        },
+        "\"SOPH. That's him. That's the WICKHAM OUTFIT.\"",
+        "There's literally video evidence. Again. Of course there is.",
+        "\"Oh, the contour guy?\" Nathan says. \"Good work. Look at that posture.\""
+      ],
+      "replies": [
+        {
+          "you": "(Grab Kirra's phone and film yourself.)",
+          "them": [
+            {
+              "note": "You snatch her phone mid-song and do a selfie video with the whole bar behind you."
+            },
+            "\"Give it BACK, Lola!\"",
+            "Oh no. She's going to post it from your account."
+          ],
+          "after": "Kirra, to Sophie: \"he posted from my account\" Sophie: \"what did he post\" Kirra: \"'lola was here 💅'. it's my most liked post ever\""
+        },
+        {
+          "you": "(Wave at Sophie. Wobble. Nearly go off the stage.)",
+          "them": [
+            {
+              "note": "You wave and lose your footing. Nathan catches your ankle before you go over the edge."
+            },
+            "\"Got you,\" Nathan says. \"Physio reflexes.\"",
+            "And Kirra got that too. Obviously."
+          ],
+          "after": "Kirra, to Sophie: \"nathan saved lola\" Sophie: \"he's very proud of himself\" Kirra: \"it's my new phone background\""
+        },
+        {
+          "you": "(Lip sync to 'You Belong With Me' at Sophie.)",
+          "them": [
+            {
+              "note": "You sing every word of the Taylor Swift song at her. The crowd sings along."
+            },
+            "You like Taylor Swift a normal amount. I KNEW it wasn't a normal amount.",
+            {
+              "note": "Nathan's singing too."
+            }
+          ],
+          "after": "Sophie, to Kirra: \"he lip synced taylor at me\" Kirra: \"nathan knew the bridge\" Sophie: \"i'm aware. i'm reconsidering everything\""
+        }
+      ],
+      "debrief": "Something that once felt like getting caught out is now something you do on purpose, under lights. That's growth."
+    },
+    {
+      "id": "bianca-drag",
+      "route": "bianca",
+      "gaydar": 100,
+      "spark": 0,
+      "gaydarSays": "I MADE HER. I'm her drag mother. Liam's crying. I'm crying. Shay's crying.",
+      "title": "Encore: Lola Lilac",
+      "contact": "Bianca",
+      "irl": true,
+      "intro": "Two months after Bianca's birthday. Bianca's done your makeup for your first ever drag show, at a bar in the Valley. She's in the front row with Liam, Shay and Imogen, and a banner that says 'LOLA LILAC 💅 MY BABY'. You're Lola: lilac skirt, lashes, heels, the works. This is the version she always said you could be.",
+      "them": [
+        {
+          "note": "You walk out. Bianca's on her feet before the music starts."
+        },
+        "THAT'S MY BABY. THAT'S MY BABY!!",
+        {
+          "note": "Shay's holding the banner. Imogen's crying already. Liam has a sign that says 'GO LOLA (BIANCA MADE ME)'."
+        },
+        "\"She looks unreal, Bee,\" Liam says. \"Is that contour? Is that what contour does?\""
+      ],
+      "replies": [
+        {
+          "you": "(Pull Bianca up on stage for the last chorus.)",
+          "them": [
+            {
+              "note": "She climbs up in her heels and dances next to you, screaming every word."
+            },
+            "I TOLD YOU. I TOLD YOU YOU COULD.",
+            {
+              "note": "Liam's filming. The crowd loves her almost as much as you."
+            }
+          ],
+          "after": "Bianca, to Shay and Imogen: \"best night of my life\" Shay: \"lola's or yours?\" Bianca: \"BOTH\""
+        },
+        {
+          "you": "(Get so overwhelmed you forget the words. She mouths them to you.)",
+          "them": [
+            {
+              "note": "You blank. You look at Bianca. She mouths every word, big and slow, and you follow along."
+            },
+            "You've GOT this, babe!",
+            "\"She's got it,\" Liam says. \"She's got it, Bee.\""
+          ],
+          "after": "Bianca, to the girls: \"she blanked and looked at me\" \"i mouthed the whole thing\" \"i'm a drag mother now. it's official\""
+        },
+        {
+          "you": "(Give Liam a lap dance. A very polite one.)",
+          "them": [
+            {
+              "note": "You sit on Liam's knee and adjust his collar. He goes the colour of your skirt."
+            },
+            "Liam, babe, breathe.",
+            "\"I'm breathing,\" he says, not breathing."
+          ],
+          "after": "Bianca, to the girls: \"liam's still red\" Imogen: \"he asked if contour comes off\" Bianca: \"he wants to try it\""
+        }
+      ],
+      "debrief": "This is the person she saw before you did. Being seen like that, out loud, in front of everyone, is the whole point."
     },
     {
       id: "c7", route: "jess", title: "The group chat", contact: "Jess",
