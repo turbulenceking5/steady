@@ -7,6 +7,7 @@ Read the relevant file before changing that part of the project:
 - [GUIDE.md](GUIDE.md): user guide.
 - [context/architecture.md](context/architecture.md): file map, the `SteadyAPI` module contract, events, storage keys, service worker.
 - [context/content.md](context/content.md): `content.js` schema (chats, story, practice), placeholders, cast, voice and tone.
+- [context/dialogue.md](context/dialogue.md): how characters text. Realistic and blunt, not AI-sounding or always nice. Follow it for every conversation.
 - [CHANGELOG.md](CHANGELOG.md): add an entry for every user-visible change.
 
 ## Layout
@@ -26,7 +27,7 @@ Read the relevant file before changing that part of the project:
 
 ## Content boundaries
 - Affirming and warm. This app exists to make being gay feel normal and safe.
-- No sexual or 18+ content, no fetish elements (including tickling), and no scenes where people mock or humiliate him for being gay or feminine. Hard reactions (e.g. Archie's angry branch, the Practice pushback scenarios) are allowed only when the focus is on him handling them, with a debrief.
+- No sexual or 18+ content, and no scenes where people mock or humiliate him for being gay or feminine. Hard reactions (e.g. Archie's angry branch, the Practice pushback scenarios) are allowed only when the focus is on him handling them, with a debrief.
 - Style and makeup are framed as personal self-expression for a gay man, not feminisation or transformation.
 - No family members (no Mum, Nan or parents) anywhere in the app.
 - Rachel is Korean and writes natural second-language English. Never a caricature or comedic broken English.

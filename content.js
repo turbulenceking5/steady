@@ -479,49 +479,48 @@ window.CONTENT = {
     {
       id: "c1b", title: "The Italian place", contact: "Archie", part: "Part 1: Before",
       intro: "Friday. You wore clear gloss, a bit of mascara, the cream silky shirt that's been in your wardrobe with the tags on, and your nails painted lilac. Archie looked at you for a second too long when you picked her up and didn't say anything all the way there.",
-      them: ["home", "ok can i ask what was going on tonight", "like the lip gloss. and ur nails"],
+      them: ["home", "what was that tonight", "the lip gloss {name}. and your nails"],
       replies: [
         { you: "What do you mean?",
-          them: ["{name} come on", "you've never worn any of that and then you just turn up to dinner in it", "the waiter kept looking at your hands. did you not notice"],
+          them: ["dont do that", "you know exactly what i mean", "you just turned up in it like it was normal", "the waiter kept looking at your hands and i wanted to die"],
           replies: [
             { you: "I just wanted to try it.",
-              them: ["ok", "i dunno. it was kind of embarrassing tbh. my sister's friend was at the table near us", "she's already messaged my sister asking if you're ok"],
+              them: ["at dinner?? with me??", "my sister's friend was two tables over", "she's already messaged my sister asking if you're ok"],
               replies: [
                 { you: "Why wouldn't I be okay?",
-                  them: ["idk {name}. because guys don't just randomly start wearing lip gloss", "is something going on? like actually"],
+                  them: ["because guys dont just start wearing lip gloss out of nowhere", "is something going on. like actually. tell me"],
                   replies: [
-                    { you: "Nothing's going on. I liked how it looked.", them: ["ok", "well i didn't", "can we just not do it again when we're out with people. please"] },
-                    { you: "Maybe. I don't know yet.", them: ["what does that mean", "ok i'm too tired for this", "can we talk tomorrow"],
-                      replies: [{ you: "Yeah. Tomorrow.", them: ["ok. night x"] }] }
+                    { you: "Nothing's going on. I liked how it looked.", them: ["well i didnt", "i felt like an idiot sitting there", "dont do it again when we're out. please"] },
+                    { you: "Maybe. I don't know yet.", them: ["what does that even mean", "no actually i cant do this tonight", "im going to bed"] }
                   ] },
                 { you: "I'm sorry you were embarrassed.",
-                  them: ["it's fine. i just didn't know what to say to her", "i said you lost a bet lol"],
+                  them: ["i was", "i told her you lost a bet", "thats what i had to say about my own boyfriend"],
                   replies: [
-                    { you: "I didn't lose a bet.", them: ["i know", "i didn't know what else to say"] },
-                    { you: "Okay.", them: ["ok. night x"] }
+                    { you: "I didn't lose a bet.", them: ["yeah i know {name}", "thats kind of the problem"] },
+                    { you: "Okay.", them: ["ok?", "thats it?", "whatever. night"] }
                   ] }
               ] },
             { you: "Do you not like it?",
-              them: ["not really no", "sorry. it's just not you. or it's not the you i know"],
+              them: ["no", "i dont", "its not you. or its not the you i know"],
               replies: [
                 { you: "Maybe it is me.",
-                  them: ["what does that mean", "{name} you're scaring me a bit"],
+                  them: ["what does that mean", "{name} you're freaking me out"],
                   replies: [
-                    { you: "Sorry. I'm just tired. Forget I said that.", them: ["ok", "love you x"] },
-                    { you: "I don't know what it means yet. I'm trying to work it out.", them: ["ok", "ok. well. i'm here i guess", "i just don't get it"] }
+                    { you: "Forget I said that.", them: ["you cant just say that and then go forget it", "fine. night"] },
+                    { you: "I don't know yet. I'm trying to work it out.", them: ["work WHAT out", "we've been together three years", "im not doing this over text"] }
                   ] },
-                { you: "That's fair.", them: ["i'm not trying to be mean", "you're just my {name}. polo shirt, steak, early night. i like that guy"],
-                  replies: [{ you: "I know you do.", them: ["night x"] }] }
+                { you: "That's fair.", them: ["im not trying to be mean", "i just want my boyfriend back. not whoever that was tonight"],
+                  replies: [{ you: "Okay.", them: ["night"] }] }
               ] }
           ] },
         { you: "Did you not like it?",
-          them: ["honestly no", "it's not a big deal i just wasn't expecting it", "can you maybe not wear it saturday when we're out with my friends"],
+          them: ["honestly? no", "it was really embarrassing", "and dont wear it saturday. my friends will be there"],
           replies: [
-            { you: "Yeah, okay.", them: ["thanks. night x"] },
+            { you: "Yeah, okay.", them: ["thanks", "night"] },
             { you: "I'm going to wear what I want.",
-              them: ["ok well don't be surprised when people say stuff", "night"],
+              them: ["wow ok", "then dont be surprised when people say stuff", "and dont expect me to stick up for you"],
               replies: [
-                { you: "People can say what they want.", them: ["ok", "i'm just saying i'm the one who has to hear it"] },
+                { you: "I wasn't asking you to.", them: ["good", "night"] },
                 { you: "Night, Archie.", them: ["night"] }
               ] }
           ] }
@@ -589,92 +588,83 @@ window.CONTENT = {
     {
       id: "c5", title: "Jess's friend", contact: "Hannah", part: "Part 1: Before",
       intro: "Drinks with Hannah at a wine bar in New Farm. You wore a pink knit, a berry lip tint, mascara, your rings and fresh nail polish. She clocked it the second she sat down. The conversation was fine. Polite. She checked her phone a lot. You spent more time than you meant to talking to the bartender about his jacket.",
-      them: ["hey, thanks for last night", "i don't want to be rude but can i ask you something"],
+      them: ["hey", "can i ask you something"],
       replies: [
         { you: "Sure.",
-          them: ["did jess actually tell you this was a date", "because i got dressed up and paid for parking and then you turn up in more makeup than me lol", "i genuinely couldn't tell if you were into me at all"],
+          them: ["did jess actually tell you this was a date", "because i got dressed up and paid $18 for parking and you turned up in more makeup than me", "and then spent half the night talking to the bartender"],
           replies: [
             { you: "It was a date. Sorry if it was weird.",
-              them: ["it was a bit weird yeah", "like you were nice. you were funny about the menu", "but you talked to the bartender about his jacket for ten minutes and asked me nothing about my job"],
+              them: ["it was weird yeah", "you asked me literally nothing about myself", "but you knew where the bartender's jacket was from"],
               replies: [
-                { you: "That's fair. I'm sorry.", them: ["it's ok", "look you seem nice but i don't think it's a thing. good luck with everything"] },
-                { you: "It was a really good jacket.", them: ["lol", "ok that was actually funny", "still not a thing though. good luck"] },
-                { you: "What do you do again?", them: ["i'm a physio", "which i told you. twice", "ok i'm going to go. take care"] }
+                { you: "That's fair. I'm sorry.", them: ["ok", "i dont think its a thing. good luck"] },
+                { you: "It was a really good jacket.", them: ["are you serious", "ok wow. bye"] },
+                { you: "What do you do again?", them: ["physio", "i told you twice", "yeah im done"] }
               ] },
             { you: "Honestly? I don't know.",
-              them: ["ok well i kind of do", "not trying to be a bitch but i'm 31, i don't really have time to be someone's experiment", "take care"],
+              them: ["well i do", "im 31. i dont have time to be someone's experiment", "and jess should've known better"],
               replies: [
-                { you: "I'm not experimenting on you. I'm just working stuff out.", them: ["ok", "then maybe work it out with someone who isn't on a date with you", "i mean that nicely. sort of"] },
-                { you: "Take care.", them: ["you too"] }
+                { you: "I'm not experimenting on you.", them: ["felt like it", "anyway. take care"] },
+                { you: "Take care.", after: "She leaves it on read." }
               ] }
           ] },
         { you: "Is this about the makeup?",
-          them: ["kind of yeah", "it's fine if that's your thing. i just don't think i'm the person to date while you figure out whatever that is"],
+          them: ["yes obviously", "its fine if thats your thing but im not dating a guy who wears more lip than me", "sorry but im not"],
           replies: [
-            { you: "Fair enough.",
-              them: ["yeah. no hard feelings", "for what it's worth the lip colour was nice. i was annoyed it looked better on you"],
+            { you: "Fair enough.", them: ["yeah"] },
+            { you: "There's nothing wrong with it.",
+              them: ["i didnt say there was", "i said im not into it", "theres a difference"],
               replies: [
-                { you: "It's from Mecca. I can send you the name.", them: ["...ok yes send it", "this is the weirdest way a date has ended for me"] },
-                { you: "Thanks. Take care.", them: ["you too"] }
-              ] },
-            { you: "There's nothing to figure out.",
-              them: ["ok", "sure"],
-              replies: [
-                { you: "Actually, maybe there is.", them: ["yeah", "i'm not having a go. i hope you sort it out", "just maybe don't do it on jess's friends lol"] },
+                { you: "Okay.", them: ["ok"] },
                 { you: "(Leave it there)",
                   after: "You leave it on read. Then you open Jess's chat, type \"your friend hates me\", delete it, and put the phone face down." }
               ] }
           ] },
         { you: "Before you ask: I wasn't sure it was a date either.",
-          them: ["oh", "ok that's honestly a relief", "i thought i was going mad. you looked at that bartender like he was dessert"],
+          them: ["are you kidding me", "so i got dressed up and drove to new farm for nothing", "great. thanks jess"],
           replies: [
-            { you: "He did have great arms.", them: ["lol he did", "ok. i'm not mad", "jess owes me a drink though"] },
-            { you: "I'm still working some things out.", them: ["that's ok", "maybe work them out somewhere other than jess's set ups lol", "good luck. genuinely"] }
+            { you: "Sorry. That's on me.", them: ["yeah it is"] },
+            { you: "I'm still working some things out.", them: ["ok well work them out without dragging me into it", "night"] }
           ] }
       ],
-      after: "You read her last message a few times. It stings, but not in the way getting dumped is supposed to sting. You're more annoyed she noticed the bartender thing than that she said no.",
+      after: "You read her last message a few times. It stings, but not the way getting dumped is supposed to. Mostly because she wasn't wrong about the bartender.",
       debrief: "Getting knocked back on a date is normal. Getting knocked back because someone read you right can feel worse, because it's true. It still isn't anything to be ashamed of."
     },
     {
       id: "c6", title: "Mini golf", contact: "Mia", part: "Part 1: Before",
       intro: "Sam from work set you up with her cousin Mia. Mini golf at South Bank. You went further this time: wide-leg trousers, a cropped cardigan, gold hoops, a proper rosy lipstick. You felt good walking out the door. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes.",
-      them: ["hey", "sorry for leaving early. i had an early start"],
+      them: ["hey", "sorry i left early. early start"],
       replies: [
         { you: "No worries! I had fun.",
-          them: ["yeah", "can i be honest", "the lipstick threw me. i thought it was a joke at first, like a dare or something", "and then it wasn't and i didn't know what to say"],
+          them: ["yeah", "ok can i be honest", "i thought the lipstick was a joke. like a dare", "and then you just kept wearing it and i didnt know where to look"],
           replies: [
             { you: "It wasn't a joke. I like wearing it.",
-              them: ["ok", "i don't really get it but ok", "like is it a fashion thing? sam said you're really into fashion"],
+              them: ["ok", "i dont really get it", "sam didnt say anything about this"],
               replies: [
-                { you: "Sort of. I just like how it feels.",
-                  them: ["ok", "i mean. good for you", "i just think i'm more into like. a guy guy", "sorry that sounds bad"],
-                  replies: [
-                    { you: "It's okay. I know what you mean.", them: ["ok. thanks for not being weird about it", "the cardigan was cute btw. weird thing to say to a date but it was"] },
-                    { you: "It does sound a bit bad.", them: ["yeah", "sorry. i'm not good at this"] }
-                  ] },
-                { you: "Does it matter why?", them: ["no i guess not", "it just felt like we were on two different dates"] }
+                { you: "Sam doesn't know.", them: ["well she's going to", "sorry but im telling her. she set this up"] },
+                { you: "Does it matter?", them: ["kind of", "i thought i was going on a date with a guy"],
+                  replies: [{ you: "I am a guy.", them: ["you know what i mean"] }] }
               ] },
             { you: "Sorry, I should've warned you.",
-              them: ["you don't have to warn me but. yeah maybe", "anyway i don't think we're a match, sorry"],
+              them: ["yeah you should have", "i dont think we're a match"],
               replies: [
-                { you: "That's fair. Thanks for coming anyway.", them: ["yeah. you were really good at the windmill hole", "ok bye"] },
-                { you: "For the record, I'm not sorry I wore it.", them: ["ok", "you shouldn't be i guess", "just maybe not to mini golf with sam's cousin"] }
+                { you: "Fair. Thanks for coming anyway.", them: ["ok"] },
+                { you: "I'm not sorry I wore it, though.", them: ["ok then why'd you say sorry", "whatever. bye"] }
               ] }
           ] },
         { you: "Did you actually have an early start?",
-          them: ["...no", "sorry that was shit of me", "i just wasn't expecting a guy to show up like that and i panicked a bit"],
+          them: ["no", "sorry", "i just wasnt expecting a guy to show up like that and i didnt know what to do"],
           replies: [
             { you: "Like what?",
-              them: ["you know what i mean", "the lipstick, the cardigan. i'm not having a go at you, i just don't date guys who are more done up than me"],
+              them: ["you know what i mean", "lipstick. earrings. the cardigan", "i dont date guys who are more done up than me. sorry"],
               replies: [
-                { you: "That's honest. Thanks.", them: ["sorry. i know that sounds bad", "you were nice. you let me win the clown hole"] },
-                { you: "You could've just said that at hole nine.", them: ["yeah i know", "i'm a coward lol. sorry"] }
+                { you: "That's honest, at least.", them: ["yeah"] },
+                { you: "You could've just said that at hole nine.", them: ["in front of everyone? no thanks"] }
               ] },
             { you: "That's okay. I get it.",
-              them: ["ok. sorry again", "you're not gonna tell sam i bailed right"],
+              them: ["ok", "pls dont tell sam i bailed"],
               replies: [
-                { you: "I won't. I think she'll hear about it anyway.", them: ["lol yeah probably"] },
-                { you: "Already did.", them: ["oh god", "ok fair"] }
+                { you: "I won't.", them: ["thanks"] },
+                { you: "She'll hear about it anyway.", them: ["ugh. yeah"] }
               ] }
           ] }
       ],
@@ -684,39 +674,38 @@ window.CONTENT = {
     {
       id: "c6b", title: "Brunch", contact: "Ella", part: "Part 1: Before",
       intro: "You matched with Ella on Hinge. Brunch in Paddington. You'd bought the dress weeks ago and never worn it out of the flat: pale blue, floral, little buttons down the front. Nails done, foundation, blush, lashes, a pink lip. You nearly changed three times. You didn't. When you walked up she looked at you, then at her phone, then back at you. \"Sorry. I thought I had the wrong guy.\"",
-      them: ["hey thanks for brunch", "ok i have to ask. why did you wear a dress"],
+      them: ["hey", "ok i have to ask. why did you wear a dress"],
       replies: [
         { you: "Because I wanted to.",
-          them: ["ok fair", "it's just you didn't say anything about it on here. your pics were all like. a polo shirt at a wedding", "i felt kind of blindsided"],
+          them: ["ok but you didnt say anything on here", "your pics are literally you in a polo shirt at a wedding", "i felt really blindsided tbh"],
           replies: [
             { you: "I didn't think I needed to warn you.",
-              them: ["you don't NEED to. it would've been nice though", "people were staring the whole time and i didn't know what to do with my face"],
+              them: ["you didnt NEED to. it would've been nice", "people were staring the whole time", "the lady with the pram actually stopped walking"],
               replies: [
-                { you: "I noticed. I was trying not to.", them: ["yeah. you handled it better than me tbh", "the lady with the pram literally stopped walking"] },
-                { you: "Were they staring at me or at us?",
-                  them: ["you. they were staring at you", "i was just the girl sitting across from the guy in the dress"],
-                  replies: [{ you: "That must have felt weird. Sorry.", them: ["it's ok. it's not your fault they were rude", "i just don't think we're on the same page"] }] }
+                { you: "I noticed. I was trying to ignore it.", them: ["well i couldnt", "it was really uncomfortable for me"] },
+                { you: "Were they staring at me or at us?", them: ["at you", "and then at me like what's she doing with him"],
+                  replies: [{ you: "Sorry.", them: ["its ok", "i just dont think this is for me"] }] }
               ] },
             { you: "That's fair. Sorry.",
-              them: ["it's ok. you were funny. i just don't think we're on the same page"],
-              replies: [{ you: "Same page as in you're not into it?", them: ["same page as in i'm into guys who are into me", "and i don't think you were into me. i think you were into the dress"] }] }
+              them: ["its fine", "i just dont think we want the same thing"],
+              replies: [{ you: "As in you're not into it?", them: ["as in i want a guy who's into me", "and i dont think you are. i think you were into the waiter"] }] }
           ] },
         { you: "Did you hate it?",
-          them: ["i didn't hate it", "i just spent the whole time trying to work out if you were into me or into the waiter", "be honest. are you gay?"],
+          them: ["kind of yeah", "sorry", "i spent the whole time trying to work out if you were into me or the waiter", "are you gay?"],
           replies: [
             { you: "I think so, yeah.",
-              them: ["ok. thanks for being honest", "maybe put that on the app next time lol. save everyone the brunch money"],
+              them: ["ok", "then why are you on here matching with girls", "like genuinely"],
               replies: [
-                { you: "You're the first stranger I've said that to.", them: ["oh", "wait really?", "ok now i feel bad about the brunch money thing", "for what it's worth you looked really good. like better than me. which was annoying"] },
-                { you: "I'll pay you back for the eggs.", them: ["lol no it's fine", "good luck. hope you find a guy who's into the dress"] }
+                { you: "I'm still working it out.", them: ["ok but dont work it out on me", "that was $40 and my whole sunday morning"] },
+                { you: "I'll pay you back for the eggs.", them: ["dont bother", "just sort your profile out"] }
               ] },
             { you: "No.",
-              them: ["ok", "sorry. didn't mean to be weird"],
-              replies: [{ you: "It's fine.", them: ["ok. good luck with everything"],
-                after: "You look at \"No.\" on the screen for a long time. It's the first thing all day that felt heavier than wearing the dress." }] },
+              them: ["ok", "sure"],
+              replies: [{ you: "I'm not.", them: ["ok {name}"],
+                after: "You look at \"No.\" on the screen for a long time. It felt heavier to say than the dress felt to wear." }] },
             { you: "Does it matter?",
-              them: ["kind of?? it was a date"],
-              replies: [{ you: "Fair. Yeah, probably.", them: ["ok", "thanks for saying it", "honestly you looked great. just not for me"] }] }
+              them: ["yes?? it was a date"],
+              replies: [{ you: "Fair. Yeah, probably.", them: ["right", "ok well good luck"] }] }
           ] }
       ],
       after: "Ella, to her sister: \"brunch guy turned up in a dress.\" \"WHAT. like a costume?\" \"no like. a nice one. with lashes.\" \"is he gay\" \"obviously he's gay\" \"then why did he match with you\" \"THAT'S WHAT I SAID\"",
@@ -728,19 +717,19 @@ window.CONTENT = {
       them: [{ from: "Bec", text: "thanks for coming everyone!! 🥳 still hungover" }, { from: "Steph", text: "ok be honest is tayla's guy gay or" }, { from: "Steph", text: "WRONG CHAT" }, { from: "Steph", text: "omg sorry {name} that was meant for bec" }, { from: "Tayla", text: "steph 😐" }],
       replies: [
         { you: "Ha. All good.",
-          them: [{ from: "Steph", text: "i'm so sorry" }, { from: "Bec", text: "to be fair he did do my eyeliner in the bathroom" }, { from: "Tayla", text: "can everyone stop" }],
+          them: [{ from: "Steph", text: "im so sorry" }, { from: "Bec", text: "to be fair he did do my eyeliner in the bathroom" }, { from: "Tayla", text: "can everyone stop" }],
           replies: [
             { you: "Bec, your eyeliner did look great.",
-              them: [{ from: "Bec", text: "IT DID. best wing of my life" }, { from: "Steph", text: "ok it actually did" }, { from: "Tayla", text: "i'm muting this chat" }] },
+              them: [{ from: "Bec", text: "it did tbh" }, { from: "Tayla", text: "oh my god" }, { from: "Tayla", text: "muting this" }] },
             { you: "(Say nothing else)" }
           ],
-          after: "An hour later Tayla messages you on her own: \"not gonna lie i was kind of embarrassed last night. everyone kept asking me about you. i don't think this is going anywhere.\"" },
+          after: "An hour later Tayla messages you on her own: \"honestly that was so embarrassing. everyone was asking me if you were gay all night and i didnt know what to say. i dont think this is going anywhere\"" },
         { you: "To answer your question, Steph: yeah, probably.",
-          them: [{ from: "Steph", text: "oh" }, { from: "Bec", text: "😳" }, { from: "Tayla", text: "ok well that would've been good to know before i brought you as my date" }, { from: "Tayla", text: "cool. very cool" }],
+          them: [{ from: "Steph", text: "oh" }, { from: "Bec", text: "😳" }, { from: "Tayla", text: "are you serious" }, { from: "Tayla", text: "you couldnt have told me that BEFORE i brought you to my friend's 30th?" }],
           replies: [
-            { you: "Sorry, Tayla. I'm still working it out.", them: [{ from: "Tayla", text: "yeah. ok" }, { from: "Steph", text: "in my defence bec's cousin is single and he's a guy so" }, { from: "Tayla", text: "STEPH" }] },
-            { you: "Tayla, can we talk on our own?", them: [{ from: "Tayla", text: "yeah. dm me" }, { from: "Steph", text: "🫣" }],
-              after: "In the DMs Tayla is quieter. \"i'm not mad you're gay. i'm mad i found out from steph in a group chat.\" You tell her that makes two of you. She sends a laughing emoji, then: \"you did do bec's eyeliner really well.\"" }
+            { you: "Sorry, Tayla. I'm still working it out.", them: [{ from: "Tayla", text: "yeah well i looked like an idiot" }, { from: "Steph", text: "in my defence bec's cousin is single so" }, { from: "Tayla", text: "STEPH" }] },
+            { you: "Tayla, can we talk on our own?", them: [{ from: "Tayla", text: "not really no" }, { from: "Bec", text: "ok maybe take this somewhere else guys" }],
+              after: "Tayla doesn't reply to your DM. Two days later Sam mentions, carefully, that netball was \"a bit awkward\"." }
           ] },
         { you: "(Leave the group)",
           after: "You leave the group. Your phone buzzes twice more with Tayla's name and you don't open it until lunch." }
@@ -750,32 +739,29 @@ window.CONTENT = {
     {
       id: "c6d", title: "Straight up", contact: "Georgie", part: "Part 1: Before",
       intro: "Georgie from the climbing gym. Thai in West End. You wore a lilac slip dress with a cardigan over it, your nails painted, gloss and lashes. She didn't say one word about it the whole dinner, which was somehow worse.",
-      them: ["hey", "ok i'm just gonna say it bc i hate games", "are you gay"],
+      them: ["hey", "im just going to ask bc i hate games", "are you gay"],
       replies: [
         { you: "Yeah. I think I am.",
-          them: ["ok cool", "no drama. i just wish you'd worked that out before i shaved my legs lol", "you still owe me a climb"],
+          them: ["ok", "would've been good to know before tonight", "kind of annoyed ngl"],
           replies: [
-            { you: "Deal. Thursday?", them: ["thursday. you're belaying, i paid for the spring rolls", "also that dress was a good colour on you. just saying"] },
-            { you: "Sorry about the legs.", them: ["lol they'll grow back", "seriously though. good on you for saying it"] }
+            { you: "Sorry. I should've said.", them: ["yeah you should have", "anyway. see you at the gym i guess"] },
+            { you: "I didn't fully know until tonight.", them: ["ok", "still", "id rather not be the person you figure it out on"] }
           ] },
         { you: "Why does everyone keep asking me that?",
-          them: ["um", "you wore a dress to dinner {name}", "i'm not judging i'm just not an idiot"],
+          them: ["um", "you wore a dress to dinner", "and you didnt look at me once. you looked at the waiter"],
           replies: [
-            { you: "Fair.",
-              them: ["lol. yeah", "wait who else asked"],
-              replies: [{ you: "About three other dates.", them: ["THREE", "{name} that's not dating that's a survey", "maybe try a guy next and see if he asks"] }] },
-            { you: "I can wear a dress and be straight.", them: ["you can. are you though"],
-              replies: [{ you: "...no.", them: ["ok. there it is", "good luck with it. i mean that a normal amount"] }] }
+            { you: "Fair.", them: ["yeah"] },
+            { you: "I can wear a dress and be straight.", them: ["sure. are you?"],
+              replies: [{ you: "...no.", them: ["right", "ok well. good luck"] }] }
           ] },
         { you: "No.",
-          them: ["ok", "you looked at the waiter's arms like eight times but ok"],
+          them: ["ok", "you looked at the waiters arms like 8 times but ok"],
           replies: [
-            { you: "Six times. Max.", them: ["lol ok", "so that's a yes"],
-              replies: [{ you: "Yeah. That's a yes.", them: ["there it is", "see. that wasn't so bad"] }] },
-            { you: "I'm not having this conversation.", them: ["ok fair. that's allowed", "offer stands for the climb"] }
+            { you: "I didn't.", them: ["you did", "whatever. im not doing this"] },
+            { you: "I'm not having this conversation.", them: ["fine", "neither am i"] }
           ] }
       ],
-      after: "Georgie, to her housemate: \"he's gay.\" \"the dress guy?\" \"the dress guy.\" \"did you tell him\" \"i asked him. he took ages to answer.\"",
+      after: "Georgie, to her housemate: \"he's gay.\" \"the dress guy?\" \"the dress guy.\" \"did he say\" \"eventually.\"",
       debrief: "When someone asks you straight out, you can answer straight out, or not at all. Notice which answer felt lighter to say."
     },
     {
