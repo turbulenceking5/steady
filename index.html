@@ -400,19 +400,14 @@ details summary { cursor: pointer; color: var(--muted); }
     return lvl >= 7 ? 3 : lvl >= 5 ? 2 : lvl >= 3 ? 1 : 0;
   }
   const unlockedChats = () => C.chats.filter((c) => (c.tier || 0) <= voiceTier());
-  let lastTier = null;
-  on("level-up", () => {
-    const t = voiceTier();
-    if (lastTier != null && t > lastTier) toast(`Your voice: ${TIERS[t]}. New chats unlocked 💬`, 4000);
-    lastTier = t;
-    renderToday();
-  });
+  // game.js announces tier unlocks in its level-up overlay; just refresh what depends on the tier.
+  on("level-up", () => renderToday());
 
   // ---------- Messages ----------
   function renderChatList() {
     $("#chatView").hidden = true; $("#chatView")._run = null;
     const list = $("#chatList"); list.hidden = false;
-    const tier = voiceTier(); lastTier = tier;
+    const tier = voiceTier();
     const locked = C.chats.length - unlockedChats().length;
     const voice = `<div class="card" style="padding:12px 16px"><h2 style="margin-bottom:6px">Your voice · ${esc(TIERS[tier])}</h2><div style="height:6px;border-radius:3px;background:var(--soft)"><div style="height:100%;width:${(tier / 3) * 100}%;border-radius:3px;background:var(--rainbow)"></div></div>` +
       (locked ? `<p class="muted" style="margin:6px 0 0">${locked} more chat${locked === 1 ? "" : "s"} unlock as you level up. The more out you get, the more fabulous it gets 💅</p>` : `<p class="muted" style="margin:6px 0 0">Everything's unlocked. Full fabulous 🏳️‍🌈</p>`) + "</div>";

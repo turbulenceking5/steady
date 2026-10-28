@@ -6,6 +6,7 @@ A small, private app for getting comfortable being gay: being seen as gay, being
 - **Messages**: everyday texts from mates, exes, the uni group chat, coworkers and dates who know you're gay and don't make a thing of it.
 - **Story**: a storyline from still being in the closet with Archie, through coming out, to six months with your boyfriend. A new chapter opens the day after you finish the last one. His name is set in Settings.
 - **Style**: dress up an avatar (clothes, shoes, accessories, makeup), see how the look reads, save looks and get reactions from friends, and tick off the "wear it out" ladder in real life.
+- **Progress**: XP, levels, daily quests and badges. Tap the level chip in the header.
 - **Practice**: rehearse coming out or mentioning a partner, from easy chats to awkward and difficult reactions, with a short note at the end of each one.
 
 Everything you write stays in your browser's localStorage on your device (keys start with `st_`). Nothing is sent anywhere. Settings has export, import and erase, plus Australian support lines. **Hide** covers the screen with a shopping list; double-tap it to come back.
