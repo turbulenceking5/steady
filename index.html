@@ -68,6 +68,8 @@ textarea { min-height: 130px; resize: vertical; }
 @media (prefers-reduced-motion: reduce) { .bubble { animation: none; } }
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 .choices button { text-align: left; background: var(--card); color: var(--ink); border: 1px solid var(--accent); border-radius: 14px; padding: 10px 13px; font: inherit; cursor: pointer; }
+.write textarea { min-height: 64px; }
+.write + button { margin-top: 4px; }
 .debrief { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .back { margin-bottom: 12px; }
 nav.tabs { position: fixed; bottom: 0; left: 0; right: 0; z-index: 5; display: flex; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
@@ -86,6 +88,8 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
 details summary { cursor: pointer; color: var(--muted); }
 .entry { border-top: 1px solid var(--line); padding: 8px 0; }
 .entry b { font-size: 14px; }
+#toasts { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 40; display: flex; flex-direction: column; gap: 6px; align-items: center; pointer-events: none; width: min(420px, calc(100vw - 32px)); }
+.toast { background: var(--ink); color: var(--bg); border-radius: 12px; padding: 9px 14px; font-size: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.2); animation: pop .2s ease-out; }
 </style>
 </head>
 <body>
@@ -151,7 +155,7 @@ details summary { cursor: pointer; color: var(--muted); }
     <div class="row" style="justify-content:space-between"><b style="font-size:18px">Settings</b><button class="icon-btn">Close</button></div>
   </form>
   <label for="nameInput">What should people call you?</label>
-  <input type="text" id="nameInput" maxlength="30" placeholder="mate" autocomplete="off">
+  <input type="text" id="nameInput" maxlength="30" placeholder="Calum" autocomplete="off">
   <label for="bfInput">Your boyfriend's name in the Story</label>
   <input type="text" id="bfInput" maxlength="30" placeholder="Matt" autocomplete="off">
   <label for="themeSel">Theme</label>
@@ -172,7 +176,9 @@ details summary { cursor: pointer; color: var(--muted); }
     <li><b>Lifeline</b> (24/7): 13 11 14</li>
     <li>In an emergency, call <b>000</b></li>
   </ul>
+  <div id="settingsExtra"></div>
 </dialog>
+<div id="toasts" aria-live="polite"></div>
 
 <div id="cover" hidden>
   <h2>Groceries</h2>
@@ -192,13 +198,22 @@ details summary { cursor: pointer; color: var(--muted); }
     set(k, v) { try { localStorage.setItem("st_" + k, JSON.stringify(v)); } catch {} },
   };
 
+  // Tiny event bus so add-on modules (wardrobe.js, game.js) can react to what happens here.
+  const handlers = {};
+  const on = (ev, fn) => (handlers[ev] = handlers[ev] || []).push(fn);
+  const emit = (ev, data) => (handlers[ev] || []).concat(handlers["*"] || []).forEach((fn) => { try { fn(data, ev); } catch (e) { console.error(e); } });
+  function toast(msg, ms = 2600) {
+    const t = document.createElement("div"); t.className = "toast"; t.textContent = msg;
+    $("#toasts").appendChild(t); setTimeout(() => t.remove(), ms);
+  }
+
   // Dates are Australia/Brisbane (UTC+10, no daylight saving).
   const bneDate = (d = new Date()) => new Date(d.getTime() + 10 * 3600e3).toISOString().slice(0, 10);
   const ordinal = (iso) => Math.floor(Date.parse(iso + "T00:00:00Z") / 86400e3);
   const today = bneDate();
   const day = ordinal(today);
 
-  const name = () => store.get("name", "") || "mate";
+  const name = () => store.get("name", "") || "Calum";
   const bf = () => store.get("bf", "") || "Matt";
   // Last message of a chat's opener, for list previews ("Name: text" in group chats).
   const preview = (c) => { const m = c.them[c.them.length - 1]; return fill(typeof m === "string" ? m : `${m.from}: ${m.text}`); };
@@ -218,9 +233,11 @@ details summary { cursor: pointer; color: var(--muted); }
     if (tab === "chats") renderChatList();
     if (tab === "practice") renderPracticeList();
     if (tab === "story") renderStoryList();
+    emit("tab", tab);
     window.scrollTo(0, 0);
   }
-  document.querySelectorAll("nav.tabs button").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+  // Delegated so tabs added by modules work too.
+  $("nav.tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button[data-tab]"); if (b) showTab(b.dataset.tab); });
 
   // ---------- Today ----------
   const MOODS = [["😣", "Rough"], ["😕", "Uneasy"], ["😐", "Okay"], ["🙂", "Good"], ["😊", "Great"]];
@@ -230,6 +247,7 @@ details summary { cursor: pointer; color: var(--muted); }
     const all = entries();
     all[today] = Object.assign({ prompt: C.prompts[day % C.prompts.length] }, all[today], patch);
     store.set("journal", all);
+    emit(patch.mood != null ? "mood-set" : "journal-saved", { date: today, ...patch });
     renderStreak();
     renderHistory();
   }
@@ -289,6 +307,7 @@ details summary { cursor: pointer; color: var(--muted); }
   // ---------- Conversation engine (shared by Messages and Practice) ----------
   function isDone(kind, id) { return (store.get("done", {})[kind] || []).includes(id); }
   function markDone(kind, id) {
+    emit(kind + "-done", { id, first: !isDone(kind, id) });
     if (kind === "story") { const s = storyDone(); if (!s[id]) { s[id] = today; store.set("story", s); } }
     const d = store.get("done", {});
     d[kind] = Array.from(new Set([...(d[kind] || []), id]));
@@ -306,6 +325,32 @@ details summary { cursor: pointer; color: var(--muted); }
     const add = (cls, text) => { const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; thread.appendChild(b); return b; };
     if (convo.intro) add("note", convo.intro);
 
+    // Practice: write your own reply. It goes on whichever branch shares the most words with it.
+    function closest(text, replies) {
+      const words = (t) => new Set(fill(t).toLowerCase().match(/[a-z']{3,}/g) || []);
+      const mine = words(text);
+      let best = replies[0], top = -1;
+      replies.forEach((r) => { const n = [...words(r.you)].filter((w) => mine.has(w)).length; if (n > top) { top = n; best = r; } });
+      return best;
+    }
+    function writeBox(node) {
+      const form = document.createElement("form");
+      form.className = "write";
+      form.innerHTML = '<label class="muted" style="display:block;margin-bottom:4px">Write it in your own words</label><textarea rows="2" placeholder="Type what you\'d say…"></textarea><div class="row" style="margin-top:6px;justify-content:space-between"><button class="btn" type="submit">Send</button><span class="muted">or pick one below</span></div>';
+      const ta = form.querySelector("textarea");
+      ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const text = ta.value.trim(); if (!text) { ta.focus(); return; }
+        add("you", text);
+        const said = store.get("said", []); said.push({ date: today, scenario: convo.id, text }); store.set("said", said.slice(-200));
+        emit("practice-written", { id: convo.id, text });
+        play(closest(text, node.replies));
+      });
+      choices.appendChild(form);
+      setTimeout(() => ta.focus({ preventScroll: true }), 0);
+    }
+
     let endNote = convo.after; // a branch can carry its own closing note
     async function play(node) {
       choices.innerHTML = "";
@@ -322,6 +367,7 @@ details summary { cursor: pointer; color: var(--muted); }
         t.scrollIntoView?.({ block: "nearest" });
       }
       if (node.replies && node.replies.length) {
+        if (kind === "practice") writeBox(node);
         node.replies.forEach((r) => {
           const b = document.createElement("button");
           b.textContent = fill(r.you);
@@ -363,7 +409,11 @@ details summary { cursor: pointer; color: var(--muted); }
   function renderPracticeList() {
     $("#practiceView").hidden = true; $("#practiceView")._run = null;
     const list = $("#practiceList"); list.hidden = false;
-    list.innerHTML = '<p class="muted" style="margin-top:0">Rehearse saying it in a safe place. You never have to tell anyone, and you choose who, when and how.</p><ul class="list">' +
+    const said = store.get("said", []);
+    const words = said.length ? `<div class="card"><h2>Your words · said ${said.length} time${said.length === 1 ? "" : "s"}</h2>` +
+      said.slice(-3).reverse().map((x) => `<div class="bubble you" style="margin:0 0 6px auto;width:fit-content">${esc(x.text)}</div>`).join("") +
+      (said.length > 3 ? `<details><summary>All of them</summary>${said.slice(0, -3).reverse().map((x) => `<div class="entry"><b>${esc(x.date)}</b><div>${esc(x.text)}</div></div>`).join("")}</details>` : "") + "</div>" : "";
+    list.innerHTML = '<p class="muted" style="margin-top:0">Rehearse saying it in a safe place. Write it in your own words, or pick a line. You never have to tell anyone, and you choose who, when and how.</p>' + words + '<ul class="list">' +
       C.practice.map((p, i) => `<li data-i="${i}">${itemHtml(String(i + 1), p.title, p.who, isDone("practice", p.id) ? "done" : "", `<span class="tag">${esc(p.tone)}</span>`)}</li>`).join("") + "</ul>";
     list.querySelectorAll("li").forEach((li) => li.addEventListener("click", () => openPractice(C.practice[+li.dataset.i])));
   }
@@ -453,9 +503,16 @@ details summary { cursor: pointer; color: var(--muted); }
     lastTap = now;
   });
 
+  // Public API for add-on modules. Keys they store go through store, so they get the st_ prefix
+  // and are covered by export/import/erase.
+  window.SteadyAPI = { store, today, day, ordinal, bneDate, fill, name, esc, on, emit, toast, showTab, $ };
+
   renderToday();
+  emit("ready");
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
 </script>
+<script src="wardrobe.js"></script>
+<script src="game.js"></script>
 </body>
 </html>
