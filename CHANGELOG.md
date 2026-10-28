@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-28
+- Story Part 1: new chapter "Getting gayer" with Lucy. You look a bit gayer every date, her friends keep asking her if you're gay, and then she asks you.
+- Story Part 2: new chapter "Lazy Sunday". {bf} pulls your socks off on the couch and tickles your feet.
+- Messages: new chat with Alex after a beach date where he took your sandals off and tickled your feet (unlocks at level 3).
 - Story Part 1: the dates' texts are rewritten to sound like real people. They're blunter and more annoyed when they work out you're gay, and fewer of them end on a nice note.
 - Story Part 1: the date chapters (Archie at the Italian place, Hannah, Mia, Ella, Bec's 30th, Georgie) are longer, with more replies to choose from and more ways each one can end.
 - Story Part 1: seven new chapters, including brunch in a dress with Ella, a "wrong chat" slip at Bec's 30th, and Georgie asking straight out. Dinner with Archie in gloss and painted nails (she is not keen), dates with Hannah and Mia in makeup and feminine clothes that go badly, and Jess telling you they have been talking about you being gay.

@@ -29,13 +29,13 @@ Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice
 Mostly women, and no family members. Men appear only as dates, crushes or partners.
 - **Friends:** Jess, Priya, Dani (gym), Chloe (flatmate), Sam (coworker, she).
 - **Uni girls:** Nicole, Ailisha, Jemima.
-- **Dates in Part 1:** Hannah (Jess's friend), Mia (Sam's cousin), Ella (Hinge), Tayla and her friends Bec and Steph, Georgie (climbing gym). They work out he's gay, are put off by it, and gossip. Keep their texts plain and unpolished: lowercase, short, no therapy-speak.
+- **Dates in Part 1:** Hannah (Jess's friend), Mia (Sam's cousin), Ella (Hinge), Tayla and her friends Bec and Steph, Georgie (climbing gym), Lucy (seeing him for three weeks) and her friends Kayla and Ruby. They work out he's gay, are put off by it, and gossip. Keep their texts plain and unpolished: lowercase, short, no therapy-speak.
 - **Exes:** Rachel (Korean; natural second-language English with a little Korean, warm, never a caricature) and Archie (his girlfriend in Story Part 1).
-- **Men:** `{bf}` (the boyfriend, Story Part 2) and Alex (a dating-app match).
+- **Men:** `{bf}` (the boyfriend, Story Part 2) and Alex (a dating-app match; `alex-beach` is their beach date). The guys can be playful and affectionate, e.g. pulling his socks or sandals off to tickle his feet, kept light and non-sexual, and they always stop when he says stop.
 
 ## Story
-- **Part 1, "Before"** (c1, c1b, c2–c6, c6b–c6d, c7): in the closet with Archie, dinner where he wears makeup and Archie is uncomfortable, confiding in Nicole, the honest talk (kind and angry branches), a few weeks later, then dates with Hannah, Mia, Ella (c6b, in a dress), Tayla (c6c, a group chat where her friend asks in the wrong chat) and Georgie (c6d) where he goes in makeup and feminine clothes and they clock he's gay and are not nice about it, then Jess tells him what they said. Chapters can have an `intro` (scene-setting note) and the dates use `after` for what the girl is thinking.
-- **Part 2, "{bf}"** (s1–s10): first message through to six months (no family chapter).
+- **Part 1, "Before"** (c1, c1b, c2–c6, c6b–c6e, c7): in the closet with Archie, dinner where he wears makeup and Archie is uncomfortable, confiding in Nicole, the honest talk (kind and angry branches), a few weeks later, then dates with Hannah, Mia, Ella (c6b, in a dress), Tayla (c6c, a group chat where her friend asks in the wrong chat), Georgie (c6d) and Lucy (c6e: he looks gayer each date, her friends keep asking her if he's gay, then she asks him) where he goes in makeup and feminine clothes and they clock he's gay and are not nice about it, then Jess tells him what they said. Chapters can have an `intro` (scene-setting note) and the dates use `after` for what the girl is thinking.
+- **Part 2, "{bf}"** (s1–s10): first message through to six months (no family chapter), including s7b, a lazy Sunday where he pulls your socks off and tickles your feet.
 
 ## Voice
 Warm, casual, Australian, with Brisbane places (James St, the Valley, West End, South Bank, New Farm, Paddington). The girls' chats can run long: several messages per turn, real paragraphs about how they feel. Other chats stay short. Use emoji sparingly. Use `{name}` naturally, especially from the girls. See [dialogue.md](dialogue.md) for how people text (realistic, not always nice) and CLAUDE.md for content boundaries.

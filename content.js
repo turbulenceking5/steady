@@ -119,6 +119,33 @@ window.CONTENT = {
       ]
     },
     {
+      id: "alex-beach", tier: 1,
+      contact: "Alex", role: "dating app", avatar: "A",
+      them: ["home and still finding sand everywhere", "had a really good time today", "also sorry not sorry about the sandals thing 😂"],
+      replies: [
+        { you: "You stole my sandals and tickled my feet in front of half of Streets Beach.",
+          them: ["i 'borrowed' them. you were the one who put your feet in my lap", "and in my defence i didnt know anyone could laugh that loud", "the lady with the pram looked over twice"],
+          replies: [
+            { you: "I'm never showing my face at South Bank again.", them: ["nah she was smiling", "you stopped me after like 10 sec anyway, very fair", "second date? i'll keep my hands to myself. mostly"],
+              replies: [
+                { you: "Mostly 😂 Okay, yes.", them: ["sweet. thursday? i'll pick somewhere with no sand"] },
+                { you: "Yes, but I'm wearing boots.", them: ["boots lol. smart", "thursday then"] }
+              ] },
+            { you: "Payback is coming, just so you know.", them: ["i'll be wearing socks. two pairs", "so that's a yes to a second date?"],
+              replies: [{ you: "That's a yes.", them: ["😊 good"] }] }
+          ] },
+        { you: "I had a good time too. Even the sandals bit.",
+          them: ["even the sandals bit 😏", "noted", "you've got a good laugh. you should do it more"],
+          replies: [
+            { you: "Only if you stop tickling me.", them: ["cant promise that", "but i'll stop when you say. always"] },
+            { you: "Thanks. That's nice to hear.", them: ["just saying it how it is", "thursday?"] }
+          ] },
+        { you: "I'm still recovering tbh.", them: ["lol fair", "next time i'll ask before i grab your feet", "there is going to be a next time right"],
+          replies: [{ you: "Yeah. There is.", them: ["good 🙂"] }] }
+      ],
+      after: "You realise you spent the whole afternoon holding hands on the boardwalk and didn't once check who was watching."
+    },
+    {
       id: "rachel-ex",
       contact: "Rachel", role: "ex", avatar: "R",
       // Korean, English is her second language: keep it natural and warm, never a caricature.
@@ -765,6 +792,52 @@ window.CONTENT = {
       debrief: "When someone asks you straight out, you can answer straight out, or not at all. Notice which answer felt lighter to say."
     },
     {
+      id: "c6e", title: "Getting gayer", contact: "Lucy", part: "Part 1: Before",
+      intro: "You've been seeing Lucy for three weeks. Date one you wore a polo. Date two your nails were painted. Date three: little silver hoops and a bit of gloss. Today, coffee in Teneriffe, you wore a cropped knit, lashes and blush. Her friend Kayla happened to be at the next table. Lucy kept looking over at her.",
+      them: ["hey so", "dont take this the wrong way", "but you get gayer every single time i see you lol"],
+      replies: [
+        { you: "Is that a bad thing?",
+          them: ["idk", "its just a lot of change in three weeks", "first date you were like normal guy. today you had better lashes than me"],
+          replies: [
+            { you: "I'm just wearing what I like now.",
+              them: ["yeah i can see that", "kayla literally texted me under the table", "\"is he gay or is he just really into fashion\"", "and i didnt know what to say"],
+              replies: [
+                { you: "What did you say?", them: ["i said i dont know", "which is kind of embarrassing when im the one dating you", "so. are you?"],
+                  replies: [
+                    { you: "Yeah. I think I am.", them: ["ok", "i mean. i kind of knew by date three", "the girls are going to be insufferable about this"] },
+                    { you: "I don't know yet.", them: ["ok", "well can you work it out before date five", "bc i'm not doing another coffee with kayla watching"] }
+                  ] },
+                { you: "Kayla could've just asked me.", them: ["oh she wants to trust me", "she asked me three times in the car park"] }
+              ] },
+            { you: "Normal guy?", them: ["you know what i mean", "like straight looking", "ok that came out bad. but you know"] }
+          ] },
+        { you: "Gayer how?",
+          them: ["um", "the nails. the earrings. the lip stuff", "today you asked the barista where she got her eyeliner done", "and you were way more interested in her answer than anything i said"],
+          replies: [
+            { you: "That's not fair.", them: ["isnt it", "i asked about your weekend and you said 'good'", "you asked her about eyeliner for five minutes"] },
+            { you: "Okay. That's fair.", them: ["yeah", "can i just ask you straight", "are you gay"],
+              replies: [
+                { you: "Yeah.", them: ["ok", "thank you for saying it", "kind of wish it wasnt three weeks in but ok"] },
+                { you: "Why does it matter?", them: ["because were dating??", "or i thought we were"] }
+              ] }
+          ] },
+        { you: "Your friends have been talking about me, haven't they.",
+          them: ["...a bit", "ok a lot", "hang on"],
+          replies: [
+            { you: "Show me.",
+              them: ["ok dont be mad", "[screenshot] Kayla: ok i saw him. lucy hes gay", "[screenshot] Ruby: the earrings or the lashes", "[screenshot] Kayla: BOTH. and he complimented the barista's nails", "[screenshot] Ruby: lucy babe ask him", "[screenshot] Lucy: i cant just ASK him", "so. im asking"],
+              replies: [
+                { you: "Tell Ruby yes.", them: ["omg", "ok", "honestly kind of relieved. i thought i was doing something wrong", "dont tell kayla i said that"] },
+                { you: "I'm not answering a group chat.", them: ["fair", "im not asking for them though", "im asking for me"],
+                  replies: [{ you: "Yeah. I am.", them: ["ok", "thanks"] }, { you: "Can I tell you in person?", them: ["yeah ok", "not with kayla there though"] }] }
+              ] },
+            { you: "I don't want to know.", them: ["ok fair", "they just keep asking me if youre gay and i dont know what to tell them"] }
+          ] }
+      ],
+      after: "Lucy's group chat that night. Kayla: \"so??\" Lucy: \"dont\" Ruby: \"thats a yes then\" Lucy: \"im not saying anything\" Kayla: \"thats DEFINITELY a yes\" Kayla: \"ask him where he gets his lashes done\"",
+      debrief: "Changing how you look bit by bit is a real way to come out. People notice, and they talk. Nobody gets to decide when you say it, even when they've already guessed."
+    },
+    {
       id: "c7", title: "The group chat", contact: "Jess", part: "Part 1: Before",
       them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "i'm not saying anything. i'm just asking. are you ok?"],
       replies: [
@@ -842,6 +915,32 @@ window.CONTENT = {
           them: ["Of course it's okay. There's no rush.", "Your pace is the right pace."] },
         { you: "I'll try. I might let go if I get nervous.", them: ["That's completely fine. I'll be there either way"] }
       ]
+    },
+    {
+      id: "s7b", title: "Lazy Sunday",
+      intro: "Sunday arvo at his place in New Farm. Footy's on mute, you've got your feet up on the couch, and he's been eyeing your socks for ten minutes.",
+      them: ["ok so you know how you said youre not ticklish", "you squirmed when my hand brushed your foot before. i saw it", "socks off. i'm testing this"],
+      replies: [
+        { you: "Don't you dare.",
+          them: ["too late, one sock down 😈", "omg you ARE ticklish. you kicked the remote across the room", "say stop and i'll stop"],
+          replies: [
+            { you: "Okay okay STOP 😂", them: ["stopping. hands up", "you've gone bright red lol", "come here, i'll make you a tea as an apology"] },
+            { you: "...fine. Five more seconds.", them: ["five more seconds, he says 😂", "you lasted two", "officially the most ticklish man in brisbane. im telling jess"] }
+          ] },
+        { you: "I'm not ticklish. Go on, try.",
+          them: ["big words", "socks off then", "ok you lasted about one second before you yelped. the neighbours probably heard"],
+          replies: [
+            { you: "That was a cough.", them: ["a cough. sure", "do you want me to stop or are you still 'not ticklish'"],
+              replies: [
+                { you: "Stop! I give up 😂", them: ["stopped 🙂", "your feet are freezing btw. blanket?"] },
+                { you: "Revenge is coming.", them: ["i'm not ticklish", "(i am extremely ticklish, please don't)"] }
+              ] },
+            { you: "Okay fine, I'm a bit ticklish.", them: ["a bit 😂", "i'll leave them alone. for today"] }
+          ] },
+        { you: "Only if I get to do yours after.", them: ["deal", "wait no. i didn't think that through", "ok truce, nobody's feet get touched", "(for now)"] }
+      ],
+      after: "Later he pulls the blanket over both of you and keeps one hand resting on your ankle for the rest of the game. You don't move it.",
+      debrief: "Being silly and goofy with a guy you like is part of it too. And 'stop' always works."
     },
     {
       id: "s8", title: "A wobble",
