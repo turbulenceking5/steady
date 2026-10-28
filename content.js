@@ -477,6 +477,22 @@ window.CONTENT = {
       after: "You put the phone down and feel like you're playing a part. You've felt that for a while."
     },
     {
+      id: "c1b", title: "The Italian place", contact: "Archie", part: "Part 1: Before",
+      intro: "Friday night. You stood at the mirror longer than usual. Clear gloss, a little mascara, the silky cream shirt you bought and never wore, and your nails in a soft lilac you did yourself on Thursday. You told yourself it was just a look. It felt like you.",
+      them: ["Home! Thank you for dinner, that pasta was unreal 🍝", "Can I say something without it being weird?", "You looked really nice tonight. Different. The shirt, and was that lip gloss? And your nails!"],
+      replies: [
+        { you: "Yeah. I just felt like it. Is that okay?",
+          them: ["Of course it's okay. It suited you, honestly.", "I just didn't know you were into that kind of thing. You never said."],
+          replies: [
+            { you: "I'm still working out what I'm into, I think.", them: ["That's allowed.", "You seemed more relaxed tonight than you have in ages, you know. Like you liked being looked at for once. Night, {name} x"] },
+            { you: "It's not a big deal. Just a bit of fun.", them: ["Okay, okay 😊 The lilac was cute though. Night x"] }
+          ] },
+        { you: "Ha. Was it too much?", them: ["No! It wasn't too much. It was just... new.", "The waiter definitely clocked your nails and gave you the biggest smile. Love you x"] }
+      ],
+      after: "Archie, brushing her teeth, keeps thinking about it. Not the gloss exactly. The way he lit up when the waiter complimented his nails, and how he never looks like that when she compliments him. She doesn't say the word, even in her head. But it's there, sitting next to a lot of other little things.",
+      debrief: "Wearing something that feels like you, even before you can say why, is often how it starts. The people who love you usually notice the relief before they notice the makeup."
+    },
+    {
       id: "c2", title: "Saying it to someone", contact: "Nicole", part: "Part 1: Before",
       them: ["Hey {name}, you were quiet at drinks. Everything okay with you?", "No pressure. Just checking."],
       replies: [
@@ -531,7 +547,73 @@ window.CONTENT = {
         { you: "Thank you. I'm doing better than I have in years.", them: ["I can hear it. I'm glad.", "Maybe one day we can be proper friends. When it stings less."] },
         { you: "I'm okay. I miss you as a friend.", them: ["Me too, a bit. Give it time. I'm not going anywhere for good."] }
       ],
-      after: "A month later, Dani sets you up on a dating app. You've never felt this nervous about pressing 'like'."
+      after: "Jess has a friend she wants you to meet. 'Just a drink, no pressure.' You say yes, half to prove something to yourself. You still haven't said the word to anyone but Archie and Nicole."
+    },
+    {
+      id: "c5", title: "Jess's friend", contact: "Hannah", part: "Part 1: Before",
+      intro: "Drinks with Hannah at a wine bar in New Farm. You promised yourself you'd go as you, not as a costume. So: a soft pink knit with the sleeves pushed up, silver rings, a berry lip tint, a flick of mascara and your nails freshly painted. Hannah looked at your hands for a long second when you sat down, then smiled.",
+      them: ["Hey {name}! Thanks for tonight, that was really fun 🍷", "Okay I have to ask. Where did you get that lip tint? The colour was perfect on you and I've been hunting for one like it for months."],
+      replies: [
+        { you: "Ha, Mecca on Queen St. I'll send you the shade.",
+          them: ["Please do!! Honestly you wore it better than I would.", "Can I be honest about something? Tell me if this is out of line."],
+          replies: [
+            { you: "Go for it.", them: ["I had a really nice time. But it felt more like a night out with a mate than a date? Like, a really good mate.", "Is that just me?"],
+              replies: [
+                { you: "No, I felt it too. I think I'm still working some things out.", them: ["That's completely fine. I'd genuinely love to be mates.", "And you can work things out while helping me find a lip tint 😄"] },
+                { you: "Not just you. Friends?", them: ["Friends. 100%. You owe me that shade name though 💄"] }
+              ] }
+          ] },
+        { you: "Was it weird? I wasn't sure about wearing it on a date.",
+          them: ["Weird? No. Surprising, maybe, in a good way.", "You spent half the night telling me about Drag Race and the other half admiring my earrings. It was the most fun first date I've had in ages, even if I'm not sure it was a date 😂"],
+          replies: [
+            { you: "Yeah. I think I'm still working some things out.", them: ["Hey, that's okay. Take your time.", "Whatever you work out, I'd still like to get a drink with you. And steal your makeup tips."] },
+            { you: "It was fun. Maybe more of a friend date?", them: ["Friend date. I love that. Next one's on me 🥂"] }
+          ] }
+      ],
+      after: "Hannah, on the bus home, texts Jess: 'He's SO lovely. Funny, kind, better makeup than me.' She stares at the screen, then adds: 'Jess. I think he might be gay?? Like, in the nicest way. He lit up talking about the bartender's jacket.' She deletes the last bit, then sends it anyway. Jess replies: 'Oh. OH. Yeah, actually. Be nice.' Hannah types back: 'Obviously. I hope he works it out. He seemed happiest when he was being himself.'",
+      debrief: "Showing up as yourself on a date that 'should' fit can tell you a lot. Notice who you felt most like yourself with, and what you found yourself looking at."
+    },
+    {
+      id: "c6", title: "Mini golf", contact: "Mia", part: "Part 1: Before",
+      intro: "Sam from work set you up with her cousin Mia. Mini golf at South Bank, then gelato. This time you went further: wide-leg trousers, a little cropped cardigan with pearl buttons, gold hoops, a proper rosy lipstick and lashes. You'd never felt this cute walking out the door. Mia's eyebrows went up when she saw you, then she laughed and said, 'Okay, I'm underdressed.'",
+      them: ["That was the most fun I've had in ages 😂 You're SO competitive", "I can't stop thinking about that windmill hole. Also about your cardigan. Where is it from? I need it."],
+      replies: [
+        { you: "Thrifted in West End! I'll take you sometime.",
+          them: ["Deal. You clearly have the eye.", "Can I ask you something? Feel free to tell me to mind my own business."],
+          replies: [
+            { you: "Ask away.",
+              them: ["Was tonight a date for you? Because you were lovely, but you watched the guy at the gelato counter like he was dessert 😅", "No judgement at all. I'm just trying to work out what we are."],
+              replies: [
+                { you: "Honestly? I think I'm gay. You're one of the first people I've said that to.",
+                  them: ["Oh {name}. Thank you for telling me. That's a big thing to say to someone you've known for four hours.", "For what it's worth, it suits you. The lipstick, the cardigan, all of it. You looked so happy tonight.", "Mates? I genuinely want to go thrifting with you."] },
+                { you: "I don't fully know yet. Is that a weird answer?",
+                  them: ["Not weird at all. Most people don't have it worked out on a first date 😊", "Just know I had fun, whatever this was. And you're welcome at mini golf any time, lipstick and all."] },
+                { you: "Ha. Busted. He did have nice arms.",
+                  them: ["HE DID. We were both looking!! 😂", "Okay I'm relieved, I thought I was going mad. Friends who rate the gelato guy together?"] }
+              ] }
+          ] },
+        { you: "Ha, you're just salty I won.",
+          them: ["I am VERY salty. Rematch.", "Also, the lipstick. I couldn't work out tonight if I was on a date or at a sleepover 😂 In the best way."],
+          replies: [
+            { you: "Honestly, I'm not sure either.", them: ["Well, I had fun either way. Come thrifting with me and we'll call it whatever it is."] },
+            { you: "Sleepover energy, definitely. Friends?", them: ["Friends. And next time I'm wearing lipstick too, I refuse to be outshone 💄"] }
+          ] }
+      ],
+      after: "Mia, walking to her car, is smiling. She calls Sam straight away. 'Your work friend is gorgeous. Also, babe, he's gay. Like, I'm pretty sure.' Sam goes quiet, then: 'Was he okay? Were you nice?' Mia says, 'Of course I was nice. He looked like he was finally breathing. I just hope he has people.'",
+      debrief: "Being 'read' as gay can feel scary in your head and turn out kind in real life. When someone notices and is warm about it, let that land."
+    },
+    {
+      id: "c7", title: "The verdict", contact: "Jess", part: "Part 1: Before",
+      them: ["Okay so. Hannah texted me after your drink.", "And Sam says Mia had the best night.", "{name}. Love. I say this with my whole heart. Have you thought about maybe going on a date with a man? 💛"],
+      replies: [
+        { you: "...yeah. I have. I'm gay, Jess.",
+          them: ["I know, babe. I've kind of known for a while. I was waiting for you.", "I'm so proud of you. And sorry for setting you up with two straight girls, that's on me 😂", "Also both of them said you looked incredible. Mia wants your lipstick shade."] },
+        { you: "Was it that obvious?",
+          them: ["You wore better lipstick than both of them and spent mini golf checking out the gelato guy. So. A little 😂", "But honestly? You looked happy. Happier than I've seen you. That's all I care about."],
+          replies: [{ you: "I think I'm gay.", them: ["I know. I love you. Nothing changes except you get to be you now 💛"] }] }
+      ],
+      after: "A month later, Dani sets you up on a dating app. This time you tick 'men'. You've never felt this nervous about pressing 'like'.",
+      debrief: "The people who love you often see it before you say it. That's not you failing to hide. It's you shining through."
     },
     {
       id: "s1", title: "Hey there", part: "Part 2: {bf}",
