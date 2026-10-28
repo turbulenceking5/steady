@@ -235,6 +235,24 @@ details summary { cursor: pointer; color: var(--muted); }
   applyTheme();
 
   // ---------- Tabs ----------
+  // ---------- Back ----------
+  // Opening a route, chat, chapter or scenario pushes one history entry, so the phone's back
+  // button (and the in-app ← button, which goes through history too) steps up a level instead of leaving.
+  let backFn = null, pushed = false;
+  function setBack(fn) {
+    backFn = fn;
+    if (!pushed) { try { history.pushState({ steadySub: 1 }, ""); pushed = true; } catch {} }
+  }
+  function clearBack() { backFn = null; }
+  function goBack() {
+    if (pushed) { history.back(); return; } // popstate runs backFn
+    const f = backFn; backFn = null; if (f) f();
+  }
+  addEventListener("popstate", () => {
+    pushed = false;
+    const f = backFn; backFn = null; if (f) f();
+  });
+
   function showTab(tab) {
     document.querySelectorAll("nav.tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
     document.querySelectorAll("main > section").forEach((s) => (s.hidden = s.id !== "tab-" + tab));
@@ -333,6 +351,9 @@ details summary { cursor: pointer; color: var(--muted); }
   function runConversation(view, convo, kind, header) {
     const run = Symbol(); view._run = run;
     view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
+    // The header is rebuilt on every re-run (outfit pick, "Try different replies"), so bind back here.
+    const backBtn = view.querySelector(".back");
+    if (backBtn) backBtn.addEventListener("click", goBack);
     const thread = view.querySelector(".thread");
     const choices = view.querySelector(".choices");
     const add = (cls, text) => { const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; thread.appendChild(b); return b; };
@@ -456,6 +477,7 @@ details summary { cursor: pointer; color: var(--muted); }
 
   // ---------- Messages ----------
   function renderChatList() {
+    clearBack();
     $("#chatView").hidden = true; $("#chatView")._run = null;
     const list = $("#chatList"); list.hidden = false;
     const tier = voiceTier();
@@ -469,12 +491,13 @@ details summary { cursor: pointer; color: var(--muted); }
   function openChat(c) {
     $("#chatList").hidden = true;
     const view = $("#chatView"); view.hidden = false;
+    setBack(renderChatList);
     runConversation(view, c, "chat", `<button class="btn ghost back">← Messages</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.avatar)}</span><b>${esc(c.contact)}</b><span class="tag">${esc(c.role)}</span></div>`);
-    view.querySelector(".back").addEventListener("click", renderChatList);
   }
 
   // ---------- Practice ----------
   function renderPracticeList() {
+    clearBack();
     $("#practiceView").hidden = true; $("#practiceView")._run = null;
     const list = $("#practiceList"); list.hidden = false;
     const said = store.get("said", []);
@@ -488,8 +511,8 @@ details summary { cursor: pointer; color: var(--muted); }
   function openPractice(p) {
     $("#practiceList").hidden = true;
     const view = $("#practiceView"); view.hidden = false;
+    setBack(renderPracticeList);
     runConversation(view, p, "practice", `<button class="btn ghost back">← Practice</button><h2 style="margin:0 0 4px;font-size:20px">${esc(p.title)}</h2><p class="muted" style="margin:0 0 10px">${esc(p.who)}</p>`);
-    view.querySelector(".back").addEventListener("click", renderPracticeList);
   }
 
   // ---------- Story ----------
@@ -510,6 +533,7 @@ details summary { cursor: pointer; color: var(--muted); }
   }
   const PART_HEAD = (t) => `<li><h2 class="muted" style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px">${esc(fill(t))}</h2></li>`;
   function renderStoryList() {
+    clearBack();
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
     const d = storyDone();
@@ -544,7 +568,8 @@ details summary { cursor: pointer; color: var(--muted); }
         const sub = st === "open" ? `${fill(c.contact || "{bf}")}${c.irl ? " · in person" : ""} · ${d[c.id] ? "read" : "new"}` : "Locked";
         return `<li data-i="${i}">${itemHtml(String(k + 1), fill(c.title), sub, d[c.id] ? "done" : st === "open" ? "new" : "")}</li>`;
       }).join("") + "</ul>";
-    list.querySelector(".back").addEventListener("click", renderStoryList);
+    setBack(renderStoryList);
+    list.querySelector(".back").addEventListener("click", goBack);
     list.querySelectorAll("li[data-i]").forEach((li) => {
       const i = +li.dataset.i;
       if (chapterState(i) !== "open") li.querySelector(".item").disabled = true;
@@ -557,8 +582,8 @@ details summary { cursor: pointer; color: var(--muted); }
     const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}"), next: nextI >= 0 ? () => openChapter(nextI) : null });
     $("#storyList").hidden = true;
     const view = $("#storyView"); view.hidden = false;
+    setBack(() => (c.route ? renderRoute(c.route) : renderStoryList()));
     runConversation(view, c, "story", `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
-    view.querySelector(".back").addEventListener("click", () => (c.route ? renderRoute(c.route) : renderStoryList()));
   }
 
   // ---------- Settings ----------

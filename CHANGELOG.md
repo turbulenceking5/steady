@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-28
+- Fixed: the back button in a Story chapter did nothing after you picked an outfit or tapped "Try different replies". It works again, and your phone's back button now steps back to the list of chapters and then the list of girls instead of closing the app.
+- Story: people talk less Australian. No more "g'day mate", arvo, thongs, footy, snags or sunnies; the guys say "man" and "buddy". It's still set in Brisbane.
+- Story: five new barefoot chapters, where a guy who wants her tickles your feet in front of the girls: a pool day at Steph's (Tayla), a boat day with no shoes allowed (Olivia), trivia at Brooke's shoes-off house (Zoe), game night at Kirra's, who films it and posts it (Sophie), and pedicure night at Bianca's, where the guy is Jake, the one she's setting you up with.
 - Story: the guys stop being nice about it. When you try to win her back, and in the barefoot chapters, they tease you, laugh about you to her and their mates, and make it very clear you're not a threat.
 - Story: four new barefoot chapters. Shoes off at Kate's white-carpet housewarming with Hannah, the beach at Caloundra with Ella, climbing shoes off with Georgie, and a tatami room at Kayla's birthday with Lucy. Each time your painted toes are on show in front of a guy who wants her, and he gets closer to her the longer it goes.
 - Story: the new-boyfriend scenes are rewritten. You go up to him to say you want her back, and you're so meek and so obviously gay about it that he doesn't take you seriously, he gives you butterflies, and she thinks you're adorable. At Mia's flat you have to take your shoes and socks off at the door, in front of Lachlan, with glitter toes.
