@@ -40,3 +40,6 @@ Mostly women, and no family members. Men appear only as dates, crushes or partne
 
 ## Voice
 Warm, casual, Australian, with Brisbane places (James St, the Valley, West End, South Bank, New Farm, Paddington). The girls' chats can run long: several messages per turn, real paragraphs about how they feel. Other chats stay short. Use emoji sparingly. Use `{name}` naturally, especially from the girls. See [dialogue.md](dialogue.md) for how people text (realistic, not always nice) and CLAUDE.md for content boundaries.
+
+## Outfit picks
+A date chapter can have `outfits: [{ label, intro?, gaydar?, them?, at? }]` (usually toned down / the usual / further). The pick replaces the chapter `intro`, inserts `them` lines (her reaction) after her first line (or at index `at`), and adds `gaydar` (a delta) to the final value, capped at 99 unless a branch reached 100. Every option must keep whatever the dialogue mentions (e.g. Jade's heeled sandals), so options add or soften around it rather than removing it. `outfitPrompt` overrides "What are you wearing?".
