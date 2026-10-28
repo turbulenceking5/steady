@@ -1,6 +1,10 @@
 # Changelog
 
 ## 2026-10-28
+- Story: boy clothes. On each girl's first date you can pick "Boy clothes", and her story goes a different way: two new dates where she's into you, your choices decide whether you keep it up or slip, and she either asks you to be her boyfriend or moves on and tells you to date guys. Pick a different outfit on date one to get her usual story back.
+- Story: twelve new dates, one more for every girl: shopping for Archie's work party dress, Hannah's run club in a lilac set, styling Mia over text, Ella's plus-one, Bec's 30th mood board, women's climbing shoes with Georgie, 3am sheet masks with Lucy, a pedicure date with Jade, Olivia's sister on FaceTime, trivia with Zoe, Kirra stealing Sophie's phone and the beauty store with Bianca.
+- Story: in every barefoot scene the girls tease you about your tiny feet.
+- Bigger, darker text for the narration, "Worth remembering" and the bar labels, so it's easier to read.
 - Story: the break-ups and end chapters tease you more. The girls laugh about not fancying you any more and tell you to date guys: Hannah says to get on the guy apps, Mia's boyfriend has a work friend for you, Tayla says Mitch would give you his number before he'd give her back, Georgie says to ask the waiter out, Lucy's friend has already picked out a doctor, and Kirra goes to get the name of the guy at the bar.
 - Story: every chapter rewritten to sound like real people texting and talking: shorter, messier messages, fewer punchlines, no speeches, and plain "worth remembering" notes. Each girl now lets you down in her own way (Zoe compares you to Brooke, Lucy kisses you on the cheek like she does Kayla, Olivia sips your drink like you're Dani, Georgie says it's like hanging out with her housemate). {name} and {bf} text like an actual couple.
 - Fixed: lines that mentioned polish, mascara or outfits you didn't pick, and end notes that only made sense on one branch.

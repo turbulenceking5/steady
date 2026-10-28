@@ -114,7 +114,7 @@ function checkMsgs(where, list) {
 }
 
 const NODE_KEYS = ["them", "replies", "after", "debrief", "gaydar", "spark", "outcome"];
-const CHAPTER_KEYS = ["id", "route", "title", "contact", "intro", "irl", "friend", "gaydarSays", "gaydarWho", "outfits", "outfitPrompt", ...NODE_KEYS];
+const CHAPTER_KEYS = ["id", "route", "title", "contact", "intro", "irl", "friend", "gaydarSays", "gaydarWho", "outfits", "outfitPrompt", "path", ...NODE_KEYS];
 const ifRefs = [];
 const outcomesByChapter = {};
 
@@ -124,7 +124,7 @@ function inRange(where, key, v) {
 }
 
 function checkNode(where, n, chapter, isChapter) {
-  if (!isChapter) for (const k of Object.keys(n)) if (![...NODE_KEYS, "you"].includes(k)) err(where, `unknown branch key "${k}"`);
+  if (!isChapter) for (const k of Object.keys(n)) if (![...NODE_KEYS, "you", "masc"].includes(k)) err(where, `unknown branch key "${k}"`);
   const hasReplies = Array.isArray(n.replies) && n.replies.length > 0;
   if (n.replies != null && !Array.isArray(n.replies)) err(where, "`replies` must be an array");
   if (Array.isArray(n.replies) && !n.replies.length) err(where, "empty `replies` (omit it for a leaf)");
@@ -160,7 +160,7 @@ function checkNode(where, n, chapter, isChapter) {
 const routeIds = new Set();
 C.routes.forEach((r, i) => {
   const w = `routes[${i}]${r && r.id ? ` (${r.id})` : ""}`;
-  for (const k of Object.keys(r)) if (!["id", "name", "blurb", "part", "lock", "avatar", "intro"].includes(k)) err(w, `unknown route key "${k}"`);
+  for (const k of Object.keys(r)) if (!["id", "name", "blurb", "part", "lock", "avatar", "intro", "fork"].includes(k)) err(w, `unknown route key "${k}"`);
   if (typeof r.id !== "string" || !r.id) err(w, "missing id");
   else if (routeIds.has(r.id)) err(w, `duplicate route id "${r.id}"`);
   else routeIds.add(r.id);
@@ -192,7 +192,7 @@ C.story.forEach((c, i) => {
     else c.outfits.forEach((o, j) => {
       const ow = `${w}.outfits[${j}]`;
       if (!o || typeof o !== "object") return err(ow, "outfit must be an object");
-      for (const k of Object.keys(o)) if (!["label", "intro", "gaydar", "them", "at"].includes(k)) err(ow, `unknown outfit key "${k}"`);
+      for (const k of Object.keys(o)) if (!["label", "intro", "gaydar", "them", "at", "masc", "spark"].includes(k)) err(ow, `unknown outfit key "${k}"`);
       checkText(ow + ".label", o.label);
       if ("intro" in o) checkText(ow + ".intro", o.intro);
       if ("gaydar" in o && (typeof o.gaydar !== "number" || o.gaydar < -100 || o.gaydar > 100)) err(ow, "outfit `gaydar` is a delta between -100 and 100");

@@ -80,7 +80,7 @@ async function walkChapter(ci) {
   const runs = [];
   if (c.outfits) c.outfits.forEach((o, f) => (f === 0 ? leaves : leaves.slice(0, 1)).forEach((p) => runs.push([f, p])));
   else leaves.forEach((p) => runs.push([-1, p]));
-  const errs = [], route = C.story.map((x, i) => i).filter((i) => C.story[i].route === c.route);
+  const errs = [], route = window.steadyRouteChapters(c.route);
   const isLast = route.indexOf(ci) === route.length - 1;
   for (let k = 0; k < runs.length; k++) {
     const [f, p] = runs[k], where = `${c.id} ${f >= 0 ? `outfit ${f} ` : ""}path [${p}]`;
@@ -133,7 +133,7 @@ async function walkChapter(ci) {
     const { page, label } = await newPage(browser, base, { colorScheme: "light", reducedMotion: "reduce" });
     const errs = await page.evaluate(validateTrees);
     errs.forEach((e) => check(false, `content: ${e}`));
-    const routes = await page.evaluate(() => window.CONTENT.routes.map((r) => ({ id: r.id, lock: !!r.lock, chapters: window.CONTENT.story.map((c, i) => i).filter((i) => window.CONTENT.story[i].route === r.id) })));
+    const routes = await page.evaluate(() => window.CONTENT.routes.map((r) => ({ id: r.id, lock: !!r.lock, fork: r.fork || null, chapters: window.steadyRouteChapters(r.id), masc: window.CONTENT.story.map((c, i) => i).filter((i) => window.CONTENT.story[i].route === r.id && window.CONTENT.story[i].path === "masc") })));
     check(await noHScroll(page), `${label} story list fits 390px`);
     check(await page.locator(`#storyList li[data-r="${routes.find((r) => r.lock).id}"] .item`).isDisabled(), `${label} locked routes start disabled`);
     let paths = 0, chapters = 0;
@@ -148,6 +148,22 @@ async function walkChapter(ci) {
         paths += res.runs; chapters++;
         await page.click("#storyView .back");
         await page.waitForSelector("#storyList:not([hidden])");
+      }
+      if (r.fork) {
+        // The boy-clothes path: mark date one as boy clothes and walk the chapters that appear.
+        await page.evaluate((id) => { const m = JSON.parse(localStorage.getItem("st_masc") || "{}"); m[id] = true; localStorage.setItem("st_masc", JSON.stringify(m)); }, r.fork);
+        await page.click("#storyList .back");
+        await page.click(`#storyList li[data-r="${r.id}"] .item`);
+        check(JSON.stringify(await page.evaluate((id) => window.steadyRouteChapters(id), r.id)) === JSON.stringify([r.chapters[0]].concat(r.masc)), `${label} ${r.id}: boy clothes shows the boy-clothes path`);
+        for (const ci of r.masc) {
+          await page.click(`#storyList li[data-i="${ci}"] .item`);
+          const res = await page.evaluate(walkChapter, ci);
+          res.errs.forEach((e) => check(false, `${label} ${e}`));
+          if (!res.errs.length) passes++;
+          paths += res.runs; chapters++;
+          await page.click("#storyView .back");
+          await page.waitForSelector("#storyList:not([hidden])");
+        }
       }
       check(await page.locator("#storyList .tag.new").count() === 0, `${label} ${r.id}: every chapter read`);
       await page.click("#storyList .back");

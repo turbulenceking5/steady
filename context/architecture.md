@@ -16,7 +16,7 @@ Load order: `content.js`, then the inline app script.
 - `fill(text)`: replaces `{name}` (default "Calum") and `{bf}` (default "Matt").
 
 ## Storage keys (all prefixed `st_`)
-`name`, `bf`, `theme`, `story` (`{chapterId: firstFinishedDate}`), `outcomes` (`{chapterId: outcome}` from the latest play-through, read by `if` messages), `last` (route id of the last chapter opened, for Continue). Older versions also stored `journal`, `done`, `said`, `wardrobe*` and `game*`; they're left alone and still go in exports.
+`name`, `bf`, `theme`, `story` (`{chapterId: firstFinishedDate}`), `outcomes` (`{chapterId: outcome}` from the latest play-through, read by `if` messages), `last` (route id of the last chapter opened, for Continue), `masc` (`{chapterId: true|false}`: whether the latest play-through was boy clothes, from a `masc` outfit or reply; a route's `fork` chapter decides which path `routeChapters()` shows). Older versions also stored `journal`, `done`, `said`, `wardrobe*` and `game*`; they're left alone and still go in exports.
 
 ## Conversation engine
 `runConversation(view, convo, header)` plays a node tree: an optional outfit pick, `them` messages (with a typing delay), then reply buttons. Messages with `if` are skipped unless an earlier chapter's stored outcome matches. A node with no replies ends the chapter: it calls `markDone` and `setOutcome`, shows `after` (the branch's own, or the chapter's), the gaydar bars, `debrief`, then "Try different replies" and "Next chapter".

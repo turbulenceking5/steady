@@ -10,19 +10,19 @@
 <link rel="apple-touch-icon" href="icon.svg">
 <style>
 :root {
-  --bg: #f6f5fb; --card: #ffffff; --ink: #1d1b2e; --muted: #6b6880; --line: #e4e2ef;
+  --bg: #f6f5fb; --card: #ffffff; --ink: #1d1b2e; --muted: #6b6880; --note: #45425a; --line: #e4e2ef;
   --accent: #5b5bd6; --accent-ink: #ffffff; --soft: #ecebfb;
   --them: #ecebf3; --you: #5b5bd6; --you-ink: #ffffff;
   --rainbow: linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#24408e,#732982);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --line: #2e2b3d;
+    --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --note: #d2cfe4; --line: #2e2b3d;
     --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --line: #2e2b3d;
+  --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --note: #d2cfe4; --line: #2e2b3d;
   --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff;
 }
 * { box-sizing: border-box; }
@@ -56,7 +56,7 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 .bubble { max-width: 82%; padding: 9px 13px; border-radius: 18px; white-space: pre-wrap; overflow-wrap: anywhere; animation: pop .18s ease-out; }
 .bubble.them { align-self: flex-start; background: var(--them); border-bottom-left-radius: 6px; }
 .bubble.you { align-self: flex-end; background: var(--you); color: var(--you-ink); border-bottom-right-radius: 6px; }
-.bubble.note { align-self: center; max-width: 100%; background: none; color: var(--muted); font-size: 14px; text-align: center; }
+.bubble.note { align-self: center; max-width: 100%; background: none; color: var(--note); font-size: 17px; line-height: 1.45; text-align: center; }
 .bubble .from { display: block; font-size: 12px; font-weight: 700; color: var(--accent); }
 .item[disabled] { opacity: .55; cursor: default; }
 .typing { align-self: flex-start; color: var(--muted); font-size: 14px; padding: 4px 6px; }
@@ -70,8 +70,9 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 @media (prefers-reduced-motion: reduce) { .bubble { animation: none; } }
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 .choices button { text-align: left; background: var(--card); color: var(--ink); border: 1px solid var(--accent); border-radius: 14px; padding: 10px 13px; font: inherit; cursor: pointer; }
-.debrief { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
+.debrief { font-size: 17px; line-height: 1.45; margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .gaydar { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
+.gaydar .muted, .choices > p.muted { font-size: 16px; }
 .gaydar .meter + .meter { margin-top: 12px; }
 .gaydar .spark .fill { background: linear-gradient(90deg,#ff7eb3,#e0457b); background-size: auto; }
 .gaydar .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
@@ -196,6 +197,10 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   // How a chapter ended (a branch's `outcome`), so a later chapter can bring it up: { if: "chapterId=a|b" }.
   // The latest play-through wins, so "Try different replies" can change it.
   function setOutcome(id, v) { const o = store.get("outcomes", {}); if (v) o[id] = v; else delete o[id]; store.set("outcomes", o); }
+  // Boy clothes: a chapter counts as "masc" when he picked a `masc` outfit or a `masc` reply
+  // (latest play-through). A route with `fork` splits after that chapter: if every outfit date
+  // up to it was masc, the `path: "masc"` chapters show instead of the rest of the route.
+  function setMasc(id, v) { const m = store.get("masc", {}); m[id] = !!v; store.set("masc", m); }
   function outcomeIs(cond) { const [id, vals = ""] = String(cond).split("="); return vals.split("|").includes(store.get("outcomes", {})[id]); }
 
   // Reduced motion also means no typing delays: messages arrive at once.
@@ -261,6 +266,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     let outcome = convo.outcome; // deepest branch that sets it wins
     let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
     let spark = convo.spark; // how into you she is; defaults to 100 - gaydar
+    let masc = !!(convo.fit && convo.fit.masc);
     async function play(node) {
       skip = false;
       choices.innerHTML = "";
@@ -292,26 +298,29 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       choices.innerHTML = "";
       if (node.replies && node.replies.length) {
         node.replies.forEach((r) => {
-          choices.appendChild(button("reply", fill(r.you), () => { add("you", fill(r.you)); play(r); }));
+          choices.appendChild(button("reply", fill(r.you), () => { if (r.masc) masc = true; add("you", fill(r.you)); play(r); }));
         });
         if (stick) choices.lastElementChild.scrollIntoView({ block: "nearest" });
         focusIn(choices);
       } else {
         markDone(convo.id);
         setOutcome(convo.id, outcome);
+        if (convo.outfits || masc) setMasc(convo.id, masc);
         const endAt = thread.children.length;
         if (endNote) add("note", fill(endNote));
         if (gaydar != null) {
           const delta = (convo.fit && convo.fit.gaydar) || 0;
           if (gaydar < 100) gaydar = Math.max(0, Math.min(99, gaydar + delta));
           const who = fill(convo.gaydarWho || convo.contact);
-          const into = spark != null ? spark : Math.max(0, 100 - gaydar);
+          const into = Math.max(0, Math.min(100, (spark != null ? spark : 100 - gaydar) + ((convo.fit && convo.fit.spark) || 0)));
           const bar = (cls, v, title, label) => `<div class="meter ${cls}" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${v}" aria-label="${esc(title)}"><div class="top"><b>${esc(title)}</b><span class="pct">${v}%</span></div><div class="track"><div class="fill" data-v="${v}"></div></div><span class="muted">${esc(label)}</span></div>`;
           choices.insertAdjacentHTML("beforeend", `<div class="gaydar">${bar("gay", gaydar, `How gay ${who} thinks you are`, gaydarLabel(gaydar))}${convo.friend ? "" : bar("spark", into, `How much ${who} fancies you`, sparkLabel(into))}${convo.gaydarSays ? `<div style="margin-top:8px"><i>"${esc(fill(convo.gaydarSays))}"</i> <span class="muted">· ${esc(who)}</span></div>` : ""}</div>`);
           const fills = choices.querySelectorAll(".gaydar .fill");
           requestAnimationFrame(() => requestAnimationFrame(() => fills.forEach((f) => { f.style.width = f.dataset.v + "%"; })));
         }
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(fill(convo.debrief))}</div>`);
+        // Date one is where a route forks: say so, so the boy-clothes path can be found.
+        if (ROUTES.some((r) => r.fork === convo.id)) choices.insertAdjacentHTML("beforeend", `<p class="muted fork">${masc ? "Boy clothes. Her story goes a different way from here." : "Pick boy clothes on this date and her story goes a different way."}</p>`);
         const row = document.createElement("div"); row.className = "row";
         row.appendChild(button("btn ghost again", "Try different replies", () => { scrollTo(0, 0); runConversation(view, convo.base || convo, header); }));
         if (convo.next) row.appendChild(button("btn next", "Next chapter →", convo.next));
@@ -334,7 +343,20 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   // open one after another, straight away. A route with `lock` opens once any other route is finished.
   const storyDone = () => store.get("story", {});
   const ROUTES = C.routes || [];
-  const routeChapters = (rid) => C.story.map((c, i) => i).filter((i) => C.story[i].route === rid);
+  const allRouteChapters = (rid) => C.story.map((c, i) => i).filter((i) => C.story[i].route === rid);
+  function mascRoute(r) {
+    const ch = allRouteChapters(r.id).map((i) => C.story[i]); const k = ch.findIndex((c) => c.id === r.fork);
+    const m = store.get("masc", {}); const dates = ch.slice(0, k + 1).filter((c) => c.outfits);
+    return k >= 0 && dates.length > 0 && dates.every((c) => m[c.id]);
+  }
+  // The chapters he can see in a route right now (a fork shows one path or the other).
+  function routeChapters(rid) {
+    const all = allRouteChapters(rid); const r = ROUTES.find((x) => x.id === rid);
+    if (!r || !r.fork) return all;
+    const k = all.findIndex((i) => C.story[i].id === r.fork); const masc = mascRoute(r);
+    return all.filter((i, j) => j <= k || (C.story[i].path === "masc") === masc);
+  }
+  window.steadyRouteChapters = routeChapters; // for the test
   const routeFinished = (rid) => { const d = storyDone(); const ch = routeChapters(rid); return ch.length > 0 && ch.every((i) => d[C.story[i].id]); };
   // Already started stays open, so adding chapters to a finished route never re-locks Jess or {bf}.
   const routeOpen = (r) => !r.lock || routeChapters(r.id).some((i) => storyDone()[C.story[i].id]) || ROUTES.some((o) => !o.lock && routeFinished(o.id));
