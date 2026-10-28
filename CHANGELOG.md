@@ -4,6 +4,7 @@
 - Progress: XP, levels, daily quests, achievements.
 
 ## 2026-10-28
+- Messages: "Your voice" tiers. As you level up, camper chats unlock and the girls treat you as their gay best friend. Includes crush confessions from Jemima, Nicole and Priya, Pride with the uni girls and Mum, and the Valley with Dani.
 - Style tab: dress-up avatar with clothes, shoes, accessories and makeup (including Soft glam), skin and hair, a "how it reads" meter, saved looks, a daily style dare, the "wear it out" ladder for every piece, and reactions from friends that name what you're wearing.
 - Practice: write replies in your own words, and keep them in "Your words".
 - Your name (default Calum) is used throughout. More messages mention you by name.

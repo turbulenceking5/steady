@@ -12,7 +12,7 @@ window.CONTENT = {
   story: [Chapter],                // Story, in order
   practice: [Scenario]             // Practice
 }
-Convo    = { id, contact, role, avatar, ...Node }
+Convo    = { id, contact, role, avatar, tier?, ...Node }   // tier 1-3 unlocks with game level (see below)
 Chapter  = { id, title, contact?, part?, ...Node }   // contact defaults to {bf}; part starts a heading
 Scenario = { id, title, who, tone, intro, ...Node }
 Node     = { them: [Msg], replies?: [{ you, ...Node }], after?, debrief? }
@@ -21,6 +21,9 @@ Msg      = string | { from, text }                   // from = sender in group c
 - IDs must be unique and never change: progress is stored by id.
 - Every reply is a fine reply. There's no wrong answer and no scoring.
 - `after` is a narrator note shown when the conversation ends (a branch's own takes priority). `debrief` is a short "worth remembering" note.
+
+## Voice tiers
+Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice (game level 3+), 2 Out & proud (5+), 3 Full flamboyance (7+). At each tier his reply options get camper and the girls treat him more as their gay best friend. Tier 1 holds the crush confessions (Jemima, Nicole, Priya: "bullet dodged, you're better as my gay best friend"), which are affectionate teasing, never put-downs.
 
 ## Cast
 Mostly women. Men appear only as dates, crushes or partners.

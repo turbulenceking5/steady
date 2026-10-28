@@ -219,6 +219,134 @@ window.CONTENT = {
         { you: "Pretty good actually! Lighter.",
           them: ["Love that. You seem lighter 💛"] }
       ]
+    },
+
+    // ---- Unlocked by "your voice" tier (0 Just out, 1 Finding your voice, 2 Out & proud, 3 Full flamboyance).
+    // His replies get camper and the girls treat him more and more like their gay best friend.
+    {
+      id: "jemima-crush", tier: 1,
+      contact: "Jemima", role: "uni friend", avatar: "J",
+      them: ["Okay, confession time since we're all being honest now", "I had the BIGGEST crush on you in first year 🙈"],
+      replies: [
+        { you: "Wait WHAT 😂",
+          them: ["Yep. Sat next to you in stats for a whole semester on purpose. I hate stats.", "Honestly though? Bullet dodged, for both of us 😂 You'd have been a terrible boyfriend to me and you're an ELITE gay best friend 💅"],
+          replies: [
+            { you: "Elite is correct.", them: ["See, this confidence? Never would've happened if you were with me. Much better this way 💗"] },
+            { you: "Sorry about the stats, Jem.", them: ["Worth it. I got you out of it. Just not the way I planned 😂"] }
+          ] },
+        { you: "Aw, Jem 🥹",
+          them: ["Don't aw me 😂", "It's so much better this way, {name}. I get you AND I get to hear about all your boys"] }
+      ]
+    },
+    {
+      id: "nicole-crush", tier: 1,
+      contact: "Nicole", role: "uni friend", avatar: "N",
+      them: ["Can I tell you something funny?", "Year 12 formal. I was SO hoping you'd ask me 😩"],
+      replies: [
+        { you: "Nic I'm so sorry 😂",
+          them: ["Don't be!! Imagine if you had. One very awkward slow dance and I'd never have got my gay bestie", "I definitely won this one."] },
+        { you: "Was I that oblivious?",
+          them: ["Babe, you were oblivious to ALL the girls 😂", "Makes total sense now. Dodged that bullet and gained a shopping buddy. Upgrade."] }
+      ]
+    },
+    {
+      id: "priya-crush", tier: 1,
+      contact: "Priya", role: "mate", avatar: "P",
+      them: ["Jess just told me you KNEW I liked you at uni??", "MORTIFIED. Anyway. Bullet dodged, thank god. You'd have stolen all my clothes 😂"],
+      replies: [
+        { you: "Your clothes ARE cute though.",
+          them: ["See?? This is exactly why it's better. Now I have a shopping buddy instead of a broken heart 💕"] },
+        { you: "I'm flattered, honestly.",
+          them: ["You should be, I have excellent taste.", "Just... in men who are also into men, apparently 😂 Love you {name}"] }
+      ]
+    },
+    {
+      id: "jess-brunch", tier: 2,
+      contact: "Jess", role: "mate", avatar: "J",
+      them: ["Brunch Sunday? I need a full debrief on {bf}"],
+      replies: [
+        { you: "Babe. BABE. Clear your schedule, there is SO much tea ☕💅",
+          them: ["Oh he's GAY gay now 😂", "I love this for you. Booking a table for three hours."] },
+        { you: "Only if it's bottomless 🥂",
+          them: ["Obviously. Who do you think I am"] }
+      ]
+    },
+    {
+      id: "chloe-woolies", tier: 2,
+      contact: "Chloe", role: "flatmate", avatar: "C",
+      them: ["Are you seriously wearing the lilac shorts to Woolies 😂"],
+      replies: [
+        { you: "Woolies is my runway, hun 💅",
+          them: ["Honestly? Iconic.", "Grab milk while you're strutting"] },
+        { you: "Too much?",
+          them: ["Never. You look happy. That's the whole point 💛"] }
+      ]
+    },
+    {
+      id: "sam-lunch", tier: 2,
+      contact: "Sam", role: "coworker", avatar: "S",
+      them: ["Team lunch Friday: Thai or Mexican?"],
+      replies: [
+        { you: "Whichever place has the cutest waiter tbh 💁‍♂️",
+          them: ["😂😂 I can't believe we used to think you were shy", "Mexican it is. I've seen the waiter. You're welcome."] },
+        { you: "Thai, and I'm choosing everyone's drinks.",
+          them: ["Bossy. I love it. Pick me something pink"] }
+      ]
+    },
+    {
+      id: "rachel-fab", tier: 2,
+      contact: "Rachel", role: "ex", avatar: "R",
+      them: ["{name}! I see your story with the sunnies and crop top 😳", "Who are you?? So fabulous, 대박"],
+      replies: [
+        { you: "Darling, I was always fabulous. I was just hiding it 💅",
+          them: ["Hahaha yes!! Old {name} so quiet. New {name} I like much more", "Honestly I'm glad we not end up married. You would steal my makeup 😂"] },
+        { you: "Thank you Rach 🥹",
+          them: ["You look so happy now. That is the best part 💛"] }
+      ]
+    },
+    {
+      id: "uni-pride", tier: 3,
+      contact: "Uni girls 💅", role: "group chat", avatar: "U",
+      them: [
+        { from: "Nicole", text: "PRIDE MARCH. Who's coming" },
+        { from: "Jemima", text: "{name} obviously. He's been planning his outfit since March" },
+        { from: "Ailisha", text: "Is it true there's glitter involved" }
+      ],
+      replies: [
+        { you: "There is SO much glitter. Prepare yourselves ✨🏳️‍🌈",
+          them: [
+            { from: "Nicole", text: "We are not worthy" },
+            { from: "Jemima", text: "I'm making a sign that says I'M WITH HIM 👉" },
+            { from: "Ailisha", text: "To think we all had crushes on this man. Look at him now. Thriving." }
+          ] },
+        { you: "I've got a spare rainbow flag for each of you, hunties 💅",
+          them: [
+            { from: "Ailisha", text: "Hunties 😂😂 I've never felt so included 🥹" },
+            { from: "Nicole", text: "He's gone full gay and I've never been prouder" }
+          ] }
+      ]
+    },
+    {
+      id: "mum-pride", tier: 3,
+      contact: "Mum", role: "family", avatar: "M",
+      them: ["Is it alright if I come to the Pride march with you? I bought a t-shirt x", "It says PROUD MUM. Too much?"],
+      replies: [
+        { you: "MUM. Yes. Wear it with pride (literally) 🏳️‍🌈",
+          them: ["I'm told that's the point, love x"] },
+        { you: "Never too much. I'll do your glitter 💅",
+          them: ["Oh go on then. Your Nan wants some too x"] }
+      ]
+    },
+    {
+      id: "dani-valley", tier: 3,
+      contact: "Dani", role: "gym friend", avatar: "D",
+      them: ["Valley Saturday? The girls want to see you work the dance floor", "Fair warning, Jemima's already told the bartender you're single"],
+      replies: [
+        { you: "Hun, I was BORN for that dance floor 🪩",
+          them: ["Remember when you wouldn't even dance at Jess's 30th 😂", "Look at you now. Proud of you, {name}"] },
+        { you: "Wear something sparkly, we're matching ✨",
+          them: ["Matching?! Okay. OKAY. I'm in 💃"] }
+      ]
     }
   ],
 

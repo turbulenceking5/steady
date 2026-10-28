@@ -37,6 +37,8 @@ Modules add their own tab section and nav button, inject their own `<style>` (cl
 | `dare-done` | `{date}` | wardrobe.js |
 | `level-up` / `achievement` | `{level}` / `{id}` | game.js |
 
+`SteadyAPI.game.level()` (from game.js, 1-based) drives the voice tiers in Messages. Without game.js the tier is 0.
+
 `SteadyAPI.wardrobe.current()` (from wardrobe.js) returns the last saved outfit or null. Guard it, since the module may not have loaded.
 
 ## Storage keys (all prefixed `st_`)
