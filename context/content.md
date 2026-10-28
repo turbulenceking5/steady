@@ -29,12 +29,12 @@ Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice
 Mostly women, and no family members. Men appear only as dates, crushes or partners.
 - **Friends:** Jess, Priya, Dani (gym), Chloe (flatmate), Sam (coworker, she).
 - **Uni girls:** Nicole, Ailisha, Jemima.
-- **Dates in Part 1:** Hannah (Jess's friend) and Mia (Sam's cousin). They notice he's gay before he says it, and are kind about it.
+- **Dates in Part 1:** Hannah (Jess's friend) and Mia (Sam's cousin). They work out he's gay, are put off by it, and gossip. Keep their texts plain and unpolished: lowercase, short, no therapy-speak.
 - **Exes:** Rachel (Korean; natural second-language English with a little Korean, warm, never a caricature) and Archie (his girlfriend in Story Part 1).
 - **Men:** `{bf}` (the boyfriend, Story Part 2) and Alex (a dating-app match).
 
 ## Story
-- **Part 1, "Before"** (c1, c1b, c2–c7): in the closet with Archie, dinner where he wears makeup and Archie wonders, confiding in Nicole, the honest talk (kind and angry branches), a few weeks later, then dates with Hannah and Mia where he goes in makeup and feminine clothes and they quietly work out he's gay, and Jess's verdict. Chapters can have an `intro` (scene-setting note) and the dates use `after` for what the girl is thinking.
+- **Part 1, "Before"** (c1, c1b, c2–c7): in the closet with Archie, dinner where he wears makeup and Archie is uncomfortable, confiding in Nicole, the honest talk (kind and angry branches), a few weeks later, then dates with Hannah and Mia where he goes in makeup and feminine clothes and they clock he's gay and are not nice about it, then Jess tells him what they said. Chapters can have an `intro` (scene-setting note) and the dates use `after` for what the girl is thinking.
 - **Part 2, "{bf}"** (s1–s10): first message through to six months (no family chapter).
 
 ## Voice
