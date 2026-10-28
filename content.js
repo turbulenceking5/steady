@@ -597,8 +597,64 @@ window.CONTENT = {
       debrief: "Some people won't get it, and some will talk about it. That's about them. You got dressed as yourself and walked out the door, and that part was yours."
     },
     {
+      id: "c6b", title: "Brunch", contact: "Ella", part: "Part 1: Before",
+      intro: "You matched with Ella on Hinge. Brunch in Paddington. You'd bought the dress weeks ago and never worn it out of the flat: pale blue, floral, little buttons down the front. Nails done, foundation, blush, lashes, a pink lip. You nearly changed three times. You didn't. When you walked up she looked at you, then at her phone, then back at you. \"Sorry. I thought I had the wrong guy.\"",
+      them: ["hey thanks for brunch", "ok i have to ask. why did you wear a dress"],
+      replies: [
+        { you: "Because I wanted to.",
+          them: ["ok fair", "it's just you didn't say anything about it on here. your pics were all like. a polo shirt at a wedding", "i felt kind of blindsided"],
+          replies: [
+            { you: "I didn't think I needed to warn you.", them: ["you don't NEED to. it would've been nice though", "people were staring the whole time and i didn't know what to do with my face"] },
+            { you: "That's fair. Sorry.", them: ["it's ok. you were funny. i just don't think we're on the same page"] }
+          ] },
+        { you: "Did you hate it?",
+          them: ["i didn't hate it", "i just spent the whole time trying to work out if you were into me or into the waiter", "be honest. are you gay?"],
+          replies: [
+            { you: "I think so, yeah.", them: ["ok. thanks for being honest", "maybe put that on the app next time lol. save everyone the brunch money"] },
+            { you: "No.", them: ["ok", "sorry. didn't mean to be weird"] },
+            { you: "Does it matter?", them: ["kind of?? it was a date"] }
+          ] }
+      ],
+      after: "Ella, to her sister: \"brunch guy turned up in a dress.\" \"WHAT. like a costume?\" \"no like. a nice one. with lashes.\" \"is he gay\" \"obviously he's gay\" \"then why did he match with you\" \"THAT'S WHAT I SAID\"",
+      debrief: "Wearing the thing you've been too scared to wear out is a big step, whatever the date thinks. You didn't go home and change. That's the bit to keep."
+    },
+    {
+      id: "c6c", title: "Wrong chat", contact: "Bec's 30th 🎂", part: "Part 1: Before",
+      intro: "Tayla from Sam's netball team asked you to her friend Bec's 30th in the Valley, as a sort-of date. You wore a satin top, a skirt, eyeliner and a bit of glitter. Bec added you to the group chat to sort out Ubers. The next morning:",
+      them: [{ from: "Bec", text: "thanks for coming everyone!! 🥳 still hungover" }, { from: "Steph", text: "ok be honest is tayla's guy gay or" }, { from: "Steph", text: "WRONG CHAT" }, { from: "Steph", text: "omg sorry {name} that was meant for bec" }, { from: "Tayla", text: "steph 😐" }],
+      replies: [
+        { you: "Ha. All good.",
+          them: [{ from: "Steph", text: "i'm so sorry" }, { from: "Bec", text: "to be fair he did do my eyeliner in the bathroom" }, { from: "Tayla", text: "can everyone stop" }],
+          after: "An hour later Tayla messages you on her own: \"not gonna lie i was kind of embarrassed last night. everyone kept asking me about you. i don't think this is going anywhere.\"" },
+        { you: "To answer your question, Steph: yeah, probably.",
+          them: [{ from: "Steph", text: "oh" }, { from: "Bec", text: "😳" }, { from: "Tayla", text: "ok well that would've been good to know before i brought you as my date" }, { from: "Tayla", text: "cool. very cool" }],
+          replies: [{ you: "Sorry, Tayla. I'm still working it out.", them: [{ from: "Tayla", text: "yeah. ok" }, { from: "Steph", text: "in my defence bec's cousin is single and he's a guy so" }, { from: "Tayla", text: "STEPH" }] }] },
+        { you: "(Leave the group)",
+          after: "You leave the group. Your phone buzzes twice more with Tayla's name and you don't open it until lunch." }
+      ],
+      debrief: "Finding out people are talking about you is awful, especially when it happens right in front of you. You can laugh it off, say it straight, or step out. All three are fine."
+    },
+    {
+      id: "c6d", title: "Straight up", contact: "Georgie", part: "Part 1: Before",
+      intro: "Georgie from the climbing gym. Thai in West End. You wore a lilac slip dress with a cardigan over it, your nails painted, gloss and lashes. She didn't say one word about it the whole dinner, which was somehow worse.",
+      them: ["hey", "ok i'm just gonna say it bc i hate games", "are you gay"],
+      replies: [
+        { you: "Yeah. I think I am.", them: ["ok cool", "no drama. i just wish you'd worked that out before i shaved my legs lol", "you still owe me a climb"] },
+        { you: "Why does everyone keep asking me that?",
+          them: ["um", "you wore a dress to dinner {name}", "i'm not judging i'm just not an idiot"],
+          replies: [
+            { you: "Fair.", them: ["lol. yeah"] },
+            { you: "I can wear a dress and be straight.", them: ["you can. are you though"],
+              replies: [{ you: "...no.", them: ["ok. there it is", "good luck with it. i mean that a normal amount"] }] }
+          ] },
+        { you: "No.", them: ["ok", "you looked at the waiter's arms like eight times but ok"] }
+      ],
+      after: "Georgie, to her housemate: \"he's gay.\" \"the dress guy?\" \"the dress guy.\" \"did you tell him\" \"i asked him. he took ages to answer.\"",
+      debrief: "When someone asks you straight out, you can answer straight out, or not at all. Notice which answer felt lighter to say."
+    },
+    {
       id: "c7", title: "The group chat", contact: "Jess", part: "Part 1: Before",
-      them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "i'm not saying anything. i'm just asking. are you ok?"],
+      them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "i'm not saying anything. i'm just asking. are you ok?"],
       replies: [
         { you: "Great. So everyone's talking about me.",
           them: ["two people are talking about you and they're being dicks about it", "i told kate to drop it", "but {name}. are they wrong?"],

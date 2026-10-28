@@ -1,7 +1,7 @@
 # Changelog
 
 ## 2026-10-28
-- Story Part 1: four new chapters. Dinner with Archie in gloss and painted nails (she is not keen), dates with Hannah and Mia in makeup and feminine clothes that go badly, and Jess telling you they have been talking about you being gay.
+- Story Part 1: seven new chapters, including brunch in a dress with Ella, a "wrong chat" slip at Bec's 30th, and Georgie asking straight out. Dinner with Archie in gloss and painted nails (she is not keen), dates with Hannah and Mia in makeup and feminine clothes that go badly, and Jess telling you they have been talking about you being gay.
 - Progress: XP and 9 levels (Closet Curious to Legend), 3 daily quests with a bonus, 25 badges, level-up celebrations, and a Progress sheet (tap the level chip). Levels 3, 5 and 7 unlock new voice-tier chats.
 - Family members removed (Mum and Nan chats, the Sunday roast chapter, the "Telling a parent" practice, family outfit reactions).
 - The girls' chats are much longer and more heartfelt: Rachel, Archie, and the crush confessions, each in her own words. New: Ailisha's confession.
