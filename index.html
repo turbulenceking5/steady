@@ -180,6 +180,10 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
 
   // ---------- Conversation engine ----------
   function markDone(id) { const s = storyDone(); if (!s[id]) { s[id] = today; store.set("story", s); } }
+  // How a chapter ended (a branch's `outcome`), so a later chapter can bring it up: { if: "chapterId=a|b" }.
+  // The latest play-through wins, so "Try different replies" can change it.
+  function setOutcome(id, v) { const o = store.get("outcomes", {}); if (v) o[id] = v; else delete o[id]; store.set("outcomes", o); }
+  function outcomeIs(cond) { const [id, vals] = cond.split("="); return vals.split("|").includes(store.get("outcomes", {})[id]); }
 
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const wait = (ms) => new Promise((r) => setTimeout(r, reduceMotion ? 0 : ms));
@@ -218,15 +222,18 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     if (convo.intro) add("note", fill(convo.intro));
 
     let endNote = convo.after; // a branch can carry its own closing note
+    let outcome = convo.outcome; // deepest branch that sets it wins
     let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
     let spark = convo.spark; // how into you she is; defaults to 100 - gaydar
     async function play(node) {
       choices.innerHTML = "";
       if (node !== convo && node.after) endNote = node.after;
+      if (node !== convo && node.outcome) outcome = node.outcome;
       if (node !== convo && node.gaydar != null) gaydar = node.gaydar;
       if (node !== convo && node.spark != null) spark = node.spark;
       for (const m of node.them || []) {
         const msg = typeof m === "string" ? { text: m } : m;
+        if (msg.if && !outcomeIs(msg.if)) continue; // only if an earlier chapter ended that way
         if (msg.note) { // narration in in-person scenes: what she does, not what she says
           await wait(600);
           if (view._run !== run) return;
@@ -251,6 +258,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
         });
       } else {
         markDone(convo.id);
+        setOutcome(convo.id, outcome);
         if (endNote) add("note", fill(endNote));
         if (gaydar != null) {
           const delta = (convo.fit && convo.fit.gaydar) || 0;

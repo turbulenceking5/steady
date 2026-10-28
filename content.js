@@ -812,6 +812,315 @@ window.CONTENT = {
       debrief: "Having something about yourself on show before you're ready is a big feeling. They were still your toes, and you were the one who chose to paint them."
     },
     {
+      "id": "hannah-tickle",
+      "route": "hannah",
+      "gaydar": 94,
+      "irl": true,
+      "title": "Movie night",
+      "contact": "Hannah",
+      "gaydarSays": "Dylan had my date's foot in a headlock in front of Kate's whole lounge room. Kate's carpet survived. My dignity didn't.",
+      "intro": "A week after the housewarming. Kate's having people over to watch a movie on the white carpet, and Hannah said come, so you came. SHOES OFF. YES YOU. is still on the door. Your toes are still Ballet Slippers pink, because you never took it off. Dylan's on the couch. He's taken the whole middle of it.",
+      "them": [
+        {
+          "note": "You leave your shoes in the pile. Hannah looks at your toes, then at you, then sighs through her nose and goes to get a drink."
+        },
+        "\"Pink's back,\" Dylan says from the couch. \"Han, he kept it. For a whole week.\"",
+        "He can do what he wants with his feet, Dylan.",
+        "\"I'm not stopping him. I'm a fan.\" He pats the couch next to him. \"Sit down, buddy. Best seat. Han, you're on the other side.\"",
+        {
+          "note": "There's nowhere else to sit. You sit on the end of the couch with your knees up. Hannah sits on Dylan's other side. Kate turns the lights off and the movie starts."
+        },
+        {
+          "note": "Twenty minutes in, your feet are on the cushion between you and Dylan. You don't notice until his hand closes round your ankle."
+        },
+        "\"Han,\" he says, not quietly. \"Hey. Han. Bet you ten bucks he's ticklish.\"",
+        "Dylan. We're watching a movie.",
+        "\"Kate's seen it. Ten bucks.\"",
+        {
+          "note": "Kate pauses the movie. She doesn't even pretend she isn't going to watch. Dylan's thumb is resting on the arch of your foot. Not moving yet. Just resting there."
+        },
+        "\"Ready, champ?\" he says, and starts."
+      ],
+      "replies": [
+        {
+          "you": "(Don't react. Look at the TV. Breathe through your nose.)",
+          "them": [
+            {
+              "note": "You stare at the paused frame on the TV. A woman in a raincoat. You stare at her raincoat like your life depends on it."
+            },
+            {
+              "note": "Dylan runs his thumb slowly down your sole, heel to toes. Your foot jerks. You keep your face still."
+            },
+            "\"Ooh. He's tough. Han, he's being tough.\"",
+            "Dylan, he obviously doesn't want you to.",
+            "\"He hasn't said that.\" He looks at you. \"You said that, buddy?\"",
+            {
+              "note": "You can't open your mouth. If you open your mouth it's over. You shake your head a tiny bit and stare at the raincoat."
+            },
+            {
+              "note": "He switches to his fingertips, right under your toes, fast and light. Kate makes a noise into her wine glass. The pink toes curl so hard they go white."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. Hold it. Hold it.)",
+              "them": [
+                {
+                  "note": "You hold it. Your jaw aches. Your eyes water. You don't make a sound."
+                },
+                {
+                  "note": "Dylan keeps going for what feels like a full minute. Then he digs in under your toes one last time, and you still don't make a sound."
+                },
+                "\"Huh,\" Dylan says, and lets go. He sounds a bit disappointed. \"Okay. Respect.\"",
+                "Pay up.",
+                "\"We never shook on it.\"",
+                "Pay. Up. Dylan."
+              ],
+              "replies": [
+                {
+                  "you": "(Calmly take your foot back and move closer to Hannah.) Can you press play, Kate?",
+                  "outcome": "held",
+                  "spark": 22,
+                  "them": [
+                    {
+                      "note": "You get up, step over Dylan's legs, and sit down on Hannah's other side. She shifts over to make room. Her shoulder touches yours."
+                    },
+                    "Okay. That was actually impressive.",
+                    "I'd have kicked him in the face.",
+                    "\"You would have,\" Dylan says. \"You did. In 2014.\"",
+                    {
+                      "note": "Kate presses play. Twenty minutes later Hannah's leaning on you a bit. Dylan watches the movie with his arms folded, a bit quieter than before."
+                    }
+                  ],
+                  "after": "Hannah, to Kate, in the kitchen after: \"he didn't even laugh\" Kate: \"dylan's so annoyed\" Hannah: \"good\" Kate: \"you sat with him the whole movie\" Hannah: \"yeah. i did.\""
+                },
+                {
+                  "you": "(Wiggle your toes at him.) Want to try the other foot?",
+                  "outcome": "held",
+                  "spark": 16,
+                  "them": [
+                    "\"Oh, he's cocky now,\" Dylan says, and grabs the other foot before you've finished the sentence.",
+                    {
+                      "note": "This one's worse. He goes straight for the soft bit under your toes. A noise comes out of your nose. Just one. You turn it into a cough."
+                    },
+                    "\"That was a laugh.\"",
+                    "That was a cough. Let go of him.",
+                    {
+                      "note": "He lets go. You win, sort of. But Hannah's laughing now, and she's laughing at something Dylan says under his breath, and she doesn't move over."
+                    },
+                    "\"Next time,\" Dylan says, and points at you. \"Next time, sweetheart.\""
+                  ],
+                  "after": "Hannah, to Kate: \"he basically won\" Kate: \"he coughed\" Hannah: \"it was a laugh. i know what his laugh sounds like now. it's a laugh\" Kate: \"dylan's asking if you want a lift home\" Hannah: \"...tell him maybe\""
+                }
+              ]
+            },
+            {
+              "you": "(It's too much. A giggle breaks out.)",
+              "them": [
+                {
+                  "note": "It starts as a squeak. Then it's a high, helpless giggle, and once it's out you can't put it back. You fold up on the couch, trying to pull your foot back, and Dylan holds the ankle without even trying."
+                },
+                "\"THERE it is!\" Dylan says. \"Han! Ten bucks!\"",
+                "Oh my god.",
+                {
+                  "note": "Kate's filming. Of course Kate's filming. You can hear yourself on her phone, a squeaky little giggle that doesn't sound like you at all."
+                },
+                "\"Listen to him. He sounds like a cartoon mouse.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Through the giggles) Okay! Okay, you got me! You win!",
+                  "outcome": "cracked",
+                  "spark": 10,
+                  "them": [
+                    {
+                      "note": "He lets go straight away, holding both hands up like a footballer who didn't do it."
+                    },
+                    "\"I always win, buddy.\"",
+                    {
+                      "note": "You sit up. Your face is hot. Your hair's a mess. You try to laugh it off like it was nothing, and it comes out as one more little giggle, and Dylan points at you again."
+                    },
+                    "Here.",
+                    {
+                      "note": "Hannah gives Dylan a ten dollar note out of her phone case. He folds it in half very slowly, looking at her, and puts it in his shirt pocket."
+                    },
+                    "\"Gonna frame that,\" he says. \"Or buy you a drink with it. Friday?\"",
+                    {
+                      "note": "Hannah doesn't say no. She just tells Kate to press play."
+                    }
+                  ],
+                  "after": "Kate, to Hannah, at midnight: \"[video]\" Hannah: \"delete that\" Kate: \"no\" Hannah: \"he sounds like a squeaky toy\" Kate: \"he does. dylan's played it four times\" Hannah: \"...send it to me\""
+                },
+                {
+                  "you": "(Bright red, giggling) Stop! Dylan, stop!",
+                  "outcome": "cracked",
+                  "spark": 8,
+                  "them": [
+                    {
+                      "note": "He stops the second you say it and lets go."
+                    },
+                    "\"Stopping. Stopped. Look, no hands.\"",
+                    {
+                      "note": "You pull both feet up under you and sit on them. Your whole face is burning. You can't look at anyone."
+                    },
+                    "Are you okay?",
+                    {
+                      "note": "She asks it the way you'd ask a kid who fell off a scooter. Then she turns round to Dylan and they both start laughing, quietly, into the same cushion."
+                    },
+                    "\"Sorry, buddy,\" he says. He doesn't sound sorry. \"Didn't know you'd go that high.\""
+                  ],
+                  "after": "Hannah, to Kate, at 1am: \"he went SO red\" Kate: \"you and dylan laughed into the same cushion for ten minutes\" Hannah: \"we did not\" Kate: \"i have it on video\" Hannah: \"why do you have everything on video\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're already giggling before he's started.)",
+          "them": [
+            {
+              "note": "You don't stand a chance. His thumb barely moves and you're gone: high, squeaky giggles, grabbing a cushion, kicking your other foot against the arm of the couch."
+            },
+            "\"Oh no,\" Dylan says, delighted. \"Oh no, he's so ticklish. Han. HAN.\"",
+            "I can see.",
+            {
+              "note": "He gets both hands on it. One holds the ankle. The other one runs up and down your sole, between your toes, under the arch. Every time you think you've got it under control, he finds a new spot."
+            },
+            "\"Pink toes AND ticklish. Han, where did you find this guy?\"",
+            {
+              "note": "Kate's laughing so hard she's lying on the carpet. Two of Kate's friends have come in from the kitchen to see what the noise is."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Dylan! Please! Please please stop!",
+              "them": [
+                {
+                  "note": "He stops straight away and lets go of your foot. You collapse into the corner of the couch, panting, giggling at nothing."
+                },
+                "\"He said please,\" Dylan says. \"Three times. Han, he said please three times.\"",
+                "I heard.",
+                {
+                  "note": "Then he puts his hand back on your ankle. Not tickling. Just resting it there. He looks at you with his eyebrows up."
+                },
+                "\"One more go? Ten seconds. For the people in the kitchen.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Pull your foot away.) No! No more. I'm done.",
+                  "outcome": "begged",
+                  "spark": 6,
+                  "them": [
+                    "\"Fair enough,\" Dylan says, and lets go. \"Sorry, sweetheart. Couldn't help it.\"",
+                    {
+                      "note": "You sit with your knees pulled up for the rest of the movie, feet tucked under a cushion where nobody can reach them."
+                    },
+                    {
+                      "note": "Hannah sits on the other side of Dylan the whole time. At one point she leans over and says something in his ear, and he laughs, and they both look at your cushion."
+                    },
+                    "You're fine. It was funny. It was really funny.",
+                    {
+                      "note": "She says it without looking away from the TV."
+                    }
+                  ],
+                  "after": "Hannah, to Kate: \"he begged. like actually begged\" Kate: \"he said please three times\" Hannah: \"in a little voice\" Kate: \"dylan asked for your number again\" Hannah: \"he has my number\" Kate: \"he said he wants to ask properly this time\" Hannah: \"...ok\""
+                },
+                {
+                  "you": "(Giggling, red) ...Okay. Ten seconds.",
+                  "outcome": "kept",
+                  "spark": 3,
+                  "gaydar": 96,
+                  "them": [
+                    {
+                      "note": "The kitchen people cheer. Dylan counts down from ten out loud, slowly, while he does it. You're squealing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one' he keeps going for another five seconds. You're laughing too hard to say anything. Then he stops and lets go."
+                    },
+                    "\"Best ten seconds of my life,\" Dylan says.",
+                    "Okay, I'm going to go and get a drink.",
+                    {
+                      "note": "Hannah gets up. Dylan says \"grab me one\" and she does. She hands it to him on her way back and sits down next to him, a bit closer than before."
+                    },
+                    {
+                      "note": "You lie on the end of the couch with your feet in the air, still giggling. Nobody's watching the movie."
+                    }
+                  ],
+                  "after": "Kate, in the group chat: \"[video] he asked for MORE\" Kate's friend: \"he asked for more??\" Kate: \"ten seconds. dylan did fifteen\" Hannah: \"can we stop talking about my date's feet\" Kate: \"is he your date\" Hannah: \"...\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting it. Let him keep going.)",
+              "them": [
+                {
+                  "note": "You stop pulling. You lie back across the end of the couch, laughing so hard you can barely breathe, toes wriggling in his hand."
+                },
+                "\"He's not even trying to get away,\" Kate's friend says.",
+                "\"He loves it,\" Dylan says. \"Look at him. He loves it.\"",
+                {
+                  "note": "It goes on. And on. He does the arch, the heel, the gaps between your toes, then back to the arch. You've got tears running into your ears."
+                },
+                {
+                  "note": "Hannah's stopped laughing. She's just watching, holding her drink with both hands."
+                },
+                "{name}. You can tell him to stop, you know."
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) S-stop. Stop. Okay. Stop.",
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 97,
+                  "them": [
+                    {
+                      "note": "He stops the moment you say it and lets go."
+                    },
+                    "\"Two minutes,\" Kate says, looking at her phone. \"That was two full minutes.\"",
+                    {
+                      "note": "You lie there with your hair stuck to your forehead and your pink toes still curling on their own. Dylan pats your ankle twice, like you're a dog who did a good trick."
+                    },
+                    "\"Good effort, champ.\"",
+                    {
+                      "note": "Then he turns to Hannah. \"Drink? Kitchen?\" And she says yes, and they go, and they're in the kitchen for the rest of the movie."
+                    }
+                  ],
+                  "after": "Kate, to Hannah, at 2am: \"you were in the kitchen with dylan for an hour\" Hannah: \"we were talking\" Kate: \"about what\" Hannah: \"his feet thing. the tickling. he was laughing about it\" Kate: \"and\" Hannah: \"and then we weren't talking about that\""
+                },
+                {
+                  "you": "(Can't say anything. Just keep laughing.)",
+                  "outcome": "kept",
+                  "spark": 0,
+                  "gaydar": 98,
+                  "them": [
+                    {
+                      "note": "You can't get a word out. You're laughing too hard. Dylan keeps going."
+                    },
+                    "Dylan. Enough.",
+                    {
+                      "note": "Hannah says it flat, and he stops straight away and lets go."
+                    },
+                    "\"He didn't say stop,\" Dylan says.",
+                    "He couldn't say anything. Look at him.",
+                    {
+                      "note": "You're lying on Kate's white carpet now. You don't remember sliding off the couch. Kate's friend is filming from above."
+                    },
+                    {
+                      "note": "Hannah looks down at you for a long moment. Then she looks at Dylan. Then she goes and gets her keys."
+                    },
+                    "I'm going to head off. Dylan, you're driving me? You've had one beer.",
+                    "\"Yeah,\" Dylan says, already getting up. \"Yeah, I'm driving you.\""
+                  ],
+                  "after": "Hannah, to Kate, from Dylan's ute: \"i'm not being mean\" \"i just watched a grown man giggle on your carpet for three minutes\" \"and i realised i'd never once wanted to kiss him\" Kate: \"and dylan\" Hannah: \"dylan's driving me home\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Being ticklish is just how your body is. Laughing in front of people isn't weakness, and whatever she decided while she watched, she was going to decide anyway."
+    },
+    {
       id: "hannah-end", route: "hannah", gaydar: 99, spark: 0, gaydarSays: "Brodie owns four pairs of steel caps and zero lip products. I've never been happier.", title: "Hannah and Brodie", contact: "Hannah", irl: true,
       outfits: [
         { label: "Jeans, a nice top and just lip oil. Keep it low-key.", gaydar: -2, intro: "Six weeks later. Jess's birthday drinks at a pub in Newstead. You went low-key: jeans, a black top, lip oil. Then Hannah walks in. With a guy." },
@@ -823,7 +1132,10 @@ window.CONTENT = {
         "Oh. Hi, {name}. Didn't know you'd be here. Well, I did. Jess said. This is Brodie.",
         { note: "Brodie puts down a pint and shakes your hand so hard your rings click together." },
         "\"Hey man. Brodie. Electrician. Han's told me a lot about you.\" He looks at your nails. \"Nice nails, man. My niece does hers like that.\"",
-        "He's lovely. He's so lovely. He doesn't own a single product, {name}. Not one. He washes his face with the 3-in-1. I'm obsessed."
+        "He's lovely. He's so lovely. He doesn't own a single product, {name}. Not one. He washes his face with the 3-in-1. I'm obsessed.",
+        {"if":"hannah-tickle=held","text":"\"Hang on,\" Brodie says. \"Are you the guy Dylan tried to tickle? He said you didn't even blink. He's still annoyed about it. Respect, man.\""},
+        {"if":"hannah-tickle=cracked|begged|kept","text":"\"Hang on,\" Brodie says, and starts grinning. \"You're the ticklish guy. Dylan showed the whole pub the video. The squeaky one.\""},
+        {"if":"hannah-tickle=cracked|begged|kept","note":"Hannah looks at the floor. Brodie looks at your shoes like he's wondering what's inside them."}
       ],
       replies: [
         { you: "Oh my god, hi Brodie! Love the hi-vis, very rugged. Han, he's gorgeous. I'm so happy for you, babe, honestly.",
@@ -1414,6 +1726,309 @@ window.CONTENT = {
       debrief: "Being the most polished person on a beach full of lifesavers is a lot. You still took your shoes off. That counts."
     },
     {
+      "id": "ella-tickle",
+      "route": "ella",
+      "gaydar": 95,
+      "irl": true,
+      "title": "The surf club",
+      "contact": "Ella",
+      "gaydarSays": "Hayden said it was sunscreen. It was not sunscreen. The whole surf club watched my date squeal.",
+      "intro": "Two weeks after Kings Beach. Hayden's surf club does a sausage sizzle after patrol, Ella's friends wanted to go, and Ella brought you. You wore boardies and a cropped linen shirt, and this time you took your sandals off on the sand without being asked. Your toes are coral again. You did them again on purpose.",
+      "them": [
+        {
+          "note": "Hayden's at the barbecue in his red and yellow cap. When he sees your feet he puts the tongs down."
+        },
+        "\"Coral's back! Ells, he's committed.\"",
+        "Hi Hayden.",
+        "\"Hi Ella.\" He grins at her, then at you. \"You put sunscreen on those? Feet burn first, buddy. Lifesaver tip.\"",
+        {
+          "note": "You sit on a towel by the club fence with Ella and her friend Meg. Hayden finishes the sausages and comes over and sits on the sand right at your feet, uninvited, with a bottle of sunscreen."
+        },
+        "\"Seriously, give me your foot. Club policy. Nobody burns on my patch.\"",
+        "Hayden. He's an adult.",
+        "\"An adult with very pale soles.\" He's already got your heel in his hand. \"Hold still.\"",
+        {
+          "note": "He squirts sunscreen on your foot and rubs it in, slowly, all over the sole. Then the slow stops. His fingers go quick and light, right under the arch."
+        },
+        "\"Oh, hang on,\" he says. \"Hang on. Ells. Is your boyfriend ticklish?\"",
+        "He's not my... we're seeing each other.",
+        "\"Is he ticklish though.\""
+      ],
+      "replies": [
+        {
+          "you": "(Freeze. Stare at the ocean. Don't you dare laugh.)",
+          "them": [
+            {
+              "note": "You stare at the waves. You count them. One, two. His fingers find the soft bit by your toes and your whole leg goes stiff."
+            },
+            "\"Ooh, the leg went,\" Hayden says. \"The leg's a giveaway.\"",
+            "Leave him alone. Oh my god.",
+            {
+              "note": "Meg's sitting up now. Two of the patrol guys wander over from the barbecue with sausages in bread. One says \"what's happening\" and Hayden says \"science\"."
+            },
+            {
+              "note": "The sunscreen makes it worse. Everything's slippery. His thumbs slide right up between your toes."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Don't break. Don't break. Don't break.)",
+              "them": [
+                {
+                  "note": "You don't break. You stare at the ocean so hard a seagull stares back. Your face goes red, but you don't make a sound."
+                },
+                {
+                  "note": "Hayden goes for ages. Heel, arch, toes, the side of your foot. Nothing comes out of you."
+                },
+                "\"Okay. Okay, he's good,\" Hayden says, and lets go, wiping his hands on his boardies. \"He's actually good.\"",
+                "Told you.",
+                "\"You didn't tell me anything. You said 'leave him alone'.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Take the sunscreen off him.) I'll do the other one myself. Thanks, Hayden.",
+                  "outcome": "held",
+                  "spark": 22,
+                  "them": [
+                    {
+                      "note": "You take the bottle out of his hand and do your other foot yourself, properly, between the toes, like it's nothing."
+                    },
+                    "\"Fair,\" Hayden says. He looks a bit put out. He goes back to the barbecue.",
+                    {
+                      "note": "Ella watches him go. Then she watches you put the cap back on the sunscreen."
+                    },
+                    "Okay. That was kind of hot? The not reacting. I don't know. Don't let it go to your head.",
+                    {
+                      "note": "She leans back against you on the towel. Meg raises her eyebrows at her. Ella ignores her."
+                    }
+                  ],
+                  "after": "Ella, to Meg, in the car: \"he didn't even laugh\" Meg: \"hayden was so annoyed\" Ella: \"right??\" Meg: \"you liked that\" Ella: \"i liked that\""
+                },
+                {
+                  "you": "(Smile at him.) That all you've got?",
+                  "outcome": "held",
+                  "spark": 15,
+                  "them": [
+                    "\"Oh, he wants round two,\" Hayden says, and grabs the other foot.",
+                    {
+                      "note": "He doesn't bother with sunscreen this time. He goes straight under the toes with both hands. A sound comes out of you. A small one. It's definitely a giggle."
+                    },
+                    "\"That was a giggle!\"",
+                    "That was not... okay, that was a little bit of a giggle.",
+                    {
+                      "note": "He lets go, very pleased with himself. The patrol guys clap. Ella's laughing, and when Hayden says \"swim, Ells? Flags are up,\" she gets up and goes with him."
+                    },
+                    {
+                      "note": "You sit on the towel and watch them in the water. Meg hands you a sausage."
+                    }
+                  ],
+                  "after": "Ella, to Meg, later: \"he lasted SO long\" Meg: \"and then he giggled\" Ella: \"one giggle\" Meg: \"you went swimming with hayden for forty minutes\" Ella: \"it was hot. the water was nice\" Meg: \"sure\""
+                }
+              ]
+            },
+            {
+              "you": "(You can't. A squeal comes out.)",
+              "them": [
+                {
+                  "note": "It comes out as a squeal, high and loud, and every head on that bit of beach turns round. Then you're giggling and you can't stop. You try to pull your foot back. It's too slippery. He just holds on."
+                },
+                "\"THERE we go!\" Hayden says. \"Got one!\"",
+                "oh no. oh no he squealed",
+                {
+                  "note": "Meg's got her phone out. The patrol guys are cheering like someone's been pulled out of a rip."
+                },
+                "\"Ells, he squeals! Like a kettle!\""
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! Okay, I'm ticklish! You win!",
+                  "outcome": "cracked",
+                  "spark": 10,
+                  "them": [
+                    {
+                      "note": "He lets go and holds up both sunscreen hands."
+                    },
+                    "\"Knew it. Lifesaver's instinct.\"",
+                    {
+                      "note": "You sit up, red to your ears, still giggling a bit. You try to make a joke. It comes out as \"well, you've got very strong hands\", which makes the patrol guys howl."
+                    },
+                    "Okay, I'm going to get a drink. Hayden, do you want something?",
+                    "\"I'll come,\" Hayden says, and goes with her. They don't come back for a while."
+                  ],
+                  "after": "Meg, to Ella: \"[video] the kettle\" Ella: \"DELETE IT\" Meg: \"hayden asked me to send it to him\" Ella: \"you didn't\" Meg: \"he's your lifesaver. i sent it\""
+                },
+                {
+                  "you": "(Red, giggling) Hayden! Stop!",
+                  "outcome": "cracked",
+                  "spark": 8,
+                  "them": [
+                    {
+                      "note": "He stops as soon as you say it and lets go."
+                    },
+                    "\"Stopping. Sorry, buddy. Didn't know you'd go off like that.\"",
+                    {
+                      "note": "You pull your feet under you and brush the sand off them. You're so red you're probably sunburnt as well now."
+                    },
+                    "Are you okay? You went really high.",
+                    {
+                      "note": "She's trying not to laugh. She doesn't manage it. Hayden catches her eye and she laughs harder, and then they're both laughing, and you're sitting there on the towel."
+                    },
+                    "\"Sorry,\" Hayden says to her, grinning. \"I'll stop picking on him.\""
+                  ],
+                  "after": "Ella, to her sister: \"hayden tickled him and he squealed in front of the whole surf club\" Sister: \"STOP\" Ella: \"and i laughed. with hayden. i felt bad\" Sister: \"do you feel bad\" Ella: \"i don't know\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're laughing before he's even started.)",
+          "them": [
+            {
+              "note": "You're gone the second he moves. High, helpless giggles. You fall back on the towel and kick sand everywhere with your free foot."
+            },
+            "\"Oh, he's SO ticklish!\" Hayden says. \"That was nothing! I barely touched him!\"",
+            {
+              "note": "He gets a proper grip on your ankle, rests your foot on his knee, and goes at it with both hands. The sunscreen makes every touch slide. You're shrieking."
+            },
+            "\"Coral toes and he's ticklish. Ells, you've found a real one.\"",
+            "I didn't know he was ticklish, I swear.",
+            {
+              "note": "The patrol guys have come over. One of them says \"he's like my little sister\". Somebody's dog is barking at you."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Hayden! Please! Please stop!",
+              "them": [
+                {
+                  "note": "He stops straight away and lets go. You curl up on the towel, panting, sand stuck to your face."
+                },
+                "\"He said please!\" Hayden says. \"Did everyone hear that? He said please.\"",
+                "We heard. Everyone heard. People in the water heard.",
+                {
+                  "note": "Hayden holds your foot up off the sand again, gently, not tickling. He looks at you with his eyebrows up."
+                },
+                "\"One more go? For the club? Ten seconds and I'll get you a free sausage.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Yank your foot back.) No! No way. I'm keeping my feet.",
+                  "outcome": "begged",
+                  "spark": 6,
+                  "them": [
+                    "\"Fair enough,\" Hayden says. \"You keep them, princess.\"",
+                    {
+                      "note": "You bury both feet in the sand up to the ankles. You leave them there for the rest of the afternoon."
+                    },
+                    {
+                      "note": "Ella goes for a swim. Hayden goes too, because he's on patrol, he says. He's not on patrol. His shift finished an hour ago."
+                    },
+                    {
+                      "note": "Meg sits with you on the towel. She keeps looking at your buried feet and laughing quietly."
+                    }
+                  ],
+                  "after": "Ella, to Meg: \"he buried his feet\" Meg: \"he buried them for three hours\" Ella: \"hayden asked me to dinner\" Meg: \"WHAT\" Ella: \"in the water. while {name} was on the towel with his feet in the sand\" Meg: \"what did you say\" Ella: \"i said maybe\""
+                },
+                {
+                  "you": "(Still giggling) ...Ten seconds. And I want the sausage.",
+                  "outcome": "kept",
+                  "spark": 3,
+                  "gaydar": 97,
+                  "them": [
+                    {
+                      "note": "The patrol guys cheer. Hayden counts down out loud from ten, slowly. You're squealing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one' he keeps going. You laugh so hard you roll off the towel into the sand. He stops when he decides he's done."
+                    },
+                    "\"Deal's a deal,\" Hayden says, and goes to get you a sausage.",
+                    {
+                      "note": "He brings back two. One for you, one for Ella. He sits down next to Ella to eat his, on the other side from you."
+                    },
+                    "You actually asked for more. You actually asked him.",
+                    {
+                      "note": "You eat your sausage with sand on your face. Ella doesn't wipe it off for you."
+                    }
+                  ],
+                  "after": "Meg, to the group chat: \"[video] he did it for a SAUSAGE\" Ella: \"please\" Meg: \"hayden's added it to the club chat\" Ella: \"why is hayden in the group chat\" Meg: \"you added him\" Ella: \"...i did\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Just lie there and laugh.)",
+              "them": [
+                {
+                  "note": "You stop pulling away. You lie flat on the towel with your arms over your face, laughing so hard nothing else comes out."
+                },
+                "\"He's given up!\" one of the patrol guys says. \"He's just letting him!\"",
+                "\"He loves it,\" Hayden says. \"Look at those toes go.\"",
+                {
+                  "note": "It goes on and on. He tickles the arch, then the heel, then in between each coral toe, one at a time, like he's counting them. You're crying from laughing. There's sand in your teeth."
+                },
+                {
+                  "note": "Ella's stopped laughing. She's sitting with her knees up, watching."
+                },
+                "{name}? You're allowed to tell him to stop. You know that, right?"
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop. Stop! Okay, stop!",
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 97,
+                  "them": [
+                    {
+                      "note": "He stops the moment you say it and lets go."
+                    },
+                    "\"Nearly three minutes,\" Meg says, looking at her phone. \"I timed it. Sorry.\"",
+                    {
+                      "note": "You lie there, wrecked, coral toes still curling on their own. Hayden pats your shin twice. \"Good effort, champ.\""
+                    },
+                    {
+                      "note": "Then he stands up and holds his hand out to Ella. \"Swim?\""
+                    },
+                    {
+                      "note": "She looks at you. She takes his hand. They swim out past the flags together and he holds her up in the waves."
+                    }
+                  ],
+                  "after": "Ella, to her sister: \"i just watched hayden tickle my date for three minutes\" \"and he LOVED it\" Sister: \"who loved it\" Ella: \"both of them honestly\" \"then i went swimming with hayden\" Sister: \"and\" Ella: \"and he kissed me behind the flags\""
+                },
+                {
+                  "you": "(Can't speak. Just keep laughing.)",
+                  "outcome": "kept",
+                  "spark": 0,
+                  "gaydar": 98,
+                  "them": [
+                    {
+                      "note": "You can't get a word out. You keep laughing. Hayden keeps going."
+                    },
+                    "Hayden. Okay. Enough.",
+                    {
+                      "note": "She says it sharp. He stops straight away and lets go."
+                    },
+                    "\"He didn't tap out,\" Hayden says.",
+                    "He couldn't. He's crying. Look at him.",
+                    {
+                      "note": "You're lying half off the towel, covered in sand and sunscreen, still giggling at nothing. A kid with a bucket has stopped to watch you."
+                    },
+                    {
+                      "note": "Ella stands up and brushes off her legs. \"I'm going to go in. Hayden, coming?\""
+                    },
+                    {
+                      "note": "He's already up."
+                    }
+                  ],
+                  "after": "Ella, to Meg, that night: \"i don't want to be mean\" \"i really like him\" \"but i just watched him giggle in the sand for four minutes with a kid watching\" \"and hayden was right there. in his little cap\" Meg: \"you kissed hayden didn't you\" Ella: \"in the water\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Being ticklish isn't embarrassing, even when it feels like it in the moment. What she felt watching it was hers to sort out, not yours."
+    },
+    {
       id: "ella-end", route: "ella", gaydar: 99, spark: 0, gaydarSays: "Connor plays rugby and thinks a cat eye is an actual cat's eye. Perfect man.", title: "Ella and Connor", contact: "Ella",
       intro: "A month later, Ella's Instagram story pops up: her and a guy in a Reds jersey at Suncorp, his arm round her, both holding pies. His name's Connor. You reply to the story with a heart-eyes emoji before you can stop yourself. Ten minutes later she replies.",
       them: [
@@ -1421,7 +2036,9 @@ window.CONTENT = {
         "ok that's so nice of you. this is connor. he plays rugby. like on weekends with his friends, not for real. he has a cauliflower ear and he thinks it's sexy",
         "i asked him last week if he liked my cat eye and he said 'what's wrong with your eye'",
         "i've never been happier honestly lol",
-        "how are you?? are you ok? i felt bad about how i left things after brunch"
+        "how are you?? are you ok? i felt bad about how i left things after brunch",
+        {"if":"ella-tickle=held","text":"also hayden still brings up the surf club. how you didn't laugh. it bugs him so much lol"},
+        {"if":"ella-tickle=cracked|begged|kept","text":"also sorry but connor has seen the surf club video. hayden put it in the club chat and connor's cousin is in the club. connor said 'the kettle guy?' i said yes. sorry"}
       ],
       replies: [
         { you: "Oh my god, he's SO rugby. Look at his neck. I'm so happy for you, Ella! And don't feel bad. Brunch was... a moment. I was having a moment.",
@@ -1890,6 +2507,318 @@ window.CONTENT = {
       debrief: "Getting caught out in front of the guy who wants your girl stings. It isn't a contest you have to win. You can just be the guy with the top coat."
     },
     {
+      "id": "georgie-tickle",
+      "route": "georgie",
+      "gaydar": 97,
+      "irl": true,
+      "title": "The crash mats",
+      "contact": "Georgie",
+      "gaydarSays": "I counted. Corey tickled him for 41 seconds. He lasted four. I'm not saying that means anything. It means something.",
+      "intro": "A week after Corey asked Georgie to Kangaroo Point. Thursday night at the gym again. After the session everyone lies on the big crash mats under the bouldering wall, barefoot, eating the lollies someone always brings. Your toes are still lilac. You didn't take it off. Corey's lying on the mat right next to Georgie.",
+      "them": [
+        {
+          "note": "You lie down on Georgie's other side. Your feet end up near Corey's head, because that's how the mats work."
+        },
+        "\"Still lilac,\" Corey says, looking at them sideways. \"No chips. Respect.\"",
+        "I told you. Top coat.",
+        "\"How was the rock on Saturday?\" you ask her.",
+        "Good. Corey led Pommy Wall. I seconded it. It was good.",
+        {
+          "note": "She doesn't say anything else about it. Corey smiles at the ceiling."
+        },
+        {
+          "note": "Then Corey rolls over onto his elbow and looks at your foot like it's a route he's reading."
+        },
+        "\"Hey. Georgie. Climbers' feet are meant to be tough. Calluses. No feeling. Bet his aren't.\"",
+        "Corey.",
+        "\"Just checking. Science.\" His hand's already round your ankle. Chalky. \"Hold still, buddy. This is for the gym record.\"",
+        "There's no gym record for that.",
+        "\"There is now. Georgie, time it.\"",
+        {
+          "note": "Georgie, very slowly, takes out her phone and opens the stopwatch."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Go rigid. Stare at the holds on the ceiling. Not a sound.)",
+          "them": [
+            {
+              "note": "You stare at a pink crimp on the ceiling. Corey's chalky fingers start on your heel and walk up the sole, slow, one at a time."
+            },
+            "Five seconds.",
+            {
+              "note": "He gets to the arch. Your calf goes tight as a rope. He feels it and grins."
+            },
+            "\"Oh, he's fighting. Look at the calf.\"",
+            "Ten seconds.",
+            {
+              "note": "A couple of the regulars sit up on the mats to watch. Someone says \"oh no, Corey's doing the thing\". So it's a thing. He does this."
+            },
+            "Fifteen.",
+            {
+              "note": "The chalk makes it dry and scratchy, which is somehow worse. He goes right under your toes."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Hold it. Hold it all the way.)",
+              "them": [
+                {
+                  "note": "You hold it. You hold it through twenty. Through thirty. Your eyes water. You don't make a sound."
+                },
+                "Forty. Forty-five.",
+                {
+                  "note": "At sixty Corey lets go and flops onto his back."
+                },
+                "\"Nothing,\" he says. \"Not a thing. Georgie, he's a statue.\"",
+                "One minute and two seconds. Not a sound.",
+                {
+                  "note": "She's looking at you differently. Like you're a route she hadn't noticed was hard."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Sit up and dust the chalk off your foot.) My turn to time you, Corey.",
+                  "outcome": "held",
+                  "spark": 22,
+                  "them": [
+                    {
+                      "note": "Corey laughs and sits up and tucks his feet right under himself. \"No thanks.\""
+                    },
+                    "Oh, that's interesting. Corey. Give me your foot.",
+                    "\"Absolutely not.\"",
+                    {
+                      "note": "Georgie lies back down. This time she lies down a bit closer to you, and she leaves her hand on your arm."
+                    },
+                    "I'm putting it in the gym chat. One minute two. New record.",
+                    {
+                      "note": "Corey goes to put the lollies away. He takes a long time doing it."
+                    }
+                  ],
+                  "after": "Georgie, to the gym chat: \"new record. 1:02. no reaction.\" Corey: \"rigged\" Georgie: \"you won't do yours\" Corey: \"no comment\" Georgie, to her housemate: \"he beat corey at corey's own thing. i liked it more than i expected\""
+                },
+                {
+                  "you": "(Wiggle your toes in his face.) Go on. The other one.",
+                  "outcome": "held",
+                  "spark": 15,
+                  "them": [
+                    "\"Bad idea, buddy,\" Corey says, and grabs it.",
+                    "Restarting the timer.",
+                    {
+                      "note": "This one he doesn't play with. He goes straight under the toes with both thumbs. You last eight seconds. Then a snort comes out, then a giggle, then you're kicking."
+                    },
+                    "Eight seconds. Okay. So the left one's the weak one.",
+                    {
+                      "note": "He lets go. The regulars are cheering. Georgie's laughing, properly, and she's laughing at Corey's face, not yours."
+                    },
+                    "\"Kangaroo Point again Saturday?\" Corey says to her, still grinning. She says \"yeah, okay.\""
+                  ],
+                  "after": "Georgie, to her housemate: \"right foot: 1:02. left foot: 8 seconds.\" \"so he's ticklish after all\" \"corey's taking me back to kangaroo point. we're doing a harder one\""
+                }
+              ]
+            },
+            {
+              "you": "(It breaks. You giggle.)",
+              "them": [
+                {
+                  "note": "At eighteen seconds it comes out of you: a high giggle, then a squeak, then you're curled on your side on the crash mat trying to get your foot back. His grip's like he's holding a jug hold. It doesn't move."
+                },
+                "Eighteen seconds.",
+                "\"Eighteen!\" Corey says. \"Georgie, eighteen seconds!\"",
+                "I can see the timer, Corey.",
+                {
+                  "note": "Someone at the bouldering wall has stopped mid-route to watch. She's hanging off one hand, laughing."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! Fine! I'm ticklish! Happy?",
+                  "outcome": "cracked",
+                  "spark": 10,
+                  "them": [
+                    {
+                      "note": "He lets go straight away."
+                    },
+                    "\"Very happy.\" He lies back with his hands behind his head. \"Write it down, Georgie. Eighteen.\"",
+                    "Writing it down.",
+                    {
+                      "note": "She actually writes it down. In her phone, under a note called 'Corey's records'. You can see your name above it. There are other names."
+                    },
+                    {
+                      "note": "You sit up and pick chalk out of your toes. Georgie lies back down next to Corey, both of them on their phones, showing each other something."
+                    }
+                  ],
+                  "after": "Georgie, to her housemate: \"18 seconds\" \"there's a list. corey keeps a list. he's at the top for not reacting\" \"{name} is at the bottom\" Housemate: \"is that bad\" Georgie: \"it's just numbers\""
+                },
+                {
+                  "you": "(Bright red, giggling) Corey! Stop it!",
+                  "outcome": "cracked",
+                  "spark": 8,
+                  "them": [
+                    {
+                      "note": "He stops the second you say it and lets go."
+                    },
+                    "\"Done, done. Sorry, buddy.\"",
+                    {
+                      "note": "You sit up and wrap your arms round your knees, feet flat on the mat where he can't get them. You're red right down your neck."
+                    },
+                    "You okay? That was a lot of noise.",
+                    {
+                      "note": "She says it the way she'd ask if you'd hurt your finger. Then she turns back to Corey. \"Do me.\""
+                    },
+                    "\"No way. You'll kick me.\"",
+                    "I won't. I won't react.",
+                    {
+                      "note": "She doesn't. Corey tries for a full minute. She just lies there eating a lolly. They both look at you after."
+                    }
+                  ],
+                  "after": "Georgie, to the gym chat: \"me: 1:00, no reaction. {name}: 18 seconds\" Corey: \"he went so red\" Georgie: \"he did\" Corey: \"kangaroo point saturday\" Georgie: \"yes\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're giggling the second he touches you.)",
+          "them": [
+            "One... oh. Okay. One second.",
+            {
+              "note": "You're gone before she's finished saying it. You're giggling, squirming across the crash mat, trying to roll away while he hangs on to your ankle."
+            },
+            "\"ONE SECOND!\" Corey says. \"Georgie! One second! That's a record!\"",
+            "It's the worst record. It's a record for being the worst.",
+            {
+              "note": "He doesn't stop. He tucks your foot under his arm like a rope bag and goes at the sole with his chalky fingers. You're shrieking. The whole bouldering area has turned round."
+            },
+            "\"How have you been climbing with feet this ticklish?\""
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Please! Corey, please, stop!",
+              "them": [
+                {
+                  "note": "He stops right away and lets go. You lie on the mat, panting, chalk all down your shin."
+                },
+                "\"He said please,\" Corey says. \"Georgie, he said please. Write that down.\"",
+                "I'm not writing that down.",
+                {
+                  "note": "He picks your foot up again, gently, not tickling, just holding it, and wiggles it at Georgie like a puppet."
+                },
+                "\"One more round? He's the easiest one I've ever done.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Pull it back.) No. I'm done. Absolutely done.",
+                  "outcome": "begged",
+                  "spark": 6,
+                  "them": [
+                    "\"Fair enough, champ.\" He lets it go.",
+                    {
+                      "note": "You sit cross-legged with your feet tucked under your knees for the rest of the night. Every time Corey moves, you flinch, and he notices, and he does it on purpose."
+                    },
+                    "Stop flinching. He's not going to.",
+                    {
+                      "note": "Georgie lies back down. She's on Corey's side of the mat now. He's showing her a video of a route in Spain and she's got her head almost on his shoulder."
+                    }
+                  ],
+                  "after": "Georgie, to her housemate: \"he lasted one second\" \"one\" \"and then he begged\" Housemate: \"poor thing\" Georgie: \"yeah\" \"corey's asked me to go to the blue mountains for a weekend\" Housemate: \"and\" Georgie: \"it's a climbing trip\" Housemate: \"georgie\""
+                },
+                {
+                  "you": "(Still giggling) ...Fine. One more round.",
+                  "outcome": "kept",
+                  "spark": 3,
+                  "gaydar": 98,
+                  "them": [
+                    "Starting the timer.",
+                    {
+                      "note": "He goes again. You last zero seconds. You're laughing so hard you can't breathe. People are filming from the top of the wall."
+                    },
+                    "Thirty seconds. Forty. Corey, he's not even trying to get away.",
+                    "\"He likes it,\" Corey says, still going. \"Look at him. He's having the best night of his life.\"",
+                    {
+                      "note": "He stops at a minute and lets go and holds his hand up for a high five. Georgie gives it to him."
+                    },
+                    "You asked for more. You actually asked for more.",
+                    {
+                      "note": "You lie on the mat giggling while Corey and Georgie pack up the lollies together."
+                    }
+                  ],
+                  "after": "Georgie, to the gym chat: \"he asked for a second round\" Corey: \"he loved it\" Gym regular: \"is this the lilac toes guy\" Georgie: \"yes\" Gym regular: \"he seems happy\" Georgie: \"he does. he seems really happy.\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Lie back and let him.)",
+              "them": [
+                {
+                  "note": "You stop pulling. You lie back on the crash mat, arms out, laughing at the ceiling, lilac toes wriggling in Corey's chalky hand."
+                },
+                "\"He's given up,\" someone says. \"He's just lying there.\"",
+                "Thirty seconds. He's... still going. Forty.",
+                {
+                  "note": "Corey takes his time. Heel. Arch. Between every toe. The ball of your foot. He hums while he does it. You're crying with laughter."
+                },
+                "A minute. Corey, a minute.",
+                {
+                  "note": "Georgie's not laughing anymore. She's watching your face while she holds the phone."
+                },
+                "{name}. You can say stop. You know that."
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop! Stop. Okay. Stop.",
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 98,
+                  "them": [
+                    {
+                      "note": "He stops the moment you say it and lets go."
+                    },
+                    "One minute forty-one.",
+                    "\"New record,\" Corey says. \"Longest ever. Most ticklish ever. Both.\"",
+                    {
+                      "note": "He pats your foot twice, like he's sending a route. Then he stands up and puts his hand down for Georgie. \"Bouldering? One more problem before close?\""
+                    },
+                    {
+                      "note": "She takes his hand. They climb the purple one together. You lie on the mat with your feet in the air and the lollies, watching them."
+                    }
+                  ],
+                  "after": "Georgie, to her housemate: \"1 minute 41 seconds\" \"he let corey tickle him for 1 minute 41 seconds\" \"and the whole time i was thinking. this is not a guy who likes girls\" Housemate: \"and corey\" Georgie: \"corey drove me home\""
+                },
+                {
+                  "you": "(Can't speak. Too busy laughing.)",
+                  "outcome": "kept",
+                  "spark": 0,
+                  "gaydar": 99,
+                  "them": [
+                    {
+                      "note": "You can't say anything. You're laughing too hard to get a word out. Corey keeps going."
+                    },
+                    "Corey. Stop. Now.",
+                    {
+                      "note": "He stops straight away and lets go."
+                    },
+                    "\"He didn't say stop.\"",
+                    "He can't. He's purple. Two minutes ten.",
+                    {
+                      "note": "You're lying across two crash mats now, chalk all over you, still giggling. The girl on the wall has climbed down to come and look."
+                    },
+                    {
+                      "note": "Georgie puts her phone away. She looks at you for a long time. Then she looks at Corey."
+                    },
+                    "I'm going to go. Corey, you're going my way?",
+                    "\"I'm going your way.\""
+                  ],
+                  "after": "Georgie, to her housemate, from Corey's car: \"two minutes ten\" \"he didn't say stop once\" \"i'm not mad. i'm just done counting\" Housemate: \"where are you\" Georgie: \"in corey's car\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Some bodies are just ticklish. That says nothing about how strong you are. Whatever she was counting, she'd already started before the timer."
+    },
+    {
       id: "georgie-end", route: "georgie", gaydar: 99, spark: 0, gaydarSays: "Ben does rope access on skyscrapers. He's never worn a slip dress. I checked.", title: "Georgie and Ben", contact: "Georgie", irl: true,
       outfits: [
         { label: "Old gym gear. Pretend nothing happened.", gaydar: -2, intro: "Six weeks later, Tuesday night at the climbing gym. You wore your oldest gym gear and no makeup, hoping to be invisible. Georgie's on the overhang wall. Belaying her is a guy you've never seen: massive, bearded, ropes slung over his shoulder like he does this for a living. He does. That's Ben." },
@@ -1900,7 +2829,10 @@ window.CONTENT = {
         { note: "Georgie lowers off the wall and lands right next to you." },
         "Oh. Hi. This is Ben. Ben, {name}. We went out for a bit.",
         "\"Hey, man,\" Ben says. His voice is so deep you feel it in your ribs. \"Georgie says you're a good belayer.\"",
-        "He does rope access. On skyscrapers. He abseils off the Infinity tower on Mondays. He's never once asked a waiter about his eyebrows. I'm very happy."
+        "He does rope access. On skyscrapers. He abseils off the Infinity tower on Mondays. He's never once asked a waiter about his eyebrows. I'm very happy.",
+        {"if":"georgie-tickle=held","text":"\"Corey told me about you,\" Ben says. \"The guy who beat his tickle thing. He hasn't shut up about it.\""},
+        {"if":"georgie-tickle=cracked|begged|kept","text":"\"Oh, you're on Corey's list,\" Ben says. \"The bottom of it.\" He says it nicely. That makes it worse."},
+        {"if":"georgie-tickle=cracked|begged|kept","note":"Georgie doesn't correct him. She just says \"it's a dumb list\" and chalks up."}
       ],
       replies: [
         { you: "Oh, hi Ben! Rope access, wow, very brave. Georgie, he's lovely. I'm really happy for you. Truly.",
@@ -2091,6 +3023,319 @@ window.CONTENT = {
       debrief: "Being on show when you didn't plan to be is hard, especially next to someone who's sure of himself. You stayed at the table."
     },
     {
+      "id": "lucy-tickle",
+      "route": "lucy",
+      "gaydar": 94,
+      "irl": true,
+      "title": "After night shift",
+      "contact": "Lucy",
+      "gaydarSays": "Fraser said he was checking his reflexes. I'm a nurse. That is not how you check reflexes. Everyone at the table knew that.",
+      "intro": "A week after Kayla's birthday. Lucy's off a run of night shifts, and her share house in Annerley does a big breakfast when someone finishes nights. Shoes off at the door, because the floorboards are new. You came in sandals. Your toes are still Big Apple Red. Fraser's already here, because he finished the same shift. He's on the couch in his uniform pants and a hoodie, barefoot.",
+      "them": [
+        {
+          "note": "Lucy hugs you at the door, sleepy, still in scrubs. She looks down at your toes and smiles."
+        },
+        "You kept the red! I love that you kept it.",
+        "\"Big Apple Red,\" Fraser says from the couch. \"I remembered. I've been thinking about it all week.\"",
+        "Fraser, don't start. He's been up for nineteen hours. He gets silly.",
+        {
+          "note": "Breakfast is on the coffee table. There's nowhere left on the couch except the end next to Fraser. You sit there with your plate. Lucy sits on the floor between his feet and leans back against his legs. Like she does that a lot."
+        },
+        {
+          "note": "You put your feet up on the ottoman. Fraser looks at them. Then he puts his coffee down."
+        },
+        "\"Hey. Lucy. Want to see a reflex? Plantar reflex. You'll love it.\"",
+        "I've seen a plantar reflex, Fraser. I'm a nurse.",
+        "\"Not on him you haven't.\"",
+        {
+          "note": "He's already got your foot. He holds it up by the heel and runs one finger slowly up the outside of your sole, heel to toes, very professional, the way they do it at the hospital."
+        },
+        "\"Toes should curl down,\" he says. \"Normal response. Let's see.\"",
+        {
+          "note": "Then the finger goes back down the middle. Faster. And it's not the hospital way anymore."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Keep your face still. You're a grown man eating eggs.)",
+          "them": [
+            {
+              "note": "You hold your fork in the air and keep looking at your eggs. Your toes curl so hard they go white."
+            },
+            "\"Toes curling. Normal response,\" Fraser says. \"Let's check it again.\"",
+            "That's not a reflex anymore. That's just tickling.",
+            "\"Clinical opinion noted.\"",
+            {
+              "note": "Two of Lucy's housemates come out of the kitchen with toast. One of them says \"oh, is Fraser doing the feet thing?\" So he does this to people."
+            },
+            {
+              "note": "He gets the gap under your toes with his thumbnail. Your fork is shaking. A bit of egg falls off it."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Don't break. Eat your eggs.)",
+              "them": [
+                {
+                  "note": "You put the egg in your mouth and chew. It's the hardest thing you've ever done. He tries the arch. The heel. Your little toe. You chew."
+                },
+                {
+                  "note": "After a long time he puts your foot down and picks up his coffee."
+                },
+                "\"Nothing. Abnormal response. Lucy, he's got no feelings in his feet.\"",
+                "He's got plenty of feelings. He's just better at hiding them than you.",
+                {
+                  "note": "She looks up at you from the floor. She's smiling like she's surprised."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Put your feet down on the floor next to Lucy.) Thanks for breakfast, Luce.",
+                  "outcome": "held",
+                  "spark": 24,
+                  "them": [
+                    {
+                      "note": "You put your feet on the floorboards right next to her. She leans off Fraser's legs and onto yours."
+                    },
+                    "You're welcome. Sorry about him. He's not normally like this. He is normally like this.",
+                    "\"I'm going to bed,\" Fraser says, a bit flat. He takes his coffee with him.",
+                    {
+                      "note": "Lucy stays leaning on your legs while the housemates clear up. She falls asleep there for twenty minutes. You don't move."
+                    }
+                  ],
+                  "after": "Lucy, to Kayla: \"fraser tried to tickle him and he didn't even flinch\" Kayla: \"wow\" Lucy: \"he just ate his eggs\" Kayla: \"and you\" Lucy: \"i fell asleep on him\" Kayla: \"LUCY\" Lucy: \"on his legs. it was nice\""
+                },
+                {
+                  "you": "(Smile.) You can try the other one if you want.",
+                  "outcome": "held",
+                  "spark": 16,
+                  "them": [
+                    "\"Oh, he's brave,\" Fraser says, and grabs it.",
+                    {
+                      "note": "He doesn't bother with the reflex this time. Both thumbs, straight under the toes. A giggle comes out of you. Just one, small and high. You put your hand over your mouth."
+                    },
+                    "\"There it is. Normal response, finally.\"",
+                    {
+                      "note": "He lets go. The housemates clap. Lucy's laughing up at Fraser, and he puts his hand on her head and messes her hair up, and she lets him."
+                    },
+                    "Okay. Both of you. Eat your breakfast.",
+                    {
+                      "note": "She stays leaning on Fraser's legs."
+                    }
+                  ],
+                  "after": "Lucy, to Kayla: \"he lasted ages and then giggled once\" Kayla: \"cute\" Lucy: \"fraser messed my hair up\" Kayla: \"cute??\" Lucy: \"i don't know kayla. i'm so tired\""
+                }
+              ]
+            },
+            {
+              "you": "(It's too much. You giggle.)",
+              "them": [
+                {
+                  "note": "You crack. The egg goes everywhere. A high, helpless giggle comes out, and then another, and you're doubled over on the couch with your plate tipping."
+                },
+                "\"Abnormal response!\" Fraser says. \"Lucy, look! Very abnormal!\"",
+                {
+                  "note": "Lucy grabs your plate before it goes. She's laughing so hard she's crying, but it's the over-tired kind."
+                },
+                "\"Someone get this on video, he sounds like a squeaky toy.\"",
+                {
+                  "note": "One of the housemates gets it on video."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Giggling) Okay! Okay, I'm ticklish! You got me!",
+                  "outcome": "cracked",
+                  "spark": 10,
+                  "them": [
+                    {
+                      "note": "He lets go straight away and sits back with his coffee."
+                    },
+                    "\"I always get them. Fourteen years on the road. Nobody beats the plantar reflex.\"",
+                    "That's not what the plantar reflex is for.",
+                    {
+                      "note": "You sit up, red, picking egg off your shorts. You try to make a joke and it comes out as a giggle again. Fraser points at you without looking."
+                    },
+                    {
+                      "note": "Lucy goes to make more coffee. Fraser goes to help her. You can hear them laughing in the kitchen. About something else, maybe."
+                    }
+                  ],
+                  "after": "Lucy's housemate, to the house chat: \"[video] the squeaky toy\" Lucy: \"please delete\" Housemate: \"fraser asked for it\" Lucy: \"why does fraser want it\" Housemate: \"he said he wants to show the station\" Lucy: \"oh no\""
+                },
+                {
+                  "you": "(Red, giggling) Fraser! Stop! Stop it!",
+                  "outcome": "cracked",
+                  "spark": 8,
+                  "them": [
+                    {
+                      "note": "He stops the moment you say it and lets go."
+                    },
+                    "\"Okay, okay. Clinical trial over. Sorry, man.\"",
+                    {
+                      "note": "You tuck your feet under you and sit on them. Your face is burning. There's egg on the couch."
+                    },
+                    "Are you okay, babe? You went really high.",
+                    {
+                      "note": "She asks it kindly, like she's asking a patient. Then Fraser says \"he hit a note I didn't know men could hit\" and she snorts, and then she can't stop, and she has to put her face in his knee."
+                    }
+                  ],
+                  "after": "Lucy, to Kayla: \"fraser tickled him and he squealed\" Kayla: \"lol\" Lucy: \"and then i laughed. into fraser's knee. for like five minutes\" Kayla: \"lucy\" Lucy: \"i know. i know\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(Give in. You're giggling before the second stroke.)",
+          "them": [
+            {
+              "note": "You're gone straight away. High, squeaky giggles. You put your plate down before you drop it and grab a cushion and hug it."
+            },
+            "\"Oh, that's VERY abnormal,\" Fraser says, delighted. \"Lucy, look at this. Look at him.\"",
+            "I'm looking.",
+            {
+              "note": "He tucks your foot under his arm like he's holding a patient's leg for a splint, and goes at it with his whole hand. You're shrieking into the cushion."
+            },
+            "\"Red toes and the most ticklish feet in Brisbane. Lucy, he's a whole case study.\"",
+            {
+              "note": "The housemates have come out of the kitchen to watch. One of them is eating toast and just watching, like it's TV."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Giggling) Fraser! Please, please stop!",
+              "them": [
+                {
+                  "note": "He stops and lets go straight away. You fold over the cushion, panting."
+                },
+                "\"He said please,\" Fraser says. \"Very polite patient. Lucy, he's very polite.\"",
+                "He is very polite.",
+                {
+                  "note": "Fraser holds your foot up again, just holding it, not tickling, and looks at you over it."
+                },
+                "\"One more test? Ten seconds. For research.\""
+              ],
+              "replies": [
+                {
+                  "you": "(Pull your foot back.) No! No more research.",
+                  "outcome": "begged",
+                  "spark": 6,
+                  "them": [
+                    "\"Fair enough, sweetheart. Patient declines.\" He lets go.",
+                    {
+                      "note": "You eat the rest of breakfast with your feet pulled right up under you on the couch, as far from Fraser as you can get."
+                    },
+                    {
+                      "note": "Lucy stays on the floor leaning on his legs. At some point he starts playing with her hair while he talks to her housemates, and she closes her eyes."
+                    },
+                    "You're fine, babe. It was funny. You're just really ticklish.",
+                    {
+                      "note": "She says it with her eyes closed."
+                    }
+                  ],
+                  "after": "Lucy, to Kayla: \"he begged fraser to stop\" Kayla: \"aw\" Lucy: \"in such a little voice\" \"fraser played with my hair for an hour after\" Kayla: \"and you let him\" Lucy: \"i was really tired\" Kayla: \"lucy\""
+                },
+                {
+                  "you": "(Still giggling) ...Okay. Ten seconds.",
+                  "outcome": "kept",
+                  "spark": 3,
+                  "gaydar": 96,
+                  "them": [
+                    {
+                      "note": "The housemates cheer. Fraser counts out loud like he's doing CPR, ten down to one. You're squealing from 'ten'."
+                    },
+                    {
+                      "note": "At 'one' he keeps going for another five. Then he stops and lets go."
+                    },
+                    "\"Research complete. Results: extremely ticklish. Asked for more.\"",
+                    "You asked for more. Babe. You asked for more.",
+                    {
+                      "note": "She gets up off the floor to take the plates. Fraser gets up to help. In the kitchen he says something and she laughs and bumps her hip into his."
+                    },
+                    {
+                      "note": "You lie on the couch, still giggling, red toes in the air."
+                    }
+                  ],
+                  "after": "Lucy's housemate, to the house chat: \"[video] he asked for more\" Lucy: \"i'm going to sleep for 14 hours\" Housemate: \"fraser's still here\" Lucy: \"he's helping with dishes\" Housemate: \"it's been an hour\""
+                }
+              ]
+            },
+            {
+              "you": "(Stop fighting. Just laugh.)",
+              "them": [
+                {
+                  "note": "You stop pulling. You lie back across the couch and laugh at the ceiling, cushion on your chest, red toes wriggling in Fraser's hand."
+                },
+                "\"He's not even resisting,\" a housemate says, mouth full of toast.",
+                "\"He loves it,\" Fraser says. \"Lucy, look at him. Happiest patient I've ever had.\"",
+                {
+                  "note": "It goes on and on. He does the arch, then the heel, then each toe one at a time like he's checking circulation. You're crying from laughing."
+                },
+                {
+                  "note": "Lucy's stopped laughing. She's sitting up on the floor watching you, a bit worried, like you're a patient she's not sure about."
+                },
+                "{name}? You can say stop. You know that, right?"
+              ],
+              "replies": [
+                {
+                  "you": "(Gasping) Stop! Stop. Okay. Stop.",
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 97,
+                  "them": [
+                    {
+                      "note": "He stops the moment you say it and lets go."
+                    },
+                    "\"Two and a half minutes,\" Fraser says, checking his watch. \"Very good stamina.\"",
+                    {
+                      "note": "He pats your ankle twice, like he's finished bandaging it. \"Good effort, champ.\""
+                    },
+                    {
+                      "note": "You lie there wrecked, red toes still curling on their own, while Fraser stands up and stretches and says \"Luce, you want a lift to Kayla's later?\""
+                    },
+                    "Yeah. Yeah, okay.",
+                    {
+                      "note": "She doesn't ask if you want to come."
+                    }
+                  ],
+                  "after": "Lucy, to Kayla: \"i watched fraser tickle him for two and a half minutes\" \"and he LOVED it\" \"and i just sat there thinking. i've seen enough patients to know when someone's happy\" Kayla: \"and fraser\" Lucy: \"fraser's driving me to yours\""
+                },
+                {
+                  "you": "(Can't speak. Too busy laughing.)",
+                  "outcome": "kept",
+                  "spark": 0,
+                  "gaydar": 98,
+                  "them": [
+                    {
+                      "note": "You can't get a word out. You're laughing too hard. Fraser keeps going."
+                    },
+                    "Fraser. Stop. He can't breathe.",
+                    {
+                      "note": "She says it in her work voice. He stops straight away and lets go."
+                    },
+                    "\"He didn't say stop.\"",
+                    "He couldn't. Look at him. He's purple.",
+                    {
+                      "note": "You've slid half off the couch onto the new floorboards. You're still giggling at nothing. A housemate is filming from the kitchen door."
+                    },
+                    {
+                      "note": "Lucy looks at you for a long moment. Then she looks up at Fraser and sighs."
+                    },
+                    "I'm going to bed. Fraser, can you see him out? Thanks for coming, {name}.",
+                    {
+                      "note": "Fraser sees you out. At the door he says, \"See you round, sweetheart,\" and pats you on the head. Then he goes back inside."
+                    }
+                  ],
+                  "after": "Lucy, to Kayla, at 4pm when she wakes up: \"fraser's still here\" Kayla: \"WHAT\" Lucy: \"he fell asleep on the couch\" \"i'm not upset about {name}. i watched him giggle on my floor for three minutes and i just knew\" Kayla: \"knew what\" Lucy: \"that i'd rather be with the one doing the tickling\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "debrief": "Laughing that hard isn't a weakness or a giveaway. It's just a body doing what it does. Whatever she worked out, she was always going to work it out."
+    },
+    {
       id: "lucy-end", route: "lucy", gaydar: 99, spark: 0, gaydarSays: "Hamish wears work boots and has never said the word 'Bordeaux' in his life. He drinks it though.", title: "Lucy and Hamish", contact: "Lucy", irl: true,
       outfits: [
         { label: "Jeans and a black tee", gaydar: -2, intro: "Two months later. Kayla's engagement drinks at Cloudland. You wore jeans and a black tee and planned to leave early. Then Lucy walks in with a guy in RM Williams boots, moleskins and a blue checked shirt tucked in. Ag consultant. From Toowoomba. Hamish." },
@@ -2100,7 +3345,10 @@ window.CONTENT = {
         { note: "Lucy comes straight over and hugs you. Properly. Like an old friend." },
         "{name}! You look SO good. Kayla said you were coming. This is Hamish. Hamish, this is {name}. We went on a few dates. Before you.",
         "\"Hey,\" Hamish says, and shakes your hand like he's buying a bull off you. \"Lucy says you've got great taste. She said you'd tell me if my shirt's alright.\"",
-        "He grew up on a cattle station. He owns three pairs of boots and they're all the same. He's never heard of a scrunchie. I'm so happy."
+        "He grew up on a cattle station. He owns three pairs of boots and they're all the same. He's never heard of a scrunchie. I'm so happy.",
+        {"if":"lucy-tickle=held","text":"Fraser still talks about you, by the way. 'The one with no plantar reflex.' He's sure it's a medical condition."},
+        {"if":"lucy-tickle=cracked|begged|kept","text":"\"Oh, hey,\" Hamish says. \"Fraser showed me a video of you. At breakfast. With the feet.\" He grins. \"You've got a laugh on you.\""},
+        {"if":"lucy-tickle=cracked|begged|kept","note":"Lucy goes pink and says \"Hamish\" in her nurse voice. He doesn't stop grinning."}
       ],
       replies: [
         { you: "Oh, Hamish. Babe. The shirt's fine. The tuck is very... rural. Lucy, he's adorable. I'm so happy for you.",

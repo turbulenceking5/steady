@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story: four new, much longer tickling chapters. Dylan at Kate's movie night (Hannah), Hayden at the surf club (Ella), Corey on the crash mats (Georgie) and Fraser after Lucy's night shift. You choose whether to resist or give in, then whether to hold it or crack, beg him to stop or let him keep going, and what happens after. Giggling costs you: she pays his bet, swims with him, leans on him or leaves with him, the video gets around, and her new boyfriend brings it up when you meet him at the end.
 - Steady is now just the Story. Today, Messages, Practice, Style and Progress (XP, quests, badges) are gone, along with the tab bar; the app opens straight to the list of girls.
 - Story: the drag-show endings ("Encore: Lola Lilac") are gone. Each girl's story ends with her new boyfriend again.
 - Story: three new tickling chapters with a choice. Josh at Archie's work pool party, Theo at Hayley's birthday (Mia) and Sean in Mel's hot tub (Jade) grab your foot, and you choose to resist or give in to the giggles. Keeping a straight face keeps her interested; giggling, begging him to stop or just letting him keep going makes her fancy you less. The tickle chapters with Tayla, Olivia, Zoe and Sophie now work the same way.
