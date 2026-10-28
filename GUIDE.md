@@ -9,7 +9,7 @@
 - Today's messages shows the next story chapter and a featured chat.
 
 ## Messages
-- Everyday chats from friends, family, exes and the uni group chat, who all know you're gay and don't make a thing of it. Pick any reply; there are no wrong answers.
+- Everyday chats from friends, exes and the uni group chat, who all know you're gay and don't make a thing of it. Pick any reply; there are no wrong answers.
 
 ## Story
 - From being in the closet with Archie, through coming out, to six months with your boyfriend. A new chapter opens the day after you finish the last one.

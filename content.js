@@ -60,19 +60,6 @@ window.CONTENT = {
       ]
     },
     {
-      id: "mum-sunday",
-      contact: "Mum", role: "family", avatar: "M",
-      them: ["Hi love. Doing a roast on Sunday.", "You're welcome to bring someone if you're seeing anyone. No fuss, just want to meet him one day x"],
-      replies: [
-        { you: "Thanks Mum, just me this time.",
-          them: ["That's fine sweetheart, more potatoes for you x"] },
-        { you: "There is someone, but it's early days.",
-          them: ["Oh lovely! Take your time. Whenever you're both ready x"] },
-        { you: "Thanks for saying that, it means a lot.",
-          them: ["Of course, {name}. I just want you happy, whoever he is x"] }
-      ]
-    },
-    {
       id: "sam-work",
       contact: "Sam", role: "coworker", avatar: "S", // she
       them: ["Hey {name}, for the end-of-year thing, partners are invited", "Are you bringing your boyfriend or flying solo? Need numbers for catering"],
@@ -95,16 +82,6 @@ window.CONTENT = {
           ] },
         { you: "Ha, flattering. Not really looking right now.", them: ["All good, I'll let him down gently 😄"] },
         { you: "Which one??", them: ["Curly hair, always wipes down the bench. A gentleman"] }
-      ]
-    },
-    {
-      id: "nan-call",
-      contact: "Nan", role: "family", avatar: "N",
-      them: ["Hello {name} darling, it's Nan. Your cousin showed me how to text!", "Your mother says you're courting a young man. I hope he's got good manners."],
-      replies: [
-        { you: "Haha hi Nan! He does, I promise.", them: ["Good. Bring him for scones. I'll be the judge of that x"] },
-        { you: "Not courting yet Nan, but I'll let you know.", them: ["Well don't leave it too long, I'm 84 😂 x"] },
-        { you: "Thanks for being so lovely about it Nan.", them: ["I've been around long enough to know love is love, darling x"] }
       ]
     },
     {
@@ -145,35 +122,80 @@ window.CONTENT = {
       id: "rachel-ex",
       contact: "Rachel", role: "ex", avatar: "R",
       // Korean, English is her second language: keep it natural and warm, never a caricature.
-      them: ["Hi {name}! Long time no see 😊", "I hear your news from Jess. I want to say I am really happy for you. Really really."],
+      them: [
+        "Hi {name}! Long time no see 😊",
+        "I hear your news from Jess. I want to say first: I am really happy for you. Really really.",
+        "I think about it a lot since she told me. When we were dating, sometimes I feel like you are somewhere far away, even when you are sitting right next to me. I thought maybe it is because of my English, or because I am too different, or not interesting enough for you. Now I understand it was never about me at all."
+      ],
       replies: [
-        { you: "Thanks Rach, that means a lot coming from you.",
-          them: ["Of course! You always so kind to me. You deserve happy too 💛"] },
-        { you: "I'm sorry if things were confusing back then.",
-          them: ["Aigoo, don't say sorry. We were young, and you never was unkind to me.", "I am just glad now you can be yourself."],
+        { you: "Rach, I'm so sorry I made you feel like that.",
+          them: [
+            "Aigoo, no, please don't say sorry. You were never unkind to me, not one time. You always walk me home, you learn how to say 'I miss you' in Korean, you even eat the spicy tteokbokki even though you are crying the whole time 😂",
+            "I just wish you did not have to carry that secret alone. It must be so heavy. When I think about it now, I feel a little bit sad for young you, more than I feel sad for me.",
+            "And honestly? I am happy we did not end up together forever. You would be a very kind boyfriend but a secretly sad one, and I never want that for you. Now in your photos your smile is different. Bigger. This is a much better ending for both of us."
+          ],
           replies: [
-            { you: "Thank you. Seriously.", them: ["Anytime! Next time you come northside we get coffee ok?"] },
-            { you: "Did you ever guess?", them: ["Maybe little bit 😅 But it is your story to tell, not mine to guess."] }
+            { you: "Your English was never the problem. You were wonderful.",
+              them: [
+                "Ah, you will make me cry at work 😭",
+                "Thank you, really. For a long time I think maybe it was my fault. Now I can put that worry down. You give me a gift by telling the truth, you know? Even if it is a few years late 😂",
+                "Next time you come northside we get coffee, ok? I want to hear everything. Especially about the boys. I have opinions 👀"
+              ] },
+            { you: "How do I seem different to you now?",
+              them: [
+                "Before, you are very quiet, very careful. Like you always check first if it is okay to laugh.",
+                "Now in your photos you are wearing colours! Pink shirt! Sunglasses like a celebrity! And you look like you are not checking anymore. You are just enjoying your life.",
+                "I am really proud of you, {name}. 대박. Truly."
+              ] }
           ] },
-        { you: "Haha yeah, surprise 😅",
-          them: ["Honestly? Not so big surprise 😂", "대박, I'm so proud of you. Go be happy!"] }
+        { you: "Did you ever guess?",
+          them: [
+            "Maybe a little bit 😅",
+            "One time we watch a movie and you say the actor is very handsome, very nice jawline, and I think 'hmm'. But I did not want to guess something so private. It is your story to tell, not mine to decide.",
+            "I'm glad you tell it now, and that you are not pretending forever with me. You deserve someone who makes you feel like you are home, and I think that person is a man, not me. That's okay! It's really, really okay 💛"
+          ] }
       ]
     },
     {
       id: "archie-ex",
       contact: "Archie", role: "ex", avatar: "A",
-      them: ["Hey {name}. Can I ask you something kind of personal?", "Did you know you were gay when we were together?"],
+      them: [
+        "Hey {name}. Can I ask you something kind of personal?",
+        "I've been going back and forth on whether to even send this. It's been sitting in my chest for months.",
+        "Did you know you were gay when we were together?"
+      ],
       replies: [
         { you: "Honestly, I was still working it out.",
-          them: ["Okay. I think I needed to hear that.", "So it wasn't about me."],
+          them: [
+            "Okay. I think I needed to hear that.",
+            "For a long time after we broke up I kept replaying everything. Every time you said you were tired, every time you went quiet when I talked about moving in together. I made it into this whole story where I wasn't enough, where if I'd been prettier or funnier or less needy you'd have stayed.",
+            "So it wasn't about me?"
+          ],
           replies: [
-            { you: "It was never about you. I really cared about you.", them: ["Yeah. I know you did. Thank you for saying it.", "I'm glad you're happy now."] },
-            { you: "No. You didn't do anything wrong.", them: ["Okay. That actually helps a lot."] }
+            { you: "It was never about you. I really cared about you.",
+              them: [
+                "Yeah. I know you did. I think deep down I always knew that, I just needed you to say it out loud.",
+                "And honestly, seeing you now, I get it. You're so much more you. You post things, you laugh in videos, you wear that pink shirt like you've been wearing it your whole life. I never got to meet that guy when we were together, and that's not your fault. He wasn't allowed out yet.",
+                "I'm glad he's out now. I really am."
+              ] },
+            { you: "No. You didn't do anything wrong.",
+              them: [
+                "Okay. That actually helps a lot more than you'd think.",
+                "I'm still a bit sad, if I'm honest. Not about you being gay, that part I'm genuinely fine with. Sad about the time. But I'd rather have the truth and be a bit sad than keep living in the version where I thought I'd broken something.",
+                "Maybe one day we can grab a drink and actually laugh about it. Not yet. But one day."
+              ] }
           ] },
         { you: "Part of me did. I'm sorry I couldn't say it then.",
-          them: ["I'm not angry. A bit sad maybe, but I get why you couldn't.", "It's not an easy thing to say. I'm glad you can now."] },
+          them: [
+            "I'm not angry. I was for a while, I won't pretend I wasn't. But I'm not now.",
+            "It's not an easy thing to say. I've watched friends try and it took them years. And I remember how people around us talked back then, the jokes at parties, all of it. If I'm honest, I'd have been scared too.",
+            "Mostly now I'm just glad you can say it. You seem lighter. You deserve that."
+          ] },
         { you: "I'd rather not get into that, if that's okay.",
-          them: ["That's fair. I'm not trying to make it about me.", "I just want you to know I'm cool with it. Really."] }
+          them: [
+            "That's fair. I'm not trying to make it about me.",
+            "I just want you to know I'm cool with it. Really. If anything I'm happy you're finally living the life that actually fits you."
+          ] }
       ]
     },
     {
@@ -226,38 +248,132 @@ window.CONTENT = {
     {
       id: "jemima-crush", tier: 1,
       contact: "Jemima", role: "uni friend", avatar: "J",
-      them: ["Okay, confession time since we're all being honest now", "I had the BIGGEST crush on you in first year 🙈"],
+      them: [
+        "Okay. Confession time, since apparently we're all being honest now and I've had two glasses of wine 🍷",
+        "I had the BIGGEST crush on you in first year. Like, embarrassingly big. I picked my seat in stats every single week based on where you were sitting, and I hate stats, {name}. I still don't know what a p-value is because I spent that entire semester staring at the back of your head."
+      ],
       replies: [
-        { you: "Wait WHAT 😂",
-          them: ["Yep. Sat next to you in stats for a whole semester on purpose. I hate stats.", "Honestly though? Bullet dodged, for both of us 😂 You'd have been a terrible boyfriend to me and you're an ELITE gay best friend 💅"],
+        { you: "Wait WHAT 😂 Jem, I had no idea.",
+          them: [
+            "Of course you had no idea, you were completely oblivious, and honestly now I know why 😂",
+            "I used to get so in my head about it. I'd think 'maybe he's just shy' or 'maybe he's not into girls who talk this much'. Turns out it was option three: not into girls, full stop. Which, looking back, explains SO much. The way you lit up talking about that guy from the footy team? I genuinely thought you just really loved footy.",
+            "But I need you to know I'm not sad about it. At all. If we'd actually got together, I'd have been dating someone who was quietly pretending the whole time, and you'd have been miserable and too kind to say so. That's not a love story, that's a slow-motion car crash."
+          ],
           replies: [
-            { you: "Elite is correct.", them: ["See, this confidence? Never would've happened if you were with me. Much better this way 💗"] },
-            { you: "Sorry about the stats, Jem.", them: ["Worth it. I got you out of it. Just not the way I planned 😂"] }
+            { you: "That's a lot to carry. I'm sorry you went through that.",
+              them: [
+                "Don't you dare apologise. I'd do it all again, honestly, because it got me here.",
+                "What I've got with you now is so much better than whatever first-year crush thing I had. I get the real you. The one who sends me voice notes rating strangers' outfits, the one who cried at the Mamma Mia sequel, the one who finally looks comfortable in his own skin. I wouldn't trade that for a hundred awkward stats-class dates.",
+                "The universe knew exactly what it was doing with us. I'm just glad it let me keep you 💗"
+              ] },
+            { you: "So how do you see me now?",
+              them: [
+                "Honestly? Like I'm finally seeing you properly for the first time.",
+                "Back then you were lovely, but there was always this wall. Like you were acting out a version of yourself you'd read about somewhere. Now you laugh louder, you dress like you actually enjoy it, you tell me who you think is cute without checking the room first. You take up space, {name}. It's the best thing.",
+                "First-year me had great taste. She just had the wrong job in mind for you. You were never meant to be my boyfriend. You were meant to be my person 💅"
+              ] }
           ] },
         { you: "Aw, Jem 🥹",
-          them: ["Don't aw me 😂", "It's so much better this way, {name}. I get you AND I get to hear about all your boys"] }
+          them: [
+            "Don't 'aw' me, I'll cry and ruin my mascara 😂",
+            "Seriously though. I spent a whole year wondering what was wrong with me, and it turns out nothing was wrong with either of us. You just weren't mine to have, and that's honestly the best plot twist.",
+            "Because now I get you AND I get to hear about every single one of your boys in excruciating detail. That's clearly the better deal. I'd sign up for it again tomorrow."
+          ] }
       ]
     },
     {
       id: "nicole-crush", tier: 1,
       contact: "Nicole", role: "uni friend", avatar: "N",
-      them: ["Can I tell you something funny?", "Year 12 formal. I was SO hoping you'd ask me 😩"],
+      them: [
+        "Can I tell you something funny? Well, funny now. It was not funny at seventeen.",
+        "Year 12 formal. I was SO sure you were going to ask me. I planned my whole dress around it, {name}. Emerald green, because you once said green was a nice colour on me and I took that as basically a marriage proposal 😩"
+      ],
       replies: [
-        { you: "Nic I'm so sorry 😂",
-          them: ["Don't be!! Imagine if you had. One very awkward slow dance and I'd never have got my gay bestie", "I definitely won this one."] },
+        { you: "Nic I'm so sorry 😂 I remember that dress, you looked amazing.",
+          them: [
+            "See, that's exactly it! You noticed the DRESS. You always noticed the dress. You never once noticed me trying to hold your hand in the cinema 😂",
+            "I was gutted at the time, I won't lie. I went home, ate an entire tub of cookies and cream and wrote a very dramatic diary entry about it. But when you told us you were gay, it was like a puzzle piece clicking into place, and honestly all I felt was relief. A bit for me, but mostly for you, because I could suddenly see how hard you'd been holding yourself together all those years.",
+            "Imagine if you HAD asked me. One very stiff slow dance, a couple of years of me wondering why you never wanted to stay over, and we probably wouldn't even be friends now. Instead I've got you properly. I definitely came out of this one winning."
+          ],
+          replies: [
+            { you: "You deserved better than that.",
+              them: [
+                "I did. And so did you. And look, we both got it.",
+                "You're honest now. You're funny in this really unfiltered way you never were at school. When you walked into Jemima's birthday in those sandals and that little shirt, I genuinely teared up a bit, because that's the boy I always felt was in there somewhere.",
+                "I'm so proud of you, {name}. Seventeen-year-old me would be confused. Current me is thrilled."
+              ] },
+            { you: "Did it make things weird when I came out?",
+              them: [
+                "Weird? No. Clearer, if anything.",
+                "For a while after school I'd still have these little moments of 'what if', you know? And when you told me, they just stopped. Not in a sad way. More like a door closing quietly on a room I didn't need anymore.",
+                "What's left is this really easy friendship where I don't have to wonder about anything. I can just love you, as my friend, completely. That's honestly rarer than a formal date."
+              ] }
+          ] },
         { you: "Was I that oblivious?",
-          them: ["Babe, you were oblivious to ALL the girls 😂", "Makes total sense now. Dodged that bullet and gained a shopping buddy. Upgrade."] }
+          them: [
+            "Babe. You were oblivious to ALL the girls. Every single one of us 😂",
+            "Kayla left a note in your locker in Year 11. Steph asked you to the movies TWICE. I made you a playlist, {name}. A whole playlist! And you just said 'thanks, these are bangers' and went back to talking about Troye Sivan. In hindsight, the signs were glowing in neon.",
+            "But I'm genuinely so happy it worked out this way. I'd much rather have you as the friend who tells me the truth about my outfits than the boyfriend who was never really there. That version of you was polite and lovely and sort of switched off. This version is switched ALL the way on, and he's an upgrade in every possible way."
+          ] }
       ]
     },
     {
       id: "priya-crush", tier: 1,
       contact: "Priya", role: "mate", avatar: "P",
-      them: ["Jess just told me you KNEW I liked you at uni??", "MORTIFIED. Anyway. Bullet dodged, thank god. You'd have stolen all my clothes 😂"],
+      them: [
+        "Jess just told me you KNEW I liked you at uni?? I am MORTIFIED. I'm hiding under my doona and I'm never coming out.",
+        "Okay, I'm coming out a little bit. Just to say: in my defence, you were very sweet. You always remembered my coffee order, and you once carried my bag up four flights of stairs because the lift was broken. That's practically a romcom, {name}. Any girl would have fallen for that."
+      ],
       replies: [
-        { you: "Your clothes ARE cute though.",
-          them: ["See?? This is exactly why it's better. Now I have a shopping buddy instead of a broken heart 💕"] },
+        { you: "Your coffee order is easy. Large oat flat white, extra hot.",
+          them: [
+            "SEE. THIS IS THE PROBLEM. You can't just SAY things like that 😂",
+            "Honestly though, plot twist of the century, but I'm so glad it went this way. If we'd dated I'd have spent two years trying to work out why you'd rather go shopping with me than kiss me, and I'd have decided it was my fault. That would have wrecked me a bit.",
+            "Instead I get the version of you who drags me into Cotton On and tells me which jeans actually suit me, and who means it when he says I look nice. That's worth way more than a boyfriend. Boyfriends come and go. You're stuck with me now."
+          ],
+          replies: [
+            { you: "I'm not going anywhere, Pri.",
+              them: [
+                "Good. Because I've already told my mum you're coming to Diwali this year and she's making extra.",
+                "And for the record, I'd take best-friend you over boyfriend you every day of the week. You're more yourself, you're more fun, and you're SO much better dressed than you were in second year.",
+                "Whoever ends up with you is very lucky. I'll be giving him a full interview first 💕"
+              ] },
+            { you: "How do you see me now?",
+              them: [
+                "Like a guy who finally stopped apologising for existing.",
+                "At uni you were always shrinking a bit. Laughing a second after everyone else, checking if it was okay. Now you walk into a room and you're just there. Bright. Sometimes literally, that shirt last weekend was very bright 😂",
+                "I'm proud of you. I hope you know that."
+              ] }
+          ] },
         { you: "I'm flattered, honestly.",
-          them: ["You should be, I have excellent taste.", "Just... in men who are also into men, apparently 😂 Love you {name}"] }
+          them: [
+            "You should be, I have excellent taste in men.",
+            "Just, apparently, in men who also have excellent taste in men 😂",
+            "I'm serious though, I'm glad. There's something really lovely about the person you had a crush on turning out to be someone you can just love properly, as a mate, with nothing weird underneath. You get the best bits of each other that way. I'll take that trade every time."
+          ] }
+      ]
+    },
+    {
+      id: "ailisha-crush", tier: 1,
+      contact: "Ailisha", role: "uni friend", avatar: "A",
+      them: [
+        "Right. Everyone else has done their little confession, so I suppose it's my turn 🙄",
+        "I never had a crush on you. Let's be very clear about that.",
+        "...Okay, I had a small one. In third year. For about a month. Microscopic. You were helping me with my thesis in the library and you made me a cup of tea without asking how I take it and got it exactly right, and something in my brain went 'oh no'."
+      ],
+      replies: [
+        { you: "Ailisha. I'm honoured.",
+          them: [
+            "Don't be smug, it doesn't suit you. Actually it does, a bit. Annoying.",
+            "But here's what I've realised. We'd have been a complete disaster together. You'd have spent every date looking past me at the waiter, and I'd have spent every date trying to work out what I was doing wrong. Two perfectly nice people being slowly confused at each other over pasta.",
+            "What I've got now is a friend who'll sit with me in the library at 11pm and also tell me, honestly, when a guy I'm seeing is a red flag. You've got a really good eye for men, {name}. Better than mine, clearly. That's a much better arrangement for both of us."
+          ] },
+        { you: "Was it the tea?",
+          them: [
+            "It was entirely the tea. Milk, no sugar, bag left in for ages. Perfect.",
+            "Look, I'm not someone who gushes, you know that. But since you came out, it's like talking to a different person, and I mean that in the best way. You used to be so careful with every sentence. Now you just say things. You tell me when you're scared, you tell me when you're happy, you told me last week about that guy who smiled at you on the train for a full five minutes. Old you would never.",
+            "I'm really glad it never went anywhere. I didn't want a boyfriend who was hiding. I wanted a friend who isn't. Got one."
+          ] }
       ]
     },
     {
@@ -299,9 +415,16 @@ window.CONTENT = {
       them: ["{name}! I see your story with the sunnies and crop top 😳", "Who are you?? So fabulous, 대박"],
       replies: [
         { you: "Darling, I was always fabulous. I was just hiding it 💅",
-          them: ["Hahaha yes!! Old {name} so quiet. New {name} I like much more", "Honestly I'm glad we not end up married. You would steal my makeup 😂"] },
+          them: [
+            "Hahaha yes!! I believe it. Old {name} so quiet, wear only grey and navy like a bank manager. New {name}, crop top and sunglasses at the beach like a K-pop idol 😂",
+            "I show my friend your photo and she says 'this is the boy you dated??' and I say yes, but he was in disguise back then.",
+            "Honestly I love this version so much more. Not because of the clothes. Because you look free. Free is the best look on anybody."
+          ] },
         { you: "Thank you Rach 🥹",
-          them: ["You look so happy now. That is the best part 💛"] }
+          them: [
+            "You look so happy now. That is the best part 💛",
+            "When we were together I never once saw you smile like in that photo. It makes me really happy that somebody, even if it is just you yourself, finally made you smile like that."
+          ] }
       ]
     },
     {
@@ -317,24 +440,13 @@ window.CONTENT = {
           them: [
             { from: "Nicole", text: "We are not worthy" },
             { from: "Jemima", text: "I'm making a sign that says I'M WITH HIM 👉" },
-            { from: "Ailisha", text: "To think we all had crushes on this man. Look at him now. Thriving." }
+            { from: "Ailisha", text: "Remember when half of us were secretly in love with him? And now he's out here with more glitter than all of us combined. Iconic." }
           ] },
         { you: "I've got a spare rainbow flag for each of you, hunties 💅",
           them: [
             { from: "Ailisha", text: "Hunties 😂😂 I've never felt so included 🥹" },
             { from: "Nicole", text: "He's gone full gay and I've never been prouder" }
           ] }
-      ]
-    },
-    {
-      id: "mum-pride", tier: 3,
-      contact: "Mum", role: "family", avatar: "M",
-      them: ["Is it alright if I come to the Pride march with you? I bought a t-shirt x", "It says PROUD MUM. Too much?"],
-      replies: [
-        { you: "MUM. Yes. Wear it with pride (literally) 🏳️‍🌈",
-          them: ["I'm told that's the point, love x"] },
-        { you: "Never too much. I'll do your glitter 💅",
-          them: ["Oh go on then. Your Nan wants some too x"] }
       ]
     },
     {
@@ -479,15 +591,6 @@ window.CONTENT = {
       ]
     },
     {
-      id: "s7", title: "Sunday roast",
-      them: ["What should I bring for your mum? Flowers? Wine? A full apology for being late last time I met a parent?", "I really want her to like me"],
-      replies: [
-        { you: "Flowers. She loves tulips.", them: ["Tulips it is 🌷"] },
-        { you: "She's already excited. Just be you.", them: ["That's lovely to hear. Okay. Being me. With tulips just in case"] }
-      ],
-      after: "That night Mum texts: 'He's lovely, darling. Bring him back soon x'"
-    },
-    {
       id: "s8", title: "A wobble",
       them: ["Hey. Can we talk about the work drinks?", "When your boss came over you introduced me as your friend. It stung a bit."],
       replies: [
@@ -562,27 +665,6 @@ window.CONTENT = {
           them: ["Hey, take your time. That's not a bad thing to say.", "I'm glad it's me you told. You okay?"] }
       ],
       debrief: "You don't need a speech. One plain sentence is enough, and the other person usually takes it from there."
-    },
-    {
-      id: "parent",
-      title: "Telling a parent",
-      who: "Mum or Dad", tone: "mixed",
-      intro: "A loving but surprised reaction. Parents often need a minute, and that's different from rejection.",
-      them: ["What's on your mind, love? You've been quiet."],
-      replies: [
-        { you: "I need to tell you something. I'm gay.",
-          them: ["Oh.", "...I didn't expect that. Give me a second."],
-          replies: [
-            { you: "Take your time. I'm still me.",
-              them: ["I know you are. I love you. I just need to get my head around it.", "Can we talk more about it later?"],
-              replies: [{ you: "Yeah, of course.", them: ["Thank you for telling me. Really."] }] },
-            { you: "Are you upset?", them: ["Not upset with you. I'm surprised, and I'm worried about the world being hard on you. That's all."] }
-          ] },
-        { you: "I've been seeing someone. His name's Josh.",
-          them: ["His name...?", "Oh. Oh, okay. Is he nice to you?"],
-          replies: [{ you: "He really is.", them: ["Then that's what matters. I might need some time with the rest, but that's what matters."] }] }
-      ],
-      debrief: "A first reaction often isn't the last one. Many parents who start out shocked end up very supportive. You can give them time without taking back what you said."
     },
     {
       id: "work",

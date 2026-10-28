@@ -28,5 +28,6 @@ Read the relevant file before changing that part of the project:
 - Affirming and warm. This app exists to make being gay feel normal and safe.
 - No sexual or 18+ content, no fetish elements (including feet or tickling), and no scenes where people mock or humiliate him for being gay or feminine. Hard reactions (e.g. Archie's angry branch, the Practice pushback scenarios) are allowed only when the focus is on him handling them, with a debrief.
 - Style and makeup are framed as personal self-expression for a gay man, not feminisation or transformation.
+- No family members (no Mum, Nan or parents) anywhere in the app.
 - Rachel is Korean and writes natural second-language English. Never a caricature or comedic broken English.
 - Support lines (QLife 1800 184 527, 3pm–midnight; Open Doors; Lifeline 13 11 14; 000) should be re-checked if edited.

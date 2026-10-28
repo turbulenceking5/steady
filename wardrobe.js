@@ -364,8 +364,6 @@
   const R = [
     // Low-key
     { from: "Jess", t: [0], text: "Love the {top}, {name}. Clean and comfy suits you." },
-    { from: "Mum", t: [0, 1], text: "You look lovely, darling. That {top} is a nice colour on you." },
-    { from: "Nan", t: [0, 1], text: "Very smart, love. Wear a hat in this sun, won't you?" },
     { from: "Sam", t: [0], text: "Casual Friday energy, {name}. The {bottom} work." },
     { from: "Chloe", t: [0], text: "Simple and cute. Next time chuck some sunnies on and own it 😎" },
     { from: "Ailisha", t: [0, 1], text: "Understated but so you, {name}. Love the {shoes}." },
@@ -387,7 +385,6 @@
     { from: "Ailisha", t: [2, 3], text: "You look so relaxed in this, {name}. The {bottom} are perfect for the heat." },
     { from: "Rachel", t: [2, 3], text: "대박!! {name}, this outfit is really suit you. You look so happy." },
     { from: "Chloe", t: [2, 3], need: "acc", text: "The {acc} with the {top}?? I'm taking a photo before you leave." },
-    { from: "Mum", t: [2, 3], text: "Very summery! I love seeing you in colour, sweetheart 💛" },
     { from: "Sam", t: [2, 3], text: "James St called. It wants its best-dressed back." },
     // Unmistakably gay
     { from: "Priya", t: [3], text: "{name}. The {look} with the {shoes}?? Unmistakably gay and absolutely thriving 🏳️‍🌈" },
@@ -396,7 +393,6 @@
     { from: "Jess", t: [3], text: "You look like the happiest person on Queen St Mall. Because you will be." },
     { from: "Dani", t: [3], text: "Mate. MATE. That's the most confident fit I've seen on you. Proud of you." },
     { from: "Rachel", t: [3], text: "Wah, {name} so stylish today 대박. Everyone in West End will look. In good way!! 💕" },
-    { from: "Nan", t: [3], text: "Well don't you look a picture! Very bright. I love it, love." },
     { from: "Ailisha", t: [3], need: "acc", text: "Fully you, head to toe, {name}. The {acc} is the cherry on top." },
   ];
   // Makeup lines ({mu} = a makeup piece being worn).
@@ -408,7 +404,6 @@
     { from: "Chloe", t: [1, 2], need: "mu", text: "Flatmate verdict: the {mu} is perfect. Raid my makeup bag anytime." },
     { from: "Ailisha", t: [0, 1], need: "mu", text: "A little {mu} goes a long way. Looks lovely, {name}." },
     { from: "Sam", t: [1, 2, 3], need: "mu", text: "{name}, the {mu} today? Easily the best-dressed person on the floor." },
-    { from: "Mum", t: [1, 2, 3], need: "mu", text: "The {mu} suits you, love. You look so happy and that's all I care about." },
   );
   const GUYS = [
     { from: "{bf}", t: [1, 2, 3], need: "mu", text: "The {mu} looks really good on you, {name}. Just saying." },

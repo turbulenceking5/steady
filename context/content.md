@@ -23,19 +23,18 @@ Msg      = string | { from, text }                   // from = sender in group c
 - `after` is a narrator note shown when the conversation ends (a branch's own takes priority). `debrief` is a short "worth remembering" note.
 
 ## Voice tiers
-Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice (game level 3+), 2 Out & proud (5+), 3 Full flamboyance (7+). At each tier his reply options get camper and the girls treat him more as their gay best friend. Tier 1 holds the crush confessions (Jemima, Nicole, Priya: "bullet dodged, you're better as my gay best friend"), which are affectionate teasing, never put-downs.
+Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice (game level 3+), 2 Out & proud (5+), 3 Full flamboyance (7+). At each tier his reply options get camper and the girls treat him more as their gay best friend. Tier 1 holds the crush confessions (Jemima, Nicole, Priya, Ailisha): long, heartfelt chats about how they felt back then and how they see him now. Each girl has her own way of saying it's better this way, so don't repeat a stock phrase across them. It's affectionate teasing, never a put-down.
 
 ## Cast
-Mostly women. Men appear only as dates, crushes or partners.
+Mostly women, and no family members. Men appear only as dates, crushes or partners.
 - **Friends:** Jess, Priya, Dani (gym), Chloe (flatmate), Sam (coworker, she).
 - **Uni girls:** Nicole, Ailisha, Jemima.
-- **Family:** Mum, Nan.
 - **Exes:** Rachel (Korean; natural second-language English with a little Korean, warm, never a caricature) and Archie (his girlfriend in Story Part 1).
 - **Men:** `{bf}` (the boyfriend, Story Part 2) and Alex (a dating-app match).
 
 ## Story
 - **Part 1, "Before"** (c1–c4): in the closet with Archie, confiding in Nicole, the honest talk (kind and angry branches), a few weeks later.
-- **Part 2, "{bf}"** (s1–s10): first message through to six months.
+- **Part 2, "{bf}"** (s1–s10): first message through to six months (no family chapter).
 
 ## Voice
-Warm, casual, Australian, with Brisbane places (James St, the Valley, West End, South Bank, New Farm, Paddington). Short text-message lines. Use emoji sparingly. Use `{name}` naturally, especially from the girls. See CLAUDE.md for content boundaries.
+Warm, casual, Australian, with Brisbane places (James St, the Valley, West End, South Bank, New Farm, Paddington). The girls' chats can run long: several messages per turn, real paragraphs about how they feel. Other chats stay short. Use emoji sparingly. Use `{name}` naturally, especially from the girls. See CLAUDE.md for content boundaries.
