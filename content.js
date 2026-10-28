@@ -39,12 +39,13 @@ window.CONTENT = {
               them: ["😘", "Oh and wear something nice Friday. Not the rugby polo. I'm begging"],
               replies: [
                 { you: "I was thinking of trying something a bit different actually.", gaydar: 15, them: ["Ooh different how?", "Like a nice shirt? Yes please. You've got that cream one with the tags still on"] },
-                { you: "No promises.", them: ["{name} 😐", "Fine. But if you wear the polo I'm ordering the most expensive thing on the menu"] }
+                { you: "The polo and I have been through a lot together.", them: ["{name} 😐", "It has a hole under the arm. I've seen it", "Fine. But if you wear the polo I'm ordering the most expensive thing on the menu"] }
               ] },
             { you: "Do we have to talk about weddings?",
               them: ["Haha ok calm down, it's my sister's wedding not ours", "...unless you're trying to tell me something lol", "You're not are you"],
               replies: [
                 { you: "No, no. Just a long day.", them: ["Ok. You've had a lot of long days lately", "Friday. Carbs. Wine. You'll be fine x"] },
+                { you: "Weddings just make me itchy. All those speeches.", them: ["You cried at the last one", "At the bit about the dog", "Friday. Carbs. You'll survive x"] },
                 { you: "I don't know.", gaydar: 20, them: ["You don't know what?", "{name}?", "Ok you're being weird. We'll talk Friday"] }
               ] }
           ] },
@@ -69,7 +70,7 @@ window.CONTENT = {
           them: ["Why? You love that place", "You literally said their tiramisu was a religious experience"],
           replies: [
             { you: "The waiter there keeps staring at me.", gaydar: 15, them: ["The cute one? Lol he's probably just bored", "Or he thinks you're cute. Should I be worried 😂", "Kidding. We're going. Wear something nice"] },
-            { you: "Fine, Italian.", them: ["Yay. Friday 7. Love you x"] }
+            { you: "Fine. But I'm getting my own tiramisu. I'm not sharing again.", them: ["You ate 80% of it last time and said you were 'just tasting'", "Friday 7. Love you x"] }
           ] }
       ],
       after: "You put the phone down and feel like you're playing a part. You've felt that for a while. On Friday you open your wardrobe and look at the cream shirt with the tags on, and the little bottle of lilac nail polish you bought \"for a friend\".",
@@ -82,7 +83,7 @@ window.CONTENT = {
       them: ["home", "what was that tonight", "the lip gloss {name}. and your nails"],
       replies: [
         { you: "What do you mean?",
-          them: ["dont do that", "you know exactly what i mean", "you just turned up in it like it was normal", "the waiter kept looking at your hands and i wanted to die"],
+          them: ["dont do that", "you know exactly what i mean", "you just turned up in it like it was normal", "the waiter kept looking at your hands and i wanted to die", "he asked if we were ready to order ladies. ladies {name}"],
           replies: [
             { you: "I just wanted to try it.",
               them: ["at dinner?? with me??", "my sister's friend was two tables over", "she's already messaged my sister asking if you're ok"],
@@ -110,13 +111,15 @@ window.CONTENT = {
                     { you: "I don't know yet. I'm trying to work it out.", gaydar: 65, them: ["work WHAT out", "we've been together three years", "im not doing this over text"] }
                   ] },
                 { you: "That's fair.", them: ["im not trying to be mean", "i just want my boyfriend back. not whoever that was tonight"],
-                  replies: [{ you: "Okay.", them: ["night"] }] }
+                  replies: [{ you: "Okay.", them: ["night"] },
+                    { you: "Your boyfriend wore a hole in that polo. He was boring.", them: ["he was MINE", "you looked like you were going to a bachelorette not dinner with me", "night {name}"] }] }
               ] }
           ] },
         { you: "Did you not like it?",
           them: ["honestly? no", "it was really embarrassing", "and dont wear it saturday. my friends will be there"],
           replies: [
             { you: "Yeah, okay.", them: ["thanks", "night"] },
+            { you: "To be fair the gloss looked better on me than the polo ever did.", them: ["thats not the point", "my boyfriend shouldnt have nicer lips than me at dinner", "dont wear it saturday. im serious"] },
             { you: "I'm going to wear what I want.",
               them: ["wow ok", "then dont be surprised when people say stuff", "and dont expect me to stick up for you"],
               replies: [
@@ -146,7 +149,8 @@ window.CONTENT = {
           "note": "Josh comes over with two beers. Polo shirt, board shorts, big bare feet. He hands one to Archie and one to you."
         },
         "\"So you're the famous {name}.\" He looks down. \"Nice colour, buddy. Arch, you never said he gets pedicures.\"",
-        "It's not a pedicure. He just...",
+        "It's not a pedicure. He does them himself. On my bath mat.",
+        "\"Course he does.\" Josh grins at her, not at you.",
         {
           "note": "You sit on the edge of a sun lounger. Josh drops onto the end of it and grabs your foot before you can move it."
         },
@@ -174,6 +178,7 @@ window.CONTENT = {
                   "note": "Archie laughs, a bit relieved, and sits down next to you. She puts her hand on your knee. It stays there for a whole minute."
                 },
                 "Okay, that was impressive. I'd have screamed.",
+                "Your toes are still lilac though, babe. Tough guys don't usually match the napkins.",
                 {
                   "note": "Josh goes to get another beer. Archie watches him go."
                 }
@@ -191,6 +196,9 @@ window.CONTENT = {
                 "\"Stop,\" you squeak. \"Stop, stop, okay!\"",
                 {
                   "note": "He stops. Archie's laughing, but she's not looking at you. She's looking at Josh, shaking her head, like he's the one who did something cute."
+                },
+                {
+                  "note": "She reaches over and pats your head. Twice. Then she takes her hand back and puts it in her lap."
                 },
                 {
                   "note": "Her boss says \"oh, to be young\" and walks off."
@@ -278,7 +286,8 @@ window.CONTENT = {
               them: [
                 "Okay.",
                 "Then you're a straight guy who wears lip gloss, borrows my concealer, cries at Queer Eye and hasn't kissed his girlfriend properly since Christmas.",
-                "Either way, I'm going. I'm not trying to be cruel. I'm trying to be honest, because one of us has to be, and it was never going to be you."
+                "Either way, I'm going. Josh fixed my towel rail last week in ten minutes with a coin. You and I lived with it hanging off the wall for a year and you called it 'a vibe'.",
+                "I want someone who fixes the towel rail."
               ],
               replies: [
                 { you: "Archie, please. Listen to me. I'm not gay. I just need to try harder with us.",
@@ -320,7 +329,8 @@ window.CONTENT = {
               them: [
                 "Exactly. I'm your best friend.",
                 "You want me to do your eyebrows and watch MasterChef and tell you if your shirt's see-through. And I love that, I really do. It's been the best three years.",
-                "But I want someone who wants to kiss me, not borrow my lip gloss. And I don't think that's ever going to be you."
+                "But I want someone who wants to kiss me, not borrow my lip gloss. And I don't think that's ever going to be you.",
+                "When you kiss me it's like getting kissed by my friend Priyanka. Nice. On the cheek. Done."
               ] },
             { you: "Is he better than me? Just tell me what he's got that I don't.",
               them: [
@@ -361,6 +371,17 @@ window.CONTENT = {
               ] },
             { you: "Okay. Okay.", them: ["Okay.", { note: "She squeezes your hand. Then she picks up Josh's jacket and puts it on." }] }
           ] },
+        { you: "His jacket's from H&M. Two seasons ago. I'm just saying.",
+          them: [
+            { note: "She stares at you. Then she covers her face with the cushion and laughs into it." },
+            "That. That right there, {name}.",
+            "A straight guy gets dumped and he punches a wall. You get dumped and you date the other guy's jacket.",
+            "He doesn't know where it's from. He doesn't care. I love that he doesn't care."
+          ],
+          replies: [
+            { you: "I'm not dating his jacket. I'm reviewing it.", them: ["Mm.", { note: "She takes the jacket off the chair and folds it over her arm, away from you." }, "Josh is picking me up at seven."] },
+            { you: "(Go quiet.) Sorry. I don't know why I said that.", them: ["I do.", { note: "She bumps your knee with hers. Not a kiss. Not a hug. Just that." }, "It's okay. Stay till seven if you want."] }
+          ] },
         { you: "Fine. Go be with Josh. Go have a boring life with Mr Pickup Soccer.",
           them: [
             "I will.",
@@ -378,7 +399,8 @@ window.CONTENT = {
       replies: [
         { you: "I'm okay. Honestly. I'm really happy for you, Arch. He seems like a real guy's guy.",
           them: [
-            "He is SUCH a guy's guy. He doesn't own a single thing with a scent. His shampoo is 2-in-1. I'm obsessed with him",
+            "He is SUCH a guy's guy. He doesn't own a single thing with a scent. His shampoo is 2-in-1. He thinks a cuticle is a bone. I'm obsessed with him",
+            "He put my bed frame together on Sunday without opening the instructions. Remember when we did the bookshelf and you cried and we ended up with six spare screws",
             "Thank you. Seriously",
             "Can I say one thing and then I'll leave it alone forever? Promise",
             "Josh has a friend. Ryan. He's gay, he's lovely, he does reformer pilates, he has a dog called Margot and he has very nice arms. Just putting it out there into the universe"
@@ -386,6 +408,8 @@ window.CONTENT = {
           replies: [
             { you: "Archie. I'm not gay. Why does everyone keep saying that?",
               them: ["Ok babe 💛", "Ryan's number is in my phone whenever you want it", "No pressure. Just arms"] },
+            { you: "Okay first of all I didn't cry about the bookshelf. I had something in my eye. For an hour.",
+              them: ["You made me hug you in the hallway", "Josh would never", "Anyway. Ryan. Arms. Margot. Think about it"] },
             { you: "Why are you telling me about his arms? Why would I care about his arms?",
               them: ["No reason 😇", "Purely an arms update", "For your information. As a straight man. Who likes information about arms"] },
             { you: "...How nice are the arms? Hypothetically.",
@@ -405,7 +429,7 @@ window.CONTENT = {
           ],
           replies: [
             { you: "Yeah. Eventually. When it stings less.", them: ["Good 💛", "Take as long as you need. I'm not going anywhere. I'm just going to be on a couch in Bulimba watching Josh sleep through the game"] },
-            { you: "It's not going to be a Ryan.", them: ["Ok babe", "Whoever it is. I'll be happy for them"] }
+            { you: "It's not going to be a Ryan.", them: ["Ok babe", "Whoever it is. I'll be happy for them", "Ryan is still single btw"] }
           ] }
       ],
       after: "You still haven't said the word to anyone. Archie said it for you. Nicole acts like it's already been said.",
@@ -421,7 +445,8 @@ window.CONTENT = {
             "are you though",
             "like technically yes. legally yes. i've seen you play pickup soccer (badly)",
             "but you knew the name of jemima's lip liner. you said the bartender had 'great forearms'. you cried at the mamma mia trailer. the TRAILER, {name}",
-            "you're one of the girls babe. i don't make the rules"
+            "you're one of the girls babe. i don't make the rules",
+            "ailisha already added you to the group chat. you're saved in her phone as '{name} 💅' not '{name} archie's bf'"
           ],
           replies: [
             { you: "I'm literally dating Archie. Three years. We're basically engaged according to her sister.",
@@ -450,13 +475,23 @@ window.CONTENT = {
         { you: "What do you mean, one of you? What's that supposed to mean, Nic?",
           them: [
             "you know what i mean",
-            "and before you panic, i'm not asking you anything. you don't have to tell me anything. ever, if you don't want to",
+            "and relax, i'm not asking you anything lol. you can go back to breathing",
             "i'm just saying you're my favourite person to go shopping with. i'd rather go with you than any of the girls",
             "and i'm going to start treating you like it 💅"
           ],
           replies: [
             { you: "There's nothing to tell, Nic. Honestly. I just like shopping.", them: ["ok 💛", "nothing to tell. got it", "anyway can you come to sephora with me saturday, i need a second opinion on blush and you're the only one who's honest"] },
             { you: "Thanks, Nic. I'd love to come.", them: ["yay", "now. sephora saturday. bring your good taste and your loyalty card. i know you have one"] }
+          ] },
+        { you: "Fine. But I'm not sitting on the floor. I'm a guest.",
+          them: [
+            "you're not a guest babe you're furniture now",
+            "jemima's boyfriend isn't allowed to come. you are. sit with that for a second",
+            "you can have the corner of the couch. bring the good face masks, the cheap ones make ailisha break out"
+          ],
+          replies: [
+            { you: "Why isn't her boyfriend allowed? I'm a boyfriend. I'm Archie's boyfriend.", them: ["because he talks about crypto and you talk about our hair", "it's a vibe thing", "thursday 7. corner of the couch is yours"] },
+            { you: "The corner of the couch. Okay. I accept.", them: ["omg you said it like you were accepting a rose", "see. one of the girls", "thursday 7"] }
           ] }
       ],
       after: "You go to girls' night. You have opinions about all the guys on The Bachelorette. Nicole doesn't say anything. She just tops up your wine and calls you \"babe\" in exactly the voice she uses for the other girls.",
@@ -501,7 +536,8 @@ window.CONTENT = {
               ],
               replies: [
                 { you: "The fourth one. Obviously. The mauve. It's giving soft but expensive.", them: ["'It's giving soft but expensive.'", "{name}. I need you to hear yourself.", "Okay. Mauve it is. I'm buying it for you. Don't argue."] },
-                { you: "None of them. I'm washing my wrist. This never happened.", them: ["It happened, babe. I took a photo.", "Kidding. Mostly. Come on, blush."] }
+                { you: "None of them. I'm washing my wrist. This never happened.", them: ["It happened, babe. I took a photo.", "Kidding. Mostly. Come on, blush."] },
+                { you: "Don't look at me like that. Your ex swatched once. You told me.", them: ["My ex swatched one foundation to prove a point and then said they all looked the same.", "You just said one was 'a bit cool-toned for your undertone'.", "Not the same, babe."] }
               ] }
           ] },
         { you: "Okay, wait. Mission three. Can I get a lip oil? Just a clear one. Nothing crazy.",
@@ -522,7 +558,8 @@ window.CONTENT = {
           ],
           replies: [
             { you: "No. I don't want you to stop. I kind of like it.", them: ["Good. Because I wasn't going to.", { note: "She squeezes your arm and steers you towards the blush." }] },
-            { you: "It's fine. People might think we're together, that's all.", them: ["Nobody in this shop thinks we're together, babe.", "Trust me. Nobody."] }
+            { you: "It's fine. People might think we're together, that's all.", them: ["Nobody in this shop thinks we're together, babe.", "Trust me. Nobody.", "The sales girl called you 'hun' when we walked in. She calls the boyfriends 'sir'. I've been listening."] },
+            { you: "Okay but if you're linking arms, you're carrying the basket. I'm wearing rings.", them: ["Oh my god. Fine.", { note: "She takes the basket. She keeps your arm." }, "That's the most girlfriend thing anyone's ever said to me."] }
           ] }
       ],
       after: "On the way out Nicole says, \"Same time next month?\" like it's already a standing thing. You go home with a blush, a lip oil and a mauve lipstick you put in your bedside drawer under your socks. You check it's still there before bed. It is.",
@@ -545,14 +582,15 @@ window.CONTENT = {
               them: [
                 "ok babe 💛",
                 "you know i'm never going to ask you, right",
-                "you can say whatever you want to me whenever you want. or not. but you don't have to keep doing the 'obviously' thing with me. i'm not going anywhere either way"
+                "you can drop the 'obviously' with me though. it's exhausting watching you do it",
+                "you sound like jemima's boyfriend saying he only watches love island 'for the drama'"
               ],
               replies: [
                 { you: "I know. Thanks. Can we just keep swiping?", them: ["yes. next one. tom. 28. physio. very good arms", "your face just did a thing. i saw it. i'm saying nothing. i'm SAYING nothing"] },
                 { you: "I'm not doing a thing. Next guy. Quick, before I die.", them: ["next guy. ryan. pilates. dog called margot", "wait isn't that josh's friend", "{name} your face"] }
               ] },
             { you: "Okay, but have you seen his second photo? The one at the beach? Nic. NIC.",
-              them: ["i have seen it", "i'm sending you a screenshot so you can look at it in peace", "you're welcome"] }
+              them: ["i have seen it", "i'm sending you a screenshot so you can look at it in peace", "you're welcome", "honestly you'd be the one he'd ask to put sunscreen on his back. i'd be the friend holding the towel"] }
           ] },
         { you: "Three. Bucket hat, fish photo, and he says 'looking for my partner in crime'. Absolutely not, babe. Next.",
           them: ["'absolutely not, babe' 😭", "you called me babe", "you've never called me babe", "i'm screenshotting this for the girls"],
@@ -607,7 +645,8 @@ window.CONTENT = {
         { you: "It was nice! The coffee was great. Do you want to do it again?",
           them: ["yeah i would", "you're different to the guys i normally go out with. less... i dunno. less blokey? in a good way", "friday?"],
           replies: [
-            { you: "Is less blokey a good thing?", them: ["for me yeah. i've dated enough guys who only talk about sports", "friday. paddington. i'll book somewhere"] },
+            { you: "Is less blokey a good thing?", them: ["for me yeah. i've dated enough guys who only talk about sports", "not who i'm calling if my sink breaks lol. but for dinner yeah", "friday. paddington. i'll book somewhere"] },
+            { you: "Less blokey. Wow. I'll go buy a ute and a dog called Bear.", them: ["lol please don't", "the last guy had a dog called bear. it ate my sunglasses", "friday. paddington. i'll book"] },
             { you: "Friday's perfect. I'm looking forward to it.", them: ["me too", "night {name}"] }
           ] },
         { you: "Did you notice my nails? Sorry. I don't know why I'm asking that.",
@@ -615,7 +654,7 @@ window.CONTENT = {
           them: ["your nails?", "oh. the clear stuff? yeah i noticed", "it's fine. lots of guys do that now. my brother does a clear coat because he bites them", "do you bite them?"],
           replies: [
             { you: "Yeah. Totally. That's why. I bite them.", them: ["ha ok. well it worked, they looked good", "anyway. second date? friday?"] },
-            { you: "No, I just like how they look.", gaydar: 35, them: ["oh", "ok. fair enough", "um. friday? second date?"] }
+            { you: "No, I just like how they look.", gaydar: 35, them: ["oh", "ok. fair enough", "they're nicer than mine tbh. i do mine in the car", "um. friday? second date?"] }
           ] }
       ],
       after: "Hannah, to Jess: \"he's nice. really nice actually. asked me loads of questions.\" Jess: \"told you!!\" Hannah: \"he knew my earrings were from claire's though. is that a thing?\" Jess: \"...he's observant\""
@@ -659,6 +698,17 @@ window.CONTENT = {
             { you: "My week was fine. Work stuff. Can we talk about you though? How were the ACLs?",
               them: ["Oh my god, thank you. Nobody ever asks about the ACLs.", "Okay so the first one was a netballer, and she'd done it at Nissan Arena, and the whole team came to the appointment...", { note: "She talks for ten minutes and she's funny and you like her. You do. You really like her. You just catch yourself looking at the waiter's forearms twice." }] }
           ] },
+        { you: "It is. Are you going to assess it? Is this a consult now?",
+          them: [
+            "Ha. I do knees, not nails.",
+            "Professional opinion though, your cuticles are better than mine. That's not a sentence I've ever said to a man.",
+            { note: "She laughs, then stops a bit too quickly and picks up the menu." },
+            "Garlic bread. Eat. I'm not watching you pick at it."
+          ],
+          replies: [
+            { you: "You can say it to me any time. I'll take it.", them: ["I'm sure you will.", { note: "She says it into the menu." }, "So. Pasta. I'm getting the carbonara and I'm not sharing."] },
+            { you: "Sorry. That was a bit much. I'm nervous.", them: ["You're fine.", "You're nervous and you still did your nails. That's commitment.", "Order something."] }
+          ] },
         { you: "It is polish. Do you hate it? I can take it off for next time.",
           them: [
             "No. Don't take it off on my account.",
@@ -668,7 +718,8 @@ window.CONTENT = {
           replies: [
             { you: "You're getting a guy who likes his nails done. That's it. Nothing to work out.",
               them: ["Okay.", "Okay. That's fair. I'm being dramatic. Sorry. Garlic bread?", { note: "She pushes the plate towards you. She doesn't look at your hands again for the rest of the night. You notice her not looking." }] },
-            { you: "I don't know what you mean. It's just polish.", them: ["Right. Yeah. Just polish.", "Sorry. Ignore me. I'm tired. Tell me something funny."] }
+            { you: "I don't know what you mean. It's just polish.", them: ["Right. Yeah. Just polish.", "Sorry. Ignore me. I'm tired. Tell me something funny."] },
+            { you: "You're getting a guy who'll never steal your hoodies. I'll steal your hand cream though.", them: ["Ha.", "My last boyfriend stole three hoodies and never gave one back.", { note: "She looks at your hands, then at hers, then puts hers in her lap." }, "Okay. Hand cream. Noted."] }
           ] },
         { you: "Oh my god, you noticed! It's this brand called Essie, it's called 'Ballet Slippers', it's literally the perfect nude. You'd love it.",
           gaydar: 60,
@@ -680,7 +731,7 @@ window.CONTENT = {
           ],
           replies: [
             { you: "Recalibrating what? Did I say something weird?", them: ["No. You're fine. It's fine.", "I just thought I was going on a date with a guy who'd want to talk about me, not my nail polish. But it's fine. It's fun. Tell me about your work."] },
-            { you: "Sorry, I get excited about this stuff. I'll stop. Tell me about your day.", them: ["It's okay. You're sweet when you're excited.", "Okay. ACLs. Strap in."] }
+            { you: "Sorry, I get excited about this stuff. I'll stop. Tell me about your day.", them: ["It's okay. You're cute when you're excited. Like Kate's cavoodle when someone says 'walk'.", "That's a compliment. Sort of.", "Okay. ACLs. Strap in."] }
           ] }
       ],
       after: "Walking her to her car, she hugs you instead of kissing you. In the car she texts Jess: \"second date was nice. he's lovely. he uses the same moisturiser as me and owns the same nail polish as me and he talked to the waitress about her skin for like 8 minutes.\" Jess: \"oh.\" Hannah: \"yeah. 'oh'.\""
@@ -721,6 +772,8 @@ window.CONTENT = {
           them: [
             "it's not about how it looks. it looked fine. your lip tint is better than mine. that's kind of the problem",
             "it's that every time i've seen you you've had a bit more on, and every time you've looked a bit more comfortable, and every time you've been a bit less interested in me",
+            "tonight felt like drinks with one of my girlfriends. a fun one. not a date",
+            "i don't want a boyfriend i swap lip tints with",
             "i'm not stupid. i've done this before. i'm not doing it again"
           ],
           replies: [
@@ -739,6 +792,16 @@ window.CONTENT = {
           replies: [
             { you: "Okay but you'd tell me if the lip was too much, right? As a friend?", them: ["we're not friends {name}", "but no. it wasn't too much. it was perfect. goodbye"] },
             { you: "Sorry. That came out wrong. I'm sorry it didn't work out, Han.", them: ["me too. a bit", "you're a lovely guy. just not my guy. bye"] }
+          ] },
+        { you: "ok",
+          them: [
+            "ok",
+            "fyi the bartender wrote his number on your receipt. i saw it when you went to the bathroom",
+            "it's on the bench under the candle. you're welcome i guess"
+          ],
+          replies: [
+            { you: "He did NOT. Wait. Did he?", gaydar: 92, them: ["night {name}"] },
+            { you: "Why would I want the bartender's number?", them: ["i don't know {name}", "why did you ask what colours the jacket came in", "night"] }
           ] }
       ],
       after: "You read her last message a few times. It stings, but not the way getting dumped is supposed to. You put the phone face down and don't pick it up again till morning.",
@@ -771,7 +834,8 @@ window.CONTENT = {
                 { note: "Dylan opens Hannah's cider on the edge of the bench. Then he opens yours too and hands it to you. \"Didn't want you breaking a nail,\" he says." },
                 { note: "Every time you move, your pink toes are right there on Kate's white tiles. Kate's housemate looks at them, then at you, then at Hannah." },
                 "\"Han,\" the housemate says, very quietly. \"Is he...\"",
-                "I don't know.",
+                "I don't know. He's cute. Like, puppy cute. Not...",
+                { note: "She doesn't finish. She doesn't need to." },
                 { note: "Hannah's watching Dylan cut limes." }
               ] },
             { you: "(Stay in the hallway and look at your feet.)",
@@ -798,7 +862,7 @@ window.CONTENT = {
           ],
           replies: [
             { you: "(Go and grab a drink.)",
-              them: [{ note: "When you get back Dylan's in your spot on the couch next to Hannah, with his big bare feet up on the coffee table. She hasn't moved over." }] },
+              them: [{ note: "When you get back Dylan's in your spot on the couch next to Hannah, with his big bare feet up on the coffee table. She hasn't moved over." }, "Sit on the floor, it's fine. Kate's friends are down there. You'll fit in."] },
             { you: "...Your feet are huge.",
               gaydar: 98,
               them: [
@@ -886,6 +950,7 @@ window.CONTENT = {
                       "note": "You get up, step over Dylan's legs, and sit down on Hannah's other side. She shifts over to make room. Her shoulder touches yours."
                     },
                     "Okay. That was actually impressive.",
+                    "Don't get excited. Your toes are still pink.",
                     "I'd have kicked him in the face.",
                     "\"You would have,\" Dylan says. \"You did. In 2014.\"",
                     {
@@ -1020,6 +1085,9 @@ window.CONTENT = {
                     },
                     "You're fine. It was funny. It was really funny.",
                     {
+                      "note": "She reaches back over the couch and pats the top of your head, twice, without looking. Then her hand goes back to Dylan's side of the cushion."
+                    },
+                    {
                       "note": "She says it without looking away from the TV."
                     }
                   ],
@@ -1142,7 +1210,9 @@ window.CONTENT = {
           them: [
             { note: "Hannah stares at you for a second. You just called her \"babe\". You've never called her that." },
             "Thanks. He is. And... thanks for being nice about it.",
-            "Can I say something? And don't take it the wrong way. I'm really glad I didn't keep going with us. I'd have spent years wondering why you liked my makeup bag more than me. Look at you now. You look so much happier.",
+            "Don't take this the wrong way. I'm glad we stopped at three dates. I'd have spent a year wondering why you liked my makeup bag more than me.",
+            "Brodie fixed my car door on our first date. In the car park. With his keys. You'd have taken a photo of it for your story.",
+            "Anyway. You look happier. You look good.",
             { note: "Brodie has wandered off to watch the game on the TV above the bar." }
           ],
           replies: [
@@ -1155,10 +1225,11 @@ window.CONTENT = {
           them: [
             "It's exactly what I wanted.",
             "No offence, but after you I wanted someone who'd never once ask where a jacket was from. Brodie's never asked where anything is from. He buys all his clothes at the hardware store.",
-            "When we're out, he's looking at me. Not the bartender. Not the waiter. Me. That's all I needed."
+            "When we're out he's looking at me. Not the bartender. Me.",
+            "And he's taller than me. Properly taller. I can wear heels with him and still have to look up."
           ],
           replies: [
-            { you: "That's fair. I'm glad you found that. I really am.", them: ["Thanks. I mean it, you look good. Better than you did with me.", "Go have fun. Jess is doing shots."] },
+            { you: "That's fair. I'm glad you found that. I really am.", them: ["Thanks. You look good. Better than you did with me.", "Honestly you're more my type as a friend. I'd take you shopping. I wouldn't take you home.", "Go have fun. Jess is doing shots."] },
             { you: "Babe. He buys his clothes at THE HARDWARE STORE?", them: [{ note: "She laughs, a proper one." }, "He does. And I love it.", "Go away, {name}. You're making me laugh and I'm supposed to be over you."] }
           ] },
         { you: "(Go over to Brodie.) Um. Hi. Sorry. Can I borrow you for a sec? It's about Hannah.",
@@ -1177,7 +1248,8 @@ window.CONTENT = {
                 { note: "Hannah comes over and puts her hand on your shoulder." },
                 "Brodie. Leave him alone.",
                 "{name}. You said sorry three times. You were holding your drink with both hands.",
-                "That's the cutest thing I've ever seen. No. But so cute."
+                "That's the cutest thing I've ever seen. No. But so cute.",
+                { note: "She kisses you on the cheek, the way she kisses Kate hello, and goes back to Brodie." }
               ] },
             { you: "...Never mind. Sorry. Your arms are really big. Sorry. Bye.",
               gaydar: 100,
@@ -1229,6 +1301,13 @@ window.CONTENT = {
             { you: "Yeah, of course. You pick where.", them: ["eat street? saturday? it's so loud there that i can't be awkward because you can't hear me lol"] },
             { you: "Only if Mochi comes.", them: ["😭😭 she would bite you", "but she might like you. she likes people who smell nice and you smelled really nice", "eat street saturday?"] }
           ] },
+        { you: "Did the soy sauce get your dress? I know a trick for that. Dish soap and cold water. Sorry. Weird thing to know.",
+          gaydar: 20,
+          them: ["omg it did!! it's on the hem", "wait cold water? not hot?", "sorry i'm asking a boy for stain tips lol. my last boyfriend would've said just buy a new one", "can i see you again? i'll wear something soy sauce coloured"],
+          replies: [
+            { you: "Cold. Never hot, it sets it. And yes. Saturday?", them: ["ok cold. noted 😊", "eat street saturday?"] },
+            { you: "Your last boyfriend sounds like a banana.", them: ["😭😭", "he kind of was", "eat street saturday? sorry. yes. saturday"] }
+          ] },
         { you: "The dumplings were amazing. Did you see the guy making them in the window? His hands were so fast.",
           gaydar: 20,
           them: ["haha yes!! i could have watched him for hours", "you were really into it lol. i thought you were going to ask for his number", "kidding!! sorry. weird joke. can i see you again?"],
@@ -1278,7 +1357,8 @@ window.CONTENT = {
           ],
           replies: [
             { you: "L'Occitane. The shea one. It's honestly the best one, you have to try it. I'll lend you mine.", gaydar: 50, them: ["Oh. Okay. You... carry it with you?", "That's... yeah. Cool. Sorry. Spring rolls."] },
-            { you: "Not really. Just lucky I guess.", them: ["Lucky. Okay. They're really soft.", "Sorry. I keep saying weird things. Spring rolls!"] }
+            { you: "Not really. Just lucky I guess.", them: ["Lucky. Okay. They're really soft.", "Sorry. I keep saying weird things. Spring rolls!"] },
+            { you: "They're soft because I've never done a day of real work. Don't ask me to change a tyre.", them: ["Ha! No, that's okay.", "Hayley's flatmate built her a whole bed frame last week. His hands are like sandpaper. Yours are nicer. Sorry. That's a weird thing to compare.", { note: "She keeps holding your hand. Her thumb goes over your nails, not your knuckles." }] }
           ] },
         { you: "They're for my friend Nicole. She'd love them. I've got really good taste in earrings, if I do say so myself.",
           them: ["You do! They're so pretty. She's lucky.", "Do you buy jewellery for your friends a lot?", { note: "She says it nicely, but she's looking at you like she's trying to do a sum in her head." }],
@@ -1370,6 +1450,7 @@ window.CONTENT = {
               "spark": 20,
               "them": [
                 "Um. Theo. Sorry. You should... stop?",
+                "You sound like Mochi at the vet. Sorry.",
                 {
                   "note": "Theo stops, because Mia asked. He winks at her. \"Anything for you.\""
                 },
@@ -1486,7 +1567,8 @@ window.CONTENT = {
                 {
                   "note": "Mia walks next to you the whole way. She keeps looking at your feet and then pressing her lips together."
                 },
-                "I'm not laughing. Sorry. I'm not."
+                "I'm not laughing. Sorry. I'm not.",
+                "You look like you're going to a sleepover. A really nice one."
               ],
               "after": "Mia, to Sam: \"he walked to dumplings in hayley's cat socks\" Sam: \"stop\" Mia: \"they were so small on him. theo took a photo. i asked him to delete it\" Sam: \"did he\" Mia: \"no\""
             },
@@ -1572,11 +1654,22 @@ window.CONTENT = {
               ],
               replies: [
                 { you: "I am a guy, Mia. I just like nice things. Guys can like nice things.", them: ["i know. sorry. you're right", "but i don't think i want to date a guy who likes nicer things than me", "sorry"] },
-                { you: "So what, I'm like one of your girlfriends now? That's what you're saying?", them: ["kind of yeah", "you'd be the best one honestly. you know about tops and lipstick and stuff", "but not to date. sorry"] }
+                { you: "So what, I'm like one of your girlfriends now? That's what you're saying?", them: ["kind of yeah", "you'd be the best one honestly. you know about tops and lipstick and stuff", "but not to date. sorry", "you're just not really my type anymore. you were at dumplings. sorry"] }
               ] },
             { you: "Oh my god, I KNEW it was Zara. The little puff sleeves gave it away. Sorry. That's not the point, is it.",
               gaydar: 90,
               them: ["no it's not the point lol", "but yes it was zara. it was on sale", "{name} i think we should just be friends. sorry. you're lovely. i just don't think you want a girlfriend", "and i don't think i want a boyfriend who knows what zara's sleeves look like"] }
+          ] },
+        { you: "Was it the lipstick or that I beat you on the windmill?",
+          them: [
+            "you didn't beat me lol. you stopped to take a photo of the windmill",
+            "it was the lipstick. sorry",
+            "you looked really pretty. like actually pretty. and i don't think i want my boyfriend to be pretty",
+            "i want him to be the one who gets the ball out of the water. you made the guy from the kids' party get it for you"
+          ],
+          replies: [
+            { you: "So you want someone who fetches balls. Noted.", them: ["sorry 😭", "that sounds so bad when you say it", "but yes. kind of"] },
+            { you: "I didn't make him. He offered. He had very nice arms.", gaydar: 90, them: ["{name}", "that's what i mean", "sorry. night"] }
           ] },
         { you: "Did you actually have an early start? You can tell me if you didn't. I won't be upset.",
           them: [
@@ -1623,6 +1716,7 @@ window.CONTENT = {
             "a bit beige 😭",
             "he IS beige. he owns six quarter-zips. they're all navy",
             "i love him so much. after you i just wanted someone simple. like someone who'd never ask me where my top was from because he doesn't care. that's so relaxing honestly",
+            "he put my blinds up on sunday. with a drill. i just sat on the floor and watched. you gave me jars to open, remember. sorry. that's mean. it's true though",
             "can i ask you something? you can say no"
           ],
           replies: [
@@ -1638,7 +1732,8 @@ window.CONTENT = {
           them: [
             "thank you. you were really nice about it, even when i wasn't",
             "can i say one more thing and then i'll go to bed",
-            "i think you'd be really happy with someone who loves all the stuff you love. like the earrings and the lipstick and the cute tops. someone who thinks that's the best thing about you. i don't think that's a girl. sorry. i don't mean it badly"
+            "you'd be really happy with someone who's obsessed with the hoops and the lipstick and the cute tops. like actually obsessed",
+            "i don't think that's a girl. sorry. i don't mean it badly"
           ],
           replies: [
             { you: "What's that supposed to mean? You think I should date guys?",
@@ -1667,7 +1762,8 @@ window.CONTENT = {
                     { note: "He says it over his shoulder. He doesn't look back. He's left you alone with his girlfriend and he's whistling." },
                     "{name} that's so sweet",
                     "but you said it so quietly. and you're standing on my mat holding your socks with glitter toes",
-                    "i can't. you're too cute. it'd be like going out with my friend's little brother. sorry. i'm so sorry"
+                    "i can't. you're too cute. it'd be like going out with my friend's little brother. sorry. i'm so sorry",
+                    { note: "She reaches up and pats your head. Twice. Like you're Mochi." }
                   ],
                   replies: [
                     { you: "(Look down at your toes.) Okay. That's okay. Sorry for coming over.",
@@ -1721,6 +1817,12 @@ window.CONTENT = {
           replies: [
             { you: "The polo pics were Jess's idea. She said they're 'marketable'.", them: ["lol jess was wrong", "you're way cuter in person. sunday? GOMA?"] },
             { you: "Second date. Definitely.", them: ["yay. sunday. GOMA. i'll meet you at the big red thing out the front"] }
+          ] },
+        { you: "Is that bad? I can pretend I don't know. What's eyeliner? Is it a type of pen?",
+          them: ["lol no don't", "my last boyfriend called it 'the black stuff'. for two years", "it was nice to be noticed tbh", "second date? GOMA sunday?"],
+          replies: [
+            { you: "Sunday. I'll wear the polo so you recognise me.", them: ["please don't 😭", "big red thing out the front. 11?"] },
+            { you: "Yes. And I'm going to notice everything. Brace yourself.", gaydar: 25, them: ["ok that's a bit scary lol", "sunday. 11. big red thing"] }
           ] }
       ],
       after: "Ella, to her sister: \"date was so good. he's funny. he complimented my eyeliner??\" Her sister: \"wait he knew what eyeliner was\" Ella: \"he knew what a CAT EYE was\" Her sister: \"interesting\""
@@ -1748,6 +1850,9 @@ window.CONTENT = {
           replies: [
             { you: "I just think they're beautiful. Like, it's art. Wearable art. That's all.",
               them: ["Yeah. No, totally. It's art.", "It's just... my last boyfriend thought GOMA was a type of pasta. So this is a big change for me.", { note: "She laughs. You laugh. She doesn't hold your hand when you walk to the next room." }] },
+            { you: "Ella. You'd look amazing in it. That green is completely your colour.",
+              gaydar: 58,
+              them: ["Oh! Thanks.", "You said that exactly like Maddy says it. My friend Maddy. At Zara. Every Saturday.", { note: "On the stairs down she links her arm through yours. Not your hand. Your arm." }] },
             { you: "Sorry. I went on a bit. I always do when it comes to dresses. Nicole says I'm a menace.",
               them: ["No, it's fine! It's kind of cute.", "Do you... wear dresses? Sorry. That's a weird question. I don't know why I asked that.", { note: "You both stand there in front of the gown and don't say anything for a bit too long." }],
               replies: [
@@ -1803,6 +1908,18 @@ window.CONTENT = {
               them: ["its fine", "i just dont think we want the same thing"],
               replies: [{ you: "What do you mean? Like, you're not into it? Or not into me?", them: ["as in i want a guy who's into me", "and i dont think you are. i think you were into the waiter. you gave him a 'thank you darling' and touched his arm"] }] }
           ] },
+        { you: "Because it was 28 degrees and it's linen. I'm not going to brunch in jeans like a crazy person.",
+          them: [
+            "its not about the weather {name}",
+            "i told meg and maddy i had a third date. i showed them your hinge. the POLO",
+            "then i sent them a pic of us at brunch and you're in a floral dress with little buttons",
+            "maddy replied 'which one is the date'",
+            "i felt so stupid"
+          ],
+          replies: [
+            { you: "Okay but which one did she think was the date?", them: ["you. obviously", "she said you looked like my bridesmaid", "night {name}"] },
+            { you: "Sorry. That's really embarrassing for you.", them: ["it was", "you're not a guy i'd date. you're a guy i'd do brunch with. like with the girls", "sorry. thats just what it is"] }
+          ] },
         { you: "Did you hate it? Be honest. You can say it. I'd rather know.",
           them: [
             "kind of yeah",
@@ -1821,7 +1938,7 @@ window.CONTENT = {
                 after: "You look at \"No.\" on the screen for a long time. Then you hang the dress back up." }] },
             { you: "Does it matter? Can't I just be a guy who likes dresses?",
               them: ["yes?? it matters. it was a DATE", "you can be whatever you want. but i want to date a guy who wears jeans to brunch and looks at me. that's all"],
-              replies: [{ you: "Fair. Yeah. That's fair.", them: ["right", "ok well good luck. genuinely"] }] }
+              replies: [{ you: "Fair. Yeah. That's fair.", them: ["right", "ok well good luck with it"] }] }
           ] }
       ],
       after: "Ella, to her sister: \"brunch guy turned up in a dress.\" \"WHAT. like a costume?\" \"no like. a nice one. with lashes. and a better blush than me.\" \"is he gay\" \"obviously he's gay\" \"then why did he match with you\" \"THAT'S WHAT I SAID\"",
@@ -1862,6 +1979,7 @@ window.CONTENT = {
           them: [
             "\"Gel,\" Hayden says. \"Course it is.\" He looks at Ella. Ella looks at the sand.",
             "I can't believe you know the difference.",
+          "\"I thought gel was for hair,\" Hayden says, and Ella laughs at that, not at you.",
             { note: "Hayden picks up the softball bat. \"Beach softball, boys,\" he says to the other guys. Then, to you: \"You can keep score, man. Wouldn't want you breaking anything.\"" },
             { note: "You keep score on the back of Ella's sunscreen with her eyeliner. Hayden hits a home run into the water. Ella cheers so loud a seagull takes off." }
           ] }
@@ -1922,6 +2040,7 @@ window.CONTENT = {
               "them": [
                 "\"Totally fine, little guy,\" Hayden says.",
                 "It's ok. They're so cute though.",
+                "You look like a little kid on a school excursion back there.",
                 {
                   "note": "She turns back round to the front. She and Hayden talk about surf club stuff for the rest of the drive."
                 }
@@ -2328,7 +2447,8 @@ window.CONTENT = {
         { you: "Oh my god, he's SO rugby. Look at his neck. I'm so happy for you, Ella! And don't feel bad. Brunch was... a moment. I was having a moment.",
           them: [
             "you were DEFINITELY having a moment",
-            "it was a good moment though. you looked so happy. i was just in the way of it",
+            "it was a good moment for you. less for me lol. i was the girl in jeans next to the guy in the dress",
+            "connor carried me up all the stairs at the stadium last week because my heels hurt. you would've asked to borrow them",
             "can i say something without it being weird"
           ],
           replies: [
@@ -2364,7 +2484,8 @@ window.CONTENT = {
           them: [
             "STOP",
             "the valley in the blue dress?? i need photos",
-            "see this is what i mean. you're out there living your best life in a floral dress and i'm at the rugby watching connor eat two pies. we're both exactly where we should be"
+            "see this is what i mean. you're in the valley in a floral dress and i'm at the rugby watching connor eat two pies",
+            "if connor saw that dress he'd ask who won the bet"
           ],
           replies: [
             { you: "Two pies is a lot, babe. Is he okay?", them: ["he's fine. he's a prop. that's literally his job", "ok i have to go he's yelling at a referee. glad you're good {name} x"] },
@@ -2394,6 +2515,13 @@ window.CONTENT = {
           replies: [
             { you: "You talked about me? What did you say?", them: ["that you're cute. and funny. and you smell nice", "steph said 'smells nice how' and i said 'like a candle' and she gave me a look. not sure why", "sunday?"] },
             { you: "Sunday. I'll be the one cheering the loudest.", them: ["perfect. bring snacks. the girls love snacks"] }
+          ] },
+        { you: "I did not do a hand thing. It was a small wrist moment. Very different.",
+          gaydar: 25,
+          them: ["a WRIST MOMENT 😭", "ok i'm telling the girls that", "steph's going to ask a million questions btw. she's like that", "come watch netball sunday?"],
+          replies: [
+            { you: "Tell Steph I'm an open book.", them: ["lol she'll read it", "sunday 9. downey park. bring snacks"] },
+            { you: "Please don't tell the girls about the wrist moment.", them: ["too late", "bec replied 'iconic'", "sunday 9. downey park"] }
           ] }
       ],
       after: "Tayla, to the netball group chat: \"date went SO well. he's hilarious and he knows all the kylie songs.\" Steph: \"all of them?\" Tayla: \"all of them.\" Steph: \"hmm.\" Bec: \"STEPH.\""
@@ -2423,7 +2551,18 @@ window.CONTENT = {
           replies: [
             { you: "I just love a good ponytail. I'm sorry, did I embarrass you? I talk too much when I'm nervous.",
               them: ["No! You didn't embarrass me. They loved you.", "Steph's just... Steph. She thinks everyone's something.", "Come to Bec's 30th. Please. I want you there."] },
-            { you: "Hers was good, but yours was better. Obviously. You had a little flick at the end. Very sporty but make it fashion.",
+            { you: "Is that a problem? Bec's ponytail deserves to be talked about.",
+          them: [
+            "It's not a problem.",
+            "It's just. Steph's boyfriend asked me if you were my friend from work. Like, just a friend.",
+            "And I said no, he's my date, and Steph laughed into her water bottle. In front of everyone.",
+            "Can you just be a bit less... at the 30th? With Steph there?"
+          ],
+          replies: [
+            { you: "Less what, Tay?", them: ["You know what. Sorry.", { note: "She pays for both coffees and hands you yours without looking." }, "Just come to the 30th. Please. I want them to like you."] },
+            { you: "Fine. I'll be very boring. I'll talk about baseball with Steph's boyfriend.", them: ["Please don't. You don't know anything about baseball.", "You called it 'the stick one' earlier. He told Steph.", "Just come to the 30th. Be you. Maybe a bit quieter."] }
+          ] },
+        { you: "Hers was good, but yours was better. Obviously. You had a little flick at the end. Very sporty but make it fashion.",
               them: [{ note: "She laughs. It's a real laugh, but she's looking at you a bit differently now." }, "'Sporty but make it fashion.' Okay.", "You're so funny. You're... you know what, you're coming to Bec's 30th. I need the girls to see how funny you are. Not just how... yeah."] }
           ] },
         { you: "Netball-adjacent? I'll take it. Steph, your wing work was terrifying. I was scared for the other team.",
@@ -2462,7 +2601,7 @@ window.CONTENT = {
           them: [{ from: "Steph", text: "oh" }, { from: "Bec", text: "😳" }, { from: "Bec", text: "it WAS fire" }, { from: "Tayla", text: "are you serious" }, { from: "Tayla", text: "you couldnt have worked that out BEFORE i brought you to my friend's 30th?" }],
           replies: [
             { you: "Sorry, Tay. I really am. I didn't know it was going to be like this.",
-              them: [{ from: "Tayla", text: "yeah well i looked like an idiot" }, { from: "Tayla", text: "i spent the whole night saying 'he's not gay, he's just fun' and steph kept doing this face" }, { from: "Steph", text: "in my defence bec's cousin is single and he's gay so" }, { from: "Tayla", text: "STEPH" }] },
+              them: [{ from: "Tayla", text: "yeah well i looked like an idiot" }, { from: "Tayla", text: "i spent the whole night saying 'he's not gay, he's just fun' and steph kept doing this face" }, { from: "Steph", text: "in my defence bec's cousin is single and he's gay so" }, { from: "Tayla", text: "STEPH" }, { from: "Tayla", text: "the bouncer asked if you were with the bachelorette party. i laughed like it was funny" }] },
             { you: "Tayla, can we talk on our own?", them: [{ from: "Tayla", text: "not really no" }, { from: "Bec", text: "ok maybe take this somewhere else guys" }],
               after: "Tayla doesn't reply to your DM. Two days later Sam mentions, carefully, that netball was \"a bit awkward\"." }
           ] },
@@ -2470,6 +2609,9 @@ window.CONTENT = {
           gaydar: 95,
           them: [{ from: "Steph", text: "LMAO" }, { from: "Bec", text: "i'm crying" }, { from: "Tayla", text: "this isn't funny" }, { from: "Tayla", text: "it's a little bit funny. but it's mostly not funny" }, { from: "Tayla", text: "can you ring me. we need to talk" }],
           after: "On the phone, Tayla's not angry. She's just tired. \"I really liked you,\" she says. \"You're the most fun person I've ever brought anywhere. But I want to date a guy who borrows my hoodie, not my lip gloss.\"" },
+        { you: "Hi Steph. I'm in this chat. I can see it.",
+          them: [{ from: "Steph", text: "i know" }, { from: "Steph", text: "i'm dying" }, { from: "Bec", text: "steph is literally dying. she's under her desk" }, { from: "Tayla", text: "can we not do this in bec's birthday chat" }, { from: "Tayla", text: "{name} pls don't reply in here. there's eleven people in it" }],
+          after: "An hour later Tayla messages you on her own: \"im not mad at you\" \"im just so embarrassed. steph's been my best friend since year 7 and she asked if my boyfriend was gay in a chat with eleven people in it\" \"and i didnt know what to tell her\" \"i think we should stop. sorry. you're so fun. you're just more fun with my girls than with me\"" },
         { you: "(Leave the group.)",
           after: "You leave the group. Your phone buzzes twice more with Tayla's name and you don't open it until lunch." }
       ],
@@ -2525,6 +2667,9 @@ window.CONTENT = {
                 },
                 "\"Did you SQUEAL?\" Bec says. \"Tay, he squealed.\"",
                 "He squealed.",
+                {
+                  "note": "She says it to Jordan, not to you."
+                },
                 {
                   "note": "Jordan swaps onto the end of Tayla's lounger. She moves her legs so he can sit."
                 }
@@ -2899,6 +3044,7 @@ window.CONTENT = {
         "Oh! Hi! {name}! Sam said you might come. This is Mitch. Mitch, this is {name}. We, um. We went out. For a bit.",
         "\"Hey,\" Mitch says. \"Tay's told me about you. You did Bec's makeup, yeah? Legend.\" He means it.",
         "He plays football. Every Saturday. It's his whole personality. He doesn't know a single Kylie song. I played him Padam Padam and he said 'is this the one from the car ad'. I'm in love with him.",
+        "He carried the whole cooler in from the car on his own. You made me carry your tote bag at Felons.",
         {"if":"tayla-ambush=held","text":"\"Hang on, are you the guy from training?\" Mitch says. \"Tay's coach couldn't make you laugh? Jordan's still annoyed about it. Respect.\""},
         {"if":"tayla-ambush=cracked|begged|kept","text":"\"Hang on,\" Mitch says, grinning. \"You're the guy from the training video. The squealing one. Tay's team sent it to everyone.\""},
         {"if":"tayla-ambush=cracked|begged|kept","note":"Tayla says \"Mitch\" and elbows him. She's laughing too."}
@@ -2930,7 +3076,8 @@ window.CONTENT = {
                 { note: "You have a sip. Your hand shakes when you give it back. He sees it, and grins wider." },
                 { note: "Tayla's walked over. She heard all of it." },
                 "Oh my god. {name}. Did you just ask Mitch if you could win me back?",
-                "You're so cute. No. But you're so cute."
+                "You're so cute. No. But you're so cute.",
+                { note: "She ruffles your hair, the way she ruffles the kid who does the team's water bottles." }
               ] },
             { you: "...Nothing. Sorry. Your jersey's a really good orange.", after: "Steph, in the netball group chat that night: \"[video] {name} went over to fight mitch for tay and came back with a jersey and mitch's number\" Bec: \"i love him so much\" Tayla: \"which one\" Bec: \"both honestly\"",
               gaydar: 100,
@@ -2942,7 +3089,7 @@ window.CONTENT = {
               ] }
           ] },
         { you: "Ha. Okay. Nice to meet you, Mitch. I'm going to go find Sam.",
-          them: ["\"Nice to meet you too, man!\"", { note: "Tayla catches your arm as you go. Just for a second." }, "Hey. I'm glad you're okay. I'm glad we're both okay.", "And Steph says hi. She also says 'told you so'. Don't reply to her."] }
+          them: ["\"Nice to meet you too, man!\"", { note: "Tayla catches your arm as you go. Just for a second." }, "Hey. You look good. Better than Mitch does in that jersey. Don't tell him.", "And Steph says hi. She also says 'told you so'. Don't reply to her."] }
       ],
       after: "Steph, in the netball group chat that night: \"{name} came to the grand final\" Bec: \"he looked so good\" Steph: \"mitch liked him\" Tayla: \"mitch likes everyone\" Bec: \"mitch wants him at a game\"",
       debrief: "Seeing your ex happy with someone who's your total opposite can feel strange. You can be gracious, you can try to win her back, you can just leave. Nobody's keeping score."
@@ -2967,6 +3114,12 @@ window.CONTENT = {
           replies: [
             { you: "It was a manly scream.", gaydar: 25, them: ["it was not", "it was a high note", "see you saturday"] },
             { you: "See you Saturday. I'll practise being less graceful.", them: ["don't. it was the best part"] }
+          ] },
+        { you: "Thai, yes. But my forearms are still crying from tonight, so be gentle with me.",
+          them: ["your forearms are tiny. they're allowed to cry", "i'm not gentle. but i'll let you order", "saturday 7. boundary st"],
+          replies: [
+            { you: "They're not tiny. They're delicate.", gaydar: 25, them: ["that's worse", "saturday"] },
+            { you: "Rude. Accurate. Saturday.", them: ["see. you get it", "saturday"] }
           ] }
       ],
       after: "Georgie, to her housemate: \"asked out the guy from the gym\" Housemate: \"the one who sings?\" Georgie: \"yeah. he's funny. he does his own nails\" Housemate: \"oh?\" Georgie: \"for grip. apparently\""
@@ -2995,9 +3148,20 @@ window.CONTENT = {
           replies: [
             { you: "Sorry! Are your brows laminated? They're amazing. Who does them?",
               gaydar: 65,
-              them: ["\"Oh my god, yes! Thank you! There's a girl on James St,\" the waiter says, delighted.", { note: "You talk for four minutes. You get the girl's Instagram. The waiter brings you a free churro. Georgie eats her taco and says nothing until he leaves." }, "You got a free churro.", "I've been coming here two years and I've never got a free churro."] },
+              them: ["\"Oh my god, yes! Thank you! There's a girl on James St,\" the waiter says, delighted.", { note: "You talk for four minutes. You get the girl's Instagram. The waiter brings you a free churro. Georgie eats her taco and says nothing until he leaves." }, "You got a free churro.", "I've been coming here two years and I've never got a free churro.", "He liked you more than he liked me. That's new for me on a date."] },
             { you: "I wasn't looking at him. I was looking at the specials board behind him.",
               them: ["The specials board is behind me.", "It's fine. Eat your taco."] }
+          ] },
+        { you: "Sage is a neutral now, Georgie. Keep up.",
+          gaydar: 60,
+          them: [
+            "I don't keep up. I climb.",
+            "My last boyfriend wore the same black hoodie for three years. I liked that about him. I always knew what I was getting.",
+            "Eat your taco."
+          ],
+          replies: [
+            { you: "So I'm the opposite of the hoodie guy.", them: ["You're the opposite of every guy I've dated.", "I haven't decided if that's good yet. Eat."] },
+            { you: "(Eat the taco. Say nothing. Your nails look great holding it.)", them: [{ note: "She watches you hold the taco with your pinkie up. She doesn't say anything. She counts something under her breath." }] }
           ] },
         { you: "They're for grip. Climbing grip. It's a technique.",
           them: [
@@ -3046,8 +3210,14 @@ window.CONTENT = {
             "i didn't say anything about it because i didn't know what to say. i still don't. that's why i'm asking you instead"
           ],
           replies: [
-            { you: "I'm not gay. I just like pretty things. I've always liked pretty things.", them: ["ok", "i like pretty things too. i'm also not dating a guy who looks prettier than me at dinner", "sorry. that's harsh. but you know me"] },
+            { you: "I'm not gay. I just like pretty things. I've always liked pretty things.", them: ["ok", "i like pretty things too. i'm also not dating a guy who looks prettier than me at dinner", "sorry. that's harsh. but you know me", "you're not really my type anymore. you were in the bintang tank top. not in the slip dress"] },
             { you: "I don't know what I am. I know I felt really good in it.", gaydar: 97, them: ["ok", "that's fair", "but i'd rather not be the person you figure it out on. no offence. i like you. just not like that anymore"] }
+          ] },
+        { you: "Do you want the honest answer or the one where we get a fourth date?",
+          them: ["honest", "always honest", "i told you that on the wall the first night"],
+          replies: [
+            { you: "...I think I might be.", gaydar: 98, them: ["ok", "thank you. that's all i wanted", "honestly the last three dates felt like hanging out with my housemate. i love my housemate. i don't want to kiss my housemate", "still belay me tuesday. you're good at it"] },
+            { you: "The honest answer is 'next question'.", them: ["that's not an answer", "actually it is. ok", "we're done. see you at the gym"] }
           ] },
         { you: "No.",
           them: ["ok", "you looked at the waiters arms like 8 times but ok"],
@@ -3162,7 +3332,7 @@ window.CONTENT = {
                   "note": "At sixty Corey lets go and flops onto his back."
                 },
                 "\"Nothing,\" he says. \"Not a thing. Georgie, he's a statue.\"",
-                "One minute and two seconds. Not a sound.",
+                "One minute and two seconds. Not a sound. Not bad for a guy with a top coat.",
                 {
                   "note": "She's looking at you differently. Like you're a route she hadn't noticed was hard."
                 }
@@ -3421,6 +3591,7 @@ window.CONTENT = {
         "Oh. Hi. This is Ben. Ben, {name}. We went out for a bit.",
         "\"Hey, man,\" Ben says. His voice is so deep you feel it in your ribs. \"Georgie says you're a good belayer.\"",
         "He does rope access. On skyscrapers. He abseils off the Infinity tower on Mondays. He's never once asked a waiter about his eyebrows. I'm very happy.",
+        "He carried both our packs up Mount Barney. You asked me to open your water bottle once. On a flat path.",
         {"if":"georgie-tickle=held","text":"\"Corey told me about you,\" Ben says. \"The guy who beat his tickle thing. He hasn't shut up about it.\""},
         {"if":"georgie-tickle=cracked|begged|kept","text":"\"Oh, you're on Corey's list,\" Ben says. \"The bottom of it.\" He says it nicely. That makes it worse."},
         {"if":"georgie-tickle=cracked|begged|kept","note":"Georgie doesn't correct him. She just says \"it's a dumb list\" and chalks up."}
@@ -3434,7 +3605,8 @@ window.CONTENT = {
           ],
           replies: [
             { you: "I am comfortable. I think I'm figuring stuff out. Slowly.", them: ["Good.", "Figure it out faster. You're wasting good outfits on climbing walls."] },
-            { you: "I'm the same as I was. Just more... me.", them: ["Yeah. More you.", "More you is good. More you just isn't for me."] }
+            { you: "I'm the same as I was. Just more... me.", them: ["Yeah. More you.", "More you is good. More you just isn't for me."] },
+            { you: "Do you miss me? Even a bit?", them: ["No.", "I miss belaying with you. You were a good belayer. That's different.", "Ben's taller than me. When he hugs me I can't see over his shoulder. I like that."] }
           ] },
         { you: "(Go up to Ben.) Ben. Hi. Sorry. Can I talk to you? About Georgie.",
           them: [
@@ -6891,17 +7063,18 @@ window.CONTENT = {
             { you: "I don't want to talk about it.", them: ["ok. i'm not going anywhere. text me whenever"],
               after: "You don't text her that night. You text her three days later: \"they weren't wrong.\" She replies in under a minute. A month after that, Dani sets you up on a dating app. This time you tick 'men'." },
             { you: "What exactly are they saying?",
-              them: ["you don't want to know", "ok fine. mostly 'why is he dating girls'. some 'his makeup was better than mine'. one 'he's so obviously gay i feel stupid'", "honestly the makeup one is a compliment", "the rest is them being embarrassed and taking it out on you"],
+              them: ["you don't want to know", "ok fine. mostly 'why is he dating girls'. some 'his makeup was better than mine'. one 'he's so obviously gay i feel stupid'", "mia apparently told sam it was like dating her friend's little brother. georgie said 'nice guy. not a boyfriend'. that's the whole review from georgie", "honestly the makeup one is a compliment", "the rest is them being embarrassed and taking it out on you"],
               replies: [
                 { you: "They're not wrong though.", them: ["yeah. i figured", "and that's fine. that's more than fine", "you ok?"] },
-                { you: "I feel sick.", them: ["coming over", "don't argue. i'm bringing chips and the bad wine"] }
+                { you: "I feel sick.", them: ["coming over", "don't argue. i'm bringing chips and the bad wine"] },
+                { you: "Which one said my makeup was better than hers? I want a name.", them: ["lol hannah", "she also said your lashes were 'unfair'", "she's not wrong. now are you ok or not"] }
               ] }
           ] },
         { you: "They're not wrong.",
           them: ["yeah i kind of figured", "i'm sorry it came out like that. that's shit", "you ok?"],
           replies: [
             { you: "Not really. But kind of relieved?", them: ["that makes sense", "drinks friday. my shout. wear whatever you want", "and i mean WHATEVER. if you want to wear the dress ella was talking about, wear the dress"] },
-            { you: "I feel like an idiot for dating all of them.", them: ["you're not an idiot", "you were trying to be what you thought you were meant to be. lots of people do that", "although maybe stop accepting setups from me for a bit lol"] }
+            { you: "I feel like an idiot for dating all of them.", them: ["you're not an idiot", "you were dating girls because you thought that's what you did. half my uni friends did the same thing. two of them are married to men now", "although maybe stop accepting setups from me for a bit lol"] }
           ] },
         { you: "It was just makeup, Jess.",
           them: ["ok. that's fine", "but you know you can tell me stuff right", "like actual stuff. not just makeup stuff"],
