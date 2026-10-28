@@ -1,6 +1,11 @@
 # Changelog
 
 ## 2026-10-28
+- Story is now a list of girls to choose from. Each one's story goes slowly over four dates: you get a bit gayer every time, in how you dress and how you talk, and she fancies you a bit less, until she leaves you for a straight guy. 30 new chapters.
+- Story: in every girl's last chapter you can try to confront her new boyfriend. It does not go well for you.
+- Story: Archie works it out herself and leaves you for Josh. Nicole never asks, she just makes you one of the girls. You don't come out to either of them.
+- Story: longer conversations everywhere, from the girls and from you.
+- Story: the attraction bar is now "How much she fancies you", with teasing labels ("Wants to borrow your lip oil, not kiss you").
 - Story: pick your outfit before each date (toned down, the usual, or going further). It changes how the date opens, what she says about it, and both bars.
 - Story: a second bar after each date, "How into you she is". The gayer she thinks you are, the less she fancies you.
 - Story Part 1: four dates with Bianca. Every time she sees you she hypes you up to go a bit gayer (tinted gloss, pink nails, a lilac skirt, lashes and heels), and every time she's a bit less into you, until she's your gay best friend trying to set you up with Shay's cousin.

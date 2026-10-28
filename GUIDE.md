@@ -12,7 +12,7 @@
 - Everyday chats from friends, exes and the uni group chat, who all know you're gay and don't make a thing of it. Pick any reply; there are no wrong answers.
 
 ## Story
-- From being in the closet with Archie, through coming out, to six months with your boyfriend. Finish a chapter and the next one opens straight away.
+- From being in the closet with Archie, through coming out, to six months with your boyfriend. Pick a girl to date: each one's story goes date by date until she works out you're gay and goes off with a straight guy. Finish a chapter and the next one opens straight away.
 
 ## Style
 - Dress up your avatar with clothes, shoes, accessories and makeup, and watch how the look reads.

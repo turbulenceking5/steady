@@ -295,7 +295,7 @@ details summary { cursor: pointer; color: var(--muted); }
     $("#todayChat .item").addEventListener("click", () => { showTab("chats"); openChat(chat); });
     const next = C.story.findIndex((c, i) => chapterState(i) === "open" && !storyDone()[c.id]);
     const who = next < 0 ? "" : fill(C.story[next].contact || "{bf}");
-    $("#todayStory").innerHTML = next < 0 ? "" : itemHtml(who[0].toUpperCase(), who, `Story, chapter ${next + 1}: ${C.story[next].title}`, "new");
+    $("#todayStory").innerHTML = next < 0 ? "" : itemHtml(who[0].toUpperCase(), who, `Story: ${fill(C.story[next].title)}`, "new");
     if (next >= 0) $("#todayStory .item").addEventListener("click", () => { showTab("story"); openChapter(next); });
     renderStreak();
     renderHistory();
@@ -328,7 +328,8 @@ details summary { cursor: pointer; color: var(--muted); }
 
   // Teasing, never nasty: it's her read on you, and the joke's on how obvious it is.
   const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
-  const sparkLabel = (v) => v >= 80 ? "Already planning date two" : v >= 60 ? "Into you. Mostly." : v >= 40 ? "Cooling off. Fast." : v >= 20 ? "Sees you as a mate who's good with eyeliner" : v > 0 ? "Officially your gay best friend" : "Wants to set you up with her mate";
+  // Teasing: the lower it goes, the more she sees you as one of the girls.
+  const sparkLabel = (v) => v >= 80 ? "Fancies you. Hasn't looked at your nails yet." : v >= 60 ? "Still keen, but she's clocked the gloss" : v >= 40 ? "Fancies your skincare more than you" : v >= 20 ? "Wants to borrow your lip oil, not kiss you" : v > 0 ? "Sees you as one of the girls now, babe" : "Already trying to set you up with a guy";
   function runConversation(view, convo, kind, header) {
     const run = Symbol(); view._run = run;
     view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
@@ -423,7 +424,7 @@ details summary { cursor: pointer; color: var(--muted); }
           const who = fill(convo.gaydarWho || convo.contact);
           const into = spark != null ? spark : Math.max(0, 100 - gaydar);
           const bar = (cls, v, title, label) => `<div class="meter ${cls}" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${v}" aria-label="${esc(title)}"><div class="top"><b>${esc(title)}</b><span class="pct">${v}%</span></div><div class="track"><div class="fill" data-v="${v}"></div></div><span class="muted">${esc(label)}</span></div>`;
-          choices.insertAdjacentHTML("beforeend", `<div class="gaydar">${bar("gay", gaydar, `How gay ${who} thinks you are`, gaydarLabel(gaydar))}${bar("spark", into, `How into you ${who} is`, sparkLabel(into))}${convo.gaydarSays ? `<div style="margin-top:8px"><i>"${esc(fill(convo.gaydarSays))}"</i> <span class="muted">· ${esc(who)}</span></div>` : ""}</div>`);
+          choices.insertAdjacentHTML("beforeend", `<div class="gaydar">${bar("gay", gaydar, `How gay ${who} thinks you are`, gaydarLabel(gaydar))}${convo.friend ? "" : bar("spark", into, `How much ${who} fancies you`, sparkLabel(into))}${convo.gaydarSays ? `<div style="margin-top:8px"><i>"${esc(fill(convo.gaydarSays))}"</i> <span class="muted">· ${esc(who)}</span></div>` : ""}</div>`);
           const fills = choices.querySelectorAll(".gaydar .fill");
           requestAnimationFrame(() => requestAnimationFrame(() => fills.forEach((f) => { f.style.width = f.dataset.v + "%"; })));
         }
@@ -492,25 +493,52 @@ details summary { cursor: pointer; color: var(--muted); }
   }
 
   // ---------- Story ----------
-  // Chapter n opens as soon as chapter n-1 has been finished once. No waiting a day.
+  // Story is split into routes (one per girl, plus Nicole, Jess and {bf}). Chapters in a route
+  // open one after another, straight away. A route with `lock` opens once any other route is finished.
   const storyDone = () => store.get("story", {});
+  const ROUTES = C.routes || [];
+  const routeChapters = (rid) => C.story.map((c, i) => i).filter((i) => C.story[i].route === rid);
+  const routeFinished = (rid) => { const d = storyDone(); const ch = routeChapters(rid); return ch.length > 0 && ch.every((i) => d[C.story[i].id]); };
+  const routeOpen = (r) => !r.lock || ROUTES.some((o) => !o.lock && routeFinished(o.id));
   function chapterState(i) {
-    if (i === 0 || storyDone()[C.story[i].id]) return "open";
-    return storyDone()[C.story[i - 1].id] ? "open" : "locked";
+    const c = C.story[i];
+    if (storyDone()[c.id]) return "open";
+    const r = ROUTES.find((x) => x.id === c.route);
+    if (r && !routeOpen(r)) return "locked";
+    const ch = routeChapters(c.route); const k = ch.indexOf(i);
+    return k <= 0 || storyDone()[C.story[ch[k - 1]].id] ? "open" : "locked";
   }
+  const PART_HEAD = (t) => `<li><h2 class="muted" style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px">${esc(fill(t))}</h2></li>`;
   function renderStoryList() {
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
-    const done = storyDone();
+    const d = storyDone();
     let part = "";
-    list.innerHTML = `<p class="muted" style="margin-top:0">From still being in the closet to six months with ${esc(bf())}. Finish a chapter and the next one opens straight away.</p><ul class="list">` +
-      C.story.map((c, i) => {
-        const st = chapterState(i);
-        const who = fill(c.contact || "{bf}");
-        const sub = st === "open" ? `${who} · ${done[c.id] ? "read" : "new"}` : "Locked";
-        const head = c.part && c.part !== part ? `<li><h2 class="muted" style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px">${esc(fill((part = c.part)))}</h2></li>` : "";
-        return `${head}<li data-i="${i}">${itemHtml(String(i + 1), c.title, sub, done[c.id] ? "done" : st === "open" ? "new" : "")}</li>`;
+    list.innerHTML = `<p class="muted" style="margin-top:0">Pick who you want to try dating. Each story takes it slowly, one date at a time, and every girl's ends the same way: she works out you're gay before you do and goes off with a guy who isn't. Then there's ${esc(bf())}.</p><ul class="list">` +
+      ROUTES.map((r) => {
+        const ch = routeChapters(r.id); const read = ch.filter((i) => d[C.story[i].id]).length;
+        const open = routeOpen(r);
+        const sub = open ? `${read}/${ch.length} · ${fill(r.blurb)}` : "Finish one girl's story to unlock";
+        const head = r.part && r.part !== part ? PART_HEAD((part = r.part)) : "";
+        return `${head}<li data-r="${esc(r.id)}">${itemHtml(fill(r.avatar || r.name[0]), fill(r.name), sub, read === ch.length ? "done" : open && read === 0 ? "new" : "")}</li>`;
       }).join("") + "</ul>";
+    list.querySelectorAll("li[data-r]").forEach((li) => {
+      const r = ROUTES.find((x) => x.id === li.dataset.r);
+      if (!routeOpen(r)) li.querySelector(".item").disabled = true;
+      else li.addEventListener("click", () => renderRoute(r.id));
+    });
+  }
+  function renderRoute(rid) {
+    $("#storyView").hidden = true; $("#storyView")._run = null;
+    const list = $("#storyList"); list.hidden = false;
+    const r = ROUTES.find((x) => x.id === rid); const d = storyDone();
+    list.innerHTML = `<button class="btn ghost back">← Story</button><h2 style="margin:10px 0 4px;font-size:20px">${esc(fill(r.name))}</h2><p class="muted" style="margin:0 0 6px">${esc(fill(r.intro || r.blurb))}</p><ul class="list">` +
+      routeChapters(rid).map((i, k) => {
+        const c = C.story[i]; const st = chapterState(i);
+        const sub = st === "open" ? `${fill(c.contact || "{bf}")}${c.irl ? " · in person" : ""} · ${d[c.id] ? "read" : "new"}` : "Locked";
+        return `<li data-i="${i}">${itemHtml(String(k + 1), fill(c.title), sub, d[c.id] ? "done" : st === "open" ? "new" : "")}</li>`;
+      }).join("") + "</ul>";
+    list.querySelector(".back").addEventListener("click", renderStoryList);
     list.querySelectorAll("li[data-i]").forEach((li) => {
       const i = +li.dataset.i;
       if (chapterState(i) !== "open") li.querySelector(".item").disabled = true;
@@ -518,11 +546,13 @@ details summary { cursor: pointer; color: var(--muted); }
     });
   }
   function openChapter(i) {
-    const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}"), next: i + 1 < C.story.length ? () => openChapter(i + 1) : null });
+    const ch = routeChapters(C.story[i].route); const k = ch.indexOf(i);
+    const nextI = k >= 0 && k + 1 < ch.length ? ch[k + 1] : -1;
+    const c = Object.assign({}, C.story[i], { contact: fill(C.story[i].contact || "{bf}"), next: nextI >= 0 ? () => openChapter(nextI) : null });
     $("#storyList").hidden = true;
     const view = $("#storyView"); view.hidden = false;
-    runConversation(view, c, "story", `<button class="btn ghost back">← Story</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">Chapter ${i + 1}: ${esc(c.title)}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
-    view.querySelector(".back").addEventListener("click", renderStoryList);
+    runConversation(view, c, "story", `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row" style="margin-bottom:10px"><span class="avatar">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
+    view.querySelector(".back").addEventListener("click", () => (c.route ? renderRoute(c.route) : renderStoryList()));
   }
 
   // ---------- Settings ----------

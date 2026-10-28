@@ -107,10 +107,10 @@
   // ---------- Achievements ----------
   const inContent = (list, ids) => list.filter((x) => ids.includes(x.id)).length;
   const part1 = (() => {
-    const s = C.story || []; if (!s.length) return ["c1", "c2", "c3", "c4"];
-    const first = s[0].part; const ids = [];
-    for (const c of s) { if (c.part && c.part !== first) break; ids.push(c.id); }
-    return ids;
+    // Part 1 = every chapter in a route whose part is the first route's part.
+    const s = C.story || [], R = C.routes || []; if (!s.length || !R.length) return ["c1", "c2", "c3", "c4"];
+    const p1 = new Set(R.filter((r) => r.part === R[0].part).map((r) => r.id));
+    return s.filter((c) => p1.has(c.route)).map((c) => c.id);
   })();
   const journalDays = () => { const all = store.get("journal", {}) || {}; return Object.keys(all).filter((k) => all[k] && String(all[k].text || "").trim()).length; };
   const moodDays = () => { const all = store.get("journal", {}) || {}; return Object.keys(all).filter((k) => all[k] && all[k].mood != null).length; };

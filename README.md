@@ -4,7 +4,7 @@ A small, private app for getting comfortable being gay: being seen as gay, being
 
 - **Today**: a daily reminder, a mood check-in, a journal prompt and a streak.
 - **Messages**: everyday texts from mates, exes, the uni group chat, coworkers and dates who know you're gay and don't make a thing of it.
-- **Story**: a storyline from still being in the closet with Archie, through coming out, to six months with your boyfriend. Finish a chapter and the next one opens straight away. His name is set in Settings.
+- **Story**: a storyline from still being in the closet with Archie, through coming out, to six months with your boyfriend. Pick a girl to date: each one's story goes date by date until she works out you're gay and goes off with a straight guy. Finish a chapter and the next one opens straight away. His name is set in Settings.
 - **Style**: dress up an avatar (clothes, shoes, accessories, makeup), see how the look reads, save looks and get reactions from friends, and tick off the "wear it out" ladder in real life.
 - **Progress**: XP, levels, daily quests and badges. Tap the level chip in the header.
 - **Practice**: rehearse coming out or mentioning a partner, from easy chats to awkward and difficult reactions, with a short note at the end of each one.

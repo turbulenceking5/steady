@@ -48,7 +48,7 @@ Modules add their own tab section and nav button, inject their own `<style>` (cl
 `runConversation(view, convo, kind, header)` plays a node tree: `them` messages (with a typing delay), then reply buttons. In Practice there's also a write-your-own box, which follows the branch sharing the most words with what he typed. A node with no replies ends the conversation: it calls `markDone`, shows `after` (the branch's own, or the conversation's), then `debrief`, then "Try different replies".
 
 ## Story unlocks
-Chapter n opens once chapter n-1 has been finished (no daily wait). A finished chapter shows a "Next chapter" button.
+Story shows routes (`CONTENT.routes`), then a route's chapters. A chapter opens once the previous chapter in its route is finished (no daily wait); `lock` routes open once any other route is finished. A finished chapter shows a "Next chapter" button for the next one in the same route.
 
 ## Privacy
 Nothing leaves the device. Settings has export, import and erase (all `st_` keys). **Hide** shows a grocery-list cover, and a double tap (detected manually, since iOS doesn't reliably fire `dblclick`) dismisses it.

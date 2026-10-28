@@ -25,6 +25,11 @@ Rules for how people text in the Story, Messages and Practice, and above all for
 - Some girls (Bianca most of all) encourage him to go gayer the more they suspect: a tinted gloss, a colour on his nails, a skirt, lashes, heels. Their attraction drops as their suspicion rises, and the way they talk changes with it: flirty, then "babe" in a friend way, then fully one of the girls.
 - The encouragement is genuine hype, never a joke at his expense. Losing interest shows in small physical things (a shorter hug, she reaches for his hand only to look at his nails, she turns her cheek).
 
+## Progression within a route
+- Each girl's route gets gayer chapter by chapter, in what he wears (outfit picks scale up too) and how he talks. Date one he's fairly blokey and awkward. By the third date he says "babe", "obsessed", "it's giving", and knows brands. By the end chapter he's fully camp, while still saying he's straight.
+- Her attraction drops and her suspicion rises in step (the bars follow the chapter's `gaydar`).
+- Girls write longer now: several messages a turn with real detail. His replies are full sentences too, not one-word buttons.
+
 ## His replies
 - Keep his options human too: awkward, defensive, a bit snarky, apologetic, or honest. They aren't speeches and they don't fix the situation.
 - Every reply is still a fine reply. No scoring.

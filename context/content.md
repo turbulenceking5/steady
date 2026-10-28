@@ -35,6 +35,26 @@ Mostly women, and no family members. Men appear only as dates, crushes or partne
 - **Men:** `{bf}` (the boyfriend, Story Part 2) and Alex (a dating-app match; `alex-beach` is their beach date). The guys can be playful and affectionate, e.g. pulling his socks or sandals off to tickle his feet, kept light and non-sexual, and they always stop when he says stop.
 
 ## Story
+Story is split into **routes** (`routes: [{ id, name, blurb, part, lock? }]`), and every chapter has a `route`. Chapters in a route open one after another as soon as the previous one is finished. Routes with `lock` (Jess, {bf}) open once any other route is finished.
+- **Archie** (c1, c1b, c3, c4): three years together. She works out he's gay, leaves him for Josh from work (touch footy, polo shirts), then tries to set him up with Josh's mate Ryan. He never comes out to her.
+- **Nicole** (c2, nicole-2, nicole-3): she never asks and he never tells her; she just starts treating him as one of the girls (girls' night, Sephora, rating her Hinge guys). `friend: true` hides the attraction bar.
+- **The girls** (Hannah, Mia, Ella, Tayla, Georgie, Lucy, Jade, Olivia, Zoe, Sophie, Bianca): four chapters each (Bianca five). Date one is low-key; each date he's a bit gayer and more femme in how he dresses and how he talks; the third chapter is the big one (the older c5–c6m chapters); the last (`<name>-end`) is her with a straight guy who doesn't crossdress (Brodie the sparky, Lachlan the accountant, Connor the rugby player, Mitch, Ben, Hamish, Riley, James, Kyle, Nathan, Liam).
+- **Confronting the new boyfriend:** every end chapter has a branch where he squares up to the new guy. The new guy is always friendly and unbothered, and it ends with him deflated (a yelp at the handshake, falling off a boulder, being handed the tongs, complimenting the guy's arms). Nobody mocks him.
+- **Jess** (c7, locked): what everyone's been saying.
+- **{bf}** (s1–s10, locked): first message through to six months.
+
+## Voice tiers
+Chats with `tier` only show once he reaches it: 0 Just out, 1 Finding your voice (game level 3+), 2 Out & proud (5+), 3 Full flamboyance (7+). At each tier his reply options get camper and the girls treat him more as their gay best friend. Tier 1 holds the crush confessions (Jemima, Nicole, Priya, Ailisha): long, heartfelt chats about how they felt back then and how they see him now. Each girl has her own way of saying it's better this way, so don't repeat a stock phrase across them. It's affectionate teasing, never a put-down.
+
+## Cast
+Mostly women, and no family members. Men appear only as dates, crushes or partners.
+- **Friends:** Jess, Priya, Dani (gym), Chloe (flatmate), Sam (coworker, she).
+- **Uni girls:** Nicole, Ailisha, Jemima.
+- **Dates in Part 1:** Hannah (Jess's friend), Mia (Sam's cousin), Ella (Hinge), Tayla and her friends Bec and Steph, Georgie (climbing gym), Lucy (seeing him for three weeks) and her friends Kayla and Ruby, Jade (Hinge) and her friend Mel, Olivia (Bumble), Bianca (met at a housewarming; friends Shay and Imogen), Zoe (girlfriend of six weeks; friends Brooke, Jayden, Tash) and Sophie (girlfriend of three months; friend Kirra). They work out he's gay, are put off by it, and gossip. Keep their texts plain and unpolished: lowercase, short, no therapy-speak.
+- **Exes:** Rachel (Korean; natural second-language English with a little Korean, warm, never a caricature) and Archie (his girlfriend in Story Part 1).
+- **Men:** `{bf}` (the boyfriend, Story Part 2) and Alex (a dating-app match; `alex-beach` is their beach date). The guys can be playful and affectionate, e.g. pulling his socks or sandals off to tickle his feet, kept light and non-sexual, and they always stop when he says stop.
+
+## Story
 - **Part 1, "Before"** (c1, c1b, c2–c6, c6b–c6m, c7): in the closet with Archie, dinner where he wears makeup and Archie is uncomfortable, confiding in Nicole, the honest talk (kind and angry branches), a few weeks later, then dates with Hannah, Mia, Ella (c6b, in a dress), Tayla (c6c, a group chat where her friend asks in the wrong chat), Georgie (c6d) and Lucy (c6e: he looks gayer each date, her friends keep asking her if he's gay, then she asks him) Jade (c6f: a picnic in women's sandals and painted toes), and three in-person scenes: Olivia (c6g, first dinner date where she talks about his painted toes and tells him to date guys), Zoe (c6h, breaks up with him in the car after a barbecue) and Sophie (c6i, saw a video of him at the Wickham in a skirt and breaks up with him), and the Bianca arc (c6j–c6m: four dates where she keeps encouraging him to dress gayer, from tinted gloss to a lilac skirt, lashes and heels, and goes from fancying him to being his gay best friend who wants to set him up with Shay's cousin Jake), where he goes in makeup and feminine clothes and they clock he's gay and are not nice about it, then Jess tells him what they said. Chapters can have an `intro` (scene-setting note) and the dates use `after` for what the girl is thinking.
 - **Part 2, "{bf}"** (s1–s10): first message through to six months (no family chapter), including s6b, wearing women's flip-flops and painted toes to the markets, and s7b, a lazy Sunday where he pulls your socks off and tickles your feet.
 
