@@ -1,0 +1,11 @@
+{
+  "name": "Steady",
+  "short_name": "Steady",
+  "description": "Daily notes and practice.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5fb",
+  "theme_color": "#5b5bd6",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
