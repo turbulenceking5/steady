@@ -1,4 +1,4 @@
-// All app content. {name} is replaced with the name set in Settings (or "mate"),
+// All app content. {name} is replaced with the name set in Settings (or "Calum"),
 // {bf} with the boyfriend's name from Settings (or "Matt").
 // Conversation nodes: { them: [messages], replies: [{ you, ...node }], debrief }.
 // A message is a string, or { from, text } in group chats.
@@ -69,13 +69,13 @@ window.CONTENT = {
         { you: "There is someone, but it's early days.",
           them: ["Oh lovely! Take your time. Whenever you're both ready x"] },
         { you: "Thanks for saying that, it means a lot.",
-          them: ["Of course. I just want you happy, whoever he is x"] }
+          them: ["Of course, {name}. I just want you happy, whoever he is x"] }
       ]
     },
     {
       id: "sam-work",
       contact: "Sam", role: "coworker", avatar: "S", // she
-      them: ["Hey, for the end-of-year thing, partners are invited", "Are you bringing your boyfriend or flying solo? Need numbers for catering"],
+      them: ["Hey {name}, for the end-of-year thing, partners are invited", "Are you bringing your boyfriend or flying solo? Need numbers for catering"],
       replies: [
         { you: "Solo this year!", them: ["No worries, put you down as one 👍"] },
         { you: "Not seeing anyone at the moment.", them: ["Easy, one it is. Plenty of us going stag anyway 😂"] },
@@ -85,7 +85,7 @@ window.CONTENT = {
     {
       id: "dan-gym",
       contact: "Dani", role: "gym friend", avatar: "D",
-      them: ["Babe, the new guy at the gym asked if you were single 👀", "Said he thought you were cute"],
+      them: ["{name}!! The new guy at the gym asked if you were single 👀", "Said he thought you were cute"],
       replies: [
         { you: "Wait what 😳",
           them: ["Hahaha yep. Tall one, does the 6am classes", "Want me to tell him you said hi?"],
@@ -100,7 +100,7 @@ window.CONTENT = {
     {
       id: "nan-call",
       contact: "Nan", role: "family", avatar: "N",
-      them: ["Hello darling, it's Nan. Your cousin showed me how to text!", "Your mother says you're courting a young man. I hope he's got good manners."],
+      them: ["Hello {name} darling, it's Nan. Your cousin showed me how to text!", "Your mother says you're courting a young man. I hope he's got good manners."],
       replies: [
         { you: "Haha hi Nan! He does, I promise.", them: ["Good. Bring him for scones. I'll be the judge of that x"] },
         { you: "Not courting yet Nan, but I'll let you know.", them: ["Well don't leave it too long, I'm 84 😂 x"] },
@@ -110,7 +110,7 @@ window.CONTENT = {
     {
       id: "priya-show",
       contact: "Priya", role: "mate", avatar: "P",
-      them: ["Have you watched Heartstopper yet?", "I keep thinking you'd love it. Also the gay bar on James St is doing a trivia night, want to come?"],
+      them: ["{name}, have you watched Heartstopper yet?", "I keep thinking you'd love it. Also the gay bar on James St is doing a trivia night, want to come?"],
       replies: [
         { you: "Not yet! Is it worth it?", them: ["It's adorable. Bring tissues. And snacks"] },
         { you: "Trivia sounds fun, count me in.", them: ["Yesss. I'm terrible at sport questions so you're on those"] },
@@ -120,7 +120,7 @@ window.CONTENT = {
     {
       id: "chris-flat",
       contact: "Chloe", role: "flatmate", avatar: "C",
-      them: ["Heads up, I'm having a few people over Friday", "Feel free to invite whoever, your guy included if you like"],
+      them: ["Heads up {name}, I'm having a few people over Friday", "Feel free to invite whoever, your guy included if you like"],
       replies: [
         { you: "Cheers, I'll ask him.", them: ["Sweet. I'll grab extra chips"] },
         { you: "Not sure there's a 'guy' yet haha", them: ["Ha fair. Well, the offer's there whenever"] },
@@ -162,7 +162,7 @@ window.CONTENT = {
     {
       id: "archie-ex",
       contact: "Archie", role: "ex", avatar: "A",
-      them: ["Hey. Can I ask you something kind of personal?", "Did you know you were gay when we were together?"],
+      them: ["Hey {name}. Can I ask you something kind of personal?", "Did you know you were gay when we were together?"],
       replies: [
         { you: "Honestly, I was still working it out.",
           them: ["Okay. I think I needed to hear that.", "So it wasn't about me."],
@@ -181,8 +181,8 @@ window.CONTENT = {
       contact: "Uni girls 💅", role: "group chat", avatar: "U",
       them: [
         { from: "Nicole", text: "OMG {name} I just heard!!!" },
-        { from: "Ailisha", text: "Nic you can't just open with 'I heard' 😂" },
-        { from: "Jemima", text: "We love you. Obviously. But also: is there a man, where did you meet him, and does he have a brother" }
+        { from: "Ailisha", text: "Nic you can't just open with 'I heard' 😂 Hi {name} 💕" },
+        { from: "Jemima", text: "We love you {name}. Obviously. But also: is there a man, where did you meet him, and does he have a brother" }
       ],
       replies: [
         { you: "Haha thanks girls 😂 There might be a man.",
@@ -212,7 +212,7 @@ window.CONTENT = {
     {
       id: "nicole-dm",
       contact: "Nicole", role: "uni friend", avatar: "N",
-      them: ["Sorry for the group chat chaos 😂", "Real talk though, how are you going with it all? Must've been a lot."],
+      them: ["Sorry for the group chat chaos 😂", "Real talk though {name}, how are you going with it all? Must've been a lot."],
       replies: [
         { you: "Honestly, still getting used to it.",
           them: ["That makes total sense. You don't have to have it all figured out.", "I'm always up for a chat. Or a walk and a gelato, no talking required"] },
@@ -228,7 +228,7 @@ window.CONTENT = {
   story: [
     {
       id: "c1", title: "Date night", contact: "Archie", part: "Part 1: Before",
-      them: ["Babe, dinner at that Italian place Friday? I booked us a table 🍝", "My sister keeps asking when we're getting engaged 😂"],
+      them: ["{name}, dinner at that Italian place Friday? I booked us a table 🍝", "My sister keeps asking when we're getting engaged 😂"],
       replies: [
         { you: "Sounds good! Haha tell her to relax.", them: ["Already did. She never listens 🙄 Love you x"] },
         { you: "Ha. Yeah. Friday's good.", them: ["You okay? You've seemed a bit far away lately.", "I'm here if something's up x"],
@@ -238,13 +238,13 @@ window.CONTENT = {
     },
     {
       id: "c2", title: "Saying it to someone", contact: "Nicole", part: "Part 1: Before",
-      them: ["Hey, you were quiet at drinks. Everything okay with you?", "No pressure. Just checking."],
+      them: ["Hey {name}, you were quiet at drinks. Everything okay with you?", "No pressure. Just checking."],
       replies: [
         { you: "Can I tell you something and you won't tell anyone?",
           them: ["Of course. Always."],
           replies: [
             { you: "I think I'm gay.",
-              them: ["Oh, love. Thank you for trusting me with that.", "That doesn't change a single thing about how I see you. How long have you been carrying it?"],
+              them: ["Oh, {name}. Thank you for trusting me with that.", "That doesn't change a single thing about how I see you. How long have you been carrying it?"],
               replies: [
                 { you: "Years, kind of. But it's been getting louder.", them: ["That sounds exhausting. You don't have to work it all out tonight.", "I'm here. And I won't say a word to anyone."] },
                 { you: "I don't know what to do about Archie.", them: ["That's a hard one. You care about her, that's obvious.", "Whatever you decide, you don't have to do it alone."] }
@@ -257,7 +257,7 @@ window.CONTENT = {
     },
     {
       id: "c3", title: "The honest talk", contact: "Archie", part: "Part 1: Before",
-      them: ["You said you wanted to talk tonight?", "You've got me a bit worried, not going to lie."],
+      them: ["{name}, you said you wanted to talk tonight?", "You've got me a bit worried, not going to lie."],
       replies: [
         { you: "I care about you a lot, and you deserve the truth. I'm gay.",
           them: ["Oh.", "...okay. I need a minute."],
@@ -286,7 +286,7 @@ window.CONTENT = {
     },
     {
       id: "c4", title: "A few weeks later", contact: "Archie", part: "Part 1: Before",
-      them: ["Hey. Just wanted to say I'm doing okay.", "I hope you are too. I mean that."],
+      them: ["Hey {name}. Just wanted to say I'm doing okay.", "I hope you are too. I mean that."],
       replies: [
         { you: "Thank you. I'm doing better than I have in years.", them: ["I can hear it. I'm glad.", "Maybe one day we can be proper friends. When it stings less."] },
         { you: "I'm okay. I miss you as a friend.", them: ["Me too, a bit. Give it time. I'm not going anywhere for good."] }
