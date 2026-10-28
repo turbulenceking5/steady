@@ -1111,9 +1111,9 @@ window.CONTENT = {
         { note: "You undo your laces as slowly as you can. Then your socks. Hannah looks down." },
         "Oh. Okay. They're pink.",
         { note: "A big guy in the hallway looks down too. Barefoot, stubby in hand, tradie tan, Kate's eyes. He grins." },
-        "\"Dylan,\" he says, and shakes your hand. \"Kate's brother. You're Han's date?\" He looks at your toes again. \"Nice colour, mate.\"",
+        "\"Dylan. Kate's brother.\" He looks at your toes, then at Hannah. \"This is the date? Han. Come on.\"",
         "Dylan's a chippy. He's been asking me out since I was nineteen. Ignore him.",
-        "\"Eleven times,\" Dylan says. \"I'm a patient bloke.\""
+        "\"Eleven times,\" Dylan says. \"Reckon my odds just went up though.\""
       ],
       replies: [
         { you: "(Curl your toes into the carpet.) Thanks. It was a bet. I lost a bet.",
@@ -1121,12 +1121,12 @@ window.CONTENT = {
             "\"Yeah? Who with?\" Dylan says.",
             { note: "You don't have an answer. Hannah looks at you." },
             "It wasn't a bet. Dani put it on her story. 'Pedi day with my bestie.'",
-            "\"Ha,\" Dylan says. Not mean. He puts a hand on Hannah's back and steers her towards the kitchen. \"Come get a drink, Han. Your bestie can come too.\""
+            "\"Pedi day. With his bestie,\" Dylan says, delighted. He puts a hand on Hannah's back and steers her towards the kitchen. \"Come get a drink, Han. Your bestie can come too. Mind the tiles, mate, they're cold on fresh polish.\""
           ],
           replies: [
             { you: "(Follow them to the kitchen.)",
               them: [
-                { note: "Dylan opens Hannah's cider on the edge of the bench. Then he opens yours too and hands it to you, like you might not manage the cap." },
+                { note: "Dylan opens Hannah's cider on the edge of the bench. Then he opens yours too and hands it to you. \"Didn't want you breaking a nail,\" he says." },
                 { note: "Every time you move, your pink toes are right there on Kate's white tiles. Kate's housemate looks at them, then at you, then at Hannah." },
                 "\"Han,\" the housemate says, very quietly. \"Is he...\"",
                 "I don't know.",
@@ -1141,7 +1141,7 @@ window.CONTENT = {
         { you: "It's Ballet Slippers. Essie. Dani did them.",
           gaydar: 96,
           them: [
-            "\"Essie,\" Dylan says, nodding, like you've told him what brand of drill you use.",
+            "\"Essie,\" Dylan says, to nobody, delighted. \"Han. He knows the brand.\"",
             "Kate, from the lounge: \"Wait, is that Ballet Slippers? Show me!\"",
             { note: "A minute later you're on the white couch with three of Kate's friends, comparing feet. Someone's got her foot on your knee. Out on the balcony Dylan's got Hannah laughing." },
             "Hannah, when she finally comes back in: \"You've been talking about cuticles for half an hour.\"",
@@ -1150,9 +1150,9 @@ window.CONTENT = {
           ] },
         { you: "(Stand up straight.) She's here with me, mate.",
           them: [
-            "\"Course she is,\" Dylan says, friendly. He looks down at you. Then at your toes. Then back up. He doesn't say anything. He doesn't need to.",
+            "\"Course she is, mate,\" Dylan says. He looks down at you. Then at your toes. Then back up. He just smiles.",
             { note: "Hannah bites her lip." },
-            "\"Good on ya,\" Dylan says, and pats your shoulder like you're his little cousin. \"Go grab a drink, mate.\""
+            "\"Love the confidence,\" Dylan says, and pats your cheek. Actually pats it. \"Go grab a drink, mate. Grown-ups are talking.\""
           ],
           replies: [
             { you: "(Go and grab a drink.)",
@@ -1160,7 +1160,7 @@ window.CONTENT = {
             { you: "...Your feet are huge.",
               gaydar: 98,
               them: [
-                "\"Size thirteen,\" Dylan says, pleased.",
+                "\"Size thirteen,\" Dylan says. \"Not a drop of polish on 'em.\"",
                 "{name}. Why are you looking at his feet?",
                 { note: "You go red. Dylan laughs, properly, and puts his arm round Hannah. She lets him." }
               ] }
@@ -1209,25 +1209,27 @@ window.CONTENT = {
           ] },
         { you: "(Go over to Brodie.) Um. Hi. Sorry. Can I borrow you for a sec? It's about Hannah.",
           them: [
-            "\"Yeah, course,\" Brodie says. He puts his schooner down and leans right down so he can hear you over the music.",
+            "\"Borrow me?\" Brodie says, loud enough for his mates at the bar to hear. He puts his schooner down and leans right down to your height. \"Go on then, mate.\"",
             { note: "He smells like Lynx Africa and the inside of a ute. You had a whole speech ready on the drive over. It's gone." },
-            "\"What's up, mate?\""
+            "\"Take your time. I've got all night.\""
           ],
           replies: [
             { you: "I think I want her back. Sorry. I know you're with her. I just wanted to say it to you first.",
               them: [
-                "\"Ah. Yeah, fair enough, mate,\" Brodie says. \"She's a catch.\"",
-                { note: "He says it like you've just told him you also go for the Broncos. He pats your arm and turns back to the footy." },
-                { note: "Hannah comes over and puts her hand on your shoulder. She heard all of it." },
-                "Did you just tell Brodie you want me back?",
-                "{name}. You said sorry three times. You were holding your drink with both hands. He thought you were asking where the toilets were.",
+                "\"You want her back,\" Brodie says. He looks you up and down, slowly, from your rings to your boots. Then he laughs. \"Yeah, righto.\"",
+                "\"Han! Your ex wants to fight me for ya!\"",
+                { note: "His mates turn round. One of them raises his schooner at you." },
+                "\"I'm shakin', mate. Look.\" He holds his hand out flat. It's dead still.",
+                { note: "Hannah comes over and puts her hand on your shoulder." },
+                "Brodie. Leave him alone.",
+                "{name}. You said sorry three times. You were holding your drink with both hands.",
                 "That's the cutest thing I've ever seen. No. But so cute."
               ] },
             { you: "...Never mind. Sorry. Your arms are really big. Sorry. Bye.",
               gaydar: 100,
               them: [
-                "\"Ha. Cheers, mate,\" Brodie says. \"Pulling cable all day.\"",
-                { note: "You go red from your neck up. You can feel it. Hannah's watching from the bar with her hand over her mouth." },
+                "\"There it is,\" Brodie says, grinning, and flexes, just a bit, just for you. \"Han, I reckon your ex has got a crush on me.\"",
+                { note: "You go red from your neck up. His mates are laughing. Hannah's got her hand over her mouth." },
                 "Oh my god. You went over there to fight for me and you've got a crush on him.",
                 "Don't argue. Your whole face has gone pink."
               ] }
@@ -1442,31 +1444,33 @@ window.CONTENT = {
                 "socks too sorry. they're so slippery. lachlan went over twice yesterday",
                 { from: "Lachlan", text: "twice. right on my bum. g'day mate" },
                 { note: "You'd forgotten. You painted your toes on Sunday, lilac with a bit of glitter. You peel your socks off and there they are, on her doormat, under the hallway light." },
-                { note: "Lachlan looks down at them. Then back up at you. His shoulders drop. Whatever he thought this visit was going to be, he's stopped thinking it." },
+                { note: "Lachlan looks down at them. Then back up at you. Then he smiles, slowly, like someone's just told him the exam's been cancelled." },
+                { from: "Lachlan", text: "oh mate. glitter" },
                 "oh my god. {name}. your toes. they're so cute",
                 "sorry. you came to say something. go"
               ],
               replies: [
                 { you: "(Stand up as straight as you can, barefoot.) Mia, I made a mistake. I want another chance. I wanted to say it in front of Lachlan so it's fair.",
                   them: [
-                    { from: "Lachlan", text: "fair enough mate. good on you" },
-                    { note: "He says it the way you'd say it to a kid who's just read something out at assembly. Then he says \"I'll leave you two to it\" and goes and puts the cricket on. He's left you alone with his girlfriend. He isn't worried at all." },
+                    { from: "Lachlan", text: "ha. sure mate. you two have a chat. i'll be in the lounge" },
+                    { note: "He says it over his shoulder. He doesn't look back. He's left you alone with his girlfriend and he's whistling." },
                     "{name} that's so sweet",
                     "but you said it so quietly. and you're standing on my mat holding your socks with glitter toes",
                     "i can't. you're too cute. it'd be like going out with my friend's little brother. sorry. i'm so sorry"
                   ],
                   replies: [
                     { you: "(Look down at your toes.) Okay. That's okay. Sorry for coming over.",
-                      them: ["no!! don't be sorry", { note: "She hugs you. From the lounge Lachlan calls out \"milk and sugar, mate?\" without looking away from the cricket." }, "stay for a tea. he wants to ask you about a shirt for my cousin's wedding. he's been nervous about it all week"] },
+                      them: ["no!! don't be sorry", { note: "She hugs you. From the lounge, without looking away from the cricket:" },
+                        { from: "Lachlan", text: "want a cuppa mate? or a babycino" }, "stay for a tea. he wants to ask you about a shirt for my cousin's wedding. he's been nervous about it all week"] },
                     { you: "He's not even a little bit worried, is he?",
-                      them: ["no babe", "sorry", "when i walked past just now he said 'mia, look at his little feet'. he wasn't being mean. he thinks you're lovely", "everyone thinks you're lovely. that's kind of the problem"] }
+                      them: ["no babe", "sorry", "when i walked past just now he said 'mia, he's got glitter on his toes. i think we're safe'", "and then he laughed for like a whole minute", "he's not wrong though babe. sorry"] }
                   ] },
                 { you: "(Stand on one foot so they can't see the other one.)",
                   gaydar: 100,
                   them: [
-                    { from: "Lachlan", text: "careful mate, you'll go over" },
+                    { from: "Lachlan", text: "steady there, princess" },
                     { note: "He comes down the hall and holds your elbow while you wobble. His hand's warm. He smells like soap and tea. The speech goes. For a second so does your name." },
-                    { from: "Lachlan", text: "nice colour by the way. mia's got that one" },
+                    { from: "Lachlan", text: "nice colour. mia's got that one. you two should share" },
                     { note: "\"Thanks,\" you say. It comes out tiny." },
                     "omg",
                     "{name}. did you just go shy at lachlan",
@@ -1621,7 +1625,7 @@ window.CONTENT = {
         { note: "You take them off. Then your socks. Coral toes, in the sand, in front of nine people." },
         "Oh my god. When did you do that?",
         { note: "A tall guy in red and yellow boardies comes up from the water, shaking it out of his hair. Shoulders like a door." },
-        "\"Ha! Love it,\" he says. \"I'm Hayden.\"",
+        "\"Ha! Ells, who's your little friend?\" he says. \"I'm Hayden.\"",
         "Hayden's a lifesaver. He's been trying to take me out since second year.",
         "\"Still am,\" Hayden says, and grins at her. Then down at your feet. \"You coming in, mate? Or are you worried about the polish?\""
       ],
@@ -1629,15 +1633,15 @@ window.CONTENT = {
         { you: "I'm fine in the water. I'm a strong swimmer.",
           them: [
             { note: "You go in. The first wave knocks you flat and you come up coughing with your shirt over your face." },
-            "\"Gotcha,\" Hayden says, and pulls you up by one arm. He keeps hold of you until the next set's gone through, like you're a kid at nippers.",
+            "\"Gotcha,\" Hayden says, and pulls you up by one arm. He keeps hold of you until the next set's gone through, like you're a kid at nippers. \"Steady, little fella.\"",
             { note: "Back on the sand, Ella's taking photos. Of Hayden." },
             "You did so well, babe. Hayden saved you.",
             "\"I didn't need saving.\"",
-            "\"Mate,\" Hayden says, kindly. \"You did a bit.\""
+            "\"Mate,\" Hayden says, grinning at Ella, not you. \"You did a bit.\""
           ] },
         { you: "(Sit on the towel.) I'll mind the bags.",
           them: [
-            "\"Legend,\" Hayden says. He holds his hand out to Ella. \"Come on, Ells. I'll take you out past the break.\"",
+            "\"Good idea, mate. Keep the polish dry,\" Hayden says. He holds his hand out to Ella. \"Come on, Ells. I'll take you out past the break.\"",
             { note: "She goes. You sit on her towel with her sunnies on your head and your coral toes in the sand. Her friend Maddy sits down and puts her foot next to yours." },
             "\"Same colour as mine,\" Maddy says. \"Yours are neater.\"",
             { note: "Out past the break Hayden lifts Ella onto his shoulders. She screams and laughs and doesn't look back at the beach once." }
@@ -1647,7 +1651,7 @@ window.CONTENT = {
           them: [
             "\"Gel,\" Hayden says. \"Course it is.\" He looks at Ella. Ella looks at the sand.",
             "I can't believe you know the difference.",
-            { note: "Hayden picks up the cricket bat. \"Beach cricket, boys,\" he says to the other guys. Then, to you: \"You can keep score, mate.\"" },
+            { note: "Hayden picks up the cricket bat. \"Beach cricket, boys,\" he says to the other guys. Then, to you: \"You can keep score, mate. Wouldn't want you breaking anything.\"" },
             { note: "You keep score on the back of Ella's sunscreen with her eyeliner. Hayden hits a six into the water. Ella cheers so loud a seagull takes off." }
           ] }
       ],
@@ -1689,15 +1693,16 @@ window.CONTENT = {
             "omg",
             "{name}",
             "ok i told him. he sent a voice note. i'll type it out because it's mostly him chewing",
-            "\"g'day mate, ella says you want a chat about her. all good. come down to touch wednesday, we can talk after. bring proper shoes yeah, not the heels\"",
-            "he's not worried btw. at all. he thinks it's cute. i think it's cute"
+            "\"g'day mate, ella says you want her back. ha. all good. come down to touch wednesday and try and take her off me. bring proper shoes yeah, not the heels\"",
+            "you can hear his mates laughing in the background",
+            "he's not worried babe. at all. i think it's cute tho"
           ],
           replies: [
             { you: "Fine. I'll be there.",
               them: ["omg ok", "i'm coming. i'm bringing snacks"],
-              after: "Wednesday. You wear a white skort and a visor because Ella said it as a joke and you missed the joke. Before the game Connor jogs over, all sweaty, and puts a hand on your shoulder to say g'day, and you forget why you came. You get the ball once and pass it straight back to him. Afterwards he says \"so what'd you want to chat about, mate?\" and you say \"nothing. good game. you're really fast\" and your voice goes up at the end. He says \"cheers mate\" and goes to get Ella a pie. Ella sends you the video with \"you're so cute i could die 😭 still no tho\"." },
+              after: "Wednesday. You wear a white skort and a visor because Ella said it as a joke and you missed the joke. Before the game Connor jogs over, all sweaty, and yells \"boys, he came! in a skort!\" and puts a hand on your shoulder, and you forget why you came. You get the ball once and pass it straight back to him. Afterwards he says \"so. still gonna take her off me, mate?\" and you say \"nothing. good game. you're really fast\" and your voice goes up at the end. He says \"didn't think so\", ruffles your hair and goes to get Ella a pie. Ella sends you the video with \"you're so cute i could die 😭 still no tho\"." },
             { you: "Actually tell him never mind. I'd ruin my nails.",
-              them: ["lol he said 'fair enough mate'", "and went back to his pie", "you're adorable you know that. adorable just isn't the same as boyfriend"] }
+              them: ["lol he said 'thought so'", "and 'tell him to come anyway, the boys want to meet him'", "you're adorable you know that. adorable just isn't the same as boyfriend"] }
           ] },
         { you: "I'm okay. Honestly. Still wearing the dress, if that's what you're asking. Wore it to the Valley last weekend with Dani.",
           them: [
@@ -1844,13 +1849,14 @@ window.CONTENT = {
           them: [
             "\"Yeah, course mate,\" Mitch says, and follows you to the fence.",
             { note: "He's a full head taller, sunburnt across the nose. He leans on the fence so he's down at your height, and waits. Your stomach flips. You put it down to nerves." },
-            "\"What's up?\""
+            "\"What's up, champ?\""
           ],
           replies: [
             { you: "I want her back. I think. I'm going to ask her. I wanted to tell you first, because that's fair. Sorry.",
               them: [
-                "\"Ah, yeah, righto,\" Mitch says, nodding like you've told him you're thinking about getting a dog. \"Good on ya for saying. Go for it, mate. No stress.\"",
-                { note: "He holds out his Gatorade. You have a sip. Your hand shakes a bit when you give it back." },
+                "\"You want her back?\" Mitch grins at you like you've told him a really good joke. \"Mate. Go for it. Have a crack. I'll wait.\"",
+                "\"Here.\" He holds out his Gatorade. \"You look like you need this more than me.\"",
+                { note: "You have a sip. Your hand shakes when you give it back. He sees it, and grins wider." },
                 { note: "Tayla's walked over. She heard all of it." },
                 "Oh my god. {name}. Did you just ask Mitch if you could win me back?",
                 "You're so cute. No. But you're so cute."
@@ -1858,7 +1864,7 @@ window.CONTENT = {
             { you: "...Nothing. Sorry. Your guernsey's a really good orange.",
               gaydar: 100,
               them: [
-                "\"Cheers mate. Want one? I've got a spare in the car.\"",
+                "\"Ha. Cheers, mate. Want one? Got a spare in the car. Might be a bit big on ya.\"",
                 { note: "You come back to Tayla holding a Lions guernsey and Mitch's number \"for when you want to come to a game\". You're red to the tips of your ears." },
                 "You went over there to fight for me and came back with his number.",
                 "Steph's filming. Sorry. I couldn't stop her."
@@ -1989,9 +1995,9 @@ window.CONTENT = {
         { note: "After the session you sit on the bench and pull your climbing shoes off. Your toes come out. Lilac. You forgot." },
         "Huh. Lilac.",
         { note: "Corey drops his chalk bag next to you. His feet are bare, enormous and covered in chalk." },
-        "\"No way,\" he says. \"You get your toes done, mate?\"",
+        "\"No way,\" he says, loud enough for the whole bench. \"You get your toes done, mate?\"",
         "He did them himself. Look at the edges. They're perfect.",
-        "\"Ha. Fair enough.\" Corey's grinning. He turns to Georgie. \"Kangaroo Point Saturday? Proper rock. Just us.\""
+        "\"Course he did.\" Corey's grinning. He doesn't bother lowering his voice when he turns to Georgie. \"Kangaroo Point Saturday? Proper rock. Just us. Reckon he'll survive a day without you.\""
       ],
       replies: [
         { you: "Can I come too?",
@@ -2011,10 +2017,10 @@ window.CONTENT = {
         { you: "They won't chip, actually. That's a top coat.",
           gaydar: 98,
           them: [
-            "\"Top coat,\" Corey says. \"Learn something new.\"",
+            "\"Top coat,\" Corey says, nodding slowly. \"Georgie. Mate. Come on.\"",
             "Three weeks and you've never said 'top coat' in front of me.",
             "\"You never asked,\" you say. You nod at Corey. \"He did.\"",
-            { note: "Corey laughs and holds out a fist. You bump it. Then he goes and helps Georgie coil her rope, standing very close to her." }
+            { note: "Corey laughs and ruffles your hair. Then he goes and helps Georgie coil her rope, standing very close to her." }
           ] }
       ],
       after: "Georgie, to her housemate: \"corey asked me out again.\" \"and?\" \"i said yes. for climbing.\" \"what about {name}\" \"{name} has lilac toes. did them himself. better than i could.\" \"so?\" \"so i'm going climbing with corey.\"",
@@ -2046,17 +2052,17 @@ window.CONTENT = {
           ] },
         { you: "(Go up to Ben.) Ben. Hi. Sorry. Can I talk to you? About Georgie.",
           them: [
-            "\"Yeah, mate,\" Ben says, and starts coiling his rope while he listens.",
+            "\"Yeah, mate,\" Ben says, and starts coiling his rope. He doesn't look at you.",
             { note: "He's got chalk up his forearms and a little scar through one eyebrow. You look at the scar for too long." },
             "\"Go on.\""
           ],
           replies: [
             { you: "I think I made a mistake with her. I want to try again. So. Um. I just thought you should know.",
               them: [
-                "\"Fair enough,\" Ben says, still coiling. \"She's worth it.\"",
-                { note: "That's all. He's not worried. He says it the way you'd say it's going to rain." },
-                "\"Want me to spot you on the overhang after? You were close last week.\"",
-                { note: "You say yes before you can think about it. Georgie has heard every word from the bench." },
+                "\"Good luck with that,\" Ben says, still coiling. He still doesn't look up.",
+                { note: "He says it like you've told him you're going to climb Everest in thongs." },
+                "\"Want me to spot you on the overhang after? Might help with the whole... impressing her thing.\"",
+                { note: "You say yes before you can think about it. Ben smirks. Georgie has heard every word from the bench." },
                 "{name}. You came over to win me back and now he's spotting you.",
                 "You're so cute. It's annoying how cute you are. Still no."
               ] },
@@ -2064,7 +2070,7 @@ window.CONTENT = {
               gaydar: 100,
               them: [
                 { note: "Your face goes hot. You turn round too fast and kick the chalk bucket." },
-                "\"You right?\" Ben catches the bucket. Then your elbow.",
+                "\"Easy, tiger.\" Ben catches the bucket. Then your elbow. He's laughing.",
                 "Georgie, quietly: \"You're bright red. You came over to fight him for me and you're bright red.\""
               ] }
           ] },
@@ -2187,7 +2193,7 @@ window.CONTENT = {
         { note: "Everyone lines their shoes up at the step. You slip your loafers off. Red toes, on the tatami, under the bright light." },
         "Oh! You did them! They look so good.",
         { note: "Fraser sits down cross-legged right next to Lucy. Big guy, grey hoodie, thick work socks. He looks at your feet." },
-        "\"Red,\" he says. \"Bold, mate.\"",
+        "\"Red,\" he says, and grins at Lucy. \"Bold, mate. Real bold.\"",
         { note: "There's nowhere to put your feet. Under the low table they end up right next to his knee." },
         "Fraser's a paramedic. Don't let him tell you about his worst callout. He'll do it with the gyoza on the table.",
         "\"Wasn't gonna,\" Fraser says, leaning back on his hands, closer to her. \"Gonna tell him about the nurse who saved my life at 3am with a Mars bar.\" Lucy goes pink."
@@ -2196,7 +2202,7 @@ window.CONTENT = {
         { you: "(Kneel and tuck your feet under you.)",
           them: [
             { note: "You sit on your feet. After ten minutes you can't feel them." },
-            { note: "Fraser pours Lucy's sake, then everyone else's, then yours. He says \"say when\" and you say \"when\" and your voice goes up on it." },
+            { note: "Fraser pours Lucy's sake, then everyone else's, then yours. He says \"say when\" and you say \"when\" and your voice goes up on it. \"Easy, lightweight,\" he says." },
             "Kayla, from across the table: \"{name} sits like my ballet teacher.\"",
             "He does! Sorry. He does.",
             { note: "She's laughing, but she isn't looking at you. She's waiting for the Mars bar story." }
@@ -2212,7 +2218,7 @@ window.CONTENT = {
           ] },
         { you: "Bold's kind of my thing.",
           them: [
-            "\"Yeah? Good on ya,\" Fraser says. He doesn't look worried about anything.",
+            "\"Yeah? I can see that,\" Fraser says, looking right at your toes, and laughs. He doesn't look worried about anything.",
             { note: "When the karaage comes he gives Lucy the biggest piece. Then he puts the little crumbly one on your plate, the way you'd serve a kid." },
             "Ruby, quietly, next to you: \"You know he's been after her for a year, yeah?\"",
             "\"I know now,\" you say."
@@ -2253,8 +2259,9 @@ window.CONTENT = {
           replies: [
             { you: "I still like her. I want her back. I think. I'm sorry. You seem really nice.",
               them: [
-                "\"Ah, mate,\" Hamish says, really gently. \"That's rough. I get it.\"",
-                { note: "Then he asks if you want a drink. He's not worried. He's looking at you like you're something small that needs looking after." },
+                "\"You?\" Hamish says, and laughs, a big country laugh. \"Fighting me for her? Mate.\"",
+                "\"Tell you what. I'll get you a drink. Something pink, yeah?\"",
+                { note: "He's not worried. He's having a great night." },
                 { note: "Lucy's come over. She heard." },
                 "Did you just tell Hamish you want me back? In that little voice?",
                 "Oh my god. Come here. You're the sweetest thing.",
@@ -2263,7 +2270,7 @@ window.CONTENT = {
             { you: "...Never mind. Your shirt's really nice. Is that brushed cotton?",
               gaydar: 100,
               them: [
-                "\"Yeah, Country Road,\" he says, pleased. \"Lucy picked it.\"",
+                "\"Yeah, Country Road,\" he says. \"Lucy picked it. You want to keep feeling it, or are we done?\"",
                 { note: "You touch the sleeve. Then you notice you're touching the sleeve. You let go and walk back to Kayla's table very fast, red to the ears." },
                 { note: "Kayla raises one eyebrow and slides her list of guys across the table." }
               ] }
@@ -2414,16 +2421,16 @@ window.CONTENT = {
           replies: [
             { you: "Um. I want Jade back. I'm going to ask her. I just wanted you to know. Sorry.",
               them: [
-                "\"Ah, okay,\" Riley says. \"Fair enough, mate.\" He scratches his neck. \"Good luck, yeah?\"",
-                { note: "He means it. He walks back, sits down next to Jade and opens a bag of Twisties. Jade is looking right at you." },
+                "\"Ha! You?\" Riley looks down at your painted toes, then back up. \"Good luck, mate. Genuinely.\" He's grinning.",
+                { note: "He walks back, sits down next to Jade, says something in her ear, and they both look over at you. Then he opens a bag of Twisties." },
                 "Did you just tell Riley you're going to win me back?",
                 "You said sorry to him. He wished you good luck.",
                 "You're adorable. I'm not leaving him. But you're adorable."
               ] },
             { you: "...Never mind. Sorry. Do you moisturise? Your feet, I mean. Sorry.",
               them: [
-                "\"Ha. Nah,\" Riley says. \"Jade reckons I should.\"",
-                { note: "You tell him about urea cream for four minutes. He nods the whole time. You're bright red the whole time and you don't know why." },
+                "\"Ha. Nah,\" Riley says. \"That's more your department, eh?\"",
+                { note: "You tell him about urea cream for four minutes. He nods the whole time with a big smirk on his face. You're bright red the whole time and you don't know why." },
                 { note: "Back on the blanket, Nicole is crying laughing. Jade has her head on one side." },
                 "You went over there to fight for me and gave him a skincare routine.",
                 "You're so cute it's actually annoying."
@@ -2704,20 +2711,20 @@ window.CONTENT = {
           ] },
         { you: "(Step closer to James.) James. Can I say something? I don't really know how to say it.",
           them: [
-            "\"Course, mate. Go for it,\" James says.",
+            "\"Go for it, mate,\" James says, and checks his Apple Watch.",
             { note: "He's very tall and very calm and he smells like expensive aftershave. You look at his quarter-zip so you don't have to look at his face." },
             "\"You alright? You've gone a bit pink.\""
           ],
           replies: [
             { you: "I think I let Liv go too fast. I want to take her out again. I wanted to tell you. Man to man.",
               them: [
-                "\"Ha, yeah, fair enough,\" James says, grinning, and gives your shoulder a squeeze. \"Man to man. Love it.\"",
-                { note: "He turns round and says \"your mate wants to take you out again, babe\" to Olivia, the way you'd tell someone their car's blocking the drive." },
+                "\"Man to man,\" James says, grinning, and gives your shoulder a squeeze that's a bit too hard. \"Love that for you.\"",
+                { note: "He turns round and calls out \"babe, your mate wants to take you out again\" to Olivia, and he's laughing before he finishes saying it." },
                 "Oh my god. {name}. Did you just ask my boyfriend if you can date me?",
                 "You said 'man to man' in that voice. You were holding your drink with both hands.",
                 "Come here. You're so cute. No."
               ] },
-            { you: "...Never mind. Your arms are very F45. Okay. Bye.", gaydar: 100, them: ["\"Cheers mate!\" James says, and flexes a bit without meaning to.", { note: "You go back to Dani with your face burning. Dani hands you a drink without a word." }, "Olivia, later, by the bathrooms: \"You went over there to get me back and came back blushing about his arms.\" \"I don't want to talk about it,\" you say."] }
+            { you: "...Never mind. Your arms are very F45. Okay. Bye.", gaydar: 100, them: ["\"Cheers mate!\" James says, and flexes, on purpose. \"F45. Five am. You'd die.\"", { note: "You go back to Dani with your face burning. Dani hands you a drink without a word." }, "Olivia, later, by the bathrooms: \"You went over there to get me back and came back blushing about his arms.\" \"I don't want to talk about it,\" you say."] }
           ] },
         { you: "Hi James. Lovely to meet you. Enjoy your night.",
           them: ["\"You too, mate! Love the sandals.\"", "Olivia, quietly: \"He means that, by the way. He thinks everyone's great.\"", "\"That's nice,\" you say. And it is."] }
@@ -2979,7 +2986,7 @@ window.CONTENT = {
           them: [
             "\"Yeah, go for it mate,\" Kyle says, not looking up from the snags.",
             { note: "He's got grease on his forearms and a pencil behind his ear for some reason. He glances over and smiles at you sideways, and your stomach does a thing. You stand there with your hands clasped in front of you like you're waiting to order." },
-            "\"Hold these for us?\" He hands you the tongs. \"Gotta grab more onions. Talk when I'm back.\""
+            "\"Hold these for us?\" He hands you the tongs. \"Gotta grab more onions. Try not to break a nail.\""
           ],
           replies: [
             { you: "(Wait for him. Holding the tongs.)",
@@ -2987,8 +2994,9 @@ window.CONTENT = {
                 { note: "He comes back. You've had four minutes to practise." },
                 "\"Right. Zoe,\" Kyle says. \"Go.\"",
                 "\"I want her back,\" you say. It comes out very small. \"Sorry.\"",
-                "\"Ah, righto,\" Kyle says, and takes the tongs back. \"No worries, mate. Snag?\"",
-                { note: "He hands you a sausage in bread and goes back to the onions. That's the whole conversation for him." },
+                "\"Ha! Righto,\" Kyle says, and takes the tongs back. \"Good luck with that, mate. Snag?\"",
+                "\"Sauce is on the table, sweetheart.\"",
+                { note: "He goes back to the onions, still laughing. That's the whole conversation for him." },
                 "Zoe, from the deck: \"Did you just ask Kyle for me back and he gave you a snag?\"",
                 "\"Yes,\" you say.",
                 "She covers her face. \"You're so cute. I hate it. You're so cute.\""
@@ -3271,14 +3279,14 @@ window.CONTENT = {
           replies: [
             { you: "I want Sophie back. I know that's... I just wanted to be honest with you.",
               them: [
-                "\"Oh. Okay,\" Nathan says, and nods like you've just told him where it hurts. \"Thanks for telling me, mate. That's a hard thing to say.\"",
-                { note: "Then he asks if you want a water. He's not worried. He's being nice to you the way he'd be nice to a patient." },
+                "\"Oh. Okay,\" Nathan says. His mouth twitches. He's trying very hard not to laugh. \"That's... brave, mate.\"",
+                { note: "Then he asks if you want a water, the way he'd ask a patient who's about to faint. He's not worried. Not even slightly." },
                 { note: "Sophie's at the door. She's been there the whole time." },
                 "\"You went outside to win me back and he's offering you a water.\"",
                 "\"You said it so quietly, {name}. You looked like you were about to cry. It was so cute I nearly said yes.\"",
                 "\"Nearly,\" she says. \"Come back in.\""
               ] },
-            { you: "Your hands are very... professional. Sorry. Never mind. Bye.", gaydar: 100, them: ["\"Cheers, I'm a physio,\" he says, kindly. \"Comes with the job.\"", { note: "You go red so fast you feel it in your ears. Dani appears, takes your arm and walks you back inside without a word. She's shaking with silent laughter." }] }
+            { you: "Your hands are very... professional. Sorry. Never mind. Bye.", gaydar: 100, them: ["\"Cheers, I'm a physio,\" he says, smirking. \"You're not the first guy to notice.\"", { note: "You go red so fast you feel it in your ears. Dani appears, takes your arm and walks you back inside without a word. She's shaking with silent laughter." }] }
           ] },
         { you: "Hi Nathan. Have fun. The pink ones are the best ones.",
           them: ["\"Cheers mate! Will do.\"", "Sophie, quietly: \"Thanks for being nice. After everything.\"", "\"You were nice first,\" you say. \"You told me to go on a date with a guy.\" \"Did you?\" she asks. You don't answer. She smiles."] }
@@ -3493,9 +3501,9 @@ window.CONTENT = {
           replies: [
             { you: "I think I still want to be with her. Like, properly. I'm sorry. I had to say it.",
               them: [
-                "\"Ah. Fair enough, mate,\" Liam says. He's not worried. He asks if you want a drink.",
+                "\"Ha. Fair enough, mate,\" Liam says. He's not worried. \"Want a drink? I'll get you a spritz. With a little straw.\"",
                 "Bianca, from across the bar, yelling: \"WHAT ARE YOU TWO TALKING ABOUT\"",
-                "Liam, calling back: \"He wants you back, babe!\"",
+                "Liam, calling back: \"He wants you back, babe! I'm terrified!\"",
                 { note: "Bianca comes over and takes your face in both hands." },
                 "Babe. You told my boyfriend you want me back? To his face? In that little voice?",
                 "That's the cutest thing anyone's ever done on my birthday. No. Never. But I love you."

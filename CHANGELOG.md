@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story: the guys stop being nice about it. When you try to win her back, and in the barefoot chapters, they tease you, laugh about you to her and their mates, and make it very clear you're not a threat.
 - Story: four new barefoot chapters. Shoes off at Kate's white-carpet housewarming with Hannah, the beach at Caloundra with Ella, climbing shoes off with Georgie, and a tatami room at Kayla's birthday with Lucy. Each time your painted toes are on show in front of a guy who wants her, and he gets closer to her the longer it goes.
 - Story: the new-boyfriend scenes are rewritten. You go up to him to say you want her back, and you're so meek and so obviously gay about it that he doesn't take you seriously, he gives you butterflies, and she thinks you're adorable. At Mia's flat you have to take your shoes and socks off at the door, in front of Lachlan, with glitter toes.
 - Story: confronting her new boyfriend now falls apart because you can't stop being camp, not because you're weaker than him. You go to threaten him and end up popping a hip, calling him babe, flicking your hair, asking about his shirt fabric or giving him a skincare routine.

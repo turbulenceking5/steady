@@ -38,6 +38,7 @@ Rules for how people text in the Story, Messages and Practice, and above all for
 These rules sit inside the content boundaries in CLAUDE.md:
 - Annoyed, blunt and disappointed is fine. Slurs, cruelty for its own sake, or a scene built around humiliating him for being gay or feminine are not.
 - Embarrassing moments are fine when they're gentle and the people around him stay warm (his painted toes showing when Mia makes him take his socks off, going red at the new boyfriend). Nobody laughs at him to hurt him.
+- The guys who want the girls (and the new boyfriends when he tries to win her back) tease him and make it obvious they don't see him as a threat. Ribbing, smirks and pet names are fine. No slurs, no threats, nothing physical beyond a hair ruffle or a pat on the cheek.
 - The focus stays on him and how he handles it. The narrator `after` note and the `debrief` carry the warmth, so the dialogue doesn't have to.
 - The girls' chats in Messages (Jess, Nicole, the uni girls, Rachel) are allowed to be warm. Warm still means real people talking: specific memories and normal texting, not polished paragraphs.
 
