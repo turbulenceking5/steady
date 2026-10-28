@@ -14,3 +14,5 @@ Static files, no build step. Open `index.html` directly, or serve the folder and
 
 ## Editing content
 All text lives in `content.js`: affirmations, journal prompts, chats, story chapters and practice scenarios. `{name}` and `{bf}` become the names set in Settings. In group chats a message can be `{ from, text }`. The affirmation and prompt rotate daily (Brisbane time).
+
+See [GUIDE.md](GUIDE.md) for the user guide and [CLAUDE.md](CLAUDE.md) and [context/](context/) for how it's built.
