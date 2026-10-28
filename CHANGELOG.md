@@ -1,10 +1,10 @@
 # Changelog
 
 ## Unreleased
-- Style tab: dress-up avatar with clothes, shoes, accessories and makeup, a "how it reads" meter, saved outfits, the "wear it out" ladder, and reactions from friends.
 - Progress: XP, levels, daily quests, achievements.
 
 ## 2026-10-28
+- Style tab: dress-up avatar with clothes, shoes, accessories and makeup (including Soft glam), skin and hair, a "how it reads" meter, saved looks, a daily style dare, the "wear it out" ladder for every piece, and reactions from friends that name what you're wearing.
 - Practice: write replies in your own words, and keep them in "Your words".
 - Your name (default Calum) is used throughout. More messages mention you by name.
 - Cast is now mostly women (Dani, Chloe, Sam). Rachel is Korean.

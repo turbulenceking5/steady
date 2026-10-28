@@ -1,7 +1,7 @@
 // Network-first, falling back to cache so the app works offline.
 // Bump CACHE_NAME when changing what gets cached.
-const CACHE_NAME = "steady-v4";
-const FILES = ["./", "index.html", "content.js", "manifest.webmanifest", "icon.svg"];
+const CACHE_NAME = "steady-v5";
+const FILES = ["./", "index.html", "content.js", "wardrobe.js", "manifest.webmanifest", "icon.svg"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE_NAME).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
