@@ -4419,6 +4419,21 @@ window.CONTENT = {
             }
           ],
           "after": "Archie, to Priyanka: \"he said hi arch into the MICROPHONE\" \"everyone turned and looked at me\" \"i've never been so embarrassed and he was the one in a wig\""
+        },
+        {
+          "you": "(Death drop. Your wig doesn't come with you.)",
+          "them": [
+            {
+              "note": "You hit the floor. The wig keeps going. It slides off and lands in Archie's lap, lilac side up. You're on the stage in a wig cap and lashes."
+            },
+            "\"Lost something, princess?\" Josh says, and holds it up over his head like a trophy.",
+            "\"Come and get it, Lola!\" the host says. \"Ask her nicely!\"",
+            "Say please. Three years and you never said please about anything. Say it.",
+            {
+              "note": "You say please into the mic. Josh puts the wig back on you crooked and pats your cheek. \"There you go, sweetheart.\" You finish the number like that."
+            }
+          ],
+          "after": "Archie, to Priyanka: \"his wig landed in my LAP\" \"he had to say please into the mic\" \"josh put it back on him crooked and he did the whole rest of the song like that\" \"he didnt even fix it\""
         }
       ],
       "debrief": "The scariest audience is the one that knew you before. You got up there anyway, in front of her, and finished the number."
@@ -4480,6 +4495,21 @@ window.CONTENT = {
             }
           ],
           "after": "Hannah, to Kate: \"he made me wear a tiara on stage\" \"brodie's got it as his lock screen\" \"which one of us, you ask. both.\""
+        },
+        {
+          "you": "(Brodie calls bingo. He doesn't have bingo.)",
+          "them": [
+            "\"BINGO!\" Brodie yells. He has two numbers.",
+            {
+              "note": "The room makes you check his card anyway. You have to lean over their table in the corset while he reads out every number, slowly. None of them are right."
+            },
+            "\"Close enough. What's my prize, ma'am?\"",
+            "His prize is you saying sorry. On his knee. Into the microphone. I want to hear it.",
+            {
+              "note": "You sit on Brodie's knee and say sorry into the mic. You don't know what for. Neither does anyone else. Brodie pats you on the head. \"Apology accepted, sweetheart.\""
+            }
+          ],
+          "after": "Hannah, to Kate: \"brodie called a fake bingo so {name} had to sit on his knee and say sorry\" Kate: \"sorry for what\" Hannah: \"he didnt know. he said it anyway. a hundred people clapped\""
         }
       ],
       "debrief": "Being seen by someone who used to see you differently can feel like being caught. It's also a chance to show them who you actually are."
@@ -4543,6 +4573,21 @@ window.CONTENT = {
             }
           ],
           "after": "Mia, to Sam: \"i danced with lola\" \"sorry\" \"it was the most fun i've had all year\" \"don't tell lachlan\""
+        },
+        {
+          "you": "(Lachlan remembers the rule. Shoes off.)",
+          "them": [
+            "\"Hang on, Lola,\" Lachlan says. \"You know the rule. Shoes off.\"",
+            "Sorry. It is the rule. Sorry.",
+            {
+              "note": "Sam starts it. The whole brunch chants \"SHOES. SHOES. SHOES.\" You step out of the glitter heels in the middle of the restaurant, glitter toes out on the sticky floor."
+            },
+            "\"Still glittery,\" Lachlan says, very pleased with himself.",
+            {
+              "note": "The host carries your heels round the tables like a collection plate. You do the rest of the number barefoot. Mia doesn't stop apologising and doesn't stop laughing."
+            }
+          ],
+          "after": "Mia, to Sam: \"sorry\" \"lachlan made him take his shoes off at BRUNCH\" \"everyone chanted\" \"the floor was so sticky sam\" Sam: \"he still did the cartwheel\" Mia: \"barefoot. sorry. i filmed it\""
         }
       ],
       "debrief": "There's something brave about being loud in front of someone who knew you when you were quiet."
@@ -4604,6 +4649,21 @@ window.CONTENT = {
             "they look AMAZING actually. ugh."
           ],
           "after": "Ella, to Meg: \"he did connor's eyebrows on stage\" \"connor won't stop touching them\" \"they do look good. that's the worst part\""
+        },
+        {
+          "you": "(Hair flip. A lash comes off and sticks to your cheek.)",
+          "them": [
+            "your LASH. {name} your lash is on your FACE",
+            {
+              "note": "She says it loud enough that the whole front of the bar looks. The song keeps going. The lash is hanging off your cheekbone like a spider."
+            },
+            "\"I got it, man,\" Connor says. He stands up, peels it off your face and hands it back to you. \"There you go, gorgeous.\"",
+            "you told me you didnt know what lash glue WAS. in june. you looked me in the eye",
+            {
+              "note": "You do the rest of the song with one lash. Meg holds her phone up the whole time."
+            }
+          ],
+          "after": "Ella, to Meg: \"his lash came off\" \"connor peeled it off his face. connor. from rugby\" \"he told me he didnt know what lash glue was. that was GOOD lash glue meg\""
         }
       ],
       "debrief": "Your ex seeing you at your most fabulous can feel like the worst thing in the world, right up until the applause."
@@ -4662,6 +4722,22 @@ window.CONTENT = {
             "i know she does. i dated her"
           ],
           "after": "Tayla, to Steph: \"my boyfriend lost a dance-off to my ex\" Steph: \"in heels\" Tayla: \"in HEELS\""
+        },
+        {
+          "you": "(Steph gets the mic. She has screenshots.)",
+          "them": [
+            "\"Lola,\" Steph says into the mic. \"I have the group chat.\"",
+            "steph no. STEPH. that was private",
+            "\"It was in the wrong chat, Tay. It's public now.\" She reads it out. \"'is he gay or does he just moisturise a lot.' Lola? Which one?\"",
+            {
+              "note": "The whole bar turns to you. You're under the spotlight in a rhinestone netball skirt and a bib that says GA. You say \"...both?\" into the mic."
+            },
+            "\"Both!\" Mitch yells, standing up. \"Good answer, buddy! Read another one!\"",
+            {
+              "note": "She reads three more. Bec films every one."
+            }
+          ],
+          "after": "Steph, to the team chat: \"[video] lola reacts to the group chat\" Tayla: \"im leaving the team\" \"again\" Mitch: \"what moisturiser is it though\""
         }
       ],
       "debrief": "Being recognised when you're not ready is a gut punch. You kept dancing, which is what performers do."
@@ -4721,6 +4797,21 @@ window.CONTENT = {
             "That's the safest drag routine I've ever seen."
           ],
           "after": "Georgie, to the gym chat: \"ben belayed lola\" \"he says it was a lead climb\" \"it was a chair\""
+        },
+        {
+          "you": "(Climb the pole for the big finish. Get stuck.)",
+          "them": [
+            {
+              "note": "You go up the pole at the end of the runway. Your sparkly harness catches on the bracket. You're stuck halfway, sideways, in heels, as the song ends."
+            },
+            "Oh my god. That's not even a climb. You're stuck on a pole. In front of the whole gym.",
+            "\"Hang tight, champ,\" Ben says. He walks up, unhooks you, and carries you off over his shoulder.",
+            {
+              "note": "The gym crowd chants \"BEN. BEN. BEN.\" He does a lap of the stage with you on his shoulder before he puts you down. Your wig is in his other hand."
+            },
+            "Corey, are you filming. Corey's filming."
+          ],
+          "after": "Georgie, to the gym chat: \"lola got stuck on the pole\" Corey: \"i have it from three angles\" Georgie: \"ben's calling it his first rescue\" Ben: \"it was\""
         }
       ],
       "debrief": "Everyone you used to try to impress turned up on the one night you were most yourself. That's terrifying and a bit perfect."
@@ -4780,6 +4871,24 @@ window.CONTENT = {
             "You look stunning, babe. Lola's got a good eye."
           ],
           "after": "Lucy, to Kayla: \"hamish is asleep in the veil\" \"he says lola's his favourite person now\" \"i'm not jealous. i'm a bit jealous\""
+        },
+        {
+          "you": "(Kayla has a dare list. You're on it.)",
+          "them": [
+            {
+              "note": "Kayla holds up her bachelorette dare list. Number nine: get the queen to tell the room about her worst date."
+            },
+            "Tell them about the tatami room. Lola. TELL THEM ABOUT THE TATAMI ROOM.",
+            "Don't. Babe, don't. Okay. Do.",
+            {
+              "note": "You tell a hundred people about the tatami room at Kayla's. Your voice goes up every time you get to the bit about your toes. Ruby's crying."
+            },
+            "\"Best story I've ever heard, sweetheart,\" Hamish says. \"Again. From the start.\"",
+            {
+              "note": "He makes you tell it again. The room makes you do the voice."
+            }
+          ],
+          "after": "Ruby, to the bachelorette chat: \"[voice memo] lola tells the tatami story\" \"[voice memo] lola tells it again because hamish asked\" Lucy: \"i was there both times. it was worse the second time\""
         }
       ],
       "debrief": "Going big in front of people who knew a quieter you is a kind of coming out too. You did it in Bordeaux."
@@ -4838,6 +4947,24 @@ window.CONTENT = {
             "she always wins. look at her feet."
           ],
           "after": "Jade, to Mel: \"riley's feet on that stage. next to his.\" Mel: \"a crime\" Jade: \"i'm still with riley. i'm just saying\""
+        },
+        {
+          "you": "(A heel snaps. Right in front of their table.)",
+          "them": [
+            {
+              "note": "Halfway down the runway the heel on your clear platform snaps. You go down on one knee in front of their table, one shoe on, coral toes out."
+            },
+            "\"Lose something, Cinderella?\" Riley says, and holds up the shoe.",
+            "riley don't. don't make him. RILEY",
+            {
+              "note": "Riley pats his knee. The room counts down from ten while you put your bare foot on it and he slides the broken shoe back on, very slowly. It doesn't fit with the heel gone."
+            },
+            "coral. size eleven. on my boyfriend's knee. i'm going to think about this for a long time",
+            {
+              "note": "You hobble off in one heel. Riley keeps the other bit."
+            }
+          ],
+          "after": "Jade, to Mel: \"he called him cinderella\" \"he did the whole shoe thing\" Mel: \"riley kept the heel\" Jade: \"its on our bookshelf mel\""
         }
       ],
       "debrief": "Your feet used to be the thing you hid. Now they're on a stage in clear platforms. That's a long way to come."
@@ -4893,6 +5020,22 @@ window.CONTENT = {
             "He's never been happier. I hate that you made him this happy."
           ],
           "after": "Olivia, to her sister: \"james did a death drop at f45 this morning\" Sister: \"lola's influence\" Olivia: \"lola's ruining my life\""
+        },
+        {
+          "you": "(Her sister takes the mic. She knows about 'man to man'.)",
+          "them": [
+            "\"Who wants to hear how Lola asked my sister's boyfriend if she could take her out again?\" her sister says into the mic. The room screams yes.",
+            "No. NO. Don't you dare.",
+            "\"Man to man,\" her sister says. \"She said man to man.\"",
+            {
+              "note": "James starts it. The whole bar chants \"MAN TO MAN\" at you while you stand in the red slip dress under the spotlight."
+            },
+            "\"Still keen, sweetheart?\" James says, grinning, and flexes. \"Man to man?\"",
+            {
+              "note": "You say \"no\" into the mic. Very small. The room cheers like you won something."
+            }
+          ],
+          "after": "Olivia, to her sister: \"you told the whole bar\" Sister: \"they asked\" Olivia: \"james chanted it. my boyfriend chanted man to man at my ex in a dress\" Sister: \"he's got it on the shirt now too\""
         }
       ],
       "debrief": "Facing the people who told you who you were before you knew it yourself takes nerve. You did it in cherry red."
@@ -4952,6 +5095,22 @@ window.CONTENT = {
             "It's a perfect impression. Ugh."
           ],
           "after": "Zoe, to Tash: \"he did kyle's voice all night\" Tash: \"kyle loved it\" Zoe: \"kyle wants a signed photo\""
+        },
+        {
+          "you": "(Bonus round. The room gets to ask the host one question.)",
+          "them": [
+            "\"Bonus round,\" Brooke says, standing up. \"Is the host straight?\"",
+            {
+              "note": "The whole room goes quiet and looks at you. You're holding the question cards in front of your chest like they'll help."
+            },
+            "He told me he was. In my car. I'd like to hear the answer too.",
+            "\"Final answer, Lola?\" Kyle says.",
+            {
+              "note": "You say \"pass\" into the mic. The room boos you, cheerfully. Brooke takes the point. For the rest of the night the scoreboard says 'LOLA: PASSED'."
+            },
+            "\"Tough question, champ,\" Kyle says, and pats your arm."
+          ],
+          "after": "Brooke, to Tash: \"we asked lola if he's straight\" Tash: \"and\" Brooke: \"he passed\" Zoe: \"thats an answer\""
         }
       ],
       "debrief": "The people who whispered about you got to see you own it out loud."
@@ -5009,6 +5168,23 @@ window.CONTENT = {
             }
           ],
           "after": "Sophie, to Kirra: \"he lip synced taylor at me\" Kirra: \"nathan knew the bridge\" Sophie: \"i'm aware. i'm reconsidering everything\""
+        },
+        {
+          "you": "(Kirra goes live. The comments are on the big screen behind you.)",
+          "them": [
+            {
+              "note": "Kirra puts her live stream up on the bar's big screen. The comments roll past behind you while you dance: 'is that the wickham guy', 'HES BACK', 'sophie's ex??', 'the toes 😭'."
+            },
+            "Kirra. Kirra turn it off. My manager follows you.",
+            {
+              "note": "Someone comments 'ask him if he's still straight'. The host reads it out."
+            },
+            "\"Go on, sweetheart,\" Nathan says. \"Tell the internet.\"",
+            {
+              "note": "You say \"no comment\" into the mic. The screen behind you fills with crying-laughing faces."
+            }
+          ],
+          "after": "Kirra, to Sophie: \"62k\" Sophie: \"62k what\" Kirra: \"watching. lola's trending\" Sophie: \"he said no comment to sixty two thousand people\""
         }
       ],
       "debrief": "Something that once felt like getting caught out is now something you do on purpose, under lights. That's growth."
@@ -5068,6 +5244,20 @@ window.CONTENT = {
             "\"I'm breathing,\" he says, not breathing."
           ],
           "after": "Bianca, to the girls: \"liam's still red\" Imogen: \"he asked if contour comes off\" Bianca: \"he wants to try it\""
+        },
+        {
+          "you": "(Bianca grabs the mic to tell everyone how it started.)",
+          "them": [
+            "\"On our second date this one told me he'd NEVER wear lip gloss,\" Bianca says into the mic. \"LOOK AT HER.\"",
+            {
+              "note": "She goes through every step: the tinted gloss, the nails, the skirt, the heels. The room cheers each one. You stand there and take it with your face in your hands."
+            },
+            "And guess who's at the bar. Jake's at the bar. Say hi to Jake, babe.",
+            {
+              "note": "Shay's cousin Jake raises his drink. You say \"hi, Jake\" in the smallest voice the mic has ever picked up. The whole bar goes \"awww\"."
+            }
+          ],
+          "after": "Bianca, to the girls: \"he said hi jake into the mic\" Shay: \"jake hasnt stopped smiling\" Imogen: \"he asked if lola does brunch\" Bianca: \"lola does brunch\""
         }
       ],
       "debrief": "This is the person she saw before you did. Being seen like that, out loud, in front of everyone, is the whole point."

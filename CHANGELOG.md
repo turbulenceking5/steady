@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-28
+- Story: every drag ending has a new, more mortifying fourth option. Your wig lands in Archie's lap and you have to say please to get it back, Lachlan makes you take your heels off at brunch, Steph reads the group chat out on the mic, Riley does the Cinderella thing with your broken heel, the trivia room asks if you're straight, and more.
 - Story: three new tickling chapters with a choice. Josh at Archie's work pool party, Theo at Hayley's birthday (Mia) and Sean in Mel's hot tub (Jade) grab your foot, and you choose to resist or give in to the giggles. Keeping a straight face keeps her interested; giggling, begging him to stop or just letting him keep going makes her fancy you less. The tickle chapters with Tayla, Olivia, Zoe and Sophie now work the same way.
 - Story: a drag-show ending for every girl, Archie included. Months later she's at a drag night with her new boyfriend and her friends, and the queen on stage is you, Lola Lilac.
 - Fixed: Jess and {bf} no longer lock again when a route you'd finished gets new chapters.
