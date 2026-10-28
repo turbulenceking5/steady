@@ -72,6 +72,8 @@ textarea { min-height: 130px; resize: vertical; }
 .write + button { margin-top: 4px; }
 .debrief { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
 .gaydar { margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
+.gaydar .meter + .meter { margin-top: 12px; }
+.gaydar .spark .fill { background: linear-gradient(90deg,#ff7eb3,#e0457b); background-size: auto; }
 .gaydar .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .gaydar .pct { font-size: 22px; font-weight: 800; color: var(--accent); }
 .gaydar .track { height: 12px; border-radius: 6px; background: var(--card); overflow: hidden; margin: 8px 0 4px; }
@@ -326,6 +328,7 @@ details summary { cursor: pointer; color: var(--muted); }
 
   // Teasing, never nasty: it's her read on you, and the joke's on how obvious it is.
   const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
+  const sparkLabel = (v) => v >= 80 ? "Already planning date two" : v >= 60 ? "Into you. Mostly." : v >= 40 ? "Cooling off. Fast." : v >= 20 ? "Sees you as a mate who's good with eyeliner" : v > 0 ? "Officially your gay best friend" : "Wants to set you up with her mate";
   function runConversation(view, convo, kind, header) {
     const run = Symbol(); view._run = run;
     view.innerHTML = header + '<div class="thread"></div><div class="choices"></div>';
@@ -362,10 +365,12 @@ details summary { cursor: pointer; color: var(--muted); }
 
     let endNote = convo.after; // a branch can carry its own closing note
     let gaydar = convo.gaydar; // dates: how gay she thinks you are (0-100); the deepest branch that sets it wins
+    let spark = convo.spark; // how into you she is; defaults to 100 - gaydar
     async function play(node) {
       choices.innerHTML = "";
       if (node !== convo && node.after) endNote = node.after;
       if (node !== convo && node.gaydar != null) gaydar = node.gaydar;
+      if (node !== convo && node.spark != null) spark = node.spark;
       for (const m of node.them || []) {
         const msg = typeof m === "string" ? { text: m } : m;
         if (msg.note) { // narration in in-person scenes: what she does, not what she says
@@ -396,9 +401,11 @@ details summary { cursor: pointer; color: var(--muted); }
         if (endNote) add("note", fill(endNote));
         if (gaydar != null) {
           const who = fill(convo.gaydarWho || convo.contact);
-          choices.insertAdjacentHTML("beforeend", `<div class="gaydar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${gaydar}" aria-label="How gay ${esc(who)} thinks you are"><div class="top"><b>How gay ${esc(who)} thinks you are</b><span class="pct">${gaydar}%</span></div><div class="track"><div class="fill"></div></div><span class="muted">${esc(gaydarLabel(gaydar))}</span>${convo.gaydarSays ? `<div style="margin-top:6px"><i>"${esc(fill(convo.gaydarSays))}"</i> <span class="muted">· ${esc(who)}</span></div>` : ""}</div>`);
-          const f = choices.querySelector(".gaydar .fill");
-          requestAnimationFrame(() => requestAnimationFrame(() => { f.style.width = gaydar + "%"; }));
+          const into = spark != null ? spark : Math.max(0, 100 - gaydar);
+          const bar = (cls, v, title, label) => `<div class="meter ${cls}" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${v}" aria-label="${esc(title)}"><div class="top"><b>${esc(title)}</b><span class="pct">${v}%</span></div><div class="track"><div class="fill" data-v="${v}"></div></div><span class="muted">${esc(label)}</span></div>`;
+          choices.insertAdjacentHTML("beforeend", `<div class="gaydar">${bar("gay", gaydar, `How gay ${who} thinks you are`, gaydarLabel(gaydar))}${bar("spark", into, `How into you ${who} is`, sparkLabel(into))}${convo.gaydarSays ? `<div style="margin-top:8px"><i>"${esc(fill(convo.gaydarSays))}"</i> <span class="muted">· ${esc(who)}</span></div>` : ""}</div>`);
+          const fills = choices.querySelectorAll(".gaydar .fill");
+          requestAnimationFrame(() => requestAnimationFrame(() => fills.forEach((f) => { f.style.width = f.dataset.v + "%"; })));
         }
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(convo.debrief)}</div>`);
         choices.insertAdjacentHTML("beforeend", '<div class="row"><button class="btn ghost again">Try different replies</button>' + (convo.next ? '<button class="btn next">Next chapter →</button>' : "") + "</div>");

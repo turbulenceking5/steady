@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-10-28
+- Story: a second bar after each date, "How into you she is". The gayer she thinks you are, the less she fancies you.
+- Story Part 1: four dates with Bianca. Every time she sees you she hypes you up to go a bit gayer (tinted gloss, pink nails, a lilac skirt, lashes and heels), and every time she's a bit less into you, until she's your gay best friend trying to set you up with Shay's cousin.
 - Story: no more waiting a day. Finish a chapter and the next one opens straight away, with a "Next chapter" button.
 - Story: the gaydar bar is cheekier, with teasing labels and a line from each girl ("Same sandals as me. Neater toes. Next.").
 - Story: much longer chapters with Archie (date night, the honest talk in person, a few weeks later), Nicole, Jess's group chat, and every Part 2 chapter with {bf}.

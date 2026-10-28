@@ -1568,6 +1568,178 @@ window.CONTENT = {
       debrief: "Getting caught before you're ready is one of the worst ways for it to come out. Being angry, lying, begging or saying it straight are all things people do in that moment. What matters is what you do next, and who you're honest with after."
     },
     {
+      id: "c6j", gaydar: 25, gaydarSays: "He smelled like the women's counter at Myer. Not complaining. Yet.", title: "Rooftop", contact: "Bianca", part: "Part 1: Before",
+      intro: "You met Bianca at a housewarming in Teneriffe. She laughed at all your jokes and put her number in your phone herself. First date: drinks at a rooftop bar in the CBD. You wore a fitted black shirt, clear gloss, a clear coat on your nails, and a spritz of perfume from the women's counter you'd been too scared to wear anywhere.",
+      them: ["home 🥰", "that was so fun", "ok random but you smelled SO good. what is that, i need it for myself"],
+      replies: [
+        { you: "Ha. It's actually a women's perfume.", gaydar: 35,
+          them: ["wait really", "ok honestly that's kind of hot? like confident", "most guys i date smell like lynx africa and fear"],
+          replies: [
+            { you: "I wore a bit of gloss too. Did you notice?", gaydar: 40,
+              them: ["omg yes i did", "i wasn't going to say anything in case you were embarrassed", "it looked good though!! you should try a tinted one next time. like a pinky nude. it'd suit you"],
+              replies: [
+                { you: "You think?", them: ["100%", "i'll send you the one i use", "ok this is turning into a makeup chat on a date text lol. we're doing great", "second date? 😊"] },
+                { you: "Maybe I'll leave the makeup to you.", gaydar: 35, them: ["haha fair", "but the offer stands", "second date? 😊"] }
+              ] },
+            { you: "Is that weird?", them: ["no?? smell good, who cares where it's from", "i'd literally wear your cologne if it smelled nice. same thing", "anyway. second date? i want to see you again 😊"] }
+          ] },
+        { you: "Just something I picked up. Glad you liked it.",
+          them: ["liked it is an understatement", "i kept leaning in. i hope that wasn't obvious lol", "can i see you again?"],
+          replies: [
+            { you: "It was a bit obvious. I liked it.", them: ["😳", "ok good", "next weekend? you pick"] },
+            { you: "Yeah. Next weekend?", them: ["yes!! 🥰", "wear the same perfume or i'm cancelling"] }
+          ] },
+        { you: "It's my secret.",
+          them: ["ugh fine. mysterious", "i'll get it out of you on date two", "there is a date two right? 😏"],
+          replies: [{ you: "There's a date two.", them: ["good 😊 night {name} x"] }] }
+      ],
+      after: "Bianca, to her friend Shay: \"date was SO good. he's funny. and he smelled amazing.\" Shay: \"what did he smell like\" Bianca: \"...honestly? kind of like me\""
+    },
+    {
+      id: "c6k", gaydar: 60, gaydarSays: "Pink nails and a cropped knit. I'm not mad. I'm just… recalibrating.", title: "Gelato", contact: "Bianca", part: "Part 1: Before", irl: true,
+      intro: "Second date. Gelato at South Bank on a warm Saturday. You took her advice: tinted gloss, a pinky nude. You also painted your nails soft pink and wore a cream cropped knit with your high-waisted jeans. On the walk over you saw yourself in a shop window and liked what you saw.",
+      them: [
+        { note: "She hugs you hello. It's a nice hug. It's a shorter hug than last time." },
+        "Oh my god. The gloss. You actually did it!",
+        { note: "She grabs your hand, but only to turn it over and look at your nails." },
+        "And your NAILS. Okay, who are you? This colour is so good on you. Is that the Essie one? It is, isn't it."
+      ],
+      replies: [
+        { you: "It is. I picked it because of you.", gaydar: 65,
+          them: [
+            "Stop. I'm honoured.",
+            "Okay, can I be honest? You suit this way more than the black shirt. Like, the black shirt was fine. This is you. You look so much more relaxed.",
+            "You know what you'd look amazing in? A little skirt. Like a pleated one. With those legs? Babe."
+          ],
+          replies: [
+            { you: "A skirt? Really?", gaydar: 70,
+              them: [
+                "Yes! Don't look at me like that. Guys wear skirts. Harry Styles wears dresses on magazine covers.",
+                "We should go shopping. Like next weekend. I know exactly which shop in the city.",
+                { note: "She's already got her phone out, showing you skirts. She hasn't looked at your face in a minute." },
+                "This one. Or this one. Ooh. Or this one in lilac."
+              ],
+              replies: [
+                { you: "The lilac one.", gaydar: 75, them: ["I KNEW you'd say lilac", "Okay, it's a date. A shopping date. Which is still a date. Right?", { note: "She says \"right?\" like she isn't sure either." }] },
+                { you: "Isn't this meant to be a date, not a shopping trip?", them: [{ note: "She laughs, then stops." }, "Oh. Yeah. Sorry. I got carried away.", "It is a date. Totally. Do you want to... walk along the river or something?", { note: "She puts her phone away. She doesn't take your hand." }] }
+              ] },
+            { you: "Let's not get carried away.", them: ["Okay okay. Baby steps.", "But I'm putting it on the list. The skirt list. Which I just started. In my head."] }
+          ] },
+        { you: "It was just a dare from Dani.", gaydar: 55,
+          them: [
+            "A dare. With matching gloss.",
+            { note: "She raises an eyebrow and licks her gelato." },
+            "Okay. Well, Dani has good taste. You should keep losing her dares.",
+            "Honestly, you look really good. Like, better than me, which is rude."
+          ],
+          replies: [
+            { you: "You look great too.", them: ["Thanks babe", { note: "She's never called you babe before. It doesn't sound like a girlfriend babe. It sounds like a friend babe." }] },
+            { you: "Okay, it wasn't a dare. I just like it.", gaydar: 65, them: ["I know 😊", "Then wear more of it. Seriously. You lit up when I noticed your nails."] }
+          ] },
+        { you: "(Lean in to kiss her.)", gaydar: 65,
+          them: [
+            { note: "She turns at the last second and you get her cheek." },
+            "Sorry. Sorry, I don't know why I did that.",
+            "It's not you. Well. I don't know. It felt a bit like kissing one of my friends? Which sounds so bad.",
+            "Can we just... have gelato and walk? I really like hanging out with you. I just don't know what this is anymore."
+          ],
+          replies: [
+            { you: "Yeah. Gelato and a walk.", them: ["Okay. Good.", "And for the record, the gloss is perfect. I'd steal it."] },
+            { you: "Was it the nails?", them: ["No! The nails are cute.", "It's... everything together, I think. You look like someone I'd go out dancing with. Not someone I'd go home with. Does that make sense?"] }
+          ] }
+      ],
+      after: "Bianca, to Shay: \"second date was fun.\" Shay: \"just fun?\" Bianca: \"he had pink nails and tinted gloss and honestly he looked better than me.\" Shay: \"so is he gay\" Bianca: \"i don't know. i kind of want to take him shopping more than i want to kiss him. is that a sign\" Shay: \"bianca that's THE sign\""
+    },
+    {
+      id: "c6l", gaydar: 85, gaydarSays: "I did his lashes. He did mine better. We're not dating, are we.", title: "Getting ready at hers", contact: "Bianca", part: "Part 1: Before", irl: true,
+      intro: "Third date, sort of. Bianca invited you over to get ready before her friend Shay's birthday in the Valley. You came over in the lilac pleated skirt she helped you pick, a white baby tee and your pink nails. She opened the door and screamed.",
+      them: [
+        "OH MY GOD. You wore it. You actually wore it.",
+        { note: "She pulls you inside by both hands and spins you around like you're her doll." },
+        "Okay, sit. Sit down. I'm doing your makeup. Don't argue. I've been wanting to do this since the rooftop.",
+        "Lashes? I'm thinking lashes. And a bit of blush. And maybe a liner, just a tiny wing."
+      ],
+      replies: [
+        { you: "Go for it. Full glam.", gaydar: 90,
+          them: [
+            "Full glam. Okay. Okay okay okay.",
+            { note: "She has a ring light. She has three palettes out. She's humming." },
+            "Close your eyes. Don't blink. Okay, open. Oh my god. {name}. Look.",
+            { note: "She turns you to the mirror. You look like someone you've been trying to meet for years." },
+            "You look incredible. Like, I'm actually a bit annoyed. Now shoes. You can't wear sneakers with that. What size are you? I've got heels."
+          ],
+          replies: [
+            { you: "Give me the heels.", gaydar: 95,
+              them: [
+                "YES. Okay, these. Block heel, you'll survive.",
+                { note: "She kneels down and does up the strap for you, like a friend does before a night out." },
+                "Babe, I have to say something and you can't be weird about it.",
+                "This doesn't feel like a date. It feels like getting ready with one of my girls. And honestly? I love it. I love this more than any date I've been on this year."
+              ],
+              replies: [
+                { you: "I think I love this more too.", gaydar: 100, them: ["I know you do. I can see it", "So can we just... be this? Me and you, getting ready, going out?", "And then you find a guy who loses his mind when he sees you in those heels"] },
+                { you: "But I thought you liked me.", them: ["I do like you. So much.", "I just stopped fancying you somewhere around the pink nails, and started wanting to be your best friend instead", "Is that horrible? It feels like a promotion to me"] }
+              ] },
+            { you: "Maybe not the heels. My ankles.", them: ["Fair. Flats. Gold ones. Here", "But next time, heels. I'm teaching you. Shay will help"] }
+          ] },
+        { you: "Just a bit. I don't want to look too much.",
+          them: [
+            "Too much for who?",
+            "You're wearing a lilac skirt, babe. The 'too much' ship has sailed and honestly it looks so good on you.",
+            { note: "She does a little mascara, a bit of blush. Then she sits back and looks at you for a long time." },
+            "Can I ask you something? You can tell me to shut up."
+          ],
+          replies: [
+            { you: "Ask.",
+              them: ["Do you want to be dating me? Or do you want to be... this? With a guy?", "Because I think I've been encouraging you to be more you every time I see you, and every time you get more you, you get less into me. And I get less into you. And I don't even mind."],
+              replies: [
+                { you: "I don't know.", gaydar: 85, them: ["That's okay", "But I think you do. I think we both do"] },
+                { you: "With a guy. I think.", gaydar: 100, them: [{ note: "She grins and hugs you so hard the mascara wand ends up in your hair." }, "I KNEW IT. I mean. Okay. Thank you for telling me.", "Right. Lashes. If you're coming out to me, you're doing it in lashes"] }
+              ] },
+            { you: "Shut up.", them: ["Rude. Accurate. Okay, lashes then."] }
+          ] },
+        { you: "I thought this was a date.",
+          them: [
+            { note: "She stops with the lash glue in her hand." },
+            "It... is? Isn't it?",
+            "Honestly? I think I stopped thinking of it like that two dates ago. Around the gelato. Around the nails. I didn't say anything because I didn't want to make it weird.",
+            "Do you still fancy me? Like, actually? Be honest."
+          ],
+          replies: [
+            { you: "Yes.", them: ["Okay.", { note: "She doesn't sound like she believes you, and she doesn't sound sad about it." }, "Then why do you look happiest when I'm talking about your outfit, and not when I'm talking about us?"] },
+            { you: "...not really.", gaydar: 90, them: ["Yeah. Me neither. Not like that.", "But I REALLY like you. Just as, like, my person to get ready with. Is that okay?"] }
+          ] }
+      ],
+      after: "At Shay's birthday, three different girls ask where you got your skirt. One of them asks Bianca if you're single. Bianca says \"he's single, but you're not his type.\" She winks at you across the bar."
+    },
+    {
+      id: "c6m", gaydar: 95, gaydarSays: "Went from 'is he into me' to 'is he gayer than my hairdresser' in four dates. He is.", title: "Bianca's girls 💅", contact: "Bianca's girls 💅", gaydarWho: "Bianca", part: "Part 1: Before",
+      intro: "The morning after Shay's birthday. Bianca has added you to her group chat with Shay and Imogen.",
+      them: [{ from: "Bianca", text: "ok everyone say hi to {name} 💅" }, { from: "Shay", text: "HI the skirt king" }, { from: "Imogen", text: "the lashes were insane last night. who did them" }, { from: "Bianca", text: "me obviously. but he could do them himself next time. i watched him fix mine" }, { from: "Shay", text: "so are you two like. still dating??" }, { from: "Bianca", text: "lol" }, { from: "Bianca", text: "{name} you answer" }],
+      replies: [
+        { you: "I think I'm more one of the girls now.", gaydar: 100,
+          them: [{ from: "Bianca", text: "THANK YOU. that's what i've been saying" }, { from: "Bianca", text: "babe i'm not even sad. i was into you on the rooftop. then you got your nails done and i was like. oh he's going to be my favourite person to go out with" }, { from: "Imogen", text: "so we're allowed to set him up now?" }, { from: "Shay", text: "my cousin's gay and he's SO nice. jake. plays rugby. would die for a man in a pleated skirt" }],
+          replies: [
+            { you: "...Show me a photo of Jake.", them: [{ from: "Shay", text: "OMG" }, { from: "Bianca", text: "WE ARE DOING THIS" }, { from: "Imogen", text: "wear the lilac skirt. jake needs to see the lilac skirt" }] },
+            { you: "Slow down. I just got here.", them: [{ from: "Bianca", text: "fair. we'll ease you in" }, { from: "Bianca", text: "step one: next weekend, the Wickham. you, me, heels this time. i'll hold your bag" }] }
+          ] },
+        { you: "We're still dating. I think.",
+          them: [{ from: "Shay", text: "bianca??" }, { from: "Bianca", text: "babe 😭 i love you" }, { from: "Bianca", text: "but last night you spent forty minutes in the bathroom doing imogen's contour and zero minutes trying to kiss me" }, { from: "Imogen", text: "the contour was very good though" }, { from: "Bianca", text: "i'm not breaking up with you. i'm promoting you. bestie. it's better, i swear" }],
+          replies: [
+            { you: "Did I just get friend-zoned in a group chat?", them: [{ from: "Bianca", text: "gay-best-friend-zoned. it's a much nicer zone" }, { from: "Shay", text: "the snacks are better here" }] },
+            { you: "Okay. Fair. That's fair.", gaydar: 100, them: [{ from: "Bianca", text: "i knew you'd say that" }, { from: "Bianca", text: "now. jake." }] }
+          ] },
+        { you: "Are you saying I'm gay?",
+          them: [{ from: "Imogen", text: "👀" }, { from: "Shay", text: "i'm not saying anything i'm just eating toast" }, { from: "Bianca", text: "i'm saying you went from gloss to a skirt and lashes in four weeks and every time i hyped you up you got happier and i got less into you" }, { from: "Bianca", text: "and i'm saying it like a friend. i'll be the first one at pride with you if you want" }],
+          replies: [
+            { you: "I'm not gay.", them: [{ from: "Bianca", text: "ok babe" }, { from: "Shay", text: "ok babe" }, { from: "Imogen", text: "ok babe" }, { from: "Bianca", text: "wickham next saturday. wear the heels. purely platonic straight-guy reasons" }] },
+            { you: "...yeah. I think I am.", gaydar: 100, them: [{ from: "Bianca", text: "🥹🥹🥹" }, { from: "Shay", text: "WELCOME" }, { from: "Imogen", text: "i'm crying on the bus" }, { from: "Bianca", text: "i'm so proud of you. and i'm taking full credit for the skirt" }] }
+          ] }
+      ],
+      after: "Bianca, privately, to you: \"for the record. the rooftop was real. i really liked you. i just like THIS you more, even if this you isn't for me. now go find a guy who'll do up your heel straps x\"",
+      debrief: "Sometimes the people who encourage you to be more yourself are the ones who see first that you're not theirs. Losing a date and gaining a friend who hypes you up is a pretty good trade."
+    },
+    {
       id: "c7", title: "The group chat", contact: "Jess", part: "Part 1: Before",
       them: ["ok i need to tell you something and i don't want you to be upset", "hannah's in a group chat with my friend kate and kate screenshotted this to me", "\"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\"", "and sam said mia rang her basically saying the same thing", "and something about a group chat with the netball girls??", "and my friend from hinge says her friend ella went on brunch with a guy in a dress and i'm like. was that you", "also someone called lucy follows me now?? and zoe's friend brooke liked my post from 2019. it's giving investigation", "i'm not saying anything. i'm just asking. are you ok?"],
       replies: [

@@ -21,6 +21,10 @@ Rules for how people text in the Story, Messages and Practice, and above all for
 - Use `{ note }` lines for what she does (puts her coffee down, looks at his toes, goes quiet). Keep them short and physical, never what she's thinking.
 - Break-ups give him lots of different reactions: denial, crying, begging for another chance, getting angry, joking, going quiet, admitting it, asking to stay friends. Each girl answers each one in her own way, and she doesn't change her mind.
 
+## Encouragement and losing interest
+- Some girls (Bianca most of all) encourage him to go gayer the more they suspect: a tinted gloss, a colour on his nails, a skirt, lashes, heels. Their attraction drops as their suspicion rises, and the way they talk changes with it: flirty, then "babe" in a friend way, then fully one of the girls.
+- The encouragement is genuine hype, never a joke at his expense. Losing interest shows in small physical things (a shorter hug, she reaches for his hand only to look at his nails, she turns her cheek).
+
 ## His replies
 - Keep his options human too: awkward, defensive, a bit snarky, apologetic, or honest. They aren't speeches and they don't fix the situation.
 - Every reply is still a fine reply. No scoring.
