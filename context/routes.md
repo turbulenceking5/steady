@@ -82,7 +82,7 @@ Hinge. Primary teacher. A very sharp cat-eye. Rival: Hayden. Ends up with: Conno
 | 4 | `c6b` | Ladies | Ella (in person) | 90 |
 | 5 | `ella-beach` | Kings Beach | Ella (in person) | 93 |
 | 6 | `ella-barefoot` | The drive home | Ella (in person) | 94 |
-| 7 | `ella-tickle` | The surf club | Ella (in person) | 95 |
+| 7 | `ella-tickle` | The surf club (sunscreen) | Ella (in person) | 95 |
 | 8 | `ella-end` | Ella and Connor | Ella | 99 |
 
 Boy-clothes path (after `ella-1` in boy clothes, replaces the rest of the route):

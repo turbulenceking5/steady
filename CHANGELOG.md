@@ -1,6 +1,11 @@
 # Changelog
 
 ## 2026-10-29
+- Story: on every date the girls visibly go off you as you look gayer: shorter hugs, a hand that goes to her wine instead of yours, sitting at the other end of the couch, sitting up when the other guy walks in. The more femme the outfit, the more obvious it is.
+- Story: the girls' inner thoughts are rewritten to say what they really think of you, not what happened. Whether they still fancy you, what puts them off, who they'd rather be with.
+- New Confirmations tab next to Story: lines like "You are GAY", "You are GAY, Calum" and "Everyone knows you are gay" fade in and out all over the screen.
+- Story: the surf club with Hayden is now a sunscreen scene instead of tickling. He takes his time with your small feet, you go red and can't make yourself stop him, and Ella watches it click how gay you are.
+- Story: fixed Jade's one-slide scene after Mel's birthday, which said you and Jade were the same size.
 - Story: six new dates alone with her where she tickles your feet herself: Mia grabs your foot at the scary bit, Jade tests the nail lady's theory over chips, Olivia paints your toes for the boat photos, Lucy checks your reflexes, Zoe runs Brooke's sport lightning round, and Sophie cross-examines you with a foot file.
 - Story: later chapters remember how the big scene went. If you told them, Hannah's friends are proud of you and Steph's started a list of guys for you. If you cried, Bec checks your eyeliner and Olivia's sister still feels bad. If you dodged it, Georgie kept number nine and Kayla's pool is still open.
 - Story: the chapters after each big scene now follow on from it. You're not really dating her any more but she still invites you, nobody calls you her date, and Hannah no longer says she doesn't know.

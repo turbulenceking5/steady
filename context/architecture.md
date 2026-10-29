@@ -36,3 +36,6 @@ Nothing leaves the device. Settings has export, import and erase (all `st_` keys
 
 ## Testing
 See [testing.md](testing.md).
+
+## Tabs and Confirmations
+Under the header, a Story / Confirmations tab row (`showTab()`, remembered as `st_tab`). Confirmations fills `#confBox` with lines from `CONTENT.confirmations` (`{name}` filled): `confSpawn()` adds one every ~0.5 to 1.2s, at a random spot that doesn't overlap anything showing (it skips a turn when the box is too crowded), never the same line twice on screen, up to seven at once. Each fades in, stays 2.6 to 5.2s and fades out (no fade with reduced motion). It only runs while the tab is showing, the page is visible and Hide is off.

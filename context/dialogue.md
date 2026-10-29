@@ -59,3 +59,6 @@ Inner thoughts (`thinks`) are messy: they jump around, go petty, end mid-way or 
 
 ## Confrontations and tears
 The big chapters happen in front of her friends, and no two come out the same way. Each has a path where the embarrassment gets too much and he cries. The moment he does, nobody laughs at him: the girls look after him (a hoodie, tissues, a drink, fixing his mascara, sitting with him) and from then on he's one of the girls, not a boyfriend. Each tears scene tips over and gets comforted differently, and the chapter ends with a plain `debrief`.
+
+## Losing attraction
+On every date the girl visibly goes off him as he looks gayer and more femme. Each outfit's `them` ends with her reaction to the look: a face she can't hide, a shorter hug, her hand going to her wine instead of his, standing half a step away, sitting up straighter when the rival walks in. The more femme the outfit, the plainer it is. Chapters without an outfit pick have one such beat near the start. Show it in what she does, not in narration about what it means.
