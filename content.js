@@ -1642,84 +1642,388 @@ window.CONTENT = {
     {
       "id": "c5",
       "route": "hannah",
-      "gaydar": 85,
-      "gaydarSays": "Lip tint, mascara, and eyes on the bartender all night. Do the maths.",
-      "title": "The wine bar",
+      "title": "Two truths",
       "contact": "Hannah",
-      "intro": "Third date. Drinks at a wine bar in New Farm. You wore a pink knit, a berry lip tint, mascara, your rings and fresh nail polish. She clocked it the second she sat down. The conversation was fine. Polite. She checked her phone a lot. You spent more time than you meant to talking to the bartender about his jacket. She left at 8:40 and said she had an early start.",
+      "irl": true,
+      "gaydar": 85,
+      "gaydarSays": "Nobody at the table even had to think about it. I'm sorry but nobody did.",
+      "intro": "Third date, sort of. Hannah's having drinks with Kate and two of the girls from her clinic at a wine bar in New Farm, and she said come, meet them. You wore a pink knit, a berry lip tint, mascara, your rings and fresh nails. On the way in you asked the bartender where his jacket was from. Acne Studios. Hannah heard. Nat from run club is here, and a physio who does hands. Two bottles in, Kate decides you're all playing two truths and a lie.",
       "outfits": [
         {
-          "label": "A plain tee and just a berry lip tint",
-          "thinks": "He'd toned it down, I could tell he'd tried. Navy tee, normal jeans. And then a berry lip, like he couldn't help himself.",
-          "gaydar": -10,
-          "intro": "Third date. Drinks at a wine bar in New Farm. You played it safe: a navy tee, jeans, and just a berry lip tint. It's barely anything. She clocked it the second she sat down anyway. The conversation was fine. Polite. She checked her phone a lot. You spent more time than you meant to talking to the bartender about his jacket. She left at 8:40 and said she had an early start."
+          "label": "A navy tee, jeans, rings, nude nails, lip tint and a bit of mascara",
+          "gaydar": -8,
+          "intro": "Third date, sort of. Hannah's having drinks with Kate and two of the girls from her clinic at a wine bar in New Farm, and she said come, meet them. You kept it simple: a navy tee, jeans, your rings, your nude nails, a berry lip tint and a bit of mascara you nearly didn't do. On the way in you asked the bartender where his jacket was from. Acne Studios. Hannah heard. Nat from run club is here, and a physio who does hands. Two bottles in, Kate decides you're all playing two truths and a lie.",
+          "thinks": "Navy tee and jeans, so I thought okay, he's toning it down for my friends. Then he sat down and Kate looked at his mouth and went 'oh is that tint' before she even said hi."
         },
         {
           "label": "Pink knit, lip tint, mascara, rings, fresh nails",
-          "thinks": "Pink knit, mascara, rings, and his lips were the exact berry I wear in winter. He looked great. I wanted to ask what shade it was, and that's when I knew I wasn't on a date."
+          "thinks": "Pink knit. Kate said 'cute' to him before she said hi to me, and she says cute to the girls, she doesn't say it to my dates."
         },
         {
           "label": "Pink knit, lip tint, mascara, rings, pearls and little heeled boots",
-          "thinks": "The boots made him taller than me, and I'm not short. I had to look up at a guy in pearls to say hello, and I thought, okay. Okay then.",
           "gaydar": 5,
-          "intro": "Third date. Drinks at a wine bar in New Farm. A pink knit, a berry lip tint, mascara, your rings, fresh nail polish, a string of pearls and little heeled ankle boots that made you taller than her. She looked at the boots, then the pearls, then the lip tint, in that order. The conversation was fine. Polite. She checked her phone a lot. You spent more time than you meant to talking to the bartender about his jacket. She left at 8:40 and said she had an early start.",
+          "intro": "Third date, sort of. Hannah's having drinks with Kate and two of the girls from her clinic at a wine bar in New Farm, and she said come, meet them. A pink knit, a berry lip tint, mascara, your rings, fresh nails, a string of pearls and the little heeled ankle boots that make you taller than her. On the way in you asked the bartender where his jacket was from. Acne Studios. Hannah heard. Nat from run club is here, and a physio who does hands. Two bottles in, Kate decides you're all playing two truths and a lie.",
           "them": [
-            "also the pearls were a lot ngl"
-          ]
+            {
+              "note": "Kate looks at the pearls, then at Hannah, and mouths \"pearls\" across the table."
+            }
+          ],
+          "thinks": "Pearls. And the little boots again so he was taller than me, again. Nat asked where the boots were from before I'd got my jacket off and I just sat down and poured."
         }
       ],
       "thinks": [
-        "I knew by the first glass. I stayed for the second one because I'd already paid for parking and I wasn't paying eighteen dollars for one wine.",
-        "He talked to the bartender about that jacket for ages. I read the whole wine list. Twice. I know every rosé they have now.",
-        "I'm not even angry with him. I'm annoyed at myself for buying a new top for it.",
-        "In the car I texted Jess \"your friend is gay\". Deleted it. Typed \"call me\". Sent that."
+        "The game was Kate's idea. I said don't, he's coming, and she said that's the point, and I didn't fight her that hard. I'm not proud of that.",
+        "I'd paid eighteen dollars for parking and I'd done my hair, which I never do on a Thursday, and he was sitting on the bar stool with his knees together and his rings clicking on the glass.",
+        "I kept thinking I have to tell Jess something tomorrow and I didn't know what."
       ],
+      "debrief": "Getting read by a whole table at once is a lot. You got through it, and once it landed, those girls were on your side.",
       "them": [
-        "hey",
-        "im just going to say it because im 31 and i cant be bothered doing the polite version",
-        "i dont think we should see each other again"
+        {
+          "note": "Kate's sorted the rules already. Two truths and a lie, everyone votes at once, and whoever gets caught drinks."
+        },
+        {
+          "from": "Kate",
+          "text": "Okay, me first. I've been to Bali four times. I've never had a filling. I once kissed one of Dylan's friends at a christening."
+        },
+        {
+          "from": "Nat",
+          "text": "Filling. You had one in March, you cried in my car."
+        },
+        {
+          "from": "Kate",
+          "text": "Oh my god. Fine. Drink."
+        },
+        {
+          "note": "Nat gets caught straight away too. The physio who does hands gets away with hers and looks smug about it. Then everyone looks at you."
+        },
+        "Okay, your go. No because make it hard, Kate's like, a professional at this.",
+        {
+          "from": "Kate",
+          "text": "I am. Go."
+        }
       ],
       "replies": [
         {
-          "you": "Oh. Okay. Can I ask why? I thought tonight was going okay. I mean, I know I was a bit chatty with the bartender, but he was really sweet.",
+          "you": "Okay. I've never broken a bone. I've been to Paris. I'm straight.",
           "them": [
-            "he was really sweet",
-            "lol ok",
-            "you talked to him about his jacket for like 40 min {name}. you asked if it came in other colours",
-            "and i paid $18 for parking and got dressed up and you had more on your face than me. again",
-            "its more every time",
-            "do whatever you want with it but im not dating a guy who looks at the bartender like that"
+            {
+              "note": "Nobody waits. Kate's hand goes up first, then Nat's, then the hands physio's, still holding her glass."
+            },
+            {
+              "from": "Kate",
+              "text": "Straight."
+            },
+            {
+              "from": "Nat",
+              "text": "Straight. Sorry, babe."
+            },
+            {
+              "note": "You look at Hannah."
+            },
+            "Yeah. It's the straight one.",
+            "Sorry. I'm not going to sit here and pretend. It's my vote too."
           ],
           "replies": [
             {
-              "you": "Like what? I wasn't looking at him like anything. It was a really good jacket. It was Acne Studios, Hannah. You don't see that in New Farm.",
+              "you": "Wrong. You all drink. The lie was Paris, I've never been.",
               "them": [
-                "oh my god",
-                "youre doing it again",
-                "ok im going. good luck"
-              ],
-              "after": "She leaves you on read. You look the jacket up at 11pm anyway. It's $1,400."
-            },
-            {
-              "you": "Okay. That's fair. I'm sorry, Han. I didn't mean to make you feel like that. You were really nice to me.",
-              "them": [
-                "you were nice too. you are nice",
-                "you just dont want to go out with me. i dont think you want to go out with any girl tbh",
-                "sorry. thats just what it looked like"
+                {
+                  "from": "Kate",
+                  "text": "Wait. He's actually saying it's true."
+                },
+                {
+                  "note": "Kate puts her glass down. The hands physio looks at her coaster."
+                },
+                "Okay.",
+                "No because... okay. Fine. Kate, drink.",
+                {
+                  "from": "Kate",
+                  "text": "I'm not drinking for that."
+                },
+                {
+                  "note": "Hannah drinks anyway. Then she gets her phone out and looks at it under the table."
+                }
               ],
               "replies": [
                 {
-                  "you": "What's that supposed to mean? I'm not gay, if that's what you're saying.",
+                  "you": "I am, Han. I don't know why that's so hard to believe.",
+                  "gaydar": 87,
+                  "spark": 12,
                   "them": [
-                    "i didnt say gay",
-                    "anyway take care {name}"
+                    "It's not hard. That's sort of the problem.",
+                    "I'm sorry, I did two years of pretending with a guy once. I'm not doing it again at a wine bar in front of Nat.",
+                    {
+                      "from": "Nat",
+                      "text": "Leave me out of it."
+                    },
+                    {
+                      "note": "Kate starts talking about her housewarming. Nobody looks at you for a while. When the bill comes Hannah splits it five ways, to the cent."
+                    }
+                  ],
+                  "after": "Later, Hannah, in a group chat with Kate: \"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\" Kate: \"he said straight was a truth\" Hannah: \"i know kate i was there\""
+                },
+                {
+                  "you": "Okay! Kate, your go again.",
+                  "gaydar": 88,
+                  "spark": 8,
+                  "them": [
+                    {
+                      "from": "Kate",
+                      "text": "No no. You're out. Next."
+                    },
+                    {
+                      "from": "Hands physio",
+                      "text": "Can I do one? Two truths and a lie. I've done a marathon. I can't whistle. I once dated a straight guy who wore lip tint."
+                    },
+                    {
+                      "from": "Kate",
+                      "text": "Lie. Obviously the lie."
+                    },
+                    {
+                      "note": "The table cracks up. Hannah laughs too, into her glass, and then stops and looks at you, and then laughs again a bit."
+                    }
+                  ],
+                  "after": "Hannah, to Kate, in the car park: \"you didnt have to do the lip tint one\" Kate: \"that was her not me\" Hannah: \"you laughed the loudest\" Kate: \"so did you han\""
+                }
+              ]
+            },
+            {
+              "you": "Wow. Unanimous. Fine. FINE. I'll drink.",
+              "thinks": [
+                "When he picked up the glass I nearly had rosé come out my nose. Then I thought, oh, so that's it. Three dates and a wine and that's it.",
+                "I'm sorry but I was relieved. My calves were wrecked from run club and I'd been sitting there all night trying to work out if I was allowed to say it.",
+                "Kate's going to say she knew first. She didn't. I knew at the coffee, with the earrings."
+              ],
+              "them": [
+                {
+                  "note": "You drink. The whole glass. Kate screams so loud the bartender looks over."
+                },
+                {
+                  "from": "Kate",
+                  "text": "He drank! He DRANK."
+                },
+                {
+                  "from": "Nat",
+                  "text": "That's a confession, that's like legally a confession."
+                },
+                "No because nobody even made him. He didn't have to drink.",
+                "{name}. Did you just drink to that."
+              ],
+              "replies": [
+                {
+                  "you": "I did. You got it. It's the straight one. I'm gay.",
+                  "gaydar": 100,
+                  "spark": 4,
+                  "them": [
+                    {
+                      "note": "Kate grabs your arm across the table."
+                    },
+                    {
+                      "from": "Kate",
+                      "text": "Oh my GOD. Okay. Hi. Hi, new friend."
+                    },
+                    "Okay.",
+                    "I'm sorry, I knew at the coffee. With the Claire's earrings. I said it to Jess and she said he's just observant.",
+                    {
+                      "note": "She laughs, properly, the first time tonight, and pushes the bottle across to you."
+                    },
+                    "Have another one. You're not driving and I'm not, like, having you on my conscience. Nat, you can take him shopping now. I said you could."
+                  ],
+                  "after": "Hannah, to Kate, at midnight: \"he just SAID it\" Kate: \"i know i was there\" Hannah: \"i feel weird\" Kate: \"good weird?\" Hannah: \"i dont know. relieved weird. also i fancied a gay guy for three dates and my calves hurt\""
+                },
+                {
+                  "you": "I drank because I'm thirsty. Next question.",
+                  "gaydar": 95,
+                  "spark": 6,
+                  "them": [
+                    {
+                      "from": "Nat",
+                      "text": "He's thirsty."
+                    },
+                    {
+                      "note": "The hands physio puts her head down on the table."
+                    },
+                    "Okay, I'm not touching that. Kate. Go again. I can't look at him.",
+                    {
+                      "from": "Kate",
+                      "text": "Two truths and a lie. Hannah's date is thirsty. Hannah's date is..."
+                    },
+                    "Kate.",
+                    {
+                      "note": "For the rest of the night Kate calls you \"thirsty\" and Hannah doesn't tell her to stop."
+                    }
+                  ],
+                  "after": "Kate, to Hannah, later: \"he's actually so funny\" Hannah: \"i know\" Kate: \"like i'd go out with him\" Hannah: \"no you wouldnt\" Kate: \"no i wouldnt lol\""
+                }
+              ]
+            },
+            {
+              "you": "...Is it that obvious?",
+              "thinks": [
+                "I didn't know he was going to cry. I swear. Kate didn't either, she went white.",
+                "Nat got to him first, which, of course she did. She's the one we give the patients who cry. I just sat there holding a napkin.",
+                "His mascara barely moved. Mine would have been at my chin.",
+                "By the second glass Kate was telling him about her ex and Nat was showing him her shoes on her phone and I was just sitting there eating olives. He wasn't my date. He was at drinks."
+              ],
+              "them": [
+                {
+                  "note": "The table goes soft for a second. Nat says \"aw\" into her glass."
+                },
+                "Kind of? Yeah. Sorry. Like physically, you're...",
+                {
+                  "note": "She does a little wave at all of you, from your hair down to your hands."
+                },
+                {
+                  "from": "Kate",
+                  "text": "Wait."
+                },
+                {
+                  "from": "Kate",
+                  "text": "Wait, does Jess know?"
+                },
+                {
+                  "note": "Nobody says anything. The hands physio looks at her coaster. Hannah looks at Kate like she'd like to kick her under the table, and then at you."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Your eyes go hot. You can't stop it. You start crying.)",
+                  "them": [
+                    {
+                      "note": "It comes up out of nowhere. One breath, and then you're crying at a wine bar in New Farm with your rings on and four women looking at you."
+                    },
+                    {
+                      "note": "Nat's round the table before Hannah's even moved. She crouches by your stool and puts her hand flat between your shoulder blades."
+                    },
+                    {
+                      "from": "Nat",
+                      "text": "Okay. Okay, babe. Breathe out longer than you breathe in. I do this with post-op knees all day, you're fine."
+                    },
+                    {
+                      "from": "Kate",
+                      "text": "Oh my god. Oh my god, I'm so sorry. I'm an idiot. I didn't mean it like that."
+                    },
+                    "Kate. Water.",
+                    {
+                      "note": "Kate goes. Hannah moves her stool round so her knee's against yours. She takes your hand off your glass and holds it in her lap and doesn't let go."
+                    },
+                    "No, I'm sorry. I should've just asked you on my own like a normal person. I'm sorry but I'm bad at this."
+                  ],
+                  "replies": [
+                    {
+                      "you": "(Laugh, wet.) I'm fine. I'm so embarrassing.",
+                      "gaydar": 97,
+                      "spark": 2,
+                      "them": [
+                        "You're not. Like, you're a bit embarrassing, but not about this.",
+                        {
+                          "from": "Nat",
+                          "text": "I cried at a car ad on Tuesday. In the clinic. In front of a patient."
+                        },
+                        {
+                          "note": "Kate comes back with water and a second glass of the rosé and a little bowl of olives nobody ordered."
+                        },
+                        {
+                          "from": "Kate",
+                          "text": "Okay. You're coming to my housewarming. It's a white carpet and it's shoes off and you're going to love it. Give me your phone."
+                        },
+                        {
+                          "note": "She puts her number in as \"Kate 💗 (Han's)\". Nat sits back down next to you instead of across."
+                        }
+                      ],
+                      "after": "Hannah, to Kate, from the car: \"i feel so bad\" Kate: \"i feel worse i said the jess thing\" Hannah: \"yeah you did\" Kate: \"he's so sweet han\" Hannah: \"i know. i'm not dating him though. obviously\" Kate: \"obviously. he's coming saturday though\""
+                    },
+                    {
+                      "you": "Nobody knows. I haven't said it out loud. Ever.",
+                      "gaydar": 98,
+                      "spark": 2,
+                      "them": [
+                        "Okay. Then you don't have to. Definitely not at a wine bar because Kate asked.",
+                        {
+                          "from": "Kate",
+                          "text": "Not for me. God. Sorry."
+                        },
+                        "Like, I'm not going to make you say a word into a candle.",
+                        {
+                          "note": "She keeps her knee against yours. The hands physio gives you her cardigan, because you're shivering, and it's too small and it's lilac and you put it on anyway."
+                        },
+                        {
+                          "from": "Nat",
+                          "text": "That's actually your colour."
+                        },
+                        "It is. That's so annoying."
+                      ],
+                      "after": "Later, Hannah, to Nat: \"is he ok\" Nat: \"he's fine. he's in kate's uber. they're singing\" Hannah: \"singing what\" Nat: \"abba i think. he still has the cardigan\""
+                    },
+                    {
+                      "you": "(Squeeze her hand.) I'm gay. Sorry. I'm gay.",
+                      "gaydar": 100,
+                      "spark": 0,
+                      "them": [
+                        "Don't say sorry. Oh my god. Don't you dare.",
+                        {
+                          "note": "Kate's back. She puts the water down and kisses the top of your head without asking."
+                        },
+                        {
+                          "from": "Kate",
+                          "text": "Welcome. Oh my god. You'll love it. Sorry. I don't know what I'm saying. You'll love it though."
+                        },
+                        "No because I'm relieved. Is that bad? I thought I was going crazy for three dates.",
+                        {
+                          "from": "Nat",
+                          "text": "You weren't."
+                        },
+                        "I know I wasn't, Nat.",
+                        {
+                          "note": "Hannah orders another bottle and puts her arm round you while she does it, the way she'd put it round Kate."
+                        }
+                      ],
+                      "after": "Hannah, to Kate, at 1am: \"he said it\" Kate: \"i was there babe\" Hannah: \"i know. i just wanted to type it\" Kate: \"he's coming to my housewarming\" Hannah: \"i know. he asked what he should bring. he said a candle\""
+                    }
                   ]
                 },
                 {
-                  "you": "Okay. Thanks for being honest.",
+                  "you": "(Stand up.) I'm just going to go to the bathroom.",
                   "them": [
-                    "np",
-                    "tell jess she owes me a wine"
+                    {
+                      "note": "You stand in the bathroom for a long time and read the poster about a jazz night. When you come back out the bill's paid and Kate's got her coat on."
+                    },
+                    "I paid. Don't argue. I'm sorry but I wanted to.",
+                    {
+                      "from": "Kate",
+                      "text": "I'm sorry about the Jess thing. That was so stupid of me."
+                    },
+                    "Kate's sorry. We're all sorry. Are you okay?"
+                  ],
+                  "replies": [
+                    {
+                      "you": "I'm fine. I'm going to head home.",
+                      "gaydar": 90,
+                      "spark": 5,
+                      "them": [
+                        "Okay. Text me when you're in.",
+                        {
+                          "note": "She hugs you outside, quick, and gets in Nat's car."
+                        }
+                      ],
+                      "after": "You get home and she's already texted: \"home?\" You say yes. She sends a thumbs up, and then: \"you can tell jess whenever. or never. its yours\""
+                    },
+                    {
+                      "you": "Can we stay for one more? I don't want it to end on the bathroom.",
+                      "gaydar": 93,
+                      "spark": 3,
+                      "them": [
+                        "Yes. Oh my god. Sit.",
+                        {
+                          "from": "Kate",
+                          "text": "I'll get it. I owe you one. I owe you like four."
+                        },
+                        {
+                          "note": "Kate takes her coat back off. Nobody plays the game again. Nat asks you about the boots, or the knit, and you talk about it for twenty minutes and Hannah just lets it happen."
+                        }
+                      ],
+                      "after": "Hannah, to Kate, after: \"that was nice in the end\" Kate: \"it was so nice. i love him\" Hannah: \"you love everyone\" Kate: \"i love him more than your last one\""
+                    }
                   ]
                 }
               ]
@@ -1727,89 +2031,127 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "Is this about the makeup? Because I can tone it down. I just thought it looked cute tonight.",
+          "you": "I'm straight. I'm straight. And I'm straight.",
           "them": [
-            "its not how it looks. it looked fine. better than mine tbh",
-            "its that you've had more on every time and you've been less into me every time",
-            "tonight felt like drinks with jess",
-            "i dont want to be swapping lip tints with my boyfriend",
-            "like youd be a great boyfriend honestly. for a guy",
-            "lol sorry. but you know i'm right",
-            "and ive done this before. not doing it again"
+            {
+              "from": "Kate",
+              "text": "Two truths and a LIE, {name}. Not three."
+            },
+            {
+              "from": "Nat",
+              "text": "All three. All three are the lie."
+            },
+            {
+              "note": "The hands physio just points at you with a chip."
+            },
+            "Yeah. All three.",
+            "Sorry. It's funny, but yeah."
           ],
           "replies": [
             {
-              "you": "Done what before? What are you talking about?",
+              "you": "Rude! One of them was true.",
               "them": [
-                "dated a guy who was working stuff out",
-                "two years. hes with a guy called craig now",
-                "i went to their engagement party. it was actually nice. anyway no"
+                "Which one.",
+                {
+                  "note": "Everyone leans in. Kate's actually holding her breath."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "...The middle one.",
+                  "gaydar": 92,
+                  "spark": 6,
+                  "them": [
+                    {
+                      "from": "Kate",
+                      "text": "The middle one."
+                    },
+                    "The middle one's the same as the other two.",
+                    "No because I can't even. I'm out. I'm getting chips.",
+                    {
+                      "note": "She gets chips. Nat makes you explain which bit of the middle one is true. You can't. The hands physio is crying."
+                    }
+                  ],
+                  "after": "Kate, in the group chat: \"'the middle one'\" Nat: \"im still thinking about it\" Hannah: \"can we not\" Kate: \"he's so funny though\" Hannah: \"yes kate he's very funny\""
+                },
+                {
+                  "you": "None of them. Okay? None of them. That's my turn.",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    {
+                      "note": "Kate puts both hands over her mouth. Nat says \"oh, babe\" and reaches for your hand on the table."
+                    },
+                    "Okay.",
+                    "Okay, that's... okay. Thank you. I'm sorry but I've been sitting on that since the coffee.",
+                    {
+                      "from": "Kate",
+                      "text": "You did it as a BIT. Oh my god I love you."
+                    },
+                    "Kate, calm down. Get him a drink.",
+                    {
+                      "note": "Hannah's hand is on your back, just resting there, the whole time Kate's at the bar."
+                    }
+                  ],
+                  "after": "Hannah, to Kate, later: \"he did it as a bit\" Kate: \"best coming out ive ever seen\" Hannah: \"how many have you seen\" Kate: \"two. his was better\""
+                }
               ]
             },
             {
-              "you": "I'm not working anything out. I just like a lip tint. Lots of guys wear makeup now.",
+              "you": "Okay, that was a joke. Obviously I'm straight.",
               "them": [
-                "ok",
-                "lots of guys dont look at the bartender like that",
-                "night"
-              ]
-            }
-          ]
-        },
-        {
-          "you": "Wait, before you go. Was it the lip? Be honest. I knew it was too much tonight. I KNEW it.",
-          "gaydar": 90,
-          "them": [
-            "...",
-            "im breaking up with you and youre asking me for feedback on your lip",
-            "it was fine. you looked cute",
-            "you looked cuter than me tbh and i actually tried tonight"
-          ],
-          "replies": [
-            {
-              "you": "Okay but you'd tell me if the lip was too much, right? As a friend?",
-              "them": [
-                "we're not friends {name}",
-                "it wasnt too much. bye"
-              ]
-            },
-            {
-              "you": "Sorry. That came out wrong. I'm sorry it didn't work out, Han.",
-              "them": [
-                "me too a bit",
-                "bye {name}"
-              ]
-            }
-          ]
-        },
-        {
-          "you": "ok",
-          "them": [
-            "ok",
-            "fyi the bartender wrote his number on your receipt",
-            "i saw it when you were in the bathroom. its under the candle"
-          ],
-          "replies": [
-            {
-              "you": "He did NOT. Wait. Did he?",
-              "gaydar": 92,
-              "them": [
-                "night {name}"
-              ]
-            },
-            {
-              "you": "Why would I want the bartender's number?",
-              "them": [
-                "i don't know {name}",
-                "why did you ask what colours the jacket came in",
-                "night"
+                {
+                  "from": "Kate",
+                  "text": "Obviously."
+                },
+                {
+                  "note": "Nat snorts into her wine. The hands physio tries to turn it into a cough."
+                },
+                "{name}. You just did a bit about it. You don't do a bit about a thing that's not a thing."
+              ],
+              "replies": [
+                {
+                  "you": "It was a joke, Han.",
+                  "gaydar": 89,
+                  "spark": 9,
+                  "them": [
+                    "Okay.",
+                    {
+                      "note": "She doesn't look at you for a bit. Kate fills everyone's glass but yours, then sees, then fills yours."
+                    },
+                    "I just. I'm sorry but I'm 31. I don't have the energy to play a game inside a game.",
+                    {
+                      "from": "Nat",
+                      "text": "Two truths and a lie. Hannah's tired. Hannah's tired. Hannah wants chips."
+                    },
+                    "All true."
+                  ],
+                  "after": "Later, Hannah, in a group chat with Kate: \"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\" Kate: \"and he did a bit about being straight\" Hannah: \"three times\""
+                },
+                {
+                  "you": "Fine. I'm going to get us another bottle.",
+                  "gaydar": 92,
+                  "spark": 7,
+                  "them": [
+                    {
+                      "note": "You go to the bar. The bartender in the jacket asks what you're after and you end up talking for ten minutes about where he got it, and whether it comes in a colour, and whether it'd come up big."
+                    },
+                    {
+                      "note": "When you come back with the bottle all four of them are watching you."
+                    },
+                    {
+                      "from": "Kate",
+                      "text": "Did you ask about the jacket again?"
+                    },
+                    "He did. I watched him."
+                  ],
+                  "after": "Kate, in the group chat: \"two truths and a lie. he's straight. he went to get wine. he asked the bartender if the jacket comes in pink\" Hannah: \"it was cream. he asked about cream\""
+                }
               ]
             }
           ]
         }
-      ],
-      "after": "You read her last message a few times, then put the phone face down.",
-      "debrief": "She read you right and said so. That stings. It's still nothing to be ashamed of."
+      ]
     },
     {
       "id": "hannah-feet",
@@ -3354,185 +3696,433 @@ window.CONTENT = {
     {
       "id": "c6",
       "route": "mia",
-      "gaydar": 85,
-      "gaydarSays": "He asked if my top was from Zara while I was putting. Sorry. I had to go home.",
-      "title": "Mini golf",
+      "title": "Hole in one",
       "contact": "Mia",
-      "intro": "Third date. Mini golf at South Bank. You went further this time: wide-leg trousers, a cropped cardigan, the gold hoops from Eat Street, a proper rosy lipstick. You felt good walking out the door. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes.",
+      "irl": true,
+      "gaydar": 85,
+      "gaydarSays": "Hayley wrote on the scorecard the whole time and I pretended I couldn't see. Sorry. I could see.",
+      "intro": "Third date, sort of. Mini golf at South Bank, and Mia's brought Hayley and a friend from her work, because she says four is less pressure than two. You wore wide-leg trousers, a cropped cardigan, the gold hoops from Eat Street and a proper rosy lipstick. There's a kids' birthday party two holes ahead of you. Hayley has the scorecard and the little pencil.",
       "outfits": [
         {
           "label": "Jeans, a cropped cardigan, the hoops, rosy lipstick",
-          "thinks": "Jeans and sneakers, so for one second I thought, okay, normal. Then I got to his mouth. A proper rosy lipstick. Nicer than the one I had on.",
           "gaydar": -5,
-          "intro": "Third date. Mini golf at South Bank. Jeans and sneakers so it's \"normal\", but a cropped cardigan, the gold hoops from Eat Street and a proper rosy lipstick on top. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes."
+          "intro": "Third date, sort of. Mini golf at South Bank, and Mia's brought Hayley and a friend from her work, because she says four is less pressure than two. Jeans and sneakers so it's \"normal\", but a cropped cardigan, the gold hoops from Eat Street and a proper rosy lipstick on top. There's a kids' birthday party two holes ahead of you. Hayley has the scorecard and the little pencil.",
+          "thinks": "Jeans and sneakers, which, okay, normal. But then the hoops and the lipstick and Hayley went 'oh hello' under her breath and I stood on her foot."
         },
         {
           "label": "Wide-leg trousers, cropped cardigan, gold hoops, rosy lipstick",
-          "thinks": "Wide-leg trousers and a cropped cardigan, which is honestly what I'd wear if I was braver. Sorry. And the hoops from Eat Street. I knew I'd see those again."
+          "thinks": "The hoops were the Eat Street ones. He'd done his lipstick so much better than mine. Sorry. I spent the whole car park thinking about that."
         },
         {
-          "label": "A pleated skirt, cropped cardigan, gold hoops, lipstick and a handbag",
-          "thinks": "A pleated skirt. Shorter than mine. And a little bag that he put down on the grass every time he putted, really carefully, like it was a baby.",
+          "label": "A pleated skirt, cropped cardigan, hoops, lipstick and a handbag",
           "gaydar": 5,
-          "intro": "Third date. Mini golf at South Bank. You went all in: a short pleated skirt, a cropped cardigan, the gold hoops, a proper rosy lipstick and a little shoulder bag you kept putting down to putt. Mia said \"oh\" when she saw you, then \"hi\". She left after nine holes.",
+          "intro": "Third date, sort of. Mini golf at South Bank, and Mia's brought Hayley and a friend from her work, because she says four is less pressure than two. You went all in: a short pleated skirt, a cropped cardigan, the gold hoops, a rosy lipstick and a little shoulder bag you keep putting down to putt. There's a kids' birthday party two holes ahead of you. Hayley has the scorecard and the little pencil.",
           "them": [
-            "also ive never seen a guy bring a handbag to mini golf. sorry. its fine. its just new"
-          ]
+            {
+              "note": "Hayley looks at the skirt, then at the little bag, then at Mia, and writes something down before anyone's even hit a ball."
+            }
+          ],
+          "thinks": "A skirt and a little bag. To mini golf. The grown-ups at the kids' party all looked. I looked at them looking and then I felt bad, sorry."
         }
       ],
       "thinks": [
-        "I said oh when I saw him. Then hi. I'd been planning to say \"you look nice\" and it just didn't come out.",
-        "He was so happy. That's what made me feel worst. He was having the best time, swinging his putter around, and I was standing next to him working out how to leave.",
-        "Nine holes. I lasted nine holes. I told myself in the car that nine is basically half, so it counts as a date. Sorry. It doesn't.",
-        "I rang Sam because I couldn't text it. I didn't want it written down."
+        "I told Hayley in the car park I'd say it at hole one. Then hole two. Then I said I'd say it after the windmill. Sorry. I know.",
+        "I wasn't going to be mean about it. I had it planned in my notes app, the nice version, and it started with you're so lovely, and every time I opened my mouth it came out as sorry instead.",
+        "Hayley wrote on the scorecard the whole time and I kept looking at the pencil."
       ],
+      "after": "That night Sam texts you a single \"?\" and then, a minute later, \"mia rang me\".",
+      "debrief": "Someone else saying it for you isn't the same as you saying it. You still got to choose what came next, and crying at mini golf is allowed.",
       "them": [
-        "hey",
-        "sorry i left early. early start",
-        "sorry"
+        {
+          "note": "Hole one. Mia's ball goes in the water and she says sorry to the ball."
+        },
+        "Sorry. Sorry, I'm so bad at this. Um.",
+        {
+          "note": "By hole six she's started four sentences to you and finished none of them. \"Can I ask... no, sorry.\" \"Do you ever... it doesn't matter.\" Hayley writes on the scorecard after every hole, a lot more than a number."
+        },
+        "{name}, can I just... sorry. Never mind. Your go.",
+        {
+          "note": "Hole seven. The windmill. You line it up and hit it and it goes straight through the windmill, down the little ramp and in. Hole in one."
+        },
+        {
+          "note": "A noise comes out of you. High. The whole kids' party turns round."
+        },
+        {
+          "from": "Hayley",
+          "text": "Okay. I'm doing it."
+        },
+        "Hayley, no. Sorry. Hayley.",
+        {
+          "from": "Hayley",
+          "text": "Babe, she's been trying to say it since the car park. She's going to do it at hole eighteen and then cry in the Uber."
+        },
+        {
+          "from": "Hayley",
+          "text": "Mia thinks you're gay. I think you're gay. It's on the card."
+        },
+        {
+          "note": "She holds up the scorecard. Next to your name, under the numbers, in tiny pencil: called the counter guy darling. lipstick top-up hole 3. asked if mia's top is zara. took a photo of the windmill."
+        },
+        {
+          "from": "Hayley",
+          "text": "And I'm adding the squeal."
+        },
+        {
+          "note": "She writes it."
+        },
+        "I'm so sorry. Oh my god I feel so bad. I was going to say it nicer. Not that it's bad. Like it's not a bad thing, sorry, I'm making it sound like a bad thing..."
       ],
       "replies": [
         {
-          "you": "Don't be sorry! I had so much fun. Even though I was robbed on hole six. That windmill was rigged, babe.",
+          "you": "What's wrong with a squeal? It was a hole in one!",
           "them": [
-            "haha yeah",
-            "ok can i be honest. im so bad at this. sam says i have to be more honest",
-            "i thought the lipstick was a joke at first. like a dare. and then you just kept wearing it and you were so happy and you called the guy at the counter 'darling' and i didnt know where to look",
-            "and you asked if my top was from zara. while i was putting. and it WAS from zara. and thats when i knew i had to go home lol"
+            {
+              "from": "Hayley",
+              "text": "Nothing's wrong with it. It's just the gayest noise I've ever heard, and I've been to Kylie twice."
+            },
+            "It was a nice squeal. Sorry. It was."
           ],
           "replies": [
             {
-              "you": "It wasn't a joke, Mia. I like wearing it. I thought you'd think it was cute. You said my earrings were cute.",
+              "you": "Okay. I'll give you the squeal. It was a gay squeal.",
               "them": [
-                "i did. they are",
-                "i just thought i was going out with like. a guy guy",
-                "and every time i see you youre less of that and more like my friend hayley?",
-                "sorry. thats mean. i dont mean it mean"
+                {
+                  "from": "Hayley",
+                  "text": "And the rest of the card?"
+                },
+                {
+                  "note": "Mia's work friend has stopped pretending to look for her ball."
+                }
               ],
               "replies": [
                 {
-                  "you": "I am a guy, Mia. I just like nice things. Guys can like nice things.",
+                  "you": "Read me the card. Out loud. I want to hear it.",
+                  "gaydar": 96,
+                  "spark": 4,
                   "them": [
-                    "i know. sorry. you're right",
-                    "but i don't think i want to date a guy who likes nicer things than me",
-                    "sorry"
-                  ]
+                    {
+                      "note": "Hayley reads it out, all of it, loud. The kids' party has gone quiet to listen."
+                    },
+                    {
+                      "note": "When she gets to \"lipstick top-up hole 3\" you say it was a top-up and a blot, actually, and Mia laughs so hard she has to hold onto the windmill."
+                    },
+                    "Sorry. Sorry. That's so funny. A BLOT.",
+                    {
+                      "from": "Hayley",
+                      "text": "Adding the blot."
+                    },
+                    {
+                      "note": "At the end Hayley gives you the card. You've won by four. Mia's on 41."
+                    }
+                  ],
+                  "after": "Mia, to Sam, that night: \"hayley said it for me\" Sam: \"mia\" Mia: \"i know!! sorry!! he wasnt even mad. he made her read it out\" Sam: \"read what\" Mia: \"the card\""
                 },
                 {
-                  "you": "So what, I'm Hayley now? That's what you're saying?",
+                  "you": "Fine. All of it. I'm gay, Mia.",
+                  "gaydar": 100,
+                  "spark": 2,
                   "them": [
-                    "kind of yeah lol",
-                    "hayley doesnt even know about tops like you do",
-                    "but not to date. sorry",
-                    "you were my type at dumplings. you're just not now"
-                  ]
+                    {
+                      "note": "Mia goes very still with her putter."
+                    },
+                    "Oh.",
+                    "Okay. Oh my god. Okay. Thank you. Sorry. I don't know why I said thank you.",
+                    {
+                      "note": "She hugs you. It's a proper hug, both arms, the longest one she's ever done. Hayley writes \"SAID IT\" on the card in capitals and underlines it twice."
+                    },
+                    "Can we still get dumplings after? Like as... sorry. As friends. Is that okay to say?"
+                  ],
+                  "after": "Mia, to Sam: \"he said it\" Sam: \"said what\" Mia: \"you know what\" Mia: \"sorry. hes gay. he said it at the windmill\" Sam: \"oh thank god\""
                 }
               ]
             },
             {
-              "you": "Oh my god, I KNEW it was Zara. The little puff sleeves gave it away. Sorry. That's not the point, is it.",
-              "gaydar": 90,
+              "you": "I'm not gay, Hayley. I'm just good at mini golf.",
               "them": [
-                "no its not the point lol",
-                "it was on sale though",
-                "{name} i think we should just be friends",
-                "i dont think you even want a girlfriend. sorry"
+                {
+                  "from": "Hayley",
+                  "text": "You're on 31, babe. You're not good at mini golf."
+                },
+                {
+                  "from": "Hayley",
+                  "text": "You're good at one hole."
+                },
+                {
+                  "note": "Mia looks at the ground. Her work friend looks at Hayley."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "I'm not.",
+                  "gaydar": 88,
+                  "spark": 10,
+                  "them": [
+                    "Okay. Sorry. Okay.",
+                    {
+                      "note": "She stops saying sorry after that. She stops saying much at all. She putts the last eleven holes without looking at you and gets a two on the hard one, and doesn't say anything about it."
+                    },
+                    {
+                      "from": "Hayley",
+                      "text": "Cool. Great. Hole eight."
+                    },
+                    {
+                      "note": "At the end Hayley folds the scorecard in half and puts it in her back pocket."
+                    }
+                  ],
+                  "after": "Mia, to Sam, from the car: \"sorry i know its your coworker\" \"but he's gay sam\" \"he said he wasn't and then he called the counter guy darling AGAIN when we gave the putters back\" Sam: \"oh no\" Mia: \"sorry\""
+                },
+                {
+                  "you": "(Grab the pencil off her and cross the whole list out.)",
+                  "gaydar": 90,
+                  "spark": 8,
+                  "them": [
+                    {
+                      "from": "Hayley",
+                      "text": "You can't cross out a squeal. It happened. There are witnesses. There are like nine witnesses under ten."
+                    },
+                    {
+                      "note": "She takes the pencil back and writes \"crossed it all out\" underneath, very neatly."
+                    },
+                    "Hayley, stop. Sorry. Stop. He doesn't want..."
+                  ],
+                  "after": "Hayley, to Mia, that night: \"[photo of the scorecard]\" Mia: \"why do you still have that\" Hayley: \"framing it\" Mia: \"sorry is he ok\" Hayley: \"he crossed it out mia. he's fine. he's gay. he's fine\""
+                }
               ]
             }
           ]
         },
         {
-          "you": "Was it the lipstick or that I beat you on the windmill?",
+          "you": "(Look at Mia.) Mia. Is that what you were trying to say?",
           "them": [
-            "you didn't beat me lol. you stopped to take a photo of the windmill",
-            "it was the lipstick. sorry",
-            "you looked really pretty. like actually pretty. i dont want my boyfriend to be pretty",
-            "some guy is going to be so into that though",
-            "not me. a guy. sorry lol",
-            "and you made that guy from the kids party get your ball out of the water"
+            "Sorry. Yes. No. I mean... I didn't think it was bad. I just thought I was going out with a guy, and then you took the photo of the windmill, and I thought oh... sorry.",
+            "Oh my god I feel so bad. Sorry. I'm saying sorry too much. Sorry.",
+            {
+              "from": "Hayley",
+              "text": "Mia."
+            },
+            "Sorry!"
           ],
           "replies": [
             {
-              "you": "So you want someone who fetches balls. Noted.",
+              "you": "(You open your mouth to say it's fine and it comes out as crying.)",
+              "thinks": [
+                "When he started crying I just went. Like straight away. Sorry. I cry at everything, I cried at Mochi's vet last month and she was fine.",
+                "Hayley had us both on the bench with an arm each and the kids from the party were staring and I didn't even care.",
+                "He hugged me properly. Better than he ever did on the dates, which... yeah. I'm not going to think about that.",
+                "I kept saying sorry into his cardigan and he kept saying stop it and we were both laughing and crying and Hayley's slushie was going everywhere."
+              ],
               "them": [
-                "sorry 😭",
-                "that sounds so bad when you say it",
-                "but yes. kind of"
+                {
+                  "note": "Your face goes before you do. Then you're crying, holding a putter, next to a windmill."
+                },
+                "Oh no. Oh no, sorry, oh my god...",
+                {
+                  "note": "And then Mia's crying too. Properly, with her hand over her mouth."
+                },
+                {
+                  "from": "Hayley",
+                  "text": "Okay. Okay okay okay. Bench. Both of you. Now."
+                },
+                {
+                  "note": "Hayley sits between you on the bench by hole seven and puts an arm round each of you. Mia's work friend digs a packet of tissues out of her bag and hands them out one at a time, you, Mia, you."
+                },
+                {
+                  "from": "Hayley",
+                  "text": "Look at you two. You're the same. You're literally doing the same face."
+                },
+                "Sorry. Sorry, I'm getting it on your cardigan."
+              ],
+              "replies": [
+                {
+                  "you": "I'm sorry I made you go out with me.",
+                  "gaydar": 97,
+                  "spark": 2,
+                  "them": [
+                    "No! Sorry! I asked YOU! I asked you at the dumplings!",
+                    {
+                      "note": "You both start laughing, still crying, which makes it worse. Hayley gets up and comes back with two slushies from the counter, a blue one and a red one, and puts one in each of your hands."
+                    },
+                    {
+                      "from": "Hayley",
+                      "text": "Drink. Nobody's sorry. Nobody's allowed to say sorry for the rest of the course."
+                    },
+                    "Sor... okay.",
+                    {
+                      "note": "For the next eleven holes Mia holds your arm between shots. Hayley lets you keep the pencil."
+                    }
+                  ],
+                  "after": "Mia, to Sam, that night: \"we both cried at mini golf\" Sam: \"WHO cried\" Mia: \"both of us. hayley got us slushies\" Mia: \"sorry i know he's your coworker. he's ok. hes so nice sam. he's going to help me with my hair for your birthday\""
+                },
+                {
+                  "you": "(Say it into Hayley's shoulder.) I'm gay.",
+                  "gaydar": 100,
+                  "spark": 0,
+                  "them": [
+                    {
+                      "from": "Hayley",
+                      "text": "I know, babe. I know. Good. Well done."
+                    },
+                    {
+                      "note": "She kisses the side of your head. Mia reaches across Hayley's lap and grabs your hand and holds onto it with both of hers."
+                    },
+                    "That's so good. Sorry. Not sorry. That's so good, {name}.",
+                    {
+                      "note": "Mia's work friend writes \"he said it\" on the scorecard with a heart over the i, then crosses out the squeal."
+                    },
+                    {
+                      "from": "Hayley",
+                      "text": "Okay. Important. Now you're allowed. Is Theo hot? Be honest. I have to live with him."
+                    },
+                    "HAYLEY."
+                  ],
+                  "after": "Hayley, to Mia, that night: \"he said theo's a 7\" Mia: \"why did you ask him that\" Hayley: \"i needed a second opinion\" Mia: \"only a 7?\" Hayley: \"he said 8 with his shirt off\" Mia: \"oh\""
+                },
+                {
+                  "you": "Can we just finish the game? I'm winning.",
+                  "gaydar": 96,
+                  "spark": 2,
+                  "them": [
+                    {
+                      "from": "Hayley",
+                      "text": "Yes. Yes, we can finish the game. Mia, blow your nose."
+                    },
+                    {
+                      "note": "You play the last eleven holes with wet faces. Hayley gives you the scorecard and the pencil, and you keep your own score and write \"the squeal\" next to Hayley's name when she misses the clown."
+                    },
+                    "He's better at this than all of us. Sorry. He is.",
+                    {
+                      "from": "Hayley",
+                      "text": "And you're doing my brows. Not tonight. Soon. You obviously know a brow."
+                    },
+                    {
+                      "note": "Mia hits Hayley on the arm with her putter, gently."
+                    }
+                  ],
+                  "after": "Mia, to Sam: \"we finished the whole course\" Sam: \"and??\" Mia: \"he won. he cried and then he won. hayley's obsessed with him now\" Sam: \"everyone's obsessed with him\" Mia: \"sorry i know\""
+                }
               ]
             },
             {
-              "you": "I didn't make him. He offered. He had very nice arms.",
-              "gaydar": 90,
+              "you": "It's okay. You don't have to be sorry. I get why you'd think it.",
               "them": [
-                "{name}",
-                "that's what i mean",
-                "sorry. night"
+                "Do you... sorry. Are you?",
+                {
+                  "note": "Hayley's pencil stops."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "Yeah. I am.",
+                  "gaydar": 100,
+                  "spark": 2,
+                  "them": [
+                    "Okay.",
+                    "Okay. Thank you for... sorry. Okay. That's really good. That's so good.",
+                    {
+                      "note": "She hugs you, quick and tight, and then stands back and looks at your hoops for some reason, and then hugs you again."
+                    },
+                    {
+                      "from": "Hayley",
+                      "text": "Writing it down."
+                    },
+                    {
+                      "note": "She writes it down. Mia's work friend gives you a high five you weren't ready for."
+                    }
+                  ],
+                  "after": "Mia, to Sam: \"i didnt even have to say it in the end\" Sam: \"who said it\" Mia: \"hayley. and then him\" Mia: \"sorry. he's so lovely. i feel so bad i made him come to mini golf\""
+                },
+                {
+                  "you": "I don't know yet.",
+                  "gaydar": 92,
+                  "spark": 6,
+                  "them": [
+                    "That's okay. Sorry. That's okay. You don't have to know at mini golf.",
+                    {
+                      "from": "Hayley",
+                      "text": "Writing down 'doesn't know yet'."
+                    },
+                    "Hayley, don't write that down.",
+                    {
+                      "note": "She writes it down anyway, and draws a little heart next to it. Mia holds your hand for the windmill again, loosely, like she's holding a friend's."
+                    }
+                  ],
+                  "after": "Mia, to Sam: \"he said he doesn't know yet\" Sam: \"he knows\" Mia: \"sam!!\" Sam: \"i sit next to him mia. he knows\""
+                }
               ]
             }
           ]
         },
         {
-          "you": "Did you actually have an early start? You can tell me if you didn't. I won't be upset.",
+          "you": "(Take the scorecard off Hayley and read it.)",
           "them": [
-            "no",
-            "sorry",
-            "i just wasnt expecting a guy to show up like that and i didnt know what to do and i panicked",
-            "sam's going to kill me. she said not to be weird and i was weird"
+            {
+              "note": "You read it twice. Under \"took a photo of the windmill\" there's another one you hadn't seen: \"asked mia's work friend if her brows are tinted. they are.\""
+            },
+            {
+              "from": "Hayley",
+              "text": "I'm not sorry. Someone had to."
+            },
+            "I'm sorry. She's sorry. Hayley's sorry. Everyone's sorry."
           ],
           "replies": [
             {
-              "you": "Like what? Like what, Mia? Say it.",
+              "you": "(Put the card down, put your putter back, and walk out.)",
               "them": [
-                "you know what i mean",
-                "the lipstick and the earrings and like. the way you walk now? you didnt walk like that at dumplings",
-                "i just dont want to date a guy whos more done up than me. sorry"
+                {
+                  "note": "You hand your putter back at the counter. The guy says \"done already?\" and you say yes."
+                },
+                "{name}! Sorry! Wait! Sorry!"
               ],
               "replies": [
                 {
-                  "you": "Okay. At least that's honest.",
+                  "you": "(Keep walking.)",
+                  "gaydar": 88,
+                  "spark": 6,
                   "them": [
-                    "this took me 20 minutes to type",
-                    "sorry"
-                  ]
+                    {
+                      "note": "You walk along the river to the ferry. Your phone goes three times on the ferry and you don't look."
+                    }
+                  ],
+                  "after": "In the morning there are four messages from Mia. \"sorry\" \"im so sorry\" \"hayley shouldnt have done that. well. she shouldn't have done it like THAT\" \"are you ok\". And one from a number you don't have: \"its hayley. sorry about the card. it was a good hole in one\""
                 },
                 {
-                  "you": "You could've just said that at hole nine instead of running away.",
+                  "you": "(Stop and wait for her.)",
+                  "gaydar": 92,
+                  "spark": 4,
                   "them": [
-                    "in front of everyone? with the kids' birthday party there?",
-                    "no thanks. sorry"
-                  ]
+                    {
+                      "note": "She catches up with you near the big wheel, out of breath, holding your phone, because you left it on the bench."
+                    },
+                    "Sorry. Here. You left this. Sorry.",
+                    "Hayley's not mean. She just does things. I wanted to say it nice. I had a nice version in my notes app.",
+                    "Can we still get dumplings sometime? Like, as... sorry. Dumplings. You know."
+                  ],
+                  "after": "Mia, to Sam: \"he walked out and then he waited for me by the wheel\" Sam: \"so are you ok\" Mia: \"yeah. we're getting dumplings thursday. not a date. sorry. i know. i keep saying that\""
                 }
               ]
             },
             {
-              "you": "That's okay. I get it. You don't have to feel bad.",
+              "you": "This is my best review ever. Can I keep it?",
+              "gaydar": 95,
+              "spark": 5,
               "them": [
-                "ok",
-                "pls dont tell sam i bailed. i'll tell her",
-                "sorry. again"
-              ],
-              "replies": [
                 {
-                  "you": "I won't tell her. Promise.",
-                  "them": [
-                    "thank you",
-                    "you're really nice"
-                  ]
+                  "from": "Hayley",
+                  "text": "Oh my god. Yes. Wait."
                 },
                 {
-                  "you": "Sam's going to find out anyway, Mia. She finds out everything.",
-                  "them": [
-                    "ugh. yeah",
-                    "she's going to say 'i told you not to be weird'"
-                  ]
+                  "note": "She takes it back, signs the bottom, and hands it over. Mia's work friend signs it too. Then Mia, very small, in the corner."
+                },
+                "Sorry. I didn't know where to sign.",
+                {
+                  "note": "You fold it into your pocket. Hayley tells you to play the rest of the course as \"the squeal\". You do. Every time you sink one the kids' party cheers."
                 }
-              ]
+              ],
+              "after": "Hayley, to Mia, that night: \"he kept the card\" Mia: \"i know\" Hayley: \"i love him. can i have him\" Mia: \"hes not a cat hayley\" Hayley: \"is he coming to my thing friday\" Mia: \"sorry. i already asked him\""
             }
           ]
         }
-      ],
-      "after": "Mia rings Sam on the drive home. \"Your coworker's gay.\" \"What? How do you know?\" \"Sam. He wore lipstick to mini golf.\" \"Ok...\" \"And he called the guy at the counter darling. Sorry. I'm not being mean.\" \"Maybe he just likes makeup?\" \"Then why's he going on dates with me?\" Sam doesn't really have an answer.",
-      "debrief": "You got dressed how you wanted and went. Mia not being into it is about what she wants."
+      ]
     },
     {
       id: "mia-end", route: "mia", gaydar: 99, spark: 0, gaydarSays: "Lachlan asked if Zara is a tennis player. Sorry. I love him.", title: "Mia and Lachlan", contact: "Mia",
@@ -4154,192 +4744,405 @@ window.CONTENT = {
     {
       "id": "c6b",
       "route": "ella",
-      "gaydar": 90,
-      "gaydarSays": "His lashes were better than mine. At brunch. I can't.",
-      "title": "Brunch in the dress",
+      "title": "Ladies",
       "contact": "Ella",
-      "intro": "Third date. Brunch in Paddington. You'd bought the dress the day after GOMA and never worn it out of the flat: pale blue, floral, little buttons down the front. Nails done, foundation, blush, lashes, a pink lip. You nearly changed three times. You didn't. When you walked up she looked at you, then at her phone, then back at you. \"Sorry. I thought I had the wrong guy.\"",
+      "irl": true,
+      "gaydar": 90,
+      "gaydarSays": "The waitress took one look at our table and said ladies. I'm still not over it. I'll never be over it.",
+      "intro": "Third date. Brunch in Paddington, at the window. You'd bought the dress the day after GOMA and never worn it out of the flat: pale blue, floral, little buttons down the front. Nails done, foundation, blush, lashes, a pink lip. You nearly changed three times. Ella's in jeans and a tee. You've been sitting down six minutes when her friends Meg and Maddy walk in, very surprised to see her.",
       "outfits": [
         {
           "label": "The dress, white sneakers and light makeup",
-          "thinks": "White sneakers with the dress, so it looked casual, like he'd just thrown it on. Nobody just throws on lashes. I could see them from across the road.",
           "gaydar": -5,
-          "intro": "Third date. Brunch in Paddington. The pale blue floral dress you bought the day after GOMA, but with white sneakers so it felt less scary, and light makeup: a bit of foundation, lashes, a pink lip. When you walked up she looked at you, then at her phone, then back at you. \"Sorry. I thought I had the wrong guy.\""
+          "intro": "Third date. Brunch in Paddington, at the window. The pale blue floral dress you bought the day after GOMA, but with white sneakers so it felt less scary, and light makeup: a bit of foundation, lashes, a pink lip. Ella's in jeans and a tee. You've been sitting down six minutes when her friends Meg and Maddy walk in, very surprised to see her.",
+          "thinks": "The sneakers were him trying to make it normal, I could tell, and it didn't work, because the dress has little BUTTONS, all the way down."
         },
         {
           "label": "The dress, nails, foundation, blush, lashes, a pink lip",
-          "thinks": "Little buttons all the way down, blush, a pink lip, nails done. It was the exact dress I'd have bought if I'd seen it first."
+          "thinks": "Blue florals and little buttons and a pink lip, and I was in the tee I sleep in sometimes. I sat there going, this is going to be a story. I'm going to be telling this one for years."
         },
         {
           "label": "The dress, strappy heels, painted toes, full glam and a handbag",
-          "thinks": "Strappy heels and a little white handbag. He walked better in them than I do, and I've been wearing heels since Year 10.",
           "gaydar": 5,
-          "intro": "Third date. Brunch in Paddington. The pale blue floral dress, strappy heeled sandals, toes painted pink, full glam (foundation, contour, blush, lashes, a pink lip) and a little white handbag. You nearly changed three times. You didn't. When you walked up she looked at your heels, then at her phone, then back at you. \"Sorry. I thought I had the wrong guy.\"",
+          "intro": "Third date. Brunch in Paddington, at the window. The pale blue floral dress, strappy heeled sandals, pink toes, full glam (foundation, contour, blush, lashes, a pink lip) and a little white handbag. Ella's in jeans and a tee. You've been sitting down six minutes when her friends Meg and Maddy walk in, very surprised to see her.",
           "them": [
-            "and HEELS. you were taller than me. in heels. at brunch"
-          ]
+            {
+              "note": "Maddy looks under the table at your heels and says \"oh, stop\" to nobody."
+            }
+          ],
+          "thinks": "Heels. At brunch. He was taller than me and his contour was better than the girl who did mine for Meg's 30th, and she charged me ninety dollars."
         }
       ],
       "thinks": [
-        "I really did think I had the wrong guy. For about three seconds I was looking past him for someone in a polo.",
-        "I wore jeans and a tee because it was brunch and I didn't want to look like I was trying. He'd tried. He looked great. I spent the whole meal feeling underdressed next to my own date.",
-        "Everyone watched us. I ate my eggs and tried to work out if this was a date or brunch with a friend, and the worst part is I don't think he knew either.",
-        "I like him. I just can't fancy someone whose dress I want to borrow."
+        "I did not invite them. I told Meg the cafe and the time and that we'd be at the window. That is different and I'll die on it.",
+        "The waiter at the coffee machine was cute and he kept looking over at our table, and it wasn't at me.",
+        "I make everything a scene. I know that. My sister says I'd make a scene at a bus stop. I just didn't know what else to do with my face."
       ],
+      "debrief": "Being turned into a scene is a lot. Crying in front of people is okay, and the girls at that table were on your side once it landed.",
       "them": [
-        "hey",
-        "ok i have to ask. i've been thinking about it all afternoon",
-        "why did you wear a dress"
+        {
+          "note": "Maddy says \"oh my god, what are the chances\" and pulls a chair over before anyone's asked. Meg's already got her sunglasses off and is looking at your dress."
+        },
+        "I didn't tell them. I literally didn't. Okay, I said Paddington. I didn't say WHICH Paddington.",
+        {
+          "from": "Meg",
+          "text": "There's one Paddington, Ella."
+        },
+        {
+          "note": "A waitress comes over with menus, smiles round the table and says, \"Morning, ladies. What can I get you?\""
+        },
+        {
+          "note": "Ella puts her menu down flat."
+        },
+        "Ladies.",
+        "She said ladies. Did everyone hear that? We're ladies. All four of us.",
+        {
+          "from": "Maddy",
+          "text": "Ella."
+        },
+        "No, I'm just narrating. It's my third date. I'm at brunch with my date and my two best friends who happened to be walking past, and the waitress has looked at the table and gone, four ladies. I literally can't.",
+        {
+          "note": "The waitress says \"sorry, sorry\" and goes red. A guy at the next table turns round. The waiter at the coffee machine looks over at you, then down at his milk jug."
+        },
+        {
+          "from": "Maddy",
+          "text": "Can I just say. The dress. Where's it from, because I need it."
+        },
+        "Maddy. Read the room.",
+        {
+          "from": "Maddy",
+          "text": "I am reading it. The room is that dress."
+        }
       ],
       "replies": [
         {
-          "you": "Because I wanted to. I bought it the day after GOMA and I felt really good in it, Ella. Did I not look good?",
+          "you": "(To the waitress) Ladies is fine! Can I get a mimosa?",
           "them": [
-            "you looked GOOD. thats not the point",
-            "you didnt say anything on here. not even like heads up im wearing a dress",
-            "i turned up in jeans and a tee like an idiot and you had more makeup on than me",
-            "your hinge is you in a polo shirt at a wedding {name}",
-            "i felt really blindsided tbh"
+            {
+              "note": "The waitress laughs, relieved, and writes it down."
+            },
+            "Ladies is FINE, he says. Okay. Okay. Mimosas. Four. It's a moment, we're having one.",
+            {
+              "from": "Meg",
+              "text": "Why are you being weird? He's fine with it."
+            },
+            "Because I'm meant to be on a date, Meg!",
+            {
+              "from": "Maddy",
+              "text": "Are you though?"
+            },
+            {
+              "note": "The mimosas come. Before anyone's touched theirs, Ella stands up, scrapes her chair back, and lifts her glass."
+            },
+            "Okay. Everyone. To {name}. Coming out. At brunch. In Paddington. In florals.",
+            {
+              "note": "You haven't said anything. Nobody's said anything. The guy at the next table lifts his coffee."
+            }
           ],
           "replies": [
             {
-              "you": "I didn't think I needed to warn you. It's just a dress. People wear dresses to brunch every day.",
-              "them": [
-                "you didnt NEED to. it would've been nice",
-                "people were staring the whole time. the lady with the pram actually stopped walking. the waiter called you 'love' and then went red",
-                "and i was sitting there like is this a date?? or am i just having brunch with a friend"
+              "you": "(You try to laugh. It comes out wrong, and then you're crying.)",
+              "thinks": [
+                "I thought he'd laugh. That's the honest version. I do toasts. I did one at Meg's dog's birthday.",
+                "Then his face went and I felt my whole stomach drop out through my chair.",
+                "Maddy had his lashes fixed before I'd even sat back down. She does that for me at weddings, with the corner of a napkin, and she did it for him exactly the same.",
+                "I've never had a date cry at brunch. I've never had a friend cry at brunch either. He was sort of both. I gave him my mimosa in the end and I never even got to drink it."
               ],
-              "replies": [
+              "them": [
                 {
-                  "you": "I noticed the staring. I was trying to ignore it. I thought if I just acted normal, it'd be normal.",
-                  "them": [
-                    "well i couldnt ignore it",
-                    "it was really uncomfortable for me. i know thats not your fault exactly. but it was"
-                  ]
+                  "note": "You laugh, or you start to, and it turns into something else halfway out. Then you're crying at the window table with a mimosa in front of you."
+                },
+                "No no no no. Oh babe. Oh no. I thought you'd laugh. It was a bit. It was a BIT.",
+                {
+                  "note": "Maddy's already round your side of the table. She tips your chin up with two fingers and fixes the corner of your lashes with a folded napkin, very carefully."
                 },
                 {
-                  "you": "Were they staring at me or at us, though?",
+                  "from": "Maddy",
+                  "text": "Don't rub. Look up. You're fine, they're fine. Look at the ceiling."
+                },
+                {
+                  "note": "Meg calls the waitress back and orders the pancakes with the berries on them and tells her they're for you."
+                },
+                {
+                  "note": "Ella sits down hard and pulls her chair round until it's touching yours."
+                },
+                "I'm so sorry. That was so much. I made it a scene. I always make it a scene, and you didn't even say anything."
+              ],
+              "replies": [
+                {
+                  "you": "(Through it) You're not wrong, though.",
+                  "gaydar": 99,
+                  "spark": 1,
                   "them": [
-                    "at you",
-                    "and then at me like whats she doing with him"
-                  ],
-                  "replies": [
+                    "I know. Sorry. I know I'm not.",
+                    "I just wanted you to say it, not me. I literally stole it off you. I'm the worst.",
                     {
-                      "you": "Sorry, Ella. I didn't think about it like that.",
-                      "them": [
-                        "its ok",
-                        "i just want to be the dressed up one on a date. thats all"
-                      ]
+                      "from": "Meg",
+                      "text": "You're a bit the worst."
+                    },
+                    {
+                      "note": "Maddy keeps one hand on your back the whole time the pancakes are coming. When they arrive Ella cuts the first bit for you."
                     }
-                  ]
-                }
-              ]
-            },
-            {
-              "you": "That's fair. Sorry. I should have said something first.",
-              "them": [
-                "its fine",
-                "i just dont think we want the same thing"
-              ],
-              "replies": [
-                {
-                  "you": "What do you mean? Like, you're not into it? Or not into me?",
-                  "them": [
-                    "as in i want a guy who's into me",
-                    "and i dont think you are. i think you were into the waiter. you gave him a 'thank you darling' and touched his arm"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "you": "Because it was 28 degrees and it's linen. I'm not going to brunch in jeans like a crazy person.",
-          "them": [
-            "its not about the weather {name}",
-            "i told meg and maddy i had a third date. i showed them your hinge. the POLO",
-            "then i sent them a pic of us at brunch and you're in a floral dress with little buttons",
-            "maddy replied 'which one is the date'",
-            "i felt so stupid"
-          ],
-          "replies": [
-            {
-              "you": "Okay but which one did she think was the date?",
-              "them": [
-                "you. obviously",
-                "she said you looked like my bridesmaid",
-                "night {name}"
-              ]
-            },
-            {
-              "you": "Sorry. That's really embarrassing for you.",
-              "them": [
-                "it was",
-                "i dont know. i just dont fancy you anymore {name}",
-                "you'd have had more luck with the waiter lol",
-                "he was looking back btw. maddy saw",
-                "sorry. you asked"
-              ]
-            }
-          ]
-        },
-        {
-          "you": "Did you hate it? Be honest. You can say it. I'd rather know.",
-          "them": [
-            "kind of yeah",
-            "sorry",
-            "like the dress was gorgeous. i would wear it. thats kind of the problem",
-            "i spent the whole time trying to work out if you were into me or the waiter",
-            "are you gay?"
-          ],
-          "replies": [
-            {
-              "you": "I don't know, Ella. I really don't. I just know I felt more like me today than I have in years.",
-              "gaydar": 95,
-              "them": [
-                "ok",
-                "thanks for being honest i guess",
-                "but i dont want to be the girl you work it out on",
-                "i have 24 seven year olds. i dont have the energy"
-              ]
-            },
-            {
-              "you": "No. I'm not. I just like the dress.",
-              "them": [
-                "ok",
-                "sure"
-              ],
-              "replies": [
-                {
-                  "you": "I'm not, Ella. Seriously.",
-                  "them": [
-                    "ok {name}"
                   ],
-                  "after": "You look at \"No.\" on the screen for a long time. Then you hang the dress back up."
+                  "after": "Ella, to her sister: \"he cried at brunch\" Sister: \"WHAT why\" Ella: \"i did a toast\" Sister: \"ella\" Ella: \"i know. i'm the worst. maddy fixed his lashes. he's coming to the beach with us\""
+                },
+                {
+                  "you": "Can I have the pancakes?",
+                  "gaydar": 97,
+                  "spark": 2,
+                  "them": [
+                    {
+                      "from": "Meg",
+                      "text": "They're yours. They were always yours. Nobody else is having the pancakes."
+                    },
+                    {
+                      "note": "They come. Ella pushes the maple syrup at you, then the cream, then her own coffee."
+                    },
+                    "Eat. Eat, babe. I'm getting you another mimosa and this one isn't a toast. It's just a drink.",
+                    {
+                      "from": "Maddy",
+                      "text": "And I'm borrowing the dress. Not now. I'm just telling you now so it's in your head."
+                    }
+                  ],
+                  "after": "Ella, to Meg and Maddy, after: \"i made him cry\" Meg: \"he ate all the pancakes though\" Maddy: \"he said i can borrow the dress for the engagement\" Ella: \"MY sister's engagement??\" Maddy: \"he said it's a bowls club so florals are fine\""
+                },
+                {
+                  "you": "I'm gay. I've never said it out loud before.",
+                  "gaydar": 100,
+                  "spark": 0,
+                  "them": [
+                    {
+                      "note": "Ella grabs your hand with both of hers and holds on."
+                    },
+                    "Oh my god. Okay. I'm not doing a toast. I'm not. I'm sitting on my hands. Look, I'm sitting on them.",
+                    {
+                      "from": "Maddy",
+                      "text": "You did so good."
+                    },
+                    {
+                      "from": "Meg",
+                      "text": "Way better than her toast."
+                    },
+                    {
+                      "note": "The waitress brings the pancakes nobody ordered yet and says \"on the house, ladies\", and this time Ella just says thank you."
+                    }
+                  ],
+                  "after": "Ella, to her sister: \"he said it\" Sister: \"said what\" Ella: \"that he's gay. at brunch. after i made a toast and he cried\" Sister: \"ELLA\" Ella: \"i know. the drama. maddy's borrowing his dress\""
                 }
               ]
             },
             {
-              "you": "Does it matter? Can't I just be a guy who likes dresses?",
+              "you": "(Clink your glass on hers.) To me, I guess.",
               "them": [
-                "yes?? it was a DATE",
-                "be whatever you want. i just want a guy who wears jeans to brunch and looks at me"
+                {
+                  "note": "Maddy screams. Meg clinks. The guy at the next table claps twice. The waiter at the coffee machine is smiling into his milk jug."
+                },
+                "Wait. Wait wait wait. Was that a yes? Is this a yes?"
               ],
               "replies": [
                 {
-                  "you": "Fair. Yeah. That's fair.",
+                  "you": "It's a yes. I'm gay, Ella.",
+                  "gaydar": 100,
+                  "spark": 2,
                   "them": [
-                    "right",
-                    "ok well good luck with it"
-                  ]
+                    "I'm dying. I'm literally dying. Okay. Okay hi.",
+                    "I'm a bit annoyed. Is that allowed? I'm annoyed I wore my sleep tee. I'd have dressed up for this.",
+                    {
+                      "from": "Maddy",
+                      "text": "So can I borrow it."
+                    },
+                    "Maddy, he JUST said it.",
+                    {
+                      "from": "Maddy",
+                      "text": "I know. So can I borrow it."
+                    },
+                    {
+                      "note": "You say yes. Ella orders another round and tells the waitress it's a celebration and the waitress says \"oh, for who?\" and all three of them point at you."
+                    }
+                  ],
+                  "after": "Ella, to her sister: \"brunch guy is gay\" Sister: \"we knew that\" Ella: \"he SAID it though. i did a toast\" Sister: \"did you stand up\" Ella: \"obviously i stood up\""
+                },
+                {
+                  "you": "It's a mimosa, Ella.",
+                  "gaydar": 95,
+                  "spark": 4,
+                  "them": [
+                    "It's a mimosa, he says. In florals. Meg. Meg, he said it's a mimosa.",
+                    {
+                      "from": "Meg",
+                      "text": "I heard."
+                    },
+                    {
+                      "note": "Ella sits back down, slowly, still holding her glass up a bit."
+                    },
+                    "Fine. I'll take a mimosa. I'll take it as like a yes-shaped mimosa.",
+                    {
+                      "note": "The waiter brings the coffees. You thank him and touch his arm without meaning to, and Ella sees, and makes a face at Meg."
+                    }
+                  ],
+                  "after": "Ella, to Meg, after: \"he said 'it's a mimosa'\" Meg: \"and then he touched the waiter\" Ella: \"the ARM meg\" Meg: \"you should've seen your face\""
+                }
+              ]
+            },
+            {
+              "you": "Ella, sit down. I didn't say anything.",
+              "them": [
+                {
+                  "note": "She sits down. Slowly. The guy at the next table turns back round."
+                },
+                "Right. You didn't. Sorry. I made it a scene. I always make it a scene.",
+                {
+                  "from": "Maddy",
+                  "text": "So that's a no?"
+                }
+              ],
+              "replies": [
+                {
+                  "you": "It's a no.",
+                  "gaydar": 88,
+                  "spark": 10,
+                  "them": [
+                    "Okay.",
+                    {
+                      "note": "Meg looks at Maddy. Maddy looks at your dress."
+                    },
+                    "Okay. Cool. So I'm on a date with a straight guy in florals. That's fine. That's a story.",
+                    {
+                      "note": "Nobody says much after that. Meg asks for the bill early and pays for everyone."
+                    }
+                  ],
+                  "after": "Ella, to her sister: \"brunch guy turned up in a dress\" Sister: \"WHAT. like a costume?\" Ella: \"no like a nice one. and lashes\" Sister: \"is he gay\" Ella: \"he said no\" Sister: \"is he gay though\" Ella: \"obviously he's gay\""
+                },
+                {
+                  "you": "It's a not at brunch. Not with Meg and Maddy here.",
+                  "gaydar": 94,
+                  "spark": 6,
+                  "them": [
+                    {
+                      "from": "Meg",
+                      "text": "Fair. That's fair. We'll go."
+                    },
+                    {
+                      "from": "Maddy",
+                      "text": "We won't go. We'll sit over there."
+                    },
+                    {
+                      "note": "They move two tables away and watch you both over their menus for the next forty minutes."
+                    },
+                    "Okay. Not at brunch. That's fair. I'm sorry. I'm sorry I did the toast.",
+                    "Is it a yes somewhere else though?"
+                  ],
+                  "after": "Maddy, to Ella, from two tables away: \"he's looking at the waiter\" Ella: \"i can see maddy\" Maddy: \"also can i still borrow the dress\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "(To the waitress, in your deepest voice) Morning. I'll have a long black.",
+          "them": [
+            {
+              "note": "Meg chokes on her water."
+            },
+            "Oh my god. He did a voice. Did everyone hear the voice? Where did that voice come from?",
+            {
+              "from": "Maddy",
+              "text": "That's the voice from his Hinge. The polo voice."
+            },
+            "I'm dying. I've heard you talk for three dates and that's the first time you've ever sounded like that."
+          ],
+          "replies": [
+            {
+              "you": "That's my normal voice.",
+              "them": [
+                "Your normal voice said 'obsessed' about my earrings at GOMA.",
+                {
+                  "from": "Meg",
+                  "text": "Do it again."
+                },
+                {
+                  "from": "Maddy",
+                  "text": "Say 'how about the rugby'. Go on."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "It IS my normal voice, Ella.",
+                  "gaydar": 90,
+                  "spark": 8,
+                  "them": [
+                    {
+                      "note": "It goes up at the end. Maddy puts her face in her hands."
+                    },
+                    "Okay. Sure. Okay.",
+                    {
+                      "note": "For the rest of brunch Meg orders everything in a deep voice. Ella laughs every time, and doesn't look at you while she does it."
+                    }
+                  ],
+                  "after": "Ella, to her sister: \"he did a deep voice at the waitress\" Sister: \"why\" Ella: \"because she called us ladies\" Sister: \"ella that's the funniest thing you've ever told me\" Ella: \"i know. i'm not dating him though\""
+                },
+                {
+                  "you": "(Drop it.) Okay. It isn't.",
+                  "gaydar": 95,
+                  "spark": 4,
+                  "them": [
+                    "I KNOW it isn't.",
+                    {
+                      "from": "Maddy",
+                      "text": "Thank you. Thank you, that voice was scaring me."
+                    },
+                    {
+                      "note": "The waitress comes back with your long black and you ask, in your own voice, if you could actually have an iced oat latte instead. She says of course, love."
+                    },
+                    "Love. She's calling you love now. We've gone from ladies to love. I can't with this brunch."
+                  ],
+                  "after": "Ella, to Meg, after: \"did we just watch him come out over a coffee order\" Meg: \"kind of\" Ella: \"it was such a moment\" Meg: \"you said that about the pancakes\""
+                }
+              ]
+            },
+            {
+              "you": "(Get up.) I'm going to go.",
+              "them": [
+                "No. Wait. The DRAMA. Sit down. Please.",
+                {
+                  "from": "Maddy",
+                  "text": "Don't go, I haven't even seen the back of the dress."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Go anyway.)",
+                  "gaydar": 92,
+                  "spark": 5,
+                  "them": [
+                    {
+                      "note": "You walk out onto Given Terrace in the dress. A woman with a pram looks at you, then keeps walking. You get all the way to the bus stop before your phone goes."
+                    }
+                  ],
+                  "after": "Ella: \"sorry about brunch. that was so much\" Then, ten minutes later, from a number you don't know: \"hi its maddy. ella gave me your number. can i borrow the dress. not now. one day. sorry. it was really pretty\""
+                },
+                {
+                  "you": "(Sit back down.)",
+                  "gaydar": 94,
+                  "spark": 4,
+                  "them": [
+                    "Thank you. Okay. I'll stop. I'm stopping. I'm doing my breathing.",
+                    {
+                      "from": "Maddy",
+                      "text": "Stand up for a second though. Do a twirl. I need the back."
+                    },
+                    {
+                      "note": "You stand up and do half a twirl. Maddy claps. The waiter at the coffee machine looks over, and this time he doesn't look back down."
+                    },
+                    "Okay, he's looking at you. The waiter. Not me. I'm literally invisible. I wore my sleep tee for this."
+                  ],
+                  "after": "Ella, to her sister: \"he did a twirl at brunch\" Sister: \"for you??\" Ella: \"for maddy. and the waiter watched the whole thing\" Sister: \"so are you seeing him again\" Ella: \"as what\""
                 }
               ]
             }
           ]
         }
-      ],
-      "after": "Ella, to her sister: \"brunch guy turned up in a dress\" \"WHAT. like a costume?\" \"no like a nice one. and lashes\" \"is he gay\" \"obviously hes gay\" \"then why did he match with you\" \"thats what IM saying\"",
-      "debrief": "You wore the dress out. Whatever Ella thought, you didn't go home and change."
+      ]
     },
     {
       "id": "ella-beach",
@@ -5575,250 +6378,464 @@ window.CONTENT = {
     {
       "id": "c6c",
       "route": "tayla",
+      "title": "The slideshow",
+      "contact": "Tayla",
+      "irl": true,
       "gaydar": 90,
-      "gaydarSays": "He did Bec's eyeliner in the bathroom at her own 30th and it was better than mine has ever looked",
-      "gaydarWho": "Tayla",
-      "title": "Wrong chat",
-      "contact": "Bec's 30th 🎂",
-      "intro": "Bec's 30th in the Valley, as Tayla's date. You wore a satin top, a skirt, eyeliner and a bit of glitter. When Bec's eyeliner smudged you fixed it for her in the bathroom. You danced to every Kylie song, mostly on your own. Bec added you to the group chat to sort out Ubers. The next morning:",
+      "gaydarSays": "Eighty-four photos of Bec and the only thing anyone's going to remember is my text. On the TV. Babe.",
+      "intro": "Bec's 30th, upstairs at a bar in the Valley. Pink and gold, mirror tiles, disco balls on the tables, all off your mood board. You're Tayla's date. You wore a satin top, a skirt, eyeliner and a bit of glitter, and your toes are glitter pink in your sandals. Earlier, Bec's eyeliner smudged and you fixed it for her in the bathroom. At ten Tayla plugs her phone into the big TV for the slideshow she made: Bec at three, Bec at seventeen, Bec's formal.",
       "outfits": [
         {
-          "label": "Satin top, jeans and a flick of eyeliner",
-          "thinks": "Satin top and jeans, a little flick of liner. I decided in the Uber that was a going-out look and guys can do that. I kept deciding it all night.",
+          "label": "Satin top, jeans, sneakers and a flick of eyeliner",
           "gaydar": -5,
-          "intro": "Bec's 30th in the Valley, as Tayla's date. You wore a satin top with jeans and a little flick of eyeliner. When Bec's eyeliner smudged you fixed it for her in the bathroom. Bec added you to the group chat to sort out Ubers. The next morning:"
+          "intro": "Bec's 30th, upstairs at a bar in the Valley. Pink and gold, mirror tiles, disco balls on the tables, all off your mood board. You're Tayla's date. You wore a satin top with jeans and sneakers and a little flick of eyeliner, and your toes are glitter pink where nobody can see them. Earlier, Bec's eyeliner smudged and you fixed it for her in the bathroom. At ten Tayla plugs her phone into the big TV for the slideshow she made: Bec at three, Bec at seventeen, Bec's formal.",
+          "thinks": "Jeans and a satin top and I was like, okay, good, normal-ish, the girls won't say anything. Then Steph clocked the eyeliner from across the room. From ACROSS the room."
         },
         {
           "label": "Satin top, a skirt, eyeliner and glitter",
-          "thinks": "A skirt. And glitter. I watched Steph see the skirt from across the bar. I watched her whole face do it."
+          "thinks": "A skirt. With glitter on his cheekbones. He looked so good and I'd got my hair done for this, ninety bucks, and he still looked better."
         },
         {
-          "label": "A satin slip dress, heels, eyeliner and a lot of glitter",
-          "thinks": "A satin slip dress and heels. He looked amazing, that was the problem. Three people asked me where his dress was from and I didn't know, because I'm not the one in this relationship who knows that stuff.",
+          "label": "A satin slip dress, heels, sharp eyeliner and a lot of glitter",
           "gaydar": 5,
-          "intro": "Bec's 30th in the Valley, as Tayla's date. You wore a satin slip dress, heels, sharp eyeliner and glitter on your cheekbones. When Bec's eyeliner smudged you fixed it for her in the bathroom. Bec added you to the group chat to sort out Ubers. The next morning:",
+          "intro": "Bec's 30th, upstairs at a bar in the Valley. Pink and gold, mirror tiles, disco balls on the tables, all off your mood board. You're Tayla's date. You wore a satin slip dress, heels, sharp eyeliner and glitter on your cheekbones, and your toes are glitter pink in the heels. Earlier, Bec's eyeliner smudged and you fixed it for her in the bathroom. At ten Tayla plugs her phone into the big TV for the slideshow she made: Bec at three, Bec at seventeen, Bec's formal.",
           "them": [
             {
               "from": "Bec",
-              "text": "also {name} you walked in heels better than me. at my own birthday. rude"
+              "text": "Also you walked up those stairs in heels better than me. At my own birthday. Rude."
             }
-          ]
+          ],
+          "thinks": "A slip dress and heels. The bouncer looked at him and then at me and said 'enjoy the hens'. I said it's a 30th. He said 'sure'."
         }
       ],
       "thinks": [
-        "I spent the whole night saying \"he's not gay, he's just fun\". To Steph, to Bec's work friends, to a girl I'd never met in the smoking area. I said it so many times it stopped sounding like words.",
-        "He went into the bathroom with Bec and came out and her eyeliner was perfect. Bec was so happy. I was at the bar holding two drinks, wondering when my date was coming back.",
-        "Then I woke up to Steph asking the question in the chat with him in it. Before I'd even had water."
+        "I made that slideshow over like three nights. Eighty-four photos. I didn't even get to the one of Bec at Schoolies with the traffic cone.",
+        "I'd been texting Steph and Bec all night from about a metre away, which, yes, I know. That's just how we are. It's the girls.",
+        "I wasn't being mean when I typed it. I really wanted to know if I was crazy. Steph's been doing the face since netball and I'd started doing it in the mirror."
       ],
+      "after": "By the morning, Steph's video of the TV is in the netball chat. Sam sends you a screenshot of it with no message, and then a heart.",
+      "debrief": "Finding out on a TV screen is rough. Being cheered can be as much as being laughed at, and both are survivable.",
       "them": [
         {
-          "from": "Bec",
-          "text": "thanks for coming everyone!! 🥳 im so hungover"
+          "note": "Everyone's crowded round the TV. Tayla's at the front with her phone, flicking through photos. Bec screams at every single one."
         },
         {
           "from": "Bec",
-          "text": "also someone took my shoe home?? one shoe"
+          "text": "NOT the formal. Tay. Not the formal."
+        },
+        "Babe, it's your 30th. Everything goes in.",
+        {
+          "note": "Between the formal and Schoolies, Tayla's thumb slips out of the photos. Her chat with Bec and Steph comes up on the TV, huge. \"the girls 💗\". She's been typing in it all night between slides."
+        },
+        {
+          "note": "The last message, three minutes old, in big white letters: \"is he gay or am i crazy\". Under it, Steph: \"crazy if u think hes not\"."
+        },
+        {
+          "note": "The room reads it. You can hear it go back towards the bar, a little at a time."
+        },
+        "No. NO. That's not. Okay. Nobody screenshot... nobody SCREENSHOT that.",
+        {
+          "note": "Steph already has her phone up, filming the TV."
+        },
+        {
+          "from": "Bec",
+          "text": "Tay. TAY. Oh my god."
         },
         {
           "from": "Steph",
-          "text": "ok be honest is tayla's guy gay or"
+          "text": "Well. Somebody had to ask."
         },
+        "I wasn't asking HIM, Steph. I was asking you, babe. You're standing right there. Why are you replying.",
         {
-          "from": "Steph",
-          "text": "WRONG CHAT"
-        },
-        {
-          "from": "Steph",
-          "text": "omg sorry {name} that was for bec"
-        },
-        {
-          "from": "Tayla",
-          "text": "steph 😐"
+          "note": "Tayla gets the photos back up. It's Bec at Schoolies. Nobody's looking at it. They're looking at you."
         }
       ],
       "replies": [
         {
-          "you": "All good Steph lol. Bec, I think your shoe's in my bag. Don't ask.",
+          "you": "(Take the phone off her and type 'you're not crazy' into the chat.)",
           "them": [
             {
+              "note": "It comes up on the TV as you type it, one letter at a time. \"youre not crazy\". You hit send. It goes blue."
+            },
+            {
+              "note": "For one second nothing. Then Bec screams, a proper one, and the whole room goes with her. People are cheering. Someone at the bar is banging the counter. Someone puts Padam Padam on."
+            },
+            {
+              "from": "Bec",
+              "text": "HE SAID IT. ON MY TV. AT MY THIRTIETH."
+            },
+            {
               "from": "Steph",
-              "text": "im so sorry"
+              "text": "I KNEW IT. I've been saying it since NETBALL."
             },
-            {
-              "from": "Bec",
-              "text": "omg thank u"
-            },
-            {
-              "from": "Bec",
-              "text": "and in steph's defence he did do my eyeliner in the bathroom"
-            },
-            {
-              "from": "Bec",
-              "text": "it was better than when i do it. like a lot better"
-            },
-            {
-              "from": "Tayla",
-              "text": "can everyone stop"
-            }
+            "Oh my god. Babe. BABE."
           ],
           "replies": [
             {
-              "you": "It did look good though, Bec.",
+              "you": "(The cheering doesn't stop. Your face crumples. You start crying.)",
+              "thinks": [
+                "Everyone cheered and I thought, oh good, that's nice actually, and then I looked at his face and went cold all over.",
+                "Bec got him first. It was her birthday and she just took him. I stood there holding my phone with the slideshow still going behind me, Bec at Schoolies, the traffic cone.",
+                "In the bathroom I sat on the sink and said sorry so many times Steph told me to shut up.",
+                "I called him babe the whole time and it didn't sound like boyfriend babe anymore. It sounded like Bec babe. I didn't even decide that, it just happened."
+              ],
               "them": [
                 {
+                  "note": "It's too loud and it's all at you. Thirty people clapping. Your chin goes and then you're crying in front of the TV with your eyeliner going."
+                },
+                {
+                  "note": "Bec sees it first. She stops cheering mid-scream."
+                },
+                {
                   "from": "Bec",
-                  "text": "it did"
+                  "text": "Okay. Okay, off. Music off. Bathroom. Come with me, babe."
                 },
                 {
-                  "from": "Steph",
-                  "text": "see this is what i mean"
+                  "note": "She takes your hand and walks you through the party to the bathroom, the same one, and sits you on the little bench by the sinks. She gets her own eyeliner out of her clutch."
                 },
                 {
-                  "from": "Tayla",
-                  "text": "oh my god"
+                  "from": "Bec",
+                  "text": "Look up. You did mine. I'm doing yours. Don't blink."
                 },
                 {
-                  "from": "Tayla",
-                  "text": "muting this"
+                  "note": "Steph comes in with a vodka soda and puts it in your hand without saying anything. Then Tayla, shutting the door behind her."
+                },
+                "Babe. I'm so sorry. Like SO sorry. I didn't mean for it to go on the TV. I wouldn't do that. I'd never."
+              ],
+              "replies": [
+                {
+                  "you": "Is my eyeliner ruined? Be honest.",
+                  "gaydar": 100,
+                  "spark": 2,
+                  "them": [
+                    {
+                      "from": "Bec",
+                      "text": "It's ruined. It's fine. I'm better at it than you think."
+                    },
+                    {
+                      "note": "She isn't, quite, but she's close. Steph holds your chin still so Bec can do the other side."
+                    },
+                    {
+                      "from": "Steph",
+                      "text": "I'm sorry I replied. I'm sorry I filmed it. I'm sending it to you, not to anyone else."
+                    },
+                    "Steph, you've already sent it to the netball chat.",
+                    {
+                      "from": "Steph",
+                      "text": "...I'm sending it to you as well."
+                    },
+                    {
+                      "note": "Steph's got her notes app open. She's typing a heading. \"guys for {name}\". Tayla sees it and doesn't tell her to stop."
+                    }
+                  ],
+                  "after": "Tayla, to the girls 💗, at 3am: \"is he ok\" Bec: \"hes fine hes asleep on my couch\" Bec: \"he did my eyeliner and then i did his and his was better\" Steph: \"started a list\" Tayla: \"a list of what\" Steph: \"guys\""
+                },
+                {
+                  "you": "Can we go back out? I don't want to miss your cake.",
+                  "gaydar": 100,
+                  "spark": 1,
+                  "them": [
+                    {
+                      "from": "Bec",
+                      "text": "There's no cake without you, babe. You did the board."
+                    },
+                    {
+                      "note": "You go back out with Bec on one arm and Tayla on the other. The room cheers again, smaller, nicer. Someone hands you a sparkler."
+                    },
+                    "You're in the photo. With the girls. Middle, babe, go.",
+                    {
+                      "note": "In the cake photo you're in the middle between Bec and Steph, eyeliner a bit wonky, and Tayla's at the end with her arm round your waist."
+                    }
+                  ],
+                  "after": "Tayla, to the girls 💗, the next day: \"the cake photo is SO cute\" Bec: \"he looks better than me in it\" Steph: \"he looks better than all of us in it\" Tayla: \"yeah well. hes not my boyfriend anymore so i can say that\""
                 }
               ]
             },
             {
-              "you": "(Say nothing else.)"
-            }
-          ],
-          "after": "An hour later Tayla messages you on her own: \"that was so embarrassing\" \"people kept asking me all night if you were gay and i didnt know what to say\" \"steph asked me like three times\" \"you did bec's makeup {name}. at her party\" \"i dont think this is going anywhere. sorry\""
-        },
-        {
-          "you": "To answer the question Steph, I don't know. I'm still working it out. The eyeliner was good though, right?",
-          "gaydar": 95,
-          "them": [
-            {
-              "from": "Steph",
-              "text": "oh"
-            },
-            {
-              "from": "Bec",
-              "text": "😳"
-            },
-            {
-              "from": "Bec",
-              "text": "it was good"
-            },
-            {
-              "from": "Tayla",
-              "text": "are you serious"
-            },
-            {
-              "from": "Tayla",
-              "text": "you couldnt work that out before i brought you to bec's 30th?"
-            }
-          ],
-          "replies": [
-            {
-              "you": "Sorry, Tay. I didn't think it would go like this.",
+              "you": "(Bow.)",
               "them": [
                 {
-                  "from": "Tayla",
-                  "text": "i looked like an idiot"
+                  "note": "You bow. A proper one, hand on your chest. The cheering doubles."
                 },
                 {
-                  "from": "Tayla",
-                  "text": "all night i was like hes not gay hes just fun. and steph kept doing the face"
+                  "from": "Bec",
+                  "text": "I'm going to cry. I'm actually going to cry. It's my birthday and you've given ME a present."
+                },
+                "Babe. Oh my god. Okay. So I'm not crazy."
+              ],
+              "replies": [
+                {
+                  "you": "(Take the mic off the DJ.) Happy birthday, Bec!",
+                  "gaydar": 100,
+                  "spark": 2,
+                  "them": [
+                    {
+                      "note": "The DJ hands it over without arguing. Thirty people sing happy birthday. You start it too high and everyone goes with you anyway."
+                    },
+                    {
+                      "from": "Bec",
+                      "text": "BEST BIRTHDAY EVER."
+                    },
+                    "I'm so annoyed. I'm so annoyed I'm not annoyed. Is that a thing?",
+                    {
+                      "from": "Steph",
+                      "text": "It's a thing, Tay."
+                    },
+                    {
+                      "note": "Tayla hugs you from the side, quick, the way she hugs Bec after a win."
+                    }
+                  ],
+                  "after": "Steph, to the netball chat: \"[video] tay's ex came out on the tv and then sang happy birthday into a mic\" Sam: \"he's my coworker\" Steph: \"sam he's ICONIC\" Tayla: \"hes not my ex its been like four minutes\""
                 },
                 {
-                  "from": "Steph",
-                  "text": "in my defence bec's cousin is gay and single so"
-                },
-                {
-                  "from": "Tayla",
-                  "text": "STEPH"
-                },
-                {
-                  "from": "Tayla",
-                  "text": "the bouncer asked if you were with the bachelorette party. and i laughed like it was funny"
+                  "you": "(Go and dance to Kylie. On your own, like before.)",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    {
+                      "note": "You go out on the floor on your own. Two songs in, Bec's with you. Then Steph. Then half the party."
+                    },
+                    "I'm coming. Wait. I'm coming, babe.",
+                    {
+                      "note": "Tayla dances next to you, not with you. She does the hand thing from Padam Padam and you do it back."
+                    }
+                  ],
+                  "after": "Tayla, to the girls 💗, at 2am: \"he danced to every kylie song\" Bec: \"he did that last time too\" Tayla: \"yeah but this time i didn't mind\""
                 }
               ]
             },
             {
-              "you": "Tay, can we talk, just us?",
+              "you": "(Panic.) Wait, that was a joke. I was joking.",
               "them": [
                 {
-                  "from": "Tayla",
-                  "text": "no"
-                },
-                {
-                  "from": "Tayla",
-                  "text": "not right now"
-                },
-                {
                   "from": "Bec",
-                  "text": "maybe take it out of my birthday chat guys"
+                  "text": "Babe, you can't take it back. It's on my TV."
+                },
+                {
+                  "from": "Steph",
+                  "text": "It's on my phone as well."
+                },
+                {
+                  "note": "The cheering dies off. Someone near the bar laughs."
                 }
               ],
-              "after": "Tayla doesn't answer your DM. Two days later Sam says netball was \"a bit awkward\" and changes the subject."
+              "replies": [
+                {
+                  "you": "I was JOKING, Tay.",
+                  "gaydar": 95,
+                  "spark": 8,
+                  "them": [
+                    "Okay. Cool. Funny joke.",
+                    {
+                      "note": "She unplugs her phone. The TV goes back to blue. Somebody puts the music on louder than before."
+                    },
+                    "I'm going to go help Bec with the cake. You can come or not. Whatever.",
+                    {
+                      "note": "She doesn't wait to see which."
+                    }
+                  ],
+                  "after": "Tayla, to the girls 💗, at 1am: \"he said it was a joke\" Steph: \"was it\" Tayla: \"steph it was on the tv\" Bec: \"he still did my eyeliner though\" Tayla: \"BEC\""
+                },
+                {
+                  "you": "...Okay. I wasn't joking.",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    {
+                      "from": "Bec",
+                      "text": "I KNOW you weren't, babe."
+                    },
+                    "Oh my god. Okay. So it's not a joke. So it's real. So I'm not crazy.",
+                    {
+                      "from": "Steph",
+                      "text": "You were never crazy. I said that. It's in writing."
+                    },
+                    {
+                      "note": "Tayla puts the slideshow back on. When Bec at Schoolies comes up, she points at the traffic cone and looks at you, and you both laugh, for no reason."
+                    }
+                  ],
+                  "after": "Steph, to the netball chat: \"[video] he said joking. then he said not joking\" Bec: \"we love him\" Tayla: \"yes ok we love him\""
+                }
+              ]
             }
           ]
         },
         {
-          "you": "Steph. I'm wearing your lip gloss in my profile pic. I borrowed it in the bathroom. Does that help?",
-          "gaydar": 95,
+          "you": "Bec, can we go to the next photo?",
           "them": [
             {
-              "from": "Steph",
-              "text": "LMAO"
-            },
-            {
               "from": "Bec",
-              "text": "im crying"
+              "text": "Babe, this is better than the photos."
             },
             {
-              "from": "Tayla",
-              "text": "its not funny"
+              "from": "Steph",
+              "text": "So? Is she crazy?"
             },
             {
-              "from": "Tayla",
-              "text": "ok its a bit funny"
-            },
-            {
-              "from": "Tayla",
-              "text": "can you call me"
+              "note": "Tayla's looking at you. Her phone's still lit up in her hand."
             }
           ],
-          "after": "On the phone she isn't angry, she just sounds flat. \"I really liked you. You're so fun to take places.\" Then: \"But I spent the whole night watching you with my friends and you were way more into them than me. I want a guy who's into me. Like obviously.\" Her Uber turns up and she has to go."
+          "replies": [
+            {
+              "you": "She's crazy. I'm straight.",
+              "them": [
+                {
+                  "from": "Steph",
+                  "text": "Okay."
+                },
+                "Okay, so I'm crazy. Cool. Great.",
+                {
+                  "note": "She unplugs her phone. The slideshow's over at Schoolies."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "I'm straight, Tay.",
+                  "gaydar": 90,
+                  "spark": 10,
+                  "them": [
+                    "You did Bec's eyeliner. In the BATHROOM. At her party.",
+                    "And I'm the crazy one. Okay.",
+                    {
+                      "note": "She goes to stand with the girls by the bar. Steph puts an arm round her and looks at you over her shoulder."
+                    }
+                  ],
+                  "after": "An hour later Tayla, on her own: \"im not mad at you\" \"just embarrassed\" \"steph's been my best friend since year 7 and she saw my text on a TV\" \"and you just said im crazy in front of everyone\" \"i think we should stop. sorry\""
+                },
+                {
+                  "you": "(Go and get a drink at the bar.)",
+                  "gaydar": 92,
+                  "spark": 7,
+                  "them": [
+                    {
+                      "note": "The bartender has seen the TV. He slides you a pink drink you didn't order and says \"on the house, babe\". You take it."
+                    },
+                    {
+                      "note": "When you turn round the three of them are watching you from the TV."
+                    },
+                    {
+                      "from": "Steph",
+                      "text": "He took the pink drink."
+                    },
+                    "I can see, Steph. I can see."
+                  ],
+                  "after": "Steph, to the girls 💗: \"the bartender called him babe and he took the pink drink\" Bec: \"to be fair it was a good drink\" Tayla: \"can we please just do the cake\""
+                }
+              ]
+            },
+            {
+              "you": "She's not crazy.",
+              "them": [
+                {
+                  "note": "Bec screams. Steph says \"thank you\" to the ceiling. Tayla just stands there with her mouth open."
+                },
+                "Babe.",
+                "Okay. Okay okay. I'm not crazy."
+              ],
+              "replies": [
+                {
+                  "you": "Sorry, Tay. I should have said it before your friend's party.",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    "Yeah. You should have. Like a bit.",
+                    "But you did the board. And Bec's eyeliner. And you came. So.",
+                    {
+                      "note": "She hugs you. It's short, but it's a real one."
+                    },
+                    {
+                      "from": "Bec",
+                      "text": "Can we put the slideshow back on now? I want everyone to see the formal."
+                    },
+                    "Everyone's seen the formal, babe."
+                  ],
+                  "after": "Tayla, to the girls 💗, at 2am: \"he said sorry for doing it at bec's party\" Bec: \"he didn't do it the tv did it\" Steph: \"tay did it\" Tayla: \"STEPH\""
+                },
+                {
+                  "you": "Can we at least get a photo by the balloon arch first?",
+                  "gaydar": 100,
+                  "spark": 2,
+                  "them": [
+                    {
+                      "from": "Bec",
+                      "text": "YES. All of us. Get in."
+                    },
+                    {
+                      "note": "You stand under the balloon arch you built, between Bec and Steph. Tayla takes the photo. Then she hands her phone to Steph and squeezes in next to you."
+                    },
+                    "Delete the first one. I wasn't in it.",
+                    {
+                      "from": "Steph",
+                      "text": "You were holding the phone, Tay."
+                    },
+                    "Delete it."
+                  ],
+                  "after": "Tayla's story the next morning: the balloon arch photo, all four of you, with \"the girls 💗\" written over it. You're in the middle."
+                }
+              ]
+            }
+          ]
         },
         {
-          "you": "Hi Steph. I'm in this chat btw.",
+          "you": "(Get your things and go.)",
           "them": [
             {
-              "from": "Steph",
-              "text": "i know"
+              "note": "You go down the stairs. The music starts again behind you."
             },
-            {
-              "from": "Steph",
-              "text": "im dying"
-            },
-            {
-              "from": "Bec",
-              "text": "she's literally under her desk"
-            },
-            {
-              "from": "Tayla",
-              "text": "can we not do this in here"
-            },
-            {
-              "from": "Tayla",
-              "text": "{name} pls dont reply in here theres 11 people in this chat"
-            }
+            "{name}! Babe! Wait!"
           ],
-          "after": "An hour later Tayla, on her own: \"im not mad at you\" \"just embarrassed\" \"steph's been my best friend since year 7 and she asked if my boyfriend was gay in front of 11 people\" \"and i didnt even know the answer\" \"i think we should stop. sorry\" \"bec still wants you to do her makeup for her work thing btw\""
-        },
-        {
-          "you": "(Leave the group.)",
-          "after": "You leave the group. Your phone goes twice more with Tayla's name on it and you leave it face down until lunch."
+          "replies": [
+            {
+              "you": "(Keep going.)",
+              "gaydar": 90,
+              "spark": 5,
+              "them": [
+                {
+                  "note": "You walk down Ann Street in your party clothes and get an Uber outside the convenience store. The driver asks if it was a good night."
+                }
+              ],
+              "after": "On the drive home Tayla sends five messages in a row. \"im so sorry\" \"it wasnt for you\" \"i mean it was ABOUT you but it wasnt for you\" \"bec says come back for cake\" \"steph says sorry. she doesnt really mean it but she says it\""
+            },
+            {
+              "you": "(Stop on the stairs.)",
+              "them": [
+                {
+                  "note": "She catches up three steps down, holding her heels in one hand."
+                },
+                "I'm so sorry. I swear I didn't mean it to go on the TV. That was for the girls. I text them everything. I texted them about your nails on our first date.",
+                "Are you okay? Like... am I crazy, though?"
+              ],
+              "replies": [
+                {
+                  "you": "You're not crazy.",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    "Okay.",
+                    "Okay. Babe. Okay.",
+                    {
+                      "note": "She sits down on the step, so you sit down too. She puts her head on your shoulder for a second."
+                    },
+                    "Come back up for the cake. Please. It's pink. You picked it."
+                  ],
+                  "after": "Tayla, to the girls 💗: \"he said im not crazy\" Bec: \"we KNOW youre not crazy\" Steph: \"i said that on the tv\" Tayla: \"hes coming back up for cake\""
+                },
+                {
+                  "you": "I don't know, Tay. I don't know what you are.",
+                  "gaydar": 94,
+                  "spark": 4,
+                  "them": [
+                    "That's fair. That's so fair.",
+                    "I'm going to go back up. Bec'll kill me if I miss the candles.",
+                    "Text me you got home. Not in the girls chat. Just me."
+                  ],
+                  "after": "You text her from the Uber: \"home\". She replies with a heart. Then, a minute later, in the girls 💗, which you aren't in, but Bec tells you later: \"hes home. hes fine. im the worst\""
+                }
+              ]
+            }
+          ]
         }
-      ],
-      "debrief": "That's a rough way to find out people are talking about you. Joking about it, being honest, or just leaving were all fine."
+      ]
     },
     {
       "id": "tayla-feet",
@@ -6978,183 +7995,415 @@ window.CONTENT = {
     {
       "id": "c6d",
       "route": "georgie",
-      "gaydar": 95,
-      "gaydarSays": "He looked at the waiter's arms eight times. I counted. I always count.",
-      "title": "Straight up",
+      "title": "The list",
       "contact": "Georgie",
+      "irl": true,
+      "gaydar": 95,
+      "gaydarSays": "Twenty-two things. My housemate added two. I'd stand by every one of them except one, and I'm not saying which.",
+      "intro": "Thursday, the cafe at the climbing gym. You're meeting Georgie after her session, then dinner. You wore the lilac slip dress with a cardigan over it, your nails done, gloss and lashes. Georgie's still at the table with her housemate and a girl from the Tuesday crew called Tess, all chalky, sharing a brownie. Georgie has her phone out before you've sat down.",
       "outfits": [
         {
           "label": "The slip dress with a cardigan buttoned right up",
-          "thinks": "Big cardigan buttoned right to the top in summer. Like if he covered it up it wasn't a dress. It was still a dress. I could see the hem.",
           "gaydar": -5,
-          "intro": "Third date. Thai in West End, the place on Boundary St. You wore the lilac slip dress with a big cardigan buttoned right up over it, and just gloss. She didn't mention it once all dinner. You talked to the waiter about his tattoos for a long time."
+          "intro": "Thursday, the cafe at the climbing gym. You're meeting Georgie after her session, then dinner. You wore the lilac slip dress with a big cardigan buttoned right up over it, and just gloss. Georgie's still at the table with her housemate and a girl from the Tuesday crew called Tess, all chalky, sharing a brownie. Georgie has her phone out before you've sat down.",
+          "thinks": "The cardigan was buttoned all the way to the top, which made it worse. I could see the dress at the bottom. Tess said 'is that a dress' and I said 'yes, Tess'."
         },
         {
           "label": "Lilac slip dress, a cardigan, nails, gloss and lashes",
-          "thinks": "Lilac slip dress, nails, gloss, lashes. Four things. I'd counted them before I sat down. Then I stopped, because there wasn't any point."
+          "thinks": "Lilac slip dress and lashes, at the climbing gym, past the bouldering wall with all the guys from Thursday on it. Nobody fell off. I checked."
         },
         {
           "label": "Lilac slip dress, strappy sandals, painted toes, lashes, no cardigan",
-          "thinks": "No cardigan. Strappy sandals, toes painted to match the dress. He matched his toes to his dress. I've never matched anything in my life.",
           "gaydar": 4,
-          "intro": "Third date. Thai in West End, the place on Boundary St. The lilac slip dress, no cardigan, strappy sandals, toes painted to match, gloss and lashes. She didn't mention it once all dinner. You talked to the waiter about his tattoos for a long time.",
+          "intro": "Thursday, the cafe at the climbing gym. You're meeting Georgie after her session, then dinner. You wore the lilac slip dress with no cardigan, strappy sandals, toes painted to match, gloss and lashes. Georgie's still at the table with her housemate and a girl from the Tuesday crew called Tess, all chalky, sharing a brownie. Georgie has her phone out before you've sat down.",
           "them": [
-            "and dont think i didnt see the toes"
-          ]
+            {
+              "from": "Tess",
+              "text": "Are your toes the same colour as the dress? Georgie. His toes match."
+            }
+          ],
+          "thinks": "No cardigan and toes that matched. My housemate kicked me under the table and I kicked her back and we both just looked at our brownie."
         }
       ],
-      "intro": "Third date. Thai in West End, the place on Boundary St. A lilac slip dress with a cardigan over it, your nails done, gloss and lashes. She didn't mention it once all dinner. You talked to the waiter about his tattoos for a long time.",
       "thinks": [
-        "I didn't say anything at dinner. Ninety minutes. I had the question the whole time and I ate my pad see ew instead.",
-        "He talked to the waiter about those tattoos for longer than he talked to me about anything. I didn't time it properly. Roughly, I timed it.",
-        "It's not the dress. The dress was fine. I'm a three-dates person: three dates and you know. I knew.",
-        "Typed the question on the bus. Deleted it. Typed it again. Sent it two stops before mine."
+        "I wrote the list over two weeks, mostly on the bus. It started as a joke for my housemate and then it was twenty-two things long and it stopped being a joke somewhere around fourteen.",
+        "I did it at the cafe on purpose. If my friends were there I'd actually do it. If it was just us at dinner I'd have eaten my pad see ew and said nothing for the third time.",
+        "The dress was good. I wrote that down too. In brackets."
       ],
+      "debrief": "Hearing yourself read out as a list is a lot. Some of it was fair and some of it wasn't, and it's okay that it got to you.",
       "them": [
-        "hey",
-        "im just going to ask because i hate games and ive been thinking about it since the tacos",
-        "are you gay"
+        "Hi. Sit. I got you the iced chai.",
+        {
+          "note": "Her housemate looks at the dress, then at Georgie. Tess puts her hand over her mouth."
+        },
+        "Okay. I'm doing this here, because I said I would, and if I wait till dinner I won't. Not to be dramatic but I've been keeping a list.",
+        {
+          "from": "Tess",
+          "text": "She has. She read us some at the top of the wall."
+        },
+        "Things. About you. Numbered.",
+        {
+          "note": "She scrolls. It's long."
+        },
+        "One. Does his own nails 'for grip'. Two, sang ABBA on the wall. Three, the scream. High C. Four, 'sage is basically a neutral now, Georgie'.",
+        "Five. Got a free churro at tacos by talking to the waiter about his eyebrows. I've been going there two years.",
+        "Six. Pink climbing shoes. Women's. Six and a half. They fit.",
+        {
+          "from": "Her housemate",
+          "text": "Seven. He told me my pilates socks were cute when he picked her up. Nobody's ever noticed my socks."
+        },
+        {
+          "from": "Tess",
+          "text": "Can I do one? Eight. He asked me where my chalk bag's from. It's from the shop downstairs. It's the shop one."
+        },
+        "Eight, okay. Nine is the dress. Which looks good. I'm putting that in brackets. Nine, dress, bracket, looks good.",
+        "So. That's nine and there's more. Are you gay?"
       ],
       "replies": [
         {
-          "you": "Why does everyone keep asking me that? I wore a dress, Georgie. Guys can wear dresses.",
+          "you": "No. I'm not. It's a dress, Georgie.",
           "them": [
-            "they can",
-            "and it looked good. better than anything i own tbh",
-            "but you barely looked at me tonight",
-            "you asked the waiter about his tattoos for like ten minutes. you touched his arm when he showed you the one on his bicep",
-            "you looked at his arms 8 times. i counted"
+            {
+              "from": "Tess",
+              "text": "Ten. Said 'it's a dress, Georgie'."
+            },
+            {
+              "note": "Her housemate laughs into the brownie. Georgie types it in."
+            },
+            "Ten. Okay."
           ],
           "replies": [
             {
-              "you": "I was looking at the tattoo! It was a swallow. Really traditional.",
+              "you": "Can you stop writing things down?",
               "them": [
-                "it was a swallow on a massive arm",
-                "{name} im not mad. i just cant do the pretending thing",
-                "im asking one more time and then i wont ask again. are you gay"
+                "No. It's how I think.",
+                "Eleven. Asked me to stop writing things down."
               ],
               "replies": [
                 {
-                  "you": "...I don't know. I really don't.",
+                  "you": "I'm not gay.",
+                  "gaydar": 88,
+                  "spark": 8,
                   "them": [
-                    "ok",
-                    "thats the most honest thing youve said in three dates",
-                    "i think we stop seeing each other",
-                    "you can still belay me. youre good at it"
-                  ]
+                    "Okay.",
+                    "Then I don't want to go to dinner. That's not a punishment. I just don't want to sit there for another hour and do the same date for a fourth time.",
+                    {
+                      "note": "She puts her phone in her chalk bag. Her housemate gets up to put her mug back. Tess suddenly has to go and coil a rope."
+                    }
+                  ],
+                  "after": "Georgie, to her housemate, on the drive home: \"he said no\" Housemate: \"i was there\" Georgie: \"i know. im just saying it out loud. he said no and he was wearing a dress\" Housemate: \"are you ok\" Georgie: \"nice guy. not a boyfriend\""
                 },
                 {
-                  "you": "No.",
+                  "you": "(Take her phone and put it face down on the table.)",
+                  "gaydar": 90,
+                  "spark": 10,
                   "them": [
-                    "ok",
-                    "then youre a straight guy who wears slip dresses and stares at waiters. fine",
-                    "im out either way. see you at the gym"
-                  ]
+                    "Twelve. Took my phone.",
+                    {
+                      "note": "She says it from memory, without the phone, and for a second she nearly smiles."
+                    },
+                    {
+                      "from": "Her housemate",
+                      "text": "That's actually a good one. I'd keep that one."
+                    },
+                    "I'm keeping it. Twelve's staying.",
+                    "You can still come to dinner. I'm still hungry. I'm just not going to pretend I'm not counting."
+                  ],
+                  "after": "Georgie, to her housemate: \"he took my phone\" Housemate: \"and you just kept going\" Georgie: \"i know the list off by heart\" Housemate: \"georgie\" Georgie: \"what. it's twelve things now\""
                 }
               ]
             },
             {
-              "you": "Fine. I can wear a dress and be straight.",
+              "you": "(Laugh.) Okay. Number five's fair.",
               "them": [
-                "sure",
-                "are you?"
+                "Which means the rest are fair.",
+                "That's not how lists work but it's how this one works."
               ],
               "replies": [
                 {
-                  "you": "...Next question.",
+                  "you": "...They're all fair.",
+                  "gaydar": 98,
+                  "spark": 4,
                   "them": [
-                    "right",
-                    "ok"
-                  ]
+                    "Okay.",
+                    "Okay. Thank you. That's the most you've said about it in three dates.",
+                    {
+                      "from": "Tess",
+                      "text": "Do you want my brownie? You can have the rest of my brownie."
+                    },
+                    {
+                      "note": "Georgie closes the list. She doesn't delete it. She just puts the phone in her chalk bag and leaves it there."
+                    },
+                    "Still dinner? I'm starving. I did the purple one twice."
+                  ],
+                  "after": "Georgie, to her housemate: \"he said they're all fair\" Housemate: \"so he said it\" Georgie: \"he said they're all fair. that's like ninety-eight percent\" Housemate: \"you're not counting this\" Georgie: \"i am\""
+                },
+                {
+                  "you": "Five's fair. The rest are slander.",
+                  "gaydar": 93,
+                  "spark": 6,
+                  "them": [
+                    {
+                      "from": "Tess",
+                      "text": "Thirteen. Said 'slander'."
+                    },
+                    "Thirteen. Thank you, Tess.",
+                    {
+                      "note": "Her housemate is crying laughing. Georgie isn't, but her mouth's doing something at the corner."
+                    },
+                    "Six isn't slander. I bought them. I was there."
+                  ],
+                  "after": "Georgie, to Tess: \"he said slander\" Tess: \"he's so funny\" Georgie: \"yes\" Tess: \"are you sad\" Georgie: \"no. a bit. i think i'd ranked him higher\""
                 }
               ]
             }
           ]
         },
         {
-          "you": "Wow. Straight to it. Can I ask you something first? Did you hate the dress?",
+          "you": "Keep going. What's after nine?",
           "them": [
-            "no",
-            "it suited you way more than the gym stuff did",
-            "i didnt say anything at dinner because i didnt know what to say. thats why im asking"
+            "Okay. Ten. Asked if my belay device came in another colour.",
+            {
+              "from": "Her housemate",
+              "text": "Eleven. Did a little skip when the waiter said 'love' at tacos. You told me that one."
+            },
+            "I did tell you that one. Twelve, cried at the end of the climbing documentary. Thirteen, has a hand cream in the car and it's nicer than mine.",
+            {
+              "note": "She's going fast now, not really looking up."
+            },
+            "Fourteen. Said he's never been in love. Three years with his ex and he said he didn't think he ever was.",
+            {
+              "note": "She stops. It's quiet. Tess looks at the table. Her housemate looks at Georgie."
+            },
+            "That one's... I shouldn't have read that one."
           ],
           "replies": [
             {
-              "you": "I'm not gay. I just like pretty things. I always have.",
+              "you": "(You try to say something and your chin goes. You're crying, in the gym cafe, in the dress.)",
+              "thinks": [
+                "Number fourteen wasn't a joke number. I knew that when I wrote it, on the bus, and I read it out anyway because I was going fast and I was showing off a bit. I hate that.",
+                "I deleted the whole note in front of him. Two weeks of it. I didn't even feel bad about the other twenty-one.",
+                "I don't really know what to do with people crying, so I just sat next to him. My housemate gave him her hoodie, the chalky one she never washes, and he put it on over the dress.",
+                "Tess got him a hot chocolate and he said thank you in this tiny voice, and then he asked my housemate if the hoodie came in another colour, and we all laughed, and that's when the night came back."
+              ],
               "them": [
-                "ok",
-                "i like pretty things too",
-                "but i dont want to go out with a guy who looks prettier than me at dinner",
-                "sorry. thats harsh",
-                "youre not really my type anymore. you were on the wall that first night. not in the dress"
+                {
+                  "note": "You open your mouth and nothing comes out, and then your chin goes, and then you're crying, at the gym cafe, with chalk on the table and a bouldering wall behind you."
+                },
+                {
+                  "note": "Georgie looks at you. Then she holds her phone up so you can see it, opens the note, and deletes it. All twenty-two. She shows you the empty screen."
+                },
+                "Gone.",
+                {
+                  "note": "She gets up, comes round to your side of the table and sits down right next to you, shoulder against yours. She doesn't say anything else. She never fills a silence."
+                },
+                {
+                  "note": "Her housemate pulls off her hoodie, the grey one with chalk all down the front, and holds it out to you."
+                },
+                {
+                  "from": "Her housemate",
+                  "text": "Here. Put it on. It's the softest one I own and it's disgusting."
+                },
+                {
+                  "note": "Tess goes to the counter and comes back with a hot chocolate with two marshmallows and puts it in front of you and then a third marshmallow from her pocket, wrapped."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Into the hot chocolate) It's true, though. Fourteen. I wasn't.",
+                  "gaydar": 99,
+                  "spark": 1,
+                  "them": [
+                    "I know. I didn't mean it like it was bad. I just meant, that's when I knew.",
+                    "Because it wasn't about her. It was about her being a her.",
+                    {
+                      "note": "Her housemate puts a hand on your knee. Tess nods."
+                    },
+                    "You don't have to say anything else. Drink that. It's four dollars."
+                  ],
+                  "after": "Georgie, to her housemate, that night: \"i shouldnt have read fourteen\" Housemate: \"no\" Georgie: \"i deleted it\" Housemate: \"i know i was there\" Georgie: \"he kept your hoodie\" Housemate: \"he can keep it. it looks better on him. over a slip dress\""
+                },
+                {
+                  "you": "I'm gay. That's what fourteen is.",
+                  "gaydar": 100,
+                  "spark": 0,
+                  "them": [
+                    "Yeah.",
+                    "Okay. Thank you for saying it. You didn't have to, after I did that.",
+                    {
+                      "note": "She leans her head on your shoulder for about one second, then sits back up like it didn't happen."
+                    },
+                    {
+                      "from": "Tess",
+                      "text": "Can I say something? There's a guy on Tuesdays who'd love you. He's got a dog."
+                    },
+                    "Tess. Not now.",
+                    "Maybe later though. He does have a nice dog."
+                  ],
+                  "after": "Georgie, to her housemate: \"he said it\" Housemate: \"good. you ok?\" Georgie: \"yeah. weird. good. i ranked him top five dates this year and he's gay\" Housemate: \"what's number one\" Georgie: \"the guy with the boat. you know that\""
+                },
+                {
+                  "you": "(Wipe your face on the hoodie sleeve.) Can you start a new list?",
+                  "gaydar": 97,
+                  "spark": 1,
+                  "them": [
+                    "Of what.",
+                    "...Oh. Okay. Yeah. I can do that.",
+                    {
+                      "note": "She opens a new note. She types a heading and turns the phone round: \"guys at this gym for {name}. ranked.\""
+                    },
+                    {
+                      "from": "Tess",
+                      "text": "One. The Tuesday guy with the dog."
+                    },
+                    {
+                      "from": "Her housemate",
+                      "text": "Not the one who grunts. Put him at the bottom."
+                    },
+                    "I'm putting him at the bottom. Drink your hot chocolate. We're going to dinner after, all of us, I'm not leaving you with the brownie."
+                  ],
+                  "after": "Georgie, to her housemate, from the Thai place: \"new list's at seven names\" Housemate: \"tess added three\" Georgie: \"he ranked them himself. he put the grunting guy at four\" Housemate: \"why\" Georgie: \"he said 'arms'\""
+                }
               ]
             },
             {
-              "you": "I don't know what I am. I know I felt really good in it.",
-              "gaydar": 97,
+              "you": "(Hold it together.) That one's not funny, Georgie.",
               "them": [
-                "ok",
-                "fair",
-                "id just rather not be the girl you work it out on",
-                "i like you. not like that anymore though"
+                "No. It's not. Sorry.",
+                {
+                  "note": "She deletes it. Just that one. You watch her do it."
+                },
+                "I'm not reading the rest. I've still got the question though. I still want to know."
+              ],
+              "replies": [
+                {
+                  "you": "Yeah. I'm gay. That's your answer.",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    "Okay.",
+                    "Thank you. That's all I wanted. I wanted it from you, not from a list.",
+                    {
+                      "from": "Tess",
+                      "text": "That was so brave. In a dress. At the gym."
+                    },
+                    "Tess.",
+                    {
+                      "from": "Tess",
+                      "text": "What? It was."
+                    },
+                    {
+                      "note": "Georgie pushes the last of the brownie across to you. You still go to dinner. She orders for both of you."
+                    }
+                  ],
+                  "after": "Georgie, to her housemate: \"i asked him straight up and he answered straight up\" Housemate: \"pun?\" Georgie: \"no\" Georgie: \"maybe. it's thirteen things now\""
+                },
+                {
+                  "you": "I'm going to go.",
+                  "gaydar": 92,
+                  "spark": 5,
+                  "them": [
+                    "Okay. That's fair.",
+                    {
+                      "note": "You stand up. Your bag strap catches on the chair. Her housemate unhooks it for you without making it a thing."
+                    },
+                    "I'm sorry about fourteen. I'm not sorry about the other ones. But I'm sorry about that one.",
+                    "Still belay me Tuesday? You don't have to answer that now either."
+                  ],
+                  "after": "Georgie, at 11pm: \"sorry about fourteen\" Then: \"the other 21 stand\" Then, a minute later: \"belay tuesday?\" You reply with a thumbs up. She replies \"good\"."
+                }
               ]
             }
           ]
         },
         {
-          "you": "Do you want the honest answer or the one where we get a fourth date?",
+          "you": "Only nine? Georgie. I'm disappointed.",
           "them": [
-            "honest",
-            "obviously"
+            {
+              "note": "Tess shrieks. Her housemate slaps the table."
+            },
+            "There's twenty-two. I stopped at nine because I thought you'd be upset.",
+            {
+              "from": "Tess",
+              "text": "He's not upset. Look at him. He's thrilled."
+            },
+            "Okay. Ranked, how thrilled?"
           ],
           "replies": [
             {
-              "you": "...I think I might be.",
-              "gaydar": 98,
+              "you": "Read them all. I want the full ranking.",
               "them": [
-                "ok",
-                "thank you",
-                "the last three dates felt like hanging out with my housemate tbh. i dont want to kiss my housemate",
-                "you'd kiss the waiter though",
-                "8 times. i counted. ask him out",
-                "still belay me tuesday?"
+                {
+                  "note": "She reads them all. Ten to twenty-two. You correct her twice: it was a laminated brow, not a tinted one, and you were singing Dancing Queen on the wall, not Mamma Mia."
+                },
+                {
+                  "note": "Somewhere around fourteen she skips one. She thinks you don't see her do it."
+                },
+                "Twenty-two. Tonight. Walked past the bouldering wall in lilac and none of the guys fell off, I checked.",
+                "So. The question still stands."
+              ],
+              "replies": [
+                {
+                  "you": "Yes. Obviously. I'm gay. Put that as twenty-three.",
+                  "gaydar": 100,
+                  "spark": 3,
+                  "them": [
+                    "Twenty-three. He said yes.",
+                    {
+                      "note": "She types it in. Her housemate leans over to watch her do it."
+                    },
+                    "Okay. That's the list done. That's the whole list. I feel weird. Good weird.",
+                    {
+                      "from": "Tess",
+                      "text": "Can I take you shopping? I've never had a gay friend who climbs. I mean you don't climb. You fall off."
+                    },
+                    "He does fall off. That's number fifteen."
+                  ],
+                  "after": "Georgie, to her housemate: \"23 things\" Housemate: \"and number 23\" Georgie: \"he said yes\" Housemate: \"proud of you\" Georgie: \"of me??\" Housemate: \"yeah. go to sleep\""
+                },
+                {
+                  "you": "I'll answer at number thirty.",
+                  "gaydar": 95,
+                  "spark": 5,
+                  "them": [
+                    "Thirty. Okay. Then I need eight more.",
+                    {
+                      "from": "Tess",
+                      "text": "Twenty-three. Corrected Georgie about Dancing Queen."
+                    },
+                    {
+                      "from": "Her housemate",
+                      "text": "Twenty-four. Knows what a laminated brow is."
+                    },
+                    "This is going to take five minutes. Get comfy. I'm getting you another chai."
+                  ],
+                  "after": "Georgie, to her housemate: \"we got to 30\" Housemate: \"i was there\" Georgie: \"he answered\" Housemate: \"i was THERE georgie\" Georgie: \"i know. i just like saying 30\""
+                }
               ]
             },
             {
-              "you": "The honest answer is next question.",
+              "you": "Write this down. Number ten: he's gay.",
+              "gaydar": 100,
+              "spark": 2,
               "them": [
-                "thats not an answer",
-                "actually it is. ok",
-                "were done. see you at the gym"
-              ]
-            }
-          ]
-        },
-        {
-          "you": "No.",
-          "them": [
-            "ok",
-            "you looked at the waiters arms 8 times but ok"
-          ],
-          "replies": [
-            {
-              "you": "I didn't. You're imagining it.",
-              "them": [
-                "im not",
-                "whatever. not doing this. see you at the gym"
-              ]
-            },
-            {
-              "you": "I'm not doing this over text, Georgie.",
-              "them": [
-                "fine"
-              ]
+                {
+                  "note": "Georgie looks at you for a long second. Then she types it."
+                },
+                "Ten. He's gay.",
+                "Okay. Good. Thank you. You did it as a list item. That's the nicest thing anyone's done for me.",
+                {
+                  "from": "Her housemate",
+                  "text": "That's actually romantic. In a sad way."
+                },
+                {
+                  "note": "Georgie stops the list at ten and doesn't read the other twelve. You still go to dinner. She lets you order for her, for the first time."
+                }
+              ],
+              "after": "Georgie, to her housemate: \"he made it number ten\" Housemate: \"aw\" Georgie: \"yeah\" Georgie: \"i didnt read 11 to 22\" Housemate: \"why\" Georgie: \"dunno. he ordered me the wrong curry and i ate it anyway\""
             }
           ]
         }
-      ],
-      "after": "Georgie, to her housemate: \"he's gay\" \"the dress guy?\" \"the dress guy\" \"did he say\" \"not really. he looked at the waiter's arms eight times\" \"you counted\" \"yeah\"",
-      "debrief": "She asked you straight out. Answering, not answering, or getting annoyed were all fine."
+      ]
     },
     {
       "id": "georgie-feet",
