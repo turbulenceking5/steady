@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-10-29
+- Story: on every date the girls visibly go off you as you look gayer: shorter hugs, a hand that goes to her wine instead of yours, sitting at the other end of the couch, sitting up when the other guy walks in. The more femme the outfit, the more obvious it is.
+- Story: the girls' inner thoughts are rewritten to say what they really think of you, not what happened. Whether they still fancy you, what puts them off, who they'd rather be with.
 - New Confirmations tab next to Story: lines like "You are GAY", "You are GAY, Calum" and "Everyone knows you are gay" fade in and out all over the screen.
 - Story: the surf club with Hayden is now a sunscreen scene instead of tickling. He takes his time with your small feet, you go red and can't make yourself stop him, and Ella watches it click how gay you are.
 - Story: fixed Jade's one-slide scene after Mel's birthday, which said you and Jade were the same size.
