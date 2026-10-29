@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-29
+- Story: six new dates alone with her where she tickles your feet herself: Mia grabs your foot at the scary bit, Jade tests the nail lady's theory over chips, Olivia paints your toes for the boat photos, Lucy checks your reflexes, Zoe runs Brooke's sport lightning round, and Sophie cross-examines you with a foot file.
 - Story: later chapters remember how the big scene went. If you told them, Hannah's friends are proud of you and Steph's started a list of guys for you. If you cried, Bec checks your eyeliner and Olivia's sister still feels bad. If you dodged it, Georgie kept number nine and Kayla's pool is still open.
 - Story: the chapters after each big scene now follow on from it. You're not really dating her any more but she still invites you, nobody calls you her date, and Hannah no longer says she doesn't know.
 - Story: the inner thoughts are rewritten so each girl thinks in her own voice (Mia apologising, Georgie ranking things, Lucy in nurse mode, Zoe quoting Brooke), messier and more like a real person.

@@ -3438,6 +3438,140 @@ window.CONTENT = {
       ],
       "debrief": "Being the one people ask about outfits is a nice thing to be."
     },
+    {
+      "id": "mia-movie",
+      "route": "mia",
+      "title": "Scary movie",
+      "contact": "Mia",
+      "irl": true,
+      "gaydar": 60,
+      "gaydarSays": "I grabbed his foot at the scary bit. It was an accident. The second time wasn't. Sorry.",
+      "intro": "A Friday night at Mia's flat, just the two of you. She picked a horror movie because Hayley told her to \"be braver\". She said to get comfy, then said sorry for saying it, so your socks are off and your feet are up on her couch. There's a clear coat on your toes. You did it last night, just to see.",
+      "thinks": [
+        "Sorry, the first grab was an accident, the door thing made me jump and his foot was just there. The second time was not an accident. I don't know why I did that. Um.",
+        "His feet are so soft? Softer than mine. I asked what he uses and he said the name of a foot cream, like an actual brand, and I didn't know guys knew brands of foot cream...",
+        "I'm going to tell Hayley about tonight and she's going to say a thing and then I'll have to think about the thing. So maybe I won't tell her. I'll tell her."
+      ],
+      "them": [
+        {
+          "note": "Twenty minutes in, something bangs on a door on screen. Mia screams and grabs the nearest thing. The nearest thing is your foot."
+        },
+        {
+          "note": "Her fingers land right in the middle of your sole. A noise comes out of you. A high one. She lets go like it's hot."
+        },
+        "Oh my god. Sorry. Sorry! Did I hurt you?",
+        {
+          "note": "She pauses the movie. She looks at your foot, then at you."
+        },
+        "Um. Was that... are you ticklish?"
+      ],
+      "replies": [
+        {
+          "you": "No. You just scared me. It's a scary movie, Mia.",
+          "them": [
+            "Right. Sorry. Yeah, of course.",
+            {
+              "note": "She unpauses it. Ten minutes later something jumps out of a cupboard and her hand goes back to your foot. Slower this time. Her nails go all the way down the sole."
+            },
+            "...Sorry. That one was on purpose. I just wanted to check."
+          ],
+          "replies": [
+            {
+              "you": "(Keep a straight face.) See? Nothing.",
+              "them": [
+                {
+                  "note": "She does it again, very lightly, under your toes. You stare at the TV so hard your eyes water. Nothing comes out."
+                },
+                "Oh. Okay. Huh. Sorry, I thought...",
+                "Your feet are like doll feet, though? Sorry. That's weird. They're just really small.",
+                {
+                  "note": "She goes back to the movie. She keeps glancing down at your feet like they owe her an explanation."
+                }
+              ],
+              "gaydar": 58,
+              "spark": 52
+            },
+            {
+              "you": "(It's too much. You snort.)",
+              "them": [
+                {
+                  "note": "It comes out of your nose, and then you're giggling and pulling your foot in, and Mia has both hands over her mouth."
+                },
+                "Oh no. Oh my god. You ARE.",
+                "Sorry. I'm sorry. It's just, you giggle. Like a proper giggle.",
+                {
+                  "note": "She's laughing too now, a small one, into her knees. Neither of you watches the rest of the movie."
+                }
+              ],
+              "gaydar": 64,
+              "spark": 40
+            }
+          ]
+        },
+        {
+          "you": "(Laugh.) Maybe a little. Don't tell anyone.",
+          "them": [
+            "I won't! Sorry. I won't. Um.",
+            "...Can I check? Just once. Sorry. You can say no."
+          ],
+          "replies": [
+            {
+              "you": "Once. Go on.",
+              "them": [
+                {
+                  "note": "She takes your foot in both hands like it might break and runs one finger down the middle. You last about a second. Then you're squealing and a cushion goes off the couch."
+                },
+                "Sorry! Sorry, sorry.",
+                {
+                  "note": "She doesn't stop, though. She's giggling too, and she's got your ankle tucked under her arm, and she goes for your toes."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "Mia! Stop! STOP!",
+                  "them": [
+                    {
+                      "note": "She stops the second you say it, lets go, and pats your foot like she's apologising to it."
+                    },
+                    "Sorry. You said once. That was like four.",
+                    "You squeal like Hayley's cat when someone steps on its tail. I mean that nicely. I think."
+                  ],
+                  "gaydar": 68,
+                  "spark": 30
+                },
+                {
+                  "you": "(Can't get a word out. Just keep laughing.)",
+                  "them": [
+                    {
+                      "note": "You're laughing too hard to talk. After a few seconds she looks at your face, stops by herself and lets go."
+                    },
+                    "Okay. Okay, sorry. You couldn't breathe. I'm stopping.",
+                    "Do you want water? I'll get water.",
+                    {
+                      "note": "She gets water. She also takes a photo of your feet on the couch. \"For nothing,\" she says."
+                    }
+                  ],
+                  "gaydar": 72,
+                  "spark": 22
+                }
+              ]
+            },
+            {
+              "you": "No. Absolutely not. Watch your movie.",
+              "them": [
+                "Okay! Sorry. Watching.",
+                {
+                  "note": "She watches for a whole minute. Then she pokes your heel with one finger, very fast, and stares at the screen."
+                },
+                "That wasn't me. That was the ghost."
+              ],
+              "gaydar": 60,
+              "spark": 50
+            }
+          ]
+        }
+      ]
+    },
 {
   "id": "mia-feet",
   "route": "mia",
@@ -9797,6 +9931,154 @@ window.CONTENT = {
       "debrief": "What you do at 3am is your business."
     },
     {
+      "id": "lucy-reflex",
+      "route": "lucy",
+      "title": "Reflexes",
+      "contact": "Lucy",
+      "irl": true,
+      "gaydar": 58,
+      "gaydarSays": "I was checking his plantar reflex. Then I wasn't. Bless him.",
+      "intro": "3pm at Lucy's share house in Annerley. She's just woken up after nights and you brought her a coffee. Her housemates are at work, so it's just the two of you. You're on the couch with your feet up. Your nails are still the deep red from the markets. Your toes are bare.",
+      "thinks": [
+        "Like, clinically, I was checking the plantar reflex. That's a real thing. Then I wasn't, and I knew I wasn't, and I kept going for a bit. Bless me.",
+        "I've done that test on old men, babies, and a guy who came off a motorbike on Ipswich Road, and nobody has ever made that noise. Not one person.",
+        "Anyway his toes are going red. He doesn't know yet. I'm making another coffee."
+      ],
+      "them": [
+        "Okay. Give me your foot. I want to test something.",
+        "It's a reflex. Plantar reflex. You run something down the sole and the toes should curl down. If they go up, that's a problem.",
+        {
+          "note": "She clicks a pen and holds it cap end out."
+        },
+        "I've done it about a thousand times. It doesn't tickle. It's clinical."
+      ],
+      "replies": [
+        {
+          "you": "Fine. For science.",
+          "them": [
+            {
+              "note": "She takes your heel in her hand and runs the pen cap up the outside of your sole and across under your toes, slow and firm. Your whole body goes stiff."
+            },
+            "Toes curl down. Good. That's normal.",
+            "...Your face isn't normal though. Bless. Are you holding your breath?"
+          ],
+          "replies": [
+            {
+              "you": "(Keep holding it.)",
+              "them": [
+                {
+                  "note": "You keep holding it. She does the other foot the same way, slow and firm, watching your face like she's taking obs."
+                },
+                "Both normal. You held it together. Very brave. I'd give you a sticker.",
+                "Red would suit your toes, by the way. Like your nails. Just saying."
+              ],
+              "gaydar": 56,
+              "spark": 54
+            },
+            {
+              "you": "(Breathe out. It comes out as a giggle.)",
+              "them": [
+                {
+                  "note": "The giggle comes out, then another one, and your foot jerks in her hand."
+                },
+                "Oh no. Oh, sweetheart. That's not a reflex. That's just you.",
+                {
+                  "note": "She puts the pen down and uses her fingernails instead, very lightly."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "Lucy! Okay, stop! Stop!",
+                  "them": [
+                    {
+                      "note": "She stops the moment you say it and pats your shin twice, like you're a patient."
+                    },
+                    "Sorry. Occupational hazard. I see a foot, I assess it.",
+                    "Your feet are tiny, by the way. Clinically. I've had kids on the ward with bigger feet than you."
+                  ],
+                  "gaydar": 64,
+                  "spark": 34
+                },
+                {
+                  "you": "(Can't speak. Laughing too hard.)",
+                  "them": [
+                    {
+                      "note": "You can't get the word out. After a few seconds she watches your face, sees you can't breathe, and stops on her own."
+                    },
+                    "Okay. Deep breath. In through the nose. There you go.",
+                    "I'm writing that up. Patient presented as extremely ticklish. Plan: do that again."
+                  ],
+                  "gaydar": 70,
+                  "spark": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "Lucy, it absolutely tickles. Don't.",
+          "them": [
+            "It's not tickling, it's assessing. Different thing. Hold still.",
+            {
+              "note": "She's already got your ankle. She's very strong for someone who woke up ten minutes ago."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Kick a bit.)",
+              "them": [
+                {
+                  "note": "You kick a bit. She's held worse. She tucks your foot under her arm like a blood pressure cuff and does the pen anyway."
+                },
+                "Toes curl down, normal. Also squealing. Not normal. Noted.",
+                {
+                  "note": "Then she lets go and gives you your foot back, very professional."
+                },
+                "Relax. I don't do anything without consent. Unless you're unconscious."
+              ],
+              "gaydar": 62,
+              "spark": 42
+            },
+            {
+              "you": "(Give up. Hold your foot out.)",
+              "them": [
+                "Thank you. Good patient.",
+                {
+                  "note": "She runs the pen down slowly. You last half a second, then you're laughing so hard you slide off the couch onto her floor, and she comes down with you, still holding your ankle, laughing too."
+                },
+                "Say stop. You know you can just say stop."
+              ],
+              "replies": [
+                {
+                  "you": "Stop! Stop, stop.",
+                  "them": [
+                    {
+                      "note": "She lets go straight away and lies back on the floor next to you, both of you out of breath."
+                    },
+                    "That's the most fun I've had on a day off in about a year. That's sad. Don't tell Kayla."
+                  ],
+                  "gaydar": 66,
+                  "spark": 30
+                },
+                {
+                  "you": "(Shake your head, laughing. Not yet.)",
+                  "them": [
+                    "Not yet? Okay.",
+                    {
+                      "note": "She keeps going, light and quick, for maybe ten more seconds. Then you finally say it, and she stops straight away."
+                    },
+                    "Bless. You're a nightmare patient. I love it."
+                  ],
+                  "gaydar": 74,
+                  "spark": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "c6e",
       "route": "lucy",
       "title": "The evidence",
@@ -11393,6 +11675,135 @@ window.CONTENT = {
       "debrief": "Picking a colour fast just means you know what you like."
     },
     {
+      "id": "jade-couch",
+      "route": "jade",
+      "title": "Lowkey checking",
+      "contact": "Jade",
+      "irl": true,
+      "gaydar": 66,
+      "gaydarSays": "The nail lady said he jumps. The nail lady was right. Anyway.",
+      "intro": "A Tuesday night at Jade's flat in Woolloongabba. Netflix, a bag of salt and vinegar chips, and your feet in her lap because she pulled them there. Your toes are still coral from the nail place. When the nail lady did the scrub, she told Jade you jumped every time.",
+      "thinks": [
+        "Ok so the nail lady said he jumped and I was like, noted. Lowkey been waiting since Saturday.",
+        "He moisturises his heels. I could feel it. Mine are like the bottom of a hiking boot.",
+        "No thoughts. Just his feet in my lap and the chips and him going pink. Anyway now I'm out of chips"
+      ],
+      "them": [
+        "So the nail lady said you jumped.",
+        "Like every time. She said, he jumps, very funny man.",
+        {
+          "note": "She eats a chip. She doesn't look at you. One fingernail goes, very slowly, from your heel to your toes."
+        },
+        "Lowkey just checking."
+      ],
+      "replies": [
+        {
+          "you": "(Don't react. Watch the show.)",
+          "them": [
+            {
+              "note": "You don't react. She eats another chip. The nail goes again, slower, under the toes this time."
+            },
+            "Hm.",
+            {
+              "note": "Then along the side of your foot, where you didn't know you had a side."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Keep watching the show. Somehow.)",
+              "them": [
+                {
+                  "note": "You watch a whole scene. You couldn't say what happened in it. She gives up and puts her chin on her knee."
+                },
+                "Okay, the nail lady lied. Or you're like, a monk.",
+                "Your feet are smaller than my hand though. Look. Lowkey rude."
+              ],
+              "gaydar": 63,
+              "spark": 56
+            },
+            {
+              "you": "(Break. A laugh comes out of your nose.)",
+              "them": [
+                {
+                  "note": "It comes out of your nose. Jade puts the chips down, very calm."
+                },
+                "There it is.",
+                {
+                  "note": "Both hands now, not slow any more. You're laughing and trying to pull your feet back, and she just holds on, totally relaxed, like she does this every Tuesday."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "Jade! Stop! Okay! Stop!",
+                  "them": [
+                    {
+                      "note": "She stops straight away and goes back to the chips like nothing happened."
+                    },
+                    "Okay. Nail lady was right. Vibes confirmed."
+                  ],
+                  "gaydar": 69,
+                  "spark": 36
+                },
+                {
+                  "you": "(Laughing too hard to say anything.)",
+                  "them": [
+                    {
+                      "note": "You can't get a word out. She keeps going a couple more seconds, then looks at your face and stops by herself."
+                    },
+                    "You okay? You've gone the colour of your toes.",
+                    "...Anyway. I'm not telling Mel. I'm telling Mel."
+                  ],
+                  "gaydar": 73,
+                  "spark": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "Jade. Don't you dare.",
+          "them": [
+            "Dare what. I'm watching my show.",
+            {
+              "note": "She is not watching her show. Her nail goes up the middle of your sole, very slowly."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Pull your feet back and sit on them.)",
+              "them": [
+                {
+                  "note": "You sit on them. She looks at you, sitting on your own feet on her couch."
+                },
+                "Okay that's lowkey the cutest thing you've ever done.",
+                "They'll come out eventually. I can wait. I've got chips.",
+                {
+                  "note": "They do come out eventually. She waits until you've forgotten, pokes one heel, says \"boop\", and goes back to the show."
+                }
+              ],
+              "gaydar": 66,
+              "spark": 46
+            },
+            {
+              "you": "(Squirm and giggle. Don't pull away.)",
+              "them": [
+                {
+                  "note": "You don't pull away. She notices. She puts the chips on the floor."
+                },
+                "Okay so you like it. That's fine. No judgement.",
+                {
+                  "note": "She keeps going, light and lazy, for ages. You giggle into a cushion. Every so often she says \"say stop whenever\". When you finally say it, she stops straight away."
+                },
+                "That was like forty minutes. We missed the whole episode. Worth it."
+              ],
+              "gaydar": 75,
+              "spark": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "jade-feet",
       "route": "jade",
       "gaydar": 70,
@@ -12805,6 +13216,164 @@ window.CONTENT = {
       "debrief": "Sharing your skincare is generous. Her sister liking you is a good thing."
     },
     {
+      "id": "olivia-paint",
+      "route": "olivia",
+      "title": "For the photos",
+      "contact": "Olivia",
+      "irl": true,
+      "gaydar": 64,
+      "gaydarSays": "I was meant to be painting his toes for the boat photos. I got maybe four done.",
+      "intro": "The night before the boat. Olivia's apartment in Bulimba, the coffee table covered in nail polish. She's decided your toes need doing \"for the photos\", in a soft pink, and you said yes. It's just the two of you. Your foot's on a towel in her lap.",
+      "thinks": [
+        "I literally rehearsed telling my sister before he'd even gone home. Like, so I was doing his toes, and she's going to scream, a guy let you do his TOES, and I'll say yes and then I'll have to tell her the rest.",
+        "He picked the pink. I held up three and he picked the softest one in about a second and said it would look nice on the boat. On the boat. He thinks about which colours go with boats.",
+        "Anyway, I'm doing my own nails in the morning and his toes are going to look better than mine in every photo. Fine. Cool."
+      ],
+      "them": [
+        "Okay. Hold still. If you smudge this I'm starting again, and I'll tell my sister you smudged it.",
+        {
+          "note": "She does your big toe fine. Then she holds your foot steady, and her thumb is right on the arch, and your whole leg jumps."
+        },
+        "...Excuse me?",
+        "Did your foot just do that on purpose?",
+        {
+          "note": "She looks at her thumb. She looks at you. She moves it, very slowly, about a centimetre."
+        }
+      ],
+      "replies": [
+        {
+          "you": "(Hold completely still.)",
+          "them": [
+            {
+              "note": "You hold still. Your toes curl on their own. She watches them curl and starts to grin."
+            },
+            "Oh my god. You're so ticklish. I'm literally texting my sister.",
+            "Hold still though, I'm doing the next one.",
+            {
+              "note": "She paints the next toe with her thumb going in slow little circles on your arch the whole time."
+            }
+          ],
+          "replies": [
+            {
+              "you": "(Breathe through it. Don't move.)",
+              "them": [
+                {
+                  "note": "You don't move. It takes everything. She paints all five and you don't move once."
+                },
+                "Okay. Respect. That was like a hostage video.",
+                "Other foot."
+              ],
+              "gaydar": 62,
+              "spark": 55
+            },
+            {
+              "you": "Liv. If you keep doing that, I'm going to kick the polish.",
+              "them": [
+                "Then don't kick it.",
+                {
+                  "note": "She caps the polish, puts it on the far end of the table, out of range, and goes for your foot with both hands."
+                },
+                {
+                  "note": "You make a noise you didn't know you could make. She's trying to film it and she's laughing too hard to hold the phone."
+                },
+                "Say stop and I'll stop."
+              ],
+              "replies": [
+                {
+                  "you": "Stop! Stop!",
+                  "them": [
+                    {
+                      "note": "She stops straight away and holds both hands up. Your big toe's smudged."
+                    },
+                    "Okay, that one's on you. My sister's going to see that smudge in every photo.",
+                    "Also, both your feet fit on one of my placemats. I just checked. Look."
+                  ],
+                  "gaydar": 67,
+                  "spark": 38
+                },
+                {
+                  "you": "(Laugh until you can't breathe.)",
+                  "them": [
+                    {
+                      "note": "You can't get a word out. After a few seconds she sees your face and lets go by herself."
+                    },
+                    "Okay, okay. You're done. I've got you.",
+                    "I got it on video though. Sorry. It's going to my sister. She needs to hear that laugh."
+                  ],
+                  "gaydar": 72,
+                  "spark": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "Don't. Liv. Don't even think about it.",
+          "them": [
+            "I'm not thinking about anything. I'm painting.",
+            {
+              "note": "She paints one toe. Then she drags the end of the brush handle down the middle of your sole, very lightly."
+            },
+            "Oops."
+          ],
+          "replies": [
+            {
+              "you": "(Snatch your foot back.)",
+              "them": [
+                {
+                  "note": "You pull it back so fast the bottle wobbles. She catches it."
+                },
+                "Okay! Truce. Give it back. I'll be good.",
+                "...I'll be mostly good.",
+                {
+                  "note": "She's mostly good. She does both feet. Every so often her thumb wanders, and every time you flinch she says \"sorry\" in a voice that isn't sorry at all."
+                }
+              ],
+              "gaydar": 64,
+              "spark": 45
+            },
+            {
+              "you": "(Giggle. You can't help it.)",
+              "them": [
+                {
+                  "note": "It comes out before you can stop it, high and silly. Olivia puts the brush down."
+                },
+                "Oh no. No, that's adorable. Do it again.",
+                {
+                  "note": "She does it again. You do it again. She's got her phone in one hand and your ankle in the other."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "Liv, stop! I mean it. Stop.",
+                  "them": [
+                    {
+                      "note": "She stops the second you say it and puts your foot back on the towel like it's evidence."
+                    },
+                    "Fine. Fine! But I'm sending this to my sister. She's going to die."
+                  ],
+                  "gaydar": 69,
+                  "spark": 33
+                },
+                {
+                  "you": "Okay, one more. Then the polish.",
+                  "them": [
+                    "One more. You said it, not me.",
+                    {
+                      "note": "It's not one more. It's about a minute, and when you finally gasp \"stop\" she stops straight away, and you're both lying on her rug."
+                    },
+                    "That's the most fun I've ever had painting nails. And I do my sister's."
+                  ],
+                  "gaydar": 74,
+                  "spark": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "olivia-feet",
       "route": "olivia",
       "gaydar": 70,
@@ -14150,6 +14719,155 @@ window.CONTENT = {
         }
       ],
       "debrief": "Being good at one round and bad at another is what trivia is for."
+    },
+    {
+      "id": "zoe-lightning",
+      "route": "zoe",
+      "title": "Lightning round",
+      "contact": "Zoe",
+      "irl": true,
+      "gaydar": 63,
+      "gaydarSays": "Brooke said tickle the sport answers out of him. He doesn't know any sport answers.",
+      "intro": "Saturday night at Zoe's place in Toowong, just the two of you. She's downloaded a trivia app \"to train you on sport\". You're on her couch with your feet in her lap. Your toes are still lilac from the weekend.",
+      "thinks": [
+        "Brooke said tickle the answers out of him and I was like that's weird, and she was like it's not weird it's training, and I was like okay. So that part's on Brooke.",
+        "He knew the lilac was from the just to see bottle. He called it that. The just to see bottle. Like it's the real name. Brooke's going to say and you're still surprised?",
+        "I had fun though. More fun than actual trivia, which I'm not telling Brooke."
+      ],
+      "them": [
+        "Okay. Brooke says you're our weak link on sport. So. Lightning round. Ten questions.",
+        "You get one wrong, I get five seconds on your feet.",
+        "Brooke's idea. I'm like, the messenger.",
+        {
+          "note": "She wiggles her fingers an inch from your soles."
+        }
+      ],
+      "replies": [
+        {
+          "you": "Deal. I'll get them all right.",
+          "them": [
+            "You won't.",
+            "Question one. How many players in a rugby union team?"
+          ],
+          "replies": [
+            {
+              "you": "Eleven? No. Fifteen. Fifteen.",
+              "them": [
+                "Correct?? Brooke said you'd say eleven.",
+                "Question two. What colour jersey does the leader of the Tour de France wear?",
+                {
+                  "note": "You say pink. It's yellow. Her fingers go straight for your arches."
+                }
+              ],
+              "replies": [
+                {
+                  "you": "(Hold it for the five seconds.)",
+                  "them": [
+                    {
+                      "note": "One. Two. You get to four before your toes curl. You don't make a sound. She's impressed, and a bit annoyed."
+                    },
+                    "Brooke said you'd crack on question two. I'm telling her she was wrong. She's going to be so mad.",
+                    "Brooke's going to ask what size your feet are, by the way, and I'm going to have to say smaller than her."
+                  ],
+                  "gaydar": 62,
+                  "spark": 50
+                },
+                {
+                  "you": "(Squeal at 'two'.)",
+                  "them": [
+                    {
+                      "note": "You squeal at two. She does all five anyway, counting out loud, and lets go exactly on five."
+                    },
+                    "Rules are rules. And you're already getting question three wrong in your head, I can see it.",
+                    {
+                      "note": "You get eight out of ten wrong. By the end she's barely reading the questions."
+                    }
+                  ],
+                  "gaydar": 68,
+                  "spark": 30
+                }
+              ]
+            },
+            {
+              "you": "Thirteen?",
+              "them": [
+                "Wrong! Fifteen. Brooke's going to love this.",
+                {
+                  "note": "Five seconds. She counts out loud, does every one of them, and lets go on five like it's the law."
+                },
+                "Question two."
+              ],
+              "replies": [
+                {
+                  "you": "Zo, wait. Can I have a break? Just one.",
+                  "them": [
+                    "Brooke says no breaks. I'm Brooke tonight.",
+                    "Okay fine. One break.",
+                    {
+                      "note": "She lets go and just holds your feet, thumbs on the lilac."
+                    },
+                    "You're actually so cute when you're losing."
+                  ],
+                  "gaydar": 64,
+                  "spark": 44
+                },
+                {
+                  "you": "Forget the questions. Just do it.",
+                  "them": [
+                    "...What?",
+                    "Are you asking me to tickle you? Like, with no trivia?",
+                    {
+                      "note": "You nod. She texts Brooke \"he asked for it without trivia\", puts the phone down, and does it until you're crying laughing and gasp stop. She stops straight away."
+                    },
+                    "Brooke says oh no. And I'm like why oh no, and she's like you know why."
+                  ],
+                  "gaydar": 76,
+                  "spark": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "you": "No way. Brooke doesn't get to decide what happens to my feet.",
+          "them": [
+            "Okay so Brooke said you'd say that. Like word for word.",
+            "She said if he says that, just go.",
+            {
+              "note": "She just goes."
+            }
+          ],
+          "replies": [
+            {
+              "you": "Zo! Stop! Stop!",
+              "them": [
+                {
+                  "note": "She stops the second you say it and holds her hands up."
+                },
+                "I'm sorry! Brooke made me! I mean she didn't. I wanted to.",
+                "Okay but you still have to do the quiz. That was the warm-up."
+              ],
+              "gaydar": 64,
+              "spark": 40
+            },
+            {
+              "you": "(Grab her ankle and do it back.)",
+              "them": [
+                {
+                  "note": "You grab her foot. She's ticklish too, and she shrieks, and for about a minute it's a war on the couch with cushions everywhere."
+                },
+                {
+                  "note": "She wins. She's stronger than you. She's sitting on your shins and you're laughing too hard to talk, and she looks at your face and stops by herself."
+                },
+                "Okay. I win. I'm telling Brooke I won.",
+                "You fight like Tash, by the way. All slaps."
+              ],
+              "gaydar": 62,
+              "spark": 46
+            }
+          ]
+        }
+      ]
     },
 {
   "id": "zoe-feet",
@@ -15885,6 +16603,126 @@ window.CONTENT = {
         }
       ],
       "debrief": "Your favourite movie doesn't have to pass anyone's quiz."
+    },
+    {
+      "id": "sophie-file",
+      "route": "sophie",
+      "title": "Cross-examination",
+      "contact": "Sophie",
+      "irl": true,
+      "gaydar": 64,
+      "gaydarSays": "I cross-examined his feet. His feet answered every question.",
+      "intro": "The week after movie night. Sophie said she'd do your toes properly this time, so it's Sunday at her flat in Paddington: a towel on the coffee table, a foot file, cuticle oil and a bottle of hot pink. Just you two. Your foot's in her lap.",
+      "thinks": [
+        "Stop. I did a whole cross-examination on his feet and he answered with his entire body. Totes not what I planned when I bought the file.",
+        "He held the hot pink up to the light. Like, checked it. I've only ever seen my friends do that. Kirra does it with wine.",
+        "I'm not telling Kirra about today. Kirra would make it a whole thing. Kirra's going to find out anyway."
+      ],
+      "them": [
+        "Right. Before I start, I have some questions.",
+        "Every time you dodge one, the file goes somewhere you won't like. Totes fair. I'm a paralegal, this is basically my job.",
+        {
+          "note": "She runs the foot file once, very lightly, across your arch, as a demonstration. Your knee nearly goes through the coffee table."
+        },
+        "Exhibit A. Okay. Question one. Who taught you what cuticle oil is?"
+      ],
+      "replies": [
+        {
+          "you": "Dani.",
+          "them": [
+            "True. Good. Question two.",
+            "On movie night you said the polish was 'a bit much'. Then you picked the exact pink I would've picked. Explain."
+          ],
+          "replies": [
+            {
+              "you": "I just like pink. Lots of guys like pink.",
+              "them": [
+                {
+                  "note": "The file goes under your toes. You make a noise like a kettle."
+                },
+                "Lots of guys like pink. Okay.",
+                "Name three."
+              ],
+              "replies": [
+                {
+                  "you": "Sophie! Stop! Stop!",
+                  "them": [
+                    {
+                      "note": "She stops straight away and taps your foot with the file like it's a gavel."
+                    },
+                    "Objection sustained. But I'm writing that down.",
+                    "Also I've got bigger feet than you and I'm five foot four. Stop. I'm screaming."
+                  ],
+                  "gaydar": 68,
+                  "spark": 34
+                },
+                {
+                  "you": "(Laugh. Try to name three. You can't.)",
+                  "them": [
+                    {
+                      "note": "You get as far as \"Harry Styles\" and then you can't talk at all. She sees it and stops by herself."
+                    },
+                    "One. You got one. And he wears skirts, so he doesn't count.",
+                    "The court finds the witness extremely ticklish."
+                  ],
+                  "gaydar": 74,
+                  "spark": 22
+                }
+              ]
+            },
+            {
+              "you": "(Don't answer. Hold still.)",
+              "them": [
+                {
+                  "note": "She files slowly along your arch, back and forth, watching your face. Your jaw is so tight it clicks. You don't make a sound."
+                },
+                "Witness declines to answer. Fine. Very fine. I respect it.",
+                "I'm still painting them hot pink though. That's not a question."
+              ],
+              "gaydar": 62,
+              "spark": 55
+            }
+          ]
+        },
+        {
+          "you": "Soph, put the file down. I'm not doing this.",
+          "them": [
+            "You're absolutely doing this. You came for a pedicure. This comes with the pedicure.",
+            {
+              "note": "She tucks your ankle under her arm and taps the file on her palm."
+            }
+          ],
+          "replies": [
+            {
+              "you": "Okay. Fine. One question.",
+              "them": [
+                "Did you watch Selling Sunset before you met me, or because of me?",
+                "...Before.",
+                {
+                  "note": "She narrows her eyes and does the file anyway, just for a second, as a warning. You squeak. She lets go."
+                },
+                "Perjury. But I'll allow it."
+              ],
+              "gaydar": 64,
+              "spark": 45
+            },
+            {
+              "you": "(Kick free and run for the kitchen.)",
+              "them": [
+                {
+                  "note": "You get as far as the kitchen bench. She follows you with the file and the hot pink, very calm."
+                },
+                "Sit down. I'm still doing them. No file. Promise.",
+                {
+                  "note": "She keeps the promise. No file. She uses her fingers once, right at the end, and says \"that wasn't the file\"."
+                }
+              ],
+              "gaydar": 63,
+              "spark": 48
+            }
+          ]
+        }
+      ]
     },
 {
   "id": "sophie-feet",
