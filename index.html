@@ -54,6 +54,7 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 .tag.new { background: var(--accent); color: var(--accent-ink); }
 .tag.done { background: transparent; border: 1px solid var(--line); }
 .thread { display: flex; flex-direction: column; gap: 6px; min-height: 40vh; }
+.thread:empty { min-height: 4px; } /* the outfit pick sits under the header, not half a screen down */
 .bubble { max-width: 82%; padding: 9px 13px; border-radius: 18px; white-space: pre-wrap; overflow-wrap: anywhere; animation: pop .18s ease-out; }
 .bubble.them { align-self: flex-start; background: var(--them); border-bottom-left-radius: 6px; }
 .bubble.you { align-self: flex-end; background: var(--you); color: var(--you-ink); border-bottom-right-radius: 6px; }
@@ -65,10 +66,13 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 .choices .skip { align-self: flex-start; border: 0; background: none; color: var(--muted); font-size: 14px; padding: 6px 2px; text-decoration: underline; }
 .chead .tag { white-space: normal; }
 .continue { margin-bottom: 6px; }
+.found { margin: 14px 0 0; }
+.found b { color: var(--accent); }
 .continue .avatar { background: var(--accent); color: var(--accent-ink); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @keyframes pop { from { opacity: 0; transform: translateY(4px); } }
 @media (prefers-reduced-motion: reduce) { .bubble { animation: none; } }
+.thread.instant .bubble { animation: none; } /* "Change last reply" redraws what he's already read */
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 .choices button { text-align: left; background: var(--card); color: var(--ink); border: 1px solid var(--accent); border-radius: 14px; padding: 10px 13px; font: inherit; cursor: pointer; }
 .thinks { font-size: 17px; line-height: 1.45; margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; border-left: 4px solid var(--accent); }
@@ -230,14 +234,35 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
   // Teasing: the lower it goes, the more she sees you as one of the girls.
   const sparkLabel = (v) => v >= 80 ? "Fancies you. Hasn't looked at your nails yet." : v >= 60 ? "Still keen, but she's clocked the gloss" : v >= 40 ? "Fancies your skincare more than you" : v >= 20 ? "Wants to borrow your lip oil, not kiss you" : v > 0 ? "Sees you as one of the girls now, babe" : "Already trying to set you up with a guy";
-  function runConversation(view, convo, header) {
+  // Endings and outfits he's found in each chapter, for replay: { chapterId: { e: ["0.1", ...], o: [0, 2] } }.
+  // An ending is the path of reply indices that reached it.
+  const endingPaths = (node, pre = []) => node.replies && node.replies.length ? node.replies.flatMap((r, i) => endingPaths(r, pre.concat(i))) : [pre.join(".")];
+  function chapterFound(c) {
+    const all = endingPaths(c); const f = store.get("found", {})[c.id] || {};
+    const e = (f.e || []).filter((k) => all.includes(k)).length;
+    const o = c.outfits ? (f.o || []).filter((n) => n < c.outfits.length).length : 0;
+    return { e, eAll: all.length, o, oAll: c.outfits ? c.outfits.length : 0 };
+  }
+  function addFound(id, path, fit) {
+    try {
+      const all = store.get("found", {}); const f = all[id] || (all[id] = {}); let fresh = false;
+      f.e = f.e || []; if (!f.e.includes(path)) { f.e.push(path); fresh = true; }
+      if (fit >= 0) { f.o = f.o || []; if (!f.o.includes(fit)) f.o.push(fit); }
+      store.set("found", all);
+      return fresh;
+    } catch { return false; }
+  }
+  // `replay`: reply indices to take again straight away (no typing), for "Change last reply".
+  function runConversation(view, convo, header, replay) {
     const run = Symbol(); view._run = run;
+    const auto = (replay || []).slice(); let instant = !!replay; const path = [];
     view.innerHTML = header + '<div class="thread" role="log" aria-live="polite" aria-label="Conversation"></div><div class="choices"></div>';
     // The header is rebuilt on every re-run (outfit pick, "Try different replies"), so bind back here.
     const backBtn = view.querySelector(".back");
     if (backBtn) backBtn.addEventListener("click", goBack);
     const thread = view.querySelector(".thread");
     const choices = view.querySelector(".choices");
+    if (instant) thread.classList.add("instant");
     const add = (cls, text) => {
       const stick = nearBottom();
       const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; thread.appendChild(b);
@@ -287,7 +312,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     let spark = convo.spark; // how into you she is; defaults to 100 - gaydar
     let masc = !!(convo.fit && convo.fit.masc);
     async function play(node) {
-      skip = false;
+      skip = instant; // replaying what he's already read: no typing
       choices.innerHTML = "";
       if (node !== convo && node.after) endNote = node.after;
       if (node !== convo && node.thinks) thinks = node.thinks;
@@ -295,7 +320,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       if (node !== convo && node.gaydar != null) gaydar = node.gaydar;
       if (node !== convo && node.spark != null) spark = node.spark;
       const msgs = (node.them || []).map((m) => typeof m === "string" ? { text: m } : m).filter((m) => !m.if || outcomeIs(m.if)); // `if`: only if an earlier chapter ended that way
-      if (msgs.length && !reduceMotion) { choices.appendChild(button("skip", "Skip typing", skipTyping)); focusIn(choices); }
+      if (msgs.length && !reduceMotion && !instant) { choices.appendChild(button("skip", "Skip typing", skipTyping)); focusIn(choices); }
       for (const msg of msgs) {
         if (msg.note) { // narration in in-person scenes: what she does, not what she says
           await wait(600);
@@ -317,10 +342,12 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       const stick = nearBottom();
       choices.innerHTML = "";
       if (node.replies && node.replies.length) {
-        node.replies.forEach((r) => {
-          choices.appendChild(button("reply", fill(r.you), () => { if (r.masc) masc = true; add("you", fill(r.you)); play(r); }));
+        const choose = (r, i) => { if (r.masc) masc = true; path.push(i); add("you", fill(r.you)); play(r); };
+        if (auto.length && node.replies[auto[0]]) { choose(node.replies[auto[0]], auto.shift()); return; }
+        node.replies.forEach((r, i) => {
+          choices.appendChild(button("reply", fill(r.you), () => { instant = false; thread.classList.remove("instant"); choose(r, i); }));
         });
-        if (stick) choices.lastElementChild.scrollIntoView({ block: "nearest" });
+        if (stick || instant) choices.lastElementChild.scrollIntoView({ block: "nearest" });
         focusIn(choices);
       } else {
         markDone(convo.id);
@@ -344,7 +371,19 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
         if (convo.debrief) choices.insertAdjacentHTML("beforeend", `<div class="debrief"><b>Worth remembering</b><br>${esc(fill(convo.debrief))}</div>`);
         // Date one is where a route forks: say so, so the boy-clothes path can be found.
         if (ROUTES.some((r) => r.fork === convo.id)) choices.insertAdjacentHTML("beforeend", `<p class="muted fork">${masc ? "Boy clothes. Her story goes a different way from here." : "Pick boy clothes on this date and her story goes a different way."}</p>`);
+        // Replay value: which of this chapter's endings (and outfits) he's found so far.
+        try {
+          const fitAt = convo.fit && convo.base ? convo.base.outfits.indexOf(convo.fit) : -1;
+          const fresh = addFound(convo.id, path.join("."), fitAt);
+          const f = chapterFound(convo.base || convo);
+          const bits = [];
+          if (f.eAll > 1) bits.push(f.e >= f.eAll ? `All ${f.eAll} endings found` : `${f.e} of ${f.eAll} endings found`);
+          if (f.oAll > 1) bits.push(f.o >= f.oAll ? `every outfit tried` : `${f.o} of ${f.oAll} outfits tried`);
+          if (bits.length) choices.insertAdjacentHTML("beforeend", `<p class="muted found">${fresh && f.eAll > 1 && f.e > 1 ? "<b>New ending.</b> " : ""}${esc(bits.join(" · ").replace(/^./, (x) => x.toUpperCase()))}</p>`);
+        } catch {}
         const row = document.createElement("div"); row.className = "row";
+        // Step back one choice without rereading the whole chapter.
+        if (path.length) row.appendChild(button("btn ghost undo", "↩ Change last reply", () => runConversation(view, convo, header, path.slice(0, -1))));
         row.appendChild(button("btn ghost again", "Try different replies", () => { scrollTo(0, 0); runConversation(view, convo.base || convo, header); }));
         if (convo.next) row.appendChild(button("btn next", "Next chapter →", convo.next));
         choices.appendChild(row);
@@ -448,7 +487,8 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     list.innerHTML = `<button class="btn ghost back">← Story</button><h2 style="margin:10px 0 4px;font-size:20px">${esc(fill(r.name))}</h2><p class="muted" style="margin:0 0 6px">${esc(fill(r.intro || r.blurb))} <span style="white-space:nowrap">${read} of ${ch.length} read.</span></p><ul class="list">` +
       ch.map((i, k) => {
         const c = C.story[i]; const st = chapterState(i);
-        const sub = st === "open" ? `${fill(c.contact || "{bf}")}${c.irl ? " · in person" : ""} · ${d[c.id] ? "read" : "new"}` : "Locked";
+        const f = d[c.id] ? chapterFound(c) : null;
+        const sub = st === "open" ? `${fill(c.contact || "{bf}")}${c.irl ? " · in person" : ""} · ${d[c.id] ? "read" : "new"}${f && f.eAll > 1 ? ` · ${f.e}/${f.eAll} endings` : ""}` : "Locked";
         return `<li data-i="${i}">${itemHtml(String(k + 1), fill(c.title), sub, d[c.id] ? "done" : st === "open" ? "new" : "")}</li>`;
       }).join("") + "</ul>";
     setBack(() => renderStoryList(rid));
