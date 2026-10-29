@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-29
+- Story: the inner thoughts are rewritten so each girl thinks in her own voice (Mia apologising, Georgie ranking things, Lucy in nurse mode, Zoe quoting Brooke), messier and more like a real person.
+- Story: the ten big "she knows" chapters are rewritten as scenes in front of her friends, and every one plays out differently: two truths and a lie, Hayley saying it for Mia, the "ladies" brunch, Tayla's chat on the party slideshow, Georgie's numbered list, Lucy's friends' photo evidence, Mel's feet photo, Olivia's sister at the next table, Brooke asking for Zoe, and Kirra's video on the TV. Each has a path where it all gets too much and you cry, and the girls look after you.
+
 ## 2026-10-28
 - Story: "In her head". After every in-person date, see what she was really thinking: her first look at what you wore, the moment she clocked it, what she didn't say, and who she's about to text.
 - How to use: covers boy clothes, Continue, Skip typing and the bars.
