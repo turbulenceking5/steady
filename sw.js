@@ -1,6 +1,6 @@
 // Network-first, falling back to cache so the app works offline.
 // Bump CACHE_NAME when changing what gets cached.
-const CACHE_NAME = "steady-v46";
+const CACHE_NAME = "steady-v47";
 const FILES = ["./", "index.html", "content.js", "manifest.webmanifest", "icon.svg"];
 
 self.addEventListener("install", (e) => {

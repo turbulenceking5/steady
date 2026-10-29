@@ -1,6 +1,10 @@
 # Changelog
 
 ## 2026-10-29
+- Story: Nicole has a new chapter, her 30th, where Jemima has invited someone for you, and you can finally tell Nicole if you want to.
+- Story: Jess has a new chapter, Friday drinks, where Kate from the group chat is at the next table.
+- Story: Georgie's climbing-shoes chapter has more choices, and the tickle and ambush chapters no longer reuse each other's lines.
+- Story: the end of every boy-clothes path has its own "worth remembering" note, and lines that sounded the same across different girls are rewritten.
 - Story: "Change last reply" at the end of a chapter jumps straight back to your last choice, without retyping, so you can try another answer.
 - Story: the end of each chapter shows how many of its endings you've found and outfits you've tried, and a girl's chapter list shows the endings count for each chapter you've read.
 - Fixed: the "What are you wearing?" choices now sit right under the chapter header instead of halfway down the screen.
