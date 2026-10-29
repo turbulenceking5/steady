@@ -11952,7 +11952,7 @@ window.CONTENT = {
       "intro": "Mel's birthday is winding down. You get out of the hot tub and go to the deck for your slides. There's one slide. Mel's dog, Biscuit, is under the table with the other one, and it's not really a slide anymore. Jade said she'd drive you home, but she wants gelato first, and the gelato place is on James Street, on a Saturday night.",
       "thinks": [
         "Biscuit ate one slide. One. So my date's got no shoes and wrinkly coral toes and I still wanted gelato, I'd been thinking pistachio since like eight",
-        "Sean said you're the same size. Rude. Also true? I've dated guys with smaller hands than me but never smaller feet, that's new",
+        "Sean said give him one of mine, like it'd fit. It would not fit. I've dated guys with smaller hands than me but never smaller feet, that's new",
         "And he was so weird about his feet all night, curling them up, tucking them away. They're literally the nicest feet I know. Of all the things to be shy about",
         "Sean teased him the whole time and it never felt mean though. I keep noticing stuff about Sean. Ugh"
       ],
@@ -11961,22 +11961,27 @@ window.CONTENT = {
           "note": "Jade looks at the chewed slide. Then at your bare feet. Coral toes, still wrinkly from the water."
         },
         "ok so youre barefoot",
-        "\"I could wear one slide.\"",
-        "you could not wear one slide",
-        "and dont pretend we're not the same size. your feet are tiny. i've seen them",
         {
-          "note": "Sean, drying off by the door: \"Give him one of yours, Jade. You're the same size.\""
-        }
+          "note": "You tell her you could wear one slide."
+        },
+        "you could not wear one slide",
+        {
+          "note": "Sean, drying off by the door: \"Give him one of yours, Jade.\""
+        },
+        "lol they'd fall off him. his feet are tiny, i saw them at the nail place",
+        "and i've got these and that's it. so it's barefoot or you sit in my car"
       ],
       "replies": [
         {
-          "you": "We are not the same size.",
+          "you": "My feet aren't tiny.",
           "them": [
-            "we kind of are",
+            "they're smaller than mine",
             {
-              "note": "She holds her sandal up next to your foot. Same size."
+              "note": "She puts her foot down next to yours on the deck. Hers is longer by a good inch. Sean laughs from the doorway."
             },
-            "\"I'll just go barefoot,\" you say, fast.",
+            {
+              "note": "You decide to just go barefoot."
+            },
             {
               "note": "On James Street you walk next to her with your toes curled up off the footpath. A girl at a table outside the gelato place looks at your feet and nudges her friend."
             }
@@ -11990,9 +11995,13 @@ window.CONTENT = {
                   "note": "You stand right behind her in the queue, so her heels hide most of the coral."
                 },
                 "why are you standing so close",
-                "\"No reason.\"",
+                {
+                  "note": "You tell her it's no reason."
+                },
                 "is it the toes",
-                "\"It's the toes.\""
+                {
+                  "note": "You admit it's the toes."
+                }
               ],
               "after": "Jade, to Mel: \"he hid behind me in the gelato line so nobody would see his feet\" Mel: \"cute or no\" Jade: \"cute i guess\" Jade: \"i was looking at his toes the whole time though so i cant really talk\""
             },
@@ -12051,14 +12060,13 @@ window.CONTENT = {
           ]
         },
         {
-          "you": "Fine. One of your sandals. Just to the car.",
+          "you": "Fine. Lend me one of your sandals. Just to the car.",
           "them": [
             {
-              "note": "She hands you one sandal. Tan, with a little gold buckle. It fits perfectly."
+              "note": "She hands you one sandal. Tan, with a little gold buckle. Your heel stops a good inch short of the back of it."
             },
-            "omg",
-            "\"Don't.\"",
-            "it looks better on you than me"
+            "omg it's huge on you",
+            "it still looks better on you than me though"
           ],
           "replies": [
             {
