@@ -205,6 +205,21 @@ async function walkChapter(ci) {
     await page.click("#settingsBtn");
     check(await noHScroll(page), `${label} settings fits 390px`);
     await page.click("#settings .icon-btn");
+
+    // Confirmations: lines appear inside the box with {name} filled, nothing spills out, and
+    // the Story tab comes back as it was.
+    await page.click("#tabBtn-conf");
+    await page.waitForFunction(() => document.querySelectorAll("#confBox .conf").length >= 3, null, { timeout: 8000 }).catch(() => {});
+    const conf = await page.evaluate(() => {
+      const box = document.querySelector("#confBox").getBoundingClientRect();
+      const els = [...document.querySelectorAll("#confBox .conf")];
+      return { n: els.length, inside: els.every((e) => { const r = e.getBoundingClientRect(); return r.left >= box.left - 1 && r.right <= box.right + 1 && r.top >= box.top - 1 && r.bottom <= box.bottom + 1; }), unfilled: els.some((e) => /[{}]/.test(e.textContent)), storyHidden: document.querySelector("#tab-story").hidden };
+    });
+    check(conf.n >= 3, `${label} Confirmations shows lines (${conf.n})`);
+    check(conf.inside && !conf.unfilled, `${label} Confirmations lines sit inside the box with names filled`);
+    check(conf.storyHidden && await noHScroll(page), `${label} Confirmations replaces the story and fits 390px`);
+    await page.click("#tabBtn-story");
+    check(await page.locator("#storyList li[data-r]").first().isVisible() && await page.locator("#tab-conf").isHidden(), `${label} Story tab comes back`);
     console.log(`${label} played ${chapters} chapters`);
     await page.context().close();
   }

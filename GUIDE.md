@@ -16,6 +16,9 @@
 - Jess and your boyfriend's story open once you've finished any other girl's story.
 - Your phone's back button steps back to the girl's chapters, then the list.
 
+## Confirmations
+- The **Confirmations** tab, next to Story, fills the screen with lines that fade in and out: "You are GAY", "Everyone knows you are gay" and more, some with your name. Just leave it open and read.
+
 ## Privacy
 - Everything stays on your device. Nothing is sent anywhere.
 - **Hide** covers the screen with a grocery list. Double-tap it to come back.

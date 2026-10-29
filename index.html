@@ -14,16 +14,17 @@
   --accent: #5b5bd6; --accent-ink: #ffffff; --soft: #ecebfb;
   --them: #ecebf3; --you: #5b5bd6; --you-ink: #ffffff;
   --rainbow: linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#24408e,#732982);
+  --rb-text: linear-gradient(90deg,#c40000,#d96a00,#007a24,#24408e,#732982);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --note: #d2cfe4; --line: #2e2b3d;
-    --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff;
+    --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff; --rb-text: var(--rainbow);
   }
 }
 :root[data-theme="dark"] {
   --bg: #14131c; --card: #1e1c2a; --ink: #ecebf5; --muted: #a09db5; --note: #d2cfe4; --line: #2e2b3d;
-  --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff;
+  --accent: #8b8bf0; --accent-ink: #14131c; --soft: #262447; --them: #2a2838; --you: #5b5bd6; --you-ink: #fff; --rb-text: var(--rainbow);
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--ink); }
@@ -88,6 +89,14 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 dialog label { display: block; margin: 12px 0 4px; font-weight: 600; }
 dialog h3 { margin: 18px 0 6px; font-size: 15px; }
 dialog ul { padding-left: 20px; margin: 4px 0; }
+.tabs { display: flex; gap: 6px; margin: 0 0 14px; }
+.tabs button { flex: 1; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; font: inherit; font-weight: 600; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+#confBox { position: relative; overflow: hidden; height: calc(100vh - 170px); height: calc(100dvh - 170px); min-height: 320px; border-radius: 18px; background: var(--soft); }
+#confBox .conf { position: absolute; max-width: 90%; text-align: center; font-weight: 800; line-height: 1.15; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; overflow-wrap: anywhere; }
+#confBox .conf.on { opacity: 1; }
+#confBox .conf.rb { background: var(--rb-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+@media (prefers-reduced-motion: reduce) { #confBox .conf { transition: none; } }
 #cover { position: fixed; inset: 0; z-index: 50; background: #fff; color: #222; padding: 40px 20px; font: 16px/1.6 system-ui, sans-serif; }
 #cover[hidden] { display: none; }
 #cover h2 { margin: 0 0 12px; font-weight: 500; }
@@ -102,9 +111,16 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
 </header>
 
 <main>
-  <section id="tab-story">
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tabBtn-story" aria-controls="tab-story" aria-selected="true">Story</button>
+    <button role="tab" id="tabBtn-conf" aria-controls="tab-conf" aria-selected="false">Confirmations</button>
+  </div>
+  <section id="tab-story" role="tabpanel" aria-labelledby="tabBtn-story">
     <div id="storyList"></div>
     <div id="storyView" hidden></div>
+  </section>
+  <section id="tab-conf" role="tabpanel" aria-labelledby="tabBtn-conf" hidden>
+    <div id="confBox" role="img" aria-label="Messages telling you you're gay, fading in and out"></div>
   </section>
 
 </main>
@@ -497,13 +513,66 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     location.reload();
   });
 
+  // ---------- Confirmations ----------
+  // Lines from content.js fade in at random spots (not on top of each other), stay a few
+  // seconds and fade out. Only runs while the tab is showing and the page is visible.
+  const CONF = (C.confirmations || []).slice();
+  let confTimer = null, confLast = "";
+  const confOn = () => !$("#tab-conf").hidden && $("#cover").hidden && document.visibilityState === "visible";
+  function confSpawn() {
+    const box = $("#confBox");
+    if (!confOn() || !CONF.length) return;
+    if (box.children.length < 7) {
+      // Not the line that just came up, and not one already on screen.
+      const showing = new Set([...box.children].map((o) => o.dataset.t));
+      const pool = CONF.filter((t) => t !== confLast && !showing.has(t));
+      const text = (pool.length ? pool : CONF)[Math.floor(Math.random() * (pool.length || CONF.length))];
+      confLast = text;
+      const el = document.createElement("div");
+      el.className = "conf" + (Math.random() < 0.25 ? " rb" : "");
+      el.textContent = fill(text); el.dataset.t = text;
+      el.style.fontSize = (18 + Math.round(Math.random() * 22)) + "px";
+      el.style.color = el.classList.contains("rb") ? "" : (Math.random() < 0.5 ? "var(--accent)" : "var(--ink)");
+      box.appendChild(el);
+      // Try a few spots and keep the first one that doesn't overlap anything already showing.
+      const W = box.clientWidth, H = box.clientHeight, w = el.offsetWidth, h = el.offsetHeight;
+      const taken = [...box.children].filter((o) => o !== el).map((o) => [o.offsetLeft, o.offsetTop, o.offsetWidth, o.offsetHeight]);
+      let x = 0, y = 0, free = false;
+      for (let i = 0; i < 16 && !free; i++) {
+        x = Math.random() * Math.max(0, W - w); y = Math.random() * Math.max(0, H - h);
+        free = !taken.some(([a, b, c, d]) => x < a + c + 8 && a < x + w + 8 && y < b + d + 8 && b < y + h + 8);
+      }
+      if (!free) { el.remove(); confTimer = setTimeout(confSpawn, 400); return; } // too crowded: try again shortly
+      el.style.left = Math.round(x) + "px"; el.style.top = Math.round(y) + "px";
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("on")));
+      const stay = 2600 + Math.random() * 2600;
+      setTimeout(() => { el.classList.remove("on"); setTimeout(() => el.remove(), 1500); }, stay);
+    }
+    confTimer = setTimeout(confSpawn, 500 + Math.random() * 700);
+  }
+  function confStart() { clearTimeout(confTimer); if (confOn()) confSpawn(); }
+  function confStop() { clearTimeout(confTimer); confTimer = null; }
+  document.addEventListener("visibilitychange", () => { if (confOn()) confStart(); else confStop(); });
+
+  function showTab(t) {
+    const conf = t === "conf";
+    $("#tab-story").hidden = conf; $("#tab-conf").hidden = !conf;
+    $("#tabBtn-story").setAttribute("aria-selected", String(!conf));
+    $("#tabBtn-conf").setAttribute("aria-selected", String(conf));
+    store.set("tab", t);
+    if (conf) { $("#confBox").innerHTML = ""; confStart(); } else confStop();
+    scrollTo(0, 0);
+  }
+  $("#tabBtn-story").addEventListener("click", () => showTab("story"));
+  $("#tabBtn-conf").addEventListener("click", () => showTab("conf"));
+
   // ---------- Hide ----------
-  $("#hideBtn").addEventListener("click", () => { $("#settings").open && $("#settings").close(); $("#cover").hidden = false; document.title = "Groceries"; });
+  $("#hideBtn").addEventListener("click", () => { $("#settings").open && $("#settings").close(); $("#cover").hidden = false; document.title = "Groceries"; confStop(); });
   // Manual double-tap check: mobile Safari doesn't reliably fire dblclick.
   let lastTap = 0;
   $("#cover").addEventListener("click", () => {
     const now = Date.now();
-    if (now - lastTap < 450) { $("#cover").hidden = true; document.title = "Steady"; }
+    if (now - lastTap < 450) { $("#cover").hidden = true; document.title = "Steady"; confStart(); }
     lastTap = now;
   });
 
@@ -513,6 +582,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   // The app scrolls each view itself; the browser's restore on reload would hide the Continue card.
   try { history.scrollRestoration = "manual"; } catch {}
   renderStoryList();
+  if (store.get("tab", "story") === "conf") showTab("conf");
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
 </script>

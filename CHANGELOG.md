@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-29
+- New Confirmations tab next to Story: lines like "You are GAY", "You are GAY, Calum" and "Everyone knows you are gay" fade in and out all over the screen.
 - Story: the surf club with Hayden is now a sunscreen scene instead of tickling. He takes his time with your small feet, you go red and can't make yourself stop him, and Ella watches it click how gay you are.
 - Story: fixed Jade's one-slide scene after Mel's birthday, which said you and Jade were the same size.
 - Story: six new dates alone with her where she tickles your feet herself: Mia grabs your foot at the scary bit, Jade tests the nail lady's theory over chips, Olivia paints your toes for the boat photos, Lucy checks your reflexes, Zoe runs Brooke's sport lightning round, and Sophie cross-examines you with a foot file.

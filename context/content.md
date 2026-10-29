@@ -6,6 +6,7 @@
 ## Shape
 ```js
 window.CONTENT = {
+  confirmations: [string],          // the Confirmations tab's lines ({name} works)
   routes: [Route],                 // the list of girls (and Jess, {bf})
   story: [Chapter]                 // in order; each has a route
 }

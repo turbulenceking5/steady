@@ -163,6 +163,12 @@ function checkNode(where, n, chapter, isChapter) {
   // A reply with no `them` and no `replies` is a valid leaf: it just ends the chapter.
 }
 
+// ---- Confirmations ----
+if (C.confirmations != null) {
+  if (!Array.isArray(C.confirmations) || !C.confirmations.length) err("confirmations", "must be a non-empty array of strings");
+  else C.confirmations.forEach((m, i) => checkText(`confirmations[${i}]`, m));
+}
+
 // ---- Routes ----
 const routeIds = new Set();
 C.routes.forEach((r, i) => {
