@@ -1,6 +1,13 @@
 # Changelog
 
+## 2026-10-29
+- Story: later chapters remember how the big scene went. If you told them, Hannah's friends are proud of you and Steph's started a list of guys for you. If you cried, Bec checks your eyeliner and Olivia's sister still feels bad. If you dodged it, Georgie kept number nine and Kayla's pool is still open.
+- Story: the chapters after each big scene now follow on from it. You're not really dating her any more but she still invites you, nobody calls you her date, and Hannah no longer says she doesn't know.
+- Story: the inner thoughts are rewritten so each girl thinks in her own voice (Mia apologising, Georgie ranking things, Lucy in nurse mode, Zoe quoting Brooke), messier and more like a real person.
+- Story: the ten big "she knows" chapters are rewritten as scenes in front of her friends, and every one plays out differently: two truths and a lie, Hayley saying it for Mia, the "ladies" brunch, Tayla's chat on the party slideshow, Georgie's numbered list, Lucy's friends' photo evidence, Mel's feet photo, Olivia's sister at the next table, Brooke asking for Zoe, and Kirra's video on the TV. Each has a path where it all gets too much and you cry, and the girls look after you.
+
 ## 2026-10-28
+- Story: "In her head". After every in-person date, see what she was really thinking: her first look at what you wore, the moment she clocked it, what she didn't say, and who she's about to text.
 - How to use: covers boy clothes, Continue, Skip typing and the bars.
 - Story: boy clothes. On each girl's first date you can pick "Boy clothes", and her story goes a different way: two new dates where she's into you, your choices decide whether you keep it up or slip, and she either asks you to be her boyfriend or moves on and tells you to date guys. Pick a different outfit on date one to get her usual story back.
 - Story: twelve new dates, one more for every girl: shopping for Archie's work party dress, Hannah's run club in a lilac set, styling Mia over text, Ella's plus-one, Bec's 30th mood board, women's climbing shoes with Georgie, 3am sheet masks with Lucy, a pedicure date with Jade, Olivia's sister on FaceTime, trivia with Zoe, Kirra stealing Sophie's phone and the beauty store with Bianca.

@@ -51,3 +51,11 @@ These rules sit inside the content boundaries in CLAUDE.md:
 
 ## Check before pushing
 Read each line aloud and ask: would someone actually send this? If it sounds like a greeting card, a counsellor or a sitcom, rewrite it.
+
+## The girls' voices
+The girls have a valley-girl lilt ("like", "literally", "oh my god", "wait", "no because", "obsessed"), used unevenly the way people really talk, never one per sentence. Each has her own flavour: Archie tired and passive-aggressive ("sooo", "whatever"), Hannah fast and blunt with anatomy words, Mia apologising and trailing off, Ella theatrical ("I'm dying"), Tayla group-chat brain with one word in caps, Georgie counting and ranking, Lucy clinical night-shift nurse ("bless"), Jade half-asleep ("lowkey", "vibes", only her), Olivia rehearsing how she'll tell her sister, Zoe quoting Brooke, Sophie posh-ish ("totes", "stop", "I'm screaming"), Bianca hype ("BABE", "yesss"). Not "mother" (it trips the family-word check).
+
+Inner thoughts (`thinks`) are messy: they jump around, go petty, end mid-way or on a tangent. Avoid AI tells: neat punchline closers, "Not X. Y.", rule-of-three lists, similes, wise conclusions, "genuinely", "main character", "core memory", "the audacity", em dashes.
+
+## Confrontations and tears
+The big chapters happen in front of her friends, and no two come out the same way. Each has a path where the embarrassment gets too much and he cries. The moment he does, nobody laughs at him: the girls look after him (a hoodie, tissues, a drink, fixing his mascara, sitting with him) and from then on he's one of the girls, not a boyfriend. Each tears scene tips over and gets comforted differently, and the chapter ends with a plain `debrief`.

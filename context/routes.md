@@ -5,6 +5,7 @@ Every route's chapters in the order they open, with who it's with and the chapte
 ## How a route runs
 - Chapters open one after another as soon as the previous one is finished. Jess and {bf} are `lock` routes: they open once any other route is finished, and stay open once started.
 - Each girl's main route rises in gaydar date by date: date one is low-key, the big chapter (the old `c5`–`c6m` ids) is where she says it or breaks up with him, and `<girl>-end` is her with a straight guy. The barefoot, tickle and ambush chapters sit around the big chapter and bring in her rival.
+- **The big chapter's outcome.** Every leaf of the big chapter sets `told`, `broke`, `cried` or `dodged`, and the chapters after it have `if` lines on it (see content.md).
 - **Boy-clothes fork.** Ten girls' routes have `fork: "<girl>-1"`. If date one was played in the `masc` outfit ("Boy clothes: …"), `routeChapters()` shows `<girl>-m2` and `<girl>-m3` instead of the rest of the route. `m2` sets `kept` or `slipped`; `m3` reads that with `if` lines and ends `together` (she keeps dating him), `drift` (she moves on, often to her main-route boyfriend, or tells him to date guys) or, for Mia and Georgie, `told`. Replaying date one in another outfit brings the main route back; read chapters stay read.
 - Keep this file in step when chapters are added, moved or renamed. To regenerate the tables, list `CONTENT.story` by route with node (see [testing.md](testing.md)).
 
@@ -37,7 +38,7 @@ Jess's friend. Physio. No time for games. Rival: Dylan. Ends up with: Brodie (el
 | 1 | `hannah-1` | Coffee with Jess's friend | Hannah | 20 |
 | 2 | `hannah-2` | Second date | Hannah (in person) | 50 |
 | 3 | `hannah-run` | Run club | Hannah (in person) | 58 |
-| 4 | `c5` | The wine bar | Hannah | 85 |
+| 4 | `c5` | Two truths | Hannah (in person) | 85 |
 | 5 | `hannah-feet` | White carpet | Hannah (in person) | 92 |
 | 6 | `hannah-tickle` | Movie night | Hannah (in person) | 94 |
 | 7 | `hannah-end` | Hannah and Brodie | Hannah (in person) | 99 |
@@ -59,7 +60,7 @@ Sam's cousin. Shy. Says sorry a lot. Rival: Theo. Ends up with: Lachlan (account
 | 3 | `mia-dress` | Help with a dress | Mia | 55 |
 | 4 | `mia-feet` | Socks off | Mia (in person) | 65 |
 | 5 | `mia-barefoot` | No shoes home | Mia (in person) | 72 |
-| 6 | `c6` | Mini golf | Mia | 85 |
+| 6 | `c6` | Hole in one | Mia (in person) | 85 |
 | 7 | `mia-end` | Mia and Lachlan | Mia | 99 |
 
 Boy-clothes path (after `mia-1` in boy clothes, replaces the rest of the route):
@@ -77,7 +78,7 @@ Hinge. Primary teacher. A very sharp cat-eye. Rival: Hayden. Ends up with: Conno
 | 1 | `ella-1` | Matched | Ella | 20 |
 | 2 | `ella-2` | GOMA | Ella (in person) | 50 |
 | 3 | `ella-wedding` | Plus one | Ella | 58 |
-| 4 | `c6b` | Brunch in the dress | Ella | 90 |
+| 4 | `c6b` | Ladies | Ella (in person) | 90 |
 | 5 | `ella-beach` | Kings Beach | Ella (in person) | 93 |
 | 6 | `ella-barefoot` | The drive home | Ella (in person) | 94 |
 | 7 | `ella-tickle` | The surf club | Ella (in person) | 95 |
@@ -98,7 +99,7 @@ Netball. Loud. Her friend Steph has questions. Rival: Jordan. Ends up with: Mitc
 | 1 | `tayla-1` | Felons | Tayla | 20 |
 | 2 | `tayla-2` | Courtside | Tayla (in person) | 55 |
 | 3 | `tayla-board` | Bec's 30th plans | Tayla | 60 |
-| 4 | `c6c` | Wrong chat | Bec's 30th 🎂 | 90 |
+| 4 | `c6c` | The slideshow | Tayla (in person) | 90 |
 | 5 | `tayla-feet` | Pool day | Tayla (in person) | 93 |
 | 6 | `tayla-ambush` | After training | Tayla (in person) | 95 |
 | 7 | `tayla-end` | Tayla and Mitch | Tayla (in person) | 99 |
@@ -118,7 +119,7 @@ Climbing gym. Hates games. Counts everything. Rival: Corey. Ends up with: Ben (r
 | 1 | `georgie-1` | Belay partner | Georgie | 20 |
 | 2 | `georgie-2` | Tacos | Georgie (in person) | 55 |
 | 3 | `georgie-shoes` | New climbing shoes | Georgie (in person) | 60 |
-| 4 | `c6d` | Straight up | Georgie | 95 |
+| 4 | `c6d` | The list | Georgie (in person) | 95 |
 | 5 | `georgie-feet` | Climbing shoes | Georgie (in person) | 96 |
 | 6 | `georgie-tickle` | The crash mats | Georgie (in person) | 97 |
 | 7 | `georgie-end` | Georgie and Ben | Georgie (in person) | 99 |
@@ -138,7 +139,7 @@ Nurse. Her friends keep asking her about you. Rival: Fraser. Ends up with: Hamis
 | 1 | `lucy-1` | Date one | Lucy | 15 |
 | 2 | `lucy-2` | Paddington markets | Lucy (in person) | 40 |
 | 3 | `lucy-3am` | 3am | Lucy | 50 |
-| 4 | `c6e` | Getting gayer | Lucy | 90 |
+| 4 | `c6e` | The evidence | Lucy (in person) | 90 |
 | 5 | `lucy-feet` | Low tables | Lucy (in person) | 92 |
 | 6 | `lucy-tickle` | After night shift | Lucy (in person) | 94 |
 | 7 | `lucy-end` | Lucy and Hamish | Lucy (in person) | 99 |
@@ -160,7 +161,7 @@ Hinge. Picnics. Notices feet. Rival: Sean. Ends up with: Riley (plumber).
 | 3 | `jade-pedi` | Pedicure date | Jade (in person) | 62 |
 | 4 | `jade-feet` | Hot tub | Jade (in person) | 70 |
 | 5 | `jade-barefoot` | One slide | Jade (in person) | 74 |
-| 6 | `c6f` | Painted toes | Jade | 92 |
+| 6 | `c6f` | Feet in a row | Jade (in person) | 92 |
 | 7 | `jade-end` | Jade and Riley | Jade (in person) | 99 |
 
 Boy-clothes path (after `jade-1` in boy clothes, replaces the rest of the route):
@@ -180,7 +181,7 @@ Bumble. Tells her sister everything. Rival: Marcus. Ends up with: James (finance
 | 3 | `olivia-facetime` | Her sister on FaceTime | Olivia | 55 |
 | 4 | `olivia-feet` | Boat day | Olivia (in person) | 70 |
 | 5 | `olivia-barefoot` | Dinner after the boat | Olivia (in person) | 76 |
-| 6 | `c6g` | Across the table | Olivia (in person) | 90 |
+| 6 | `c6g` | The next table | Olivia (in person) | 90 |
 | 7 | `olivia-end` | Olivia and James | Olivia (in person) | 99 |
 
 Boy-clothes path (after `olivia-1` in boy clothes, replaces the rest of the route):
@@ -200,7 +201,7 @@ Trivia team. Her friend Brooke is a lot. Rival: Tyler. Ends up with: Kyle (mecha
 | 3 | `zoe-quiz` | Trivia night | Zoe (in person) | 60 |
 | 4 | `zoe-feet` | Trivia at Brooke's | Zoe (in person) | 75 |
 | 5 | `zoe-ambush` | Tash's picnic | Zoe (in person) | 78 |
-| 6 | `c6h` | In the driveway | Zoe (in person) | 97 |
+| 6 | `c6h` | Brooke asks | Zoe (in person) | 97 |
 | 7 | `zoe-end` | Zoe and Kyle | Zoe (in person) | 99 |
 
 Boy-clothes path (after `zoe-1` in boy clothes, replaces the rest of the route):
@@ -220,7 +221,7 @@ Paralegal. Dry. Her friend Kirra films everything. Rival: Ethan. Ends up with: N
 | 3 | `sophie-kirra` | Kirra gets the phone | Sophie | 55 |
 | 4 | `sophie-feet` | Game night | Sophie (in person) | 76 |
 | 5 | `sophie-ambush` | The rematch | Sophie (in person) | 79 |
-| 6 | `c6i` | Saturday morning | Sophie (in person) | 98 |
+| 6 | `c6i` | On Kirra's TV | Sophie (in person) | 98 |
 | 7 | `sophie-end` | Sophie and Nathan | Sophie (in person) | 99 |
 
 Boy-clothes path (after `sophie-1` in boy clothes, replaces the rest of the route):
