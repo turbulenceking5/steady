@@ -5,6 +5,7 @@ Every route's chapters in the order they open, with who it's with and the chapte
 ## How a route runs
 - Chapters open one after another as soon as the previous one is finished. Jess and {bf} are `lock` routes: they open once any other route is finished, and stay open once started.
 - Each girl's main route rises in gaydar date by date: date one is low-key, the big chapter (the old `c5`–`c6m` ids) is where she says it or breaks up with him, and `<girl>-end` is her with a straight guy. The barefoot, tickle and ambush chapters sit around the big chapter and bring in her rival.
+- **The big chapter's outcome.** Every leaf of the big chapter sets `told`, `broke`, `cried` or `dodged`, and the chapters after it have `if` lines on it (see content.md).
 - **Boy-clothes fork.** Ten girls' routes have `fork: "<girl>-1"`. If date one was played in the `masc` outfit ("Boy clothes: …"), `routeChapters()` shows `<girl>-m2` and `<girl>-m3` instead of the rest of the route. `m2` sets `kept` or `slipped`; `m3` reads that with `if` lines and ends `together` (she keeps dating him), `drift` (she moves on, often to her main-route boyfriend, or tells him to date guys) or, for Mia and Georgie, `told`. Replaying date one in another outfit brings the main route back; read chapters stay read.
 - Keep this file in step when chapters are added, moved or renamed. To regenerate the tables, list `CONTENT.story` by route with node (see [testing.md](testing.md)).
 

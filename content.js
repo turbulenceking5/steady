@@ -1760,7 +1760,8 @@ window.CONTENT = {
                       "note": "Kate starts talking about her housewarming. Nobody looks at you for a while. When the bill comes Hannah splits it five ways, to the cent."
                     }
                   ],
-                  "after": "Later, Hannah, in a group chat with Kate: \"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\" Kate: \"he said straight was a truth\" Hannah: \"i know kate i was there\""
+                  "after": "Later, Hannah, in a group chat with Kate: \"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\" Kate: \"he said straight was a truth\" Hannah: \"i know kate i was there\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Okay! Kate, your go again.",
@@ -1783,7 +1784,8 @@ window.CONTENT = {
                       "note": "The table cracks up. Hannah laughs too, into her glass, and then stops and looks at you, and then laughs again a bit."
                     }
                   ],
-                  "after": "Hannah, to Kate, in the car park: \"you didnt have to do the lip tint one\" Kate: \"that was her not me\" Hannah: \"you laughed the loudest\" Kate: \"so did you han\""
+                  "after": "Hannah, to Kate, in the car park: \"you didnt have to do the lip tint one\" Kate: \"that was her not me\" Hannah: \"you laughed the loudest\" Kate: \"so did you han\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -1829,7 +1831,8 @@ window.CONTENT = {
                     },
                     "Have another one. You're not driving and I'm not, like, having you on my conscience. Nat, you can take him shopping now. I said you could."
                   ],
-                  "after": "Hannah, to Kate, at midnight: \"he just SAID it\" Kate: \"i know i was there\" Hannah: \"i feel weird\" Kate: \"good weird?\" Hannah: \"i dont know. relieved weird. also i fancied a gay guy for three dates and my calves hurt\""
+                  "after": "Hannah, to Kate, at midnight: \"he just SAID it\" Kate: \"i know i was there\" Hannah: \"i feel weird\" Kate: \"good weird?\" Hannah: \"i dont know. relieved weird. also i fancied a gay guy for three dates and my calves hurt\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "I drank because I'm thirsty. Next question.",
@@ -1853,7 +1856,8 @@ window.CONTENT = {
                       "note": "For the rest of the night Kate calls you \"thirsty\" and Hannah doesn't tell her to stop."
                     }
                   ],
-                  "after": "Kate, to Hannah, later: \"he's actually so funny\" Hannah: \"i know\" Kate: \"like i'd go out with him\" Hannah: \"no you wouldnt\" Kate: \"no i wouldnt lol\""
+                  "after": "Kate, to Hannah, later: \"he's actually so funny\" Hannah: \"i know\" Kate: \"like i'd go out with him\" Hannah: \"no you wouldnt\" Kate: \"no i wouldnt lol\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -1931,7 +1935,8 @@ window.CONTENT = {
                           "note": "She puts her number in as \"Kate 💗 (Han's)\". Nat sits back down next to you instead of across."
                         }
                       ],
-                      "after": "Hannah, to Kate, from the car: \"i feel so bad\" Kate: \"i feel worse i said the jess thing\" Hannah: \"yeah you did\" Kate: \"he's so sweet han\" Hannah: \"i know. i'm not dating him though. obviously\" Kate: \"obviously. he's coming saturday though\""
+                      "after": "Hannah, to Kate, from the car: \"i feel so bad\" Kate: \"i feel worse i said the jess thing\" Hannah: \"yeah you did\" Kate: \"he's so sweet han\" Hannah: \"i know. i'm not dating him though. obviously\" Kate: \"obviously. he's coming saturday though\"",
+                      "outcome": "cried"
                     },
                     {
                       "you": "Nobody knows. I haven't said it out loud. Ever.",
@@ -1953,7 +1958,8 @@ window.CONTENT = {
                         },
                         "It is. That's so annoying."
                       ],
-                      "after": "Later, Hannah, to Nat: \"is he ok\" Nat: \"he's fine. he's in kate's uber. they're singing\" Hannah: \"singing what\" Nat: \"abba i think. he still has the cardigan\""
+                      "after": "Later, Hannah, to Nat: \"is he ok\" Nat: \"he's fine. he's in kate's uber. they're singing\" Hannah: \"singing what\" Nat: \"abba i think. he still has the cardigan\"",
+                      "outcome": "cried"
                     },
                     {
                       "you": "(Squeeze her hand.) I'm gay. Sorry. I'm gay.",
@@ -1978,7 +1984,8 @@ window.CONTENT = {
                           "note": "Hannah orders another bottle and puts her arm round you while she does it, the way she'd put it round Kate."
                         }
                       ],
-                      "after": "Hannah, to Kate, at 1am: \"he said it\" Kate: \"i was there babe\" Hannah: \"i know. i just wanted to type it\" Kate: \"he's coming to my housewarming\" Hannah: \"i know. he asked what he should bring. he said a candle\""
+                      "after": "Hannah, to Kate, at 1am: \"he said it\" Kate: \"i was there babe\" Hannah: \"i know. i just wanted to type it\" Kate: \"he's coming to my housewarming\" Hannah: \"i know. he asked what he should bring. he said a candle\"",
+                      "outcome": "broke"
                     }
                   ]
                 },
@@ -2006,7 +2013,8 @@ window.CONTENT = {
                           "note": "She hugs you outside, quick, and gets in Nat's car."
                         }
                       ],
-                      "after": "You get home and she's already texted: \"home?\" You say yes. She sends a thumbs up, and then: \"you can tell jess whenever. or never. its yours\""
+                      "after": "You get home and she's already texted: \"home?\" You say yes. She sends a thumbs up, and then: \"you can tell jess whenever. or never. its yours\"",
+                      "outcome": "dodged"
                     },
                     {
                       "you": "Can we stay for one more? I don't want it to end on the bathroom.",
@@ -2022,7 +2030,8 @@ window.CONTENT = {
                           "note": "Kate takes her coat back off. Nobody plays the game again. Nat asks you about the boots, or the knit, and you talk about it for twenty minutes and Hannah just lets it happen."
                         }
                       ],
-                      "after": "Hannah, to Kate, after: \"that was nice in the end\" Kate: \"it was so nice. i love him\" Hannah: \"you love everyone\" Kate: \"i love him more than your last one\""
+                      "after": "Hannah, to Kate, after: \"that was nice in the end\" Kate: \"it was so nice. i love him\" Hannah: \"you love everyone\" Kate: \"i love him more than your last one\"",
+                      "outcome": "dodged"
                     }
                   ]
                 }
@@ -2072,7 +2081,8 @@ window.CONTENT = {
                       "note": "She gets chips. Nat makes you explain which bit of the middle one is true. You can't. The hands physio is crying."
                     }
                   ],
-                  "after": "Kate, in the group chat: \"'the middle one'\" Nat: \"im still thinking about it\" Hannah: \"can we not\" Kate: \"he's so funny though\" Hannah: \"yes kate he's very funny\""
+                  "after": "Kate, in the group chat: \"'the middle one'\" Nat: \"im still thinking about it\" Hannah: \"can we not\" Kate: \"he's so funny though\" Hannah: \"yes kate he's very funny\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "None of them. Okay? None of them. That's my turn.",
@@ -2093,7 +2103,8 @@ window.CONTENT = {
                       "note": "Hannah's hand is on your back, just resting there, the whole time Kate's at the bar."
                     }
                   ],
-                  "after": "Hannah, to Kate, later: \"he did it as a bit\" Kate: \"best coming out ive ever seen\" Hannah: \"how many have you seen\" Kate: \"two. his was better\""
+                  "after": "Hannah, to Kate, later: \"he did it as a bit\" Kate: \"best coming out ive ever seen\" Hannah: \"how many have you seen\" Kate: \"two. his was better\"",
+                  "outcome": "told"
                 }
               ]
             },
@@ -2126,7 +2137,8 @@ window.CONTENT = {
                     },
                     "All true."
                   ],
-                  "after": "Later, Hannah, in a group chat with Kate: \"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\" Kate: \"and he did a bit about being straight\" Hannah: \"three times\""
+                  "after": "Later, Hannah, in a group chat with Kate: \"update: jess set me up with a gay guy 🙃 he wore lip tint on a date and spent the whole night looking at the bartender\" Kate: \"and he did a bit about being straight\" Hannah: \"three times\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Fine. I'm going to get us another bottle.",
@@ -2145,7 +2157,8 @@ window.CONTENT = {
                     },
                     "He did. I watched him."
                   ],
-                  "after": "Kate, in the group chat: \"two truths and a lie. he's straight. he went to get wine. he asked the bartender if the jacket comes in pink\" Hannah: \"it was cream. he asked about cream\""
+                  "after": "Kate, in the group chat: \"two truths and a lie. he's straight. he went to get wine. he asked the bartender if the jacket comes in pink\" Hannah: \"it was cream. he asked about cream\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -2182,7 +2195,19 @@ window.CONTENT = {
         },
         "\"Dylan. Kate's brother.\" He looks at your toes, then at Hannah. \"This is the guy from the wine bar? Han. Come on.\"",
         "He's been asking me out since uni. Ignore him.",
-        "\"Eleven times,\" Dylan says. \"Guess my odds just went up though.\""
+        "\"Eleven times,\" Dylan says. \"Guess my odds just went up though.\"",
+        {
+          "note": "Kate squeezes your arm on her way past. \"Proud of you,\" she says, quietly, like it's nothing. Dylan doesn't hear.",
+          "if": "c5=told|broke"
+        },
+        {
+          "note": "Kate puts a cider in your hand without asking. \"No crying on the white carpet,\" she says. \"Joking. Kind of.\" She's checking your face while she says it.",
+          "if": "c5=cried"
+        },
+        {
+          "text": "And before you start, Dylan, no. He's still saying he's straight. Like, still.",
+          "if": "c5=dodged"
+        }
       ],
       "replies": [
         {
@@ -2695,6 +2720,18 @@ window.CONTENT = {
         {
           "if": "hannah-tickle=cracked|begged|kept",
           "note": "Hannah looks at the floor. Brodie looks at your shoes like he's wondering what's inside them."
+        },
+        {
+          "text": "Jess says you're on the apps now. Like, the guy ones. I'm sorry but that's so good. Get it.",
+          "if": "c5=told|broke"
+        },
+        {
+          "text": "And, um. Kate still feels bad about the wine bar. She says you were so nice about it. Even with the, like. Crying.",
+          "if": "c5=cried"
+        },
+        {
+          "text": "Jess says you're still telling people you're straight? Like. Babe. Okay.",
+          "if": "c5=dodged"
         }
       ],
       "replies": [
@@ -3815,7 +3852,8 @@ window.CONTENT = {
                       "note": "At the end Hayley gives you the card. You've won by four. Mia's on 41."
                     }
                   ],
-                  "after": "Mia, to Sam, that night: \"hayley said it for me\" Sam: \"mia\" Mia: \"i know!! sorry!! he wasnt even mad. he made her read it out\" Sam: \"read what\" Mia: \"the card\""
+                  "after": "Mia, to Sam, that night: \"hayley said it for me\" Sam: \"mia\" Mia: \"i know!! sorry!! he wasnt even mad. he made her read it out\" Sam: \"read what\" Mia: \"the card\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Fine. All of it. I'm gay, Mia.",
@@ -3832,7 +3870,8 @@ window.CONTENT = {
                     },
                     "Can we still get dumplings after? Like as... sorry. As friends. Is that okay to say?"
                   ],
-                  "after": "Mia, to Sam: \"he said it\" Sam: \"said what\" Mia: \"you know what\" Mia: \"sorry. hes gay. he said it at the windmill\" Sam: \"oh thank god\""
+                  "after": "Mia, to Sam: \"he said it\" Sam: \"said what\" Mia: \"you know what\" Mia: \"sorry. hes gay. he said it at the windmill\" Sam: \"oh thank god\"",
+                  "outcome": "told"
                 }
               ]
             },
@@ -3869,7 +3908,8 @@ window.CONTENT = {
                       "note": "At the end Hayley folds the scorecard in half and puts it in her back pocket."
                     }
                   ],
-                  "after": "Mia, to Sam, from the car: \"sorry i know its your coworker\" \"but he's gay sam\" \"he said he wasn't and then he called the counter guy darling AGAIN when we gave the putters back\" Sam: \"oh no\" Mia: \"sorry\""
+                  "after": "Mia, to Sam, from the car: \"sorry i know its your coworker\" \"but he's gay sam\" \"he said he wasn't and then he called the counter guy darling AGAIN when we gave the putters back\" Sam: \"oh no\" Mia: \"sorry\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Grab the pencil off her and cross the whole list out.)",
@@ -3885,7 +3925,8 @@ window.CONTENT = {
                     },
                     "Hayley, stop. Sorry. Stop. He doesn't want..."
                   ],
-                  "after": "Hayley, to Mia, that night: \"[photo of the scorecard]\" Mia: \"why do you still have that\" Hayley: \"framing it\" Mia: \"sorry is he ok\" Hayley: \"he crossed it out mia. he's fine. he's gay. he's fine\""
+                  "after": "Hayley, to Mia, that night: \"[photo of the scorecard]\" Mia: \"why do you still have that\" Hayley: \"framing it\" Mia: \"sorry is he ok\" Hayley: \"he crossed it out mia. he's fine. he's gay. he's fine\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -3951,7 +3992,8 @@ window.CONTENT = {
                       "note": "For the next eleven holes Mia holds your arm between shots. Hayley lets you keep the pencil."
                     }
                   ],
-                  "after": "Mia, to Sam, that night: \"we both cried at mini golf\" Sam: \"WHO cried\" Mia: \"both of us. hayley got us slushies\" Mia: \"sorry i know he's your coworker. he's ok. hes so nice sam. he's going to help me with my hair for your birthday\""
+                  "after": "Mia, to Sam, that night: \"we both cried at mini golf\" Sam: \"WHO cried\" Mia: \"both of us. hayley got us slushies\" Mia: \"sorry i know he's your coworker. he's ok. hes so nice sam. he's going to help me with my hair for your birthday\"",
+                  "outcome": "cried"
                 },
                 {
                   "you": "(Say it into Hayley's shoulder.) I'm gay.",
@@ -3975,7 +4017,8 @@ window.CONTENT = {
                     },
                     "HAYLEY."
                   ],
-                  "after": "Hayley, to Mia, that night: \"he said theo's a 7\" Mia: \"why did you ask him that\" Hayley: \"i needed a second opinion\" Mia: \"only a 7?\" Hayley: \"he said 8 with his shirt off\" Mia: \"oh\""
+                  "after": "Hayley, to Mia, that night: \"he said theo's a 7\" Mia: \"why did you ask him that\" Hayley: \"i needed a second opinion\" Mia: \"only a 7?\" Hayley: \"he said 8 with his shirt off\" Mia: \"oh\"",
+                  "outcome": "broke"
                 },
                 {
                   "you": "Can we just finish the game? I'm winning.",
@@ -3998,7 +4041,8 @@ window.CONTENT = {
                       "note": "Mia hits Hayley on the arm with her putter, gently."
                     }
                   ],
-                  "after": "Mia, to Sam: \"we finished the whole course\" Sam: \"and??\" Mia: \"he won. he cried and then he won. hayley's obsessed with him now\" Sam: \"everyone's obsessed with him\" Mia: \"sorry i know\""
+                  "after": "Mia, to Sam: \"we finished the whole course\" Sam: \"and??\" Mia: \"he won. he cried and then he won. hayley's obsessed with him now\" Sam: \"everyone's obsessed with him\" Mia: \"sorry i know\"",
+                  "outcome": "cried"
                 }
               ]
             },
@@ -4029,7 +4073,8 @@ window.CONTENT = {
                       "note": "She writes it down. Mia's work friend gives you a high five you weren't ready for."
                     }
                   ],
-                  "after": "Mia, to Sam: \"i didnt even have to say it in the end\" Sam: \"who said it\" Mia: \"hayley. and then him\" Mia: \"sorry. he's so lovely. i feel so bad i made him come to mini golf\""
+                  "after": "Mia, to Sam: \"i didnt even have to say it in the end\" Sam: \"who said it\" Mia: \"hayley. and then him\" Mia: \"sorry. he's so lovely. i feel so bad i made him come to mini golf\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "I don't know yet.",
@@ -4046,7 +4091,8 @@ window.CONTENT = {
                       "note": "She writes it down anyway, and draws a little heart next to it. Mia holds your hand for the windmill again, loosely, like she's holding a friend's."
                     }
                   ],
-                  "after": "Mia, to Sam: \"he said he doesn't know yet\" Sam: \"he knows\" Mia: \"sam!!\" Sam: \"i sit next to him mia. he knows\""
+                  "after": "Mia, to Sam: \"he said he doesn't know yet\" Sam: \"he knows\" Mia: \"sam!!\" Sam: \"i sit next to him mia. he knows\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -4083,7 +4129,8 @@ window.CONTENT = {
                       "note": "You walk along the river to the ferry. Your phone goes three times on the ferry and you don't look."
                     }
                   ],
-                  "after": "In the morning there are four messages from Mia. \"sorry\" \"im so sorry\" \"hayley shouldnt have done that. well. she shouldn't have done it like THAT\" \"are you ok\". And one from a number you don't have: \"its hayley. sorry about the card. it was a good hole in one\""
+                  "after": "In the morning there are four messages from Mia. \"sorry\" \"im so sorry\" \"hayley shouldnt have done that. well. she shouldn't have done it like THAT\" \"are you ok\". And one from a number you don't have: \"its hayley. sorry about the card. it was a good hole in one\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Stop and wait for her.)",
@@ -4097,7 +4144,8 @@ window.CONTENT = {
                     "Hayley's not mean. She just does things. I wanted to say it nice. I had a nice version in my notes app.",
                     "Can we still get dumplings sometime? Like, as... sorry. Dumplings. You know."
                   ],
-                  "after": "Mia, to Sam: \"he walked out and then he waited for me by the wheel\" Sam: \"so are you ok\" Mia: \"yeah. we're getting dumplings thursday. not a date. sorry. i know. i keep saying that\""
+                  "after": "Mia, to Sam: \"he walked out and then he waited for me by the wheel\" Sam: \"so are you ok\" Mia: \"yeah. we're getting dumplings thursday. not a date. sorry. i know. i keep saying that\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -4118,7 +4166,8 @@ window.CONTENT = {
                   "note": "You fold it into your pocket. Hayley tells you to play the rest of the course as \"the squeal\". You do. Every time you sink one the kids' party cheers."
                 }
               ],
-              "after": "Hayley, to Mia, that night: \"he kept the card\" Mia: \"i know\" Hayley: \"i love him. can i have him\" Mia: \"hes not a cat hayley\" Hayley: \"is he coming to my thing friday\" Mia: \"sorry. i already asked him\""
+              "after": "Hayley, to Mia, that night: \"he kept the card\" Mia: \"i know\" Hayley: \"i love him. can i have him\" Mia: \"hes not a cat hayley\" Hayley: \"is he coming to my thing friday\" Mia: \"sorry. i already asked him\"",
+              "outcome": "dodged"
             }
           ]
         }
@@ -4139,7 +4188,19 @@ window.CONTENT = {
         "sam's sister asked me if you were single and i didnt know what to say lol",
         "and sorry about mini golf. properly. i was so weird",
         "lachlan's really nice. i asked him if he knew what zara was and he said is that a tennis player 😭",
-        "anyway sorry im rambling. hope you're good"
+        "anyway sorry im rambling. hope you're good",
+        {
+          "text": "also hayley says hi!! she still has the scorecard. she says you have to let her set you up. sorry, she's like that",
+          "if": "c6=told|broke"
+        },
+        {
+          "text": "i still feel so bad about the bench. sorry. hayley says you're fine and i'm the one who needs to get over it lol",
+          "if": "c6=cried"
+        },
+        {
+          "text": "um also hayley keeps asking if you've 'said anything yet'. i told her to stop. sorry",
+          "if": "c6=dodged"
+        }
       ],
       "replies": [
         {
@@ -5022,7 +5083,8 @@ window.CONTENT = {
                       "note": "Maddy keeps one hand on your back the whole time the pancakes are coming. When they arrive Ella cuts the first bit for you."
                     }
                   ],
-                  "after": "Ella, to her sister: \"he cried at brunch\" Sister: \"WHAT why\" Ella: \"i did a toast\" Sister: \"ella\" Ella: \"i know. i'm the worst. maddy fixed his lashes. he's coming to the beach with us\""
+                  "after": "Ella, to her sister: \"he cried at brunch\" Sister: \"WHAT why\" Ella: \"i did a toast\" Sister: \"ella\" Ella: \"i know. i'm the worst. maddy fixed his lashes. he's coming to the beach with us\"",
+                  "outcome": "cried"
                 },
                 {
                   "you": "Can I have the pancakes?",
@@ -5042,7 +5104,8 @@ window.CONTENT = {
                       "text": "And I'm borrowing the dress. Not now. I'm just telling you now so it's in your head."
                     }
                   ],
-                  "after": "Ella, to Meg and Maddy, after: \"i made him cry\" Meg: \"he ate all the pancakes though\" Maddy: \"he said i can borrow the dress for the engagement\" Ella: \"MY sister's engagement??\" Maddy: \"he said it's a bowls club so florals are fine\""
+                  "after": "Ella, to Meg and Maddy, after: \"i made him cry\" Meg: \"he ate all the pancakes though\" Maddy: \"he said i can borrow the dress for the engagement\" Ella: \"MY sister's engagement??\" Maddy: \"he said it's a bowls club so florals are fine\"",
+                  "outcome": "cried"
                 },
                 {
                   "you": "I'm gay. I've never said it out loud before.",
@@ -5065,7 +5128,8 @@ window.CONTENT = {
                       "note": "The waitress brings the pancakes nobody ordered yet and says \"on the house, ladies\", and this time Ella just says thank you."
                     }
                   ],
-                  "after": "Ella, to her sister: \"he said it\" Sister: \"said what\" Ella: \"that he's gay. at brunch. after i made a toast and he cried\" Sister: \"ELLA\" Ella: \"i know. the drama. maddy's borrowing his dress\""
+                  "after": "Ella, to her sister: \"he said it\" Sister: \"said what\" Ella: \"that he's gay. at brunch. after i made a toast and he cried\" Sister: \"ELLA\" Ella: \"i know. the drama. maddy's borrowing his dress\"",
+                  "outcome": "broke"
                 }
               ]
             },
@@ -5098,7 +5162,8 @@ window.CONTENT = {
                       "note": "You say yes. Ella orders another round and tells the waitress it's a celebration and the waitress says \"oh, for who?\" and all three of them point at you."
                     }
                   ],
-                  "after": "Ella, to her sister: \"brunch guy is gay\" Sister: \"we knew that\" Ella: \"he SAID it though. i did a toast\" Sister: \"did you stand up\" Ella: \"obviously i stood up\""
+                  "after": "Ella, to her sister: \"brunch guy is gay\" Sister: \"we knew that\" Ella: \"he SAID it though. i did a toast\" Sister: \"did you stand up\" Ella: \"obviously i stood up\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "It's a mimosa, Ella.",
@@ -5118,7 +5183,8 @@ window.CONTENT = {
                       "note": "The waiter brings the coffees. You thank him and touch his arm without meaning to, and Ella sees, and makes a face at Meg."
                     }
                   ],
-                  "after": "Ella, to Meg, after: \"he said 'it's a mimosa'\" Meg: \"and then he touched the waiter\" Ella: \"the ARM meg\" Meg: \"you should've seen your face\""
+                  "after": "Ella, to Meg, after: \"he said 'it's a mimosa'\" Meg: \"and then he touched the waiter\" Ella: \"the ARM meg\" Meg: \"you should've seen your face\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -5149,7 +5215,8 @@ window.CONTENT = {
                       "note": "Nobody says much after that. Meg asks for the bill early and pays for everyone."
                     }
                   ],
-                  "after": "Ella, to her sister: \"brunch guy turned up in a dress\" Sister: \"WHAT. like a costume?\" Ella: \"no like a nice one. and lashes\" Sister: \"is he gay\" Ella: \"he said no\" Sister: \"is he gay though\" Ella: \"obviously he's gay\""
+                  "after": "Ella, to her sister: \"brunch guy turned up in a dress\" Sister: \"WHAT. like a costume?\" Ella: \"no like a nice one. and lashes\" Sister: \"is he gay\" Ella: \"he said no\" Sister: \"is he gay though\" Ella: \"obviously he's gay\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "It's a not at brunch. Not with Meg and Maddy here.",
@@ -5170,7 +5237,8 @@ window.CONTENT = {
                     "Okay. Not at brunch. That's fair. I'm sorry. I'm sorry I did the toast.",
                     "Is it a yes somewhere else though?"
                   ],
-                  "after": "Maddy, to Ella, from two tables away: \"he's looking at the waiter\" Ella: \"i can see maddy\" Maddy: \"also can i still borrow the dress\""
+                  "after": "Maddy, to Ella, from two tables away: \"he's looking at the waiter\" Ella: \"i can see maddy\" Maddy: \"also can i still borrow the dress\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -5217,7 +5285,8 @@ window.CONTENT = {
                       "note": "For the rest of brunch Meg orders everything in a deep voice. Ella laughs every time, and doesn't look at you while she does it."
                     }
                   ],
-                  "after": "Ella, to her sister: \"he did a deep voice at the waitress\" Sister: \"why\" Ella: \"because she called us ladies\" Sister: \"ella that's the funniest thing you've ever told me\" Ella: \"i know. i'm not dating him though\""
+                  "after": "Ella, to her sister: \"he did a deep voice at the waitress\" Sister: \"why\" Ella: \"because she called us ladies\" Sister: \"ella that's the funniest thing you've ever told me\" Ella: \"i know. i'm not dating him though\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Drop it.) Okay. It isn't.",
@@ -5234,7 +5303,8 @@ window.CONTENT = {
                     },
                     "Love. She's calling you love now. We've gone from ladies to love. I can't with this brunch."
                   ],
-                  "after": "Ella, to Meg, after: \"did we just watch him come out over a coffee order\" Meg: \"kind of\" Ella: \"it was such a moment\" Meg: \"you said that about the pancakes\""
+                  "after": "Ella, to Meg, after: \"did we just watch him come out over a coffee order\" Meg: \"kind of\" Ella: \"it was such a moment\" Meg: \"you said that about the pancakes\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -5257,7 +5327,8 @@ window.CONTENT = {
                       "note": "You walk out onto Given Terrace in the dress. A woman with a pram looks at you, then keeps walking. You get all the way to the bus stop before your phone goes."
                     }
                   ],
-                  "after": "Ella: \"sorry about brunch. that was so much\" Then, ten minutes later, from a number you don't know: \"hi its maddy. ella gave me your number. can i borrow the dress. not now. one day. sorry. it was really pretty\""
+                  "after": "Ella: \"sorry about brunch. that was so much\" Then, ten minutes later, from a number you don't know: \"hi its maddy. ella gave me your number. can i borrow the dress. not now. one day. sorry. it was really pretty\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Sit back down.)",
@@ -5274,7 +5345,8 @@ window.CONTENT = {
                     },
                     "Okay, he's looking at you. The waiter. Not me. I'm literally invisible. I wore my sleep tee for this."
                   ],
-                  "after": "Ella, to her sister: \"he did a twirl at brunch\" Sister: \"for you??\" Ella: \"for maddy. and the waiter watched the whole thing\" Sister: \"so are you seeing him again\" Ella: \"as what\""
+                  "after": "Ella, to her sister: \"he did a twirl at brunch\" Sister: \"for you??\" Ella: \"for maddy. and the waiter watched the whole thing\" Sister: \"so are you seeing him again\" Ella: \"as what\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -5311,7 +5383,19 @@ window.CONTENT = {
         },
         "\"Ha! Ells, who's your little friend?\" he says. \"I'm Hayden.\"",
         "Hayden's a lifesaver. He's been trying to take me out since second year.",
-        "\"Still am,\" Hayden says, and grins at her. Then down at your feet. \"You coming in, man? Or are you worried about the polish?\""
+        "\"Still am,\" Hayden says, and grins at her. Then down at your feet. \"You coming in, man? Or are you worried about the polish?\"",
+        {
+          "note": "Ella leans over while Hayden's shaking his hair out. \"I haven't told anyone from uni, by the way,\" she whispers. \"Brunch stays at brunch. Unless you want me to, then I'll literally announce it.\"",
+          "if": "c6b=told|broke"
+        },
+        {
+          "note": "Ella squeezes your hand under the towel, quick. \"No crying at the beach,\" she whispers. \"Sand gets in it. I've been there.\"",
+          "if": "c6b=cried"
+        },
+        {
+          "note": "Ella leans over. \"Meg asked if you were coming as my date or my friend and I said, um, yes. So.\"",
+          "if": "c6b=dodged"
+        }
       ],
       "replies": [
         {
@@ -5858,40 +5942,89 @@ window.CONTENT = {
       "debrief": "It felt embarrassing at the time. It's still just being ticklish."
     },
     {
-      id: "ella-end", route: "ella", gaydar: 99, spark: 0, gaydarSays: "I asked Connor about my cat eye and he asked what was wrong with my eye. I love him so much.", title: "Ella and Connor", contact: "Ella",
-      intro: "A month later, Ella's Instagram story pops up: her and a guy in a rugby jersey at the stadium, his arm round her, both holding pies. His name's Connor. You reply to the story with a heart-eyes emoji before you can stop yourself. Ten minutes later she replies.",
-      them: [
+      "id": "ella-end",
+      "route": "ella",
+      "gaydar": 99,
+      "spark": 0,
+      "gaydarSays": "I asked Connor about my cat eye and he asked what was wrong with my eye. I love him so much.",
+      "title": "Ella and Connor",
+      "contact": "Ella",
+      "intro": "A month later, Ella's Instagram story pops up: her and a guy in a rugby jersey at the stadium, his arm round her, both holding pies. His name's Connor. You reply to the story with a heart-eyes emoji before you can stop yourself. Ten minutes later she replies.",
+      "them": [
         "omg hi!!",
         "thats connor lol. he plays rugby. like on weekends not for real",
         "i asked him if he liked my cat eye and he said whats wrong with your eye 😭",
         "anyway how are you?? i felt kind of bad after brunch",
-        {"if":"ella-tickle=held","text":"also hayden still brings up the surf club. how you didn't laugh. it bugs him so much lol"},
-        {"if":"ella-tickle=cracked|begged|kept","text":"also sorry but connor has seen the surf club video. hayden put it in the club chat and connor's cousin is in the club. connor said 'the squealing guy?' i said yes. sorry"}
+        {
+          "if": "ella-tickle=held",
+          "text": "also hayden still brings up the surf club. how you didn't laugh. it bugs him so much lol"
+        },
+        {
+          "if": "ella-tickle=cracked|begged|kept",
+          "text": "also sorry but connor has seen the surf club video. hayden put it in the club chat and connor's cousin is in the club. connor said 'the squealing guy?' i said yes. sorry"
+        },
+        {
+          "text": "also maddy still wants the dress. she says now you're out you have to share your wardrobe, it's like the law",
+          "if": "c6b=told|broke"
+        },
+        {
+          "text": "and sorry again about the toast. meg says i made you cry with a mimosa and that's a new low for me",
+          "if": "c6b=cried"
+        },
+        {
+          "text": "meg still says the waitress was right lol. i'm just the messenger",
+          "if": "c6b=dodged"
+        }
       ],
-      replies: [
-        { you: "Oh my god, he's SO rugby. Look at his neck. I'm so happy for you, Ella! And don't feel bad. Brunch was... a moment. I was having a moment.",
-          them: [
+      "replies": [
+        {
+          "you": "Oh my god, he's SO rugby. Look at his neck. I'm so happy for you, Ella! And don't feel bad. Brunch was... a moment. I was having a moment.",
+          "them": [
             "you were DEFINITELY having a moment",
             "good for you. less for me lol. i was the girl in jeans next to the guy in the dress",
             "connor carried me up the stairs at the stadium last week cos my heels were killing me",
             "you would've wanted to try them on lol",
             "ok can i say something without it being weird"
           ],
-          replies: [
-            { you: "Say it. I can take it.",
-              them: [
+          "replies": [
+            {
+              "you": "Say it. I can take it.",
+              "them": [
                 "i think you'd love a connor",
                 "not MY connor. but like. a big guy who's a bit dumb and really nice",
                 "you looked at the waiter at brunch like that"
               ],
-              replies: [
-                { you: "Ella! I'm not... I don't... why is everyone saying this to me?", them: ["because its true lol", "anyway connor says hi. he wants to know if you want to play touch wednesday", "i said you'd turn up in a skort"] },
-                { you: "...What's his number? Kidding. Kidding! Mostly.", them: ["LOL", "hes taken. his friend dev is single though", "just saying"] }
-              ] },
-            { you: "Actually no. Don't say it. I know what you're going to say.", them: ["ok 😊", "im still thinking it though"] }
-          ] },
-        { you: "I miss you. I want to try again. And I'm going to tell Connor that. To his face.",
-          them: [
+              "replies": [
+                {
+                  "you": "Ella! I'm not... I don't... why is everyone saying this to me?",
+                  "them": [
+                    "because its true lol",
+                    "anyway connor says hi. he wants to know if you want to play touch wednesday",
+                    "i said you'd turn up in a skort"
+                  ]
+                },
+                {
+                  "you": "...What's his number? Kidding. Kidding! Mostly.",
+                  "them": [
+                    "LOL",
+                    "hes taken. his friend dev is single though",
+                    "just saying"
+                  ]
+                }
+              ]
+            },
+            {
+              "you": "Actually no. Don't say it. I know what you're going to say.",
+              "them": [
+                "ok 😊",
+                "im still thinking it though"
+              ]
+            }
+          ]
+        },
+        {
+          "you": "I miss you. I want to try again. And I'm going to tell Connor that. To his face.",
+          "them": [
             "omg",
             "{name}",
             "ok i told him. he sent a voice note",
@@ -5899,26 +6032,52 @@ window.CONTENT = {
             "his friends are laughing in the background",
             "hes not worried lol. at all"
           ],
-          replies: [
-            { you: "Fine. I'll be there.",
-              them: ["omg ok", "i'm coming. i'm bringing snacks"],
-              after: "Wednesday. You wear a white skort and a visor. Before the game Connor jogs over, all sweaty, yells \"boys, he came! in a skort!\" and puts a hand on your shoulder, and you forget why you came. You get the ball once and pass it straight back to him. Afterwards he says \"so. still gonna take her off me, man?\" and you say \"no. um. good game. you're really fast\" and your voice goes up at the end. He says \"didn't think so\", ruffles your hair and goes to get Ella a pie. Later she sends you the video: \"youre so cute 😭\" \"still no tho\"" },
-            { you: "Actually tell him never mind. I'd ruin my nails.",
-              them: ["lol he said thought so", "and tell him to come anyway the boys want to meet him", "theyre going to adopt you as like a mascot"] }
-          ] },
-        { you: "I'm okay. Honestly. Still wearing the dress, if that's what you're asking. Wore it to the Valley last weekend with Dani.",
-          them: [
+          "replies": [
+            {
+              "you": "Fine. I'll be there.",
+              "them": [
+                "omg ok",
+                "i'm coming. i'm bringing snacks"
+              ],
+              "after": "Wednesday. You wear a white skort and a visor. Before the game Connor jogs over, all sweaty, yells \"boys, he came! in a skort!\" and puts a hand on your shoulder, and you forget why you came. You get the ball once and pass it straight back to him. Afterwards he says \"so. still gonna take her off me, man?\" and you say \"no. um. good game. you're really fast\" and your voice goes up at the end. He says \"didn't think so\", ruffles your hair and goes to get Ella a pie. Later she sends you the video: \"youre so cute 😭\" \"still no tho\""
+            },
+            {
+              "you": "Actually tell him never mind. I'd ruin my nails.",
+              "them": [
+                "lol he said thought so",
+                "and tell him to come anyway the boys want to meet him",
+                "theyre going to adopt you as like a mascot"
+              ]
+            }
+          ]
+        },
+        {
+          "you": "I'm okay. Honestly. Still wearing the dress, if that's what you're asking. Wore it to the Valley last weekend with Dani.",
+          "them": [
             "STOP",
             "the blue one?? i need photos",
             "see this is what i mean. youre in the valley in a dress and im at the rugby watching connor eat two pies"
           ],
-          replies: [
-            { you: "Two pies is a lot, babe. Is he okay?", them: ["hes a prop thats his whole job", "ok have to go hes yelling at the ref. glad youre good x"] },
-            { you: "I'm really glad for you, Ella.", them: ["thanks 😊", "ok connor's back with more pies. bye"] }
-          ] }
+          "replies": [
+            {
+              "you": "Two pies is a lot, babe. Is he okay?",
+              "them": [
+                "hes a prop thats his whole job",
+                "ok have to go hes yelling at the ref. glad youre good x"
+              ]
+            },
+            {
+              "you": "I'm really glad for you, Ella.",
+              "them": [
+                "thanks 😊",
+                "ok connor's back with more pies. bye"
+              ]
+            }
+          ]
+        }
       ],
-      after: "Ella, to Connor at half time: \"remember the guy from hinge i told you about? brunch guy?\" Connor, mouth full of pie: \"the one in the dress?\" Ella: \"yeah he just replied to my story\" Connor: \"he gay?\" Ella: \"yeah\" Connor: \"good for him.\" Then he yells at the ref again.",
-      debrief: "You two wanted different things. That's all it was."
+      "after": "Ella, to Connor at half time: \"remember the guy from hinge i told you about? brunch guy?\" Connor, mouth full of pie: \"the one in the dress?\" Ella: \"yeah he just replied to my story\" Connor: \"he gay?\" Ella: \"yeah\" Connor: \"good for him.\" Then he yells at the ref again.",
+      "debrief": "You two wanted different things. That's all it was."
     },
     {
       "id": "tayla-1",
@@ -6666,7 +6825,8 @@ window.CONTENT = {
                       "note": "Steph's got her notes app open. She's typing a heading. \"guys for {name}\". Tayla sees it and doesn't tell her to stop."
                     }
                   ],
-                  "after": "Tayla, to the girls 💗, at 3am: \"is he ok\" Bec: \"hes fine hes asleep on my couch\" Bec: \"he did my eyeliner and then i did his and his was better\" Steph: \"started a list\" Tayla: \"a list of what\" Steph: \"guys\""
+                  "after": "Tayla, to the girls 💗, at 3am: \"is he ok\" Bec: \"hes fine hes asleep on my couch\" Bec: \"he did my eyeliner and then i did his and his was better\" Steph: \"started a list\" Tayla: \"a list of what\" Steph: \"guys\"",
+                  "outcome": "broke"
                 },
                 {
                   "you": "Can we go back out? I don't want to miss your cake.",
@@ -6685,7 +6845,8 @@ window.CONTENT = {
                       "note": "In the cake photo you're in the middle between Bec and Steph, eyeliner a bit wonky, and Tayla's at the end with her arm round your waist."
                     }
                   ],
-                  "after": "Tayla, to the girls 💗, the next day: \"the cake photo is SO cute\" Bec: \"he looks better than me in it\" Steph: \"he looks better than all of us in it\" Tayla: \"yeah well. hes not my boyfriend anymore so i can say that\""
+                  "after": "Tayla, to the girls 💗, the next day: \"the cake photo is SO cute\" Bec: \"he looks better than me in it\" Steph: \"he looks better than all of us in it\" Tayla: \"yeah well. hes not my boyfriend anymore so i can say that\"",
+                  "outcome": "broke"
                 }
               ]
             },
@@ -6723,7 +6884,8 @@ window.CONTENT = {
                       "note": "Tayla hugs you from the side, quick, the way she hugs Bec after a win."
                     }
                   ],
-                  "after": "Steph, to the netball chat: \"[video] tay's ex came out on the tv and then sang happy birthday into a mic\" Sam: \"he's my coworker\" Steph: \"sam he's ICONIC\" Tayla: \"hes not my ex its been like four minutes\""
+                  "after": "Steph, to the netball chat: \"[video] tay's ex came out on the tv and then sang happy birthday into a mic\" Sam: \"he's my coworker\" Steph: \"sam he's ICONIC\" Tayla: \"hes not my ex its been like four minutes\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "(Go and dance to Kylie. On your own, like before.)",
@@ -6738,7 +6900,8 @@ window.CONTENT = {
                       "note": "Tayla dances next to you, not with you. She does the hand thing from Padam Padam and you do it back."
                     }
                   ],
-                  "after": "Tayla, to the girls 💗, at 2am: \"he danced to every kylie song\" Bec: \"he did that last time too\" Tayla: \"yeah but this time i didn't mind\""
+                  "after": "Tayla, to the girls 💗, at 2am: \"he danced to every kylie song\" Bec: \"he did that last time too\" Tayla: \"yeah but this time i didn't mind\"",
+                  "outcome": "told"
                 }
               ]
             },
@@ -6772,7 +6935,8 @@ window.CONTENT = {
                       "note": "She doesn't wait to see which."
                     }
                   ],
-                  "after": "Tayla, to the girls 💗, at 1am: \"he said it was a joke\" Steph: \"was it\" Tayla: \"steph it was on the tv\" Bec: \"he still did my eyeliner though\" Tayla: \"BEC\""
+                  "after": "Tayla, to the girls 💗, at 1am: \"he said it was a joke\" Steph: \"was it\" Tayla: \"steph it was on the tv\" Bec: \"he still did my eyeliner though\" Tayla: \"BEC\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "...Okay. I wasn't joking.",
@@ -6792,7 +6956,8 @@ window.CONTENT = {
                       "note": "Tayla puts the slideshow back on. When Bec at Schoolies comes up, she points at the traffic cone and looks at you, and you both laugh, for no reason."
                     }
                   ],
-                  "after": "Steph, to the netball chat: \"[video] he said joking. then he said not joking\" Bec: \"we love him\" Tayla: \"yes ok we love him\""
+                  "after": "Steph, to the netball chat: \"[video] he said joking. then he said not joking\" Bec: \"we love him\" Tayla: \"yes ok we love him\"",
+                  "outcome": "told"
                 }
               ]
             }
@@ -6838,7 +7003,8 @@ window.CONTENT = {
                       "note": "She goes to stand with the girls by the bar. Steph puts an arm round her and looks at you over her shoulder."
                     }
                   ],
-                  "after": "An hour later Tayla, on her own: \"im not mad at you\" \"just embarrassed\" \"steph's been my best friend since year 7 and she saw my text on a TV\" \"and you just said im crazy in front of everyone\" \"i think we should stop. sorry\""
+                  "after": "An hour later Tayla, on her own: \"im not mad at you\" \"just embarrassed\" \"steph's been my best friend since year 7 and she saw my text on a TV\" \"and you just said im crazy in front of everyone\" \"i think we should stop. sorry\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Go and get a drink at the bar.)",
@@ -6857,7 +7023,8 @@ window.CONTENT = {
                     },
                     "I can see, Steph. I can see."
                   ],
-                  "after": "Steph, to the girls 💗: \"the bartender called him babe and he took the pink drink\" Bec: \"to be fair it was a good drink\" Tayla: \"can we please just do the cake\""
+                  "after": "Steph, to the girls 💗: \"the bartender called him babe and he took the pink drink\" Bec: \"to be fair it was a good drink\" Tayla: \"can we please just do the cake\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -6887,7 +7054,8 @@ window.CONTENT = {
                     },
                     "Everyone's seen the formal, babe."
                   ],
-                  "after": "Tayla, to the girls 💗, at 2am: \"he said sorry for doing it at bec's party\" Bec: \"he didn't do it the tv did it\" Steph: \"tay did it\" Tayla: \"STEPH\""
+                  "after": "Tayla, to the girls 💗, at 2am: \"he said sorry for doing it at bec's party\" Bec: \"he didn't do it the tv did it\" Steph: \"tay did it\" Tayla: \"STEPH\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "Can we at least get a photo by the balloon arch first?",
@@ -6908,7 +7076,8 @@ window.CONTENT = {
                     },
                     "Delete it."
                   ],
-                  "after": "Tayla's story the next morning: the balloon arch photo, all four of you, with \"the girls 💗\" written over it. You're in the middle."
+                  "after": "Tayla's story the next morning: the balloon arch photo, all four of you, with \"the girls 💗\" written over it. You're in the middle.",
+                  "outcome": "told"
                 }
               ]
             }
@@ -6932,7 +7101,8 @@ window.CONTENT = {
                   "note": "You walk down Ann Street in your party clothes and get an Uber outside the convenience store. The driver asks if it was a good night."
                 }
               ],
-              "after": "On the drive home Tayla sends five messages in a row. \"im so sorry\" \"it wasnt for you\" \"i mean it was ABOUT you but it wasnt for you\" \"bec says come back for cake\" \"steph says sorry. she doesnt really mean it but she says it\""
+              "after": "On the drive home Tayla sends five messages in a row. \"im so sorry\" \"it wasnt for you\" \"i mean it was ABOUT you but it wasnt for you\" \"bec says come back for cake\" \"steph says sorry. she doesnt really mean it but she says it\"",
+              "outcome": "dodged"
             },
             {
               "you": "(Stop on the stairs.)",
@@ -6956,7 +7126,8 @@ window.CONTENT = {
                     },
                     "Come back up for the cake. Please. It's pink. You picked it."
                   ],
-                  "after": "Tayla, to the girls 💗: \"he said im not crazy\" Bec: \"we KNOW youre not crazy\" Steph: \"i said that on the tv\" Tayla: \"hes coming back up for cake\""
+                  "after": "Tayla, to the girls 💗: \"he said im not crazy\" Bec: \"we KNOW youre not crazy\" Steph: \"i said that on the tv\" Tayla: \"hes coming back up for cake\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "I don't know, Tay. I don't know what you are.",
@@ -6967,7 +7138,8 @@ window.CONTENT = {
                     "I'm going to go back up. Bec'll kill me if I miss the candles.",
                     "Text me you got home. Not in the girls chat. Just me."
                   ],
-                  "after": "You text her from the Uber: \"home\". She replies with a heart. Then, a minute later, in the girls 💗, which you aren't in, but Bec tells you later: \"hes home. hes fine. im the worst\""
+                  "after": "You text her from the Uber: \"home\". She replies with a heart. Then, a minute later, in the girls 💗, which you aren't in, but Bec tells you later: \"hes home. hes fine. im the worst\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -6992,6 +7164,18 @@ window.CONTENT = {
       "them": [
         {
           "note": "Tayla's on the lounger next to yours. Bec and Steph are on the edge of the pool with their feet in."
+        },
+        {
+          "note": "Steph's already waving her phone at you from the pool. \"Guys for {name}, part two,\" she yells. \"I've got three.\" Bec yells \"FOUR.\"",
+          "if": "c6c=told"
+        },
+        {
+          "note": "Bec hugs you hello and holds on a second longer than normal. \"Waterproof eyeliner today?\" she says into your ear. \"Good.\"",
+          "if": "c6c=broke"
+        },
+        {
+          "note": "Steph looks at your toes, then at Bec, and very loudly doesn't say anything.",
+          "if": "c6c=dodged"
         },
         "\"Tay, his toes are sparklier than the pool,\" Steph says.",
         {
@@ -7508,6 +7692,18 @@ window.CONTENT = {
         {
           "if": "tayla-ambush=cracked|begged|kept",
           "note": "Tayla says \"Mitch\" and elbows him, but she's laughing."
+        },
+        {
+          "text": "Steph's list is still going btw. She's up to like ELEVEN guys. Mitch said he knows a twelfth.",
+          "if": "c6c=told"
+        },
+        {
+          "text": "Also Bec's lock screen is still you redoing your eyeliner in her bathroom at the party. Just so you know.",
+          "if": "c6c=broke"
+        },
+        {
+          "text": "Steph says you're still telling people you're straight. She's not mad. She's just, like, waiting.",
+          "if": "c6c=dodged"
         }
       ],
       "replies": [
@@ -8229,7 +8425,8 @@ window.CONTENT = {
                       "note": "She puts her phone in her chalk bag. Her housemate gets up to put her mug back. Tess suddenly has to go and coil a rope."
                     }
                   ],
-                  "after": "Georgie, to her housemate, on the drive home: \"he said no\" Housemate: \"i was there\" Georgie: \"i know. im just saying it out loud. he said no and he was wearing a dress\" Housemate: \"are you ok\" Georgie: \"nice guy. not a boyfriend\""
+                  "after": "Georgie, to her housemate, on the drive home: \"he said no\" Housemate: \"i was there\" Georgie: \"i know. im just saying it out loud. he said no and he was wearing a dress\" Housemate: \"are you ok\" Georgie: \"nice guy. not a boyfriend\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Take her phone and put it face down on the table.)",
@@ -8247,7 +8444,8 @@ window.CONTENT = {
                     "I'm keeping it. Twelve's staying.",
                     "You can still come to dinner. I'm still hungry. I'm just not going to pretend I'm not counting."
                   ],
-                  "after": "Georgie, to her housemate: \"he took my phone\" Housemate: \"and you just kept going\" Georgie: \"i know the list off by heart\" Housemate: \"georgie\" Georgie: \"what. it's twelve things now\""
+                  "after": "Georgie, to her housemate: \"he took my phone\" Housemate: \"and you just kept going\" Georgie: \"i know the list off by heart\" Housemate: \"georgie\" Georgie: \"what. it's twelve things now\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -8274,7 +8472,8 @@ window.CONTENT = {
                     },
                     "Still dinner? I'm starving. I did the purple one twice."
                   ],
-                  "after": "Georgie, to her housemate: \"he said they're all fair\" Housemate: \"so he said it\" Georgie: \"he said they're all fair. that's like ninety-eight percent\" Housemate: \"you're not counting this\" Georgie: \"i am\""
+                  "after": "Georgie, to her housemate: \"he said they're all fair\" Housemate: \"so he said it\" Georgie: \"he said they're all fair. that's like ninety-eight percent\" Housemate: \"you're not counting this\" Georgie: \"i am\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Five's fair. The rest are slander.",
@@ -8291,7 +8490,8 @@ window.CONTENT = {
                     },
                     "Six isn't slander. I bought them. I was there."
                   ],
-                  "after": "Georgie, to Tess: \"he said slander\" Tess: \"he's so funny\" Georgie: \"yes\" Tess: \"are you sad\" Georgie: \"no. a bit. i think i'd ranked him higher\""
+                  "after": "Georgie, to Tess: \"he said slander\" Tess: \"he's so funny\" Georgie: \"yes\" Tess: \"are you sad\" Georgie: \"no. a bit. i think i'd ranked him higher\"",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -8359,7 +8559,8 @@ window.CONTENT = {
                     },
                     "You don't have to say anything else. Drink that. It's four dollars."
                   ],
-                  "after": "Georgie, to her housemate, that night: \"i shouldnt have read fourteen\" Housemate: \"no\" Georgie: \"i deleted it\" Housemate: \"i know i was there\" Georgie: \"he kept your hoodie\" Housemate: \"he can keep it. it looks better on him. over a slip dress\""
+                  "after": "Georgie, to her housemate, that night: \"i shouldnt have read fourteen\" Housemate: \"no\" Georgie: \"i deleted it\" Housemate: \"i know i was there\" Georgie: \"he kept your hoodie\" Housemate: \"he can keep it. it looks better on him. over a slip dress\"",
+                  "outcome": "cried"
                 },
                 {
                   "you": "I'm gay. That's what fourteen is.",
@@ -8378,7 +8579,8 @@ window.CONTENT = {
                     "Tess. Not now.",
                     "Maybe later though. He does have a nice dog."
                   ],
-                  "after": "Georgie, to her housemate: \"he said it\" Housemate: \"good. you ok?\" Georgie: \"yeah. weird. good. i ranked him top five dates this year and he's gay\" Housemate: \"what's number one\" Georgie: \"the guy with the boat. you know that\""
+                  "after": "Georgie, to her housemate: \"he said it\" Housemate: \"good. you ok?\" Georgie: \"yeah. weird. good. i ranked him top five dates this year and he's gay\" Housemate: \"what's number one\" Georgie: \"the guy with the boat. you know that\"",
+                  "outcome": "broke"
                 },
                 {
                   "you": "(Wipe your face on the hoodie sleeve.) Can you start a new list?",
@@ -8400,7 +8602,8 @@ window.CONTENT = {
                     },
                     "I'm putting him at the bottom. Drink your hot chocolate. We're going to dinner after, all of us, I'm not leaving you with the brownie."
                   ],
-                  "after": "Georgie, to her housemate, from the Thai place: \"new list's at seven names\" Housemate: \"tess added three\" Georgie: \"he ranked them himself. he put the grunting guy at four\" Housemate: \"why\" Georgie: \"he said 'arms'\""
+                  "after": "Georgie, to her housemate, from the Thai place: \"new list's at seven names\" Housemate: \"tess added three\" Georgie: \"he ranked them himself. he put the grunting guy at four\" Housemate: \"why\" Georgie: \"he said 'arms'\"",
+                  "outcome": "cried"
                 }
               ]
             },
@@ -8434,7 +8637,8 @@ window.CONTENT = {
                       "note": "Georgie pushes the last of the brownie across to you. You still go to dinner. She orders for both of you."
                     }
                   ],
-                  "after": "Georgie, to her housemate: \"i asked him straight up and he answered straight up\" Housemate: \"pun?\" Georgie: \"no\" Georgie: \"maybe. it's thirteen things now\""
+                  "after": "Georgie, to her housemate: \"i asked him straight up and he answered straight up\" Housemate: \"pun?\" Georgie: \"no\" Georgie: \"maybe. it's thirteen things now\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "I'm going to go.",
@@ -8448,7 +8652,8 @@ window.CONTENT = {
                     "I'm sorry about fourteen. I'm not sorry about the other ones. But I'm sorry about that one.",
                     "Still belay me Tuesday? You don't have to answer that now either."
                   ],
-                  "after": "Georgie, at 11pm: \"sorry about fourteen\" Then: \"the other 21 stand\" Then, a minute later: \"belay tuesday?\" You reply with a thumbs up. She replies \"good\"."
+                  "after": "Georgie, at 11pm: \"sorry about fourteen\" Then: \"the other 21 stand\" Then, a minute later: \"belay tuesday?\" You reply with a thumbs up. She replies \"good\".",
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -8497,7 +8702,8 @@ window.CONTENT = {
                     },
                     "He does fall off. That's number fifteen."
                   ],
-                  "after": "Georgie, to her housemate: \"23 things\" Housemate: \"and number 23\" Georgie: \"he said yes\" Housemate: \"proud of you\" Georgie: \"of me??\" Housemate: \"yeah. go to sleep\""
+                  "after": "Georgie, to her housemate: \"23 things\" Housemate: \"and number 23\" Georgie: \"he said yes\" Housemate: \"proud of you\" Georgie: \"of me??\" Housemate: \"yeah. go to sleep\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "I'll answer at number thirty.",
@@ -8515,7 +8721,8 @@ window.CONTENT = {
                     },
                     "This is going to take five minutes. Get comfy. I'm getting you another chai."
                   ],
-                  "after": "Georgie, to her housemate: \"we got to 30\" Housemate: \"i was there\" Georgie: \"he answered\" Housemate: \"i was THERE georgie\" Georgie: \"i know. i just like saying 30\""
+                  "after": "Georgie, to her housemate: \"we got to 30\" Housemate: \"i was there\" Georgie: \"he answered\" Housemate: \"i was THERE georgie\" Georgie: \"i know. i just like saying 30\"",
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -8537,7 +8744,8 @@ window.CONTENT = {
                   "note": "Georgie stops the list at ten and doesn't read the other twelve. You still go to dinner. She lets you order for her, for the first time."
                 }
               ],
-              "after": "Georgie, to her housemate: \"he made it number ten\" Housemate: \"aw\" Georgie: \"yeah\" Georgie: \"i didnt read 11 to 22\" Housemate: \"why\" Georgie: \"dunno. he ordered me the wrong curry and i ate it anyway\""
+              "after": "Georgie, to her housemate: \"he made it number ten\" Housemate: \"aw\" Georgie: \"yeah\" Georgie: \"i didnt read 11 to 22\" Housemate: \"why\" Georgie: \"dunno. he ordered me the wrong curry and i ate it anyway\"",
+              "outcome": "told"
             }
           ]
         }
@@ -8562,6 +8770,18 @@ window.CONTENT = {
           "note": "After the session you sit on the bench and pull your climbing shoes off. Lilac toes. You forgot."
         },
         "Huh. Lilac.",
+        {
+          "text": "My housemate says hi, by the way. She's got you in her phone as 'Georgie's gay one'. Her words. I'm just passing it on.",
+          "if": "c6d=told|broke"
+        },
+        {
+          "text": "Tess asked if you were okay after the cafe. I said yes. I think yes. That's two people who've asked, so.",
+          "if": "c6d=cried"
+        },
+        {
+          "text": "I deleted the list, by the way. Mostly. I kept number nine.",
+          "if": "c6d=dodged"
+        },
         "Your feet are small. For your height. I'm a nine. You're what, a seven?",
         {
           "note": "Corey drops his chalk bag next to you. His feet are bare and huge and covered in chalk."
@@ -9018,6 +9238,18 @@ window.CONTENT = {
         {
           "if": "georgie-tickle=cracked|begged|kept",
           "note": "Georgie doesn't correct him. She says \"it's a dumb list\" and chalks up."
+        },
+        {
+          "text": "The Tuesday guy with the dog asked about you. He's still top of the new list. Ranked first. I don't make the rules.",
+          "if": "c6d=told|broke"
+        },
+        {
+          "text": "Tess still asks if you're coming. Every Tuesday. That's like nine times. She's got the hot chocolate order memorised.",
+          "if": "c6d=cried"
+        },
+        {
+          "text": "Not to be dramatic but the list's back. Number twenty-three is that you're still saying you're straight.",
+          "if": "c6d=dodged"
         }
       ],
       "replies": [
@@ -9723,7 +9955,8 @@ window.CONTENT = {
                   ],
                   "gaydar": 97,
                   "spark": 3,
-                  "after": "Kayla, in the group chat that afternoon: \"he's coming to my birthday\" Ruby: \"as what\" Kayla: \"as himself obviously\" Lucy: \"he cried into ruby's napkins and then asked where i get my scrubs embroidered\" Ruby: \"i love him\""
+                  "after": "Kayla, in the group chat that afternoon: \"he's coming to my birthday\" Ruby: \"as what\" Kayla: \"as himself obviously\" Lucy: \"he cried into ruby's napkins and then asked where i get my scrubs embroidered\" Ruby: \"i love him\"",
+                  "outcome": "cried"
                 },
                 {
                   "you": "(Through it) I'm gay. I think everyone knew except me. Sorry, Luce.",
@@ -9747,7 +9980,8 @@ window.CONTENT = {
                   ],
                   "gaydar": 100,
                   "spark": 2,
-                  "after": "Lucy, to Kayla, from bed at 10am: \"i cant sleep\" Kayla: \"same\" Lucy: \"he said it. at the table\" Kayla: \"i know i was there\" Lucy: \"i think im happy for him? im so tired kayla\" Kayla: \"go to sleep. we're doing his brows saturday\""
+                  "after": "Lucy, to Kayla, from bed at 10am: \"i cant sleep\" Kayla: \"same\" Lucy: \"he said it. at the table\" Kayla: \"i know i was there\" Lucy: \"i think im happy for him? im so tired kayla\" Kayla: \"go to sleep. we're doing his brows saturday\"",
+                  "outcome": "broke"
                 }
               ]
             },
@@ -9788,7 +10022,8 @@ window.CONTENT = {
                     "Ruby's buying your eggs with the pool money. And then you're telling me about guys, because I've had three weeks of you asking about my scrunchies."
                   ],
                   "gaydar": 100,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "told"
                 },
                 {
                   "you": "Then nobody wins. Leave it open.",
@@ -9811,7 +10046,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 93,
-                  "spark": 9
+                  "spark": 9,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -9876,7 +10112,8 @@ window.CONTENT = {
                     "Shut up. Ruby, get him a coffee with the money. A proper one, not the cart."
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "told"
                 },
                 {
                   "you": "I'm not confirming anything. I'm just saying that's my angle.",
@@ -9896,7 +10133,8 @@ window.CONTENT = {
                     "I need to sleep. Text me the photo back. I want it."
                   ],
                   "gaydar": 95,
-                  "spark": 7
+                  "spark": 7,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -9931,7 +10169,8 @@ window.CONTENT = {
                     "Just text me when you go on a date with a guy. I want a full history. Like, everything."
                   ],
                   "gaydar": 98,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "That's because Kayla's here. Kayla, I love you.",
@@ -9951,7 +10190,8 @@ window.CONTENT = {
                     "I'm going to go home and sleep for nine hours. And then I think we're, like, friends? Is that okay?"
                   ],
                   "gaydar": 96,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -10006,7 +10246,8 @@ window.CONTENT = {
                   ],
                   "gaydar": 92,
                   "spark": 12,
-                  "after": "Lucy, to the group chat at 11am: \"he said hes straight\" Kayla: \"he wore mascara to say it\" Ruby: \"pool's still open\" Lucy: \"im not doing the pool anymore\" Kayla: \"ok\" Kayla: \"im still doing the pool\""
+                  "after": "Lucy, to the group chat at 11am: \"he said hes straight\" Kayla: \"he wore mascara to say it\" Ruby: \"pool's still open\" Lucy: \"im not doing the pool anymore\" Kayla: \"ok\" Kayla: \"im still doing the pool\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Pick up your keys.) I'm going to go. You need to sleep.",
@@ -10020,7 +10261,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 90,
-                  "spark": 14
+                  "spark": 14,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -10064,7 +10306,8 @@ window.CONTENT = {
                     "Sorry. They're, like, really tired. Me too."
                   ],
                   "gaydar": 91,
-                  "spark": 10
+                  "spark": 10,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Laugh, even though you don't want to.) Okay. The hoops one is a lot.",
@@ -10085,7 +10328,8 @@ window.CONTENT = {
                     "Okay. You don't have to say anything. Just, like, maybe I'm not your girlfriend. Maybe I'm your Kayla."
                   ],
                   "gaydar": 95,
-                  "spark": 6
+                  "spark": 6,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -10111,6 +10355,18 @@ window.CONTENT = {
       "them": [
         {
           "note": "Everyone lines their shoes up at the step. You slip your loafers off. Red toes, bright light."
+        },
+        {
+          "note": "Kayla sees you at the step and does a little clap. \"He came just as him,\" she tells the table, like she's announcing a birth.",
+          "if": "c6e=told|broke"
+        },
+        {
+          "note": "Ruby shuffles over on the tatami to make room and pats the cushion. \"Breathing okay?\" she says, in Lucy's work voice, and Lucy throws a napkin at her.",
+          "if": "c6e=cried"
+        },
+        {
+          "note": "Kayla catches Ruby's eye when you sit down. Ruby mouths \"pool's still open\".",
+          "if": "c6e=dodged"
         },
         "Oh! You did them! They look so good.",
         "And your feet are so small! I never noticed. You've got little princess feet.",
@@ -10565,6 +10821,18 @@ window.CONTENT = {
         {
           "if": "lucy-tickle=cracked|begged|kept",
           "note": "Lucy goes pink and says \"Hamish\" in her work voice. He keeps grinning."
+        },
+        {
+          "text": "Kayla's picked a doctor for you, by the way. Cardio reg. Lovely hands. I'm just passing it on, clinically.",
+          "if": "c6e=told|broke"
+        },
+        {
+          "text": "And you're okay? Like actually? Last time I saw you properly you were crying into the cafe napkins. I think about it. Bless.",
+          "if": "c6e=cried"
+        },
+        {
+          "text": "Kayla says the pool's still open, by the way. I told her that's not appropriate. She put in another ten.",
+          "if": "c6e=dodged"
         }
       ],
       "replies": [
@@ -11563,7 +11831,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 100,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "broke"
                 },
                 {
                   "you": "Reply 'he's taken'. By Jade.",
@@ -11580,7 +11849,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 93,
-                  "spark": 9
+                  "spark": 9,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -11621,7 +11891,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 90,
-                  "spark": 11
+                  "spark": 11,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Yes, James St. Tell him to book in, babe. I've seen his heels.",
@@ -11638,7 +11909,8 @@ window.CONTENT = {
                     "put them back. theyre the best ones. thats just facts"
                   ],
                   "gaydar": 95,
-                  "spark": 6
+                  "spark": 6,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -11711,7 +11983,8 @@ window.CONTENT = {
                     "mel. no"
                   ],
                   "gaydar": 99,
-                  "spark": 2
+                  "spark": 2,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Open your mouth to answer. Your eyes fill up instead.)",
@@ -11746,7 +12019,8 @@ window.CONTENT = {
                     "Mel copied the number off her arm before it smudged. She's already planning their first date. She's never planned one of mine.",
                     "His shoulders are really small. I don't know why that's the bit I remember."
                   ],
-                  "after": "Mel, to the group chat that night: \"[photo of a phone number in coral on her arm]\" \"he cried and we love him\" Jade: \"dont post that one\" Mel: \"i already did. biscuits in it\""
+                  "after": "Mel, to the group chat that night: \"[photo of a phone number in coral on her arm]\" \"he cried and we love him\" Jade: \"dont post that one\" Mel: \"i already did. biscuits in it\"",
+                  "outcome": "cried"
                 }
               ]
             },
@@ -11789,7 +12063,8 @@ window.CONTENT = {
                     "its fine. its kind of a relief? like i can stop checking if youre looking at me"
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "told"
                 },
                 {
                   "you": "Tell him I'm on a date. With Jade.",
@@ -11809,7 +12084,8 @@ window.CONTENT = {
                     "honestly same"
                   ],
                   "gaydar": 94,
-                  "spark": 7
+                  "spark": 7,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -11862,7 +12138,8 @@ window.CONTENT = {
                     "its fine. its kind of cute. its just not a boyfriend thing"
                   ],
                   "gaydar": 96,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "I don't know what it's called. I just picked one.",
@@ -11878,7 +12155,8 @@ window.CONTENT = {
                     "anyway"
                   ],
                   "gaydar": 92,
-                  "spark": 9
+                  "spark": 9,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -11903,7 +12181,8 @@ window.CONTENT = {
                 }
               ],
               "gaydar": 90,
-              "spark": 12
+              "spark": 12,
+              "outcome": "dodged"
             }
           ]
         }
@@ -11944,7 +12223,19 @@ window.CONTENT = {
         "Oh my god, hi! {name}! Nicole! This is Riley. Riley, this is {name}, we went on a few dates. I told you, remember?",
         "\"The sandals guy!\" Riley says. \"Yeah, Jade told me. Good on you. I couldn't pull that off. Look at my feet.\"",
         "He fixed Mel's hot water on a Sunday in ten minutes and wouldn't even take a beer for it.",
-        "He thinks moisturiser is for when you get sunburnt. I love him so much."
+        "He thinks moisturiser is for when you get sunburnt. I love him so much.",
+        {
+          "text": "Mel's still got the feet post up btw. Your comments are like, all guys now. Vibes.",
+          "if": "c6f=told|broke"
+        },
+        {
+          "text": "Did you ever text the staffy guy? His number was on Mel's arm for like three days. It wouldn't come off. Anyway.",
+          "if": "c6f=cried"
+        },
+        {
+          "text": "Sean still comments on the feet post. Like every week. 'end ones are a man'. Anyway.",
+          "if": "c6f=dodged"
+        }
       ],
       "replies": [
         {
@@ -12896,7 +13187,8 @@ window.CONTENT = {
                   ],
                   "gaydar": 100,
                   "spark": 4,
-                  "after": "Olivia, to her sister, from the back of the Uber they're sharing: \"he said it\" Sister: \"im sitting next to you\" Olivia: \"i know im just saying it\" Sister: \"the waiter heard\" Olivia: \"he did not\" Sister: \"he gave him extra tiramisu liv\""
+                  "after": "Olivia, to her sister, from the back of the Uber they're sharing: \"he said it\" Sister: \"im sitting next to you\" Olivia: \"i know im just saying it\" Sister: \"the waiter heard\" Olivia: \"he did not\" Sister: \"he gave him extra tiramisu liv\"",
+                  "outcome": "told"
                 },
                 {
                   "you": "I'm just good at skincare. I'm still straight, Liv.",
@@ -12913,7 +13205,8 @@ window.CONTENT = {
                     "She's going to say the guy thing to me in the car, by the way. She already said it in the bathroom. 'He should be on dates with guys, Liv.' So. Just so you know what's coming."
                   ],
                   "gaydar": 94,
-                  "spark": 9
+                  "spark": 9,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -12943,7 +13236,8 @@ window.CONTENT = {
                     "This is the best carbonara in Brisbane and I'm going to finish it. And you're going to tell me about his arms."
                   ],
                   "gaydar": 97,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Tell her to mind her own business.",
@@ -12956,7 +13250,8 @@ window.CONTENT = {
                     "She's going to say you should be dating guys. She'll say it really nicely. She says everything nicely."
                   ],
                   "gaydar": 92,
-                  "spark": 10
+                  "spark": 10,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -13018,7 +13313,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "told"
                 },
                 {
                   "you": "I'm not gay. I'm just very moisturised.",
@@ -13034,7 +13330,8 @@ window.CONTENT = {
                     "I just want someone who doesn't know what moisturised means. You should be dating guys. She said it first but I thought it at the door."
                   ],
                   "gaydar": 94,
-                  "spark": 7
+                  "spark": 7,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -13088,7 +13385,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 98,
-                  "spark": 2
+                  "spark": 2,
+                  "outcome": "cried"
                 },
                 {
                   "you": "(Crying) I am. I'm gay. I'm sorry, Liv.",
@@ -13106,7 +13404,8 @@ window.CONTENT = {
                   ],
                   "gaydar": 100,
                   "spark": 1,
-                  "after": "Olivia, on the phone to her sister twenty minutes later, after they both left the same restaurant: \"he cried\" \"i know\" \"you made him cry\" \"i said lovely first\" \"you did say lovely first\" \"is he coming sunday\" \"obviously hes coming sunday\""
+                  "after": "Olivia, on the phone to her sister twenty minutes later, after they both left the same restaurant: \"he cried\" \"i know\" \"you made him cry\" \"i said lovely first\" \"you did say lovely first\" \"is he coming sunday\" \"obviously hes coming sunday\"",
+                  "outcome": "broke"
                 }
               ]
             }
@@ -13149,7 +13448,8 @@ window.CONTENT = {
                     "Okay. That's a yes. That's a 'he's gay' in my sister's language. You should be on a date with a guy who'd turn his chair round for you."
                   ],
                   "gaydar": 96,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "That's kind of messed up, Liv.",
@@ -13161,7 +13461,8 @@ window.CONTENT = {
                     "But there's three of them at that table and they all think you should be dating guys. I'm not the only one. I'm just the one who has to sit here."
                   ],
                   "gaydar": 91,
-                  "spark": 12
+                  "spark": 12,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -13198,7 +13499,8 @@ window.CONTENT = {
                     "It's fine. Stay there. You should be on dates with guys anyway. You'd be so good at it."
                   ],
                   "gaydar": 96,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "I think I'm going to head off. Sorry, Liv.",
@@ -13214,7 +13516,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 90,
-                  "spark": 12
+                  "spark": 12,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -13258,7 +13561,19 @@ window.CONTENT = {
         "This is James. James, this is {name}. The one I told you about. Carbonara night.",
         "\"The carbonara guy!\" James says, and shakes your hand. \"Liv says you've got the best taste in Brisbane. What's wrong with this quarter-zip? She won't tell me.\"",
         "He's in finance. He does F45 at five in the morning.",
-        "He put my bed frame together in twenty minutes without the instructions. You'd have asked if it came in white."
+        "He put my bed frame together in twenty minutes without the instructions. You'd have asked if it came in white.",
+        {
+          "text": "My sister says hi. She literally asked me to ask if you're seeing anyone. Like, a guy. She has names. I'm texting her right now, sorry.",
+          "if": "c6g=told|broke"
+        },
+        {
+          "text": "My sister still feels bad about the restaurant, by the way. She says she said it too nicely and that's why you cried. I'm literally texting her you're fine.",
+          "if": "c6g=cried"
+        },
+        {
+          "text": "My sister says hi. And that she's 'still waiting'. I don't know what that means. I do know what it means.",
+          "if": "c6g=dodged"
+        }
       ],
       "replies": [
         {
@@ -14383,7 +14698,8 @@ window.CONTENT = {
                     "You're still coming to trivia though. Brooke said you have to."
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "told"
                 },
                 {
                   "you": "Can I keep the platforms?",
@@ -14403,7 +14719,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 100,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "told"
                 }
               ]
             },
@@ -14451,7 +14768,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 98,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Zoe. Obviously.",
@@ -14470,7 +14788,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 94,
-                  "spark": 8
+                  "spark": 8,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -14529,7 +14848,8 @@ window.CONTENT = {
                   ],
                   "gaydar": 92,
                   "spark": 10,
-                  "after": "Zoe, to Brooke, at 11pm, from Brooke's couch, with Brooke next to her: \"he said no\" Brooke: \"i know babe\" Zoe: \"im going to end it\" Brooke: \"i know\" Zoe: \"can u do it\" Brooke: \"no\""
+                  "after": "Zoe, to Brooke, at 11pm, from Brooke's couch, with Brooke next to her: \"he said no\" Brooke: \"i know babe\" Zoe: \"im going to end it\" Brooke: \"i know\" Zoe: \"can u do it\" Brooke: \"no\"",
+                  "outcome": "dodged"
                 },
                 {
                   "you": "...Yeah. I think I am.",
@@ -14546,7 +14866,8 @@ window.CONTENT = {
                     "I think we're better as friends. Brooke says that about everyone. It's true this time."
                   ],
                   "gaydar": 100,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "broke"
                 }
               ]
             },
@@ -14619,7 +14940,8 @@ window.CONTENT = {
                     "He cried on the step with his feet in the pool. Brooke kept saying not my good towel, and then she went and got him her good towel.",
                     "I wasn't sad. I was a bit. Mostly I wanted to get him a sausage. Jayden beat me to it."
                   ],
-                  "after": "Brooke posts a photo that night: you in a flamingo towel on the pool step, Zoe's head on your shoulder, Jayden holding up a plate of sausages behind you. Caption: \"the team 💕\". Tash comments: \"our gay best friend has the best toes in ashgrove\"."
+                  "after": "Brooke posts a photo that night: you in a flamingo towel on the pool step, Zoe's head on your shoulder, Jayden holding up a plate of sausages behind you. Caption: \"the team 💕\". Tash comments: \"our gay best friend has the best toes in ashgrove\".",
+                  "outcome": "cried"
                 },
                 {
                   "you": "Thanks, Jayden. (Take the tongs. Stay at the barbecue.)",
@@ -14651,7 +14973,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 93,
-                  "spark": 7
+                  "spark": 7,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -14711,7 +15034,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 91,
-                  "spark": 11
+                  "spark": 11,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(You can't think of one.)",
@@ -14739,7 +15063,8 @@ window.CONTENT = {
                     "Brooke said that's what you are. She said it at trivia. I'm just saying she said it."
                   ],
                   "gaydar": 96,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -14775,7 +15100,8 @@ window.CONTENT = {
                     "We're friends, yeah? Brooke says we have to be. I want to anyway."
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "broke"
                 },
                 {
                   "you": "It's not you. Can we stay friends?",
@@ -14791,7 +15117,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 96,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -14842,7 +15169,8 @@ window.CONTENT = {
                     "Brooke said I'd cry. I'm not crying, I'm wet."
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "broke"
                 },
                 {
                   "you": "(Duck under the water.)",
@@ -14860,7 +15188,8 @@ window.CONTENT = {
                     "Brooke says that's a yes. I think it's a yes too."
                   ],
                   "gaydar": 97,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -14877,7 +15206,8 @@ window.CONTENT = {
                 "I am, though. Staying at Brooke's."
               ],
               "gaydar": 93,
-              "spark": 7
+              "spark": 7,
+              "outcome": "dodged"
             }
           ]
         }
@@ -14936,6 +15266,18 @@ window.CONTENT = {
         {
           "if": "zoe-ambush=cracked|begged|kept",
           "note": "Zoe goes red and says \"Kyle\". Kyle says \"what? it was funny\" and goes back to the sausages."
+        },
+        {
+          "text": "Brooke says you're coming to everything now. She said it's not up for discussion. And I was like okay, and she was like good.",
+          "if": "c6h=told|broke"
+        },
+        {
+          "text": "Brooke still has the flamingo towel. She's like, it's his now, and I was like Brooke that's gross, and she's like no, it's sweet.",
+          "if": "c6h=cried"
+        },
+        {
+          "text": "Brooke says she's still got one more trivia question for you. I said leave it. She said she's 'just holding it'.",
+          "if": "c6h=dodged"
         }
       ],
       "replies": [
@@ -16122,7 +16464,8 @@ window.CONTENT = {
                     "Kirra hugged him first. Kirra. She was the one who pressed play. She cried a bit too, she won't admit it.",
                     "I did his fringe and he let me. He always lets me do his fringe. I think I knew from the fringe, like, months ago."
                   ],
-                  "after": "Kirra, to Sophie, that night: \"is he ok\" Sophie: \"hes at mine. we're doing face masks\" Kirra: \"is that weird\" Sophie: \"no. its actually so nice\" Kirra: \"im deleting the video\" Kirra: \"im keeping the bit where he says pretty\""
+                  "after": "Kirra, to Sophie, that night: \"is he ok\" Sophie: \"hes at mine. we're doing face masks\" Kirra: \"is that weird\" Sophie: \"no. its actually so nice\" Kirra: \"im deleting the video\" Kirra: \"im keeping the bit where he says pretty\"",
+                  "outcome": "cried"
                 },
                 {
                   "you": "(Laugh, louder than the TV.) Oh my god. Who let me talk?",
@@ -16139,7 +16482,8 @@ window.CONTENT = {
                     "I'm screaming. I'm actually screaming inside."
                   ],
                   "gaydar": 97,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -16166,7 +16510,8 @@ window.CONTENT = {
                     "So. Yeah. We're done. Obviously."
                   ],
                   "gaydar": 95,
-                  "spark": 6
+                  "spark": 6,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "It's me. In a skirt. With a guy. Soph, I'm gay.",
@@ -16187,7 +16532,8 @@ window.CONTENT = {
                     "You should've told me. I'd have come. I'm a really good wing woman."
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "told"
                 }
               ]
             }
@@ -16241,7 +16587,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 96,
-                  "spark": 5
+                  "spark": 5,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "Soph. You know, right? I'm gay.",
@@ -16258,7 +16605,8 @@ window.CONTENT = {
                     "We're friends. Okay? We're friends. And I'm doing your toes again, that pink's chipped."
                   ],
                   "gaydar": 100,
-                  "spark": 3
+                  "spark": 3,
+                  "outcome": "told"
                 }
               ]
             },
@@ -16290,7 +16638,8 @@ window.CONTENT = {
                     "He'd better be nice to you. He'd better have a job."
                   ],
                   "gaydar": 99,
-                  "spark": 2
+                  "spark": 2,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "I'm joking. Obviously I'm joking.",
@@ -16309,7 +16658,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 95,
-                  "spark": 6
+                  "spark": 6,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -16369,7 +16719,8 @@ window.CONTENT = {
                     "Okay. I'm going to go. Kirra, can you drive me? I can't be in here."
                   ],
                   "gaydar": 94,
-                  "spark": 7
+                  "spark": 7,
+                  "outcome": "dodged"
                 },
                 {
                   "you": "(Stop talking. Eat your eggs.)",
@@ -16383,7 +16734,8 @@ window.CONTENT = {
                     }
                   ],
                   "gaydar": 92,
-                  "spark": 9
+                  "spark": 9,
+                  "outcome": "dodged"
                 }
               ]
             },
@@ -16407,7 +16759,8 @@ window.CONTENT = {
                     "You've never once gone up on your toes for me. And I'm not even jealous. It's like watching Kirra have a good night."
                   ],
                   "gaydar": 95,
-                  "spark": 6
+                  "spark": 6,
+                  "outcome": "cried"
                 },
                 {
                   "you": "...Myself.",
@@ -16428,7 +16781,8 @@ window.CONTENT = {
                     "Kirra."
                   ],
                   "gaydar": 97,
-                  "spark": 4
+                  "spark": 4,
+                  "outcome": "dodged"
                 }
               ]
             }
@@ -16488,6 +16842,18 @@ window.CONTENT = {
         {
           "if": "sophie-ambush=cracked|begged|kept",
           "note": "Sophie puts her hand over her face. Kirra, somewhere behind you, is already filming."
+        },
+        {
+          "text": "Kirra's been trying to find the guy from the video, by the way. For you. She's totes obsessed. I'm screaming.",
+          "if": "c6i=told"
+        },
+        {
+          "text": "And I'm still sorry about brunch. The sound. Kirra says she broke you and she's never casting anything again. She's cast like four things since.",
+          "if": "c6i=cried"
+        },
+        {
+          "text": "Kirra still says it was a dare. In the air quotes voice. Every time, babe.",
+          "if": "c6i=dodged"
         }
       ],
       "replies": [
