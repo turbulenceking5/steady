@@ -5738,12 +5738,12 @@ window.CONTENT = {
       "irl": true,
       "title": "The surf club",
       "contact": "Ella",
-      "gaydarSays": "Hayden said he was just doing his sunscreen. Half the surf club came over to watch.",
+      "gaydarSays": "Hayden did his sunscreen and he went red to his ears. I watched the whole thing. So did Meg.",
       "intro": "Two weeks after Kings Beach. Hayden's surf club does a sausage sizzle after patrol, Ella's friends wanted to go, and Ella brought you. You wore boardies and a cropped linen shirt, and this time you took your sandals off on the sand without being asked. Your toes are coral again. You did them again on purpose.",
       "thinks": [
-        "He took his sandals off on the sand before anyone asked. coral again. on purpose. I knew it was on purpose and I brought him anyway, so",
-        "Hayden said boyfriend and I went he's my friend in my teacher voice, like I was correcting a spelling test. I heard myself. I literally can't with me",
-        "I should've stopped the sunscreen thing straight away and I didn't. a little bit of me wanted to see what would happen"
+        "I brought him to the surf club knowing Hayden would be there. I'm not proud of that.",
+        "I used to think about kissing him. I tried to think about it on the towel today and my brain just wouldn't go there. It kept showing me his face while Hayden had his foot.",
+        "He's lovely. I'd tell anyone he's lovely. I just don't want a boyfriend who looks at Hayden the way I look at Hayden."
       ],
       "them": [
         {
@@ -5758,322 +5758,230 @@ window.CONTENT = {
         "\"Seriously, give me your foot. Club policy. Nobody burns on my patch.\"",
         "Hayden. He's an adult.",
         "He's got baby feet, but he's an adult.",
-        "\"An adult with very pale soles.\" He's already got your heel in his hand. \"Hold still.\"",
         {
-          "note": "He squirts sunscreen on your foot and rubs it in, slowly, all over the sole. Then the slow stops. His fingers go quick and light, right under the arch."
+          "note": "He's already got your heel in his hand. His hand is huge, warm, rough from the boards. Your whole foot fits in it with room left over."
         },
-        "\"Oh, hang on,\" he says. \"Hang on. Ells. Is your boyfriend ticklish?\"",
-        "He's not my... we were. Sort of. He's my friend.",
-        "\"Is he ticklish though.\""
+        "\"She's not wrong,\" he says, turning your foot over. \"These are tiny, buddy. Hold still.\"",
+        {
+          "note": "He squirts the sunscreen into his palm and works it in with both thumbs, slowly, from your heel up into the arch. Something happens to your breathing."
+        },
+        {
+          "note": "Ella's watching your face, not your feet."
+        }
       ],
       "replies": [
         {
-          "you": "(Freeze. Stare at the ocean. Don't you dare laugh.)",
+          "you": "(Stare at the ocean. Act normal.)",
           "them": [
             {
-              "note": "You stare at the waves. You count them. One, two. His fingers find the soft bit by your toes and your whole leg goes stiff."
+              "note": "You stare at the waves. His thumbs go round in slow circles in the middle of your arch. Your toes curl on their own."
             },
-            "\"Ooh, the leg went,\" Hayden says. \"The leg's a giveaway.\"",
-            "Leave him alone. Oh my god.",
+            "\"Relax,\" Hayden says. \"You're all tense.\"",
+            "He's not tense.",
+            "Look at his face, Hayden.",
             {
-              "note": "Meg's sitting up now. Two of the patrol guys wander over from the barbecue with sausages in bread. One says \"what's happening\" and Hayden says \"science\"."
-            },
-            {
-              "note": "The sunscreen makes it worse. Everything's slippery. His thumbs slide right up between your toes."
+              "note": "Hayden looks. You look at the ocean harder."
             }
           ],
           "replies": [
             {
-              "you": "(Don't break. Don't break. Don't break.)",
+              "you": "(Keep it together. Don't make a sound.)",
               "them": [
                 {
-                  "note": "You don't break. You stare at the ocean. Your face goes red, but you don't make a sound."
+                  "note": "You don't make a sound. He does the top of your foot, the heel, each toe, taking his time like he's waxing a board. Your face is burning. You count waves."
                 },
                 {
-                  "note": "Hayden goes for ages. Heel, arch, toes, the side of your foot. Nothing comes out of you."
+                  "note": "He finishes and pats your foot twice, like a dog. \"Done. You won't burn now.\""
                 },
-                "\"Okay. Okay, he's good,\" Hayden says, and lets go, wiping his hands on his boardies. \"He's actually good.\"",
-                "Told you.",
-                "\"You didn't tell me anything. You said 'leave him alone'.\""
-              ],
-              "replies": [
+                "You've gone so red.",
+                "Like, I get it now. I really, really get it.",
                 {
-                  "you": "(Take the sunscreen off him.) I'll do the other one myself. Thanks, Hayden.",
-                  "outcome": "held",
-                  "spark": 22,
-                  "them": [
-                    {
-                      "note": "You take the bottle out of his hand and do your other foot yourself, properly, between the toes, like it's nothing."
-                    },
-                    "\"Fair,\" Hayden says. He looks a bit put out. He goes back to the barbecue.",
-                    {
-                      "note": "Ella watches him go. Then she watches you put the cap back on the sunscreen."
-                    },
-                    "Okay. That was kind of hot? The not reacting. I don't know. Don't let it go to your head.",
-                    {
-                      "note": "She leans back against you on the towel. Meg raises her eyebrows at her. Ella ignores her."
-                    }
-                  ],
-                  "after": "Ella, to Meg, in the car: \"he didn't even laugh\" Meg: \"hayden was so annoyed\" Ella: \"right??\" Meg: \"you liked that\" Ella: \"shut up\"",
-                  "thinks": [
-                    "Hayden went for AGES and he didn't make one sound. just stared at the ocean, all red, and then took the bottle off him and did the other foot himself, between the toes and everything. what a moment",
-                    "Hayden's face though. I've never seen him lose at anything on that beach, ever",
-                    "I leant back on him the rest of the afternoon. Meg kept doing her eyebrows at me. I'm not discussing it with Meg"
-                  ]
-                },
-                {
-                  "you": "(Smile at him.) That all you've got?",
-                  "outcome": "held",
-                  "spark": 15,
-                  "them": [
-                    "\"Oh, he wants round two,\" Hayden says, and grabs the other foot.",
-                    {
-                      "note": "He doesn't bother with sunscreen this time. He goes straight under the toes with both hands. A sound comes out of you. A small one. It's definitely a giggle."
-                    },
-                    "\"That was a giggle!\"",
-                    "That was not... okay, that was a little bit of a giggle.",
-                    {
-                      "note": "He lets go, very pleased with himself. The patrol guys clap. Ella's laughing, and when Hayden says \"swim, Ells? Flags are up,\" she gets up and goes with him."
-                    },
-                    {
-                      "note": "You sit on the towel and watch them in the water. Meg hands you a sausage."
-                    }
-                  ],
-                  "after": "Ella, to Meg, later: \"he lasted SO long\" Meg: \"and then he giggled\" Ella: \"one giggle\" Meg: \"you went swimming with hayden for forty minutes\" Ella: \"it was hot. the water was nice\" Meg: \"sure\"",
-                  "thinks": [
-                    "He was winning. he HAD it. and then he looks at Hayden and goes that all you've got, and I'm going no no no in my head, and then the giggle",
-                    "It was one giggle. one. I will die on that",
-                    "Went in the water with Hayden after. it was hot. it was. Meg can think what she wants"
-                  ]
+                  "note": "Meg says nothing. She doesn't need to. She's got her eyebrows."
                 }
+              ],
+              "outcome": "held",
+              "spark": 18,
+              "gaydar": 95,
+              "thinks": [
+                "He didn't make a sound and it didn't matter. His whole face did it for him. I've never seen anyone go that colour from sunscreen.",
+                "I kept waiting to feel jealous, like that's my date getting a foot rub from the hottest guy on the beach. I wasn't jealous of him. I was jealous of him. Does that make sense. It doesn't.",
+                "Anyway, that's it. I'm not dating a guy who blushes harder at Hayden than I do."
               ]
             },
             {
-              "you": "(You can't. A squeal comes out.)",
+              "you": "(A sound slips out. A small one.)",
               "them": [
                 {
-                  "note": "It comes out as a squeal, high and loud, and every head on that bit of beach turns round. Then you're giggling and you can't stop. You try to pull your foot back. It's too slippery. He just holds on."
+                  "note": "It comes out of you before you can stop it. A soft little sigh, right as his thumb presses into the arch."
                 },
-                "\"THERE we go!\" Hayden says. \"Got one!\"",
-                "oh no. oh no he squealed",
                 {
-                  "note": "Meg's got her phone out. The patrol guys are cheering like someone's been pulled out of a rip."
+                  "note": "Hayden's hands stop. Then he grins."
                 },
-                "\"Ells, did you hear that?\""
+                "\"Good, yeah? Club massage. Free with every sizzle.\"",
+                {
+                  "note": "One of the patrol guys laughs. Meg puts her hand over her mouth."
+                },
+                "oh my god. {name}."
               ],
               "replies": [
                 {
-                  "you": "(Giggling) Okay! Okay, I'm ticklish! You win!",
-                  "outcome": "cracked",
-                  "spark": 10,
+                  "you": "(Mortified) Hayden. Okay. You can stop now.",
                   "them": [
                     {
-                      "note": "He lets go and holds up both sunscreen hands."
+                      "note": "He stops straight away and lets go. \"No worries, buddy.\" He wipes his hands on his boardies and hands you the bottle. \"Other foot's all yours.\""
                     },
-                    "\"Knew it. Lifesaver's instinct.\"",
                     {
-                      "note": "You sit up, red to your ears, still giggling a bit. You try to make a joke. It comes out as \"well, you've got very strong hands\", which makes the patrol guys howl."
+                      "note": "You do the other foot yourself, fast and badly, without looking up. Nobody says anything. That's worse."
                     },
-                    "Okay, I'm going to get a drink. Hayden, do you want something?",
-                    "\"I'll come,\" Hayden says, and goes with her. They don't come back for a while."
+                    "It's fine. It's fine! He's very good at sunscreen. Apparently.",
+                    {
+                      "note": "She's smiling at you the way she smiles at the kids on yard duty."
+                    }
                   ],
-                  "after": "Meg, to Ella: \"[video] the squeal\" Ella: \"DELETE IT\" Meg: \"hayden asked me to send it to him\" Ella: \"you didn't\" Meg: \"i already did sorry\""
-                },
-                {
-                  "you": "(Red, giggling) Hayden! Stop!",
                   "outcome": "cracked",
                   "spark": 8,
+                  "gaydar": 96,
+                  "thinks": [
+                    "He SIGHED. On my towel. With Meg right there. I literally can't.",
+                    "And I wasn't even upset. That's the bit I keep thinking about. I just went, oh. Okay. So that's what he looks like when he likes someone. It's not what he looks like with me.",
+                    "I want to be his friend so badly it's weird. I just can't kiss him now. I'd be thinking about the sigh."
+                  ]
+                },
+                {
+                  "you": "(Say nothing. Let him keep going.)",
                   "them": [
                     {
-                      "note": "He stops as soon as you say it and lets go."
+                      "note": "You say nothing. He takes it as a yes and does the other foot too, slower, like he's proving a point. You can't look at anyone. You stare at your knees."
                     },
-                    "\"Stopping. Sorry, buddy. Didn't know you'd go off like that.\"",
                     {
-                      "note": "You pull your feet under you and brush the sand off them. You're so red you're probably sunburnt as well now."
+                      "note": "Ella doesn't laugh. She just watches you, very quietly, like she's watching something on a documentary."
                     },
-                    "Are you okay? You went really high.",
                     {
-                      "note": "She's trying not to laugh. She doesn't manage it. Hayden catches her eye and she laughs harder, and then they're both laughing, and you're sitting there on the towel."
+                      "note": "When he's done he stands up and holds his hand out to her. \"Swim, Ells?\""
                     },
-                    "\"Sorry,\" Hayden says to her, grinning. \"I'll stop picking on him.\""
+                    {
+                      "note": "She looks at you. You're still sitting there with your shiny feet and your red face. She takes his hand."
+                    }
                   ],
-                  "after": "Ella, to her sister: \"hayden tickled him and he squealed in front of the whole surf club\" Sister: \"STOP\" Ella: \"and i laughed. with hayden. i felt bad\" Sister: \"do you feel bad\" Ella: \"i don't know\""
+                  "outcome": "kept",
+                  "spark": 2,
+                  "gaydar": 98,
+                  "thinks": [
+                    "He just let him. Both feet. Eyes on his knees, red down to his neck, and Hayden taking his time like he knew exactly what he was doing.",
+                    "I stopped laughing really early. I wasn't hurt. It was more like watching someone open a present that wasn't for me.",
+                    "Hayden held his hand out and I took it. He's the one I'd want doing my feet. Apparently we have that in common."
+                  ]
                 }
-              ],
-              "thinks": [
-                "The SQUEAL. the whole beach turned round. the patrol guys were cheering, I'm dying, I wanted to dig a hole in the sand and move into it",
-                "Meg filmed it. obviously",
-                "I laughed. I know. I was trying so hard not to and Hayden kept looking at me which made it so much worse. I'm a terrible person. I've got yard duty Monday and I'm going to be thinking about this the entire time"
               ]
             }
           ]
         },
         {
-          "you": "(Give in. You're laughing before he's even started.)",
+          "you": "(Try to pull your foot back.) I can do it myself.",
           "them": [
             {
-              "note": "You're gone the second he moves. High, helpless giggles. You fall back on the towel and kick sand everywhere with your free foot."
+              "note": "He doesn't let go. He just holds your ankle a bit firmer, easy, like you're a board in the wind."
             },
-            "\"Oh, he's SO ticklish!\" Hayden says. \"That was nothing! I barely touched him!\"",
+            "\"Two minutes. Nearly done. You can tell me to stop, buddy, I'm not going to cry about it.\"",
             {
-              "note": "He gets a proper grip on your ankle, rests your foot on his knee, and goes at it with both hands. The sunscreen makes every touch slide. You're shrieking."
-            },
-            "\"Coral toes and he's ticklish. Ells, you've found a real one.\"",
-            "I didn't know he was ticklish, I swear.",
-            {
-              "note": "The patrol guys have come over. One of them says \"he's like my little sister\". Somebody's dog is barking at you."
+              "note": "His thumbs slide in between your toes. You open your mouth to say stop and nothing comes out."
             }
           ],
           "replies": [
             {
-              "you": "(Giggling) Hayden! Please! Please stop!",
+              "you": "(Pull harder.) Seriously, Hayden. I've got it.",
               "them": [
                 {
-                  "note": "He stops straight away and lets go. You curl up on the towel, panting, sand stuck to your face."
-                },
-                "\"He said please!\" Hayden says. \"Did everyone hear that? He said please.\"",
-                "We heard. Everyone heard.",
-                {
-                  "note": "Hayden holds your foot up off the sand again, gently, not tickling. He looks at you with his eyebrows up."
-                },
-                "\"One more go? For the club? Ten seconds and I'll get you a free sausage.\""
-              ],
-              "replies": [
-                {
-                  "you": "(Yank your foot back.) No! No way. I'm keeping my feet.",
-                  "outcome": "begged",
-                  "spark": 6,
-                  "them": [
-                    "\"Fair enough,\" Hayden says. \"You keep them, princess.\"",
-                    {
-                      "note": "You bury both feet in the sand up to the ankles. You leave them there for the rest of the afternoon."
-                    },
-                    {
-                      "note": "Ella goes for a swim. Hayden goes too. He says he's on patrol."
-                    },
-                    {
-                      "note": "Meg sits with you on the towel. She keeps looking at your buried feet and laughing quietly."
-                    }
-                  ],
-                  "after": "Ella, to Meg: \"he buried his feet\" Meg: \"he buried them for three hours\" Ella: \"hayden asked me to dinner\" Meg: \"WHAT\" Ella: \"in the water. while {name} was on the towel with his feet in the sand\" Meg: \"what did you say\" Ella: \"i said maybe\""
+                  "note": "He lets go the moment you pull. \"All yours.\" He hands you the bottle and goes back to the barbecue, whistling."
                 },
                 {
-                  "you": "(Still giggling) ...Ten seconds. And I want the sausage.",
-                  "outcome": "kept",
-                  "spark": 3,
-                  "gaydar": 97,
-                  "them": [
-                    {
-                      "note": "The patrol guys cheer. Hayden counts down out loud from ten, slowly. You're squealing from 'ten'."
-                    },
-                    {
-                      "note": "At 'one' he keeps going. You laugh so hard you roll off the towel into the sand. He stops when he decides he's done."
-                    },
-                    "\"Deal's a deal,\" Hayden says, and goes to get you a sausage.",
-                    {
-                      "note": "He brings back two. One for you, one for Ella. He sits down next to Ella to eat his, on the other side from you."
-                    },
-                    "You actually asked for more. You actually asked him.",
-                    {
-                      "note": "You eat your sausage with sand on your face. Ella doesn't wipe it off for you."
-                    }
-                  ],
-                  "after": "Meg, to the group chat: \"[video] he did it for a SAUSAGE\" Ella: \"please\" Meg: \"hayden's added it to the club chat\" Ella: \"why is hayden in the group chat\" Meg: \"you added him\" Ella: \"...i did\"",
-                  "thinks": [
-                    "He asked for MORE. for a sausage. {name} let Hayden tickle him for a free sausage while the patrol guys counted down. I literally can't",
-                    "Hayden brought two back and sat on my side and I didn't move",
-                    "He had sand on his face the whole time he ate it. I didn't wipe it off. I thought about it"
-                  ]
+                  "note": "You do your feet yourself. Your hands are shaking a bit. You get sunscreen on the towel."
+                },
+                "You're shaking.",
+                "{name}. Your hands are actually shaking. From that.",
+                {
+                  "note": "You tell her it's the sun. She doesn't argue. She just looks over at the barbecue, then back at you, like she's doing maths."
                 }
               ],
+              "outcome": "begged",
+              "spark": 14,
+              "gaydar": 95,
               "thinks": [
-                "He was gone the second Hayden touched him. kicking sand everywhere, saying please in front of the whole club, and some patrol guy said he's like my little sister and they all laughed",
-                "Then he buried his feet in the sand up to the ankles and just left them there. for the whole afternoon",
-                "Hayden asked me to dinner out past the flags and I said maybe and I could see the towel from where we were"
+                "He told him to stop, fair enough. And then his hands shook doing his own sunscreen. Over Hayden. Hayden, who once ate a sausage in one bite to win five dollars.",
+                "I keep being nice in my head about it and then a little mean voice goes, you brought your date to watch a lifesaver rub his feet and he enjoyed it more than you've ever enjoyed anything. And the mean voice is right.",
+                "I'm not mad. I'm just done pretending this is going anywhere."
               ]
             },
             {
-              "you": "(Stop fighting. Just lie there and laugh.)",
+              "you": "(Don't pull again. Let him.)",
               "them": [
                 {
-                  "note": "You stop pulling away. You lie flat on the towel with your arms over your face, laughing so hard nothing else comes out."
+                  "note": "You don't pull again. His thumbs work up between each toe, one at a time, slow. Your ears go hot. You put a hand over your mouth without deciding to."
                 },
-                "\"He's given up!\" one of the patrol guys says. \"He's just letting him!\"",
-                "\"He loves it,\" Hayden says. \"Look at those toes go.\"",
+                "\"You right?\" Hayden says.",
                 {
-                  "note": "It goes on and on. He tickles the arch, then the heel, then in between each coral toe, one at a time, like he's counting them. You're crying from laughing. There's sand in your teeth."
+                  "note": "You nod. You don't trust your voice."
                 },
+                "oh my god,",
+                "You like it.",
                 {
-                  "note": "Ella's stopped laughing. She's sitting with her knees up, watching."
-                },
-                "{name}? You're allowed to tell him to stop. You know that, right?"
+                  "note": "Ella says it quietly. Not mean. Just like she's finally read the answer at the back of the book."
+                }
               ],
               "replies": [
                 {
-                  "you": "(Gasping) Stop. Stop! Okay, stop!",
-                  "outcome": "kept",
-                  "spark": 2,
-                  "gaydar": 97,
+                  "you": "(Red) No. It's just... the sunscreen's cold.",
                   "them": [
+                    "It's thirty-one degrees.",
                     {
-                      "note": "He stops the moment you say it and lets go."
-                    },
-                    "\"Nearly three minutes,\" Meg says, looking at her phone. \"I timed it. Sorry.\"",
-                    {
-                      "note": "You lie there, wrecked, coral toes still curling on their own. Hayden slaps your shin. \"Not bad, little guy.\""
+                      "note": "Hayden laughs and finishes the second foot, taking his time, and pats your ankle when he's done. \"There you go, buddy. Protected.\""
                     },
                     {
-                      "note": "Then he stands up and holds his hand out to Ella. \"Swim?\""
-                    },
-                    {
-                      "note": "She looks at you. She takes his hand. They swim out past the flags together and he holds her up in the waves."
+                      "note": "Ella gets up to get drinks. Hayden goes with her. You sit there and look at your shiny little feet."
                     }
                   ],
-                  "after": "Ella, to her sister: \"i just watched hayden tickle {name} for three minutes\" \"and he LOVED it\" Sister: \"who loved it\" Ella: \"both of them honestly\" \"then i went swimming with hayden\" Sister: \"and\" Ella: \"and he kissed me behind the flags\""
+                  "outcome": "cracked",
+                  "spark": 5,
+                  "gaydar": 97,
+                  "thinks": [
+                    "The sunscreen's cold. It was thirty-one degrees. I've heard better lies from Year Two.",
+                    "His feet looked so small in Hayden's hands. I kept noticing that. Like he was made to be the one getting looked after. Which, fine. Just not by me.",
+                    "I went to get drinks and Hayden came. He asked if you two are a thing. I said we're friends. I said it really fast."
+                  ]
                 },
                 {
-                  "you": "(Can't speak. Just keep laughing.)",
-                  "outcome": "kept",
-                  "spark": 0,
-                  "gaydar": 98,
+                  "you": "(Hide your face in your knees.)",
                   "them": [
                     {
-                      "note": "You can't get a word out. You keep laughing. Hayden keeps going."
+                      "note": "You fold over and put your face in your knees. Hayden keeps going, slow and thorough, the heel, the arch, every coral toe. He hums a bit while he does it."
                     },
-                    "Hayden. Okay. Enough.",
+                    "\"You right, buddy?\"",
                     {
-                      "note": "She says it sharp. He stops straight away and lets go."
-                    },
-                    "\"He didn't tap out,\" Hayden says.",
-                    "He couldn't. He's crying. Look at him.",
-                    {
-                      "note": "You're lying half off the towel, covered in sand and sunscreen, still giggling at nothing. A kid with a bucket has stopped to watch you."
+                      "note": "You nod into your knees. He finishes, gives your foot a little squeeze, and sets it down on the towel like it's breakable."
                     },
                     {
-                      "note": "Ella stands up and brushes off her legs. \"I'm going to go in. Hayden, coming?\""
+                      "note": "When you finally look up, Meg's filming and Ella's just looking at you. Not angry. Not sad either. Like she's finally sure of something."
                     },
+                    "Okay. Yeah. I'm going to go swim. With Hayden. Is that okay?",
                     {
-                      "note": "He's already up."
+                      "note": "It's not really a question. Hayden's already standing."
                     }
                   ],
-                  "after": "Ella, to Meg, that night: \"i don't want to be mean\" \"i really like him\" \"but i just watched him giggle in the sand for four minutes with a kid watching\" \"and hayden was right there. in his little cap\" Meg: \"you kissed hayden didn't you\" Ella: \"in the water\"",
+                  "outcome": "kept",
+                  "spark": 0,
+                  "gaydar": 99,
                   "thinks": [
-                    "He couldn't even say it. I had to. I used my yard duty voice on a lifesaver in front of his entire club",
-                    "There was a kid with a bucket watching him. a KID. with a BUCKET",
-                    "I got up and brushed my legs off and said Hayden, coming, and he was already standing. I didn't look at the towel on the way down"
+                    "He hid his face in his knees. Like a little kid at the dentist. And Hayden hummed. HUMMED. I'll be thinking about that for weeks.",
+                    "That was the moment, honestly. Not brunch. That. Him folded up on my towel because a guy was being gentle with his feet. I've never made him do that. I couldn't if I tried.",
+                    "I asked if it was okay to swim with Hayden and I didn't wait for him to answer. I don't feel great about that. I also don't feel that bad."
                   ]
                 }
-              ],
-              "thinks": [
-                "He stopped trying to get away. arms over his face, laughing, letting Hayden go through every coral toe one by one",
-                "I stopped laughing somewhere in the middle and sat with my knees up and started thinking about the drive home. like who's in whose car",
-                "Hayden held his hand out and I took it and I didn't even check {name}'s face first. I always check"
               ]
             }
           ]
         }
       ],
-      "debrief": "It felt embarrassing at the time. It's still just being ticklish."
+      "debrief": "Going red when a guy touches you isn't something to be ashamed of. It's just telling you something."
     },
     {
       "id": "ella-end",
@@ -6090,12 +5998,12 @@ window.CONTENT = {
         "i asked him if he liked my cat eye and he said whats wrong with your eye 😭",
         "anyway how are you?? i felt kind of bad after brunch",
         {
-          "if": "ella-tickle=held",
-          "text": "also hayden still brings up the surf club. how you didn't laugh. it bugs him so much lol"
+          "text": "also hayden still brings up the surf club. how you just sat there red as a tomato and didn't make a sound. he thinks you're shy lol",
+          "if": "ella-tickle=held"
         },
         {
-          "if": "ella-tickle=cracked|begged|kept",
-          "text": "also sorry but connor has seen the surf club video. hayden put it in the club chat and connor's cousin is in the club. connor said 'the squealing guy?' i said yes. sorry"
+          "text": "also sorry but connor's heard about the surf club. the sunscreen thing. his cousin's in the club. he said 'the guy who went red when hayden did his feet?' i said yes. sorry",
+          "if": "ella-tickle=cracked|begged|kept"
         },
         {
           "text": "also maddy still wants the dress. she says now you're out you have to share your wardrobe, it's like the law",
