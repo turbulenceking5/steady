@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-29
+- Story: the chapters after each big scene now follow on from it. You're not really dating her any more but she still invites you, nobody calls you her date, and Hannah no longer says she doesn't know.
 - Story: the inner thoughts are rewritten so each girl thinks in her own voice (Mia apologising, Georgie ranking things, Lucy in nurse mode, Zoe quoting Brooke), messier and more like a real person.
 - Story: the ten big "she knows" chapters are rewritten as scenes in front of her friends, and every one plays out differently: two truths and a lie, Hayley saying it for Mia, the "ladies" brunch, Tayla's chat on the party slideshow, Georgie's numbered list, Lucy's friends' photo evidence, Mel's feet photo, Olivia's sister at the next table, Brooke asking for Zoe, and Kirra's video on the TV. Each has a path where it all gets too much and you cry, and the girls look after you.
 
