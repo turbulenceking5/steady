@@ -58,10 +58,11 @@ Sam's cousin. Shy. Says sorry a lot. Rival: Theo. Ends up with: Lachlan (account
 | 1 | `mia-1` | Dumplings | Mia | 15 |
 | 2 | `mia-2` | Eat Street | Mia (in person) | 45 |
 | 3 | `mia-dress` | Help with a dress | Mia | 55 |
-| 4 | `mia-feet` | Socks off | Mia (in person) | 65 |
-| 5 | `mia-barefoot` | No shoes home | Mia (in person) | 72 |
-| 6 | `c6` | Hole in one | Mia (in person) | 85 |
-| 7 | `mia-end` | Mia and Lachlan | Mia | 99 |
+| 4 | `mia-movie` | Scary movie | Mia (in person, alone) | 60 |
+| 5 | `mia-feet` | Socks off | Mia (in person) | 65 |
+| 6 | `mia-barefoot` | No shoes home | Mia (in person) | 72 |
+| 7 | `c6` | Hole in one | Mia (in person) | 85 |
+| 8 | `mia-end` | Mia and Lachlan | Mia | 99 |
 
 Boy-clothes path (after `mia-1` in boy clothes, replaces the rest of the route):
 
@@ -139,10 +140,11 @@ Nurse. Her friends keep asking her about you. Rival: Fraser. Ends up with: Hamis
 | 1 | `lucy-1` | Date one | Lucy | 15 |
 | 2 | `lucy-2` | Paddington markets | Lucy (in person) | 40 |
 | 3 | `lucy-3am` | 3am | Lucy | 50 |
-| 4 | `c6e` | The evidence | Lucy (in person) | 90 |
-| 5 | `lucy-feet` | Low tables | Lucy (in person) | 92 |
-| 6 | `lucy-tickle` | After night shift | Lucy (in person) | 94 |
-| 7 | `lucy-end` | Lucy and Hamish | Lucy (in person) | 99 |
+| 4 | `lucy-reflex` | Reflexes | Lucy (in person, alone) | 58 |
+| 5 | `c6e` | The evidence | Lucy (in person) | 90 |
+| 6 | `lucy-feet` | Low tables | Lucy (in person) | 92 |
+| 7 | `lucy-tickle` | After night shift | Lucy (in person) | 94 |
+| 8 | `lucy-end` | Lucy and Hamish | Lucy (in person) | 99 |
 
 Boy-clothes path (after `lucy-1` in boy clothes, replaces the rest of the route):
 
@@ -159,10 +161,11 @@ Hinge. Picnics. Notices feet. Rival: Sean. Ends up with: Riley (plumber).
 | 1 | `jade-1` | Howard Smith Wharves | Jade | 15 |
 | 2 | `jade-2` | Second picnic | Jade (in person) | 45 |
 | 3 | `jade-pedi` | Pedicure date | Jade (in person) | 62 |
-| 4 | `jade-feet` | Hot tub | Jade (in person) | 70 |
-| 5 | `jade-barefoot` | One slide | Jade (in person) | 74 |
-| 6 | `c6f` | Feet in a row | Jade (in person) | 92 |
-| 7 | `jade-end` | Jade and Riley | Jade (in person) | 99 |
+| 4 | `jade-couch` | Lowkey checking | Jade (in person, alone) | 66 |
+| 5 | `jade-feet` | Hot tub | Jade (in person) | 70 |
+| 6 | `jade-barefoot` | One slide | Jade (in person) | 74 |
+| 7 | `c6f` | Feet in a row | Jade (in person) | 92 |
+| 8 | `jade-end` | Jade and Riley | Jade (in person) | 99 |
 
 Boy-clothes path (after `jade-1` in boy clothes, replaces the rest of the route):
 
@@ -179,10 +182,11 @@ Bumble. Tells her sister everything. Rival: Marcus. Ends up with: James (finance
 | 1 | `olivia-1` | Coffee in Bulimba | Olivia | 15 |
 | 2 | `olivia-2` | Cocktails on James St | Olivia (in person) | 45 |
 | 3 | `olivia-facetime` | Her sister on FaceTime | Olivia | 55 |
-| 4 | `olivia-feet` | Boat day | Olivia (in person) | 70 |
-| 5 | `olivia-barefoot` | Dinner after the boat | Olivia (in person) | 76 |
-| 6 | `c6g` | The next table | Olivia (in person) | 90 |
-| 7 | `olivia-end` | Olivia and James | Olivia (in person) | 99 |
+| 4 | `olivia-paint` | For the photos | Olivia (in person, alone) | 64 |
+| 5 | `olivia-feet` | Boat day | Olivia (in person) | 70 |
+| 6 | `olivia-barefoot` | Dinner after the boat | Olivia (in person) | 76 |
+| 7 | `c6g` | The next table | Olivia (in person) | 90 |
+| 8 | `olivia-end` | Olivia and James | Olivia (in person) | 99 |
 
 Boy-clothes path (after `olivia-1` in boy clothes, replaces the rest of the route):
 
@@ -199,10 +203,11 @@ Trivia team. Her friend Brooke is a lot. Rival: Tyler. Ends up with: Kyle (mecha
 | 1 | `zoe-1` | Trivia | Zoe | 20 |
 | 2 | `zoe-2` | Her wardrobe | Zoe (in person) | 55 |
 | 3 | `zoe-quiz` | Trivia night | Zoe (in person) | 60 |
-| 4 | `zoe-feet` | Trivia at Brooke's | Zoe (in person) | 75 |
-| 5 | `zoe-ambush` | Tash's picnic | Zoe (in person) | 78 |
-| 6 | `c6h` | Brooke asks | Zoe (in person) | 97 |
-| 7 | `zoe-end` | Zoe and Kyle | Zoe (in person) | 99 |
+| 4 | `zoe-lightning` | Lightning round | Zoe (in person, alone) | 63 |
+| 5 | `zoe-feet` | Trivia at Brooke's | Zoe (in person) | 75 |
+| 6 | `zoe-ambush` | Tash's picnic | Zoe (in person) | 78 |
+| 7 | `c6h` | Brooke asks | Zoe (in person) | 97 |
+| 8 | `zoe-end` | Zoe and Kyle | Zoe (in person) | 99 |
 
 Boy-clothes path (after `zoe-1` in boy clothes, replaces the rest of the route):
 
@@ -219,10 +224,11 @@ Paralegal. Dry. Her friend Kirra films everything. Rival: Ethan. Ends up with: N
 | 1 | `sophie-1` | Riverside | Sophie | 15 |
 | 2 | `sophie-2` | Movie night | Sophie (in person) | 50 |
 | 3 | `sophie-kirra` | Kirra gets the phone | Sophie | 55 |
-| 4 | `sophie-feet` | Game night | Sophie (in person) | 76 |
-| 5 | `sophie-ambush` | The rematch | Sophie (in person) | 79 |
-| 6 | `c6i` | On Kirra's TV | Sophie (in person) | 98 |
-| 7 | `sophie-end` | Sophie and Nathan | Sophie (in person) | 99 |
+| 4 | `sophie-file` | Cross-examination | Sophie (in person, alone) | 64 |
+| 5 | `sophie-feet` | Game night | Sophie (in person) | 76 |
+| 6 | `sophie-ambush` | The rematch | Sophie (in person) | 79 |
+| 7 | `c6i` | On Kirra's TV | Sophie (in person) | 98 |
+| 8 | `sophie-end` | Sophie and Nathan | Sophie (in person) | 99 |
 
 Boy-clothes path (after `sophie-1` in boy clothes, replaces the rest of the route):
 
