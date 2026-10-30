@@ -24,12 +24,15 @@ Three years together. She works it out before you do. Rival: Josh. Ends up with:
 ## Nicole
 Your best friend. She knows. You haven't said a word.
 
+`nicole-4` leaves set `told` (he says it to her), `nodded`, `hugo` (he talks to Hugo but never says it to her) or `quiet`; `nicole-5` opens with an `if` line on each. In `nicole-5`, a couple of months later, she does his nails at girls' night and admits she had a thing for him in first year that went completely once he started wearing gloss and doing his nails. He laughs, is mortified, asks when exactly it stopped, or teases back (`laughed`, `mortified`, `when`, `teased`; one `teased` leaf says it outright and sets gaydar 100).
+
 | # | id | Title | With | Gaydar |
 |---|---|---|---|---|
 | 1 | `c2` | One of the girls | Nicole | 75 |
 | 2 | `nicole-2` | Sephora | Nicole (in person) | 90 |
 | 3 | `nicole-3` | Rate my Hinge | Nicole | 97 |
 | 4 | `nicole-4` | Jemima's list | Nicole (in person) | 99 |
+| 5 | `nicole-5` | First year | Nicole (in person) | 99 |
 
 ## Hannah
 Jess's friend. Physio. No time for games. Rival: Dylan. Ends up with: Brodie (electrician).

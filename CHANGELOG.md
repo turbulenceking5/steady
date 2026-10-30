@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-30
+- Story: new Nicole chapter "First year": she does your nails at girls' night and admits she had a thing for you at uni, until the gloss and the nails turned you into one of the girls. Eight endings depending on how you take it, and it remembers whether you told her at her 30th.
+
 ## 2026-10-29
 - Story: Nicole has a new chapter, her 30th, where Jemima has invited someone for you, and you can finally tell Nicole if you want to.
 - Story: Jess has a new chapter, Friday drinks, where Kate from the group chat is at the next table.
