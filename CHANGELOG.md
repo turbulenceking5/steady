@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-30
+- Story: dialogue across every route reads more like real texting: fewer neat one-liners, less repetition between girls, more specific details, and end-of-chapter thoughts that fit whichever way the chat went.
 - Confirmations: new lines about being fine with what you want in bed.
 - Story: a Profile button on each girl's chapter list opens her card: how far you've got, the other guy and who she ends up with (once you've met them), how her big scene went, and her last read on you.
 - New Scrapbook tab: your numbers ("You said it out loud in 7 of 10 big scenes"), achievements, and every "Worth remembering" note and one-liner you've unlocked, filterable by girl.
