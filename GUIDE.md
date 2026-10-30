@@ -21,6 +21,13 @@
 - Jess and your boyfriend's story open once you've finished any other girl's story.
 - Your phone's back button steps back to the girl's chapters, then the list.
 
+- **Profile**, next to a girl's name on her chapter list, opens her card: how far you've got, endings and outfits found, the other guy and who she ends up with (once you've met them), how her big scene and tickle scene went last time (and every way you've played them), the boy-clothes path, and her last read on you (both bars, from the last time you played her latest chapter).
+
+## Scrapbook
+- The **Scrapbook** tab shows your numbers (chapters read, endings found, how many big scenes you said it out loud in, your go-to look), your achievements, and every "Worth remembering" note and one-liner from the chapters you've read.
+- Filter the notes by girl, or by "Worth remembering" / "What she said". A girl's profile has a button that takes you straight to her notes.
+- Achievements are earned by playing: saying it in a big scene, finding every ending in a chapter, finishing a girl's story, keeping it up on the boy-clothes path and more. A small note pops up at the bottom when you earn one. Once earned, they stay, whatever you replay.
+
 ## Confirmations
 - The **Confirmations** tab, next to Story, fills the screen with lines that fade in and out: "You are GAY", "Everyone knows you are gay" and more, some with your name. Just leave it open and read.
 

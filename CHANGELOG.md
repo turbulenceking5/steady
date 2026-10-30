@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-30
+- Story: a Profile button on each girl's chapter list opens her card: how far you've got, the other guy and who she ends up with (once you've met them), how her big scene went, and her last read on you.
+- New Scrapbook tab: your numbers ("You said it out loud in 7 of 10 big scenes"), achievements, and every "Worth remembering" note and one-liner you've unlocked, filterable by girl.
+- Achievements: a small note pops up when you earn one (saying it out loud, every ending in a chapter, finishing a story, the boy-clothes paths and more), and they stay earned whatever you replay.
 - Story: react to her messages. Tap one (or long-press, or press Enter on it) and pick ❤️ 😂 😳 🙄 😬 or 👀. Reactions stay on the chapter when you replay it.
 - Story: text chats show "Delivered", then "Seen" when she's read it, and a chat she doesn't answer is left on "Seen".
 - Settings: Quick replies, a timer that picks a reply if you take too long (off to start with), and Vibrate when you reply or react.
