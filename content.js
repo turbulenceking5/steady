@@ -1098,14 +1098,14 @@ window.CONTENT = {
                         "\"She said you'd fix my collar too. Is it bad?\"",
                         { note: "It is bad. You fix it. Your hands are a bit shaky and he pretends not to notice." }
                       ],
-                      after: "You stay at the bar for an hour and a bit. He puts his number in your phone himself, as \"Hugo (shoes)\". When you get back to the booth Nicole is very busy with her balloon and doesn't ask a single thing." },
+                      outcome: "hugo", after: "You stay at the bar for an hour and a bit. He puts his number in your phone himself, as \"Hugo (shoes)\". When you get back to the booth Nicole is very busy with her balloon and doesn't ask a single thing." },
                     { you: "Sorry. I'm really out of practice. I've never actually done this. With a guy.",
                       them: [
                         { note: "He doesn't make a face. He just nods, like you've said you've never been to Melbourne." },
                         "\"Okay. Well, you're doing it now.\"",
                         "\"I'm getting a drink anyway. Want one? You can tell me about the shoes properly.\""
                       ],
-                      after: "You talk to Hugo until the bar staff start stacking stools. At some point you look over and Nicole is watching you from the booth, chin on her hand. She doesn't come over once." }
+                      outcome: "hugo", after: "You talk to Hugo until the bar staff start stacking stools. At some point you look over and Nicole is watching you from the booth, chin on her hand. She doesn't come over once." }
                   ] },
                 { you: "(Stay.) Not tonight. It's your birthday. I'm not leaving you for a shoe.",
                   them: [
@@ -1113,7 +1113,7 @@ window.CONTENT = {
                     { note: "She doesn't push it. She slides you her spritz and orders another one." },
                     "But if he comes over here I'm going to the bathroom for a really long time."
                   ],
-                  after: "He doesn't come over. You do, eventually, on your way out, and say \"nice shoes\" so fast he has to ask you to repeat it. Nicole hears about it from Jemima before you're even in the Uber." }
+                  outcome: "quiet", after: "He doesn't come over. You do, eventually, on your way out, and say \"nice shoes\" so fast he has to ask you to repeat it. Nicole hears about it from Jemima before you're even in the Uber." }
               ] },
             { you: "I'm not mad. Why does everyone think I'd want a Hugo, though?",
               them: [
@@ -1133,9 +1133,9 @@ window.CONTENT = {
                   ],
                   replies: [
                     { you: "Stand here with you for a bit.", them: ["Good. That's what I wanted anyway.", { note: "She puts her arm through yours. The people whose table it is take their drink back without saying anything." }],
-                      after: "Nicole doesn't tell anyone. A week later Ailisha says \"so Nic says you're coming to Pride with us\", and that's how you find out Nicole told exactly one person, and only so you'd have a group to go with." },
+                      outcome: "told", after: "Nicole doesn't tell anyone. A week later Ailisha says \"so Nic says you're coming to Pride with us\", and that's how you find out Nicole told exactly one person, and only so you'd have a group to go with." },
                     { you: "Both. Here first. Then Hugo.", them: ["Yes. Correct answer.", "Fix his collar. It's been bugging me all night."],
-                      after: "You fix Hugo's collar. He goes a bit pink, which you weren't expecting. Nicole watches from the booth with mascara on her cheek and both thumbs up." }
+                      outcome: "told", after: "You fix Hugo's collar. He goes a bit pink, which you weren't expecting. Nicole watches from the booth with mascara on her cheek and both thumbs up." }
                   ] },
                 { you: "(Don't say anything. Just nod.)",
                   them: [
@@ -1144,7 +1144,7 @@ window.CONTENT = {
                     "That's plenty for me.",
                     "Now come and sit down before Jemima physically walks him over."
                   ],
-                  after: "Jemima doesn't walk him over. She tries twice. Nicole stops her both times with one look, and keeps your glass topped up all night." }
+                  outcome: "nodded", after: "Jemima doesn't walk him over. She tries twice. Nicole stops her both times with one look, and keeps your glass topped up all night." }
               ] }
           ] },
         { you: "Oh, he's cute. What did Jemima tell him about me?",
@@ -1162,10 +1162,10 @@ window.CONTENT = {
               ],
               replies: [
                 { you: "I'm the one. {name}. Sorry for touching your neck.", them: ["\"I'll live,\" he says. \"Hugo. Do you want a drink, or is collar-fixing a one-off?\""],
-                  after: "You have a drink with him. Then another. When you get back to the booth Ailisha has written HUGO on a napkin and drawn a love heart on it, and Nicole folds it into your hand without a word." },
+                  outcome: "hugo", after: "You have a drink with him. Then another. When you get back to the booth Ailisha has written HUGO on a napkin and drawn a love heart on it, and Nicole folds it into your hand without a word." },
                 { you: "(Go red.) Nicole made me. Happy birthday to her. Bye.",
                   them: [{ note: "You go straight back to the booth and sit down with your face in your hands." }, "That was SO good. That was the best thing I've ever seen.", "He's still looking over here, by the way. Don't look."],
-                  after: "You don't look for a whole hour. Then you do, and he's looking too, and he lifts his glass at you. Nicole pretends to be asleep on Jemima so you don't feel watched." }
+                  outcome: "quiet", after: "You don't look for a whole hour. Then you do, and he's looking too, and he lifts his glass at you. Nicole pretends to be asleep on Jemima so you don't feel watched." }
               ] },
             { you: "I'm going to hide in the bathroom for a second.",
               them: [
@@ -1175,9 +1175,9 @@ window.CONTENT = {
               ],
               replies: [
                 { you: "I'll stay. I just needed a minute.", them: ["Take two. I'll tell Jemima you're doing your eyeliner. She'll believe it."],
-                  after: "You go back out. You don't talk to Hugo. You do watch him laugh at the bar a few times, and Nicole watches you watch him and doesn't say a word." },
+                  outcome: "quiet", after: "You go back out. You don't talk to Hugo. You do watch him laugh at the bar a few times, and Nicole watches you watch him and doesn't say a word." },
                 { you: "Can you come with me to say hi? Just stand there?", them: ["Yes. I'll be so normal. You won't even know I'm there."],
-                  after: "She is not normal. She introduces you as \"my best friend {name}, he's single, he does eyebrows\" and then walks away. Hugo laughs for a really long time. He asks you to do his." }
+                  outcome: "hugo", after: "She is not normal. She introduces you as \"my best friend {name}, he's single, he does eyebrows\" and then walks away. Hugo laughs for a really long time. He asks you to do his." }
               ] }
           ] },
         { you: "It's your birthday. Can we not do anything about me tonight?",
@@ -1194,7 +1194,7 @@ window.CONTENT = {
                 { note: "Nicole gets up to go to the bar, very slowly, looking back twice." },
                 "\"So she's left us. Subtle.\""
               ],
-              after: "You talk to Hugo in the booth while Nicole stays at the bar for twenty-five minutes buying one drink. When she comes back she sits on the other side of the table so you don't have to move." },
+              outcome: "hugo", after: "You talk to Hugo in the booth while Nicole stays at the bar for twenty-five minutes buying one drink. When she comes back she sits on the other side of the table so you don't have to move." },
             { you: "Hi. Sorry, I think Jemima's got the wrong idea. I'm straight.",
               them: [
                 "\"Oh. Right. Sorry, man.\"",
@@ -1203,11 +1203,150 @@ window.CONTENT = {
                 { note: "Nicole puts her arm through yours and leaves it there." },
                 "Nothing about you tonight. I promised."
               ],
-              after: "Nicole doesn't bring it up, that night or after. A week later she sends you a screenshot with no message: Hugo's Instagram, the photo in the blue shirt. You look at it for a long time." }
+              outcome: "quiet", after: "Nicole doesn't bring it up, that night or after. A week later she sends you a screenshot with no message: Hugo's Instagram, the photo in the blue shirt. You look at it for a long time." }
           ] }
       ],
       after: "At the end of the night Nicole falls asleep in the Uber with her head on your shoulder, still holding the 30 balloon.",
       debrief: "Nicole never needed you to say it. Whatever you did at her birthday, she was glad you came."
+    },
+    {
+      id: "nicole-5", route: "nicole", gaydar: 99, friend: true, gaydarSays: "I fancied him for all of first year. Then he started doing his nails better than mine and that was that.", title: "First year", contact: "Nicole", irl: true,
+      outfitPrompt: "What did you wear to girls' night?",
+      outfits: [
+        { label: "A hoodie, trackies and your lip oil. It's only Nicole's.", gaydar: -3, intro: "Thursday, a couple of months after her birthday. Jemima and Ailisha have gone home and it's just you and Nicole on her couch with the end of the rosé. You came in a hoodie and trackies and your lip oil. Your nails are chipped, so she's got her whole kit out on the coffee table and your hand in her lap.", them: ["Look at you in your little hoodie. Very cosy. The lip oil's doing all the work."] },
+        { label: "Your cream knit, your rings and a bit of gloss", intro: "Thursday, a couple of months after her birthday. Jemima and Ailisha have gone home and it's just you and Nicole on her couch with the end of the rosé. Cream knit, all your rings, a bit of gloss. Your nails are chipped, so she's got her whole kit out on the coffee table and your hand in her lap.", them: ["Rings off. All of them. I can't paint around eight rings, {name}.", { note: "You take them off one at a time. She lines them up on a coaster." }] },
+        { label: "Your satin shirt, gloss, lashes and little gold hoops", gaydar: 3, intro: "Thursday, a couple of months after her birthday. Jemima and Ailisha have gone home and it's just you and Nicole on her couch with the end of the rosé. The green satin shirt, gloss, a set of lashes you put on for nobody, and the little gold hoops. Your nails are chipped, so she's got her whole kit out on the coffee table and your hand in her lap.", them: ["Lashes. For girls' night. On my couch.", { note: "She leans right in to look at them, her nose nearly on yours, and doesn't blink." }, "They're good. Who did them? I want her number."] }
+      ],
+      them: [
+        "Hold still. Your cuticles look like nobody's ever loved you.",
+        { note: "She files your first nail into an almond without asking what shape you want." },
+        "Ailisha asked me in the kitchen tonight if I was ever into you.",
+        "I said no. Way too fast. She gave me a look.",
+        { text: "And I've been thinking about it since my birthday anyway. Since you told me. With my drink on some stranger's table.", if: "nicole-4=told" },
+        { text: "And I've been thinking about it since my birthday anyway. Since the nod. Best nod of my life.", if: "nicole-4=nodded" },
+        { text: "You never actually said it to me, you know. You just went and talked to Hugo at my thirtieth. Which, same thing.", if: "nicole-4=hugo" },
+        { text: "You've still never said it to me, by the way. You don't have to. I've met your nails.", if: "nicole-4=quiet" },
+        "Okay. I'm telling you this because I'm two wines in and it's funny now.",
+        "I had the biggest thing for you in first year.",
+        "I sat behind you in stats every Wednesday and did my hair before it. Every Wednesday.",
+        { note: "She says it to your thumbnail. She keeps filing." },
+        "Don't look at me like that. It's gone. It's so gone it's actually funny."
+      ],
+      replies: [
+        { you: "(Laugh so hard she smudges the base coat.)",
+          them: [
+            "Wow. Okay.",
+            { note: "She holds your hand up to the lamp. There's base coat on your knuckle." },
+            "I tell you my deepest secret and you wreck a thumb.",
+            "No, it's fine, I'm laughing too. It's insane. I wrote your name in my planner, {name}. In pencil. So I could rub it out."
+          ],
+          replies: [
+            { you: "In pencil. Nic, that's so tragic. Why didn't you ever say anything?",
+              them: [
+                "Timing. I had a boyfriend, then you had Archie. So I was the friend.",
+                "Then it just kind of sat there for ages. Not a big thing. A little bit, sometimes.",
+                "And then you started doing your nails. And stealing my lip oil. And telling me my eyeliner was uneven, which it was.",
+                "And one day I looked at you and it was just off. Gone. Not a flicker.",
+                "Now you're basically Ailisha with better skin."
+              ],
+              outcome: "laughed",
+              after: "She redoes the thumb. Before your top coat's dry she's told the group chat, and Ailisha replies \"FIRST YEAR??\" so many times Jemima mutes it." },
+            { you: "Okay. Sorry. I'm composed. Was it the hair? I had really good hair in first year.",
+              them: [
+                "You had a fringe. It was bad. I loved it.",
+                "It was the grey jumper, mostly. You wore it every Wednesday. I knew what day it was by the jumper.",
+                "And now your nails are better than mine and I'd honestly rather die than kiss you.",
+                { note: "She blows on your thumb." },
+                "That's a compliment. That's the nicest thing I've ever said to a man."
+              ],
+              outcome: "laughed",
+              after: "Next Thursday you turn up in the grey jumper. You still have it. Nicole screams, takes a photo, and announces to the room that it does nothing for her now, not one thing, sounding thrilled about it." }
+          ] },
+        { you: "Nic. Why would you tell me that. I have to lie face down on your floor now.",
+          them: [
+            "Oh my god, you've gone red.",
+            "You're pinker than the polish.",
+            "Stop. It's not a thing. It was a thing when we were nineteen. Now it's a story I tell at girls' night.",
+            "Honestly the first time you wore gloss to brunch I was cured. Fully."
+          ],
+          replies: [
+            { you: "(Put your face in the couch cushion. Hold your hand out so she can keep going.)",
+              them: [
+                { note: "She keeps going. She does three nails before either of you says anything." },
+                "See, this is why it went.",
+                "A straight guy would've made this weird. You just held your hand out for the next coat.",
+                "You're my favourite girlfriend. Don't tell Jemima."
+              ],
+              outcome: "mortified",
+              after: "You stay in the cushion until the top coat's dry. She puts the throw rug over your head and The Bachelorette back on, and by the second rose ceremony you're arguing about the guys like nothing happened." },
+            { you: "Did I lead you on? Back then? Tell me I didn't do something awful.",
+              them: [
+                "You lent me your umbrella once and I thought about it for a month. That's what you did.",
+                "No. You were just nice and a bit oblivious.",
+                "Very oblivious. Now I know why.",
+                { note: "She taps your nail with the end of the brush." },
+                "Stop worrying. You did my contour last week and all I felt was jealous."
+              ],
+              outcome: "mortified",
+              after: "You apologise for the umbrella twice on the way out. Nicole says if you apologise a third time she's telling Ailisha about the planner too. A week later she tells Ailisha about the planner anyway, and blames you." }
+          ] },
+        { you: "Okay, but when did it stop? I need a date. I need to know what I was wearing.",
+          them: [
+            "Oh, I know exactly when.",
+            "First time you came to girls' night with your nails done. That pale pink. You kept doing this all night.",
+            { note: "She holds her hand out flat and tilts it under the lamp, admiring her own nails." },
+            "And I thought, oh. He's one of us now. And that was it. Gone. Not even a bit left over."
+          ],
+          replies: [
+            { you: "One manicure. That's all it took? Since first year, and a bottle of pale pink did it?",
+              them: [
+                "No, the manicure finished it. The gloss started it.",
+                "Then you started saying 'obsessed'. Then you told me my bronzer was 'a lot for daytime, babe'. Babe!",
+                "Every week you got a bit more fabulous and I got a bit less into it.",
+                "By last month I was getting changed in front of you and didn't even think about it. You did my zip.",
+                "I'm so relieved, by the way. I'd have been an awful girlfriend. I'm a great one of these."
+              ],
+              outcome: "when",
+              after: "She paints the last nail and makes you hold your hand up next to hers for a photo. She sends it to the uni girls with the caption \"first year me would die\". Ailisha replies with a skull and \"his are nicer\"." },
+            { you: "So my nails did that. Honestly I'm a bit proud.",
+              them: [
+                "You should be. They're great nails. I'm doing them.",
+                "It's the best thing that ever happened to us, honestly.",
+                "I spent years being weird about you and now I just get to borrow your concealer.",
+                { note: "She holds the polish bottle up against your hand and nods, like it passed." }
+              ],
+              outcome: "when",
+              after: "On your way out she gives you the bottle of pale pink, the one from that night. \"It's yours. It ended me.\" You keep it on your bathroom shelf where you'll see it every morning." }
+          ] },
+        { you: "Wow. So you fancied me right up until I got hotter. That's on you, Nic.",
+          them: [
+            "Hotter. Okay.",
+            "No, you did get hotter. That's the problem. You got hot for the wrong people.",
+            "Like, you're gorgeous now. You're so pretty. And it does nothing for me. Zero.",
+            "I look at you and think, I want your skin. Not you. Your skin."
+          ],
+          replies: [
+            { you: "Just so you know, I'm very gay, Nic. Extremely. It was never going to work.",
+              gaydar: 100,
+              them: [
+                "I KNOW.",
+                { note: "She throws the cotton pad at you." },
+                "I've known since you said the bartender had great forearms.",
+                "Say it again when your top coat's dry. I like hearing it."
+              ],
+              outcome: "teased",
+              after: "You say it again when the top coat's dry. Then again at the door, because she asks. She shouts \"extremely!\" down the stairwell after you, and her neighbour opens his door to see what's going on." },
+            { you: "Honestly I'm offended. I've put so much work into my look and it's not working on anyone.",
+              them: [
+                "It's working. Just not on me.",
+                "The bartender at the Wickham gave you a free drink on Saturday. He gave me nothing. I was standing right there.",
+                "You lost me to the gloss, babe. Sorry. You get the bartenders. I get your concealer."
+              ],
+              outcome: "teased",
+              after: "Saturday she drags you back to the Wickham to test it. The bartender gives you a free drink again. Nicole pays for hers, holds up the receipt, and says \"I rest my case\"." }
+          ] }
+      ],
+      debrief: "Someone liking you once, and then just loving you as you are, is a good thing to have. Nothing about how you look needs to change for anyone."
     },
     {
       "id": "hannah-1",
