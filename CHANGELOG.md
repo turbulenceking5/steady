@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-10-30
+- Story: react to her messages. Tap one (or long-press, or press Enter on it) and pick ❤️ 😂 😳 🙄 😬 or 👀. Reactions stay on the chapter when you replay it.
+- Story: text chats show "Delivered", then "Seen" when she's read it, and a chat she doesn't answer is left on "Seen".
+- Settings: Quick replies, a timer that picks a reply if you take too long (off to start with), and Vibrate when you reply or react.
 - Story: new Nicole chapter "First year": she does your nails at girls' night and admits she had a thing for you at uni, until the gloss and the nails turned you into one of the girls. Eight endings depending on how you take it, and it remembers whether you told her at her 30th.
 
 ## 2026-10-29
