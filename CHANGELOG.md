@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-30
+- Story: the end-of-date thoughts are rewritten again, rougher and more honest: whether he tried anything, being relieved she didn't have to sleep with him (or a bit insulted he never tried), and who she'd rather go home with.
 - Story: the end-of-date thoughts are rewritten to sound like a real person replaying the night, not a writer landing a punchline.
 - Story: the "In her head" thoughts at the end of every date are now only about how gay you are, and brutally honest about it: what gave you away, why she's gone off you, and which guy you should be with instead.
 - Story: dialogue across every route reads more like real texting: fewer neat one-liners, less repetition between girls, more specific details, and end-of-chapter thoughts that fit whichever way the chat went.
