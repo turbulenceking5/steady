@@ -49,6 +49,18 @@ window.CONTENT = {
     "Your boyfriend's out there",
     "Gay, and it suits you",
     "100% gay",
+    "You want guys. In bed too.",
+    "Guys turn you on. That's it.",
+    "Wanting cock is just gay, {name}",
+    "You'd go down on him. So what.",
+    "Thinking about sucking cock is normal",
+    "Nothing wrong with what you want in bed",
+    "Top, bottom, whatever. It's yours.",
+    "Liking a guy taking charge is allowed",
+    "You get to say what you're into",
+    "Fancying men isn't dirty",
+    "Your sex life's not a secret to keep",
+    "Hot guy at the gym. You looked. Fine.",
   ],
   // Story routes: pick who to date. Each girl's route takes it slowly and ends with her
   // leaving for a straight guy. Chapters in a route open one after another; `lock` routes
