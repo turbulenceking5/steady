@@ -101,6 +101,47 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
 #confBox .conf.on { opacity: 1; }
 #confBox .conf.rb { background: var(--rb-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
 @media (prefers-reduced-motion: reduce) { #confBox .conf { transition: none; } }
+.tabs button { min-width: 0; padding: 8px 4px; font-size: 15px; }
+/* Scrapbook: numbers, achievements and the notes he's unlocked */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 12px; }
+.stat { background: var(--soft); border-radius: 12px; padding: 10px 12px; min-width: 0; }
+.stat b { display: block; font-size: 22px; line-height: 1.2; color: var(--accent); }
+.stat span { display: block; font-size: 13px; color: var(--muted); }
+.lines { margin: 0; padding-left: 18px; }
+.lines li { margin-bottom: 4px; }
+.lines b { color: var(--accent); }
+.awards, .notes { list-style: none; margin: 0; padding: 0; }
+.awards li { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.awards .meta { flex: 1; min-width: 0; }
+.awards .meta b { display: block; }
+.awards .meta span { display: block; color: var(--muted); font-size: 14px; }
+.awards li.off .avatar { filter: grayscale(1); opacity: .5; }
+.awards li.off .meta b { color: var(--muted); }
+.awards .when { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.notes li { padding: 10px 0; border-top: 1px solid var(--line); }
+.notes .src { display: block; font-size: 13px; color: var(--muted); }
+.notes p { margin: 2px 0 0; overflow-wrap: anywhere; }
+.notes .says p { font-style: italic; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 10px; }
+.chips button { font: inherit; font-size: 14px; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 99px; padding: 4px 11px; cursor: pointer; }
+.chips button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+/* A route's profile card */
+.rhead { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 10px 0 4px; }
+.rhead h2 { margin: 0; font-size: 20px; min-width: 0; overflow-wrap: anywhere; }
+.rhead .btn { padding: 6px 12px; font-size: 14px; flex: none; }
+#profile .facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 12px 0 0; }
+#profile .facts dt { color: var(--muted); font-size: 14px; padding-top: 1px; }
+#profile .facts dd { margin: 0; font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+#profile .facts dd.hush { font-weight: 400; color: var(--muted); font-style: italic; }
+#profile .gaydar .fill { transition: none; }
+#profile .tagrow { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+/* Achievement toast: above everything but Hide's cover, and never takes a tap */
+#toast { position: fixed; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 40; max-width: 420px; margin: 0 auto; pointer-events: none; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 16px; padding: 14px 14px 12px; box-shadow: 0 8px 28px rgba(0,0,0,.18); opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s; overflow: hidden; }
+#toast::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--rainbow); }
+#toast.on { opacity: 1; visibility: visible; transform: none; transition: opacity .3s ease, transform .3s ease; }
+#toast .muted { display: block; font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { #toast, #toast.on { transition: none; transform: none; } }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 #cover { position: fixed; inset: 0; z-index: 50; background: #fff; color: #222; padding: 40px 20px; font: 16px/1.6 system-ui, sans-serif; }
 #cover[hidden] { display: none; }
 #cover h2 { margin: 0 0 12px; font-weight: 500; }
@@ -118,6 +159,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   <div class="tabs" role="tablist">
     <button role="tab" id="tabBtn-story" aria-controls="tab-story" aria-selected="true">Story</button>
     <button role="tab" id="tabBtn-conf" aria-controls="tab-conf" aria-selected="false">Confirmations</button>
+    <button role="tab" id="tabBtn-scrap" aria-controls="tab-scrap" aria-selected="false">Scrapbook</button>
   </div>
   <section id="tab-story" role="tabpanel" aria-labelledby="tabBtn-story">
     <div id="storyList"></div>
@@ -126,6 +168,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   <section id="tab-conf" role="tabpanel" aria-labelledby="tabBtn-conf" hidden>
     <div id="confBox" role="img" aria-label="Messages telling you you're gay, fading in and out"></div>
   </section>
+  <section id="tab-scrap" role="tabpanel" aria-labelledby="tabBtn-scrap" hidden></section>
 
 </main>
 
@@ -156,6 +199,10 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     <li>In an emergency, call <b>000</b></li>
   </ul>
 </dialog>
+
+<dialog id="profile" aria-labelledby="profName"></dialog>
+
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
 <div id="cover" hidden>
   <h2>Groceries</h2>
@@ -249,6 +296,9 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       f.e = f.e || []; if (!f.e.includes(path)) { f.e.push(path); fresh = true; }
       if (fit >= 0) { f.o = f.o || []; if (!f.o.includes(fit)) f.o.push(fit); }
       store.set("found", all);
+      // The latest play-through's path and outfit, so a profile can redraw her last read on you.
+      const last = store.get("lastrun", {}); last[id] = { p: path, f: fit }; store.set("lastrun", last);
+      setTimeout(() => checkAwards(false), 0); // the chapter's just ended: anything new earned?
       return fresh;
     } catch { return false; }
   }
@@ -484,7 +534,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     const list = $("#storyList"); list.hidden = false;
     const r = ROUTES.find((x) => x.id === rid); const d = storyDone();
     const ch = routeChapters(rid); const read = ch.filter((i) => d[C.story[i].id]).length;
-    list.innerHTML = `<button class="btn ghost back">← Story</button><h2 style="margin:10px 0 4px;font-size:20px">${esc(fill(r.name))}</h2><p class="muted" style="margin:0 0 6px">${esc(fill(r.intro || r.blurb))} <span style="white-space:nowrap">${read} of ${ch.length} read.</span></p><ul class="list">` +
+    list.innerHTML = `<button class="btn ghost back">← Story</button><div class="rhead"><h2>${esc(fill(r.name))}</h2><button type="button" class="btn ghost prof" aria-haspopup="dialog">Profile</button></div><p class="muted" style="margin:0 0 6px">${esc(fill(r.intro || r.blurb))} <span style="white-space:nowrap">${read} of ${ch.length} read.</span></p><ul class="list">` +
       ch.map((i, k) => {
         const c = C.story[i]; const st = chapterState(i);
         const f = d[c.id] ? chapterFound(c) : null;
@@ -493,6 +543,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       }).join("") + "</ul>";
     setBack(() => renderStoryList(rid));
     list.querySelector(".back").addEventListener("click", goBack);
+    list.querySelector(".prof").addEventListener("click", () => openProfile(rid));
     list.querySelectorAll("li[data-i]").forEach((li) => {
       const i = +li.dataset.i;
       if (chapterState(i) !== "open") li.querySelector(".item").disabled = true;
@@ -515,6 +566,230 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     runConversation(view, c, `<button class="btn ghost back">← ${esc(fill((ROUTES.find((r) => r.id === c.route) || {}).name || "Story"))}</button><div class="row chead" style="margin-bottom:10px"><span class="avatar" aria-hidden="true">${esc(c.contact[0].toUpperCase())}</span><b>${esc(c.contact)}</b><span class="tag">${k + 1}/${ch.length}: ${esc(fill(c.title))}</span>${c.irl ? '<span class="tag">in person</span>' : ""}</div>`);
   }
 
+  // ---------- Scrapbook, profiles and achievements ----------
+  // Everything here is read from what's already stored (story, outcomes, found, masc, lastrun).
+  // The only new key is `awards` ({ achievementId: dateEarned }), so a toast only fires once.
+  const parsePath = (p) => (p === "" || p == null ? [] : String(p).split(".").map(Number));
+  // The nodes a reply path passes through, root first (null if the path no longer fits the chapter).
+  function pathNodes(c, p) {
+    const ns = [c]; let n = c;
+    for (const k of parsePath(p)) { n = n.replies && n.replies[k]; if (!n) return null; ns.push(n); }
+    return ns;
+  }
+  const deepest = (ns, key) => ns.reduce((v, n) => (n[key] != null ? n[key] : v), null); // like the engine: deepest wins
+  const leafOutcome = (c, p) => { const ns = pathNodes(c, p); return ns ? deepest(ns, "outcome") : null; };
+  // Every outcome he's ever reached in a chapter (from the endings he's found), not just the latest.
+  const everOutcomes = (c) => new Set(((store.get("found", {})[c.id] || {}).e || []).map((p) => leafOutcome(c, p)).filter(Boolean));
+  const setsOutcome = (c, vals) => { const walk = (n) => (n.outcome && vals.includes(n.outcome)) || (n.replies || []).some(walk); return walk(c); };
+  const BIG = C.story.filter((c) => c.path !== "masc" && setsOutcome(c, ["broke", "cried", "dodged"])); // each girl's big chapter
+  const TICKLE = C.story.filter((c) => setsOutcome(c, ["held"])); // tickle, ambush and sunscreen scenes
+  const M2 = C.story.filter((c) => c.path === "masc" && setsOutcome(c, ["kept"])); // boy clothes: kept it up or slipped
+  const M3 = C.story.filter((c) => c.path === "masc" && setsOutcome(c, ["together"])); // boy clothes: the last date
+  const outcomeLabel = (c, v) => (c.path === "masc" ? { kept: "Kept it up", slipped: "Slipped", together: "Still together", drift: "She moved on", told: "You told her" }
+    : { told: "You said it", broke: "You cried and said it", cried: "You cried, and didn't say it", dodged: "You didn't say it", held: "Kept a straight face", cracked: "Cracked", begged: "Begged him to stop", kept: "Let him keep going" })[v] || v;
+  // The guy who gets in her way and the one she ends up with: each name shows once you've read the chapter he turns up in.
+  const PEOPLE = {
+    archie: { rival: ["Josh", "archie-shop"], ends: ["Josh", "c3"] },
+    hannah: { rival: ["Dylan", "c5"], ends: ["Brodie", "hannah-end"] },
+    mia: { rival: ["Theo", "mia-2"], ends: ["Lachlan", "mia-end"] },
+    ella: { rival: ["Hayden", "ella-beach"], ends: ["Connor", "ella-end"] },
+    tayla: { rival: ["Jordan", "tayla-feet"], ends: ["Mitch", "tayla-end"] },
+    georgie: { rival: ["Corey", "georgie-feet"], ends: ["Ben", "georgie-end"] },
+    lucy: { rival: ["Fraser", "lucy-feet"], ends: ["Hamish", "lucy-end"] },
+    jade: { rival: ["Sean", "jade-feet"], ends: ["Riley", "jade-end"] },
+    olivia: { rival: ["Marcus", "olivia-feet"], ends: ["James", "olivia-end"] },
+    zoe: { rival: ["Tyler", "zoe-feet"], ends: ["Kyle", "zoe-end"] },
+    sophie: { rival: ["Ethan", "sophie-feet"], ends: ["Nathan", "sophie-end"] },
+    bianca: { rival: ["Jake", "c6l", "Setting you up with"], ends: ["Liam", "bianca-end"] },
+  };
+  // Her last read on you in a chapter, rebuilt from the latest play-through's path and outfit (same sums as the end of a chapter).
+  function lastBars(c) {
+    const l = store.get("lastrun", {})[c.id]; if (!l) return null;
+    const ns = pathNodes(c, l.p); if (!ns) return null;
+    let g = deepest(ns, "gaydar"); if (g == null) return null;
+    const s = deepest(ns, "spark");
+    const fit = c.outfits && l.f >= 0 ? c.outfits[l.f] : null;
+    if (g < 100) g = Math.max(0, Math.min(99, g + ((fit && fit.gaydar) || 0)));
+    const into = Math.max(0, Math.min(100, (s != null ? s : 100 - g) + ((fit && fit.spark) || 0)));
+    return { g, into };
+  }
+  const meter = (cls, v, title, label) => `<div class="meter ${cls}" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${v}" aria-label="${esc(title)}"><div class="top"><b>${esc(title)}</b><span class="pct">${v}%</span></div><div class="track"><div class="fill" style="width:${v}%"></div></div><span class="muted">${esc(label)}</span></div>`;
+  const prettyDate = (iso) => { try { return new Date(iso + "T00:00:00Z").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }); } catch { return iso; } };
+
+  // One pass over the saved state for the Scrapbook numbers and the achievements.
+  function snapshot() {
+    const d = storyDone(), outs = store.get("outcomes", {}), last = store.get("lastrun", {});
+    const S = { total: C.story.length, read: 0, e: 0, eAll: 0, o: 0, oAll: 0, full: 0, wardrobe: 0, looks: { "toned-down look": 0, "middle look": 0, "boldest look": 0, "boy clothes": 0 }, dates: 0 };
+    C.story.forEach((c) => {
+      if (d[c.id]) S.read++;
+      const f = chapterFound(c); S.e += f.e; S.eAll += f.eAll; S.o += f.o; S.oAll += f.oAll;
+      if (f.eAll > 1 && f.e >= f.eAll) S.full++;
+      if (f.oAll > 1 && f.o >= f.oAll) S.wardrobe++;
+      // Which kind of outfit he went for last time: the lowest gaydar nudge is the toned-down one, the highest the boldest.
+      const l = last[c.id], fit = l && c.outfits && c.outfits[l.f];
+      if (fit && c.outfits.length > 1) {
+        const ds = c.outfits.filter((x) => !x.masc).map((x) => x.gaydar || 0), lo = Math.min(...ds), hi = Math.max(...ds), v = fit.gaydar || 0;
+        S.looks[fit.masc ? "boy clothes" : v === hi && hi > lo ? "boldest look" : v === lo && hi > lo ? "toned-down look" : "middle look"]++; S.dates++;
+      }
+    });
+    const ever = (list, vals) => list.filter((c) => { const s = everOutcomes(c); return vals.some((v) => s.has(v)); }).length;
+    const now = (list, vals) => list.filter((c) => vals.includes(outs[c.id])).length;
+    const played = (list) => list.filter((c) => d[c.id]).length;
+    Object.assign(S, {
+      bigN: BIG.length, bigPlayed: played(BIG), saidNow: now(BIG, ["told", "broke"]), saidEver: ever(BIG, ["told", "broke"]), criedNow: now(BIG, ["cried", "broke"]), criedEver: ever(BIG, ["cried", "broke"]),
+      tickN: TICKLE.length, tickPlayed: played(TICKLE), heldNow: now(TICKLE, ["held"]), heldEver: ever(TICKLE, ["held"]),
+      m2Played: played(M2), keptNow: now(M2, ["kept"]), m3N: M3.length, m3Read: played(M3), together: ever(M3, ["together"]),
+    });
+    const girls = ROUTES.filter((r) => !r.lock);
+    S.girlsN = girls.length; S.girlsDone = girls.filter((r) => routeFinished(r.id)).length;
+    S.jessDone = routeFinished("jess"); S.bfDone = routeFinished("bf");
+    return S;
+  }
+  const AWARDS = [
+    { id: "first", icon: "☕", title: "First date", how: "Finish any chapter.", got: (S) => S.read > 0 },
+    { id: "said", icon: "🏳️‍🌈", title: "Said it out loud", how: "Tell her you're gay in one of the big scenes.", got: (S) => S.saidEver > 0 },
+    { id: "saidAll", icon: "📣", title: "Out loud, every time", how: "Say it in every girl's big scene.", prog: (S) => [S.saidEver, S.bigN] },
+    { id: "cried", icon: "🫶", title: "Let it out", how: "Cry in a big scene, and let the girls look after you.", got: (S) => S.criedEver > 0 },
+    { id: "held", icon: "😐", title: "Straight face", how: "Hold it in all the way through a tickle scene.", got: (S) => S.heldEver > 0 },
+    { id: "endings", icon: "🔍", title: "Every ending", how: "Find every ending in one chapter.", got: (S) => S.full > 0 },
+    { id: "wardrobe", icon: "🪞", title: "Tried it all on", how: "Wear every outfit on one date.", got: (S) => S.wardrobe > 0 },
+    { id: "route", icon: "📖", title: "Her whole story", how: "Finish one girl's story.", got: (S) => S.girlsDone > 0 },
+    { id: "allRoutes", icon: "💐", title: "Everyone's story", how: "Finish every girl's story.", prog: (S) => [S.girlsDone, S.girlsN] },
+    { id: "boy", icon: "🧢", title: "Kept it up", how: "Stay together with a girl on the boy-clothes path.", got: (S) => S.together > 0 },
+    { id: "boyAll", icon: "🧥", title: "Every boy-clothes path", how: "Finish every girl's boy-clothes path.", prog: (S) => [S.m3Read, S.m3N] },
+    { id: "jess", icon: "🍸", title: "Friday drinks", how: "Finish Jess's story.", got: (S) => S.jessDone },
+    { id: "bf", icon: "💜", title: "Six months", how: "Finish {bf}'s story.", got: (S) => S.bfDone },
+  ];
+  const earned = (a, S) => { if (a.prog) { const [n, all] = a.prog(S); return all > 0 && n >= all; } return !!a.got(S); };
+  // Earned achievements are kept (with the day), so replaying a chapter differently never takes one away.
+  // `silent` on load: progress from before achievements existed is filled in without a pile of toasts.
+  function checkAwards(silent) {
+    try {
+      const S = snapshot(); const have = store.get("awards", {}); const fresh = [];
+      AWARDS.forEach((a) => { if (!have[a.id] && earned(a, S)) { have[a.id] = bneDate(); fresh.push(a); } });
+      if (!fresh.length) return;
+      store.set("awards", have);
+      if (!silent) toast(fresh);
+      if (!$("#tab-scrap").hidden) renderScrap();
+    } catch {}
+  }
+  let toastT = null;
+  function toast(list) {
+    const t = $("#toast"); if (!t) return;
+    t.classList.add("on");
+    t.innerHTML = `<span class="muted">${list.length > 1 ? list.length + " achievements" : "Achievement"} unlocked · in your Scrapbook</span><b>${list.map((a) => esc(a.icon + " " + fill(a.title))).join(", ")}</b>`;
+    clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("on"), 4500);
+  }
+
+  // The Scrapbook's notes: every "Worth remembering" and every one-liner under the bars, from chapters he's read.
+  function scrapItems() {
+    const d = storyDone(); const out = [];
+    ROUTES.forEach((r) => allRouteChapters(r.id).forEach((i) => {
+      const c = C.story[i]; if (!d[c.id]) return;
+      if (c.debrief) out.push({ r, c, kind: "note", text: c.debrief });
+      if (c.gaydarSays) out.push({ r, c, kind: "says", text: c.gaydarSays });
+    }));
+    return out;
+  }
+  function renderNotes() {
+    const box = $("#scrapNotes"); if (!box) return;
+    const rf = store.get("scrapF", ""), kf = store.get("scrapK", "");
+    const items = scrapItems().filter((x) => (!rf || x.r.id === rf) && (!kf || x.kind === kf));
+    box.innerHTML = items.length ? `<ul class="notes">${items.map((x) => `<li class="${x.kind}"><span class="src">${esc(fill(x.r.name))} · ${esc(fill(x.c.title))}${x.kind === "says" ? " · what she said" : ""}</span><p>${x.kind === "says" ? `"${esc(fill(x.text))}"` : esc(fill(x.text))}</p></li>`).join("")}</ul>`
+      : `<p class="muted" style="margin:0">Nothing here yet. Finish a chapter and what's worth remembering from it lands here.</p>`;
+  }
+  function renderScrap() {
+    const box = $("#tab-scrap");
+    try {
+      const S = snapshot(), have = store.get("awards", {}), items = scrapItems();
+      const got = AWARDS.filter((a) => have[a.id]).length;
+      // Filters only offer the routes he has notes from; a stale saved filter falls back to everything.
+      const rids = ROUTES.filter((r) => items.some((x) => x.r === r));
+      if (store.get("scrapF", "") && !rids.some((r) => r.id === store.get("scrapF", ""))) store.set("scrapF", "");
+      const rf = store.get("scrapF", ""), kf = store.get("scrapK", "");
+      const lines = [];
+      lines.push(`You said it out loud in <b>${S.saidNow} of ${S.bigN}</b> big scenes${S.bigPlayed && S.bigPlayed < S.bigN ? ` (you've played ${S.bigPlayed})` : ""}${S.saidEver > S.saidNow ? `, and ${S.saidEver} if you count replays` : ""}.`);
+      if (S.criedNow) lines.push(`You cried in <b>${S.criedNow}</b> of them, and the girls looked after you every time.`);
+      if (S.tickPlayed) lines.push(`You kept a straight face in <b>${S.heldNow} of ${S.tickPlayed}</b> tickle scenes you've played.`);
+      if (S.m2Played) lines.push(`You kept the boy clothes up on <b>${S.keptNow} of ${S.m2Played}</b> second dates.`);
+      if (S.dates) { const [look, n] = Object.entries(S.looks).sort((a, b) => b[1] - a[1])[0]; lines.push(`Your go-to: the <b>${look}</b> (${n} of ${S.dates} dates).`); }
+      if (S.oAll) lines.push(`Outfits tried: <b>${S.o} of ${S.oAll}</b>.`);
+      const chip = (attr, v, label, on) => `<button type="button" data-${attr}="${esc(v)}" aria-pressed="${on}">${esc(label)}</button>`;
+      box.innerHTML = `<div class="card"><h2>Your numbers</h2><div class="stats">` +
+        [[`${S.read}/${S.total}`, "chapters read"], [`${S.e}/${S.eAll}`, "endings found"], [`${S.saidEver}/${S.bigN}`, "big scenes where you've said it"], [`${got}/${AWARDS.length}`, "achievements"]]
+          .map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("") +
+        `</div><ul class="lines">${lines.map((l) => `<li>${l}</li>`).join("")}</ul><p class="muted" style="margin:10px 0 0">Big-scene and tickle numbers count how each one went the last time you played it.</p></div>` +
+        `<div class="card"><h2>Achievements · ${got} of ${AWARDS.length}</h2><ul class="awards">` +
+        AWARDS.map((a) => {
+          const on = !!have[a.id]; const p = a.prog ? a.prog(S) : null;
+          const right = on ? `<span class="when">${esc(prettyDate(have[a.id]))}</span>` : p ? `<span class="tag">${Math.min(p[0], p[1])}/${p[1]}</span>` : `<span class="tag">Not yet</span>`;
+          return `<li class="${on ? "on" : "off"}"><span class="avatar" aria-hidden="true">${a.icon}</span><span class="meta"><b>${esc(fill(a.title))}</b><span>${esc(fill(a.how))}</span></span>${right}<span class="sr-only">${on ? "Earned" : "Not earned yet"}</span></li>`;
+        }).join("") + `</ul></div>` +
+        `<div class="card" id="scrapNotesCard"><h2>Worth remembering</h2>` +
+        (items.length ? `<div class="chips" role="group" aria-label="Show notes from">${chip("f", "", "Everyone", !rf)}${rids.map((r) => chip("f", r.id, fill(r.name), rf === r.id)).join("")}</div>` +
+          `<div class="chips" role="group" aria-label="Show">${chip("k", "", "Both", !kf)}${chip("k", "note", "Worth remembering", kf === "note")}${chip("k", "says", "What she said", kf === "says")}</div>` : "") +
+        `<div id="scrapNotes"></div></div>`;
+      renderNotes();
+      // Filters redraw only the notes, so focus stays on the chip he pressed.
+      box.querySelectorAll(".chips button").forEach((b) => b.addEventListener("click", () => {
+        const key = b.dataset.f != null ? "f" : "k";
+        store.set(key === "f" ? "scrapF" : "scrapK", b.dataset[key]);
+        b.parentElement.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+        renderNotes();
+      }));
+    } catch { box.innerHTML = `<p class="muted">The Scrapbook couldn't load. Your progress is safe; reload to try again.</p>`; }
+  }
+
+  // A route's profile card: who she is, the guys (once you've met them), how her big scene went and her last read on you.
+  function openProfile(rid) {
+    const r = ROUTES.find((x) => x.id === rid); const dlg = $("#profile"); if (!r || !dlg) return;
+    try {
+      const d = storyDone(), outs = store.get("outcomes", {}), who = fill(r.name), his = rid === "bf";
+      const ch = routeChapters(rid).map((i) => C.story[i]); const read = ch.filter((c) => d[c.id]);
+      let e = 0, eAll = 0, o = 0, oAll = 0;
+      ch.forEach((c) => { const f = chapterFound(c); e += f.e; eAll += f.eAll; o += f.o; oAll += f.oAll; });
+      const facts = [];
+      const fact = (k, v, hush) => facts.push(`<dt>${esc(k)}</dt><dd${hush ? ' class="hush"' : ""}>${esc(v)}</dd>`);
+      fact("Chapters read", `${read.length} of ${ch.length}`);
+      const since = read.map((c) => d[c.id]).filter((x) => typeof x === "string").sort()[0];
+      if (since) fact("First date", prettyDate(since));
+      if (eAll > 1) fact("Endings found", `${e} of ${eAll}`);
+      if (oAll > 1) fact("Outfits tried", `${o} of ${oAll}`);
+      const P = PEOPLE[rid];
+      if (P) {
+        fact(P.rival[2] || "The other guy", d[P.rival[1]] ? P.rival[0] : "Not met yet", !d[P.rival[1]]);
+        fact("Ends up with", d[P.ends[1]] ? P.ends[0] : "You'll find out", !d[P.ends[1]]);
+      }
+      const scene = (list, label) => {
+        const c = list.find((x) => x.route === rid); if (!c) return "";
+        const ev = [...everOutcomes(c)];
+        const cur = d[c.id] && outs[c.id];
+        fact(label, cur ? outcomeLabel(c, cur) : "Not played yet", !cur);
+        return ev.length > 1 ? `<p class="muted" style="margin:8px 0 0">${esc(fill(c.title))}, every way you've played it:</p><div class="tagrow">${ev.map((v) => `<span class="tag">${esc(outcomeLabel(c, v))}</span>`).join("")}</div>` : "";
+      };
+      let extra = scene(BIG, "Her big scene") + scene(TICKLE, "Tickle scene");
+      if (r.fork) {
+        const m3 = M3.find((x) => x.route === rid);
+        fact("Boy clothes", m3 && d[m3.id] && outs[m3.id] ? outcomeLabel(m3, outs[m3.id]) : mascRoute(r) ? "On that path now" : "Not tried", !(m3 && d[m3.id]) && !mascRoute(r));
+      }
+      // Her latest read on you: the furthest chapter he's read that has the bars.
+      let bars = "";
+      for (let k = read.length - 1; k >= 0 && !bars; k--) {
+        const c = read[k], b = lastBars(c); if (!b) continue;
+        bars = `<h3>${his ? "His" : "Her"} last read on you</h3><p class="muted" style="margin:0 0 6px">After ${esc(fill(c.title))}, the last time you played it.</p><div class="gaydar">${meter("gay", b.g, `How gay ${who} thinks you are`, gaydarLabel(b.g))}${c.friend ? "" : meter("spark", b.into, `How much ${who} fancies you`, sparkLabel(b.into))}</div>`;
+      }
+      if (!bars && read.length) bars = `<p class="muted" style="margin:12px 0 0">Play one of ${his ? "his" : "her"} chapters again and ${his ? "his" : "her"} last read on you shows here.</p>`;
+      const notes = scrapItems().filter((x) => x.r === r).length;
+      dlg.innerHTML = `<form method="dialog"><div class="row" style="justify-content:space-between;flex-wrap:nowrap"><div class="row" style="flex-wrap:nowrap;min-width:0"><span class="avatar" aria-hidden="true">${esc(fill(r.avatar || r.name[0]))}</span><b id="profName" style="font-size:18px;overflow-wrap:anywhere">${esc(who)}</b></div><button class="icon-btn">Close</button></div></form>` +
+        `<p class="muted" style="margin:10px 0 0">${esc(fill(r.intro || r.blurb))}</p><dl class="facts">${facts.join("")}</dl>${extra}${bars}` +
+        (notes ? `<div class="row" style="margin-top:14px"><button type="button" class="btn ghost toScrap">${his ? "His" : "Her"} notes in your Scrapbook (${notes})</button></div>` : "");
+      const go = dlg.querySelector(".toScrap");
+      if (go) go.addEventListener("click", () => { store.set("scrapF", rid); store.set("scrapK", ""); dlg.close(); showTab("scrap"); const n = $("#scrapNotesCard"); if (n) n.scrollIntoView({ block: "start" }); focusIn(n); });
+      dlg.showModal();
+    } catch {}
+  }
+  setTimeout(() => checkAwards(true), 0);
+
   // ---------- Settings ----------
   $("#settingsBtn").addEventListener("click", () => {
     $("#nameInput").value = store.get("name", "");
@@ -529,6 +804,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   $("#settings").addEventListener("close", () => {
     const y = scrollY;
     if (showing.kind === "list") renderStoryList(false); else if (showing.kind === "route") renderRoute(showing.rid, false);
+    if (!$("#tab-scrap").hidden) renderScrap();
     scrollTo(0, y);
   });
 
@@ -594,17 +870,16 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   function confStop() { clearTimeout(confTimer); confTimer = null; }
   document.addEventListener("visibilitychange", () => { if (confOn()) confStart(); else confStop(); });
 
+  const TABS = ["story", "conf", "scrap"];
   function showTab(t) {
-    const conf = t === "conf";
-    $("#tab-story").hidden = conf; $("#tab-conf").hidden = !conf;
-    $("#tabBtn-story").setAttribute("aria-selected", String(!conf));
-    $("#tabBtn-conf").setAttribute("aria-selected", String(conf));
+    if (!TABS.includes(t)) t = "story";
+    TABS.forEach((k) => { $("#tab-" + k).hidden = k !== t; $("#tabBtn-" + k).setAttribute("aria-selected", String(k === t)); });
     store.set("tab", t);
-    if (conf) { $("#confBox").innerHTML = ""; confStart(); } else confStop();
+    if (t === "conf") { $("#confBox").innerHTML = ""; confStart(); } else confStop();
+    if (t === "scrap") { renderScrap(); $("#toast").classList.remove("on"); } // redrawn each visit; the toast has done its job
     scrollTo(0, 0);
   }
-  $("#tabBtn-story").addEventListener("click", () => showTab("story"));
-  $("#tabBtn-conf").addEventListener("click", () => showTab("conf"));
+  TABS.forEach((k) => $("#tabBtn-" + k).addEventListener("click", () => showTab(k)));
 
   // ---------- Hide ----------
   $("#hideBtn").addEventListener("click", () => { $("#settings").open && $("#settings").close(); $("#cover").hidden = false; document.title = "Groceries"; confStop(); });
@@ -622,7 +897,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   // The app scrolls each view itself; the browser's restore on reload would hide the Continue card.
   try { history.scrollRestoration = "manual"; } catch {}
   renderStoryList();
-  if (store.get("tab", "story") === "conf") showTab("conf");
+  if (store.get("tab", "story") !== "story") showTab(store.get("tab", "story"));
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
 </script>
