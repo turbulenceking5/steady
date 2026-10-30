@@ -14604,7 +14604,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Boy clothes: a flannel and jeans",
-          "thinks": "Flannel and jeans so I thought ok, normal guy, finally. Then he got the meat dress before Brooke had finished reading it out and she kicked me under the table so hard.",
+          "thinks": "Flannel and jeans so I thought ok good, a normal one. Then he got the meat dress before Brooke had even finished the question and she kicked me under the table so hard I've got a mark",
           "masc": true,
           "spark": 10,
           "gaydar": -5,
@@ -14612,7 +14612,7 @@ window.CONTENT = {
         },
         {
           "label": "A fitted shirt and a bit of brow gel",
-          "thinks": "His brows were done. Better than mine. Brooke leaned over and went Zo, his brows, and I said it's just gel, and she said that's what they all say.",
+          "thinks": "His brows were done and they were better than mine. Brooke leaned over and went Zo, his brows, and I said it's just gel and she said that's what they all say and I didn't really have anything back",
           "intro": "Zoe's a dental nurse and does a pub trivia night with her friends Brooke and Tash every Wednesday. Her team was one short and Brooke's work friend knew you, so here you are. A fitted shirt and a bit of brow gel. You got most of the pop culture round and none of the sport.",
           "them": [
             "also brooke wants to know if your brows are done. like professionally. i said probably lol"
@@ -14620,8 +14620,8 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "He knew my top was H&M from across the table. First try. Brooke said she's never met a straight guy who could pick H&M and I haven't either, I've thought about it.",
-        "I still asked him out lol. Brooke says I'm about to date a gay guy and I told her he's just into fashion. He's not just into fashion. I know that."
+        "He knew my top was H&M from across the table, first go. Brooke said she's never met a guy who could do that and I've been lying here trying to think of one and I can't",
+        "I still asked him out lol. Brooke goes you're about to date a gay guy and I said he's just into fashion, which he isn't, he's gay, I just liked him at the start of the night"
       ],
       "them": [
         "hey its zoe from trivia!! brooke gave me your number hope thats ok",
@@ -14865,7 +14865,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Jeans, a tee and a little lip balm",
-          "thinks": "Tinted lip balm. On a Sunday, at mine, for nobody. Brooke's going to ask if it was tinted and I'm going to have to say yes Brooke it was tinted.",
+          "thinks": "He had tinted lip balm on, on a Sunday, at mine, with nobody to see it. Brooke's definitely going to ask if it was tinted and it was, it was pinker than his actual lips",
           "gaydar": -5,
           "intro": "A month in. Zoe's place in Toowong on a Sunday. Jeans, a tee, a bit of tinted balm. She's trying to decide what to wear to Brooke's barbecue next week and she's thrown half her wardrobe on the bed.",
           "them": [
@@ -14876,7 +14876,7 @@ window.CONTENT = {
         },
         {
           "label": "Shorts, a crop tee and your toenails painted lilac",
-          "thinks": "Short shorts, a crop and lilac toes he did last night just to see. That's a gay guy's Sunday outfit. I sat on the far end of the bed and Brooke's voice in my head went, Zo.",
+          "thinks": "Short shorts and a crop and lilac toes he did last night just to see what they'd look like. That's what a gay guy wears on a Sunday and I sat down the far end of the bed and he didn't even notice",
           "gaydar": 5,
           "intro": "A month in. Zoe's place in Toowong on a Sunday. Short shorts, a crop tee, and lilac toenails you painted last night \"just to see\". Zoe's trying to decide what to wear to Brooke's barbecue next week and she's thrown half her wardrobe on the bed. She sees your toes and stops.",
           "them": [
@@ -14890,9 +14890,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "He was off the chair holding my floral sundress before I'd even finished saying Brooke's barbecue. That fast. Any straight guy I've dated would still be on his phone.",
-        "Brooke says you can tell by how fast a guy goes for your wardrobe. He went for it in about four seconds. I don't fancy him when he's like that, I just want him to do my hair.",
-        "I wanted him to look at me in the dress and he looked at the dress. He's gay. I'm saying it in my head so I don't have to say it to Brooke."
+        "He was off the chair holding my floral sundress before I'd even finished saying Brooke's barbecue. I've never had a guy get up that fast for anything of mine, he's gay, he's so obviously gay",
+        "Brooke always says you can tell by how fast a guy goes for your wardrobe and he went for mine in like four seconds. I don't fancy him when he's like that. I kind of just wanted him to do my hair",
+        "I wanted him to look at me in the dress and he was looking at the dress the whole time. He's gay. I just haven't said it to Brooke yet because she'll be so smug about it"
       ],
       "them": [
         "Okay, help. I have nothing to wear. Literally nothing. Brooke's barbecue is going to be all her uni friends and they're all so pretty.",
@@ -14995,9 +14995,9 @@ window.CONTENT = {
       "gaydarSays": "He got every pop culture question and none of the sport. Again. Tash wants him on the team permanently. For the pop culture.",
       "intro": "Wednesday trivia at the pub with Zoe, Brooke and Tash. You're on the team now. You wore a fitted shirt and a bit of brow gel. Round four is sport.",
       "thinks": [
-        "Tash said you're the boy and he just stared at us. He's never heard of sport. Babe you were the least boy at that table and I was sitting at it.",
-        "Brooke says a guy who knows every pop culture answer and zero sport is gay, it's basically science. I said that's so offensive. Then I sat there and agreed with her.",
-        "I called him babe the way I call Tash babe. Because that's what he is. He's a Tash. I don't want to kiss Tash."
+        "Tash said you're the boy, you do the sport ones, and he just stared at us. He didn't know any of them and I was sitting there going babe even I know that one",
+        "Brooke says a guy who knows every pop culture answer and no sport is gay, like it's science. I said that's so offensive and then I sat there agreeing with her in my head for the rest of the night",
+        "I called him babe tonight the exact same way I say it to Tash and I don't know when that started. I don't want to kiss him. I haven't wanted to for a while"
       ],
       "them": [
         "\"Okay,\" Tash says. \"Sport. {name}, it's on you, you're the boy.\"",
@@ -15093,9 +15093,9 @@ window.CONTENT = {
       "gaydarSays": "Brooke said tickle the sport answers out of him. He doesn't know any sport answers.",
       "intro": "Saturday night at Zoe's place in Toowong, just the two of you. She's downloaded a trivia app \"to train you on sport\". You're on her couch with your feet in her lap. Your toes are still lilac from the weekend.",
       "thinks": [
-        "His feet were in my lap with the lilac still on and I didn't even think about it. My gay friend's feet on my couch. That's what it felt like and I'm his girlfriend.",
-        "Saturday night, just us, my couch, and I didn't want to kiss him once. Brooke didn't even have to say it. I just sat there knowing he's gay.",
-        "Brooke asked how it went and I said it was a sleepover. She went, Zo, a sleepover with who. With my gay friend. I didn't send that bit."
+        "His feet were in my lap with the lilac still on and I didn't even think about it until after, it just felt like having my gay friend over. I'm meant to be his girlfriend",
+        "It was just us on my couch all night and I didn't want to kiss him once, not even when he was being cute. Brooke didn't need to say anything this time, he's gay and I know he's gay",
+        "Brooke asked how it went and I typed it was like a sleepover with my gay friend and then deleted it and just said it was good"
       ],
       "them": [
         {
@@ -15245,9 +15245,9 @@ window.CONTENT = {
   "irl": true,
   "intro": "Five weeks in. Zoe's trivia team is practising at Brooke's place, because it's a shoes-off house and Brooke's very serious about trivia. You're still wearing the lilac from the weekend. Brooke's brother Tyler is here. He's been texting Zoe \"u up\" since before you were on the scene.",
   "thinks": [
-    "Lilac. He did them himself. Brooke raised her eyebrows and I said they're good right, and they are good, they're really good, they're gay guy good.",
-    "The noise when Tyler got his foot. I've dated guys who play rugby and none of them have ever made that noise. He made it in front of all my friends and didn't even care.",
-    "I kept looking at Tyler tonight and I didn't feel bad, because my boyfriend's gay. There. I thought it in a full sentence."
+    "He did the lilac himself. Brooke raised her eyebrows at me and I said they're good right, and they are, they're neater than mine and I've been doing mine for years, he's so gay",
+    "The noise he made when Tyler got his foot. I've been with rugby guys and never heard any of them make a noise like that, and he did it in front of everyone and didn't seem to care that much",
+    "I kept looking at Tyler tonight and I didn't even feel bad about it because my boyfriend's gay. I thought it like that, like an actual sentence, I don't think I'd done that before"
   ],
   "them": [
     {
@@ -15335,9 +15335,9 @@ window.CONTENT = {
       "gaydarSays": "Tyler had your shoes off before I'd put my drink down. In New Farm Park, {name}.",
       "intro": "A week after trivia at Brooke's. Tash's birthday picnic in New Farm Park, on a big rug under the fig trees. You wore white sneakers and ankle socks and you're keeping them on. Tyler's here, lying on the rug in a singlet. He's been looking at your sneakers since you sat down.",
       "thinks": [
-        "He wore ankle socks to a picnic to hide lilac toes and then said they weren't lilac. Babe. They were lilac. You don't get to hide a pedicure in socks and still be straight.",
-        "His feet are so small. Smaller than mine. Brooke says she's never seen a straight guy with feet that dainty and I said that's not a thing, and it's not, but also look at them.",
-        "Brooke said, so that's it then. And I said yeah. He's gay and it's done and I said it out loud on Brooke's rug."
+        "He wore ankle socks to a picnic to hide lilac toes and then said they weren't lilac when they were obviously lilac. You can't hide a pedicure in socks babe, it just makes it worse",
+        "His feet are so small, smaller than mine. Brooke said she's never seen a guy with feet that dainty and I said that's not a real thing but I kept looking at them after and they really are tiny",
+        "Brooke said so that's it then and I said yeah, he's gay, out loud, sitting on her rug. Then we just sat there for a bit"
       ],
       "them": [
         {
@@ -15640,7 +15640,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Board shorts and a tee, but her platforms and lilac toes",
-          "thinks": "Board shorts like Jayden and then my platforms and lilac toes on the bottom. Babe you can't do half. The top half was trying so hard and the bottom half was so gay.",
+          "thinks": "Board shorts like Jayden's and then my platforms and the lilac toes under that. Like babe you can't do half, everyone looked at the shoes first",
           "gaydar": -3,
           "intro": "Six weeks with Zoe. Brooke's barbecue in Ashgrove, a hot Sunday, everyone round the pool. Board shorts and a plain tee, like Jayden. Then Zoe's white platform sandals and lilac toes, which is all anyone's looked at. Jayden's on the tongs. Tash is in the pool on a pink flamingo. Brooke has been looking at you over her sunglasses since you got here.",
           "them": [
@@ -15651,7 +15651,7 @@ window.CONTENT = {
         },
         {
           "label": "Floral shorts, a cropped tee, her platforms, lilac toes, gloss",
-          "thinks": "Floral shorts, a crop, my platforms and gloss. I spent all week worried about Brooke's pretty uni friends and he was prettier than all of them. Next to me. My boyfriend.",
+          "thinks": "He had floral shorts and a crop on with my platforms and gloss. I was worried all week about Brooke's pretty uni friends and he was prettier than all of them, standing next to me, and I'm his girlfriend",
           "them": [
             {
               "note": "Zoe's eyes go to the gloss and then down to the drink in her hand, and stay there."
@@ -15660,7 +15660,7 @@ window.CONTENT = {
         },
         {
           "label": "Her floral sundress, her platforms, lilac toes, gloss and lashes",
-          "thinks": "MY sundress. He wore my actual sundress to Brooke's and did lashes. Tash said it out loud and I couldn't even look up. My boyfriend's in my dress and he's gay, he's so gay.",
+          "thinks": "He wore my actual sundress to Brooke's with lashes. Tash said it out loud and I couldn't look up. He's gay, he's so gay, he's wearing my dress",
           "gaydar": 2,
           "intro": "Six weeks with Zoe. Brooke's barbecue in Ashgrove, a hot Sunday, everyone round the pool. Zoe's floral sundress, her white platform sandals, lilac toes, gloss and lashes. Jayden's on the tongs. Tash is in the pool on a pink flamingo. Brooke has been looking at you over her sunglasses since you got here.",
           "them": [
@@ -15675,9 +15675,9 @@ window.CONTENT = {
       ],
       "debrief": "Getting asked about yourself in front of a whole barbecue is hard, and harder when the person you're with can't ask it herself. You didn't owe them an answer. Crying at someone's barbecue is allowed too. Once it was out, that whole pool was on your side.",
       "thinks": [
-        "He hugs me with two pats on the back. Brooke does that. Brooke hugs Jayden properly and pats me. So.",
-        "He's borrowed four of my tops and never once tried to take one off me. Six weeks. I kept telling Brooke he's shy.",
-        "Brooke said he's gay Zo, and you knew, and I did know. I knew at trivia. I knew at the meat dress honestly."
+        "He hugs me with like two pats on the back, the way Brooke hugs me, and Brooke hugs Jayden properly so I don't know why I ever thought that was fine",
+        "He's borrowed four of my tops and never once tried to take one off me, six weeks and not once. I kept telling Brooke he's shy and she kept giving me that look",
+        "Brooke said he's gay Zo and you knew, and I did know. I think I knew at trivia, maybe the meat dress, I don't know, a while"
       ],
       "them": [
         {
@@ -16002,8 +16002,8 @@ window.CONTENT = {
                   "after": "Brooke posts a photo that night: you in a flamingo towel on the pool step, Zoe's head on your shoulder, Jayden holding up a plate of sausages behind you. Caption: \"the team 💕\". Tash comments: \"best toes in ashgrove and its not close\".",
                   "outcome": "cried",
                   "thinks": [
-                    "Jayden said something nice about the shoes and he just went. Over Jayden being nice to him. If my boyfriend cries because Brooke's boyfriend likes his platforms, I think we have our answer.",
-                    "On the pool step in the flamingo towel I didn't feel like his girlfriend at all. He's our gay best friend. He's been gay the whole time, I was just the girl standing in the way."
+                    "Jayden said something nice about the shoes and he just started crying, over Jayden being nice to him. I was standing right there and it wasn't even about me",
+                    "On the pool step in the flamingo towel I didn't feel like his girlfriend at all, I felt like Tash, like we were all just looking after our gay friend. I think he's been gay the whole time and I kept saying he's shy"
                   ]
                 },
                 {
@@ -16281,7 +16281,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Board shorts and a tee",
-          "thinks": "Board shorts and a tee. He went normal and it looked wrong on him. Everyone here has seen him in my sundress, babe, the board shorts aren't fooling anyone.",
+          "thinks": "Board shorts and a tee and he went normal and it just looked wrong on him. Everyone here has seen him in my sundress babe, I don't know who the board shorts are for",
           "gaydar": -2,
           "intro": "Two months later. Brooke's next barbecue. Brooke invited you herself (\"we're friends now, deal with it\"). Board shorts, a tee. Zoe's there with a guy in a trucker cap and a grease-stained tank top who's already manning the grill. Kyle. Mechanic.",
           "them": [
@@ -16292,7 +16292,7 @@ window.CONTENT = {
         },
         {
           "label": "Your own floral sundress, platforms and lilac toes",
-          "thinks": "His OWN floral sundress, his own platforms, lilac toes. He went and bought them. Brooke said she's never been prouder of anyone and same, he looked so gay and so happy.",
+          "thinks": "His own floral sundress and his own platforms and the lilac toes, he actually went and bought them. Brooke said she's never been prouder of anyone and I kind of felt the same, he looked so happy and so gay",
           "gaydar": 1,
           "intro": "Two months later. Brooke's next barbecue. You came in your OWN floral sundress this time, your own platforms and lilac toes. Zoe's there with a guy in a trucker cap and a grease-stained tank top who's already manning the grill. Kyle. Mechanic.",
           "them": [
@@ -16306,9 +16306,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "Kyle said yeah when I asked about my top. Just yeah. {name} would've known the brand and the range and fixed my hoops. Because he's gay. I dated a gay guy for six weeks and called it a relationship.",
-        "{name} was the prettiest person at the barbecue. A guy. In front of my new boyfriend. And I don't fancy him even a tiny bit, he's so gay it's not even a question anymore.",
-        "Brooke wants to set him up with a guy from her work. I said yes before she finished. He needs a man, Brooke. A nice one. With arms."
+        "I asked Kyle about my top and he said yeah. {name} would've known the brand and which range and he'd have fixed my hoops without asking, he always did that, he's gay, I know that's why",
+        "I don't fancy {name} even a tiny bit anymore and I kept checking, like standing next to Kyle and looking over at him, and there was nothing there. He's so gay it's not even a question anymore",
+        "Brooke wants to set him up with a guy from her work and I said yes before she'd finished. I think he needs a man, like a nice one, she showed me a photo and he's got good arms so"
       ],
       "them": [
         "Hi. Oh my god, hi. You came.",
@@ -16442,7 +16442,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Boy clothes: a navy shirt and chinos",
-          "thinks": "Navy shirt and chinos, very lawyer, and then he talked about Taylor for forty minutes. The chinos were lying. I'm screaming.",
+          "thinks": "Navy shirt and chinos, very lawyer, and then forty minutes on Taylor. I sort of forgot about the chinos after that, I was just watching him talk with his hands",
           "masc": true,
           "spark": 10,
           "gaydar": -5,
@@ -16450,7 +16450,7 @@ window.CONTENT = {
         },
         {
           "label": "A cream shirt, your rings and a bit of tinted balm",
-          "thinks": "Cream shirt, rings, and the balm was tinted. Tinted. I noticed, it's literally my job. Not one straight guy at my firm knows balm comes tinted.",
+          "thinks": "Cream shirt and rings and the balm was tinted, I clocked it straight away because noticing things is my job. The guys at my firm use the chapstick from reception",
           "intro": "Sophie: a paralegal, calm, funny in a dry way. You met through Dani's work. First date: dinner at Riverbar at Eagle St. A cream shirt, your rings and a bit of tinted balm. She wore a black jumpsuit and gold earrings and noticed your rings first thing.",
           "them": [
             "also your balm was tinted. i noticed. i notice everything, it's literally my job lol"
@@ -16458,8 +16458,8 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "He has a favourite Taylor era and a reason for it. With dates. Kirra's going to ask if he's straight and I'm going to say totes and she's going to laugh at me.",
-        "I want a second date, which is so stupid, because a man who knows the eras in order is a gay man. Stop. I know. I'm going anyway."
+        "He has a favourite Taylor era and a whole reason for it, with dates. Kirra's going to ask if he's straight and I'll say totes and she's going to laugh at me, she laughs at me about everything",
+        "I want a second date which is so stupid, a man who knows all the eras in order is a gay man and I know that. I already said Friday though"
       ],
       "them": [
         "Hi, thanks for tonight. I normally make people wait three days for this text but whatever. I'd like to do it again.",
@@ -16702,7 +16702,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Sweatpants and a hoodie. Cosy.",
-          "thinks": "Sweatpants and a hoodie. The most normal thing he's ever worn and he still sat on my couch with his legs tucked under him and eyed my polish the second he sat down.",
+          "thinks": "Sweatpants and a hoodie, the most normal thing he's ever worn, and he still sat with his legs tucked under him and looked at my polish the second he sat down",
           "gaydar": -5,
           "intro": "Six weeks in. Movie night at Sophie's flat in Paddington. You came in sweatpants and a hoodie. She's got a face mask on, a bottle of wine open and her nail polish laid out on the coffee table like she's planning something.",
           "them": [
@@ -16713,7 +16713,7 @@ window.CONTENT = {
         },
         {
           "label": "Sweatpants, a cropped hoodie and a lip oil",
-          "thinks": "A cropped hoodie and lip oil. To movie night. His lips were glossier than mine and I had a face mask on. A cropped hoodie, {name}. That's a gay boy outfit, I'm screaming.",
+          "thinks": "A cropped hoodie and lip oil to movie night. His lips were glossier than mine and I had a face mask on so I looked awful next to him, I'm screaming, he's so gay",
           "intro": "Six weeks in. Movie night at Sophie's flat in Paddington. You came in sweatpants, a cropped hoodie and a lip oil. She's got a face mask on, a bottle of wine open and her nail polish laid out on the coffee table like she's planning something.",
           "them": [
             {
@@ -16723,9 +16723,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "I got the pink out as a joke and he stopped hearing anything else I said. Couldn't take his eyes off it. Any straight guy would've laughed and gone back to his phone.",
-        "Mamma Mia or Devil Wears Prada and he'd seen both a hundred times. My last boyfriend thought Meryl Streep played tennis.",
-        "I don't fancy him when he's looking at his nails. He's always looking at his nails. Stop. He's gay and I'm doing his toes next week."
+        "I got the pink out as a joke and he stopped hearing anything else I said, he just kept looking at the bottle. My last boyfriend would've laughed and gone back to his phone",
+        "Mamma Mia or Devil Wears Prada and he'd seen both a hundred times. My last boyfriend hadn't seen either and didn't want to and I think I liked that more than I realised",
+        "I don't fancy him when he's looking at his nails and he's always looking at his nails. He's gay. I'm doing his toes next week anyway, I already said I would"
       ],
       "them": [
         "Okay. Mamma Mia or The Devil Wears Prada. You choose.",
@@ -16963,9 +16963,9 @@ window.CONTENT = {
       "gaydarSays": "I cross-examined his feet. His feet answered every question.",
       "intro": "The week after movie night. Sophie said she'd do your toes properly this time, so it's Sunday at her flat in Paddington: a towel on the coffee table, a foot file, cuticle oil and a bottle of hot pink. Just you two. Your foot's in her lap.",
       "thinks": [
-        "He knew what cuticle oil was. He had a view on the file. My last boyfriend cut his toenails in the shower, that's what a straight guy's feet look like, and these are not those feet.",
-        "Hot pink was the plan the whole time and he never once said isn't that a bit much. He wanted it. He wanted hot pink toes. Totes gay. I'm screaming into a cushion.",
-        "Nearly three months and I've done his nails more times than I've kissed him. I don't want to kiss him. I want to do his cuticles. That's the answer to the real question and I didn't even have to ask it."
+        "He knew what cuticle oil was and he had an opinion on the file. My last boyfriend cut his toenails in the shower and left them there. {name} has nicer feet than me and he knows it",
+        "Hot pink was the plan the whole time and he never once said isn't that a bit much. He wanted hot pink toes, he was excited about it, and now I'm lying here screaming into a cushion about it",
+        "Nearly three months and I've done his nails more times than I've kissed him. I don't want to kiss him, I haven't for ages, I'd rather do his cuticles and I think he'd rather that too"
       ],
       "them": [
         {
@@ -17086,9 +17086,9 @@ window.CONTENT = {
   "irl": true,
   "intro": "Two months in. Game night at Kirra's flat. Socks off at the door, Kirra's rule, because of the rug. Your toes are hot pink. Sophie did them properly the week after movie night. Kirra's flatmate Ethan is a personal trainer, and Sophie mentioned twice in the car that he's \"just a friend\". Kirra has her phone out. Kirra always has her phone out.",
   "thinks": [
-    "Hot pink toes at Kirra's door and Kirra screamed and he looked so pleased. So pleased. He picked that colour. My boyfriend picked hot pink.",
-    "Ethan's a PT and has never said obsessed in his life and I couldn't stop looking at him. Because Ethan's straight. Because one of us should be dating a straight guy.",
-    "Kirra's got the whole thing on video, the noise he made, and she's going to post it, and anyone who watches it for two seconds will know. I knew before the two seconds."
+    "Hot pink toes at Kirra's door and Kirra screamed and he looked so pleased with himself. He picked that colour, my boyfriend picked hot pink and was proud of it",
+    "I couldn't stop looking at Ethan all night. He's a PT and I've never once heard him say obsessed. I don't even feel bad, my boyfriend's gay and one of us should get to look at someone",
+    "Kirra's got the whole thing on video, the noise he made and everything, and she's going to post it. Anyone who watches it is going to know and I knew way before that"
   ],
   "them": [
     {
@@ -17195,9 +17195,9 @@ window.CONTENT = {
       "gaydarSays": "You double-knotted them. Ethan still had them off in about ten seconds.",
       "intro": "Two weeks after game night. Kirra invited you back, \"for a rematch\", and you know what that means. So you've kept your sneakers on and double-knotted them. Ethan's on the couch in his gym gear. Kirra's phone is already out.",
       "thinks": [
-        "He double-knotted his sneakers so nobody would see the pink. Babe, everyone's seen the pink, Kirra's followers have seen the pink. Hiding it is somehow so much gayer, I can't explain it.",
-        "I held his arms while Ethan did his laces. Ethan's the one I was looking at. I think Ethan's the one {name} was trying very hard not to look at too.",
-        "Kirra says he's ticklish and a pushover. He's not a pushover, he's just gay. Super gay. He goes all soft around a guy like Ethan and so do I and that's kind of the whole issue."
+        "He double-knotted his sneakers so nobody would see the pink. Babe everyone's seen the pink, Kirra posted it. Hiding it like that was so much gayer than just having it out",
+        "I held his arms while Ethan did his laces and I was looking at Ethan the whole time. I'm pretty sure {name} was trying really hard not to look at Ethan too and doing a bad job of it",
+        "Kirra says he's ticklish and a pushover. He's not a pushover he's gay, he goes all soft around a guy like Ethan and so do I so I can't even say anything"
       ],
       "them": [
         {
@@ -17497,7 +17497,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Jeans and a tee, last night's hot pink toes",
-          "thinks": "Jeans and a tee and last night's hot pink toes. He thought jeans would make him look straight at brunch. They're my pink toes, babe. They were in the video.",
+          "thinks": "Jeans and a tee and last night's hot pink toes. He thought jeans would make him look straight at brunch, babe they're my pink toes, I did them, they were in the video",
           "gaydar": -2,
           "intro": "Three months with Sophie. Last night you told her you were having a quiet one. You weren't. You went to the Valley with Dani in a crop top, a mini skirt and heeled sandals, and danced with a guy at the Wickham until 1am. Now it's Saturday brunch at Kirra's flat, with Sophie and two girls from Sophie's work. Ethan's at the gym. Socks off at the door, Kirra's rule. Jeans and a plain tee, and last night's hot pink toes. Kirra keeps smiling at you over the hollandaise.",
           "them": [
@@ -17508,7 +17508,7 @@ window.CONTENT = {
         },
         {
           "label": "Linen shorts, a cropped tee, pink toes and glitter you missed",
-          "thinks": "Glitter on his cheekbone from last night that he missed. A quiet one. With glitter. No straight guy I know even owns glitter.",
+          "thinks": "He'd missed a bit of glitter on his cheekbone from last night and he still told me it was a quiet one. I didn't say anything, Kirra saw it first anyway",
           "them": [
             {
               "note": "Sophie spots the glitter on your cheek and goes very still."
@@ -17517,7 +17517,7 @@ window.CONTENT = {
         },
         {
           "label": "The mini skirt from last night, a cardigan, pink toes",
-          "thinks": "He wore the skirt from the video. To brunch. At Kirra's. I'm screaming and not the fun kind, he's so gay he didn't even think to change.",
+          "thinks": "He wore the skirt from the video to brunch at Kirra's. I don't think it even occurred to him to change, he's that gay, he just put it back on",
           "gaydar": 1,
           "intro": "Three months with Sophie. Last night you told her you were having a quiet one. You weren't. You went to the Valley with Dani in a crop top, a mini skirt and heeled sandals, and danced with a guy at the Wickham until 1am. Now it's Saturday brunch at Kirra's flat, with Sophie and two girls from Sophie's work. Ethan's at the gym. Socks off at the door, Kirra's rule. The same mini skirt from last night with a cardigan over a tee, and last night's hot pink toes. Kirra keeps smiling at you over the hollandaise.",
           "them": [
@@ -17532,9 +17532,9 @@ window.CONTENT = {
       ],
       "debrief": "Getting found out on a TV in front of a room is about as public as it gets, and you're allowed to hate it. Crying at brunch in front of people is allowed too. For Sophie the hard bit was the lying, not the skirt.",
       "thinks": [
-        "Quiet one, with a kiss, and then he's in a mini skirt up on his toes with his arms round a guy with a moustache. I'm not even angry about the guy. Of course there's a guy. He's gay.",
-        "He looked so happy in that video. Happier than at any dinner with me. That's what he looks like with a guy and he's never once looked at me like that, and now I know why.",
-        "I knew at movie night. Totes my fault. I'm the one who painted his toes hot pink and kept calling him my boyfriend."
+        "A quiet one with a kiss he said, and then there he is in a mini skirt up on his toes with his arms round a guy with a moustache. I'm not even that angry about the guy, I sort of knew there'd be a guy at some point",
+        "He looked so happy in that video, happier than at any dinner we've had. He's never once looked at me the way he was looking at that guy",
+        "I knew at movie night. It's totes my fault, I'm the one who painted his toes hot pink and kept calling him my boyfriend anyway"
       ],
       "them": [
         {
@@ -17633,8 +17633,8 @@ window.CONTENT = {
                   "after": "Kirra, to Sophie, that night: \"is he ok\" Sophie: \"hes at mine. we're doing face masks\" Kirra: \"is that weird\" Sophie: \"no. its actually so nice\" Kirra: \"im deleting the video\" Kirra: \"im keeping the bit where he says pretty\"",
                   "outcome": "cried",
                   "thinks": [
-                    "He heard himself on the TV going he's SO pretty, about a guy, and just broke. He's never said I'm pretty in that voice. He's never had that voice for me at all.",
-                    "I did his fringe and told him to stop crying and it was the nicest I've been to him in weeks. Because I'm allowed now. He's my gay friend. He was always going to be my gay friend."
+                    "He heard himself on the TV going he's SO pretty about a guy and just broke. He's never said I'm pretty in that voice, I didn't even know he had that voice",
+                    "I did his fringe and told him to stop crying and it was the nicest I've been to him in weeks. It's so much easier being nice to him now he's just my gay friend"
                   ]
                 },
                 {
@@ -17964,7 +17964,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Jeans and a black tee",
-          "thinks": "Jeans and a black tee at the Wickham. He thought that was blending in. Babe, it's a gay bar, the plain tee made you stand out more.",
+          "thinks": "Jeans and a black tee at the Wickham and he thought that was blending in. Babe it's a gay bar, the plain tee made him stand out more than anything",
           "gaydar": -2,
           "intro": "Three months later. You're at the Wickham with Dani on a Friday. Jeans and a black tee. Then Sophie walks in with Kirra and a guy in a navy polo, chinos and boat shoes, holding Sophie's hand. He looks a bit lost. Nathan.",
           "them": [
@@ -17975,7 +17975,7 @@ window.CONTENT = {
         },
         {
           "label": "The mini skirt, heeled sandals, hot pink toes and glitter",
-          "thinks": "The skirt from the video, the heels, the glitter. He's never looked gayer or happier and I've never been more sure I was right to end it.",
+          "thinks": "The skirt from the video and the heels and the glitter. He looked gayer than I've ever seen him and happier too, and I didn't feel bad at all that I ended it",
           "gaydar": 1,
           "intro": "Three months later. You're at the Wickham with Dani on a Friday, in the mini skirt, heeled sandals, hot pink toes and glitter. Then Sophie walks in with Kirra and a guy in a navy polo, chinos and boat shoes, holding Sophie's hand. He looks a bit lost. Nathan.",
           "them": [
@@ -17989,9 +17989,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "Nathan's never been in a gay bar in his life and {name} was already here, with Dani, on a Friday. Obviously. Where else would he be.",
-        "I'd never date him again. Totes never. He'd be so much happier with some guy with a moustache who calls him pretty, and he'd let him.",
-        "I'd do his toes again. Hot pink. For a date with a man. I'd even help pick the man. Kirra's already picking."
+        "Nathan's never been in a gay bar in his life and {name} was already here with Dani on a Friday, like obviously he was",
+        "I'd never go out with him again, totes never. He's gay and I'm not even sad about it now, I was sad for like a week",
+        "I'd do his toes again, hot pink, for a date with a man. Kirra's already trying to pick the man for him"
       ],
       "them": [
         {
@@ -18123,7 +18123,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "A black shirt, the women's perfume and a tiny bit of clear gloss",
-          "thinks": "Black shirt, a bit of gloss and he smelled like girl perfume. Nearly MY perfume babe. The straight guys I date smell like the gym.",
+          "thinks": "Black shirt and a bit of gloss and he smelled like girl perfume, like nearly MY one. I kept leaning in to work out which and I still don't know",
           "gaydar": -5,
           "intro": "You met Bianca at a housewarming in Teneriffe. She laughed at all your jokes and put her number in your phone herself. First date: drinks at a rooftop bar in the CBD. A plain black shirt, the tiniest bit of clear gloss, and a spritz of perfume from the women's counter you'd been too scared to wear anywhere.",
           "them": [
@@ -18132,14 +18132,14 @@ window.CONTENT = {
         },
         {
           "label": "A fitted black shirt, clear gloss and nails, the women's perfume",
-          "thinks": "Fitted black shirt, gloss AND nails. Better nails than mine. On a first date. Babe a straight guy does not get his nails done before he meets you.",
+          "thinks": "Fitted black shirt and gloss and he'd had his nails done before a first date, babe, and they were better than mine. I was jealous for the whole first drink",
           "them": [
             "also your nails were done?? better than mine?? i was weirdly jealous and also like. hmm"
           ]
         },
         {
           "label": "A silky shirt half undone, perfume, gloss, nails and a gold necklace",
-          "thinks": "Silky shirt undone more than my top, gold necklace, gloss. Half the rooftop looked at him and it was mostly the guys. And he noticed them noticing. I noticed that.",
+          "thinks": "His shirt was undone more than my top and half the rooftop was looking at him, mostly the guys. He noticed them looking and he didn't mind at all",
           "gaydar": 5,
           "intro": "You met Bianca at a housewarming in Teneriffe. She laughed at all your jokes and put her number in your phone herself. First date: drinks at a rooftop bar in the CBD. A silky black shirt with three buttons undone, a delicate gold necklace, clear gloss, clear nails, and the perfume from the women's counter.",
           "them": [
@@ -18149,8 +18149,8 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "He smelled better than me and I spent the whole night going is he flirting with me or with my outfit. It's my outfit lol. It's always going to be my outfit.",
-        "Second date obviously but BABE. Vanilla and girl perfume and he knew exactly how good he smelled. I'm not stupid. I'm just having fun until one of us says it."
+        "He smelled better than me and I spent the whole night going is he flirting with me or with my outfit. I think it was the outfit lol",
+        "He knew exactly how good he smelled, like he was wearing girl perfume and he knew it. I know what that means. I still want to see him again, it's fun, I'm not marrying him"
       ],
       "them": [
         "home 🥰",
@@ -18280,7 +18280,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Tinted gloss and pink nails, with a plain tee",
-          "thinks": "Gloss and pink nails with a plain tee. Half the homework. Babe I could see the pink from the gelato counter, the tee isn't saving you.",
+          "thinks": "Gloss and pink nails and then a plain tee like that would balance it out. I could see the pink from the gelato counter babe, the tee wasn't doing anything",
           "gaydar": -5,
           "intro": "Second date. Gelato at South Bank on a warm Saturday. You took her advice: tinted gloss, a pinky nude. You also painted your nails soft pink. You kept the rest plain, a white tee and jeans, just in case.",
           "them": [
@@ -18291,7 +18291,7 @@ window.CONTENT = {
         },
         {
           "label": "Tinted gloss, pink nails, a cream cropped knit",
-          "thinks": "Cream cropped knit. He took the gloss and went further and I clapped and didn't kiss him. That's my whole review. He's gay and the knit's amazing.",
+          "thinks": "Cream cropped knit, he took the gloss thing and just kept going. I clapped and then I didn't kiss him hello and he didn't even seem to notice",
           "them": [
             {
               "note": "She sees the cropped knit and claps, and doesn't kiss you hello."
@@ -18300,7 +18300,7 @@ window.CONTENT = {
         },
         {
           "label": "Tinted gloss, pink nails, cropped knit, hoops and mascara",
-          "thinks": "Hoops AND mascara. He looked so beautiful and so gay and I took a step back to look and just stayed there.",
+          "thinks": "Hoops and mascara and he looked so beautiful and so gay. I stepped back to look at him properly and I never really stepped back in, I was a bit away from him the whole time we had gelato",
           "gaydar": 5,
           "intro": "Second date. Gelato at South Bank on a warm Saturday. You took her advice and then some: tinted gloss, soft pink nails, a cream cropped knit with high-waisted jeans, little gold hoops and mascara. On the walk over you saw yourself in a shop window and liked what you saw.",
           "at": 2,
@@ -18313,9 +18313,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "I said try a tinted gloss because I thought it'd be cute on a guy. He did the gloss and his nails and it was cute on a very, very gay guy. Babe I made this. Yesss. Also oops.",
-        "I hugged him shorter. My arms just did it. My arms know he's gay and the rest of me is catching up.",
-        "I grabbed his hand and only looked at his nails. He picked the Essie one. BABE. I haven't wanted to kiss him since he walked up and I want to go shopping with him every weekend."
+        "I said try a tinted gloss because I thought it'd be cute on a guy and he did the gloss AND his nails, and it is cute, it's just cute on a really gay guy. Yesss. I think that's a bit on me",
+        "I hugged him shorter than last time and I didn't even mean to, I only noticed after. He's gay and I think I've known since the perfume",
+        "I grabbed his hand just to look at his nails and it was the Essie one. I didn't want to kiss him at all. I want to take him shopping though, like this weekend"
       ],
       "them": [
         {
@@ -18472,9 +18472,9 @@ window.CONTENT = {
       "gaydarSays": "Took him to the beauty store. He swatched more than me. I'm not even mad, I'm proud.",
       "intro": "A Saturday between dates. Bianca takes you to the big beauty store in the Queen St Mall. \"Just to look,\" she says. She's holding a basket already.",
       "thinks": [
-        "I held the tester to my lips and then his and it was better on him. Obviously. He's a gay man at a lip wall. He was always going to win.",
-        "The counter girl said that's so your colour to him, not me, and she clocked him in about one second. Everyone clocks him. I'm the last girl in the city to clock him and I'm the one dating him.",
-        "I'm a bit sad. Mostly I'm SO excited. Yesss. I've always wanted a gay best friend and I just had to date one for a month first."
+        "I tried the tester on me and then on him and it was better on him, which, obviously, he's a gay man at a lip wall. I'm still a bit annoyed about it",
+        "The counter girl said that's so your colour, to him not me, and she clocked him in like one second. Everyone clocks him. I've been seeing him a month and I'm only getting there now",
+        "I'm a bit sad tbh. Mostly excited though, I've always wanted a gay best friend and I think I've got one, I just thought I had a boyfriend"
       ],
       "them": [
         "Okay. Rules. You're allowed one lip, one blush, and one thing you didn't know you needed.",
@@ -18571,7 +18571,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "The lilac skirt with a hoodie over it, and sneakers",
-          "thinks": "The lilac skirt with a hoodie over it. Babe. I could see the pleats, my whole street could see the pleats, a hoodie isn't hiding anything.",
+          "thinks": "The lilac skirt with a hoodie over the top like that hides it. I could see the pleats from my front door babe",
           "gaydar": -5,
           "intro": "Third date, sort of. Bianca invited you over to get ready before her friend Shay's birthday in the Valley. You came over in the lilac pleated skirt she helped you pick, but with a big hoodie over the top and your sneakers, just for the walk. She opened the door and screamed anyway.",
           "them": [
@@ -18582,7 +18582,7 @@ window.CONTENT = {
         },
         {
           "label": "The lilac skirt, a white baby tee and pink nails",
-          "thinks": "The lilac skirt and a baby tee exactly how I pictured it in the shop. And zero butterflies. Just so proud of my gay boy.",
+          "thinks": "The lilac skirt with a baby tee exactly how I pictured it in the shop and I didn't get one butterfly, I was just so proud of him",
           "them": [
             {
               "note": "She looks at you in the skirt and says \"oh, babe\" in exactly the voice she uses for her girls."
@@ -18591,7 +18591,7 @@ window.CONTENT = {
         },
         {
           "label": "The lilac skirt, a baby tee, pink nails and a pearl clip in your hair",
-          "thinks": "A pearl clip in his hair. With the skirt. He was never really my boyfriend, was he. He's a gay man in a pearl clip and I'm his hype girl.",
+          "thinks": "A pearl clip in his hair with the skirt. I don't think he was ever really my boyfriend, he's gay and I'm kind of his hype girl now, I took like forty photos",
           "gaydar": 3,
           "intro": "Third date, sort of. Bianca invited you over to get ready before her friend Shay's birthday in the Valley. You came over in the lilac pleated skirt she helped you pick, a white baby tee, your pink nails, and a pearl clip in your hair. She opened the door and screamed.",
           "them": [
@@ -18603,9 +18603,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "I spun him round and the skirt went out and I thought, I'm never kissing this boy. He's a gay boy in a lilac skirt and he's the happiest I've ever seen him.",
-        "The second I said lashes his whole face lit up. It never lit up like that for me. Not once. That's all the info I need, babe.",
-        "Shay's cousin Jake is single. Jake would lose it seeing him in that skirt. I'm saying it to myself for now. Not for long."
+        "I spun him round and the skirt went out and I thought I'm never kissing this boy. He's gay and he's in a lilac skirt and I've never seen him this happy",
+        "The second I said lashes his whole face lit up and it's never done that for me, not on the rooftop, not once. I'm not even upset, I'm just noticing it",
+        "Shay's cousin Jake is single and he'd lose it seeing him in that skirt. I haven't said anything to anyone yet but I'm telling Shay tomorrow"
       ],
       "them": [
         "OH MY GOD. You wore it. You actually wore it.",
@@ -18815,9 +18815,9 @@ window.CONTENT = {
   "irl": true,
   "intro": "A week after Shay's birthday. Bianca's place, pedicure night with the girls: Shay, Imogen, and you, all barefoot on the floor with the polishes out. Then the doorbell goes. It's Shay's cousin Jake, the one Bianca keeps saying you'd be perfect with. \"He was in the area,\" Bianca says, not looking at you.",
   "thinks": [
-    "Jake walked in and sat down right next to him, not me, and {name} didn't move away. Didn't move one centimetre. Yesss.",
-    "He went bright red the second Jake touched his ankle. BABE. I've never made him go that red. Not on the rooftop, not ever, and I tried.",
-    "I'm done fancying him. Officially. He's gay, he's so gay, and I'm going to be so annoying about him and Jake."
+    "Jake came in and sat right next to him instead of me and {name} didn't move over at all, he just stayed there. I was so happy I had to look at my phone",
+    "He went bright red the second Jake touched his ankle. I've never made him go that red, not on the rooftop, not ever, and I really tried",
+    "I'm done fancying him, officially. He's so gay and I'm going to be so annoying about him and Jake, Shay's already sick of me"
   ],
   "them": [
     {
@@ -18914,9 +18914,9 @@ window.CONTENT = {
       "gaydarSays": "Jake had your boots off in about a second. I'm not sorry. I'd do it again.",
       "intro": "Two weeks after pedi night. Bianca made you buy heeled ankle boots, and tonight's the first time you've worn them out: drinks at hers before Shay's thing. You're keeping them on all night. You've decided. Then Jake turns up. \"In the area\" again, apparently.",
       "thinks": [
-        "Heeled ankle boots and pink toes underneath. I made him buy those boots. Babe that's the gayest thing I've ever made a man buy and he loved them.",
-        "Jake said pretty about his toes and {name} went pink in the face. Jake said it. I've said it a hundred times and never got that face.",
-        "I'm going to be the best woman at their wedding. He's never been straight a day in his life and I'm the one who got him the boots."
+        "I made him buy those boots and they're the gayest thing I've ever made a guy buy, heeled ankle boots with pink toes under them, and he loved them so much he wore them to this",
+        "Jake said pretty about his toes and {name} went pink in the face. I've said pretty about a hundred times and never got that face",
+        "Babe I'm going to be best woman at their wedding, I've decided. He's so gay and Jake likes him and I'm the one who got him the boots so"
       ],
       "them": [
         {
@@ -19195,7 +19195,7 @@ window.CONTENT = {
       "outfits": [
         {
           "label": "Jeans and a tee, just lip oil",
-          "thinks": "Jeans and a tee and just lip oil, on my birthday. Babe, you're the gayest person I know, you don't get to go plain on my birthday.",
+          "thinks": "Jeans and a tee and just lip oil on my birthday. Babe you're the gayest person I know, I don't know why you'd go plain tonight of all nights",
           "gaydar": 0,
           "intro": "A month later. Bianca's birthday drinks at a rooftop in the Valley, the same one where you had your first date. You wore jeans and a tee and lip oil. She's brought a guy: a carpenter, still in his work boots, with sawdust on his jeans. Liam.",
           "them": [
@@ -19206,7 +19206,7 @@ window.CONTENT = {
         },
         {
           "label": "The lilac skirt, heels and full glam. She'd want that.",
-          "thinks": "The lilac skirt, heels and full glam. For me. My gay best friend did full glam for my birthday and I'm going to cry into my cake.",
+          "thinks": "The lilac skirt and heels and full glam, for my birthday. My gay best friend did full glam for me and I'm going to cry into my cake, I already did a bit",
           "intro": "A month later. Bianca's birthday drinks at a rooftop in the Valley, the same one where you had your first date. You wore the lilac skirt, heels and full glam, because she'd never forgive you otherwise. She's brought a guy: a carpenter, still in his work boots, with sawdust on his jeans. Liam.",
           "them": [
             "THE LILAC SKIRT. ON MY BIRTHDAY. I'm crying. I'm actually crying.",
@@ -19217,9 +19217,9 @@ window.CONTENT = {
         }
       ],
       "thinks": [
-        "Liam made me a bedside table and doesn't own a mirror. That's straight. {name} did my contour. I should've seen it on the rooftop, babe, he smelled better than me.",
-        "{name} was the prettiest person at my birthday and I wasn't jealous, okay a little. He's so gay and so happy and I want that for him with a guy.",
-        "Jake's been looking at him from the bar all night. He's gay, Jake's into it, I'm best friend, and I'm making it happen by Christmas."
+        "Liam made me a bedside table and doesn't own a mirror, and {name} did my contour. I should've seen it on the rooftop, he smelled better than me",
+        "Liam called him the contour guy and he loved that. I'm not even jealous, okay a little, he's so gay and so happy and I want him to have a guy",
+        "Jake's been looking at him from the bar all night. He's gay and Jake's into it and I'm best friend so I'm making it happen by Christmas"
       ],
       "them": [
         "Babe!! You came! Okay, this is Liam. Liam, this is {name}, my best friend. He's the one who did my contour.",
