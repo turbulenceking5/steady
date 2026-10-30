@@ -75,6 +75,22 @@ input[type=text] { width: 100%; font: inherit; color: var(--ink); background: va
 .thread.instant .bubble { animation: none; } /* "Change last reply" redraws what he's already read */
 .choices { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 .choices button { text-align: left; background: var(--card); color: var(--ink); border: 1px solid var(--accent); border-radius: 14px; padding: 10px 13px; font: inherit; cursor: pointer; }
+/* Reactions on her bubbles: tap (or long-press, or Enter) one to pick an emoji. */
+.bubble.them { position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+.bubble.them.reacted { margin-bottom: 12px; }
+.bubble .react { position: absolute; right: -6px; bottom: -15px; font-size: 15px; line-height: 1; background: var(--card); border: 1px solid var(--line); border-radius: 99px; padding: 3px 5px; }
+.reactbar { position: fixed; z-index: 20; display: flex; gap: 2px; background: var(--card); border: 1px solid var(--line); border-radius: 99px; padding: 4px; box-shadow: 0 6px 20px rgba(0,0,0,.2); animation: pop .15s ease-out; }
+.reactbar button { width: 42px; height: 42px; font-size: 22px; line-height: 1; padding: 0; background: none; border: 0; border-radius: 50%; cursor: pointer; }
+.reactbar button[aria-pressed="true"] { background: var(--soft); box-shadow: inset 0 0 0 2px var(--accent); }
+/* Delivered / Seen under your latest text, and "Picked for you" when the quick-reply timer ran out. */
+.receipt { align-self: flex-end; font-size: 12px; color: var(--muted); margin: -2px 4px 0; }
+.qtimer { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.qtimer .qbar { flex: 1; height: 6px; border-radius: 3px; background: var(--soft); overflow: hidden; }
+.qtimer .qbar i { display: block; height: 100%; width: 100%; background: var(--accent); border-radius: 3px; }
+.qtimer.low .qbar i { background: #e0457b; }
+@media (prefers-reduced-motion: reduce) { .reactbar { animation: none; } }
+dialog label.check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin: 10px 0 0; }
+dialog label.check input { margin-top: 4px; flex: none; width: 18px; height: 18px; accent-color: var(--accent); }
 .thinks { font-size: 17px; line-height: 1.45; margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; border-left: 4px solid var(--accent); }
 .thinks p { margin: 6px 0 0; font-style: italic; }
 .debrief { font-size: 17px; line-height: 1.45; margin-top: 14px; background: var(--soft); border-radius: 14px; padding: 12px 14px; }
@@ -139,6 +155,10 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   <input type="text" id="bfInput" maxlength="30" placeholder="Matt" autocomplete="off">
   <label for="themeSel">Theme</label>
   <select id="themeSel" class="icon-btn"><option value="">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select>
+
+  <h3>Chats</h3>
+  <label class="check"><input type="checkbox" id="quickChk"><span><b>Quick replies</b>: a timer runs on your replies, and if it runs out one gets picked for you.</span></label>
+  <label class="check"><input type="checkbox" id="buzzChk"><span><b>Vibrate</b> when you reply or react (phones that support it; off with Reduce Motion).</span></label>
 
   <h3>Your privacy</h3>
   <p class="muted" style="margin:0">Your progress stays in this browser on this device. Nothing is sent anywhere. Clearing your browser data erases it, so export a backup now and then. <b>Hide</b> covers the screen with a shopping list; double-tap it to come back.</p>
@@ -230,6 +250,70 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   // Keep the newest message in view, unless he's scrolled up to reread something.
   const nearBottom = () => innerHeight + scrollY >= document.documentElement.scrollHeight - 160;
 
+  // A short buzz on a reply or reaction, where the phone supports it (Android; iOS has no vibrate).
+  // Off with Reduce Motion, or with the Settings switch.
+  const buzz = (p) => { if (reduceMotion || !store.get("buzz", true)) return; try { if (navigator.vibrate) navigator.vibrate(p); } catch {} };
+
+  // ---------- Reactions ----------
+  // Tap one of her bubbles (or long-press it, or focus it and press Enter) for a row of emoji.
+  // Saved per chapter, keyed by the message's raw text, so a replay shows them again:
+  // st_reacts = { chapterId: { "message text": "😂" } }.
+  const REACTS = [["❤️", "Heart"], ["😂", "Laughing"], ["😳", "Blushing"], ["🙄", "Eye roll"], ["😬", "Awkward"], ["👀", "Eyes"]];
+  const reactLabel = (e) => (REACTS.find((r) => r[0] === e) || [e, e])[1];
+  let reactBar = null, reactClosed = { b: null, t: 0 };
+  function drawReact(b, e) {
+    const old = b.querySelector(".react"); if (old) old.remove();
+    b.classList.toggle("reacted", !!e);
+    if (e) b.insertAdjacentHTML("beforeend", `<span class="react" role="img" aria-label="You reacted: ${esc(reactLabel(e))}">${esc(e)}</span>`);
+  }
+  function setReact(b, e) {
+    try {
+      const all = store.get("reacts", {}); const r = all[b._chapter] || (all[b._chapter] = {});
+      if (e) r[b._key] = e; else delete r[b._key];
+      if (!Object.keys(r).length) delete all[b._chapter];
+      store.set("reacts", all);
+    } catch {}
+    drawReact(b, e);
+    if (e) buzz(15);
+  }
+  const savedReact = (chapter, key) => (store.get("reacts", {})[chapter] || {})[key];
+  function closeReact(refocus) {
+    if (!reactBar) return;
+    const b = reactBar._for; reactBar.remove(); reactBar = null; reactClosed = { b, t: Date.now() };
+    removeEventListener("pointerdown", reactOutside, true); removeEventListener("scroll", closeReactQuiet, true); removeEventListener("resize", closeReactQuiet);
+    if (refocus && b && b.isConnected) b.focus({ preventScroll: true });
+  }
+  const closeReactQuiet = () => closeReact(false);
+  const reactOutside = (e) => { if (reactBar && !reactBar.contains(e.target)) closeReact(false); };
+  function openReact(b) {
+    closeReact(false);
+    // A tap on the bubble whose picker the same tap just closed (pointerdown outside) shouldn't reopen it.
+    if (reactClosed.b === b && Date.now() - reactClosed.t < 400) return;
+    const cur = savedReact(b._chapter, b._key);
+    const bar = document.createElement("div"); bar.className = "reactbar"; bar.setAttribute("role", "toolbar"); bar.setAttribute("aria-label", "React to her message");
+    REACTS.forEach(([e, label]) => {
+      const x = document.createElement("button"); x.type = "button"; x.textContent = e;
+      x.setAttribute("aria-label", label); x.setAttribute("aria-pressed", String(cur === e));
+      x.addEventListener("click", () => { if (b.isConnected) setReact(b, cur === e ? null : e); closeReact(true); }); // the same one again takes it off
+      bar.appendChild(x);
+    });
+    bar.addEventListener("keydown", (e) => {
+      const bs = [...bar.children]; const k = bs.indexOf(document.activeElement);
+      if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); closeReact(true); }
+      else if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); bs[(k + (e.key === "ArrowRight" ? 1 : bs.length - 1)) % bs.length].focus(); }
+      else if (e.key === "Tab") closeReact(false);
+    });
+    bar._for = b; document.body.appendChild(bar); reactBar = bar;
+    // Above the bubble if there's room under the sticky header, otherwise below it; never off the side.
+    const r = b.getBoundingClientRect(), w = bar.offsetWidth, h = bar.offsetHeight;
+    let top = r.top - h - 8; if (top < 76) top = Math.min(r.bottom + 8, innerHeight - h - 8);
+    bar.style.top = Math.round(top) + "px";
+    bar.style.left = Math.round(Math.max(8, Math.min(r.left, innerWidth - w - 8))) + "px";
+    (bar.querySelector('[aria-pressed="true"]') || bar.firstElementChild).focus({ preventScroll: true });
+    addEventListener("pointerdown", reactOutside, true); addEventListener("resize", closeReactQuiet);
+    requestAnimationFrame(() => { if (reactBar === bar) addEventListener("scroll", closeReactQuiet, true); });
+  }
+
   // Teasing, never nasty: it's her read on you, and the joke's on how obvious it is.
   const gaydarLabel = (v) => v >= 100 ? "Called it. She'd like that in writing, please 💅" : v >= 95 ? "Would bet her rent on it. And her car." : v >= 85 ? "Wondering why you're on a date with her and not the waiter" : v >= 65 ? "Has already screenshotted you to the group chat" : v >= 35 ? "Side-eyeing the lip gloss" : "Thinks you're straight. Bless her.";
   // Teasing: the lower it goes, the more she sees you as one of the girls.
@@ -286,7 +370,44 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       const t = setTimeout(done, ms); skipNow = done;
     });
     const skipTyping = () => { if (skipNow) { skip = true; skipNow(); } };
-    thread.addEventListener("click", skipTyping);
+    closeReact(false);
+    // A tap on the thread skips typing while she's typing; otherwise a tap on one of her
+    // bubbles opens the reactions. A long-press (or right-click) opens them either way.
+    let pressT = 0, pressed = false, pressAt = null;
+    thread.addEventListener("click", (e) => {
+      if (pressed) { pressed = false; return; } // the click that ends a long-press
+      if (skipNow) { skipTyping(); return; }
+      const b = e.target.closest(".bubble.them"); if (b) openReact(b);
+    });
+    const cancelPress = () => { clearTimeout(pressT); pressAt = null; };
+    thread.addEventListener("pointerdown", (e) => {
+      const b = e.target.closest(".bubble.them"); pressed = false; cancelPress();
+      if (!b || e.pointerType === "mouse") return;
+      pressAt = [e.clientX, e.clientY];
+      pressT = setTimeout(() => { pressed = true; openReact(b); }, 450);
+    });
+    thread.addEventListener("pointermove", (e) => { if (pressAt && Math.hypot(e.clientX - pressAt[0], e.clientY - pressAt[1]) > 10) cancelPress(); });
+    ["pointerup", "pointercancel"].forEach((t) => thread.addEventListener(t, cancelPress));
+    thread.addEventListener("contextmenu", (e) => {
+      const b = e.target.closest(".bubble.them"); if (!b) return;
+      e.preventDefault(); cancelPress(); if (reactBar && reactBar._for === b) return;
+      pressed = e.button !== 2; openReact(b); // a touch long-press is followed by a click; a right-click isn't
+    });
+    // Keyboard: her newest bubble is in the tab order; arrows move between her bubbles, Enter reacts.
+    thread.addEventListener("keydown", (e) => {
+      const b = e.target.closest && e.target.closest(".bubble.them"); if (!b) return;
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openReact(b); return; }
+      if (e.key !== "ArrowUp" && e.key !== "ArrowDown") return;
+      const all = [...thread.querySelectorAll(".bubble.them")]; const n = all[all.indexOf(b) + (e.key === "ArrowUp" ? -1 : 1)];
+      if (n) { e.preventDefault(); b.tabIndex = -1; n.tabIndex = 0; n.focus(); }
+    });
+    const chapterId = convo.id;
+    // Your side of a text chat: "Delivered" under your newest message, "Seen" once she's read it.
+    // Not in person. "Picked for you" when the quick-reply timer chose.
+    let receipt = null;
+    const setReceipt = (s) => { if (receipt) receipt.textContent = [receipt._auto && "Picked for you", !convo.irl && s].filter(Boolean).join(" · "); };
+    let timer = null;
+    const stopTimer = () => { if (timer) { clearInterval(timer); timer = null; } };
 
     // Dates can start with "what are you wearing?". The pick swaps the intro, adds her
     // reaction after her first line, and nudges the gaydar.
@@ -321,6 +442,12 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
       if (node !== convo && node.spark != null) spark = node.spark;
       const msgs = (node.them || []).map((m) => typeof m === "string" ? { text: m } : m).filter((m) => !m.if || outcomeIs(m.if)); // `if`: only if an earlier chapter ended that way
       if (msgs.length && !reduceMotion && !instant) { choices.appendChild(button("skip", "Skip typing", skipTyping)); focusIn(choices); }
+      // She reads your text a moment before she starts typing (a no-reply ending is left on read).
+      if (receipt && node !== convo && !convo.irl) {
+        if (msgs.length) await wait(500);
+        if (view._run !== run) return;
+        setReceipt("Seen");
+      }
       for (const msg of msgs) {
         if (msg.note) { // narration in in-person scenes: what she does, not what she says
           await wait(600);
@@ -338,15 +465,52 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
         t.remove();
         const b = add("them", fill(msg.text));
         if (msg.from) b.insertAdjacentHTML("afterbegin", `<span class="from">${esc(fill(msg.from))}</span>`);
+        b._chapter = chapterId; b._key = msg.text;
+        thread.querySelectorAll(".bubble.them[tabindex]").forEach((o) => { o.tabIndex = -1; });
+        b.tabIndex = 0;
+        const saved = savedReact(chapterId, msg.text); if (saved) drawReact(b, saved);
       }
       const stick = nearBottom();
       choices.innerHTML = "";
       if (node.replies && node.replies.length) {
-        const choose = (r, i) => { if (r.masc) masc = true; path.push(i); add("you", fill(r.you)); play(r); };
+        const choose = (r, i, picked) => {
+          stopTimer(); if (r.masc) masc = true; path.push(i);
+          add("you", fill(r.you));
+          if (receipt) receipt.remove(); receipt = null;
+          if (!convo.irl || picked) {
+            receipt = document.createElement("div"); receipt.className = "receipt"; receipt._auto = !!picked;
+            if (!picked) receipt.setAttribute("aria-hidden", "true");
+            thread.appendChild(receipt); setReceipt(instant || reduceMotion ? "Seen" : "Delivered");
+          }
+          if (!instant) buzz(picked ? [20, 60, 20] : 10);
+          play(r);
+        };
         if (auto.length && node.replies[auto[0]]) { choose(node.replies[auto[0]], auto.shift()); return; }
-        node.replies.forEach((r, i) => {
-          choices.appendChild(button("reply", fill(r.you), () => { instant = false; thread.classList.remove("instant"); choose(r, i); }));
-        });
+        const pick = (r, i, picked) => { instant = false; thread.classList.remove("instant"); choose(r, i, picked); };
+        node.replies.forEach((r, i) => { choices.appendChild(button("reply", fill(r.you), () => pick(r, i))); });
+        // Quick replies (Settings, off by default): a countdown over the buttons, longer when there's
+        // more to read. It pauses while the page is hidden, Settings or Hide is up, or he's reacting.
+        if (store.get("quick", false)) {
+          const total = Math.round(Math.max(8, Math.min(20, 5 + node.replies.reduce((n, r) => n + fill(r.you).length, 0) * 0.06)) * 1000);
+          let left = total, last = Date.now();
+          const q = document.createElement("div"); q.className = "qtimer";
+          q.innerHTML = '<div class="qbar" aria-hidden="true"><i></i></div><span role="timer" aria-label="Seconds left to reply"></span>';
+          choices.prepend(q);
+          const bar = q.querySelector("i"), num = q.querySelector("span");
+          const draw = () => {
+            const s = Math.max(0, Math.ceil(left / 1000));
+            bar.style.width = (reduceMotion ? s * 1000 / total : Math.max(0, left) / total) * 100 + "%"; // reduced motion: steps once a second
+            num.textContent = s + "s"; q.classList.toggle("low", s <= 3);
+          };
+          draw();
+          timer = setInterval(() => {
+            const now = Date.now(), dt = now - last; last = now;
+            if (view._run !== run || !q.isConnected) { stopTimer(); return; }
+            if (document.visibilityState !== "visible" || $("#settings").open || !$("#cover").hidden || reactBar) return;
+            left -= dt; draw();
+            if (left <= 0) { const k = Math.floor(Math.random() * node.replies.length); pick(node.replies[k], k, true); }
+          }, 100);
+        }
         if (stick || instant) choices.lastElementChild.scrollIntoView({ block: "nearest" });
         focusIn(choices);
       } else {
@@ -443,7 +607,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   const scrollToItem = (sel) => { const el = sel && $("#storyList").querySelector(sel); if (el) el.scrollIntoView({ block: "center" }); else scrollTo(0, 0); };
   const PART_HEAD = (t) => `<li><h2 class="muted" style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px">${esc(fill(t))}</h2></li>`;
   function renderStoryList(from) {
-    clearBack(); showing = { kind: "list" };
+    clearBack(); showing = { kind: "list" }; closeReact(false);
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
     const d = storyDone();
@@ -479,7 +643,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     focusIn(from ? list.querySelector(`li[data-r="${CSS.escape(from)}"]`) : list);
   }
   function renderRoute(rid, from) {
-    showing = { kind: "route", rid };
+    showing = { kind: "route", rid }; closeReact(false);
     $("#storyView").hidden = true; $("#storyView")._run = null;
     const list = $("#storyList"); list.hidden = false;
     const r = ROUTES.find((x) => x.id === rid); const d = storyDone();
@@ -520,11 +684,16 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
     $("#nameInput").value = store.get("name", "");
     $("#bfInput").value = store.get("bf", "");
     $("#themeSel").value = store.get("theme", "");
+    $("#quickChk").checked = !!store.get("quick", false);
+    $("#buzzChk").checked = store.get("buzz", true) !== false;
+    $("#buzzChk").disabled = reduceMotion || !navigator.vibrate;
     $("#settings").showModal();
   });
   $("#nameInput").addEventListener("input", (e) => { store.set("name", e.target.value.trim()); });
   $("#bfInput").addEventListener("input", (e) => { store.set("bf", e.target.value.trim()); });
   $("#themeSel").addEventListener("change", (e) => { store.set("theme", e.target.value); applyTheme(); });
+  $("#quickChk").addEventListener("change", (e) => { store.set("quick", e.target.checked); });
+  $("#buzzChk").addEventListener("change", (e) => { store.set("buzz", e.target.checked); if (e.target.checked) buzz(15); });
   // Names show up in the lists, so redraw whichever list is open (a chapter in progress keeps going).
   $("#settings").addEventListener("close", () => {
     const y = scrollY;
@@ -607,7 +776,7 @@ dialog ul { padding-left: 20px; margin: 4px 0; }
   $("#tabBtn-conf").addEventListener("click", () => showTab("conf"));
 
   // ---------- Hide ----------
-  $("#hideBtn").addEventListener("click", () => { $("#settings").open && $("#settings").close(); $("#cover").hidden = false; document.title = "Groceries"; confStop(); });
+  $("#hideBtn").addEventListener("click", () => { closeReact(false); $("#settings").open && $("#settings").close(); $("#cover").hidden = false; document.title = "Groceries"; confStop(); });
   // Manual double-tap check: mobile Safari doesn't reliably fire dblclick.
   let lastTap = 0;
   $("#cover").addEventListener("click", () => {
