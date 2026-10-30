@@ -12,7 +12,8 @@
 - After an in-person date, **In her head** shows what she was really thinking: her first look at your outfit, what she noticed and didn't say, and who she's telling.
 - **Boy clothes:** on a girl's first date, pick "Boy clothes" and her story goes a different way. She keeps dating you if you keep it up, and moves on if you slip. Replay the first date in another outfit to get her usual story back.
 - Messages type out one by one. Tap the conversation, or "Skip typing", to show the rest straight away. With Reduce Motion on (phone settings) they appear at once.
-- Pick any reply; there are no wrong answers. "Try different replies" replays a chapter.
+- Pick any reply; there are no wrong answers. "Try different replies" replays a chapter from the start, and **Change last reply** jumps straight back to your last choice (no retyping) so you can pick another.
+- At the end of a chapter you can see how many of its endings you've found (and outfits you've tried). A girl's chapter list shows the endings count for each chapter you've read.
 - Jess and your boyfriend's story open once you've finished any other girl's story.
 - Your phone's back button steps back to the girl's chapters, then the list.
 

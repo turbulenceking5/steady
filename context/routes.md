@@ -29,6 +29,7 @@ Your best friend. She knows. You haven't said a word.
 | 1 | `c2` | One of the girls | Nicole | 75 |
 | 2 | `nicole-2` | Sephora | Nicole (in person) | 90 |
 | 3 | `nicole-3` | Rate my Hinge | Nicole | 97 |
+| 4 | `nicole-4` | Jemima's list | Nicole (in person) | 99 |
 
 ## Hannah
 Jess's friend. Physio. No time for games. Rival: Dylan. Ends up with: Brodie (electrician).
@@ -257,6 +258,7 @@ What everyone's been saying about you.
 | # | id | Title | With | Gaydar |
 |---|---|---|---|---|
 | 1 | `c7` | The group chat | Jess |  |
+| 2 | `jess-2` | Drinks Friday | Jess (in person) |  |
 
 ## {bf} (locked)
 From the first message to six months.
